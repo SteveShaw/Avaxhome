@@ -8,13 +8,11 @@ var title_filename = 'titles.txt'
 
 var page_contents = []
 var book_titles = []
-
 var limits = 45
-
-console.log('read data:', content);
+var save_count = 1
 
 var links = content.split('\n')
-console.log(links.length)
+console.log('total number of books = ' + links.length)
 var count = 0;
 var retry = false;
 
@@ -35,8 +33,7 @@ function AddToPageContents( title, inner )
 
 function SavePageContents()
 {
-    var idx = count / limits
-    var outPath = PadZeros( idx, 3 ) + '.html'
+    var outPath = PadZeros( save_count++, 3 ) + '.html'
     console.log('Save to "' + outPath + '"')
     fs.write(outPath, page_contents.join('\n'), {mode: 'w', charset: 'UTF-8'})
     page_contents = []
@@ -57,6 +54,18 @@ function RetrieveBookContent( )
         }
     )
     
+    var a_links = page.evaluate(
+        function() {
+            return [].map.call(
+            document.querySelectorAll('div.col-md-12.article a[target=_blank]'),
+                function( obj )
+                {
+                    return obj.href;
+                }
+          )
+        }
+    );
+    
     var inners = page.evaluate( 
         function()
         {
@@ -71,13 +80,14 @@ function RetrieveBookContent( )
     )
 
     console.log( 'found number of titles = ' + titles.length )
+    console.log( 'found links: ' + a_links.length)
     
     if( titles.length > 0 && inners.length > 0 )
     {
         console.log(titles[0])
         console.log('found inners length = ' + inners.length)
         AddToPageContents( titles[0], inners[0] )
-        book_titles.push( titles[0] )
+        book_titles.push( [titles[0], a_links.join('\n')] )
     }
     else
     {
@@ -100,7 +110,16 @@ function LoadPage()
         {
             SavePageContents()
             console.log('Save titles')
-            fs.write(title_filename, book_titles.join('\n'), {mode: 'w', charset: 'UTF-8'})
+            var numBooks = book_titles.length
+            var writeContents = []
+            for(var i = 0;i<numBooks;++i)
+            {
+                writeContents.push('******')
+                writeContents.push( i + ' <--> ' + book_titles[i][0] )
+                writeContents.push( book_titles[i][1] )
+                writeContents.push('******')
+            }
+            fs.write(title_filename, writeContents.join('\n'), {mode: 'w', charset: 'UTF-8'})
             phantom.exit()
         }
         

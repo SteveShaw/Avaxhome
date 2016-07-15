@@ -1,0 +1,4 @@
+IT:
+Functional Python Programming
+Learning Linux Binary Analysis
+
