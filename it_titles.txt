@@ -1,0 +1,303 @@
+2016-07-15
+Swift Quick Syntax Reference (Repost)
+Solaris 9 System Administration Training Guide
+Mastering Python
+Learning Linux Binary Analysis
+Udemy - The Ultimate PHP Training Bundle for Beginner to Advanced
+Linux Network Security (LPIC-3 303)
+Java SE Desktop Application with Swing, JPA and Maven
+Using the Web Speech API with AngularJS
+Play by Play: Docker for Web Developers with John Papa and Dan Wahlin
+Ionic Apps for WooCommerce Build an eCommerce Mobile App
+Applying SQL Server 2016 Features to Real-world Data Problems
+Introduction to TypeScript
+Subscribe Me: Making, Marketing & Monetizing Online Digital Content with Membership Sites, Online Courses
+Your Customer Creation Equation: Unexpected Website Formulas of The Conversion Scientist™
+Million Dollar Plan: Leveraging Technology to Scale
+SQL Fur Dummies (6. Auflage) (Repost)
+Implementing NetScaler VPX (Repost)
+Big Data
+C# Deconstructed: Discover How C# Works on the .Net Framework (Repost)
+C# 3.0: The Complete Reference (3rd edition) (Repost)
+SAP Performance Optimization Guide: Analyzing and Tuning SAP Systems (7th edition) (Repost)
+Nonlinear Systems
+Java Programming for Android Developers For Dummies (Repost)
+Rabi N. Bhattacharya: Selected Papers
+iOS 8 Swift Programming Cookbook (Repost)
+networklessons - CCIE Routing & Switching
+Coursera - Java for Android
+Cisco Firepower and Advanced Malware Protection
+
+2016-07-10
+Discrete Optimization in Architecture
+25 Quintessential Programming Interview Problems: Set A
+Programmieren mit Maple V
+Udemy - The Unreal Engine Developer Course - Learn C++ & Make Games
+Reporting in TFS (Repost)
+AngularJS Deployment Essentials (Repost)
+Scientific Software Development in Fortran
+Enabling Programmable Self with HealthVault [Repost]
+Solving Large Scale Learning Tasks. Challenges and Algorithms
+Finite Difference Computing with Exponential Decay Models
+Theory and Applications of Applied Electromagnetics
+Data Security Compliance
+Essential SharePoint [Repost]
+Getting Started with OUYA (Repost)
+Professional C# 6 and .NET Core 1.0
+Developing Enterprise iOS Applications [Repost]
+Building Virtual Pentesting Labs for Advanced Penetration Testing (Repost)
+Cocos2d Game Development Blueprints (Repost)
+Programming Languages for MIS: Concepts and Practice (Repost)
+Cognitive Networks: Applications and Deployments (Repost)
+iBATIS in Action [Repost]
+Whole-Body Impedance Control of Wheeled Humanoid Robots
+Statistics and Data Analysis for Microarrays Using R and Bioconductor (2nd Edition) (Repost)
+DSLs in Action [Repost]
+Master The Essentials of Conversion Optimization: Experts' Approach to Optimization
+Real Wholesale Sources: Over 200 Legitimate Sources of Online Inventory for your Online and Offline Business
+Mastering Dyalog APL: A Complete Introduction to Dyalog APL (repost)
+Selenium Design Patterns and Best Practices (Repost)
+Play by Play: The Science Behind Microsoft Exams
+Play by Play: Nano Server
+Introduction to SVN [repost]
+Play by Play: Just Enough Administration (JEA)
+Play by Play: Elastic Scale and Consistency with Azure Automation DSC
+Play by Play: The Application Platform in Windows Server 2016
+Computer Hacking Forensic Investigator (CHFI)
+Becoming Agile: ...in an imperfect world: .in a Imperfect World [Repost]
+Storytelling with Data: A Data Visualization Guide for Business Professionals
+Building on SugarCRM [Repost]
+Rails Deep Dive (Repost)
+The Cyborg Subject
+Mastering Unit Testing Using Mockito and JUnit (Repost)
+Udemy - jQuery Fundamentals Powerful Bootcamp for beginners
+AngularJS Web Application Development Blueprints (Repost)
+Android NDK Beginner's Guide (2nd Revised edition) (Repost)
+SQL Server Analysis Services 2012 Cube Development Cookbook (Repost)
+Microsoft Dynamics GP 2013 Cookbook (Repost)
+From Human Attention to Computational Attention: A Multidisciplinary Approach
+Seminal Contributions to Modelling and Simulation: 30 Years of the European Council of Modelling and Simulation
+Mastering Predictive Analytics with R (Repost)
+Jump Start Git (Repost)
+Pluralsight - Hands On Foundation 5 [repost]
+OpenGL 4 Shading Language Cookbook (2nd Revised edition) (Repost)
+Force.com Developer Certification Handbook (DEV401) (Repost)
+Node.js Design Patterns (Repost)
+Database Systems: The Complete Book (2nd edition) (Repost)
+Front-End Frameworks: Ember.js (Part I - III)
+CCNP Collaboration: Cisco Exams 300-070 CIPTV1, 300-075 CIPTV2, 300-080 CAPPS, and 300-085 CTCOLLAB
+Designing Interfaces [Repost]
+Innovations and Approaches for Resilient and Adaptive Systems (Repost)
+Pluralsight - Building Strongly-typed AngularJS Apps with ASP.NET MVC 5 [repost]
+Programming: Principles and Practice Using C++ (2nd edition)
+Introduction to Scientific Programming and Simulation Using R (Repost)
+cbtnuggets - Penetration Testing with Linux Tools (Repost)
+Complete Web Monitoring [Repost]
+Data Analysis with Open Source Tools [Repost]
+CompTIA Network+ Training Kit [Repost]
+Learning C# Programming with Unity 3D (Repost)
+Functional Python Programming (Repost)
+Practitioner's Guide to Health Informatics (Repost)
+An Architectural Approach to Level Design (Repost)
+Virtual und Augmented Reality (VR / AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität (Repost)
+Systems Analysis and Design, UML Version 2.0: An Object-Oriented Approach (4th edition)
+Aperture?Exposed: The Mac?Photographer's Guide to Taming the Workflow
+Wireshark 2.0: Fundamentals
+Facebook: Make $2000 a Month Using Facebook - Passive Income System
+Java EE: Programming Servlets
+C# 6 from Scratch
+Clickbank Affiliate Marketing Bible How to Earn a Passive Online Income
+Moving Beyond JSON and XML with Protocol Buffers
+99 Ways To Flood Your Website With Traffic: Website Traffic Tips
+WordPress for Beginners - Build Your First WordPress Website (2016)
+iOS Animation with Swift IV - Custom Animated Transition
+Build WordPress E-Commerce Stores to Sell Digital Downloads [Updated]
+Publish your Own Guess the Word Game for Kids, iOS & Android
+CompTIA A+ Complete Fast Pass [Repost]
+Code School - Python
+Tutsplus - Get Started With Ionic 2
+Tutsplus - Understanding the WordPress Theme Template Hierarchy
+Tutsplus - Craft: Designing With Real-World Data
+Tutsplus - Single-Page Apps With Angular UI-Router
+Industry 4.0: The Industrial Internet of Things
+Tutsplus - Unit Testing React Components
+Tutsplus - Build a Color-Shifting Gallery With JavaScript
+Tutsplus - Get Started With Core Data
+Tutsplus - Testing Angular Filters
+Tutsplus - Start Here: Learn CSS Layout
+"Applications from Engineering with MATLAB Concepts" ed. by Jan Valdman
+Code Simplicity [Repost]
+ReSharper Essentials
+Getting Started with Clickteam Fusion (Repost)
+Learning OpenStack Networking (Neutron) (Repost)
+Learning R for Geospatial Analysis (Repost)
+Administering ArcGIS for Server
+Practical Data Science Cookbook (Repost)
+Scala for Machine Learning (Repost)
+Guide to Programming and Algorithms Using R (Repost)
+Application Development in iOS 7
+50 Ways To Build Your Email Marketing List
+A Practical Guide to Affiliate Marketing: Quick Reference for Affiliate Managers & Merchants
+Mini Membership Sites 2.0: Think It! Build It! Launch It! How I Replaced My Day Job With Membership Sites
+Python 3 Text Processing with NLTK 3 Cookbook (Repost)
+SignalR: Real-time Application Development (Repost)
+Google Maps JavaScript API Cookbook (Repost)
+Getting Started with LLVM Core Libraries (Repost)
+ASP.NET MVC 4 and the Web API: Building a REST Service from Start to Finish (Repost)
+Sams Teach Yourself C++ in One Hour a Day (7th edition)
+Pro JavaFX 8: A Definitive Guide to Building Desktop, Mobile, and Embedded Java Clients (Repost)
+HTML5 Pocket Reference (5th edition) (Repost)
+HTML5 Programming with JavaScript For Dummies (Repost)
+Programming in Objective-C (Developer's Library) (6th edition) (Repost)
+Activiti 5.x Business Process Management: Beginner's Guide
+AngularJS Web Application Development Cookbook (Repost)
+Gamemaker: Studio For Dummies (Repost)
+Getting Started with Grunt: The JavaScript Task Runner (Repost)
+Hl7 for BizTalk (Repost)
+Learning Bootstrap (Repost)
+Learning PrimeFaces Extensions Development (Repost)
+Learning System Center App Controller (Repost)
+How to Find Profitable Niches: 5 Five-Minute Free & Easy Methods for Any Niche Endeavor
+Content Marketing Playbook
+Youtube Marketing: How to Create a Successful Channel and Make Money
+Natural Language Processing in Python
+Convolutional Neural Networks in Python
+Unsupervised Machine Learning in Python
+Kompendium Medieninformatik: Medienpraxis [Repost]
+High Performance iOS Apps: Optimize Your Code for Better Apps
+Building and Testing with Gradle [Repost]
+Apache Mahout Essentials (Repost)
+Amazon EC2 Cookbook (Repost)
+AngularJS Directives Cookbook (Repost)
+Android for the BeagleBone Black (Repost)
+Objective-C Cheat Sheet
+ArcGIS Blueprints (Repost)
+Swift vs. Objective-C: Compared Everything of Both Programming Languages
+Arduino Development Cookbook (Repost)
+Learning Apache Thrift (Repost)
+Algorithmic and Geometric Aspects of Robotics
+Learning iOS UI Development (Repost)
+Learning Geospatial Analysis with Python (2nd Revised edition)
+Game Development with Swift (Repost)
+HTML5 Game Development by Example: Beginner's Guide (2nd Revised edition) (Repost)
+GitHub Essentials (Repost)
+Learning C++ by Creating Games with UE4 (Repost)
+Learning Ceph (Repost)
+Learning ExtJS (4th edition) (Repost)
+Murach's SQL Server 2016 for Developers
+Learning Java by Building Android Games (Repost)
+Liferay 6.x Portal Enterprise Intranets Cookbook (Repost)
+Learning VMware vCloud Air (Repost)
+Learning Yii Testing (Repost)
+LibGDX Cross-Platform Development Blueprints (Repost)
+Learning Predictive Analytics with R (Repost)
+Lua Game Development Cookbook (Repost)
+Big Data For Dummies (Repost)
+Office 2013 For Dummies (Repost)
+Quickbooks 2016 All-in-One For Dummies (Repost)
+Zabbix 1.8 Network Monitoring [Repost]
+Caring for People with Problem Behaviors
+Clear Blogging: How People Blogging Are Changing the World and How You Can Join Them
+Computers Helping People with Special Needs
+Computers Helping People with Special Needs, Part II
+Advances in Biometrics for Secure Human Authentication and Recognition (Repost)
+Red Team Hacking Course
+RESTful Web API Design with Node.js (Repost)
+Redis Essentials (Repost)
+Raspberry Pi Mechatronics Projects (Repost)
+Raspberry Pi Projects for Kids (2nd Revised edition) (Repost)
+Raspberry Pi Computer Vision Programming (Repost)
+Matthew MacDonald, "Attract Visitors to Your Site: The Mini Missing Manual" [Repost]
+Beautiful Security [Repost]
+Beautiful Testing: Leading Professionals Reveal How They Improve Software [Repost]
+Beautiful Teams
+Membership Site Plan: Your First Steps To Passive Income
+Certified Scrum Master (CSM)
+jQuery – Grundlagen
+Facebook for Business: How to Uncover Facebook's New Super-Profitable Hidden Niches
+SoapUI Cookbook (Repost)
+SFML Essentials (Repost)
+Testing with F# (Repost)
+CBT Nuggets - JNCIS-ENT (JN0-343) - OSPF
+Salesforce Reporting and Dashboards (Repost)
+Splunk Essentials (Repost)
+CBT Nuggets - Database Fundamentals
+Mastering Python Data Visualization
+ITPro.tv - VMware Certified Professional 6 VCP6-DCV
+Introduction to Java Programming, Brief Version (8 edition) (Repost)
+Cisco 640-554: CCNA Security - Implementing Cisco IOS Network Security - IINS
+The Definitive Guide to Google AdWords: Create Versatile and Powerful Marketing and Advertising Campaigns (Repost)
+ITPro.tv - Kali Linux
+ITPro.tv - CEH v9
+Reasoning About Asynchronous JavaScript
+PHP for Beginners (2016)
+Learning Python Data Visualization
+Mastering Python Scientific Computing
+Expert Oracle RAC 12c (Repost)
+Tactical Design Patterns in .NET: Creating Objects [HD Original]
+Tkinter GUI Application Development Blueprints (Repost)
+Materials Management with SAP ERP: Functionality and Technical Configuration (3rd Edition) (Repost)
+Xcode 4 iOS Development Beginner's Guide [Repost]
+ABAP Basics (2nd edition) (Repost)
+Yii 1.1 Application Development Cookbook [Repost]
+Autonomous Driving
+Shell Scripting Recipes
+Zend Framework 2.0 Cookbook
+Cloud-Lösungen mit ownCloud und dem Raspberry Pi
+Image Processing and Acquisition using Python (Repost)
+Learn iOS 7 App Development (Repost)
+Beginning Xcode (Repost)
+Android Game Recipes: A Problem-Solution Approach (Repost)
+Office 365: Migrating and Managing Your Business In The Cloud (Repost)
+Beginning Haskell: A Project-Based Approach (Repost)
+Database Development and Management (Repost)
+A Beginners Guide To Learning AJAX For Web Development Professionals
+Implementing Search in .NET Applications
+WordPress LMS: E-Learning Website Made Easy
+Selenium TestNG working with Java [Updated]
+Monetizing a WordPress Blog: Beginner-Friendly Strategies
+Programming Computer Vision with Python: Tools and algorithms for analyzing images (Repost)
+3D Game Engine Architecture: Engineering Real-Time Applications with Wild Magic
+APIs: A Strategy Guide [Repost]
+97 Things Every Software Architect Should Know [Repost]
+Modern Statistical Methods for HCI
+Peripheral Interaction: Challenges and Opportunities for HCI in the Periphery of Attention
+Machine Learning for Microbial Phenotype Prediction
+Dynamic Products: Shaping Information to Engage and Persuade
+Internet of Things (IoT) in 5G Mobile Technologies
+Listen and Talk
+Multimedia Content Analysis
+Beginning Programming with C For Dummies (Repost)
+Java Programming for Android Developers For Dummies (Repost)
+Mastering Unity 2D Game Development (Repost)
+Mastering Unity Scripting (Repost)
+Sviluppare applicazioni per Apple Watch (Repost)
+Mastering Python Design Patterns (Repost)
+React.js Essentials (Repost)
+Pluralsight - Tactical Design Patterns in .NET: Creating Objects (2016)
+Jenkins Continuous Integration Cookbook (2nd Edition) (Repost)
+50 Tips and Tricks for MongoDB Developers [Repost]
+25 Recipes for Getting Started with [Repost]
+21 Recipes for Mining Twitter [Repost]
+AppleScript [Repost]
+3D Game Engine Design: A Practical Approach to Real-Time Computer Graphics
+Intelligent Numerical Methods II
+Machine Tool Metrology: An Industrial Handbook
+HCI International 2014 - Posters' Extended Abstracts
+Linux Academy - SQL Primer
+SQL Wall Street CHEAT SHEET, to get HIRED FAST! 2016
+Linux Academy - Apache Tomcat 8 Application Server
+Gnuplot in Action: Understanding Data with Graphs
+14th IEEE International Conference on Embedded and Real-time Computing Systems and Applications
+Sass and Compass for Designers (Repost)
+Object-Oriented Software Engineering: Practical Software Development using UML and Java (2nd edition) (Repost)
+Hybrid Cloud Management with Red Hat CloudForms [Repost]
+Mastering Unit Testing Using Mockito and JUnit [Repost]
+Object-Oriented Software Engineering: Practical Software Development using UML and Java (Repost)
+Phonegap 3.X Mobile Application Development Hotshot (Repost)
+Beautiful C++: STL Algorithms
+Simply Learn HTML5 and CSS3 (Projected code included)
+SQL Server: Replacing Profiler with Extended Events
+Become a Certified Web Developer - Beginner to Expert
+Learn to Make Android Apps - for Absolute Beginners [Updated]
+Mesos in Action
