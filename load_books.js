@@ -66,6 +66,18 @@ function RetrieveBookContent( )
         }
     );
     
+    var descriptions = page.evaluate(
+        function() {
+            return [].map.call(
+            document.querySelectorAll('div.col-md-12.article div.text'),
+                function( obj )
+                {
+                    return obj.innerText;
+                }
+          )
+        }
+    );
+    
     var inners = page.evaluate( 
         function()
         {
@@ -87,7 +99,7 @@ function RetrieveBookContent( )
         console.log(titles[0])
         console.log('found inners length = ' + inners.length)
         AddToPageContents( titles[0], inners[0] )
-        book_titles.push( [titles[0], a_links.join('\n')] )
+        book_titles.push( [titles[0], a_links.join('\n'), descriptions[0]] )
     }
     else
     {
@@ -117,6 +129,7 @@ function LoadPage()
                 writeContents.push('******')
                 writeContents.push( i + ' <--> ' + book_titles[i][0] )
                 writeContents.push( book_titles[i][1] )
+                writeContents.push( book_titles[i][2] )
                 writeContents.push('******')
             }
             fs.write(title_filename, writeContents.join('\n'), {mode: 'w', charset: 'UTF-8'})

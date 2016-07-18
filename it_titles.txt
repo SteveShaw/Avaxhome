@@ -1,3 +1,404 @@
+2016-07-18
+******
+0 <--> Raspberry Pi LED Blueprints (Repost)
+http://nitroflare.com/view/A6385C2721898B8/178217575X_Raspberrysp1.epub
+http://nitroflare.com/view/7487C9CE61A716C/178217575X_Raspberrysp1.mobi
+http://nitroflare.com/view/09F15164F66E81B/178217575X_Raspberrysp1.pdf
+https://filejoker.net/21kkcc0jxk2e
+https://filejoker.net/61g09gf99sg7
+https://filejoker.net/g2bxj0czzmgl
+
+
+Raspberry Pi LED Blueprints By Agus Kurniawan
+2015 | 180 Pages | ISBN: 178217575X | EPUB, MOBI, PDF | 34 MB
+
+
+Design, build, and test LED-based projects using the Raspberry Pi About This Book Implement real LED-based projects for Raspberry Pi Learn to interface various LED modules such as LEDs, 7-segment, 4-digits 7 segment, and dot matrix to Raspberry Pi Get hands-on experience by exploring real-time LEDs with this project-based book Who This Book Is For This book is for those who want to learn how to build Raspberry Pi projects utilising LEDs, 7 segment, 4-digits 7 segment, and dot matrix modules. You also will learn to implement those modules in real applications, including interfacing with wireless modules and the Android mobile app. However, you don't need to have any previous experience with the Raspberry Pi or Android platforms.
+******
+******
+1 <--> Getting Started with Fluidinfo [Repost]
+http://avaxhm.com/blogs/tanas.olesya
+http://nitroflare.com/view/EABA2ECBDE4BC54/1449307094.pdf
+https://filejoker.net/ky1i6xdhzzls
+
+
+Getting Started with Fluidinfo by Nicholas J. Radcliffe
+English | 5 Mar. 2012 | ISBN: 1449307094 | 140 Pages | PDF | 10 MB
+
+Imagine a public storage system that has a place online for structured data about everything that exists—or that could exist. This book introduces Fluidinfo, a system that enables you to store information about anything, real or imaginary, in any digital form. You’ll learn how to organize and search for data, and decide who can use, modify, and extend what you’ve contributed.
+
+-= My Blog! =-
+
+******
+******
+2 <--> ClickBank Money Machine: Make Money Online With ClickBank Affiliate Marketing
+3 <--> Craft Pricing Power - 12 Proven Pricing Principles For Small Business Marketers
+4 <--> Pluralsight - WCF Fundamentals
+http://avxhome.se/blogs/house23
+http://nitroflare.com/view/5095392182FDAA6/WCF_Funde.part1.rar
+http://nitroflare.com/view/085C05D28FE11CC/WCF_Funde.part2.rar
+http://nitroflare.com/view/E972301D6F151C7/WCF_Funde.part3.rar
+http://nitroflare.com/view/9ED76D1DCC3D5B6/WCF_Funde.part4.rar
+http://nitroflare.com/view/CBFB415C5BA8A7C/WCF_Funde.part5.rar
+http://nitroflare.com/view/9D969ACD932118C/WCF_Funde.part6.rar
+
+
+Pluralsight - WCF Fundamentals
+MP4 | AVC 701kbps | English | 1024x768 | 15fps | 4h 32mins | AAC stereo 73kbps | 1.04 GB
+Genre: Video Training
+
+Learn how to build modern connected systems on the Microsoft platform using Windows Communication Foundation. Windows Communication Foundation (WCF) is the basis for building connected systems on the Windows platform using .NET, making it possible to build secure, reliable, and transacted services that can be composed into service-oriented applications. This course introduces developers to the WCF platform, exploring the client- and service-side aspects of programming RESTful services.
+
+Table of contents:
+Introducing WCF56m 5s
+Programming Services1h 1m
+Programming Clients1h 14m
+RESTful Services1h 20m
+
+******
+******
+5 <--> Online Business: Simple Business Plan for Financial Freedom - Make Money Online & Enjoy Passive Income
+6 <--> Research and Development in Art, Design and Creativity
+7 <--> Building Responsive Websites with Bootstrap 3 Framework
+8 <--> Java programming from Scratch [Updated]
+9 <--> CSS styling of HTML code
+******
+******
+10 <--> Python Network Programming - Part 1 Build 7 Python Apps (UP 2016)
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/8B4CE3E3D24F3DD/Python_Network_Programming_-_Part_1_Build_7_Python_Apps.part1.rar
+http://nitroflare.com/view/9B98AA64C184399/Python_Network_Programming_-_Part_1_Build_7_Python_Apps.part2.rar
+http://nitroflare.com/view/7325D9AA4565CA0/Python_Network_Programming_-_Part_1_Build_7_Python_Apps.part3.rar
+http://nitroflare.com/view/1867A1963FA4CCA/Python_Network_Programming_-_Part_1_Build_7_Python_Apps.part4.rar
+http://nitroflare.com/view/45E832BC60838F7/Python_Network_Programming_-_Part_1_Build_7_Python_Apps.part5.rar
+http://nitroflare.com/view/4E61CB693F4F3F1/Python_Network_Programming_-_Part_1_Build_7_Python_Apps.part6.rar
+http://nitroflare.com/view/05C905467409487/Python_Network_Programming_-_Part_1_Build_7_Python_Apps.part7.rar
+
+
+Python Network Programming - Part 1 Build 7 Python Apps
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 13.5Hours | 1.65 GB
+Genre: eLearning | Language: English
+
+Learn Python From Scratch! Go from zero programming to building great network apps with Python! Full Python Apps Inside!
+
+Course Went Live: May 2015. Last Update: May 2016 *
+
+* Full Python Apps, Quizzes, Coding Exercises and Final Project are included *
+
+
+
+Before you read what I have to say, see what my students are saying about my courses:
+
+"What an incredible value and learning experience!" by Sean A.
+
+––––––––––––––––––––––––––––––––––––––––––––––––––––––
+
+Do you want to become a Python Developer without having to spend a lot of money on books and boring theoretical courses?
+
+Are you a network professional who wants to start automating network tasks using Python?
+
+Or maybe you're seeking a raise or even a career change?
+
+
+******
+******
+17 <--> IPython Interactive Computing and Visualization Cookbook (Repost)
+http://nitroflare.com/view/0AB3C127F190BEA/1783284811_IPythonsp1.epub
+http://nitroflare.com/view/6A45444A78380E5/1783284811_IPythonsp1.pdf
+https://filejoker.net/ugjgsxpfu8ar
+https://filejoker.net/hvqwzssccni8
+
+
+IPython Interactive Computing and Visualization Cookbook By Cyrille Rossant
+2014 | 512 Pages | ISBN: 1783284811 | EPUB + PDF | 14 MB
+
+
+Leverage the new features of the IPython notebook for interactive web-based big data analysis and visualization Become an expert in high-performance computing and visualization for data analysis and scientific modeling A comprehensive coverage of scientific computing through many hands-on, example-driven recipes with detailed, step-by-step explanations Who This Book Is For Intended to anyone interested in numerical computing and data science: students, researchers, teachers, engineers, analysts, hobbyists... Basic knowledge of Python/NumPy is recommended. Some skills in mathematics will help you understand the theory behind the computational methods.
+******
+******
+18 <--> Python 3 Object-oriented Programming (2nd Revised edition) (Repost)
+http://nitroflare.com/view/46139751335D4F6/1784398780_Pythonsp1.epub
+http://nitroflare.com/view/84B36E0598DD03F/1784398780_Pythonsp1.pdf
+https://filejoker.net/2o0x14dbwmmt
+https://filejoker.net/do6wkwa2fl17
+
+
+Python 3 Object-oriented Programming (2nd Revised edition) By Dusty Phillips
+2015 | 460 Pages | ISBN: 1784398780 | EPUB + PDF | 1 MB + 3 MB
+
+
+Stop writing scripts and start architecting programs Learn the latest Python syntax and libraries A practical, hands-on tutorial that teaches you all about abstract design patterns and how to implement them in Python 3 Who This Book Is For If you're new to object-oriented programming techniques, or if you have basic Python skills and wish to learn in depth how and when to correctly apply object-oriented programming in Python to design software, this is the book for you.
+******
+******
+21 <--> Unity UI Cookbook (Repost)
+http://nitroflare.com/view/28B753987502C9E/1785885820_Unitysp1.pdf
+https://filejoker.net/q4iwqxe0azax
+
+
+Unity UI Cookbook By Francesco Sapio
+2015 | 284 Pages | ISBN: 1785885820 | PDF | 18 MB
+
+
+With the increasing interest in game development, it's essential to design and implement a UI that reflects the game settings and shows the right information to the player. The Unity system is used to create complex and aesthetically pleasing user interfaces in order to give a professional look and feel to a game. Although the new Unity UI system is powerful and quite easy to use, by integrating it with C# scripts, it's possible to realize the potential of this system and bring an impressive UI to games. This guide is an invaluable collection of recipes if you are planning to use Unity to develop a game. Starting with the basic concepts of the UI components, we'll take you all the way through to creating complex interfaces by including animations and dynamics elements. Based on real-world problems, these recipes will start by showing you how to make common UI elements such as counters and healthbars. You will then get a walkthrough of how to manage time using timers, and will learn how to format them. You will move on to decorating and animating the UI elements to vivify them and give them a professional touch. Furthermore, you will be guided into the 3D UI world and into HUD scripting. Finally, you will discover how to implement complex minimaps in the interface.
+******
+******
+22 <--> Jenkins Continuous Integration Cookbook (2nd Edition) (Repost)
+http://nitroflare.com/view/53A23090CF7E3E7/1784390089_Jenkinssp1.epub
+http://nitroflare.com/view/9E1B8AB7EB90A51/1784390089_Jenkinssp1.pdf
+https://filejoker.net/sys6dvz3hzru
+https://filejoker.net/q60fyre3t3i5
+
+
+Jenkins Continuous Integration Cookbook (2nd Edition) By Alan Mark Berg
+2015 | 408 Pages | ISBN: 1784390089 | EPUB + PDF | 19 MB
+
+
+Over 90 recipes to produce great results from Jenkins using pro-level practices, techniques, and solutions If you are a Java developer, a software architect, a technical project manager, a build manager, or a development or QA engineer, then this book is ideal for you. A basic understanding of the software development life cycle and Java development is needed, as well as a rudimentary understanding of Jenkins. Jenkins is an award-wining and one of the most popular Continuous Integration servers in the market today. It was designed to maintain, secure, communicate, test, build, and improve the software development process. This book starts by examining the most common maintenance tasks. This is followed by steps that enable you to enhance the overall security of Jenkins. You will then explore the relationship between Jenkins builds and Maven pom.xml. Then, you will learn how to use plugins to display code metrics and fail builds to improve quality, followed by how to run performance and functional tests against a web application and web services. Finally, you will see what the available plugins are, concluding with best practices to improve quality.
+******
+******
+23 <--> Unreal Engine Game Development Blueprints (Repost)
+http://nitroflare.com/view/93CDBE36F4F40D3/1784397776_Unrealsp1.epub
+http://nitroflare.com/view/EA64C399BCA7ADF/1784397776_Unrealsp1.mobi
+http://nitroflare.com/view/34363E77FF17F31/1784397776_Unrealsp1.pdf
+https://filejoker.net/le3q47uuugfd
+https://filejoker.net/fjjwpwlnty4z
+https://filejoker.net/g3kw3vdrz8jg
+
+
+Unreal Engine Game Development Blueprints By Nicola Valcasara
+2015 | 352 Pages | ISBN: 1784397776 | EPUB, MOBI, PDF | 123 MB
+
+
+Understand what a Blueprint is and how to create a complex visual scripting code Discover the infinite possibilities that Unreal Engine offers, and understand which tool to use, where and when Learn to think like a real game developer in order to create enjoyable and bug-free games using this comprehensive and practical handbook
+******
+******
+25 <--> Learning F# Functional Data Structures and Algorithms (Repost)
+http://nitroflare.com/view/C5A5BA45E4574E7/1783558474_Learningsp1.epub
+http://nitroflare.com/view/E2C585A1A381232/1783558474_Learningsp1.mobi
+http://nitroflare.com/view/3630452140977E4/1783558474_Learningsp1.pdf
+https://filejoker.net/lra3cvhjotqn
+https://filejoker.net/a4nehx1x719p
+https://filejoker.net/gdu81q70k0zp
+
+
+Learning F# Functional Data Structures and Algorithms By Adnan Masood
+2015 | 206 Pages | ISBN: 1783558474 | EPUB, MOBI, PDF | 18 MB
+
+
+Get started with F# and explore functional programming paradigm with data structures and algorithms About This Book Design data structures and algorithms in F# to tackle complex computing problems Understand functional programming with examples and easy-to-follow code samples in F# Provides a learning roadmap of the F# ecosystem with succinct illustrations Who This Book Is For If you have just started your adventure with F#, then this book will help you take the right steps to become a successful F# coder. An intermediate knowledge of imperative programming concepts, and a basic understanding of the algorithms and data structures in .NET environments using the C# language and BCL (Base Class Library), would be helpful.
+******
+******
+27 <--> Linear Algebra for Computational Sciences and Engineering
+http://www.springer.com/gp/book/9783319403397
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/E4858530B08B71B/10.1007%40978-3-319-40341-0.pdf
+
+
+Linear Algebra for Computational Sciences and Engineering
+Springer | Theoretical Computer Science | Aug 16, 2016 | ISBN-10: 3319403397 | 464 pages | pdf | 8.5 mb
+
+Authors: Neri, Ferrante
+Covers all aspects of linear algebra from the perspective of computational science and engineering
+Provides both a technical approach and an informal interpretation of mathematics
+Includes examples with definitions and theorems
+Presents a chapter where the study of an electrical network is shown as an algebraic exercise
+
+This book presents the main concepts of linear algebra from the viewpoint of applied scientists such as computer scientists and engineers, without compromising on mathematical rigor. Based on the idea that computational scientists and engineers need, in both research and professional life, an understanding of theoretical concepts of mathematics in order to be able to propose research advances and innovative solutions, every concept is thoroughly introduced and is accompanied by its informal interpretation. Furthermore, most of the theorems included are first rigorously proved and then shown in practice by a numerical example. When appropriate, topics are presented also by means of pseudocodes, thus highlighting the computer implementation of algebraic theory.
+It is structured to be accessible to everybody, from students of pure mathematics who are approaching algebra for the first time to researchers and graduate students in applied sciences who need a theoretical manual of algebra to successfully perform their research. Most importantly, this book is designed to be ideal for both theoretical and practical minds and to offer to both alternative and complementary perspectives to study and understand linear algebra.
+
+Number of Illustrations and Tables
+8 b/w illustrations
+Topics
+Mathematics of Computing
+Appl. Mathematics / Computational Methods of Engineering
+Linear and Multilinear Algebras, Matrix Theory
+
+******
+******
+28 <--> Fast Data Processing with Spark (2nd Revised edition) (Repost)
+http://nitroflare.com/view/4A02E1EC5A198DC/178439257X_Fastsp1.pdf
+https://filejoker.net/n1kqws73pb05
+
+
+Fast Data Processing with Spark (2nd Revised edition) By Krishna Sankar, Holden Karau
+2015 | 184 Pages | ISBN: 178439257X | PDF | 9 MB
+
+
+Perform real-time analytics using Spark in a fast, distributed, and scalable way About This Book Develop a machine learning system with Spark's MLlib and scalable algorithms Deploy Spark jobs to various clusters such as Mesos, EC2, Chef, YARN, EMR, and so on This is a step-by-step tutorial that unleashes the power of Spark and its latest features Who This Book Is For Fast Data Processing with Spark - Second Edition is for software developers who want to learn how to write distributed programs with Spark. It will help developers who have had problems that were too big to be dealt with on a single computer. No previous experience with distributed programming is necessary. This book assumes knowledge of either Java, Scala, or Python.
+******
+******
+35 <--> Authoring Real-time Destruction in Unity 5
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/8187C82FEDB5AF7/Authoring_Real-time_Destruction_in_Unity_5.part1.rar
+http://nitroflare.com/view/EC122FD61EA2704/Authoring_Real-time_Destruction_in_Unity_5.part2.rar
+http://nitroflare.com/view/F444BB197C3A03C/Authoring_Real-time_Destruction_in_Unity_5.part3.rar
+http://nitroflare.com/view/7E9D1E2304B400C/Authoring_Real-time_Destruction_in_Unity_5.part4.rar
+http://nitroflare.com/view/AE288DF6E4222C2/Authoring_Real-time_Destruction_in_Unity_5.part5.rar
+
+
+Authoring Real-time Destruction in Unity 5
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 13M | 598 MB
+Genre: eLearning | Language: English
+
+Learn how to create a flexible realtime destruction system in Unity 5. In this course, game creators will learn how to create scalable choreographed destruction systems using rigid body dynamics, physics joints, particle systems, and C# scripts. R…
+
+Realtime destruction systems are a great way to enhance gameplay for many different types of games, and thanks to the performance of modern physics engines and increased power of gaming hardware, these systems are suitable for a wide range of applications. In this course, Authoring Real-time Destruction in Unity 5, you'll create a destruction FX system to simulate a wooden bridge collapse using rigid bodies, physics joints, and particle effects, as well as write some C# code to provide art direction control and allow you to choreograph the destruction sequence. First, you'll add different collider shapes to objects in the scene to determine best approximate fit. Next, you'll learn and understand the reasons for using fixed physics joints and then create one manually to see how they work. Finally, you'll learn about the benefits of particle effects and then create a debris emitter and dust emitter. By the end of this course, you'll be able to create a wide range of destruction systems, from bridges and buildings, to environments and vehicles. Required Software: Unity v5.3.5.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+36 <--> Soft Skills: The Software Developer's Life Manual
+http://avxhome.in/blogs/FenixN
+http://nitroflare.com/view/3CD26EDB2AFB429/So.Sk.SO.De.Ma.part1.rar
+http://nitroflare.com/view/5FD00DAF4D72312/So.Sk.SO.De.Ma.part2.rar
+
+
+Soft Skills: The Software Developer's Life Manual
+Audio CDs in M4A / English: AAC, 62 kb/s (2 ch) | Duration: 13:19:45 | 2016 | ISBN-10: N/A | ASIN: B0158SJ3EM | 366 MB
+Genre: Software
+
+For most software developers, coding is the fun part. The hard bits are dealing with clients, peers, and managers and staying productive, achieving financial security, keeping yourself in shape, and finding true love. This book is here to help.
+
+Soft Skills: The Software Developer's Life Manual is a guide to a well-rounded, satisfying life as a technology professional. In it, developer and life coach John Sonmez offers advice to developers on important subjects like career and productivity, personal finance and investing, and even fitness and relationships. Arranged as a collection of 71 short chapters, this fun listen invites you to dip in wherever you like. A "Taking Action" section at the end of each chapter tells you how to get quick results. Soft Skills will help make you a better programmer, a more valuable employee, and a happier, healthier person.
+
+John Sonmez (Author, Narrator)
+
+Welcome to the best eLearning video (English, German, French, Spanish language) and many more: LINK
+Do not forget to check my blog! Updated regularly! Add in bookmarks my blog :)
+PM me if Links not working!
+
+No mirrors pls!
+
+******
+******
+40 <--> Mathematical Modelling
+http://www.springer.com/gp/book/9783319278346
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/BF99EB4F072BC16/10.1007%40978-3-319-27836-0.pdf
+
+
+Mathematical Modelling
+Springer | Mathematics | August 15, 2016 | ISBN-10: 3319278347 | 242 pages | pdf | 4.68 mb
+
+Authors: Heiliö, M., Lähivaara, T., Laitinen, E., Mantere, T., Merikoski, J., Pohjolainen, S., Raivio, K., Silvennoinen, R., Suutala, A., Tarvainen, T., Tiihonen, T., Tuomela, J., Turunen, E., Vauhkonen, M.
+Editors: Pohjolainen, Seppo (Ed.)
+Covers the most important classical and modern methods of mathematical modelling
+Can be used as textbook or as complimentary material in mathematical modelling courses
+Contains 31 project titles as well as 124 problems sets
+
+This book provides a thorough introduction to the challenge of applying mathematics in real-world scenarios. Modelling tasks rarely involve well-defined categories, and they often require multidisciplinary input from mathematics, physics, computer sciences, or engineering. In keeping with this spirit of modelling, the book includes a wealth of cross-references between the chapters and frequently points to the real-world context.
+The book combines classical approaches to modelling with novel areas such as soft computing methods, inverse problems, and model uncertainty. Attention is also paid to the interaction between models, data and the use of mathematical software. The reader will find a broad selection of theoretical tools for practicing industrial mathematics, including the analysis of continuum models, probabilistic and discrete phenomena, and asymptotic and sensitivity analysis.
+
+Number of Illustrations and Tables
+43 b/w illustrations, 13 illustrations in colour
+Topics
+Mathematical Modeling and Industrial Mathematics
+Appl. Mathematics / Computational Methods of Engineering
+Computational Science and Engineering
+Simulation and Modeling
+
+Click Here to Buy the Hardcover from Springer
+
+Purchase a Premium account from Download Link for Multiple/High Speed And Support :)
+
+Click Here for More books
+******
+******
+41 <--> Cassandra Data Modeling and Analysis (Repost)
+http://nitroflare.com/view/33F1088DF894104/1783988886_Cassandraspr.epub
+http://nitroflare.com/view/9DAF37A0A3A5324/1783988886_Cassandraspr.pdf
+https://filejoker.net/2nmv8e594u2z
+https://filejoker.net/t84uhreonzpp
+
+
+Cassandra Data Modeling and Analysis By C.Y. Kan
+2014 | 196 Pages | ISBN: 1783988886 | EPUB + PDF | 28 MB
+
+
+Design, build, and analyze your data intricately using Cassandra About This Book Build professional data models in Cassandra using CQL and appropriate indexes Grasp the Model-By-Query techniques through working examples Step-by-step tutorial of a stock market technical analysis application Who This Book Is For If you are interested in Cassandra and want to develop real-world analysis applications, then this book is perfect for you. It would be helpful to have prior knowledge of NoSQL database.
+******
+******
+42 <--> Clojure Reactive Programming (Repost)
+http://nitroflare.com/view/F78C7182B460526/1783986662_Clojurespr.epub
+http://nitroflare.com/view/3F115C88AD4E69C/1783986662_Clojurespr.mobi
+http://nitroflare.com/view/81494FBBE0299BD/1783986662_Clojurespr.pdf
+https://filejoker.net/vta8oxbago1k
+https://filejoker.net/7i3ragzt87p9
+https://filejoker.net/1gysf6zskbe5
+
+
+Clojure Reactive Programming By Leonardo Borges
+2015 | 232 Pages | ISBN: 1783986662 | EPUB, MOBI, PDF | 15 MB
+
+
+Reactive Programming (RP) is central to many concurrent systems. It endeavors to make the process of developing highly-concurrent, event-driven, and asynchronous applications simpler and less error-prone. RP comes in many flavors and we will look at some of them in this book. Clojure Reactive Programming is a practical guide aimed at exploring RP. It starts by describing Functional Reactive Programming (FRP) and its formulations, as well as how it inspired Compositional Event Systems (CES). It also presents several examples of Reactive applications implemented in different frameworks, allowing you to develop an understanding of the subject as well as learn how to develop your ability to work with time-varying values. By the end of the book, you will be equipped to solve real-world problems and have a clear understanding of when and how you should use different the approaches that are shown in the book.
+******
+******
+54 <--> Python for Trading & Investing
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/A1F281F38A95C5F/Python_for_Trading_%26_Investing.part1.rar
+http://nitroflare.com/view/E24958404B170B5/Python_for_Trading_%26_Investing.part2.rar
+http://nitroflare.com/view/F287D2156B6FCE1/Python_for_Trading_%26_Investing.part3.rar
+http://nitroflare.com/view/DF62E3F9A9F4C2C/Python_for_Trading_%26_Investing.part4.rar
+http://nitroflare.com/view/83D01867AB65B81/Python_for_Trading_%26_Investing.part5.rar
+
+
+Python for Trading & Investing
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5 Hours | 746 MB
+Genre: eLearning | Language: English
+
+Learn to use Python for analyzing data and trade in Stock Markets
+
+There are so many different trading or investing approaches as people in the market.
+
+Many existing tools support the most common ones, but if you really want to success with an innovative practice, you have to build it on your own.
+
+Due to its characteristics, Python is being adopted by the financial industry as its reference programming language.
+
+But Python is not expensive as other financials tools are, in fact it is completely free. And it is not difficult to learn. So, why don't give it a try?
+
+Learn how to apply Python to Trading and Investing with this Hands-on Course.
+
+Ipython Working Environment
+Main Data Analysis Python Libraries
+How to import/export Financial Data
+Data Munging
+Customized Charts
+Different Projects applying this knowledge
+Improve your Programming and Investing Skills at a time.
+
+Either if you can already program and are interested in Finance. Or if you are already a Finance practitioner and are interested in applying programming to your career. This is a course for you.
+
+In addition to using this new knowledge for your own investments, new opportunities will widely open up for you if you are able to combine these two disciplines.
+
+The volume of data is increasing at not seen before rates. And new algorithms and tools are needed to get the most of it. It is difficult to imagine a more promising skill in your career path than learning to manage and analyze data through programming.
+
+Content and Overview
+
+This course will start with a review of main Python libraries to use for Data Analysis.
+
+Although due to the readability of Python it is not necessary to have previous knowledge of it. It is recommended at least to have a previous contact with it.
+
+The main goal is to focus in the application of it to Finance concepts. So not much time will be addressed to common functions or data structures. You will be able, anyway, to send any doubt to the Instructor and if necessary new lectures will be upload replying most frequently asked questions.
+
+The best way to learn is doing. So in the second part of the course, actual applications with the complete code will be developed. You will be able to test and modify them with your desired parameters or strategies and even propose new ones. Building, in this way, a community around the course that will help us to grow up individually.
+
+New projects will be added periodically in the future, but the course price will go up accordingly. So enroll now, It will be your best investment.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+
+
 2016-07-15
 Swift Quick Syntax Reference (Repost)
 Solaris 9 System Administration Training Guide
