@@ -1,20 +1,57 @@
+2016-07-21
+******
+0 <--> High Performance Computing: Second Latin American Conference, CARLA 2015
+******
+******
+11 <--> Advances in Face Detection and Facial Image Analysis
+http://nitroflare.com/view/FFDA574BE10CF6F/3319259563.pdf
+https://filejoker.net/ecjzqeg484zs
+
+
+Michal Kawulok and M. Emre Celebi, "Advances in Face Detection and Facial Image Analysis" 
+English | ISBN: 3319259563 | 2016 | 446 pages | PDF | 12 MB
+
+This book presents the state-of-the-art in face detection and analysis. It outlines new research directions, including in particular psychology-based facial dynamics recognition, aimed at various applications such as behavior analysis, deception detection, and diagnosis of various psychological disorders. Topics of interest include face and facial landmark detection, face recognition, facial expression and emotion analysis, facial dynamics analysis, face classification, identification, and clustering, and gaze direction and head pose estimation, as well as applications of face analysis.
+******
+******
+35 <--> Machine Learning with Spark (Repost)
+http://nitroflare.com/view/DC35BC54ECE9A8C/1783288515_Machinesp1.pdf
+https://filejoker.net/wr4m383zyf9d
+
+
+Machine Learning with Spark By Nick Pentreath
+2015 | 338 Pages | ISBN: 1783288515 | PDF | 5 MB
+
+
+Key Features Follow real-world examples to learn how to develop your own machine learning systems with Spark A practical tutorial with real-world use cases allowing you to develop your own machine learning systems with Spark Combine various techniques and models into an intelligent machine learning system Explore and use Spark’s powerful range of features to load, analyze, clean, and your data
+******
+******
+54 <--> Ten Steps to Linux Survival: Essentials for Navigating the Bash Jungle
+
+James Lehmer, "Ten Steps to Linux Survival: Essentials for Navigating the Bash Jungle" 
+2016 | ISBN: 1491959185, 9781491959183 | 74 pages | PDF, EPUB | 12 MB
+
+Linux systems are everywhere today, even in companies once considered "pure Windows." If you’re a sysadmin, network administrator, or developer in a small Windows shop, you may have to jump in and fix a system problem when your site goes down. What if you have no Linux knowledge? This short guide provides tips to help you survive.
+
+Linux systems may appear in your shop as virtual machines or in the cloud, including web servers, databases, mobile device managers, version control, and monitoring systems. When one of them falters, this primer leads you through some diagnostic and recovery tasks so you can quickly get your site back up.
+Connect to a Linux system with OpenSSH and PuTTY secure shells
+List files and directories, and move around within the file system
+Safely inspect the file contents without changing them
+Narrow your search by using commands to locate specific files
+Use the grep command to search for error messages inside a file
+Determine real-time system state to find underlying problems
+Examine disk utilization and zero in on space-hogging files
+Transfer suspect files from Linux to Windows for later analysis
+Use commands to start, stop, restart, or even kill unresponsive services
+Know where to find help when troubleshooting isn’t enough
+
+Jim Lehmer has worked with computer systems for over three decades. He’s been involved with software development in various roles, including programmer, systems programmer, software engineer, team lead, and architect.
+******
+
+
 2016-07-18
 ******
 0 <--> Raspberry Pi LED Blueprints (Repost)
-http://nitroflare.com/view/A6385C2721898B8/178217575X_Raspberrysp1.epub
-http://nitroflare.com/view/7487C9CE61A716C/178217575X_Raspberrysp1.mobi
-http://nitroflare.com/view/09F15164F66E81B/178217575X_Raspberrysp1.pdf
-https://filejoker.net/21kkcc0jxk2e
-https://filejoker.net/61g09gf99sg7
-https://filejoker.net/g2bxj0czzmgl
-
-
-Raspberry Pi LED Blueprints By Agus Kurniawan
-2015 | 180 Pages | ISBN: 178217575X | EPUB, MOBI, PDF | 34 MB
-
-
-Design, build, and test LED-based projects using the Raspberry Pi About This Book Implement real LED-based projects for Raspberry Pi Learn to interface various LED modules such as LEDs, 7-segment, 4-digits 7 segment, and dot matrix to Raspberry Pi Get hands-on experience by exploring real-time LEDs with this project-based book Who This Book Is For This book is for those who want to learn how to build Raspberry Pi projects utilising LEDs, 7 segment, 4-digits 7 segment, and dot matrix modules. You also will learn to implement those modules in real applications, including interfacing with wireless modules and the Android mobile app. However, you don't need to have any previous experience with the Raspberry Pi or Android platforms.
-******
 ******
 1 <--> Getting Started with Fluidinfo [Repost]
 http://avaxhm.com/blogs/tanas.olesya
@@ -31,8 +68,6 @@ Imagine a public storage system that has a place online for structured data abou
 
 ******
 ******
-2 <--> ClickBank Money Machine: Make Money Online With ClickBank Affiliate Marketing
-3 <--> Craft Pricing Power - 12 Proven Pricing Principles For Small Business Marketers
 4 <--> Pluralsight - WCF Fundamentals
 http://avxhome.se/blogs/house23
 http://nitroflare.com/view/5095392182FDAA6/WCF_Funde.part1.rar
@@ -55,13 +90,6 @@ Programming Services1h 1m
 Programming Clients1h 14m
 RESTful Services1h 20m
 
-******
-******
-5 <--> Online Business: Simple Business Plan for Financial Freedom - Make Money Online & Enjoy Passive Income
-6 <--> Research and Development in Art, Design and Creativity
-7 <--> Building Responsive Websites with Bootstrap 3 Framework
-8 <--> Java programming from Scratch [Updated]
-9 <--> CSS styling of HTML code
 ******
 ******
 10 <--> Python Network Programming - Part 1 Build 7 Python Apps (UP 2016)

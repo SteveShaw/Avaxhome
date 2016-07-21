@@ -1,3 +1,260 @@
+2016-0721
+******
+0 <--> Ink Sandwiches, Electric Worms, and 37 Other Experiments for Saturday Science
+******
+6 <--> Linear Functional Analysis for Scientists and Engineers
+http://avxhome.in/blogs/AlenMiler
+http://nitroflare.com/view/A61C2F5ABB5442A/9811009708.pdf
+https://filejoker.net/5ftpm9tga1vs
+
+
+Linear Functional Analysis for Scientists and Engineers by Balmohan V. Limaye
+English | 7 July 2016 | ISBN: 9811009708 | 270 Pages | PDF (True) | 3.07 MB
+
+This book provides a concise and meticulous introduction to functional analysis. Since the topic draws heavily on the interplay between the algebraic structure of a linear space and the distance structure of a metric space, functional analysis is increasingly gaining the attention of not only mathematicians but also scientists and engineers. The purpose of the text is to present the basic aspects of functional analysis to this varied audience, keeping in mind the considerations of applicability. A novelty of this book is the inclusion of a result by Zabreiko, which states that every countably subadditive seminorm on a Banach space is continuous. Several major theorems in functional analysis are easy consequences of this result.
+
+The entire book can be used as a textbook for an introductory course in functional analysis without having to make any specific selection from the topics presented here. Basic notions in the setting of a metric space are defined in terms of sequences. These include total boundedness, compactness, continuity and uniform continuity. Offering concise and to-the-point treatment of each topic in the framework of a normed space and of an inner product space, the book represents a valuable resource for advanced undergraduate students in mathematics, and will also appeal to graduate students and faculty in the natural sciences and engineering. The book is accessible to anyone who is familiar with linear algebra and real analysis.
+
+My Blog with Updates!
+
+******
+******
+10 <--> Stochastic Analysis for Finance with Simulations
+http://nitroflare.com/view/B41EEA137DC3AB5/10.1007%40978-3-319-34072-2.pdf
+http://nitroflare.com/view/CA8CC4054A51DCE/10.1007%40978-3-662-48792-1.pdf
+http://www.springer.com/gp/book/9783319255873
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/FA0A3AA286BFB2D/10.1007%40978-3-319-25589-7.pdf
+
+
+Stochastic Analysis for Finance with Simulations
+Springer | Mathematics | August 14, 2016 | ISBN-10: 3319255878 | 657 pages | pdf | 11.96 mb
+
+Authors: Choe, Geon Ho
+Presents the mathematical methods required for pricing financial derivatives
+Encourages hands-on experience and builds intuition by explaining theoretical concepts with computer simulations
+Covers mathematical prerequisites, including measure theory, ordinary differential equations, and partial differential equations
+
+This book is an introduction to stochastic analysis and quantitative finance; it includes both theoretical and computational methods. Topics covered are stochastic calculus, option pricing, optimal portfolio investment, and interest rate models. Also included are simulations of stochastic phenomena, numerical solutions of the Black–Scholes–Merton equation, Monte Carlo methods, and time series. Basic measure theory is used as a tool to describe probabilistic phenomena. 
+The level of familiarity with computer programming is kept to a minimum. To make the book accessible to a wider audience, some background mathematical facts are included in the first part of the book and also in the appendices. This work attempts to bridge the gap between mathematics and finance by using diagrams, graphs and simulations in addition to rigorous theoretical exposition. Simulations are not only used as the computational method in quantitative finance, but they can also facilitate an intuitive and deeper understanding of theoretical concepts. 
+Stochastic Analysis for Finance with Simulations is designed for readers who want to have a deeper understanding of the delicate theory of quantitative finance by doing computer simulations in addition to theoretical study. It will particularly appeal to advanced undergraduate and graduate students in mathematics and business, but not excluding practitioners in finance industry. 
+
+Number of Illustrations and Tables
+82 b/w illustrations, 107 illustrations in colour
+Topics
+Mathematics (general)
+Quantitative Finance
+
+Recommended Titles :
+Approximation Methods in Probability Theory (2016)
+Mathematical Analysis I, Second Edition (2015)
+
+Click Here to Buy the Hardcover from Springer
+
+Purchase a Premium account from Download Link for Multiple/High Speed And Support :)
+
+Click Here for More books
+******
+******
+11 <--> Scientific Computing in Electrical Engineering
+http://www.springer.com/gp/book/9783319303987
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/526B6D77AF9AB4C/10.1007%40978-3-319-30399-4.pdf
+
+
+Scientific Computing in Electrical Engineering: SCEE 2014, Wuppertal, Germany, July 2014
+Springer | Mathematics | Jun 10 2016 | ISBN-10: 3319303988 | 256 pages | pdf | 8.44 mb
+
+Editors: Bartel, A., Clemens, M., Günther, M., ter Maten, E.J.W. (Eds.)
+Covers topics in scientific computing in electrical engineering from both academia and industry, as well as mathematics and electrical engineering perspective
+Shows state of the art in SCEE
+Includes advanced topics of MOR and UQ in methodology
+
+This book is a collection of selected papers presented at the 10th International Conference on Scientific Computing in Electrical Engineering (SCEE), held in Wuppertal, Germany in 2014. The book is divided into five parts, reflecting the main directions of SCEE 2014: 1. Device Modeling, Electric Circuits and Simulation, 2. Computational Electromagnetics, 3. Coupled Problems, 4. Model Order Reduction, and 5. Uncertainty Quantification. Each part starts with a general introduction followed by the actual papers. 
+The aim of the SCEE 2014 conference was to bring together scientists from academia and industry, mathematicians, electrical engineers, computer scientists, and physicists, with the goal of fostering intensive discussions on industrially relevant mathematical problems, with an emphasis on the modeling and numerical simulation of electronic circuits and devices, electromagnetic fields, and coupled problems. The methodological focus was on model order reduction and uncertainty quantification.
+
+Number of Illustrations and Tables
+58 b/w illustrations, 67 illustrations in colour
+Topics
+Mathematical Modeling and Industrial Mathematics
+Computational Science and Engineering
+Appl. Mathematics / Computational Methods of Engineering
+Computer-Aided Engineering (CAD, CAE) and Design
+Simulation and Modeling
+Numerical and Computational Physics
+
+Click Here to Buy the Hardcover from Springer
+
+Purchase a Premium account from Download Link for Multiple/High Speed And Support :)
+
+Click Here for More books
+******
+******
+13 <--> Divergent Series, Summability and Resurgence III
+http://www.springer.com/gp/book/9783319289991
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/46301D1295A1EF3/10.1007%40978-3-319-29000-3.pdf
+
+
+Divergent Series, Summability and Resurgence III: Resurgent Methods and the First Painlevé Equation
+Springer | Analysis | Jun 29 2016 | ISBN-10: 3319289993 | 230 pages | pdf | 2.39 mb
+
+Authors: Delabaere, Eric
+Features a thorough resurgent analysis of the celebrated non-linear differential equation Painlevé I
+Includes new specialized results in the theory of resurgence
+For the first time, higher order Stokes phenomena of Painlevé I are made explicit by means of the so-called bridge equation
+
+The aim of this volume is two-fold. First, to show how the resurgent methods introduced in volume 1 can be applied efficiently in a non-linear setting; to this end further properties of the resurgence theory must be developed. Second, to analyze the fundamental example of the First Painlevé equation. The resurgent analysis of singularities is pushed all the way up to the so-called “bridge equation”, which concentrates all information about the non-linear Stokes phenomenon at infinity of the First Painlevé equation. 
+
+The third in a series of three, entitled Divergent Series, Summability and Resurgence, this volume is aimed at graduate students, mathematicians and theoretical physicists who are interested in divergent power series and related problems, such as the Stokes phenomenon. The prerequisites are a working knowledge of complex analysis at the first-year graduate level and of the theory of resurgence, as presented in volume 1.
+
+Number of Illustrations and Tables
+21 b/w illustrations, 14 illustrations in colour
+Topics
+Sequences, Series, Summability
+Ordinary Differential Equations
+Functions of a Complex Variable
+Special Functions
+
+Click Here to Buy the Hardcover from Springer
+
+Purchase a Premium account from Download Link for Multiple/High Speed And Support :)
+
+Click Here for More books
+******
+******
+14 <--> Divergent Series, Summability and Resurgence II
+http://www.springer.com/gp/book/9783319290744
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/9DB0DCC752FBE91/10.1007%40978-3-319-29075-1.pdf
+
+
+Divergent Series, Summability and Resurgence II: Simple and Multiple Summability
+Springer | Analysis | Jun 29 2016 | ISBN-10: 3319290746 | 272 pages | pdf | 3.45 mb
+
+Authors: Loday-Richaud, Michèle
+Provides a thorough discussion and comparison of the theories of k-summability and multisummability
+Can be treated both as a reference book and as a tutorial on the theories of summability and their links to the formal and local analytic aspects of linear ordinary differential equations
+Includes a discussion of the linear Stokes phenomenon
+The theories are illustrated with many examples and over 70 color figures
+
+Addressing the question how to “sum” a power series in one variable when it diverges, that is, how to attach to it analytic functions, the volume gives answers by presenting and comparing the various theories of k-summability and multisummability. These theories apply in particular to all solutions of ordinary differential equations.
+The volume includes applications, examples and revisits, from a cohomological point of view, the group of tangent-to-identity germs of diffeomorphisms of C studied in volume 1. With a view to applying the theories to solutions of differential equations, a detailed survey of linear ordinary differential equations is provided, which includes Gevrey asymptotic expansions, Newton polygons, index theorems and Sibuya’s proof of the meromorphic classification theorem that characterizes the Stokes phenomenon for linear differential equations.
+This volume is the second in a series of three, entitled Divergent Series, Summability and Resurgence. It is aimed at graduate students and researchers in mathematics and theoretical physics who are interested in divergent series, Although closely related to the other two volumes, it can be read independently.
+
+Number of Illustrations and Tables
+64 illustrations in colour
+Topics
+Sequences, Series, Summability
+Ordinary Differential Equations
+Difference and Functional Equations
+Dynamical Systems and Ergodic Theory
+
+Click Here to Buy the Hardcover from Springer
+
+Purchase a Premium account from Download Link for Multiple/High Speed And Support :)
+
+Click Here for More books
+******
+******
+20 <--> From Particle Systems to Partial Differential Equations III
+http://avxhome.in/blogs/AlenMiler
+http://nitroflare.com/view/14C34C5CD86CE25/3319321420.pdf
+https://filejoker.net/igv3aaicr6xr
+
+
+From Particle Systems to Partial Differential Equations III: Particle Systems and PDEs III, Braga, Portugal, December 2014 (Springer Proceedings in Mathematics & Statistics) by Patrícia Gonçalves
+English | 4 Aug. 2016 | ISBN: 3319321420 | 360 Pages | PDF (True) | 5.14 MB
+
+The main focus of this book is on different topics in probability theory, partial differential equations and kinetic theory, presenting some of the latest developments in these fields. It addresses mathematical problems concerning applications in physics, engineering, chemistry and biology that were presented at the Third International Conference on Particle Systems and Partial Differential Equations, held at the University of Minho, Braga, Portugal in December 2014. 
+
+The purpose of the conference was to bring together prominent researchers working in the fields of particle systems and partial differential equations, providing a venue for them to present their latest findings and discuss their areas of expertise. Further, it was intended to introduce a vast and varied public, including young researchers, to the subject of interacting particle systems, its underlying motivation, and its relation to partial differential equations. 
+
+This book will appeal to probabilists, analysts and those mathematicians whose work involves topics in mathematical physics, stochastic processes and differential equations in general, as well as those physicists whose work centers on statistical mechanics and kinetic theory.
+
+My Blog with Updates!
+
+******
+******
+32 <--> Time Series Econometrics
+http://nitroflare.com/view/5668AF6F875C47A/3319328611.pdf
+https://filejoker.net/goocppqbapgy
+
+
+Klaus Neusser, "Time Series Econometrics" 
+2016 | ISBN-10: 3319328611 | 409 pages | PDF | 6 MB
+
+This text presents modern developments in time series analysis and focuses on their application to economic problems. The book first introduces the fundamental concept of a stationary time series and the basic properties of covariance, investigating the structure and estimation of autoregressive-moving average (ARMA) models and their relations to the covariance structure. The book then moves on to non-stationary time series, highlighting its consequences for modeling and forecasting and presenting standard statistical tests and regressions. Next, the text discusses volatility models and their applications in the analysis of financial market data, focusing on generalized autoregressive conditional heteroskedastic (GARCH) models. The second part of the text devoted to multivariate processes, such as vector autoregressive (VAR) models and structural vector autoregressive (SVAR) models, which have become the main tools in empirical macroeconomics. The text concludes with a discussion of co-integrated models and the Kalman Filter, which is being used with increasing frequency. Mathematically rigorous, yet application-oriented, this self-contained text will help students develop a deeper understanding of theory and better command of the models that are vital to the field. Assuming a basic knowledge of statistics and/or econometrics, this text is best suited for advanced undergraduate and beginning graduate students.
+******
+******
+35 <--> Free Boundary Problems in PDEs and Particle Systems
+http://nitroflare.com/view/D9F7AA301FD3D95/3319333690.pdf
+https://filejoker.net/ughogpcra28a
+
+
+Gioia Carinci, Anna De Masi, "Free Boundary Problems in PDEs and Particle Systems" 
+2016 | ISBN-10: 3319333690 | 120 pages | PDF | 2 MB
+
+In this volume a theory for models of transport in the presence of a free boundary is developed.
+Macroscopic laws of transport are described by PDE's. 
+When the system is open, there are several mechanisms to couple the system with the external forces. Here a class of systems where the interaction with the exterior takes place in correspondence of a free boundary is considered. Both continuous and discrete models sharing the same structure are analysed. 
+In Part I a free boundary problem related to the Stefan Problem is worked out in all details. For this model a new notion of relaxed solution is proposed for which global existence and uniqueness is proven. It is also shown that this is the hydrodynamic limit of the empirical mass density of the associated particle system. In Part II several other models are discussed. The expectation is that the results proved for the basic model extend to these other cases.
+All the models discussed in this volume have an interest in problems arising in several research fields such as heat conduction, queuing theory, propagation of fire, interface dynamics, population dynamics, evolution of biological systems with selection mechanisms.
+In general researchers interested in the relations between PDE’s and stochastic processes can find in this volume an extension of this correspondence to modern mathematical physics.
+******
+
+
+2016-0719
+******
+0 <--> NIST Handbook of Mathematical Functions (Repost)
+******
+******
+7 <--> Theory of Numbers: A Textbook
+http://nitroflare.com/view/B8912C3EC891C10/184265361X.rar
+https://filejoker.net/9h73dc5va61x
+
+
+K. Ramachandra, "Theory of Numbers: A Textbook" 
+English | ISBN: 184265361X | 2007 | 291 pages | PDF, DJVU | 23 MB
+
+"Theory of Numbers: A Textbook" is aimed at students of Mathematics who are graduates or even undergraduates. Very little prerequisites are needed. The reader is expected to know the theory of functions of a real variable and in some chapters complex integration and some simple principles of complex function theory are assumed. The entire book is self contained except theorems 7 and 9 of chapter 11 which are assumed. The most ambitious chapter is chapter 11 where the most attractive result on difference between consecutive primes is proved. References to the latest developments like Heath-Brown's work and the work of R.C. Baker, G. Harman and J. Pintz alongwith readable accounts of Brun's sieve and also of Apery's Theorem on irrationality of zeta (3) are given. Finally the reader is acquainted with Montgomery-Vaughan Theorem in the last chapter. It is hoped that the reader will enjoy the leisurely style of presentation of many important results.
+******
+******
+23 <--> Fuzzy Statistical Decision-Making
+http://www.springer.com/gp/book/9783319390123
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/0B1FE3014E7996C/10.1007%40978-3-319-39014-7.pdf
+
+
+Fuzzy Statistical Decision-Making: Theory and Applications
+Springer | Engineering | August 16, 2016 | ISBN-10: 3319390120 | 356 pages | pdf | 8.08 mb
+
+Editors: Kahraman, Cengiz, Kabak, Özgür (Eds.)
+Provides readers with the necessary tools for making inference with fuzzy data
+Extends all the main aspects of classical statistical decision-making to its fuzzy counterpart
+Includes relevant numerical examples and case studies
+
+This book offers a comprehensive reference guide to fuzzy statistics and fuzzy decision-making techniques. It provides readers with all the necessary tools for making statistical inference in the case of incomplete information or insufficient data, where classical statistics cannot be applied. The respective chapters, written by prominent researchers, explain a wealth of both basic and advanced concepts including: fuzzy probability distributions, fuzzy frequency distributions, fuzzy Bayesian inference, fuzzy mean, mode and median, fuzzy dispersion, fuzzy p-value, and many others. To foster a better understanding, all the chapters include relevant numerical examples or case studies. Taken together, they form an excellent reference guide for researchers, lecturers and postgraduate students pursuing research on fuzzy statistics. Moreover, by extending all the main aspects of classical statistical decision-making to its fuzzy counterpart, the book presents a dynamic snapshot of the field that is expected to stimulate new directions, ideas and developments.
+
+Number of Illustrations and Tables
+79 b/w illustrations, 5 illustrations in colour
+Topics
+Computational Intelligence
+Statistical Theory and Methods
+Operation Research/Decision Theory
+
+Click Here to Buy the Hardcover from Springer
+
+Purchase a Premium account from Download Link for Multiple/High Speed And Support :)
+
+Click Here for More books
+******
+
 
 20160715
 
