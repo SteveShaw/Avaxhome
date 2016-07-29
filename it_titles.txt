@@ -1,3 +1,554 @@
+2016-07-27
+******
+0 <--> Computer Systems: A Programmer's Perspective (2nd Edition) (Repost)
+
+Computer Systems: A Programmer's Perspective by Randal E. Bryant, David R. O'Hallaron
+English | 2010 | ISBN: 0136108040 | 1080 pages | PDF | 6,75 Mb
+
+******
+2 <--> Puppet 4: Language Essentials
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/CD0EE63D38B4CB1/Puppet_4_Language_Essentials.part1.rar
+http://nitroflare.com/view/EEF41C0F087FB53/Puppet_4_Language_Essentials.part2.rar
+http://nitroflare.com/view/2C0914FCA9DF68A/Puppet_4_Language_Essentials.part3.rar
+http://nitroflare.com/view/6D8F5E1504CFD30/Puppet_4_Language_Essentials.part4.rar
+
+
+Puppet 4: Language Essentials
+July 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3Hours 49M | 389 MB
+Genre: eLearning | Language: English
+
+Puppet is and has been the de-facto configuration management in Linux and Unix systems. With Puppet 4, it is even bigger and stronger and this course teaches you how to make best use of the Puppet language.
+
+As your server estate grows with more and more virtual systems, so does the difficulty of trying to keep your configurations consistent and reliable. The days of having a few servers to manage are long-gone, and there seems to be an array of different distributions that all require specific tools. Puppet is a mature and respected configuration management tool that is available free of charge as open-source software. In this course, Puppet 4: Language Essentials, you can learn Puppet quickly as the language is written simply with administrators and not developers in mind. First you'll learn how to provide consistent and reliable configuration results, and look at defining configurations as resources. Next, you'll learn to use logic to set the correct service names. Finally you'll be looking at how to restart services after configuration changes. After watching this course, you'll be able to create manifests yourself as well as defining your own configuration needs.
+******
+******
+42 <--> Handbook of Robust Low-Rank and Sparse Matrix Decomposition: Applications in Image and Video Processing
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/7CD3B91E74EFE46/1498724620.pdf
+
+
+Handbook of Robust Low-Rank and Sparse Matrix Decomposition: Applications in Image and Video Processing
+CRC Press | Computer Science | May 27 2016 | ISBN-10: 1498724620 | 511 pages | pdf | 17.08 mb
+
+by Thierry Bouwmans (Editor), Necdet Serhat Aybat (Editor), El-hadi Zahzah (Editor)
+
+Handbook of Robust Low-Rank and Sparse Matrix Decomposition: Applications in Image and Video Processing shows you how robust subspace learning and tracking by decomposition into low-rank and sparse matrices provide a suitable framework for computer vision applications. Incorporating both existing and new ideas, the book conveniently gives you one-stop access to a number of different decompositions, algorithms, implementations, and benchmarking techniques.
+
+Divided into five parts, the book begins with an overall introduction to robust principal component analysis (PCA) via decomposition into low-rank and sparse matrices. The second part addresses robust matrix factorization/completion problems while the third part focuses on robust online subspace estimation, learning, and tracking. Covering applications in image and video processing, the fourth part discusses image analysis, image denoising, motion saliency detection, video coding, key frame extraction, and hyperspectral video processing. The final part presents resources and applications in background/foreground separation for video surveillance.
+
+With contributions from leading teams around the world, this handbook provides a complete overview of the concepts, theories, algorithms, and applications related to robust low-rank and sparse matrix decompositions. It is designed for researchers, developers, and graduate students in computer vision, image and video processing, real-time architecture, machine learning, and data mining.
+
+About the Author
+Thierry Bouwmans is an associate professor at the University of La Rochelle. He is the author of more than 30 papers on background modeling and foreground detection and is the creator and administrator of the Background Subtraction website and DLAM website. He has also served as a reviewer for numerous international conferences and journals. His research interests focus on the detection of moving objects in challenging environments.
+
+Necdet Serhat Aybat is an assistant professor in the Department of Industrial and Manufacturing Engineering at Pennsylvania State University. He received his PhD in operations research from Columbia University. His research focuses on developing fast first-order algorithms for large-scale convex optimization problems from diverse application areas, such as compressed sensing, matrix completion, convex regression, and distributed optimization.
+
+El-hadi Zahzah is an associate professor at the University of La Rochelle. He is the author of more than 60 papers on fuzzy logic, expert systems, image analysis, spatio-temporal modeling, and background modeling and foreground detection. His research interests focus on the spatio-temporal relations and detection of moving objects in challenging environments.
+
+Purchase a Premium account from Download Link for Multiple/High Speed And Support :)
+
+Click Here for More books
+******
+******
+46 <--> NodeJS in Action
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/41ECD1642FCF95C/NodeJS_in_Action.part1.rar
+http://nitroflare.com/view/48E147EF046BADF/NodeJS_in_Action.part2.rar
+http://nitroflare.com/view/3E0D622E9E54257/NodeJS_in_Action.part3.rar
+http://nitroflare.com/view/C2FDE70713F7DEA/NodeJS_in_Action.part4.rar
+http://nitroflare.com/view/BC19E1B7CACBD01/NodeJS_in_Action.part5.rar
+
+
+NodeJS in Action
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5 Hours | Lec: 28 | 904 MB
+Genre: eLearning | Language: English
+
+Complete course to learn Node.JS with integrated with Elasticsearch, Redis, AngularJS, Yeoman, Grunt, PassportJS, etc…
+
+As you know, Javascript popularity increased tremendously last couple of years. One of the biggest reason is NodeJS. This course aims to teach NodeJS and third party applications from zero to expert level. You will not just learn Hello World project, you will learn What is Blocking, Non-Blocking I/O, Event Loop Mechanism, how is node.js used in real life by interacting other popular technologies and modules like;
+
+Elasticsearch: You will cover Elasticsearch basics, how to use this in order to provide full text search mechanism to your application.
+
+MongoDB: Store your data in to db, and make json queries to this document based database
+
+PassportJS: You will also learn PassportJS to construct authentication system in your application. You will be able to restrict some endpoints by using internal PassportJS properties
+
+ExpressJS: During this course, you will develop complete two web applications. ExpressJS is for developing controllers, communicate this controllers with views, and provide some db interactions by using ORM frameworks like MongooseJS
+
+IronCache: Do you want to make your application faster? You can cache your data to IronCache (Cache as a service) in this lecture also
+
+IronMQ: You will be able to use message queue system by using IronMQ in NodeJS.
+
+SocketIO: Converting your application into realtime application
+
+Well, you will do full stack development in this course. That means, you will be able to develop frontend application with AngularJS by Yeoman, Grunt, Bower. This forntend application will communicate with rest service devloped in this course again.
+
+Yeoman: You will be generating your frontend application with this
+
+Grunt: Your application tasks will be managed and executed by using Grunt
+
+Bower: Tired of using lots of third party js frameworks and deal with conflict, let Bower do that for you
+
+After completing two beautiful application, you will deploy your application into Heroku.
+
+I can give guarantee about becoming expert in NodeJS and related technologies by taking this course. We will do lots of best practices about each technology, and develop examples progressively. Also, at the end of each section, you will be provided Quiz for specific section. Although, this course is a complete reference to NodeJS and related technologies, you can require extra video tutorials for any topic related to NodeJS in order to clearify question marks in your mind. I will publish them in Wishes section.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+52 <--> .NET Development Using the Compiler API
+http://nitroflare.com/view/E260BC4B0595541/1484221109.epub
+
+
+.NET Development Using the Compiler API by Jason Bock
+2016 | ISBN: 1484221109 | English | 140 pages | EPUB | 2 MB
+
+This is the first book to describe the recent significant changes to the Roslyn compiler and demonstrate how .NET developers can use the new Roslyn APIs to create compelling applications.
+
+As an open source compiler, Roslyn now makes its code available for anyone to use. In this book, you’ll get a concise, focused view of this tremendous resource for developers, who can now use any part of the platform implementation to their advantage in analyzing applications, improving code generation, and providing enforceable patterns, all under an OSS model.
+
+You will learn how to analyze your code for defects in a fast, clean manner never available before. You’ll work with solutions and projects to provide automatic refactoring, and you’ll discover how you can generate code dynamically to provide application implementations at runtime
+
+Having the Roslyn compiler API available opens a number of doors for .NET developers that were either simply not there before, or difficult to achieve. However, the API is vast, and this concise book provides a valuable roadmap to this new development environment.
+
+What You Will Learn:
+• Understand how to generate, compile, and execute code for a number of scenarios
+• How to create diagnostics and refactoring to help developers enforce conventions and design idioms
+• Experiment with the compiler code base and see what can be done to influence the inner workings of the compile
+
+Who This Book Is For:
+Experienced .NET developers, but detailed compiler knowledge is not necessary.
+******
+******
+55 <--> Beginning F# 4.0, 2nd Edition
+http://nitroflare.com/view/84EC7BD62F48A08/1484213750.epub
+
+
+Beginning F# 4.0 by Robert Pickering, Kit Eason
+2016 | ISBN: 1484213750 | English | 309 pages | EPUB | 1 MB
+
+This book is a great foundation for exploring functional-first programming and its role in the future of application development. The best-selling introduction to F#, now thoroughly updated to version 4.0, will help you learn the language and explore its new features.
+
+F# 4.0 is a mature, open source, cross-platform, functional-first programming language which empowers users and organizations to tackle complex computing problems with simple, maintainable and robust code. F# is also a fully supported language in Visual Studio and Xamarin Studio. Other tools supporting F# development include Emacs, MonoDevelop, Atom, Visual Studio Code, Sublime Text, and Vim.
+
+Beginning F#4.0 has been thoroughly updated to help you explore the new features of the language including:
+
+Type Providers
+Constructors as first-class functions
+Simplified use of mutable values
+Support for high-dimensional arrays
+Slicing syntax support for F# lists
+Reviewed by Don Syme, the chief architect of F# at Microsoft Research, Beginning F#4.0 is a great foundation for exploring functional programming and its role in the future of application development.
+******
+******
+56 <--> C++ Standard Library Quick Reference
+http://nitroflare.com/view/EB87697BE254871/1484218752.epub
+
+
+C++ Standard Library Quick Reference by Peter Van Weert, Marc Gregoire
+2016 | ISBN: 1484218752 | English | 206 pages | EPUB | 2 MB
+
+This quick reference is a condensed reference guide to the essential data structures, algorithms, and functions provided by the C++ Standard Library. More specifically, this is a compact collection of essential classes and functions, used by C++ programmers on a daily basis. The C++ Standard Library Quick Reference features core classes for strings, I/O streams, and various generic containers, as well as a comprehensive set of algorithms to manipulate them. In recent years, the C++11 and C++14 standards have added even more efficient container classes, a new powerful regular expression library, and a portable multithreading library featuring threads, mutexes, condition variables, and atomic variables.
+
+Needless to say, it is hard to know and remember all the possibilities, details, and intricacies of this vast and growing library. This handy reference guide is therefore indispensable to any C++ programmer. It offers a condensed, well-structured summary of all essential aspects of the C++ Standard Library, including all aforementioned functionality. No page-long, repetitive examples or obscure, rarely used features. Instead, everything you need to know and watch out for in practice is outlined in a compact, to-the-point style, interspersed with well-chosen, clarifying examples. The book does not explain the C++ language or syntax, but is accessible to anyone with basic C++ knowledge. Even the most experienced C++ programmer though will learn a thing or two from it and find it a useful memory-aid.
+
+What You Will Learn
+
+• The essentials that the C++ Standard Library has to offer
+• How to use containers to efficiently store and retrieve your data
+• How to use algorithms to inspect and manipulate your data
+• How lambda expressions allow for elegant use of algorithms
+• What the standard string class provides and how to use it
+• What functionality the library provides for file and stream-based I/O
+• What smart pointers are and how to use them to prevent memory leaks
+• How to write safe and efficient multi-threaded code using the C++11 threading libraries
+******
+******
+84 <--> CentOS 7 Linux Server Cookbook (2nd Revised edition) (Repost)
+http://nitroflare.com/view/DFBD6E48D740F2F/1785887289_CentOS.epub
+http://nitroflare.com/view/A3837AEB2E5022A/1785887289_CentOS.pdf
+https://filejoker.net/xo6aty65gyuj
+https://filejoker.net/44hojxb07aoi
+
+
+CentOS 7 Linux Server Cookbook (2nd Revised edition) By Oliver Pelz, Jonathan Hobson
+2016 | 326 Pages | ISBN: 1785887289 | EPUB + PDF (conv) | 4 MB
+
+
+Over 80 recipes to get up and running with CentOS 7 Linux server About This Book A practical guide to install, configure, administer and maintain CentOS 7 servers An in-depth guide to the CentOS 7 operating system, exploring its various new features and changes in server administration Presents tricks and solutions to tackle common server issues with the help of practical examples and real-life scenarios Who This Book Is For This book is targeted at beginner and more experienced system administrators alike who want to use CentOS as their server solution. Readers do not need much pre-knowledge or experience at all to work with this book. What You Will Learn Install and configure CentOS 7 Linux server system from scratch using normal and advanced methods Maintain a performance-based and secure server solution by deploying expert configuration advice and managing software packages Monitor, manage and develop your server's file system to maintain a stable performance Gain best practice methods on sharing files and resources through a network Install and configure common standard services such as web, mail, FTP, database and domain name server technologies Introduce you to the world of operating-system-level virtualization using the Docker platform. Understand the fundamentals of the Security-Enhanced Linux access control architecture Monitor your IT infrastructure using Nagios
+******
+******
+97 <--> Computer Vision, Imaging and Computer Graphics Theory and Applications
+http://nitroflare.com/view/B684B8A21283610/3319299700.pdf
+https://filejoker.net/lfi5bi1hounq
+
+
+José Braz and Julien Pettré, "Computer Vision, Imaging and Computer Graphics Theory and Applications" 
+English | ISBN: 3319299700 | 2016 | 500 pages | PDF | 67 MB
+
+This book constitutes thoroughly revised and selected papers from the 10th International Joint Conference on Computer Vision, Imaging and Computer Graphics Theory and Applications, VISIGRAPP 2015, held in Berlin, Germany, in March 2015. VISIGRAPP comprises GRAPP, International Conference on Computer Graphics Theory and Applications; IVAPP, International Conference on Information Visualization Theory and Applications; and VISAPP, International Conference on Computer Vision Theory and Applications. 
+The 23 thoroughly revised and extended papers presented in this volume were carefully reviewed and selected from 529 submissions. The book also contains one invited talk in full-paper length. The regular papers were organized in topical sections named: computer graphics theory and applications; information visualization theory and applications; and computer vision theory and applications.
+******
+******
+101 <--> Neural Networks - Hugo Larochelle
+http://avxsearch.se/search?q=Programming%2C%2BDevelopment&a=ParRus&exact=0&c=all&l=&sort_by=date_desc
+http://avxhome.in/blogs/ParRus
+http://nitroflare.com/view/91BA5703F7E20BE/neural_nets_larochelle.part1.rar
+http://nitroflare.com/view/1B4F44DB7A6F4D0/neural_nets_larochelle.part2.rar
+http://nitroflare.com/view/76A37E2C4730055/neural_nets_larochelle.part3.rar
+http://nitroflare.com/view/877C73C076E4DBD/neural_nets_larochelle.part4.rar
+http://nitroflare.com/view/C663308FFDE4E52/neural_nets_larochelle.part5.rar
+http://nitroflare.com/view/F2918151F8B41B0/neural_nets_larochelle.part6.rar
+http://nitroflare.com/view/D5C01A034166C51/neural_nets_larochelle.part7.rar
+
+
+Neural Networks - Hugo Larochelle
+WEBRip | English | MP4 | 1152 x 720 | AVC ~757 kbps | 30 fps
+AAC | 192 Kbps | 44.1 KHz | 2 channels | 16:31:24 | 6.15 GB
+Genre: eLearning Video / Computer Science, Development, Programming
+
+Welcome to my online course on neural networks! I've put this course together while teaching an in-class version of it at the Université de Sherbrooke.
+This is a graduate-level course, which covers basic neural networks as well as more advanced topics, including:
+
+Deep learning.
+Conditional random fields.
+Restricted Boltzmann machines.
+Autoencoders.
+Sparse coding.
+Convolutional networks.
+Vector word representations.
+and many more…
+
+In the Content section, you'll find links to video clips describing these different concepts, as well as recommended readings. The content is laid out into sections that should correspond to about one week's worth of work. 
+
+In the Evaluations section, you'll find 3 programming assignments, in Python, that I use in my class. They are good opportunities to put in practice some of the concepts covered by the course.
+
+Content:
+1 - Introduction and math revision
+2 - Feedforward neural network
+3 - Training neural networks
+4 - Conditional random fields
+5 - Training CRFs
+6 - Restricted Boltzmann machine
+7 - Autoencoders
+8 - Deep learning
+9 - Sparse coding
+10 - Computer vision
+11 - Natural language processing
+******
+******
+148 <--> Multivariate Data Visualization with R (2016)
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/C045CD978E8149C/Multivariate_Data_Visualization_with_R.part1.rar
+http://nitroflare.com/view/26E186F89BD6818/Multivariate_Data_Visualization_with_R.part2.rar
+http://nitroflare.com/view/3651DD75EE82E20/Multivariate_Data_Visualization_with_R.part3.rar
+http://nitroflare.com/view/DBFC749502871A8/Multivariate_Data_Visualization_with_R.part4.rar
+http://nitroflare.com/view/85BCCB1DD965F3E/Multivariate_Data_Visualization_with_R.part5.rar
+
+
+Multivariate Data Visualization with R
+July 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 11M | 451 MB
+Genre: eLearning | Language: English
+
+R is a popular open-source programming language for data analysis. In this course, you will learn how to create multivariate data visualizations with R in order to answer questions about your data.
+
+R is a popular open-source programming language for data analysis. Its interactive programming environment and data visualization capabilities make R an ideal tool for creating a wide variety of data visualizations. In this course, Multivariate Data Visualization with R, you will learn how to answer questions about your data by creating multivariate data visualizations with R. First, you'll learn the basics about creating multivariate data visualizations with R, in order to have a strong foundation to build on. Next, you'll learn how to create and interpret data visualizations that involve various combinations of three categorical or numerical variables. Finally, you'll learn how to create and interpret data visualizations that involve an arbitrary number of variables at the same time. By the end of this course you'll have the skill required to create and interpret a variety of multivariate data visualizations using R.
+******
+******
+151 <--> Artificial Neural Network Modelling
+http://nitroflare.com/view/7B9C7638D87A9F9/3319284932.pdf
+https://filejoker.net/e76zyda6spqo
+
+
+Subana Shanmuganathan and Sandhya Samarasinghe, "Artificial Neural Network Modelling" 
+English | ISBN: 3319284932 | 2016 | 482 pages | PDF | 14 MB
+
+This book covers theoretical aspects as well as recent innovative applications of Artificial Neural networks (ANNs) in natural, environmental, biological, social, industrial and automated systems.
+
+It presents recent results of ANNs in modelling small, large and complex systems under three categories, namely, 1) Networks, Structure Optimisation, Robustness and Stochasticity 2) Advances in Modelling Biological and Environmental Systems and 3) Advances in Modelling Social and Economic Systems. The book aims at serving undergraduates, postgraduates and researchers in ANN computational modelling.
+******
+******
+155 <--> Akka.NET Persistence Fundamentals
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/0DC968D12961CC0/Akka.NET_Persistence_Fundamentals.part1.rar
+http://nitroflare.com/view/FD053F0F44739B4/Akka.NET_Persistence_Fundamentals.part2.rar
+http://nitroflare.com/view/D4430384AB49EF3/Akka.NET_Persistence_Fundamentals.part3.rar
+http://nitroflare.com/view/5EE00B2B125AAF6/Akka.NET_Persistence_Fundamentals.part4.rar
+
+
+Akka.NET Persistence Fundamentals
+July 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 40M | 323 MB
+Genre: eLearning | Language: English
+
+Akka.NET makes building concurrent, scalable, reactive, self-healing, and distributed systems easier. This course will show you how to create persistent actors that recover their state when they restart due to exceptions or process/server crashes.
+
+Akka.NET makes building concurrent, scalable, reactive, self-healing, and distributed systems easier. Even though Akka.NET actors help you to manage concurrency, by default they only exist in-memory. In this course, Akka.NET Persistence Fundamentals, you're going to learn about the core features of Akka.NET Persistence and how you can use these features to restore the internal actor state if the actor restarts or the server crashes. First you'll learn how to refactor existing actors to be persistent. Next, you'll learn about how Akka.Persistence supports multiple back-end data stores. Finally, you'll learn how to improve actor recovery speeds by using optional snapshots. By the end of this course, you'll understand how to get started creating persistent actors that can restore their state, how to configure a persistence back-end store such as SQL Server, how to think in terms of events and commands, and how to implement performance-improving snapshots.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+156 <--> Custom SEO Boost Your Rankings With a Custom SEO Strategy
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/7D56EB163AE137B/Custom_SEO_Boost_Your_Rankings_With_a_Custom_SEO_Strategy.part1.rar
+http://nitroflare.com/view/C651E3C515FFEC0/Custom_SEO_Boost_Your_Rankings_With_a_Custom_SEO_Strategy.part2.rar
+http://nitroflare.com/view/A4B9578AD6B51BA/Custom_SEO_Boost_Your_Rankings_With_a_Custom_SEO_Strategy.part3.rar
+http://nitroflare.com/view/FE22631E25D4D04/Custom_SEO_Boost_Your_Rankings_With_a_Custom_SEO_Strategy.part4.rar
+http://nitroflare.com/view/16EDD1842A07B14/Custom_SEO_Boost_Your_Rankings_With_a_Custom_SEO_Strategy.part5.rar
+
+
+Custom SEO Boost Your Rankings With a Custom SEO Strategy
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | Lec: 72 | 629 MB
+Genre: eLearning | Language: English
+
+Learn how to perform a full SEO audit to develop a unique SEO strategy for your site so you can outrank your competition
+
+"I have always know that SEO was a weakness of mine. I knew just enough to get myself in trouble, but after taking this course I now have a complete understanding of SEO. I has answered so many questions and given me some great tools to use. I can now provide my customers with a much better product after taking this course." - Kenneth Dold
+_______________________________________________________________________
+
+Inside this course we dive deep into the exact steps you need to take to develop a unique SEO strategy for your specific website. Applying generalized SEO tactics isn't enough to get you ranked and keep your website on the first page of Google.
+
+If you:
+
+Want to rank your website on the 1st page of search engines,
+Have tried to rank your website without success or
+If you want to sell SEO services but aren't sure where to start
+then this course is for you!
+
+To successfully rank your website on the first page of Google, you need to know:
+
+exactly how search engines view your website
+what search engines want you to do to make your website better
+what SEO techniques your competitors are using
+what specific steps you need to take to outrank and outperform your competitors
+and that's exactly what you'll gain access to here.
+
+_______________________________________________________________________
+
+"This is a brilliant practical in depth Seo course,which covers the how to A-Z steps necessary to boost a website rankings by using an effective customising strategy." - Shaun
+
+_______________________________________________________________________
+
+I've packed this course with tons of valuable and actionable information you will be able to use to rank your website. By following all of the action steps I have included in this course, your website will be perfectly optimized to outrank and outperform your competition so you can gain more traffic, leads and sales.
+
+I am available for questions and feedback to help you each step of the way so you have support as you rank your website as well.
+
+Click on the Take This Course button in the upper right hand side of your screen now and start ranking your website today! Don't miss out on any more traffic, leads or sales by not starting today.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+
+******
+163 <--> Numeric Computation and Statistical Data Analysis on the Java Platform
+http://nitroflare.com/view/1D833D2A0645938/3319285297_Numeric.pdf
+https://filejoker.net/43vu20mavl4m
+
+
+Numeric Computation and Statistical Data Analysis on the Java Platform By Sergei V. Chekanov
+2016 | 648 Pages | ISBN: 3319285297 | PDF | 12 MB
+
+
+Numerical computation, knowledge discovery and statistical data analysis integrated with powerful 2D and 3D graphics for visualization are the key topics of this book. The Python code examples powered by the Java platform can easily be transformed to other programming languages, such as Java, Groovy, Ruby and BeanShell. This book equips the reader with a computational platform which, unlike other statistical programs, is not limited by a single programming language. The author focuses on practical programming aspects and covers a broad range of topics, from basic introduction to the Python language on the Java platform (Jython), to descriptive statistics, symbolic calculations, neural networks, non-linear regression analysis and many other data-mining topics. He discusses how to find regularities in real-world data, how to classify data, and how to process data for knowledge discoveries. The code snippets are so short that they easily fit into single pages. Numeric Computation and Statistical Data Analysis on the Java Platform is a great choice for those who want to learn how statistical data analysis can be done using popular programming languages, who want to integrate data analysis algorithms in full-scale applications, and deploy such calculations on the web pages or computational servers regardless of their operating system. It is an excellent reference for scientific computations to solve real-world problems using a comprehensive stack of open-source Java libraries included in the DataMelt (DMelt) project and will be appreciated by many data-analysis scientists, engineers and students.
+******
+******
+164 <--> Computational Proximity: Excursions in the Topology of Digital Images
+http://nitroflare.com/view/9679DCDF67B396D/3319302604.pdf
+https://filejoker.net/1cl8eepos5hd
+
+
+James F. Peters, "Computational Proximity: Excursions in the Topology of Digital Images" 
+2016 | ISBN-10: 3319302604 | 464 pages | PDF | 26 MB
+
+This book introduces computational proximity (CP) as an algorithmic approach to finding nonempty sets of points that are either close to each other or far apart. Typically in computational proximity, the book starts with some form of proximity space (topological space equipped with a proximity relation) that has an inherent geometry. In CP, two types of near sets are considered, namely, spatially near sets and descriptivelynear sets. It is shown that connectedness, boundedness, mesh nerves, convexity, shapes and shape theory are principal topics in the study of nearness and separation of physical aswell as abstract sets. CP has a hefty visual content. Applications of CP in computer vision, multimedia, brain activity, biology, social networks, and cosmology are included. The book has been derived from the lectures of the author in a graduate course on the topology of digital images taught over the past several years. Many of the students have provided important insights and valuable suggestions. The topics in this monograph introduce many forms of proximities with a computational flavour (especially, what has become known as the strong contact relation), many nuances of topological spaces, and point-free geometry.
+******
+******
+168 <--> Proper Generalized Decompositions: An Introduction to Computer Implementation with Matlab
+http://nitroflare.com/view/45884E4E4A86441/331929993X_Proper.pdf
+https://filejoker.net/mmz56z6fpfn7
+
+
+Proper Generalized Decompositions: An Introduction to Computer Implementation with Matlab By Elías Cueto, David González, Icíar Alfaro
+2016 | 108 Pages | ISBN: 331929993X | PDF | 3 MB
+
+
+This book is intended to help researchers overcome the entrance barrier to Proper Generalized Decomposition (PGD), by providing a valuable tool to begin the programming task. Detailed Matlab Codes are included for every chapter in the book, in which the theory previously described is translated into practice. Examples include parametric problems, non-linear model order reduction and real-time simulation, among others. Proper Generalized Decomposition (PGD) is a method for numerical simulation in many fields of applied science and engineering. As a generalization of Proper Orthogonal Decomposition or Principal Component Analysis to an arbitrary number of dimensions, PGD is able to provide the analyst with very accurate solutions for problems defined in high dimensional spaces, parametric problems and even real-time simulation.
+******
+******
+169 <--> Recommender Systems: The Textbook
+http://nitroflare.com/view/E11D114A99918CC/3319296574_Recommender.pdf
+https://filejoker.net/zgjjxwwrp6f9
+
+
+Recommender Systems: The Textbook By Charu C. Aggarwal
+2016 | 522 Pages | ISBN: 3319296574 | PDF | 10 MB
+
+
+This book comprehensively covers the topic of recommender systems, which provide personalized recommendations of products or services to users based on their previous searches or purchases. Recommender system methods have been adapted to diverse applications including query log mining, social networking, news recommendations, and computational advertising. This book synthesizes both fundamental and advanced topics of a research area that has now reached maturity. The chapters of this book are organized into three categories: - Algorithms and evaluation: These chapters discuss the fundamental algorithms in recommender systems, including collaborative filtering methods, content-based methods, knowledge-based methods, ensemble-based methods, and evaluation. - Recommendations in specific domains and contexts: the context of a recommendation can be viewed as important side information that affects the recommendation goals. Different types of context such as temporal data, spatial data, social data, tagging data, and trustworthiness are explored. - Advanced topics and applications: Various robustness aspects of recommender systems, such as shilling systems, attack models, and their defenses are discussed. In addition, recent topics, such as learning to rank, multi-armed bandits, group systems, multi-criteria systems, and active learning systems, are introduced together with applications. Although this book primarily serves as a textbook, it will also appeal to industrial practitioners and researchers due to its focus on applications and references. Numerous examples and exercises have been provided, and a solution manual is available for instructors.
+******
+******
+170 <--> Service Orientation in Holonic and Multi-Agent Manufacturing
+http://nitroflare.com/view/616AF42C764D8F8/331930335X.pdf
+https://filejoker.net/3uh1p2d0ro32
+
+
+Theodor Borangiu, Damien Trentesaux, "Service Orientation in Holonic and Multi-Agent Manufacturing: Proceedings of SOHOMA 2015" 
+2016 | ISBN-10: 331930335X | 364 pages | PDF | 10 MB
+
+This volume gathers the peer reviewed papers which were presented at the 5th edition of the International Workshop “Service Orientation in Holonic and Multi-agent Man-ufacturing – SOHOMA’15” organized in November 5-6, 2015 by the Institute for Manufacturing (IfM) of the University of Cambridge, UK in collaboration with the CIMR Research Centre in Computer Integrated Manufacturing and Robotics of the University Politehnica of Bucharest, Romania, the LAMIH Laboratory of Industrial and Human Automation Control, Mechanical Engineering and Computer Science of the University of Valenciennes and Hainaut-Cambrésis, France and the CRAN Re-search Centre for Automatic Control, Nancy of the University of Lorraine, France.
+The book is structured in seven parts, each one grouping a number of chapters de-scribing research in actual domains of the digital transformation in manufacturing and trends in future manufacturing control: (1) Applications of Intelligent Products; (2) Advances in Control of Physical Internet and Interconnected Logistics; (3) Sustaina-bility Issues in Intelligent Manufacturing Systems; (4) Holonic and Multi-agent Sys-tem Design for Industry and Services; (5) Service Oriented Enterprise Management and Control; (6) Cloud and Computing-oriented Manufacturing; (7) Smart Grids and Wireless Sensor Networks.
+These seven evolution lines have in common concepts, methodologies and imple-menting solutions for the Digital Transformation of Manufacturing. The book offers an integrated vision on complexity, big data and virtualization in service- and compu-ting-oriented manufacturing, combining emergent information and communication technologies, control with distributed intelligence and MAS implementation for total
+******
+******
+171 <--> The Foolproof Guide to Monetizing Your Blog
+http://avxhome.in/blogs/ksenya.b
+http://nitroflare.com/view/CEA1055CA62A406/The_Foolproof_Guide_to_Monetizing_Your_blog.rar
+
+
+Cailin Koy, "The Foolproof Guide to Monetizing Your Blog" 
+2014 | EPUB, MOBI | 104 pages | ISBN: 1497415543 | English | 7 MB
+
+Want to make money with your blog? It's easier than you think. The Foolproof Guide to Monetizing Your Blog is a simple yet complete way for bloggers to learn all the monetization options that are right at their fingertips.
+
+In this guide, you'll learn:
+
+- The basic types of monetization options online
+- What resources are available in each avenue to create big earnings
+- How to interact with advertisers and get the results you want (money, not products!)
+And much, much more!
+
+With complete lists of available resources for bloggers to make money through impression advertising, affiliate links, paid tweets and more, The Foolproof Guide to Monetizing Your Blog makes taking your blog from hobby to moneymaker an easy task.
+
+Visit more in my Blog, Welcome!
+
+
+Download:
+******
+******
+172 <--> Swift 3 Functional Programming
+http://avxhome.in/blogs/Grev27
+http://nitroflare.com/view/AB67919136D8417/1785883887.pdf
+http://nitroflare.com/view/ED6D99B370AFA79/1785883887.epub
+http://nitroflare.com/view/268EC6DF0FEA9F7/1785883887.mobi
+
+
+Dr. Fatih Nayebi, "Swift 3 Functional Programming"
+English | ISBN: 1785883887 | 2016 | PDF/EPUB/MOBI | 296 pages | 4 MB/3 MB/4 MB
+
+Bring the power of Swift functional programming to iOS, OS X and Web development to build clean, smart and reliable applications
+
+About This Book
+Written for Swift 3, this is a comprehensive guide that introduces iOS and OS X developers to the all-new world of functional programming that has so far been alien to them
+Learn about first-class functions and how imperative-style patterns can be converted into functional code using some simple techniques
+The book will get you familiar with using functional programming alongside existing OOP techniques so you can get the best of both worlds and develop clean, robust code
+Who This Book Is For
+The book is for iOS, Web, and macOS developers with a basic knowledge of Swift programming that are interested in learning functional programming paradigms
+
+What You Will Learn
+First-class, higher-order, and pure functions
+Closures and capturing values
+Custom operators, recursion, and memoization
+Value and reference types in Swift
+Enumerations, algebraic data types, patterns, and pattern matching
+Generics and associated type protocols
+Higher-order functions such as map, flatMap filter, and reduce
+Dealing with optionals, fmap, and apply for multiple functional mapping
+Functional data structures such as Semigroup, Monoid, Binary Search Tree, Linked List, Stack, and Lazy List
+Immutability, copy constructors, and lenses
+Combining FP paradigms with OOP, FRP, and POP in your day-to-day development activities
+Developing a backend application with Swift
+Developing an iOS application with FP, OOP, FRP, and POP paradigms
+
+In Detail
+Functional programming is getting a lot of attention because it eases many of the difficulties faced in object-oriented programming (OOP) such as testability, maintainability, scalability, and concurrency. Swift has a lot of functional programming features that can be easily used, but most Objective-C and Swift programmers are not familiar with these tools.
+
+This book aims at simplifying the functional programming paradigms and makes it easily usable for Swift programmers, by showing you how to use functional programming paradigms to solve many of your day-to-day development problems. Whether you are new to functional programming and Swift, or experienced, this book will strengthen the skills you need to design and develop high-quality, easily maintainable, scalable, extendable, and efficient applications for iOS, Web, macOS, tvOS, and WatchOS.
+
+The book starts with functional programming concepts, the basics of Swift, and essential concepts such as functions, closures, optionals, enumerations, immutability, and generics in detail with coding examples.
+
+Also, this book introduces more advanced topics such as function composition, functional data structures, monads, functors, applicative functors, memoization, lenses, algebraic data types, functional reactive programming (FRP), protocol-oriented programming (POP), and mixing object-oriented programming (OOP) with functional programming (FP) paradigms.
+
+Finally, this book provides a working code example of a real-world frontend application developed with these techniques and its corresponding backend application developed with Swift.
+
+>>Come Visit My Blog<<
+
+******
+******
+173 <--> Fuzzy Logic and Information Fusion:
+http://nitroflare.com/view/3BEFFE22FCD22E6/3319304194.pdf
+https://filejoker.net/su2yvzbcr3ps
+
+
+Tomasa Calvo Sánchez, Joan Torrens Sastre, "Fuzzy Logic and Information Fusion: To commemorate the 70th birthday of Professor Gaspar Mayor" 
+2016 | ISBN-10: 3319304194 | 260 pages | PDF | 4 MB
+
+This book offers a timely report on key theories and applications of soft-computing. Written in honour of Professor Gaspar Mayor on his 70th birthday, it primarily focuses on areas related to his research, including fuzzy binary operators, aggregation functions, multi-distances, and fuzzy consensus/decision models. It also discusses a number of interesting applications such as the implementation of fuzzy mathematical morphology based on Mayor-Torrens t-norms. Importantly, the different chapters, authored by leading experts, present novel results and offer new perspectives on different aspects of Mayor’s research. The book also includes an overview of evolutionary fuzzy systems, a topic that is not one of Mayor’s main areas of interest, and a final chapter written by the Spanish pioneer in fuzzy logic, Professor E. Trillas. Computer and decision scientists, knowledge engineers and mathematicians alike will find here an authoritative overview of key soft-computing concepts and techniques.
+******
+******
+174 <--> Portlets and Apache Portals [Repost]
+http://avaxhm.com/blogs/tanas.olesya
+http://nitroflare.com/view/7C0CCC25628711B/1932394540.pdf
+https://filejoker.net/r3exd1079thg
+
+
+Portlets and Apache Portals by Stefan Hepper
+English | 28 Nov. 2005 | ISBN: 1932394540 | 437 Pages | PDF | 13 MB
+
+Portals are Web sites that serve as a starting point to information and applications on the Internet or from an intranet. To accommodate the aggregation and display of diverse content in a dynamic manner, a portal server must provide a framework that breaks the different portal components into pluggable parts. 
+******
+******
+178 <--> An Introduction to Statistics with Python
+http://avxhome.in/blogs/AlenMiler
+http://nitroflare.com/view/7D4678FCD36762D/3319283154.pdf
+https://filejoker.net/1qdg45l7ys5m
+
+
+An Introduction to Statistics with Python: With Applications in the Life Sciences (Statistics and Computing) by Thomas Haslwanter
+English | 7 Aug. 2016 | ISBN: 3319283154 | 298 Pages | PDF (True) | 4.58 MB
+
+This textbook provides an introduction to the free software Python and its use for statistical data analysis. It covers common statistical tests for continuous, discrete and categorical data, as well as linear regression analysis and topics from survival analysis and Bayesian statistics. Working code and data for Python solutions for each test, together with easy-to-follow Python examples, can be reproduced by the reader and reinforce their immediate understanding of the topic. With recent advances in the Python ecosystem, Python has become a popular language for scientific computing, offering a powerful environment for statistical data analysis and an interesting alternative to R. The book is intended for master and PhD students, mainly from the life and medical sciences, with a basic knowledge of statistics. As it also provides some statistics background, the book can be used by anyone who wants to perform a statistical data analysis. 
+******
+******
+187 <--> A collection of Advanced Data Science and Machine Learning Interview Questions Solved in Python and Spark (II)
+http://nitroflare.com/view/EDC0C380351A05A/1518678645.djvu
+https://filejoker.net/88nkotvjygf9
+
+
+Dr Antonio Gulli , "A collection of Advanced Data Science and Machine Learning Interview Questions Solved in Python and Spark (II): Hands-on Big Data and Machine … of Programming Interview Questions" 
+2015 | ISBN-10: 1518678645 | 106 pages | Djvu | 1 MB
+
+A collection of Machine Learning interview questions in Python and Spark
+******
+******
+205 <--> The Official Samba 3
+http://avaxhm.com/blogs/tanas.olesya
+http://nitroflare.com/view/1BC043C99DE8A9B/0131453556.pdf
+https://filejoker.net/louj6rbs2gp4
+
+
+The Official Samba 3: How to and Reference Guide (Bruce Perens' Open Source) by Jelmer R. Vernooij
+English | 22 Oct. 2003 | ISBN: 0131453556 | 736 Pages | PDF | 4 MB
+
+This is the definitive guide to using Samba-3 in production environments. It begins with the immense amount of HOWTO information published by the Samba Team and volunteers around the world . . . but that's just the beginning. 
+
+-= My Blog! =-
+
+******
+
+
+
 2016-07-21
 ******
 0 <--> High Performance Computing: Second Latin American Conference, CARLA 2015
