@@ -1,4 +1,482 @@
-2016-08-01
+2016-08-02
+******
+0 <--> Byte-Sized-Chunks: Bit Manipulation Problems
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/1289576420524ED/Byte-Sized-Chunks_Bit_Manipulation_Problems.part1.rar
+http://nitroflare.com/view/19D97435427C438/Byte-Sized-Chunks_Bit_Manipulation_Problems.part2.rar
+http://nitroflare.com/view/CD37155D118B493/Byte-Sized-Chunks_Bit_Manipulation_Problems.part3.rar
+http://nitroflare.com/view/384541E020571D2/Byte-Sized-Chunks_Bit_Manipulation_Problems.part4.rar
+
+
+Byte-Sized-Chunks: Bit Manipulation Problems
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 308 MB
+Genre: eLearning | Language: English
+
+Learn how to set, test or reverse bits - interview favorites, made easy with a visual approach that you will love
+
+Programming interviews are like standard plays in professional sport - and bit manipulation questions are very common in certain types of interviews!
+
+This course has been drawn by a team that has conducted hundreds of technical interviews at Google and Flipkart
+
+Bit manipulation problems are an interview favorite, and they also pop up in some real-word programming cases, particularly low-level or very computationally intensive tasks.
+
+What's covered:
+
+The bitwise AND, OR, NOT operators: Visually understand exactly how the bitwise AND, OR and NOT operators work
+Bitwise Shifting - Overflow and Fill: The bitwise shift operators can be quite tricky - we cover these in some detail
+Bit Manipulation - get and set a specific bit
+Counting Set Bits with a nifty trick to do so in time complexity O(# of 1s)
+Reverse Bits in a number
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+1 <--> Byte-Sized-Chunks: C++ Templates and the STL
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/71BF7BAAB9761BE/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part1.rar
+http://nitroflare.com/view/A470D7F218E4296/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part2.rar
+http://nitroflare.com/view/0F55E00B34EFFAB/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part3.rar
+http://nitroflare.com/view/5DD2D4B3B472E7A/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part4.rar
+http://nitroflare.com/view/CBCD347B736DEA4/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part5.rar
+http://nitroflare.com/view/030284F5A76D573/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part6.rar
+http://nitroflare.com/view/13440939677CFD2/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part7.rar
+
+
+Byte-Sized-Chunks: C++ Templates and the STL
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 768 MB
+Genre: eLearning | Language: English
+
+Compile-time polymorphism via templates, C++ casts, containers, algorithms and iterators - all will make sense now!
+
+Like a gruff uncle, C++ seems intimidating, when its just being helpful. These examples will help you understand that.
+
+Let's parse that.
+
+C++ seems intimidating because all too often, what you see is not what you get.
+Usually, that's because C++ is trying to help you, but you don't realise that. C++ is incredibly deep, and it sometimes struggles to get you - the programmer - to understand what it's saying
+These examples will help. Each is self-contained, has its source code attached, and gets across a specific C++ use-case. Each example is simple, but not simplistic.
+What's Included:
+
+Templates are a classic generic programming technique that were revolutionary when first added to C++. Understand template functions and classes, as well as template specializations.
+STL - the Standard Template Library - is incredibly powerful. Get a good sense of collections, iterators and algorithms - the major components of the STL
+C++ casts are quite different than C-casts. Understand const_cast, static_cast and dynamic_cast, as well as Real Time Type Identification (RTTI), and the manner in which explicit conversions can be performed using static_cast
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+2 <--> Byte-Sized-Chunks: Operator Overloading in C++
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/71BF7BAAB9761BE/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part1.rar
+http://nitroflare.com/view/A470D7F218E4296/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part2.rar
+http://nitroflare.com/view/0F55E00B34EFFAB/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part3.rar
+http://nitroflare.com/view/5DD2D4B3B472E7A/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part4.rar
+http://nitroflare.com/view/CBCD347B736DEA4/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part5.rar
+http://nitroflare.com/view/030284F5A76D573/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part6.rar
+http://nitroflare.com/view/13440939677CFD2/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part7.rar
+
+
+Byte-Sized-Chunks: Operator Overloading in C++
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 758 MB
+Genre: eLearning | Language: English
+
+Assignment, Pre- and Post-Increment, And Streaming Operators Will Make So Much Sense Now!
+
+Operator overloading is a particularly complicated topic - C++ is virtually alone in the ubiquity of overloaded operators. Make sure this doesn't trip you up.
+
+What is operator overloading? Understand internal operators, defined as member functions of a class vs external operators defined as global functions. External operators are commonly friend functions of the class on which they operate.
+Internal or External? When would you choose to have an internal operator implementation vs an external operator implementation? Sometimes you don't have a choice!
+The += operator
+The assignment operator
+Pre- and Post-Increment
+Streams and the >> and << operators
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+3 <--> Byte-Sized-Chunks: Stacks, Queues, Binary Trees, Heaps
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/DD698CAC9F25408/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part1.rar
+http://nitroflare.com/view/47356FF06BEB2EE/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part2.rar
+http://nitroflare.com/view/BFB66099FD8C3FE/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part3.rar
+http://nitroflare.com/view/D54553AF3DCF7D6/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part4.rar
+http://nitroflare.com/view/8B343680AF41765/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part5.rar
+http://nitroflare.com/view/568BC0A14908BC2/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part6.rar
+http://nitroflare.com/view/B5D28A83D4D4328/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part7.rar
+
+
+Byte-Sized-Chunks: Stacks, Queues, Binary Trees, Heaps
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5.5 Hours | 1.51 GB
+Genre: eLearning | Language: English
+
+A visual way to master basic data structures for strong fundamentals!
+
+This is an animated, visual and spatial way to learn data structures and algorithms
+
+Our brains process different types of information differently - evolutionarily we are wired to absorb information best when it is visual and spatial i.e. when we can close our eyes and see it
+More than most other concepts, Data Structures and Algorithms are best learnt visually. These are incredibly easy to learn visually, very hard to understand most other ways
+This course has been put together by a team with tons of everyday experience in thinking about these concepts and using them at work at Google, Microsoft and Flipkart
+What's Covered:
+
+Big-O notation and complexity
+Stacks
+Queues
+Trees
+Heaps
+Talk to us!
+
+Mail us about anything - anything! - and we will always reply :-)
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+4 <--> Deep Learning in Python
+http://avxhome.in/blogs/AlenMiler
+http://nitroflare.com/view/F1834CB6DAA72CF/Deep_Learning_in_Python_-_LazyProgrammer.rar
+
+
+Deep Learning in Python: Master Data Science and Machine Learning with Modern Neural Networks written in Python, Theano, and TensorFlow (Machine Learning in Python) by LazyProgrammer
+English | March 11, 2016 | ASIN: B01CVJ19E8 | 38 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.19 MB
+
+Deep learning is making waves. At the time of this writing (March 2016), Google’s AlghaGo program just beat 9-dan professional Go player Lee Sedol at the game of Go, a Chinese board game. 
+
+Experts in the field of Artificial Intelligence thought we were 10 years away from achieving a victory against a top professional Go player, but progress seems to have accelerated! 
+
+While deep learning is a complex subject, it is not any more difficult to learn than any other machine learning algorithm. I wrote this book to introduce you to the basics of neural networks. You will get along fine with undergraduate-level math and programming skill. 
+
+All the materials in this book can be downloaded and installed for free. We will use the Python programming language, along with the numerical computing library Numpy. I will also show you in the later chapters how to build a deep network using Theano and TensorFlow, which are libraries built specifically for deep learning and can accelerate computation by taking advantage of the GPU. 
+
+Unlike other machine learning algorithms, deep learning is particularly powerful because it automatically learns features. That means you don’t need to spend your time trying to come up with and test “kernels” or “interaction effects” - something only statisticians love to do. Instead, we will let the neural network learn these things for us. Each layer of the neural network learns a different abstraction than the previous layers. For example, in image classification, the first layer might learn different strokes, and in the next layer put the strokes together to learn shapes, and in the next layer put the shapes together to form facial features, and in the next layer have a high level representation of faces. 
+
+On top of all this, deep learning is known for winning its fair share Kaggle contests. These are machine learning contests that are open to anyone in the world who are allowed to use any machine learning technique they want. Deep learning is that powerful. 
+
+Data Science and Machine Learning
+
+Data science is a trending field in tech and a big part of it is “machine learning”. These are programs that can learn automatically learn what their output should be, instead of trying to manually program it yourself. 
+
+Many startups who are starting to see growth now want to quantify their data and perform analyses that optimize sales, customers, and profit. 
+
+In recent news, Google’s deep learning machine has produced “dream images”. Their machines are so much like the brain, they can produce dreams! In this course, we’re going to cover a technology made by Google just for deep learning, called TensorFlow. We are also going to look at a library that has been around for much longer called Theano. I am going to show you how to build neural networks from scratch using both of these very awesome tools. 
+
+By the end of this course, you’ll be able to take the things you’ve learned, and create very powerful machine learning models to do things like sports betting, stock market prediction, and revenue optimization at your company. 
+
+Do you want a gentle introduction to this “dark art”, with practical code examples that you can try right away and apply to your own data? Then this book is for you.
+
+My Blog with Updates!
+
+******
+******
+5 <--> Dense Image Correspondences for Computer Vision
+http://nitroflare.com/view/18FCAAE0DEFF595/3319230476.pdf
+
+
+Tal Hassner, "Dense Image Correspondences for Computer Vision" 
+English | ISBN: 3319230476 | 2016 | 308 pages | PDF | 19 MB
+
+This book describes the fundamental building-block of many new computer vision systems: dense and robust correspondence estimation. Dense correspondence estimation techniques are now successfully being used to solve a wide range of computer vision problems, very different from the traditional applications such techniques were originally developed to solve. This book introduces the techniques used for establishing correspondences between challenging image pairs, the novel features used to make these techniques robust, and the many problems dense correspondences are now being used to solve. The book provides information to anyone attempting to utilize dense correspondences in order to solve new or existing computer vision problems. The editors describe how to solve many computer vision problems by using dense correspondence estimation. Finally, it surveys resources, code and data, necessary for expediting the development of effective correspondence-based computer vision systems.
+******
+******
+6 <--> Gems of Combinatorial Optimization and Graph Algorithms
+http://nitroflare.com/view/2AFD7DAC3672CB3/3319249703.pdf
+
+
+Andreas S. Schulz, "Gems of Combinatorial Optimization and Graph Algorithms" 
+English | ISBN: 3319249703 | 2016 | 162 pages | PDF | 3 MB
+
+Are you looking for new lectures for your course on algorithms, combinatorial optimization, or algorithmic game theory? Maybe you need a convenient source of relevant, current topics for a graduate student or advanced undergraduate student seminar? Or perhaps you just want an enjoyable look at some beautiful mathematical and algorithmic results, ideas, proofs, concepts, and techniques in discrete mathematics and theoretical computer science? Gems of Combinatorial Optimization and Graph Algorithms is a handpicked collection of up-to-date articles, carefully prepared by a select group of international experts, who have contributed some of their most mathematically or algorithmically elegant ideas. Topics include longest tours and Steiner trees in geometric spaces, cartograms, resource buying games, congestion games, selfish routing, revenue equivalence and shortest paths, scheduling, linear structures in graphs, contraction hierarchies, budgeted matching problems, and motifs in networks. This volume is aimed at readers with some familiarity of combinatorial optimization, and appeals to researchers, graduate students, and advanced undergraduate students alike.
+******
+******
+7 <--> Gnuplot in Action
+http://avxhome.in/blogs/AlenMiler
+http://nitroflare.com/view/874ADCB23D98E90/Gnuplot_in_Action_-_Philipp_K._Janert.rar
+
+
+Gnuplot in Action by Philipp K. Janert
+English | Mar 31, 2016 | ISBN: 1633430189 | 425 Pages | MOBI/EPUB/PDF (True) | 29.88 MB
+
+Well-designed graphics are frequently the best way to understand data sets and to communicate results. Gnuplot, the most popular open-source tool to plot and visualize data, has long been the preferred choice for scientists and data analysts for creating publication-quality graphs. The latest version, gnuplot 5, adds further capabilities, including new plot types, improved text and color handling, and support for interactive, web-based display formats. Although gnuplot includes comprehensive reference documentation, it can be difficult to fully master this tool.
+
+Gnuplot in Action, Second Edition is a major revision of this popular and authoritative guide for developers, engineers, and scientists who want to learn and use gnuplot effectively. The book starts with a tutorial introduction for readers new to gnuplot. Next it provides a systematic overview of gnuplot's core features, and full coverage of gnuplot's advanced capabilities, such as 3D graphics and false-color plots. Experienced readers will appreciate the discussion of gnuplot's new features for working with color and customized plotting styles, as well as the hints for improved workflow and user configurations. The book concludes with chapters on graphical effects and general techniques for understanding data with graphs.
+
+My Blog with Updates!
+
+******
+******
+8 <--> Infiniteskills - Introduction to Pandas for Developers
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/B29D8091C9ABC56/Introduction_to_Pandas_for_Developers.part1.rar
+http://nitroflare.com/view/B59445C73EEE665/Introduction_to_Pandas_for_Developers.part2.rar
+http://nitroflare.com/view/416E8C1EE1C2A19/Introduction_to_Pandas_for_Developers.part3.rar
+http://nitroflare.com/view/8F9AFBE05E0F2F6/Introduction_to_Pandas_for_Developers.part4.rar
+http://nitroflare.com/view/D1391F782A118AA/Introduction_to_Pandas_for_Developers.part5.rar
+http://nitroflare.com/view/1CEB9CD831A8E03/Introduction_to_Pandas_for_Developers.part6.rar
+
+
+Introduction to Pandas for Developers
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5.5 Hours | 1.06 GB
+Genre: eLearning | Language: English
+
+In this project-based Introduction to Pandas for Developers video tutorial series, you'll quickly have relevant skills for real-world applications.
+
+Follow along with our expert instructor in this training course to get:
+
+Concise, informative and broadcast-quality Introduction to Pandas for Developers training videos delivered to your desktop
+The ability to learn at your own pace with our intuitive, easy-to-use interface
+A quick grasp of even the most complex Introduction to Pandas for Developers subjects because they're broken into simple, easy to follow tutorial videos
+
+Practical working files further enhance the learning process and provide a degree of retention that is unmatched by any other form of Introduction to Pandas for Developers tutorial, online or offline… so you'll know the exact 
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+9 <--> Infiniteskills - Matplotlib for Developers Training Video
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/B8F4A3C6F17C6D0/Matplotlib_for_Developers.part1.rar
+http://nitroflare.com/view/781E1BC09CE421E/Matplotlib_for_Developers.part2.rar
+http://nitroflare.com/view/4C259B14422CDD1/Matplotlib_for_Developers.part3.rar
+http://nitroflare.com/view/391383CE0CAE761/Matplotlib_for_Developers.part4.rar
+http://nitroflare.com/view/4B8D9CCB2600D93/Matplotlib_for_Developers.part5.rar
+http://nitroflare.com/view/A6F9800408C05AB/Matplotlib_for_Developers.part6.rar
+http://nitroflare.com/view/35540B285E6CE80/Matplotlib_for_Developers.part7.rar
+
+
+Matplotlib for Developers Training Video
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5 Hours | 1.34 GB
+Genre: eLearning | Language: English
+
+In this project-based Matplotlib for Developers video tutorial series, you'll quickly have relevant skills for real-world applications.
+
+Follow along with our expert instructor in this training course to get:
+
+Concise, informative and broadcast-quality Matplotlib for Developers training videos delivered to your desktop
+The ability to learn at your own pace with our intuitive, easy-to-use interface
+A quick grasp of even the most complex Matplotlib for Developers subjects because they're broken into simple, easy to follow tutorial videos
+
+Practical working files further enhance the learning process and provide a degree of retention that is unmatched by any other form of Matplotlib for Developers tutorial, online or offline… so you'll know the exact steps for your own projects.
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+10 <--> Introduction to Concurrency in Programming Languages (Repost)
+https://goo.gl/i1VV2u
+http://nitroflare.com/view/072767B72045149/1420072137_Introductionmpr.pdf
+
+
+Introduction to Concurrency in Programming Languages By Matthew J. Sottile
+2009 | 344 Pages | ISBN: 1420072137 | PDF | 6 MB
+
+
+Exploring how concurrent programming can be assisted by language-level techniques, Introduction to Concurrency in Programming Languages presents high-level language techniques for dealing with concurrency in a general context. It provides an understanding of programming languages that offer concurrency features as part of the language definition. The book supplies a conceptual framework for different aspects of parallel algorithm design and implementation. It first addresses the limitations of traditional programming techniques and models when dealing with concurrency. The book then explores the current state of the art in concurrent programming and describes high-level language constructs for concurrency. It also discusses the historical evolution of hardware, corresponding high-level techniques that were developed, and the connection to modern systems, such as multicore and manycore processors. The remainder of the text focuses on common high-level programming techniques and their application to a range of algorithms. The authors offer case studies on genetic algorithms, fractal generation, cellular automata, game logic for solving Sudoku puzzles, pipelined algorithms, and more. Illustrating the effect of concurrency on programs written in familiar languages, this text focuses on novel language abstractions that truly bring concurrency into the language and aid analysis and compilation tools in generating efficient, correct programs. It also explains the complexity involved in taking advantage of concurrency with regard to program correctness and performance. 
+
+
+
+… Join Now! …
+
+
+
+
+
+******
+******
+11 <--> Lynda - Unity 5: Build a Real-Time Strategy Game
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/F1DB692FCC83E17/Unity_5_Build_a_Real-Time_Strategy_Game.part1.rar
+http://nitroflare.com/view/2C561106E03FC3A/Unity_5_Build_a_Real-Time_Strategy_Game.part2.rar
+http://nitroflare.com/view/AD4E701C8FFEB84/Unity_5_Build_a_Real-Time_Strategy_Game.part3.rar
+http://nitroflare.com/view/841C5538ADE4C46/Unity_5_Build_a_Real-Time_Strategy_Game.part4.rar
+http://nitroflare.com/view/03B343E1E4C5183/Unity_5_Build_a_Real-Time_Strategy_Game.part5.rar
+http://nitroflare.com/view/90938FDC9721FF3/Unity_5_Build_a_Real-Time_Strategy_Game.part6.rar
+
+
+Unity 5: Build a Real-Time Strategy Game
+MP4 | Video: AVC 1280x720 | Audio: AAC 48KHz 2ch | Duration: 3h 46m | 820 MB
+Genre: eLearning | Language: English
+
+Real-time strategy games like StarCraft II drive the PC gaming market. Game developers who want to compete or get hired by studios must have the skills to build map-based real-time strategy games. These Unity tutorials can help you fill the knowledge gap. They're designed for Unity programmers who want to take their existing skills and apply them to a functional RTS game. Unity programmer Dan Violet Sagmiller covers managing large and highly detailed maps, defining game units, creating buildings, configuring a heads-up display (HUD), managing resources, programming enemies with AI, and engineering battles. After watching this course, developers should feel confident about creating RTS games and expanding on the class materials with their own ideas.
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+12 <--> Make a 2D Arcade Game in a Weekend: With Unity
+http://nitroflare.com/view/E730E178CA175DD/1484214951.pdf
+
+
+Jodessiah Sumpter, "Make a 2D Arcade Game in a Weekend: With Unity " 
+English | ISBN: 1484214951 | 2016 | 180 pages | PDF | 5 MB
+
+Create and complete your first 2D arcade game in Unity. In this book you will learn to create an arcade classic brick breaker game from beginning to end. You will plan the game flow, add the graphics and create the game logic using the C# language, then build the UX to complete your game. By the time you have finished Make a 2D Arcade Game in a Weekend with Unity, you will have enough knowledge to tweak the game to create more levels or your own variant game rules, and you will have the confidence to go on and create your own 2D arcade games. You will also learn how to publish the game into mobile app stores. 
+
+Unity is a powerful cross platform software tool that allows users to create 2D and 3D apps and games. Learning how to create an arcade classic game is a great way to learn the foundations of game design. While you do need to have a basic understanding of Unity to complete this project, advanced game building or advanced Unity experience is not required. 
+Takes you through building a classic Atari style brick breaker game 
+Provides you the basic knowledge for building games 
+Teaches you how to script and design UI elements of the game
+******
+******
+13 <--> Mastering Python Scientific Computing (Repost)
+https://goo.gl/i1VV2u
+http://nitroflare.com/view/EC906D6C00CC4C0/1783288825_Masteringmpr.pdf
+
+
+Mastering Python Scientific Computing By Hemant Kumar Mehta
+2015 | 300 Pages | ISBN: 1783288825 | PDF | 3 MB
+
+
+A complete guide for Python programmers to master scientific computing using Python APIs and tools If you are a Python programmer and want to get your hands on scientific computing, this book is for you. The book expects you to have had exposure to various concepts of Python programming. In today's world, along with theoretical and experimental work, scientific computing has become an important part of scientific disciplines. Numerical calculations, simulations and computer modeling in this day and age form the vast majority of both experimental and theoretical papers. In the scientific method, replication and reproducibility are two important contributing factors. A complete and concrete scientific result should be reproducible and replicable. Python is suitable for scientific computing. A large community of users, plenty of help and documentation, a large collection of scientific libraries and environments, great performance, and good support makes Python a great choice for scientific computing. At present Python is among the top choices for developing scientific workflow and the book targets existing Python developers to master this domain using Python. The main things to learn in the book are the concept of scientific workflow, managing scientific workflow data and performing computation on this data using Python. The book discusses NumPy, SciPy, SymPy, matplotlib, Pandas and IPython with several example programs. 
+
+
+
+… Join Now! …
+
+
+
+
+
+******
+******
+14 <--> More Math Into LaTeX, 5th edition
+http://nitroflare.com/view/63D06A587EE0C8E/3319237950.pdf
+
+
+George Grätzer, "More Math Into LaTeX, 5th edition" 
+English | ISBN: 3319237950 | 2016 | 640 pages | True PDF | 12 MB
+
+For over two decades, this comprehensive manual has been the standard introduction and complete reference for writing articles and books containing mathematical formulas. If the reader requires a streamlined approach to learning LaTeX for composing everyday documents, Grätzer’s © 2014 Practical LaTeX may also be a good choice.
+
+In this carefully revised fifth edition, the Short Course has been brought up to date and reflects a modern and practical approach to LaTeX usage. New chapters have been added on illustrations and how to use LaTeX on an iPad.
+
+Key features:
+
+An example-based, visual approach and a gentle introduction with the Short Course
+A detailed exposition of multiline math formulas with a Visual Guide
+A unified approach to TeX, LaTeX, and the AMS enhancements
+A quick introduction to creating presentations with formulas
+From earlier reviews:
+
+Grätzer’s book is a solution.
+
+―European Mathematical Society Newsletter
+
+There are several LaTeX guides, but this one wins hands down for the elegance of its approach and breadth of coverage.
+
+―Amazon.com, Best of 2000, Editor’s choice
+
+A novice reader will be able to learn the most essential features of LaTeX sufficient to begin typesetting papers within a few hours of time… An experienced TeX user, on the other hand, will find a systematic and detailed discussion of LaTeX fea
+
+tures.
+―Report on Mathematical Physics
+
+A very helpful and useful tool for all scientists and engineers. ―Review of Astronomical Tools
+******
+******
+15 <--> Python Machine Learning (Repost)
+https://goo.gl/i1VV2u
+http://nitroflare.com/view/93F338706DE1631/1783555130_Python.epub
+http://nitroflare.com/view/9016BC4B7FE2D29/1783555130_Pythonmpr.pdf
+
+
+Python Machine Learning By Sebastian Raschka
+2015 | 454 Pages | ISBN: 1783555130 | EPUB + PDF | 15 MB + 32 MB
+
+
+Unlock deeper insights into Machine Leaning with this vital guide to cutting-edge predictive analytics If you want to find out how to use Python to start answering critical questions of your data, pick up Python Machine Learning – whether you want to get started from scratch or want to extend your data science knowledge, this is an essential and unmissable resource. Machine learning and predictive analytics are transforming the way businesses and other organizations operate. Being able to understand trends and patterns in complex data is critical to success, becoming one of the key strategies for unlocking growth in a challenging contemporary marketplace. Python can help you deliver key insights into your data – its unique capabilities as a language let you build sophisticated algorithms and statistical models that can reveal new perspectives and answer key questions that are vital for success. Python Machine Learning gives you access to the world of predictive analytics and demonstrates why Python is one of the world's leading data science languages. If you want to ask better questions of data, or need to improve and extend the capabilities of your machine learning systems, this practical data science book is invaluable. Covering a wide range of powerful Python libraries, including scikit-learn, Theano, and Keras, and featuring guidance and tips on everything from sentiment analysis to neural networks, you'll soon be able to answer some of the most important questions facing you and your organization. 
+
+
+
+… Join Now! …
+
+
+
+
+
+******
+******
+16 <--> Rapid BeagleBoard Prototyping with MATLAB and Simulink (Repost)
+http://nitroflare.com/view/27254A9742FC537/Rapid_BeagleBoard_Prototyping_with_MATLAB_and_Simulink.pdf
+
+
+Dr Xuewu Dai, Dr Fei Qin, "Rapid BeagleBoard Prototyping with MATLAB and Simulink" 
+English | 2013 | ISBN: 1849696047 | PDF | pages: 152 | 4 mb
+
+Leverage the power of BeagleBoard to develop and deploy practical embedded projects
+
+Overview
+
+Develop and validate your own embedded audio/video applications rapidly with Beagleboard
+Create embedded Linux applications on a pure Windows PC
+Full of illustrations, diagrams, and tips for rapid Beagleboard prototyping with clear, step-by-step instructions and hands-on examples
+In Detail
+
+As an open source embedded single-board computer with many standard interfaces, Beagleboard is ideal for building embedded audio/video systems to realize your practical ideas. The challenge is how to design and implement a good digital processing algorithm on Beagleboard quickly and easily without intensive low-level coding
+
+Rapid BeagleBoard Prototyping with MATLAB and Simulink is a practical, hands-on guide providing you with a number of clear, step-by-step exercises which will help you take advantage of the power of Beagleboard and give you a good grounding in rapid prototyping techniques for your audio/video applications.
+
+Rapid BeagleBoard Prototyping with MATLAB and Simulink looks at rapid prototyping and how to apply these techniques to your audio/video applications with Beagleboard quickly and painlessly without intensive manual low-level coding. It will take you through a number of clear, practical recipes that will help you to take advantage of both the Beagleboard hardware platform and Matlab/Simulink signal processing. We will also take a look at building S-function blocks that work as hardware drivers and interfaces for Matlab/Simulink. This gives you more freedom to explore the full range of advantages provided by Beagleboard.
+
+By the end of this book, you will have a clear idea about Beagleboard and Matlab/Simulink rapid prototyping as well as how to develop voice recognition systems, motion detection systems with I/O access, and serial communication for your own applications such as a smart home.
+
+What you will learn from this book
+
+Understand rapid prototyping on a Windows host, including Matlab/Simulink code generation for Beagleboard
+Set up a cross-development environment on Windows for Beagleboard
+Access Beagleboard’s GPIO pins and RS232 communication in Matlab and Simulink
+Develop your own S-function block in Simulink to access Beagleboard’s hardware devices
+Create an audio player and equalizer in Simulink, including audio file reading
+Adjust the parameters of your target system on-the-fly for the purpose of performance optimization
+Penetrate into an infrared sensor in Matlab/Simulink for smart home applications
+Build a video motion detection system for security applications
+Approach
+
+This book is a fast-paced guide with practical, hands-on recipes which will show you how to prototype Beagleboard-based audio/video applications using Matlab/Simlink and Sourcery Codebench on a Windows host.
+
+Who this book is written for
+
+Rapid BeagleBoard Prototyping with MATLAB and Simulink is great for students and academic researchers who have practical ideas and who want to build a proof-of-concept system on an embedded hardware platform quickly and efficiently. It is also useful for product design engineers who want to ratify their applications and reduce the time-to-market. It is assumed that you are familiar with Matlab/Simulink and have some basic knowledge of computer hardware. Experience in Linux is favoured but not necessary, as our software development is purely on a Windows host.
+
+My Links
+
+No mirrors please!
+
+******
+******
+17 <--> Text Analysis Pipelines: Towards Ad-hoc Large-Scale Text Mining
+http://nitroflare.com/view/C12CB05C80A55A6/3319257404.pdf
+
+
+Henning Wachsmuth, "Text Analysis Pipelines: Towards Ad-hoc Large-Scale Text Mining" 
+2015 | ISBN-10: 3319257404 | 302 pages | PDF | 19 MB
+
+This monograph proposes a comprehensive and fully automatic approach to designing text analysis pipelines for arbitrary information needs that are optimal in terms of run-time efficiency and that robustly mine relevant information from text of any kind. Based on state-of-the-art techniques from machine learning and other areas of artificial intelligence, novel pipeline construction and execution algorithms are developed and implemented in prototypical software. Formal analyses of the algorithms and extensive empirical experiments underline that the proposed approach represents an essential step towards the ad-hoc use of text mining in web search and big data analytics.
+Both web search and big data analytics aim to fulfill peoples’ needs for information in an adhoc manner. The information sought for is often hidden in large amounts of natural language text. Instead of simply returning links to potentially relevant texts, leading search and analytics engines have started to directly mine relevant information from the texts. To this end, they execute text analysis pipelines that may consist of several complex information-extraction and text-classification stages. Due to practical requirements of efficiency and robustness, however, the use of text mining has so far been limited to anticipated information needs that can be fulfilled with rather simple, manually constructed pipelines.
+******
+******
+18 <--> Words and Graphs
+http://nitroflare.com/view/C6AD265DBC24CD9/3319258575.pdf
+
+
+Sergey Kitaev and Vadim Lozin, "Words and Graphs" 
+English | ISBN: 3319258575 | 2016 | 284 pages | PDF | 4 MB
+
+This is the first comprehensive introduction to the theory of word-representable graphs, a generalization of several classical classes of graphs, and a new topic in discrete mathematics. After extensive introductory chapters that explain the context and consolidate the state of the art in this field, including a chapter on hereditary classes of graphs, the authors suggest a variety of problems and directions for further research, and they discuss interrelations of words and graphs in the literature by means other than word-representability. The book is self-contained, and is suitable for both reference and learning, with many chapters containing exercises and solutions to seleced problems. It will be valuable for researchers and graduate and advanced undergraduate students in discrete mathematics and theoretical computer science, in particular those engaged with graph theory and combinatorics, and also for specialists in algebra.
 ******
 0 <--> Verteilte Laufzeitverifikation auf eingebetteten Systemen
 ******
