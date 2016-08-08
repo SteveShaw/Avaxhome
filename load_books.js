@@ -104,9 +104,10 @@ function RetrieveBookContent( )
     else
     {
         console.log('Error: Missing div.col-md-12.article')
-        AddToPageContents( 'Untitled', '<div><h2>NONE</h2>'+'<a href="'+ url 
-                            +'" target="_blank"><span style="color: Red;font-size: 300\%">'
-                            +url+'</span></a>'+'</div>' )
+        // AddToPageContents( 'Untitled', '<div><h2>NONE</h2>'+'<a href="'+ url 
+                            // +'" target="_blank"><span style="color: Red;font-size: 300\%">'
+                            // +url+'</span></a>'+'</div>' );
+		// book_titles.push( 'Error_Title', links[count], ' Error Access ' );
     }
 }
 

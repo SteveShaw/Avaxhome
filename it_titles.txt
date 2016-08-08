@@ -1,3 +1,259 @@
+2016/08/08
+******
+0 <--> Pro jQuery (Repost)
+
+
+17 <--> Extending Powershell
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/FF32A1E8CAB2450/Extending_Powershell.part1.rar
+http://nitroflare.com/view/AFBF36D5600861D/Extending_Powershell.part2.rar
+http://nitroflare.com/view/94695BEB0B51614/Extending_Powershell.part3.rar
+http://nitroflare.com/view/B3EBE1D3567D551/Extending_Powershell.part4.rar
+
+
+Extending Powershell
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 389 MB
+Genre: eLearning | Language: English
+
+Learn how to extend PowerShell by creating your own Cmdlets.
+
+PowerShell is a powerful and flexible platform that opens a lot of possibilities. This course starts with an overview of Cmdlets development, and explains in depth processing input and output, finally it progress to more advanced concepts. The course covers topics such as environment automation, deployment or help files. After this course you will be able to benefit from PowerShell and create your own Cmdlets.
+
+19 <--> Git Real
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/F6A84ED71DD581C/Git_Real.part1.rar
+http://nitroflare.com/view/C60443F67BA1FBE/Git_Real.part2.rar
+http://nitroflare.com/view/EDCCAAE0345B218/Git_Real.part3.rar
+http://nitroflare.com/view/65B3E6ACBD883BF/Git_Real.part4.rar
+http://nitroflare.com/view/1DB2D2E8B00B2E7/Git_Real.part5.rar
+
+
+Git Real
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | Lec: 7 | 637 MB
+Genre: eLearning | Language: English
+
+Learn more advanced Git by practicing the concepts of Git version control. Increase your Git knowledge by learning more advanced systems within Git.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+******
+20 <--> CNC Programming with G Code for Beginners
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/C40F657C5373BFA/CNC_Programming_with_G_Code_for_Beginners.rar
+
+
+CNC Programming with G Code for Beginners
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | Lec: 16 | 74 MB
+Genre: eLearning | Language: English
+
+Learn the basics of machining with G-Code.
+
+This course will teach you how to create G-Code so you can control CNC machines. This is very useful if you are a machinist or want to be a DIY and create what ever you can imagine in your own garage. You will be given material to teach you the basics and watch tutorials of G-Code applied to real parts. This course will use CNC simulators so you can see what the code you create actually does. The course will provide you with the materials necessary to turn drawings into the code required to make it a physical part.
+
+24 <--> UNIX Shell Scripting Interview Questions, Answers, and Explanations: UNIX Shell Certification Review (Repost)
+http://nitroflare.com/view/660CD3171C9E779/1933804432UNIX.rar
+
+Terry Sanchez-Clark, "UNIX Shell Scripting Interview Questions, Answers, and Explanations: UNIX Shell Certification Review" 
+English | 2007 | EPUB, MOBI | 160 pages | ISBN: 1933804432 | 1 MB
+
+Fluency with a UNIX Shell is mandatory for working within the UNIX operating system. Keeping current, however, can be a challenge. With the UNIX Shell Scripting Interview Guide, you will be sure to be current.
+Using this book to prepare for a job interview or brush up on a scripting programming language will aid any programmer in acquiring new and applicable skills and knowledge. This book contains a complete reference of common scripting errors, performance tuning examples, and common applications. More than just UNIX documentation and open source rhetoric, this guide explains UNIX Shell Scripting from the perspective of the advanced programmer and administrator so you can be sure to come to any interview prepared. Key topics include: . Graphical user interfaces for UNIX . Advanced features of Bash, Bourne, and Korn . Common errors and troubleshooting . System monitoring and maintenance . Modern command line shells
+
+26 <--> Integrating Node Applications with GitHub (2016)
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/8AA96A1BC19C5A5/Integrating_Node_Applications_with_GitHub.part1.rar
+http://nitroflare.com/view/6E3AD523EDF916A/Integrating_Node_Applications_with_GitHub.part2.rar
+http://nitroflare.com/view/B2464A22B2B34E8/Integrating_Node_Applications_with_GitHub.part3.rar
+http://nitroflare.com/view/05E7AE355C075DF/Integrating_Node_Applications_with_GitHub.part4.rar
+
+
+Integrating Node Applications with GitHub
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 43M | 309 MB
+Genre: eLearning | Language: English
+
+In this course, you will learn to test files automatically with Travis, how to deploy GitHub repositories automatically with Trello, and much more.
+
+With the pace of development on the internet increasing each year, developers need a way to manage NodeJS applications that will keep them ahead of the pack. This course, Integrating Node Applications with GitHub, will help you not only learn a variety of skills that will help in any workplace that uses GitHub, but many advanced techniques that can be used to deploy your own applications, or contribute outstandingly to your place of business. You'll learn how to integrate your GitHub projects with Travis CI, which will let you know well in advance if there are any errors, and can be integrated with other applications to allow for error-free deploys. Next, you'll learn to deploy your NodeJS application using Heroku. Deployment of Node applications can be extremely challenging, but this course makes it simple and easy enough to be accomplished in a few short videos. Lastly, you'll learn how to set GitHub up with Trello, which facilitates professional discussion between workers and clients. After completing this course, you'll be ready to interact with GitHub projects in the workplace and independently much more effectively.
+
+43 <--> Scaling Java Applications Through Concurrency (2016)
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/856387FEA2A3223/Scaling_Java_Applications_Through_Concurrency.part1.rar
+http://nitroflare.com/view/B9A2A00312CFC3A/Scaling_Java_Applications_Through_Concurrency.part2.rar
+http://nitroflare.com/view/078AC83151201F1/Scaling_Java_Applications_Through_Concurrency.part3.rar
+http://nitroflare.com/view/DDBD93B8A0B77A3/Scaling_Java_Applications_Through_Concurrency.part4.rar
+http://nitroflare.com/view/E5A9F8436212609/Scaling_Java_Applications_Through_Concurrency.part5.rar
+
+
+Scaling Java Applications Through Concurrency
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 19M | 497 MB
+Genre: eLearning | Language: English
+
+Distributed systems and multi-core platforms are far too prevalent now to dismiss everyday concurrency. This course outlines several concurrency patterns that the Java Concurrency API simplifies, making it much easier to scale your Java application.
+
+There are several gems inside the existing concurrency API that have been hiding in the background for years, waiting to be discovered by curious software engineers. The existing Java Concurrency API makes it much easier to build a Java application that is scalable and performant without having to settle for lots of low-level wait-notify usage or lots of locking using the synchronized keyword. In this course, Scaling Java Applications Through Concurrency, you'll cover several concurrency patterns simplified by the Java Concurrency API; these patterns will make scaling new and existing Java applications simpler than ever. First, you'll learn about how the Java Concurrency API has changed scalability and how to run processes in the background. Next, you'll cover classes that will help you avoid mistakes like lost updates when sharing resources. Finally, you'll discover how to coordinate dependent processes and implementing throttling. By the end of this course, you will be able to easily scale your Java applications through concurrency so that they work better and faster.
+
+53 <--> IPython Interactive Computing and Visualization Cookbook (Repost)
+http://nitroflare.com/view/DDE358FA225253D/1783284811_IPythonsp1.epub
+http://nitroflare.com/view/647E5B6F4608680/1783284811_IPythonsp1.pdf
+
+
+IPython Interactive Computing and Visualization Cookbook By Cyrille Rossant
+2014 | 512 Pages | ISBN: 1783284811 | EPUB + PDF | 14 MB
+
+
+Leverage the new features of the IPython notebook for interactive web-based big data analysis and visualization Become an expert in high-performance computing and visualization for data analysis and scientific modeling A comprehensive coverage of scientific computing through many hands-on, example-driven recipes with detailed, step-by-step explanations Who This Book Is For Intended to anyone interested in numerical computing and data science: students, researchers, teachers, engineers, analysts, hobbyists... Basic knowledge of Python/NumPy is recommended. Some skills in mathematics will help you understand the theory behind the computational methods.
+
+78 <--> Node.js Design Patterns (Repost)
+http://nitroflare.com/view/8D1904913996E2A/1783287314_Node.jssp1.epub
+http://nitroflare.com/view/3566017532EE026/1783287314_Node.jssp1.pdf
+
+
+Node.js Design Patterns By Mario Casciaro
+2014 | 454 Pages | ISBN: 1783287314 | EPUB + PDF | 18 MB
+
+
+Get the best out of Node.js by mastering a series of patterns and techniques to create modular, scalable, and efficient applications About This Book Dive into the core patterns and components of Node.js in order to master your application's design Learn tricks, techniques, and best practices to solve common design and coding challenges Take a code-centric approach to using Node.js without friction Who This Book Is For If you're a JavaScript developer interested in a deeper understanding of how to create and design Node.js applications, this is the book for you.
+******
+
+
+2016/08/04
+******
+0 <--> Globale Optimierung von Niveaulinien. Geometrische und algebraische Fundierung und Algorithmen (repost)
+
+12 <--> Windows Workflows with PowerShell
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/80D6CB1DFF26DEF/Windows_Workflows_with_PowerShell.part1.rar
+http://nitroflare.com/view/466D24D1D26E610/Windows_Workflows_with_PowerShell.part2.rar
+http://nitroflare.com/view/17EE93716F83B3F/Windows_Workflows_with_PowerShell.part3.rar
+http://nitroflare.com/view/7E10BB7DB4BC617/Windows_Workflows_with_PowerShell.part4.rar
+
+
+Windows Workflows with PowerShell
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 350 MB
+Genre: eLearning | Language: English
+
+Running the same individual scripts all day is not the best use of your time–but workflows are the solution! This course describes PowerShell workflows and shows how to write/develop, run, and troubleshoot workflows.
+
+Workflows are used to execute long-running and restartable scripts that are a bother to run individually–they can greatly increase your productivity. This course, Windows Workflows with PowerShell, you'll learn how to use PowerShell workflows to help you do your work more efficiently. You'll first begin by learning about different workflows and how to write and run them with Windows PowerShell. Next, you'll look at some of the issues that might arise when you convert a script or set of scripts into a workflow. Finally, you'll learn how to convert a set of scripts to a workflow. By the end of this course, you'll have the resources to understand Windows workflows with PowerShell and you'll be able to work faster then ever.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+******
+19 <--> 3D Printed Science Projects: Ideas for your classroom, science fair or home (Technology in Action) (Repost)
+http://nitroflare.com/view/646C49F58DD77F6/1484213246_3D.epub
+
+
+3D Printed Science Projects: Ideas for your classroom, science fair or home (Technology in Action) By Joan Horvath
+2016 | 224 Pages | ISBN: 1484213246 | PDF | 4 MB
+
+
+This book describes how to create 3D printable models that can help students from kindergarten through grad school learn math, physics, botany, chemistry, engineering and more. Each of the eight topics is designed to be customized by the reader to create a wide range of projects suitable for science fairs, extra credit, or classroom demonstrations. Science fair project suggestions and extensive "where to learn more" resources are included, too. You will add another dimension to your textbook understanding of science. In this book, you will learn: To create (and present the science behind) 3D printed models. To use a 3D printer to create those models as simply as possible. New science insights from designing 3D models. Who this book is for: This book shows parents and teachers how to use the models inside as starting points for 3D printable explorations. Students can start with these models and vary them for their own explorations. Unlike other sets of models that can just be scaled, these models have the science built-in to allow for more insight into the fundamental concepts.
+******
+22 <--> Tutsplus - JavaScript Refactoring Techniques
+http://avaxhome.ws/blogs/serpmolot
+http://nitroflare.com/view/6D69FD00C127662/RTechniques.rar
+
+
+Tutsplus - JavaScript Refactoring Techniques
+English | 1 Aug 2016 | mp4 | H264 1280x720 | AAC 2 ch | 14 min | 200 MB 
+eLearning | JavaScript, Programming Fundamentals, JavaScript ES6, ECMAScript 2015, Functional Programming
+
+We all read more code than we write. Naturally we should be doing something to optimize the reading experience. Refactoring is the process of improving the structure and readability of code without changing its functionality.
+
+In this course, Envato Tuts+ instructor Pavan Podila will show you seven different techniques that can help you write more readable and refactored code. You'll see how to leverage the JavaScript ES6 (ECMAScript 2015) syntax and features such as template strings, hoisting, IIFE, Function.bind, and a few more. By the end of this ten-minute Coffee Break Course, you will have some powerful techniques to improve and simplify your JavaScript code.
+
+25 <--> The Unreal Engine Developer Course - Learn C++ & Make Games [Updated]
+http://avxsearch.se/search?q=Programming%2C%2BDevelopment&a=ParRus&exact=0&c=all&l=&sort_by=date_desc
+http://avxhome.in/blogs/ParRus
+http://nitroflare.com/folder/7860/L24xlYXJuLWMtbWFrZS1nYW1lcw
+
+
+The Unreal Engine Developer Course - Learn C++ & Make Games (2016)
+WEBRip | English | MP4 + Project files | 1280 x 720 | AVC ~499 kbps | 30 fps
+AAC | 192 Kbps | 48.0 KHz | 2 channels | 31:49:01 | 12.44 GB
+Genre: eLearning Video / Computer Science, Development, Programming
+
+This course is the beginning of a project that was a runaway success on Kickstarter. Get involved now, and get access to all future content as it's added. The final course will be over 30 hours of content and 200+ lectures.
+Learn how to create and mod video games using Unreal Engine 4, the free-to-use game development platform used by AAA studios and indie developers worldwide. We start super simple so you need no prior experience of Unreal or coding! With our online tutorials, you'll be amazed what you can achieve.
+Benefit from our world-class support from both other students, and Ben who is on the forums regularly. Go on to build several games including a full 3D version of Pong with an online multiplayer scoreboard, and more.
+You will have access to a course forum where you can discuss topics on a course-wide basis, or down to the individual video. Our thriving discussion forum will help you learn and share ideas with other students.
+You will learn C++, the powerful industry standard language from scratch. By the end of the course you'll be very confident in the basics of coding and game development, and hungry to learn more.
+Anyone who wants to learn to create games: Unreal Engine is a fantastic platform which enables you to make AAA-quality games. Furthermore these games can be created for Windows, consoles, MacOS, iOS, Android and Web from a single source!
+If you're a complete beginner, we'll teach you all the coding and game design principles you'll need. If you're an artist, we'll teach you to bring your assets to life. If you're a coder, we'll teach you game design principles.
+
+
+28 <--> Unity3d Concepts
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/E065E7606968F37/Unity3d_Concepts.part1.rar
+http://nitroflare.com/view/F48622130153705/Unity3d_Concepts.part2.rar
+http://nitroflare.com/view/C4B7C45320BF715/Unity3d_Concepts.part3.rar
+http://nitroflare.com/view/618C7034C20C226/Unity3d_Concepts.part4.rar
+http://nitroflare.com/view/5FC5E7D75251D95/Unity3d_Concepts.part5.rar
+
+
+Unity3d Concepts
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4 Hours | Lec: 50 | 946 MB
+Genre: eLearning | Language: English
+
+Learn the basics of creating your own games in Unity3d. This is a brand new course that covers Unity 4.XX of Unity3d.
+
+Welcome to the Unity Concepts tutorial series. This Unity3d video course was created from scratch and gives you a thorough understanding of the Unity3d engine. It was designed with the most up to date version of Unity3d currently out (Unity 4.XX).
+
+Learn why Unity3d is great for developing your own games. You'll go over everything from scripting in Javascript to animation to building your game for use on multiple platforms like iOS, Android, Linux, OSX and Windows to name a few.
+
+Unity3d can also be used to create mobile apps, not just games and with it's ease of use and powerful features you can get your idea up and running easily. So lets get started now!
+
+What you'll Learn in this Course
+
+Navigating the Unity3d interface
+Creating and using Game Objects
+Understanding how Physics work in Unity3d
+How to create a custom GUI interface with text and images
+Sculpting and detailing terrain with textures
+Building custom trees using the Tree Creator
+Particle systems
+How to implement Colliders and Triggers
+Dynamic Audio Clips
+Interactive Cloth and Joints
+Applying Textures and Materials
+Simple Javascript Basics
+Mecanim Animation system with scripted inputs
+Don't forget to check back as this course is constantly being updated with new and up to date content. Hope you enjoy this course, have fun developing with Unity3d!
+
+
+33 <--> Game Coding Complete (4th edition) (Repost) --> library
+
+
+
+Game Coding Complete (4th edition) By Mike McShaffry, David Graham
+2012 | 940 Pages | ISBN: 1133776574 | EPUB, MOBI, PDF | 15 MB
+
+
+Welcome to Game Coding Complete, Fourth Edition, the newest edition of the essential, hands-on guide to developing commercial-quality games. Written by two veteran game programmers, the book examines the entire game development process and all the unique challenges associated with creating a game. In this excellent introduction to game architecture, you'll explore all the major subsystems of modern game engines and learn professional techniques used in actual games, as well as Teapot Wars, a game created specifically for this book. This updated fourth edition uses the latest versions of DirectX and Visual Studio, and it includes expanded chapter coverage of game actors, AI, shader programming, LUA scripting, the C# editor, and other important updates to every chapter. All the code and examples presented have been tested and used in commercial video games, and the book is full of invaluable best practices, professional tips and tricks, and cautionary advice.
+
+36 <--> Data Clustering in C++: An Object-Oriented Approach (repost) --> library
+
+Data Clustering in C++: An Object-Oriented Approach by Guojun Gan
+English | 13 May 2011 | ISBN: 1439862230 | 520 Pages | PDF | 4 MB
+
+Data clustering is a highly interdisciplinary field, the goal of which is to divide a set of objects into homogeneous groups such that objects in the same group are similar and objects in different groups are quite distinct. Thousands of theoretical papers and a number of books on data clustering have been published over the past 50 years. However, few books exist to teach people how to implement data clustering algorithms. This book was written for anyone who wants to implement or improve their data clustering algorithms.
+
+Using object-oriented design and programming techniques, Data Clustering in C++ exploits the commonalities of all data clustering algorithms to create a flexible set of reusable classes that simplifies the implementation of any data clustering algorithm. Readers can follow the development of the base data clustering classes and several popular data clustering algorithms. Additional topics such as data pre-processing, data visualization, cluster visualization, and cluster interpretation are briefly covered.
+
+This book is divided into three parts–
+
+Data Clustering and C++ Preliminaries: A review of basic concepts of data clustering, the unified modeling language, object-oriented programming in C++, and design patterns
+A C++ Data Clustering Framework: The development of data clustering base classes
+Data Clustering Algorithms: The implementation of several popular data clustering algorithms
+A key to learning a clustering algorithm is to implement and experiment the clustering algorithm. Complete listings of classes, examples, unit test cases, and GNU configuration files are included in the appendices of this book as well as in the CD-ROM of the book. The only requirements to compile the code are a modern C++ compiler and the Boost C++ libraries.
+
 2016-08-02
 ******
 0 <--> Byte-Sized-Chunks: Bit Manipulation Problems
