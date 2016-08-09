@@ -1,3 +1,155 @@
+2016/08/09
+******
+0 <--> Analysis of Large and Complex Data
+
+1 <--> Understanding Multivariable Calculus: Problems, Solutions, and Tips [repost]
+http://avxhome.in/blogs/ParRus
+http://nitroflare.com/folder/7860/L36Byb2JsZW1zLXNvbHV0aW9ucy1hbmQtdGlwcw
+
+
+Understanding Multivariable Calculus: Problems, Solutions, and Tips
+36xWEBRip | English | WMV + PDF Guidebook | 640 x 360 | WMV3 ~2000 kbps | 29.970 fps
+WMA | 128 kbps | 44.1 KHz | 2 channels | 18:23:41 | 13 GB
+Genre: eLearning Video / Calculus, Math
+
+Calculus offers some of the most astounding advances in all of mathematics—reaching far beyond the two-dimensional applications learned in first-year calculus. We do not live on a sheet of paper, and in order to understand and solve rich, real-world problems of more than one variable, we need multivariable calculus, where the full depth and power of calculus is revealed.
+Whether calculating the volume of odd-shaped objects, predicting the outcome of a large number of trials in statistics, or even predicting the weather, we depend in myriad ways on calculus in three dimensions. Once we grasp the fundamentals of multivariable calculus, we see how these concepts unfold into new laws, entire new fields of physics, and new ways of approaching once-impossible problems.
+
+With multivariable calculus, we get
+
+partial derivatives, which are the building blocks of partial differential equations;
+new tools for optimization, taking into account as many variables as needed;
+vector fields that give us a peek into the workings of fluids, from hydraulic pistons to ocean currents and the weather;
+line integrals that determine the work done on a path through these vector fields;
+new coordinate systems that enable us to solve integrals whose solutions in Cartesian coordinates may be difficult to work with;
+force fields, including those of gravitation and electricity; and
+mathematical definitions of planes and surfaces in space, from which entire fields of mathematics such as topology and differential geometry arise.
+
+Understanding Multivariable Calculus: Problems, Solutions, and Tips, taught by award-winning Professor Bruce H. Edwards of the University of Florida, brings the concepts of calculus together in a much deeper and more powerful way. Building from an understanding of basic concepts in Calculus I, it is a full-scope course that encompasses all the key topics of multivariable calculus, together with brief reviews of needed concepts as you go along. This course is the next step for students and professionals to expand their knowledge for work or study in mathematics, statistics, science, or engineering and to learn new methods to apply to their field of choice. It’s also an eye-opening intellectual exercise for teachers, retired professionals, and anyone else who wants to understand the amazing applications of 3-D calculus.
+
+Designed for anyone familiar with basic calculus, Understanding Multivariable Calculus follows, but does not essentially require knowledge of, Calculus II. The few topics introduced in Calculus II that do carry over, such as vector calculus, are here briefly reintroduced, but with a new emphasis on three dimensions.
+
+Your main focus throughout, in a series of 36 comprehensive lectures that extend beyond what is typically taught in university classrooms, is on deepening and generalizing fundamental tools of integration and differentiation to functions of more than one variable. Under the expert guidance of Professor Edwards, you’ll embark on an exhilarating journey through the concepts of multivariable calculus, enlivened with real-world examples and beautiful animated graphics that lift calculus out of the textbook and into our three-dimensional world.
+
+Unlock the Full Power of Calculus
+
+Too frequently, students end their education in higher-level math after a year of fundamental calculus–thereby missing out on this capstone course that makes possible consideration of problems that have the dimensions and complexity of real life. With the tools and techniques of multivariable calculus, students will be able to understand and solve complex problems arising in a wide array of fields in an elegant manner.
+
+Use the gradient vector to optimize a function subject to a constraint using Lagrange multipliers.
+Determine work done on a path with line integrals, and find the flow through a surface with surface integrals.
+See how Isaac Newton used multivariable calculus to prove Johannes Kepler’s laws of orbits.
+Explore the properties of fluids and the relationship of vector fields with path integrals using Stokes’s theorem, Green’s theorem, and the Divergence theorem.
+Understand why Maxwell was able to discover underlying unities between electricity and magnetism that no one had been able to identify before.
+
+In Understanding Multivariable Calculus, you will begin your journey in familiar territory as you jump into three dimensions with standard Cartesian coordinates. You’ll see the fundamentals you learned in Calculus I extrapolated to three dimensions, as derivatives and the Extreme Value theorem are applied with more variables. Then observe how an extra dimension enables partial derivatives to provide new information, including how they can be combined into a total differential that enables changes in a multivariable function to be approximated with its partial derivatives.
+
+By adding this extra dimension to vectors, you will be given surprising new insight into surfaces and volumes from perspectives you never considered. You’ll view how vectors can be combined with recognizable techniques from geometry and algebra to yield parametric equations that are both powerful and simple in defining lines and planes in space.
+
+Next, you’ll see old integrals in a new light, as two definite integrals with two different variables are computed as an iterated integral. By tweaking this method, you’ll learn to compute double integrals for area, as well as triple integrals for volume—as well as some helpful techniques involving basic algebra and new coordinate systems for setting up your integrals for success.
+
+Finally, witness a truly wonderful thing happen when these new double and triple integrals are combined with what you’ve learned in previous lectures about vectors and derivatives: Entire new fields of physics explode into existence. Watch as line integrals, surface integrals, curl, divergence, and flux are derived and illuminate fluid mechanics. Then you’ll see how the famous theorems of Green and Stokes and the Divergence theorem unite these integrals, and be granted insight into how Maxwell derived his equations that gave birth to the unified study of electromagnetism.
+
+A New Look at Old Problems
+
+How do you integrate over a region of the xy plane that can’t be defined by just one standard y = f(x) function? Multivariable calculus is full of hidden surprises, containing the answers to many such questions. In Understanding Multivariable Calculus, Professor Edwards unveils powerful new tools in every lecture to solve old problems in a few steps, turn impossible integrals into simple ones, and yield exact answers where even calculators can only approximate.
+
+And with techniques using new coordinate systems, new integrals, and new theorems uniting them all, you will be able to integrate volumes and surface areas directly with double and triple integrals;
+define easily differentiable parametric equations for a function using vectors; and
+utilize polar, cylindrical, and spherical coordinates to evaluate double and triple integrals whose solutions are difficult in standard Cartesian coordinates.
+
+These tools are essential in fields such as statistics, engineering, and physics where equations arise that cannot be worked with easily using the conventional Cartesian coordinate system.
+
+Professor Edwards leads you through these new techniques with a clarity and enthusiasm for the subject that make even the most challenging material accessible and enjoyable. From the very first lecture, you’ll see why Professor Edwards has won teaching awards at the University of Florida.
+
+Discover at Your Own Pace
+
+With 36 lectures featuring graphics animated with state-of-the-art software that brings three-dimensional surfaces and volumes to life, this course will provide you with a view of multivariable calculus beyond what’s available in textbooks and lecture halls. Using the accompanying illustrated workbook, you are free to move at your own pace to grasp the powerful tools of multivariable calculus to your own satisfaction.
+
+This course offers a uniquely self-contained approach, appealing to a wide array of backgrounds and experience levels. Understanding Multivariable Calculus offers students and professionals in virtually every quantitative field as well as anyone who is intrigued about math a chance to better understand the full potential of one of the crowning mathematical achievements of humankind: calculus.
+
+
+
+
+Lectures:
+
+01 A Visual Introduction to 3-D Calculus
+02 Functions of Several Variables
+03 Limits, Continuity, and Partial Derivatives
+04 Partial Derivatives—One Variable at a Time
+05 Total Differentials and Chain Rules
+06 Extrema of Functions of Two Variables
+07 Applications to Optimization Problems
+08 Linear Models and Least Squares Regression
+09 Vectors and the Dot Product in Space
+10 The Cross Product of Two Vectors in Space
+11 Lines and Planes in Space
+12 Curved Surfaces in Space
+13 Vector-Valued Functions in Space
+14 Kepler’s Laws—The Calculus of Orbits
+15 Directional Derivatives and Gradients
+16 Tangent Planes and Normal Vectors to a Surface
+17 Lagrange Multipliers—Constrained Optimization
+18 Applications of Lagrange Multipliers
+19 Iterated integrals and Area in the Plane
+20 Double Integrals and Volume
+21 Double Integrals in Polar Coordinates
+22 Centers of Mass for Variable Density
+23 Surface Area of a Solid
+24 Triple Integrals and Applications
+25 Triple Integrals in Cylindrical Coordinates
+26 Triple Integrals in Spherical Coordinates
+27 Vector Fields—Velocity, Gravity, Electricity
+28 Curl, Divergence, Line Integrals
+29 More Line Integrals and Work by a Force Field
+30 Fundamental Theorem of Line Integrals
+31 Green’s Theorem—Boundaries and Regions
+32 Applications of Green’s Theorem
+33 Parametric Surfaces in Space
+34 Surface Integrals and Flux Integrals
+35 Divergence Theorem—Boundaries and Solids
+36 Stokes’s Theorem and Maxwell's Equations
+
+******
+13 <--> Transformational Plane Geometry (Repost)
+http://nitroflare.com/view/B5BC7A5C44E7062/1482234718_Transformationalsp1.pdf
+
+
+Transformational Plane Geometry By Ronald N. Umble
+2014 | 234 Pages | ISBN: 1482234718 | PDF | 3 MB
+
+
+Designed for a one-semester course at the junior undergraduate level, Transformational Plane Geometry takes a hands-on, interactive approach to teaching plane geometry. The book is self-contained, defining basic concepts from linear and abstract algebra gradually as needed. The text adheres to the National Council of Teachers of Mathematics Principles and Standards for School Mathematics and the Common Core State Standards Initiative Standards for Mathematical Practice. Future teachers will acquire the skills needed to effectively apply these standards in their classrooms. Following Felix Klein’s Erlangen Program, the book provides students in pure mathematics and students in teacher training programs with a concrete visual alternative to Euclid’s purely axiomatic approach to plane geometry. After reviewing the essential principles of classical Euclidean geometry, the book covers general transformations of the plane with particular attention to translations, rotations, reflections, stretches, and their compositions. The authors apply these transformations to study congruence, similarity, and symmetry of plane figures and to classify the isometries and similarities of the plane.
+******
+21 <--> Common Errors in Statistics (and How to Avoid Them), 4th Edition
+http://nitroflare.com/view/4843D406DBE2926/1118294394.epub
+
+
+Common Errors in Statistics (and How to Avoid Them) by Phillip I. Good, James W. Hardin
+2012 | ISBN: 1118294394 | English | 352 pages | EPUB | 4 MB
+
+Praise for Common Errors in Statistics (and How to Avoid Them)
+
+"A very engaging and valuable book for all who use statistics in any setting."
+—CHOICE
+
+"Addresses popular mistakes often made in data collection and provides an indispensable guide to accurate statistical analysis and reporting. The authors' emphasis on careful practice, combined with a focus on the development of solutions, reveals the true value of statistics when applied correctly in any area of research."
+—MAA Reviews
+
+Common Errors in Statistics (and How to Avoid Them), Fourth Edition provides a mathematically rigorous, yet readily accessible foundation in statistics for experienced readers as well as students learning to design and complete experiments, surveys, and clinical trials.
+
+Providing a consistent level of coherency throughout, the highly readable Fourth Edition focuses on debunking popular myths, analyzing common mistakes, and instructing readers on how to choose the appropriate statistical technique to address their specific task. The authors begin with an introduction to the main sources of error and provide techniques for avoiding them. Subsequent chapters outline key methods and practices for accurate analysis, reporting, and model building. The Fourth Edition features newly added topics, including:
+
+Baseline data
+Detecting fraud
+Linear regression versus linear behavior
+Case control studies
+Minimum reporting requirements
+Non-random samples
+The book concludes with a glossary that outlines key terms, and an extensive bibliography with several hundred citations directing readers to resources for further study.
+
+Presented in an easy-to-follow style, Common Errors in Statistics, Fourth Edition is an excellent book for students and professionals in industry, government, medicine, and the social sciences.
+******
+
 2016-0803
 ******
 0 <--> SPSS Survival Manual
