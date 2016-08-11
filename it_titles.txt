@@ -1952,316 +1952,1136 @@ The best way to learn is doing. So in the second part of the course, actual appl
 New projects will be added periodically in the future, but the course price will go up accordingly. So enroll now, It will be your best investment.
 
 
+2016-08-01
 
 
-Click Here to get more tutorials in my Blog
+164 <--> C# Deconstructed: Discover How C# Works on the .Net Framework (Repost)
+http://nitroflare.com/view/560F11E62FC74B0/1430266708_C%23spr.pdf
+https://filejoker.net/4yz26m27iy0k
+
+
+C# Deconstructed: Discover How C# Works on the .Net Framework By Mohammad Rahman
+2014 | 172 Pages | ISBN: 1430266708 | PDF | 5 MB
+
+
+The basic operational design of a computer system is called its architecture. John von Neumann, a pioneer in computer design, is credited with the architecture of most computers in use today. A typical von Neumann system has three major components: the central processing unit (CPU), or microprocessor; physical memory; and input/output (I/O). In von Neumann architecture (VNA) machines, such as the 80x86 family, the CPU is where all the computations of any applications take place. An application is simply a combination of machine instructions and data. To be executed by the CPU, an application needs to reside in physical memory. Typically, the application program is written using a mechanism called programming language. To understand how any given programming language works, it is important to know how it interacts with the operating system (OS), software that manages the underlying hardware and that provides services to the application, as well as how the CPU executes applications. In this chapter, you will learn the basic architecture of the CPU (microcode, instruction set) and how it executes instructions, fetching them from memory. You will then learn how memory works, how the OS manages the CPU and memory, and how the OS offers a layer of abstraction to a programming language. Finally, the sections on language evaluation will give you a high-level overview of how C# and common language runtime (CLR) evolved and the reason they are needed.
+
+175 <--> 25 Quintessential Programming Interview Problems: Set A
+http://nitroflare.com/view/BFC05C827626C50/B00VU85E2K.epub
+
+
+Rui Ming, "25 Quintessential Programming Interview Problems: Set A" 
+2015 |ASIN: B00VU85E2K | 137 pages | EPUB | 0,3 MB
+
+This book has 25 quintessential problems supplemented by C++ solutions ideal for technical interview preparations for a Software Developer position at tech titans like Google, Microsoft, Facebook, Apple, Twitter, Amazon or many Silicon Valley startups. To help you prepare for your next technical interviews, we have carefully hand picked 25 quintessential coding problems (katas) that every Software Developer must absolutely know how to solve.
+
+177 <--> Udemy - The Unreal Engine Developer Course - Learn C++ & Make Games
+http://avxhome.se/blogs/house23
+http://nitroflare.com/view/DCFE8141A7BFA2C/Learn_Cod_C_Dev_Gam.part01.rar
+http://nitroflare.com/view/5AA8F821C7C38BD/Learn_Cod_C_Dev_Gam.part02.rar
+http://nitroflare.com/view/4CA1A2B04772490/Learn_Cod_C_Dev_Gam.part03.rar
+http://nitroflare.com/view/4D4F5101BC2C54E/Learn_Cod_C_Dev_Gam.part04.rar
+http://nitroflare.com/view/AB0351735C89EBD/Learn_Cod_C_Dev_Gam.part05.rar
+http://nitroflare.com/view/405417A83CB321E/Learn_Cod_C_Dev_Gam.part06.rar
+http://nitroflare.com/view/16F6AFC6718AEF1/Learn_Cod_C_Dev_Gam.part07.rar
+http://nitroflare.com/view/65A7F443376BD32/Learn_Cod_C_Dev_Gam.part08.rar
+http://nitroflare.com/view/DDDE3137AEBC97B/Learn_Cod_C_Dev_Gam.part09.rar
+http://nitroflare.com/view/553F25322F60B74/Learn_Cod_C_Dev_Gam.part10.rar
+http://nitroflare.com/view/763ADCE14C336A2/Learn_Cod_C_Dev_Gam.part11.rar
+http://nitroflare.com/view/3E0D441B2341831/Learn_Cod_C_Dev_Gam.part12.rar
+
+
+Udemy - The Unreal Engine Developer Course - Learn C++ & Make Games
+MP4 | AVC 806kbps | English | 1280x720 | 30fps | 25h 30mins | AAC stereo 58kbps | 9.76 GB
+Genre: Video Training
+
+This course is the beginning of a project that was a runaway success on Kickstarter. Get involved now, and get access to all future content as it's added. The final course will be over 30 hours of content and 200+ lectures. Learn how to create and mod video games using Unreal Engine 4, the free-to-use game development platform used by AAA studios and indie developers worldwide. We start super simple so you need no prior experience of Unreal or coding! With our online tutorials, you'll be amazed what you can achieve.
+
+Benefit from our world-class support from both other students, and Ben who is on the forums regularly. Go on to build several games including a full 3D version of Pong with an online multiplayer scoreboard, and more.
+
+You will have access to a course forum where you can discuss topics on a course-wide basis, or down to the individual video. Our thriving discussion forum will help you learn and share ideas with other students.
+
+You will learn C++, the powerful industry standard language from scratch. By the end of the course you'll be very confident in the basics of coding and game development, and hungry to learn more.
+
+Anyone who wants to learn to create games: Unreal Engine is a fantastic platform which enables you to make AAA-quality games. Furthermore these games can be created for Windows, consoles, MacOS, iOS, Android and Web from a single source!
+
+If you're a complete beginner, we'll teach you all the coding and game design principles you'll need. If you're an artist, we'll teach you to bring your assets to life. If you're a coder, we'll teach you game design principles.
+
+What this course DOESN'T cover…
+
+Whereas this course is already huge, we can't possibly cover everything in that time. Here are some things we will not be covering…
+
+Team collaboration topics.
+Editor plugins or modifications.
+Physics engine modification.
+
+Learn C++, the games industry standard language.
+Develop strong and transferrable problem solving skills.
+Gain an excellent knowledge of modern game development.
+Learn how object oriented programming works in practice.
+Gain a fundamental understanding of computer operation.
+
+
+183 <--> Finite Difference Computing with Exponential Decay Models
+http://avxhome.in/blogs/AlenMiler
+http://nitroflare.com/view/F0F2D0634A3A12E/3319294385.pdf
+https://filejoker.net/h0173nnglji5
+
+
+Finite Difference Computing with Exponential Decay Models (Lecture Notes in Computational Science and Engineering) by Hans Petter Langtangen
+English | 30 Jun. 2016 | ISBN: 3319294385 | 216 Pages | PDF (True) | 2.84 MB
+
+This text provides a very simple, initial introduction to the complete scientific computing pipeline: models, discretization, algorithms, programming, verification, and visualization. The pedagogical strategy is to use one case study – an ordinary differential equation describing exponential decay processes – to illustrate fundamental concepts in mathematics and computer science. The book is easy to read and only requires a command of one-variable calculus and some very basic knowledge about computer programming. Contrary to similar texts on numerical methods and programming, this text has a much stronger focus on implementation and teaches testing and software engineering in particular. 
+
+My Blog with Updates!
 
 ******
 
+188 <--> Professional C# 6 and .NET Core 1.0
+http://avxhome.in/blogs/viserion
+http://nitroflare.com/view/0A84DA0445CF690/111909660XProCSharp6.pdf
 
-2016-07-15
-Swift Quick Syntax Reference (Repost)
-Solaris 9 System Administration Training Guide
-Mastering Python
-Learning Linux Binary Analysis
-Udemy - The Ultimate PHP Training Bundle for Beginner to Advanced
-Linux Network Security (LPIC-3 303)
-Java SE Desktop Application with Swing, JPA and Maven
-Using the Web Speech API with AngularJS
-Play by Play: Docker for Web Developers with John Papa and Dan Wahlin
-Ionic Apps for WooCommerce Build an eCommerce Mobile App
-Applying SQL Server 2016 Features to Real-world Data Problems
-Introduction to TypeScript
-Subscribe Me: Making, Marketing & Monetizing Online Digital Content with Membership Sites, Online Courses
-Your Customer Creation Equation: Unexpected Website Formulas of The Conversion Scientist™
-Million Dollar Plan: Leveraging Technology to Scale
-SQL Fur Dummies (6. Auflage) (Repost)
-Implementing NetScaler VPX (Repost)
-Big Data
-C# Deconstructed: Discover How C# Works on the .Net Framework (Repost)
-C# 3.0: The Complete Reference (3rd edition) (Repost)
-SAP Performance Optimization Guide: Analyzing and Tuning SAP Systems (7th edition) (Repost)
-Nonlinear Systems
-Java Programming for Android Developers For Dummies (Repost)
-Rabi N. Bhattacharya: Selected Papers
-iOS 8 Swift Programming Cookbook (Repost)
-networklessons - CCIE Routing & Switching
-Coursera - Java for Android
-Cisco Firepower and Advanced Malware Protection
 
-2016-07-10
-Discrete Optimization in Architecture
-25 Quintessential Programming Interview Problems: Set A
-Programmieren mit Maple V
-Udemy - The Unreal Engine Developer Course - Learn C++ & Make Games
-Reporting in TFS (Repost)
-AngularJS Deployment Essentials (Repost)
-Scientific Software Development in Fortran
-Enabling Programmable Self with HealthVault [Repost]
-Solving Large Scale Learning Tasks. Challenges and Algorithms
-Finite Difference Computing with Exponential Decay Models
-Theory and Applications of Applied Electromagnetics
-Data Security Compliance
-Essential SharePoint [Repost]
-Getting Started with OUYA (Repost)
-Professional C# 6 and .NET Core 1.0
-Developing Enterprise iOS Applications [Repost]
-Building Virtual Pentesting Labs for Advanced Penetration Testing (Repost)
-Cocos2d Game Development Blueprints (Repost)
-Programming Languages for MIS: Concepts and Practice (Repost)
-Cognitive Networks: Applications and Deployments (Repost)
-iBATIS in Action [Repost]
-Whole-Body Impedance Control of Wheeled Humanoid Robots
-Statistics and Data Analysis for Microarrays Using R and Bioconductor (2nd Edition) (Repost)
-DSLs in Action [Repost]
-Master The Essentials of Conversion Optimization: Experts' Approach to Optimization
-Real Wholesale Sources: Over 200 Legitimate Sources of Online Inventory for your Online and Offline Business
-Mastering Dyalog APL: A Complete Introduction to Dyalog APL (repost)
-Selenium Design Patterns and Best Practices (Repost)
-Play by Play: The Science Behind Microsoft Exams
+Christian Nagel, "Professional C# 6 and .NET Core 1.0"
+ISBN: 111909660X | 2016 | True PDF | 1536 pages | 119 MB
+
+A true professional's guide to C# 6
+
+Professional C# 6 and .NET Core 1.0 provides complete coverage of the latest updates, features, and capabilities, giving you everything you need for C#. Get expert instruction on the latest changes to Visual Studio 2015, Windows Runtime, ADO.NET, ASP.NET, Windows Store Apps, Windows Workflow Foundation, and more, with clear explanations, no-nonsense pacing, and valuable expert insight. This incredibly useful guide serves as both tutorial and desk reference, providing a professional-level review of C# architecture and its application in a number of areas. You'll gain a solid background in managed code and .NET constructs within the context of the 2015 release, so you can get acclimated quickly and get back to work.
+
+The new updates can actively streamline your workflow, with major changes including reimagined C# refactoring support, a new .NET Web app stack, and the .NET compiler platform that makes C# and Visual Basic compilers available as APIs. This book walks you through the changes with a comprehensive C# review.
+
+Explore the new Visual Studio templates for ASP.NET Core 1.0, Web Forms, and MVC
+Learn about the networking switch to HttpClient and ASP.NET Web API's replacement of WCF Data Services
+Work with the latest updates to the event log, Windows Runtime 2.0, and Windows 8.1 deployment and localization
+Dig deep into the new .NET 5.0 GC behaviors and the Migrations addition to ADO.NET
+
+Microsoft has stepped up both the cadence and magnitude of their software releases. Professional C# 6 and .NET Core 1.0 shows you everything you need to know about working with C# in a real-world context.
+
+203 <--> Play by Play: Nano Server
+http://nitroflare.com/view/AC8664549E9DD37/Pl.b.P.Na.Se.part1.rar
+http://nitroflare.com/view/1872F02D6DBE101/Pl.b.P.Na.Se.part2.rar
+
+
 Play by Play: Nano Server
-Introduction to SVN [repost]
-Play by Play: Just Enough Administration (JEA)
-Play by Play: Elastic Scale and Consistency with Azure Automation DSC
-Play by Play: The Application Platform in Windows Server 2016
-Computer Hacking Forensic Investigator (CHFI)
-Becoming Agile: ...in an imperfect world: .in a Imperfect World [Repost]
-Storytelling with Data: A Data Visualization Guide for Business Professionals
-Building on SugarCRM [Repost]
-Rails Deep Dive (Repost)
-The Cyborg Subject
-Mastering Unit Testing Using Mockito and JUnit (Repost)
-Udemy - jQuery Fundamentals Powerful Bootcamp for beginners
-AngularJS Web Application Development Blueprints (Repost)
-Android NDK Beginner's Guide (2nd Revised edition) (Repost)
-SQL Server Analysis Services 2012 Cube Development Cookbook (Repost)
-Microsoft Dynamics GP 2013 Cookbook (Repost)
+HDRips | MP4/AVC, 413~ kb/s | 1024x768 | Duration: 01:03:29 | English: AAC, 96 kb/s (2 ch) | 377 MB
+Genre: Development / Programming
+
+Nano Server is one of the Windows Server platform's latest, most anticipated releases. In this course, Andrew Mason from the Windows Server and Services team discusses the key features of Nano Server and shows why it will be everyone's future server.
+ 
+******
+214 <--> Mastering Unit Testing Using Mockito and JUnit (Repost)
+http://nitroflare.com/view/689A3A73B5D62DB/1783982500_Masteringspr.epub
+http://nitroflare.com/view/DE50748E8B0C890/1783982500_Masteringspr.mobi
+http://nitroflare.com/view/19CA598CC000DAD/1783982500_Masteringspr.pdf
+http://nitroflare.com/view/1B64BA9A918F013/1783982500_Mastering_Codespr.zip
+https://filejoker.net/do56y4s3lq8g
+https://filejoker.net/j69s5k3yhv4h
+https://filejoker.net/3k31tx3xpktn
+https://filejoker.net/s0tlza36pqcw
+
+
+Mastering Unit Testing Using Mockito and JUnit By Sujoy Acharya
+2014 | 314 Pages | ISBN: 1783982500 | EPUB, MOBI, PDF | 71 MB
+
+
+An advanced guide to mastering unit testing using Mockito and JUnit Create meaningful and maintainable automated unit tests using advanced JUnit features and the Mockito framework Build an automated continuous integration environment to get real-time feedback on broken code, code coverage, code quality, and integration issues Covers best practices and presents insights on architecture and designs to create faster and reliable unit testing environments
+******
+220 <--> From Human Attention to Computational Attention: A Multidisciplinary Approach
+http://nitroflare.com/view/045CDC7F9374FB0/10.1007%40978-1-4939-3435-5.pdf
+
+
 From Human Attention to Computational Attention: A Multidisciplinary Approach
-Seminal Contributions to Modelling and Simulation: 30 Years of the European Council of Modelling and Simulation
-Mastering Predictive Analytics with R (Repost)
-Jump Start Git (Repost)
-Pluralsight - Hands On Foundation 5 [repost]
-OpenGL 4 Shading Language Cookbook (2nd Revised edition) (Repost)
-Force.com Developer Certification Handbook (DEV401) (Repost)
-Node.js Design Patterns (Repost)
-Database Systems: The Complete Book (2nd edition) (Repost)
-Front-End Frameworks: Ember.js (Part I - III)
-CCNP Collaboration: Cisco Exams 300-070 CIPTV1, 300-075 CIPTV2, 300-080 CAPPS, and 300-085 CTCOLLAB
-Designing Interfaces [Repost]
-Innovations and Approaches for Resilient and Adaptive Systems (Repost)
-Pluralsight - Building Strongly-typed AngularJS Apps with ASP.NET MVC 5 [repost]
-Programming: Principles and Practice Using C++ (2nd edition)
-Introduction to Scientific Programming and Simulation Using R (Repost)
-cbtnuggets - Penetration Testing with Linux Tools (Repost)
-Complete Web Monitoring [Repost]
-Data Analysis with Open Source Tools [Repost]
-CompTIA Network+ Training Kit [Repost]
-Learning C# Programming with Unity 3D (Repost)
-Functional Python Programming (Repost)
-Practitioner's Guide to Health Informatics (Repost)
-An Architectural Approach to Level Design (Repost)
-Virtual und Augmented Reality (VR / AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität (Repost)
-Systems Analysis and Design, UML Version 2.0: An Object-Oriented Approach (4th edition)
-Aperture?Exposed: The Mac?Photographer's Guide to Taming the Workflow
-Wireshark 2.0: Fundamentals
-Facebook: Make $2000 a Month Using Facebook - Passive Income System
-Java EE: Programming Servlets
-C# 6 from Scratch
-Clickbank Affiliate Marketing Bible How to Earn a Passive Online Income
+Springer | Neuroscience | May 18 2016 | ISBN-10: 1493934333 | 465 pages | pdf | 15.22 mb
+
+Editors: Mancas, M., Ferrera, V.P., Riche, N., Taylor, J.G. (Eds.)
+Enables readers to access attention modeling work across the disciplines and communities
+Balances work on theory and practical applications in order to deepen understanding of attention
+Supports communication between disciplines involved in attention modeling
+Marks out avenues for future research and applications in computational attention
+Aids faster testing and improvement of existing attention models
+
+This both accessible and exhaustive book will help to improve modeling of attention and to inspire innovations in industry. It introduces the study of attention and focuses on attention modeling, addressing such themes as saliency models, signal detection and different types of signals, as well as real-life applications. The book is truly multi-disciplinary, collating work from psychology, neuroscience, engineering and computer science, amongst other disciplines.
+What is attention? We all pay attention every single moment of our lives. Attention is how the brain selects and prioritizes information. The study of attention has become incredibly complex and divided: this timely volume assists the reader by drawing together work on the computational aspects of attention from across the disciplines. Those working in the field as engineers will benefit from this book’s introduction to the psychological and biological approaches to attention, and neuroscientists can learn about engineering work on attention. The work features practical reviews and chapters that are quick and easy to read, as well as chapters which present deeper, more complex knowledge. Everyone whose work relates to human perception, to image, audio and video processing will find something of value
+in this book, from students to researchers and those in industry. 
+
+Number of Illustrations and Tables
+51 b/w illustrations, 186 illustrations in colour
+Topics
+Neurosciences
+Image Processing and Computer Vision
+Signal, Image and Speech Processing
+Artificial Intelligence (incl. Robotics)
+Human Physiology
+
+222 <--> Mastering Predictive Analytics with R (Repost)
+http://nitroflare.com/view/803D0EF38CA2D3A/1783982802_Masteringspr.epub
+http://nitroflare.com/view/5027AF2F5E3EB82/1783982802_Masteringspr.mobi
+http://nitroflare.com/view/4D426704459233D/1783982802_Masteringspr.pdf
+https://filejoker.net/wuazv297oan2
+https://filejoker.net/s4irwfscanr6
+https://filejoker.net/ivtorrmm4o8b
+
+
+Mastering Predictive Analytics with R By Rui Miguel Forte
+2015 | 414 Pages | ISBN: 1783982802 | EPUB, MOBI, PDF | 23 MB
+
+
+Master the craft of predictive modeling by developing strategy, intuition, and a solid foundation in essential concepts Grasp the major methods of predictive modeling and move beyond black box thinking to a deeper level of understanding Leverage the flexibility and modularity of R to experiment with a range of different techniques and data types Packed with practical advice and tips explaining important concepts and best practices to help you understand quickly and easily This book is intended for the budding data scientist, predictive modeler, or quantitative analyst with only a basic exposure to R and statistics. It is also designed to be a reference for experienced professionals wanting to brush up on the details of a particular type of predictive model. Mastering Predictive Analytics with R assumes familiarity with only the fundamentals of R, such as the main data types, simple functions, and how to move data around. No prior experience with machine learning or predictive modeling is assumed, however you should have a basic understanding of statistics and calculus at a high school level. R offers a free and open source environment that is perfect for both learning and deploying predictive modeling solutions in the real world. With its constantly growing community and plethora of packages, R offers the functionality to deal with a truly vast array of problems. This book is designed to be both a guide and a reference for moving beyond the basics of predictive modeling. The book begins with a dedicated chapter on the language of models and the predictive modeling process. Each subsequent chapter tackles a particular type of model, such as neural networks, and focuses on the three important questions of how the model works, how to use R to train it, and how to measure and assess its performance using real world data sets. By the end of this book, you will have explored and tested the most popular modeling techniques in use on real world data sets and mastered a diverse range of techniques in predictive analytics.
+******
+225 <--> OpenGL 4 Shading Language Cookbook (2nd Revised edition) (Repost)
+
+OpenGL 4 Shading Language Cookbook (2nd Revised edition) By David Wolff
+2013 | 394 Pages | ISBN: 1782167021 | EPUB, MOBI, PDF | 24 MB
+
+
+OpenGL Shading Language (GLSL) is a programming language used for customizing parts of the OpenGL graphics pipeline that were formerly fixed-function, and are executed directly on the GPU. It provides programmers with unprecedented flexibility for implementing effects and optimizations utilizing the power of modern GPUs. With Version 4, the language has been further refined to provide programmers with greater power and flexibility, with new stages such as tessellation and compute. OpenGL 4 Shading Language Cookbook provides easy-to-follow examples that first walk you through the theory and background behind each technique, and then go on to provide and explain the GLSL and OpenGL code needed to implement it. Beginner level through to advanced techniques are presented including topics such as texturing, screen-space techniques, lighting, shading, tessellation shaders, geometry shaders, compute shaders, and shadows. OpenGL Shading Language 4 Cookbook is a practical guide that takes you from the fundamentals of programming with modern GLSL and OpenGL, through to advanced techniques. The recipes build upon each other and take you quickly from novice to advanced level code. You’ll see essential lighting and shading techniques; examples that demonstrate how to make use of textures for a wide variety of effects and as part of other techniques; examples of screen-space techniques including HDR rendering, bloom, and blur; shadowing techniques; tessellation, geometry, and compute shaders; how to use noise effectively; and animation with particle systems. OpenGL Shading Language 4 Cookbook provides examples of modern shading techniques that can be used as a starting point for programmers to expand upon to produce modern, interactive, 3D computer graphics applications.
+
+227 <--> Node.js Design Patterns (Repost)
+http://nitroflare.com/view/DF1A5486B092FA7/1783287314_Node.jsspr.epub
+http://nitroflare.com/view/7974E3CA7E3289D/1783287314_Node.jsspr.pdf
+https://filejoker.net/bjn8tj5oct1f
+https://filejoker.net/hg9lmrwfv87i
+
+
+Node.js Design Patterns By Mario Casciaro
+2014 | 454 Pages | ISBN: 1783287314 | EPUB + PDF | 18 MB
+
+
+Get the best out of Node.js by mastering a series of patterns and techniques to create modular, scalable, and efficient applications About This Book Dive into the core patterns and components of Node.js in order to master your application's design Learn tricks, techniques, and best practices to solve common design and coding challenges Take a code-centric approach to using Node.js without friction Who This Book Is For If you're a JavaScript developer interested in a deeper understanding of how to create and design Node.js applications, this is the book for you.
+
+235 <--> Introduction to Scientific Programming and Simulation Using R (Repost)
+http://nitroflare.com/view/C2CECA2E7A97AD8/1420068725_Introductionspr.pdf
+https://filejoker.net/g5iiesvce3kz
+
+
+Introduction to Scientific Programming and Simulation Using R By Owen Jones, Robert Maillardet, Andrew Robinson
+2009 | 449 Pages | ISBN: 1420068725 | PDF | 8 MB
+
+
+Known for its versatility, the free programming language R is widely used for statistical computing and graphics, but is also a fully functional programming language well suited to scientific programming. An Introduction to Scientific Programming and Simulation Using R teaches the skills needed to perform scientific programming while also introducing stochastic modelling. Stochastic modelling in particular, and mathematical modelling in general, are intimately linked to scientific programming because the numerical techniques of scientific programming enable the practical application of mathematical models to real-world problems. In the last section, stochastic modelling is introduced using extensive case studies on epidemics, inventory management, and plant dispersal. A tried and tested pedagogic approach is employed throughout, with numerous examples, exercises, and a suite of practice projects. Unlike most guides to R, this volume is not about the application of statistical techniques, but rather shows how to turn algorithms into code. It is for those who want to make tools, not just use them.
+******
+
+238 <--> Data Analysis with Open Source Tools [Repost]
+http://avaxhm.com/blogs/tanas.olesya
+http://nitroflare.com/view/D561CBEF8CB9FCC/0596802358.pdf
+https://filejoker.net/2u6i2gv4dccg
+
+
+Data Analysis with Open Source Tools by Philipp K. Janert
+English | 28 Nov. 2010 | ISBN: 0596802358 | 533 Pages | PDF | 15 MB
+
+Collecting data is relatively easy, but turning raw information into something useful requires that you know how to extract precisely what you need. With this insightful book, intermediate to experienced programmers interested in data analysis will learn techniques for working with data in a business environment. You'll learn how to look at data to discover what it contains, how to capture those ideas in conceptual models, and then feed your understanding back into the organization through business plans, metrics dashboards, and other applications.
+
+******
+241 <--> Functional Python Programming (Repost)
+http://nitroflare.com/view/A28AF59B2753B45/1784396990_Functionalspr.epub
+http://nitroflare.com/view/0BE90ECEE4FA91F/1784396990_Functionalspr.pdf
+https://filejoker.net/pwql15boiq2i
+https://filejoker.net/ts3l2tceyhhi
+
+
+Functional Python Programming By Steven Lott
+2015 | 360 Pages | ISBN: 1784396990 | EPUB + PDF | 22 MB
+
+
+Python’s easy-to-learn and extensible abilities offer a number of functional programming features for you to bring into your workflow, especially in the realm of data science. If you’re a Python developer who wants to discover how to take the power of functional programming and bring it into your own programs then this book is essential for you, even if you know next to nothing about the paradigm. Starting with a general overview of functional concepts you’ll explore common functional features such as first-class and higher-order functions, pure functions and more, and how these are accomplished in Python to give you the core foundations you’ll build upon. After that, you’ll discover common functional optimizations for Python to help your apps reach even higher speeds. You'll also explore data preparation techniques and data exploration in depth, along with learning how the Python standard library fits the functional programming model. Finally, to top off your journey into the world of function Python you’ll at look at the PyMonad project and some larger examples to put everything into perspective. With Functional Python Programming by your side you’ll understand the core concepts of function Python, its impact on the programming workflow, and how to implement it in Python, giving you the ability to take your applications to an even higher level.
+
+******
+252 <--> Moving Beyond JSON and XML with Protocol Buffers
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/E80080560F95D1A/Moving_Beyond_JSON_and_XML_with_Protocol_Buffers.part1.rar
+http://nitroflare.com/view/296D3E0B3724B1F/Moving_Beyond_JSON_and_XML_with_Protocol_Buffers.part2.rar
+http://nitroflare.com/view/0F1A1A31A48AB75/Moving_Beyond_JSON_and_XML_with_Protocol_Buffers.part3.rar
+http://nitroflare.com/view/03392ED71B1D75A/Moving_Beyond_JSON_and_XML_with_Protocol_Buffers.part4.rar
+
+
 Moving Beyond JSON and XML with Protocol Buffers
-99 Ways To Flood Your Website With Traffic: Website Traffic Tips
-WordPress for Beginners - Build Your First WordPress Website (2016)
-iOS Animation with Swift IV - Custom Animated Transition
-Build WordPress E-Commerce Stores to Sell Digital Downloads [Updated]
-Publish your Own Guess the Word Game for Kids, iOS & Android
-CompTIA A+ Complete Fast Pass [Repost]
-Code School - Python
-Tutsplus - Get Started With Ionic 2
-Tutsplus - Understanding the WordPress Theme Template Hierarchy
-Tutsplus - Craft: Designing With Real-World Data
-Tutsplus - Single-Page Apps With Angular UI-Router
-Industry 4.0: The Industrial Internet of Things
-Tutsplus - Unit Testing React Components
+July 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 17M | 341 MB
+Genre: eLearning | Language: English
+
+This course gives an introduction to how to define inter-service messages using Protocol Buffers, with details on how to integrate them into a variety of languages.
+
+Today's software landscape is increasingly being defined by microservice-based architectures that rely on small applications to coordinate with each other to support the desired features. In this course, Moving Beyond JSON and XML with Protocol Buffers, you will see just how protocol buffers provide a way to enable this communication faster and more efficiently than competing protocols such as XML and JSON. First, you'll see features and practices that are available to allow messages to evolve without breaking older applications. Next, you'll be introduced to the syntax that is used to define messages to be used with Protocol Buffers. Finally, you'll be introduced protocol buffers and the advantages that they can bring to an application. By the end of this course, you'll be prepared to use protocol buffers to efficiently communicate between services while maintaining high performance levels.
+
+
+266 <--> Tutsplus - Build a Color-Shifting Gallery With JavaScript
+http://avaxhome.ws/blogs/serpmolot
+http://nitroflare.com/view/F8EBD5DCE9694C8/BCSGWJ.rar
+
+
 Tutsplus - Build a Color-Shifting Gallery With JavaScript
-Tutsplus - Get Started With Core Data
-Tutsplus - Testing Angular Filters
-Tutsplus - Start Here: Learn CSS Layout
+English | 30 Jun 2016 | mp4 | H264 1280x720 | AAC 2 ch | 58 min | 633 MB 
+eLearning | Webdesign, JavaScript, UI Design
+
+In this course you’ll learn how to build a gallery which uses the dominant color of each image, as well as the color palette, to create various UI elements. Towards the end of the course, you’ll also learn which colors to use in order to create a proper contrast ratio between text and background.
+
+******
+
+270 <--> "Applications from Engineering with MATLAB Concepts" ed. by Jan Valdman
+http://nitroflare.com/view/C66318C99713A5E/ApplicationsEngineeringMATLABConcepts16ITAe.pdf
+http://nitroflare.com/view/41C2E90EF0F85D4/MATLAB4EngineersITO11.pdf
+http://nitroflare.com/view/2D08D01B57BC68E/MATLABApplications4PracticalEngineer14ITAe.pdf
+http://nitroflare.com/view/1CA3CCCC1F97795/MATLABIntroductionApplications10.pdf
+http://nitroflare.com/view/296A6525C14BF80/MatlabModellingProgrammingSimulationsSci10.pdf
+http://nitroflare.com/view/5FB918D99C60B64/MATLAB_Numerical_Calculations_2014.pdf
+http://nitroflare.com/view/BA0EE4912BE8A43/MATLAB_Programming_with_Applications_for_Engineers_2013.pdf
+http://nitroflare.com/view/D3BA638554BFDAB/MATLAB_Recipes__A_Problem-Solution_Approach_2015.pdf
+http://nitroflare.com/view/734F9534937E271/MATLAB_Mathematical_Analysis_2014.pdf
+http://nitroflare.com/view/C249EB3B6CC4F77/MATLAB_for_Neuroscientists._An_Introduction_to_Scientific_Computing_in_MATLAB.pdf
+http://nitroflare.com/view/41C793FF7751417/MATLAB_Recipes_for_Earth_Sciences_4e2015.pdf
+http://nitroflare.com/view/63D1E55C8B17706/MATLAB_and_Design_Recipes_for_Earth_Sciences13__How_to_Collect_Process_and_Present_Geoscientific_Information.pdf
+http://nitroflare.com/view/130ED2E097184C5/MATLAB_An_Introduction_with_Applications-5ed2014.pdf
+http://nitroflare.com/view/190505A8B9459ED/MATLAB_Differential_Equations_2014.pdf
+http://nitroflare.com/view/2BBFDA88EE5EFEF/MATLAB_Graphics_and_Data_Visualization_Cookbook_2012.epub
+http://depositfiles.com/files/uhj8obq0s
+http://www.filedwon.info/ro8dzwp6t3t4/ApplicationsEngineeringMATLABConcepts16ITAe.pdf.html
+http://turbobit.net/cc67lvbrtbkr.html
+http://www.hitfile.net/Enn3I9n
+
+
 "Applications from Engineering with MATLAB Concepts" ed. by Jan Valdman
-Code Simplicity [Repost]
-ReSharper Essentials
-Getting Started with Clickteam Fusion (Repost)
-Learning OpenStack Networking (Neutron) (Repost)
-Learning R for Geospatial Analysis (Repost)
-Administering ArcGIS for Server
-Practical Data Science Cookbook (Repost)
-Scala for Machine Learning (Repost)
-Guide to Programming and Algorithms Using R (Repost)
-Application Development in iOS 7
-50 Ways To Build Your Email Marketing List
-A Practical Guide to Affiliate Marketing: Quick Reference for Affiliate Managers & Merchants
-Mini Membership Sites 2.0: Think It! Build It! Launch It! How I Replaced My Day Job With Membership Sites
-Python 3 Text Processing with NLTK 3 Cookbook (Repost)
-SignalR: Real-time Application Development (Repost)
-Google Maps JavaScript API Cookbook (Repost)
-Getting Started with LLVM Core Libraries (Repost)
-ASP.NET MVC 4 and the Web API: Building a REST Service from Start to Finish (Repost)
-Sams Teach Yourself C++ in One Hour a Day (7th edition)
-Pro JavaFX 8: A Definitive Guide to Building Desktop, Mobile, and Embedded Java Clients (Repost)
-HTML5 Pocket Reference (5th edition) (Repost)
-HTML5 Programming with JavaScript For Dummies (Repost)
-Programming in Objective-C (Developer's Library) (6th edition) (Repost)
-Activiti 5.x Business Process Management: Beginner's Guide
-AngularJS Web Application Development Cookbook (Repost)
-Gamemaker: Studio For Dummies (Repost)
-Getting Started with Grunt: The JavaScript Task Runner (Repost)
-Hl7 for BizTalk (Repost)
-Learning Bootstrap (Repost)
-Learning PrimeFaces Extensions Development (Repost)
-Learning System Center App Controller (Repost)
-How to Find Profitable Niches: 5 Five-Minute Free & Easy Methods for Any Niche Endeavor
-Content Marketing Playbook
-Youtube Marketing: How to Create a Successful Channel and Make Money
-Natural Language Processing in Python
-Convolutional Neural Networks in Python
-Unsupervised Machine Learning in Python
-Kompendium Medieninformatik: Medienpraxis [Repost]
-High Performance iOS Apps: Optimize Your Code for Better Apps
-Building and Testing with Gradle [Repost]
-Apache Mahout Essentials (Repost)
-Amazon EC2 Cookbook (Repost)
-AngularJS Directives Cookbook (Repost)
-Android for the BeagleBone Black (Repost)
-Objective-C Cheat Sheet
-ArcGIS Blueprints (Repost)
-Swift vs. Objective-C: Compared Everything of Both Programming Languages
-Arduino Development Cookbook (Repost)
-Learning Apache Thrift (Repost)
-Algorithmic and Geometric Aspects of Robotics
-Learning iOS UI Development (Repost)
-Learning Geospatial Analysis with Python (2nd Revised edition)
-Game Development with Swift (Repost)
-HTML5 Game Development by Example: Beginner's Guide (2nd Revised edition) (Repost)
-GitHub Essentials (Repost)
-Learning C++ by Creating Games with UE4 (Repost)
-Learning Ceph (Repost)
-Learning ExtJS (4th edition) (Repost)
-Murach's SQL Server 2016 for Developers
-Learning Java by Building Android Games (Repost)
-Liferay 6.x Portal Enterprise Intranets Cookbook (Repost)
-Learning VMware vCloud Air (Repost)
-Learning Yii Testing (Repost)
-LibGDX Cross-Platform Development Blueprints (Repost)
-Learning Predictive Analytics with R (Repost)
-Lua Game Development Cookbook (Repost)
-Big Data For Dummies (Repost)
-Office 2013 For Dummies (Repost)
-Quickbooks 2016 All-in-One For Dummies (Repost)
-Zabbix 1.8 Network Monitoring [Repost]
-Caring for People with Problem Behaviors
-Clear Blogging: How People Blogging Are Changing the World and How You Can Join Them
-Computers Helping People with Special Needs
-Computers Helping People with Special Needs, Part II
-Advances in Biometrics for Secure Human Authentication and Recognition (Repost)
-Red Team Hacking Course
-RESTful Web API Design with Node.js (Repost)
-Redis Essentials (Repost)
-Raspberry Pi Mechatronics Projects (Repost)
-Raspberry Pi Projects for Kids (2nd Revised edition) (Repost)
-Raspberry Pi Computer Vision Programming (Repost)
-Matthew MacDonald, "Attract Visitors to Your Site: The Mini Missing Manual" [Repost]
-Beautiful Security [Repost]
-Beautiful Testing: Leading Professionals Reveal How They Improve Software [Repost]
-Beautiful Teams
-Membership Site Plan: Your First Steps To Passive Income
-Certified Scrum Master (CSM)
-jQuery – Grundlagen
-Facebook for Business: How to Uncover Facebook's New Super-Profitable Hidden Niches
-SoapUI Cookbook (Repost)
-SFML Essentials (Repost)
-Testing with F# (Repost)
-CBT Nuggets - JNCIS-ENT (JN0-343) - OSPF
-Salesforce Reporting and Dashboards (Repost)
-Splunk Essentials (Repost)
-CBT Nuggets - Database Fundamentals
-Mastering Python Data Visualization
-ITPro.tv - VMware Certified Professional 6 VCP6-DCV
-Introduction to Java Programming, Brief Version (8 edition) (Repost)
-Cisco 640-554: CCNA Security - Implementing Cisco IOS Network Security - IINS
-The Definitive Guide to Google AdWords: Create Versatile and Powerful Marketing and Advertising Campaigns (Repost)
-ITPro.tv - Kali Linux
-ITPro.tv - CEH v9
+ITexLi | 2016 | ISBN: 9535124609 9535124595 9789535124597 9789535124603 | 285 pages | PDF | 98 MB
+
+The book presents a collection of MATLAB-based chapters of various engineering background. Instead of giving exhausting amount of technical details, authors were rather advised to explain relations of their problems to actual MATLAB concepts. Whenever possible, download links to functioning MATLAB codes were added. 
+
+Chapters include image and signal processing, mechanics and dynamics, models and data identification in biology, fuzzy logic, discrete event systems and data acquisition systems. 
+
+Contents
+Preface
+1 Digital Image Processing with MATLAB 
+2 Information Entropy 
+3 MATLAB for All Steps of Dynamic Vibration Test of Structures 
+4 Forward and Inverse Dynamics and Quasi-Static Analysis of Mechanizes with MATLAB® 
+5 Design, Simulation, and Control of a Hexapod Robot in Simscape Multibody 
+6 Case Studies in Using MATLAB to Build Model Calibration Tools for Multiscale Modeling 
+7 Virtual Instrument for the Analysis of Vibrations in Rotary Machines 
+8 Application of MATLAB in -Omics and Systems Biology 
+9 Small Molecule LC-MS/MS Fragmentation Data Analysis and Application to Siderophore Identification 
+10 Intelligent Sliding Surface Design Methods Applied to an IBVS System for Robot Manipulators 
+11 Using NI-USB Data Acquisition Systems to Study the Switching Phenomena of Reactive Loads 
+12 Simulation of Discrete‐Event Systems in MATLAB 
+******
+272 <--> ReSharper Essentials
+http://nitroflare.com/view/75A29A9484E6B9C/1849698708_ReSharper.pdf
+https://filejoker.net/q4ckz1fbvjdv
+
+
+ReSharper Essentials By Lukasz Gasior
+2014 | 124 Pages | ISBN: 1849698708 | PDF | 5 MB
+
+
+Make your Microsoft Visual Studio work smarter with ReSharper About This Book Discover the most useful features of ReSharper and how to implement them effectively Find out what is wrong with your code and use quick fixes to eliminate errors and code smells A practical guide to ReSharper 8.1 focused on teaching you the most intuitive shortcuts Who This Book Is For If you are a developer who is working with Visual Studio and are looking to make your work more efficient, this book is for you. It is most useful for new ReSharper users but those who are currently using it will also find many useful tips and references updated to the latest version (8.1). Prior knowledge of Visual Studio is a must.
+******
+278 <--> Scala for Machine Learning (Repost)
+http://nitroflare.com/view/93481D127FFE6FB/1783558741_Scala.pdf
+https://filejoker.net/rqoy9a1kn5nu
+
+
+Scala for Machine Learning By Patrick R. Nicolas
+2014 | 520 Pages | ISBN: 1783558741 | PDF | 5 MB
+
+
+Leverage Scala and Machine Learning to construct and study systems that can learn from data About This Book Explore a broad variety of data processing, machine learning, and genetic algorithms through diagrams, mathematical formulation, and source code Leverage your expertise in Scala programming to create and customize AI applications with your own scalable machine learning algorithms Experiment with different techniques, and evaluate their benefits and limitations using real-world financial applications, in a tutorial style Who This Book Is For Are you curious about AI? All you need is a good understanding of the Scala programming language, a basic knowledge of statistics, a keen interest in Big Data processing, and this book!
+******
+******
+279 <--> Guide to Programming and Algorithms Using R (Repost)
+http://nitroflare.com/view/F1C285B2037BE83/1447153278_Guide.pdf
+https://filejoker.net/hc9umzr9zriv
+
+
+Guide to Programming and Algorithms Using R By Özgür Ergül
+2013 | 185 Pages | ISBN: 1447153278 | PDF | 2 MB
+
+
+This easy-to-follow textbook provides a student-friendly introduction to programming and algorithms. Emphasis is placed on the threshold concepts that present barriers to learning, including the questions that students are often too embarrassed to ask. The book promotes an active learning style in which a deeper understanding is gained from evaluating, questioning, and discussing the material, and practised in hands-on exercises. Although R is used as the language of choice for all programs, strict assumptions are avoided in the explanations in order for these to remain applicable to other programming languages. Features: provides exercises at the end of each chapter; includes three mini projects in the final chapter; presents a list of titles for further reading at the end of the book; discusses the key aspects of loops, recursions, program and algorithm efficiency and accuracy, sorting, linear systems of equations, and file processing; requires no prior background knowledge in this area.
+******
+285 <--> SignalR: Real-time Application Development (Repost)
+http://nitroflare.com/view/BD5D4ECDC440319/1782164243_SignalR.epub
+http://nitroflare.com/view/E94F5DD2A9306A6/1782164243_SignalR.pdf
+https://filejoker.net/5rgml9ctdngf
+https://filejoker.net/tpqqj3ct16qh
+
+
+SignalR: Real-time Application Development By Einar Ingebrigtsen
+2013 | 124 Pages | ISBN: 1782164243 | EPUB + PDF | 18 MB
+
+
+As a .NET developer, you won't want to be left behind in the trend towards real-time applications. This book brings you up to speed in no time with a comprehensive guide to the SignalR framework. Overview Develop real-time applications across numerous platforms Create scalable applications that are ready for cloud deployment Utilize the full potential of SignalR
+******
+287 <--> Getting Started with LLVM Core Libraries (Repost)
+http://nitroflare.com/view/5C96FD03A03F7C4/1782166920_Getting.pdf
+https://filejoker.net/9abk2cm6i70p
+
+
+Getting Started with LLVM Core Libraries By Bruno Cardoso Lopes
+2014 | 314 Pages | ISBN: 1782166920 | PDF | 3 MB
+
+
+Get to grips with LLVM essentials and use the core libraries to build advanced tools About This Book Learn how to configure, build, and use LLVM and Clang based tools Explore the depths of the LLVM front-end, IR, code generator, and libraries, and learn how a modern compiler is implemented in a practical way. Customize your project to benefit from Just in Time compilation (JIT), static analysis and source-to-source transformations. Who This Book Is For This book is intended for enthusiasts, computer science students, and compiler engineers interested in learning about the LLVM framework. You need a background in C++ and, although not mandatory, should know at least some compiler theory. Whether you are a newcomer or a compiler expert, this book provides a practical introduction to LLVM and avoids complex scenarios. If you are interested enough and excited about this technology, then this book is definitely for you.
+
+305 <--> Natural Language Processing in Python
+http://nitroflare.com/view/B7EE18749927A62/B01FTJLKYQ.epub
+https://filejoker.net/4dmw4tqcr7qc
+
+
+LazyProgrammer, "Natural Language Processing in Python: Master Data Science and Machine Learning for spam detection, sentiment analysis, latent semantic analysis, and article spinning" 
+2016 | ASIN: B01FTJLKYQ | 54 pages | EPUB | 1 MB
+
+Recently, Microsoft’s Twitter bot “Tay” was released into the wild, and quickly began making racist and hateful statements after learning from other Twitter users. The technology behind this? Natural language processing. 
+
+NLP is the use of machine learning algorithms for problems that involve text. 
+
+Do you ever wonder why you get much less spam in your inbox these days compared to 10 years ago? What kinds of algorithms are people using to do spam detection? How can they take words in an email and know how to compute whether or not it’s spam? In this book you are going to build your very own spam detector. 
+
+Did you know people have already used Twitter to determine the current sentiment about a particular company to decide whether or not they should buy or sell stocks? Having a machine that can decide how people feel about something is immensely useful and immediately applicable to revenue optimization. In this course you are going to build your own sentiment analyzer. 
+
+Are you an Internet marketer or are you interested in SEO? Have you ever wanted to know how you can automatically generate content? In this course we are going to take a first crack at building your own article spinner. You’ll learn to write programs that can take an article as input and spit out a similar article with different words as output. This can save you tons of time and thousands of dollars if you’re paying someone to write content for you. 
+
+Natural Language Processing, or as it is often abbreviated, NLP - is the use of programming and math to do language-based tasks. 
+
+If you have Windows or iOS then you have NLP right in front of you! Cortana and Siri are applications that take what you say and turn it into something meaningful that can be done programmatically. 
+
+The key point: NLP is highly practical. NLP is everywhere. 
+
+This book is split up into multiple sections based on the various practical tasks that you can do with NLP: 
+
+Before we do any real programming exercises we’ll look at common NLP tasks (some of these we will actually code ourselves, the others are mentioned so you at least know they exist). We will then look at common data pre-processing techniques used for text. As you’ll see, this preprocessing is what will actually take up a majority of your time when you’re doing NLP. 
+
+The first programming exercise we’ll do is look at how to build a spam detector. Your email inbox uses this, so it’s clearly very useful and it’s been the subject of study for a long time. 
+
+Next we’ll look at “sentiment analysis” and you’ll build your own “sentiment analyzer”. This is how a computer can judge how positive or negative some text is based on the words and phrases that are used. This is also immediately practical - some people have analyzed Twitter feeds to predict whether a stock would go up or down. 
+
+After that we’ll look at the NLTK library. This is a very popular library that solves a lot of fundamental problems in NLP - and you can use it in conjunction with other libraries in your data analysis pipeline. 
+
+Next we’ll look at “latent semantic analysis”. This is basically doing dimensionality reduction on text - and it helps us solve the problem of 2 words having the same meaning. It also helps us interpret our data and save on computation time. 
+
+Lastly, we’ll talk about one of the most popular applications of NLP - article spinning. This is very practical for internet marketers and entrepreneurs. As you know, your search rankings in Google and other search engines are affected negatively when you have duplicate content - so it would be great if you could alter an article you wrote just enough, so that you could put it in 2 different places on the web, without being penalized by Google.
+******
+******
+306 <--> Convolutional Neural Networks in Python
+http://nitroflare.com/view/F2E603C71F341E9/B01FQDREOK.epub
+https://filejoker.net/efjmpp5a24br
+
+
+LazyProgrammer, "Convolutional Neural Networks in Python: Master Data Science and Machine Learning with Modern Deep Learning in Python, Theano, and TensorFlow" 
+2016 | ASIN: B01FQDREOK | 52 pages | EPUB | 1 MB
+
+This is the 3rd part in my Data Science and Machine Learning series on Deep Learning in Python. At this point, you already know a lot about neural networks and deep learning, including not just the basics like backpropagation, but how to improve it using modern techniques like momentum and adaptive learning rates. You've already written deep neural networks in Theano and TensorFlow, and you know how to run code using the GPU. 
+
+This book is all about how to use deep learning for computer vision using convolutional neural networks. These are the state of the art when it comes to image classification and they beat vanilla deep networks at tasks like MNIST. 
+
+In this course we are going to up the ante and look at the StreetView House Number (SVHN) dataset - which uses larger color images at various angles - so things are going to get tougher both computationally and in terms of the difficulty of the classification task. But we will show that convolutional neural networks, or CNNs, are capable of handling the challenge! 
+
+Because convolution is such a central part of this type of neural network, we are going to go in-depth on this topic. It has more applications than you might imagine, such as modeling artificial organs like the pancreas and the heart. I'm going to show you how to build convolutional filters that can be applied to audio, like the echo effect, and I'm going to show you how to build filters for image effects, like the Gaussian blur and edge detection. 
+
+After describing the architecture of a convolutional neural network, we will jump straight into code, and I will show you how to extend the deep neural networks we built last time with just a few new functions to turn them into CNNs. We will then test their performance and show how convolutional neural networks written in both Theano and TensorFlow can outperform the accuracy of a plain neural network on the StreetView House Number dataset. 
+
+All the materials used in this book are FREE. You can download and install Python, Numpy, Scipy, Theano, and TensorFlow with pip or easy_install. 
+
+Lastly, my goal is to show you that convolutional networks aren’t magical and they don’t require expert-level math to figure out. 
+
+It’s just the same thing we had with regular neural networks: 
+
+y = softmax( relu(X.dot(W1).dot(W2) ) 
+
+Except we replace the first “dot product” with a convolution: 
+
+y = softmax( relu(conv(X, W1)).dot(W2) ) 
+
+The way they are trained is exactly the same as before, so all your skills with backpropagation, etc. carry over.
+******
+******
+307 <--> Unsupervised Machine Learning in Python
+http://nitroflare.com/view/26C4E6D10DE60D4/B01G1HH5T4.epub
+https://filejoker.net/e76pjkmwq2b2
+
+
+LazyProgrammer, "Unsupervised Machine Learning in Python: Master Data Science and Machine Learning with Cluster Analysis, Gaussian Mixture Models, and Principal Components Analysis" 
+2016 | ASIN: B01G1HH5T4 | 56 pages | EPUB | 1 MB
+
+In a real-world environment, you can imagine that a robot or an artificial intelligence won’t always have access to the optimal answer, or maybe there isn’t an optimal correct answer. You’d want that robot to be able to explore the world on its own, and learn things just by looking for patterns. 
+
+Think about the large amounts of data being collected today, by the likes of the NSA, Google, and other organizations. No human could possibly sift through all that data manually. It was reported recently in the Washington Post and Wall Street Journal that the National Security Agency collects so much surveillance data, it is no longer effective. 
+
+Could automated pattern discovery solve this problem? 
+
+Do you ever wonder how we get the data that we use in our supervised machine learning algorithms? 
+
+Kaggle always seems to provide us with a nice CSV, complete with Xs and corresponding Ys. 
+
+If you haven’t been involved in acquiring data yourself, you might not have thought about this, but someone has to make this data! 
+
+A lot of the time this involves manual labor. Sometimes, you don’t have access to the correct information or it is infeasible or costly to acquire. 
+
+You still want to have some idea of the structure of the data. 
+
+This is where unsupervised machine learning comes into play. 
+
+In this book we are first going to talk about clustering. This is where instead of training on labels, we try to create our own labels. We’ll do this by grouping together data that looks alike. 
+
+The 2 methods of clustering we’ll talk about: k-means clustering and hierarchical clustering.
+
+Next, because in machine learning we like to talk about probability distributions, we’ll go into Gaussian mixture models and kernel density estimation, where we talk about how to learn the probability distribution of a set of data. 
+
+One interesting fact is that under certain conditions, Gaussian mixture models and k-means clustering are exactly the same! We’ll prove how this is the case. 
+
+Lastly, we’ll look at the theory behind principal components analysis or PCA. PCA has many useful applications: visualization, dimensionality reduction, denoising, and de-correlation. You will see how it allows us to take a different perspective on latent variables, which first appear when we talk about k-means clustering and GMMs. 
+
+All the algorithms we’ll talk about in this course are staples in machine learning and data science, so if you want to know how to automatically find patterns in your data with data mining and pattern extraction, without needing someone to put in manual work to label that
+
+311 <--> Apache Mahout Essentials (Repost)
+http://nitroflare.com/view/D53F3EEB5B1EFA0/1783554991_Apache.pdf
+https://filejoker.net/rdf3anli6tco
+
+
+Apache Mahout Essentials By Jayani Withanawasam
+2015 | 164 Pages | ISBN: 1783554991 | PDF | 8 MB
+
+
+Implement top-notch machine learning algorithms for classification, clustering, and recommendations with Apache Mahout About This Book Apply machine learning algorithms effectively in production environments with Apache Mahout Gain better insights into large, complex, and scalable datasets Fast-paced tutorial, covering the core concepts of Apache Mahout to implement machine learning on Big Data Who This Book Is For If you are a Java developer or data scientist, haven't worked with Apache Mahout before, and want to get up to speed on implementing machine learning on big data, then this is the perfect guide for you.
+
+335 <--> Learning Predictive Analytics with R (Repost)
+http://nitroflare.com/view/638496B575B2F96/1782169350_Learning.epub
+http://nitroflare.com/view/BDDC9D11D3F69C4/1782169350_Learning.pdf
+https://filejoker.net/jzoqz2hwnas6
+https://filejoker.net/gaot5uksaxxp
+
+
+Learning Predictive Analytics with R By Eric Mayor
+2015 | 332 Pages | ISBN: 1782169350 | EPUB + PDF | 14 MB
+
+
+Get to grips with key data visualization and predictive analytic skills using R About This Book Acquire predictive analytic skills using various tools of R Make predictions about future events by discovering valuable information from data using R Comprehensible guidelines that focus on predictive model design with real-world data Who This Book Is For If you are a statistician, chief information officer, data scientist, ML engineer, ML practitioner, quantitative analyst, and student of machine learning, this is the book for you. You should have basic knowledge of the use of R. Readers without previous experience of programming in R will also be able to use the tools in the book.
+
+336 <--> Lua Game Development Cookbook (Repost)
+http://nitroflare.com/view/E8A753582BCCBBA/1849515506_Lua.epub
+http://nitroflare.com/view/FF819D739648C33/1849515506_Lua.pdf
+http://nitroflare.com/view/8D08B2B09D5D3F9/1849515506_Lua_Code.rar
+https://filejoker.net/sbcojkduag1p
+https://filejoker.net/ziba0t3jntrh
+https://filejoker.net/1yr6e2n9lkh1
+
+
+Lua Game Development Cookbook By Mario Kasuba
+2015 | 360 Pages | ISBN: 1849515506 | EPUB + PDF | 49 MB
+
+
+Over 70 recipes that will help you master the elements and best practices required to build a modern game engine using Lua About This Book Discover how to solve common and less common problems in game mechanics Learn about modern computer graphics, sounds, physics, artificial intelligence and much more Packed with loads of practical examples, step-by-step instructions, and supporting explanations to help you build a modern game engine using Lua Who This Book Is For This book is for all programmers and game enthusiasts who want to stop dreaming about creating a game, and actually create one from scratch. The reader should know the basics of programming and using the Lua language. Knowledge of the C/C++ programming language is not necessary, but it's strongly recommended in order to write custom Lua modules extending game engine capabilities or to rewrite parts of the Lua code into a more efficient form. Algebra and matrix operations are required in order to understand advanced topics in Chapter 4, Graphics – Legacy Method with OpenGL 1.x-2.1 and Chapter 5, Graphics – Modern Method with OpenGL 3.0+. Sample demonstrations are coupled with binary libraries for Windows and Linux operating systems for convenience.
+
+
+349 <--> Raspberry Pi Mechatronics Projects (Repost)
+http://nitroflare.com/view/9D6FE1DB3CBBA4B/1849696225_Raspberry.epub
+http://nitroflare.com/view/CAACF856E2ACAD5/1849696225_Raspberry.pdf
+https://filejoker.net/opq6rhd2wv5l
+https://filejoker.net/6d1mkrw2q6kg
+
+
+Raspberry Pi Mechatronics Projects By Sai Yamanoor, Srihari Yamanoor
+2015 | 250 Pages | ISBN: 1849696225 | EPUB + PDF | 21 MB
+
+
+Enter the world of mechatronic systems with the Raspberry Pi to design and build 12 amazing projects About This Book Design mechatronic systems using Raspberry Pi as the “brain” Impress your friends by building cool robots and interactive tools with the Raspberry Pi Project-based, practical approach to design and develop your own applications Who This Book Is For This book is targeted towards beginners and intermediate designers of mechatronic systems and embedded system design. Some familiarity with the Raspberry Pi and Python programming is preferred but not required.
+******
+******
+350 <--> Raspberry Pi Projects for Kids (2nd Revised edition) (Repost)
+http://nitroflare.com/view/37EC337422BC472/1785281526_Raspberry.epub
+http://nitroflare.com/view/9EE08D6E4FD2C94/1785281526_Raspberry.pdf
+https://filejoker.net/bc881eisyqq7
+https://filejoker.net/s56f7guxjtxy
+
+
+Raspberry Pi Projects for Kids (2nd Revised edition) By Daniel Bates
+2015 | 146 Pages | ISBN: 1785281526 | EPUB + PDF | 9 MB
+
+
+Leverage the power of programming to use the Raspberry Pi to create awesome games About This Book Learn to use a Raspberry Pi computer to dive into the world of developing exciting games and applications Learn to code in three different programming languages and write code that interacts with the physical world This is a practical guide to put imagination into action by creating interactive projects Who This Book Is For This book is for kids who wish to develop games and applications using the Raspberry Pi. No prior experience in programming is necessary; you need only a Raspberry Pi and the required peripherals.
+******
+******
+351 <--> Raspberry Pi Computer Vision Programming (Repost)
+http://nitroflare.com/view/D8DD9F73FF14B59/1784398284_Raspberry.pdf
+https://filejoker.net/wslppznlutbe
+
+
+Raspberry Pi Computer Vision Programming By Ashwin Pajankar
+2015 | 178 Pages | ISBN: 1784398284 | PDF | 9 MB
+
+
+Design and implement your own computer vision applications with the Raspberry Pi About This Book Explore the vast opportunities of computer vision with the Raspberry Pi and Python Design and develop webcam and Raspberry Pi based applications The book features ample screenshots that will offer a play-by-play account on how to implement computer vision fundamentals and applications Who This Book Is For This book is intended for novices, as well as seasoned Raspberry Pi and Python enthusiasts, who would like to explore the area of computer vision. Readers with very little programming or coding/scripting experience can create wonderful image processing and computer vision applications with relatively fewer lines of code in Python.
+******
+******
+352 <--> Matthew MacDonald, "Attract Visitors to Your Site: The Mini Missing Manual" [Repost]
+http://avaxhm.com/blogs/tanas.olesya
+http://nitroflare.com/view/5227E15440722C5/1449382525.pdf
+https://filejoker.net/yj4lgv0e6oa6
+
+
+Matthew MacDonald, "Attract Visitors to Your Site: The Mini Missing Manual" 
+English | 2010 | ISBN: 1449382525 | 60 Pages | PDF | 1 MB
+
+If your site doesn't attract both new visitors and return guests, it's doomed to the dust heap of the Internet. This clear, jargon-free guide helps you attract and keep visitors with surefire techniques and tools that tell you what works-and what doesn't.
+
+
+******
+354 <--> Beautiful Testing: Leading Professionals Reveal How They Improve Software [Repost]
+http://avaxhm.com/blogs/tanas.olesya
+http://nitroflare.com/view/955C36BF4B00548/0596159811.pdf
+https://filejoker.net/6ft5qjrxk1yb
+
+
+Beautiful Testing: Leading Professionals Reveal How They Improve Software by Adam Goucher
+English | 14 Oct. 2009 | ISBN: 0596159811 | 352 Pages | PDF | 3 MB
+
+Beautiful Testing offers 23 essays from 27 leading testers and developers that illustrate the qualities and techniques that make testing an art. Through personal anecdotes, you'll learn how each of these professionals developed beautiful ways of testing a wide range of products – valuable knowledge that you can apply to your own projects.
+
+
+362 <--> Testing with F# (Repost)
+http://nitroflare.com/view/92392424544F7AA/1784391239_Testing.epub
+http://nitroflare.com/view/EDCB89530E47980/1784391239_Testing.pdf
+https://filejoker.net/csgltk0cchu2
+https://filejoker.net/950tqtbu9u7s
+
+
+Testing with F# By Mikael Lundin
+2015 | 286 Pages | ISBN: 1784391239 | EPUB + PDF | 13 MB
+
+
+Deliver high-quality, bug-free applications by testing them with efficient and expressive functional programming About This Book Maximize the productivity of your code using the language features of F# Leverage tools such as FsUnit, FsCheck, Foq, and TickSpec to run tests both inside and outside your development environment A hands-on guide that covers the complete testing process of F# applications Who This Book Is For If you are a developer who wants to test applications using F#, this is the book for you. Basic experience of testing and intermediate experience of functional programming in F# is expected.
+
+367 <--> Mastering Python Data Visualization
+http://avxhome.se/blogs/Bayron
+http://nitroflare.com/view/FD3222567620119/1783988320.epub
+
+
+Mastering Python Data Visualization by Kirthi Raman
+English | 2015 | ISBN: 1783988320 | 305 pages | EPUB | 20 MB
+
+Generate effective results in a variety of visually appealing charts using the plotting packages in Python
+
+About This Book
+• Explore various tools and their strengths while building meaningful representations that can make it easier to understand data
+• Packed with computational methods and algorithms in diverse fields of science
+• Written in an easy-to-follow categorical style, this book discusses some niche techniques that will make your code easier to work with and reuse
+
+Who This Book Is For
+If you are a Python developer who performs data visualization and wants to develop existing knowledge about Python to build analytical results and produce some amazing visual display, then this book is for you. A basic knowledge level and understanding of Python libraries is assumed.
+
+What You Will Learn
+• Gather, cleanse, access, and map data to a visual framework
+• Recognize which visualization method is applicable and learn best practices for data visualization
+• Get acquainted with reader-driven narratives and author-driven narratives and the principles of perception
+• Understand why Python is an effective tool to be used for numerical computation much like MATLAB, and explore some interesting data structures that come with it
+• Explore with various visualization choices how Python can be very useful in computation in the field of finance and statistics
+• Get to know why Python is the second choice after Java, and is used frequently in the field of machine learning
+• Compare Python with other visualization approaches using Julia and a JavaScript-based framework such as D3.js
+• Discover how Python can be used in conjunction with NoSQL such as Hive to produce results efficiently in a distributed environment
+
+In Detail
+Python has a handful of open source libraries for numerical computations involving optimization, linear algebra, integration, interpolation, and other special functions using array objects, machine learning, data mining, and plotting. Pandas have a productive environment for data analysis. These libraries have a specific purpose and play an important role in the research into diverse domains including economics, finance, biological sciences, social science, health care, and many more. The variety of tools and approaches available within Python community is stunning, and can bolster and enhance visual story experiences.
+
+This book offers practical guidance to help you on the journey to effective data visualization. Commencing with a chapter on the data framework, which explains the transformation of data into information and eventually knowledge, this book subsequently covers the complete visualization process using the most popular Python libraries with working examples. You will learn the usage of Numpy, Scipy, IPython, MatPlotLib, Pandas, Patsy, and Scikit-Learn with a focus on generating results that can be visualized in many different ways. Further chapters are aimed at not only showing advanced techniques such as interactive plotting; numerical, graphical linear, and non-linear regression; clustering and classification, but also in helping you understand the aesthetics and best practices of data visualization. The book concludes with interesting examples such as social networks, directed graph examples in real-life, data structures appropriate for these problems, and network analysis.
+
+By the end of this book, you will be able to effectively solve a broad set of data analysis problems.Style and approach
+
+The approach of this book is not step by step, but rather categorical. The categories are based on fields such as bioinformatics, statistical and machine learning, financial computation, and linear…
+
+
+374 <--> Reasoning About Asynchronous JavaScript
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/5077DBAD191C7C3/Reasoning_About_Asynchronous_JavaScript.part1.rar
+http://nitroflare.com/view/46CC27981E9504F/Reasoning_About_Asynchronous_JavaScript.part2.rar
+http://nitroflare.com/view/0F8C5E97B4AF34F/Reasoning_About_Asynchronous_JavaScript.part3.rar
+http://nitroflare.com/view/F1DF63C33C95BE6/Reasoning_About_Asynchronous_JavaScript.part4.rar
+
+
 Reasoning About Asynchronous JavaScript
-PHP for Beginners (2016)
-Learning Python Data Visualization
-Mastering Python Scientific Computing
-Expert Oracle RAC 12c (Repost)
-Tactical Design Patterns in .NET: Creating Objects [HD Original]
-Tkinter GUI Application Development Blueprints (Repost)
-Materials Management with SAP ERP: Functionality and Technical Configuration (3rd Edition) (Repost)
-Xcode 4 iOS Development Beginner's Guide [Repost]
-ABAP Basics (2nd edition) (Repost)
-Yii 1.1 Application Development Cookbook [Repost]
-Autonomous Driving
-Shell Scripting Recipes
-Zend Framework 2.0 Cookbook
-Cloud-Lösungen mit ownCloud und dem Raspberry Pi
-Image Processing and Acquisition using Python (Repost)
-Learn iOS 7 App Development (Repost)
-Beginning Xcode (Repost)
-Android Game Recipes: A Problem-Solution Approach (Repost)
-Office 365: Migrating and Managing Your Business In The Cloud (Repost)
-Beginning Haskell: A Project-Based Approach (Repost)
-Database Development and Management (Repost)
-A Beginners Guide To Learning AJAX For Web Development Professionals
+July 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 383 MB
+Genre: eLearning | Language: English
+
+This course will help you learn to take advantage of JavaScript's single-threaded nature, as opposed to being caught off guard by it. You'll walk away being able to effortlessly reason about when things execute in JavaScript.
+
+At the core of concurrent programming is a thorough knowledge of JavaScript's single-threaded execution. In Reasoning About Asynchronous JavaScript, you will learn how to reason effortlessly about when things execute in JavaScript. You will learn how to stop writing code defensively to avoid race conditions, how to write code that doesn't lock up the browser, exploit parallelism, and take advantage of JavaScript's single-threaded nature. When you're finished with this course, you will have a foundational knowledge of concurrent programming in a single-threaded environment that will help you as you move forward in your knowledge of asynchronous JavaScript.
+
+
+376 <--> Learning Python Data Visualization
+http://nitroflare.com/view/583EC89273A3C85/1783553332.epub
+
+
+Learning Python Data Visualization by Chad R. Adams
+English | 2014 | ISBN: 1783553332 | 238 pages | EPUB | 14,5 MB
+
+If you are a Python novice or an experienced developer and want to explore data visualization libraries, then this is the book for you. No prior charting or graphics experience is needed.
+
+>>Visit my blog for more eBooks<<
+
+377 <--> Mastering Python Scientific Computing
+http://nitroflare.com/view/E44026230736562/1783288825.epub
+
+
+Mastering Python Scientific Computing by Hemant Kumar Mehta
+English | 2015 | ISBN: 1783288825 | 345 pages | EPUB | 5 MB
+
+A complete guide for Python programmers to master scientific computing using Python APIs and tools
+
+About This Book 
+The basics of scientific computing to advanced concepts involving parallel and large scale computation are all covered. 
+• Most of the Python APIs and tools used in scientific computing are discussed in detail 
+• The concepts are discussed with suitable example programs 
+
+Who This Book Is For 
+If you are a Python programmer and want to get your hands on scientific computing, this book is for you. The book expects you to have had exposure to various concepts of Python programming. 
+
+What You Will Learn 
+• Fundamentals and components of scientific computing 
+• Scientific computing data management 
+• Performing numerical computing using NumPy and SciPy 
+• Concepts and programming for symbolic computing using SymPy 
+• Using the plotting library matplotlib for data visualization 
+• Data analysis and visualization using Pandas, matplotlib, and IPython 
+• Performing parallel and high performance computing 
+• Real-life case studies and best practices of scientific computing 
+
+In Detail 
+In today's world, along with theoretical and experimental work, scientific computing has become an important part of scientific disciplines. Numerical calculations, simulations and computer modeling in this day and age form the vast majority of both experimental and theoretical papers. In the scientific method, replication and reproducibility are two important contributing factors. A complete and concrete scientific result should be reproducible and replicable. Python is suitable for scientific computing. A large community of users, plenty of help and documentation, a large collection of scientific libraries and environments, great performance, and good support makes Python a great choice for scientific computing.
+
+At present Python is among the top choices for developing scientific workflow and the book targets existing Python developers to master this domain using Python. The main things to learn in the book are the concept of scientific workflow, managing scientific workflow data and performing computation on this data using Python.
+
+The book discusses NumPy, SciPy, SymPy, matplotlib, Pandas and IPython with several example programs. Style and approach 
+
+This book follows a hands-on approach to explain the complex concepts related to scientific computing. It details various APIs using appropriate examples.
+
+
+379 <--> Tactical Design Patterns in .NET: Creating Objects [HD Original]
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/D3185133170B876/Tactical_Design_Patterns_in_.NET_Creating_Objects.part1.rar
+http://nitroflare.com/view/3A4D7637950F4B8/Tactical_Design_Patterns_in_.NET_Creating_Objects.part2.rar
+http://nitroflare.com/view/6BE3752480F4615/Tactical_Design_Patterns_in_.NET_Creating_Objects.part3.rar
+http://nitroflare.com/view/A4AC3F9B6542A64/Tactical_Design_Patterns_in_.NET_Creating_Objects.part4.rar
+http://nitroflare.com/view/142EC02A5AD6A1E/Tactical_Design_Patterns_in_.NET_Creating_Objects.part5.rar
+http://nitroflare.com/view/07E212A17B1D942/Tactical_Design_Patterns_in_.NET_Creating_Objects.part6.rar
+
+
+Tactical Design Patterns in .NET: Creating Objects
+June 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 7 Hours 10M | 1.28 GB
+Genre: eLearning | Language: English
+
+This course sheds light on issues that arise when implementing creational design patterns and then provides practical solutions that will make our code easier to write and more stable when running.
+
+Many of the symptoms of deep design problems manifest when creating objects and object graphs. In this course, Tactical Design Patterns in .NET: Creating Objects, you'll see what it takes to create code that's easier and more stable. You'll start with a small console application which demonstrates basic Abstract Factory implementation. Next, you'll built a different console application which demonstrates basic implementation of the Builder pattern and exposes issues with it. Finally, you'll see the console application get much more complex while remaining completely stable and safe on the consuming end. When you're finished with this course, you'll be have a firm understanding of how to best create stable objects easily in .NET.
+
+386 <--> Shell Scripting Recipes
+http://avaxhm.com/blogs/tanas.olesya
+http://nitroflare.com/view/F37B18721B90545/1590594711.PDF
+https://filejoker.net/led8m0wdjzlc
+
+
+Shell Scripting Recipes: A Problem-Solution Approach by Chris F. A. Johnson
+English | 9 May 2005 | ISBN: 1590594711 | 431 Pages | PDF | 1 MB
+
+In today's IT environment, harried system administrators are finding themselves more overworked than ever. This book helps them regain some of the lost time spent creating and testing shell scripts, and guides readers through more than 150 much-needed and practical real-world examples
+
+394 <--> Beginning Haskell: A Project-Based Approach (Repost)
+http://nitroflare.com/view/A8A0A0CFD94A470/1430262508_Beginningspr.epub
+http://nitroflare.com/view/30213C935EC51F1/1430262508_Beginningspr.mobi
+https://filejoker.net/mwro8txu27lu
+https://filejoker.net/b7uu2ngarywk
+
+
+Beginning Haskell: A Project-Based Approach By Alejandro Serrano Mena
+2014 | 300 Pages | ISBN: 1430262508 | EPUB + MOBI | 5 MB + 8 MB
+
+
+Beginning Haskell provides a broad-based introduction to the Haskell language, its libraries and environment, and to the functional programming paradigm that is fast growing in importance in the software industry. The book takes a project-based approach to learning the language that is unified around the building of a web-based storefront. Excellent coverage is given to the Haskell ecosystem and supporting tools. These include the Cabal build tool for managing projects and modules, the QuickCheck tool for software testing, web frameworks such as Yesud and Snap, and the Persistent and Esqueleto database access libraries. Functional programming is gathering momentum, allowing programmers to express themselves in a more concise way, reducing boilerplate and increasing the safety of code. Indeed, mainstream languages such as C# and Java are adopting features from functional programming, and from languages implementing that paradigm. Haskell is an elegant and noise-free pure functional language with a long history, having a huge number of library contributors and an active community. This makes Haskell the best tool for both learning and applying functional programming, and Beginning Haskell the perfect book to show off the language and what it can do. Beginning Haskell is for programmers new to functional programming, who want to learn this new paradigm and how it can improve the quality of their code. Beginning Haskell is also a great choice for functional programmers wanting to get a taste of the Haskell ecosystem and its unique features, or who wish to learn about advanced functional design patterns.
+
+397 <--> Implementing Search in .NET Applications
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/D0A733DD26EE1E3/Implementing_Search_in_.NET_Applications.part1.rar
+http://nitroflare.com/view/B11D3F25979CD46/Implementing_Search_in_.NET_Applications.part2.rar
+http://nitroflare.com/view/D26E4F7CFE75AE6/Implementing_Search_in_.NET_Applications.part3.rar
+http://nitroflare.com/view/6BC6D8B2603DD1B/Implementing_Search_in_.NET_Applications.part4.rar
+http://nitroflare.com/view/EB97EA186E3BB4C/Implementing_Search_in_.NET_Applications.part5.rar
+http://nitroflare.com/view/CF433C9D32D42CF/Implementing_Search_in_.NET_Applications.part6.rar
+
+
 Implementing Search in .NET Applications
-WordPress LMS: E-Learning Website Made Easy
-Selenium TestNG working with Java [Updated]
-Monetizing a WordPress Blog: Beginner-Friendly Strategies
-Programming Computer Vision with Python: Tools and algorithms for analyzing images (Repost)
-3D Game Engine Architecture: Engineering Real-Time Applications with Wild Magic
-APIs: A Strategy Guide [Repost]
-97 Things Every Software Architect Should Know [Repost]
-Modern Statistical Methods for HCI
-Peripheral Interaction: Challenges and Opportunities for HCI in the Periphery of Attention
-Machine Learning for Microbial Phenotype Prediction
-Dynamic Products: Shaping Information to Engage and Persuade
-Internet of Things (IoT) in 5G Mobile Technologies
-Listen and Talk
-Multimedia Content Analysis
-Beginning Programming with C For Dummies (Repost)
-Java Programming for Android Developers For Dummies (Repost)
-Mastering Unity 2D Game Development (Repost)
-Mastering Unity Scripting (Repost)
-Sviluppare applicazioni per Apple Watch (Repost)
-Mastering Python Design Patterns (Repost)
-React.js Essentials (Repost)
+June 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4.5 Hours | 1.12 GB
+Genre: eLearning | Language: English
+
+The ability to search, and most importantly find, is something most people take for granted and just expect it to work. In many cases it only becomes a big priority when search is broken or missing.
+
+Get the information on how to make understanding and implementing search a breeze, saving you hundreds of hours of research. In this course, Implementing Search in .NET Applications, you'll be learning how to set up your own search engine and how to interact with your search engine from your code. Also, you'll learn how to index documents and then retrieve them by querying search engine. Finally, you'll learn how to improve relevancy and get better results by learning some additional techniques to improve the searching experience. By the end of this course, you will be able to implement a search API in C# with SolrNet.
+
+419 <--> Pluralsight - Tactical Design Patterns in .NET: Creating Objects (2016)
+http://avxhome.se/blogs/house23
+http://nitroflare.com/view/D1B4248F3181768/Tac_Des_Pat_.NET_Creat.part1.rar
+http://nitroflare.com/view/04D243E3EF317B1/Tac_Des_Pat_.NET_Creat.part2.rar
+http://nitroflare.com/view/075279D391FECDB/Tac_Des_Pat_.NET_Creat.part3.rar
+http://nitroflare.com/view/D14C2A07F3C111B/Tac_Des_Pat_.NET_Creat.part4.rar
+http://nitroflare.com/view/0E807C1C4B6B7F5/Tac_Des_Pat_.NET_Creat.part5.rar
+http://nitroflare.com/view/16051E4A14A53CF/Tac_Des_Pat_.NET_Creat.part6.rar
+
+
 Pluralsight - Tactical Design Patterns in .NET: Creating Objects (2016)
-Jenkins Continuous Integration Cookbook (2nd Edition) (Repost)
-50 Tips and Tricks for MongoDB Developers [Repost]
-25 Recipes for Getting Started with [Repost]
-21 Recipes for Mining Twitter [Repost]
-AppleScript [Repost]
-3D Game Engine Design: A Practical Approach to Real-Time Computer Graphics
-Intelligent Numerical Methods II
-Machine Tool Metrology: An Industrial Handbook
-HCI International 2014 - Posters' Extended Abstracts
+MP4 | AVC 325kbps | English | 1024x768 | 15fps | 7h 10mins | AAC stereo 79kbps | 1.05 GB
+Genre: Video Training
+
+This course sheds light on issues that arise when implementing creational design patterns and then provides practical solutions that will make our code easier to write and more stable when running. Many of the symptoms of deep design problems manifest when creating objects and object graphs. In this course, Tactical Design Patterns in .NET: Creating Objects, you'll see what it takes to create code that's easier and more stable. You'll start with a small console application which demonstrates basic Abstract Factory implementation. Next, you'll built a different console application which demonstrates basic implementation of the Builder pattern and exposes issues with it.
+
+Finally, you'll see the console application get much more complex while remaining completely stable and safe on the consuming end. When you're finished with this course, you'll be have a firm understanding of how to best create stable objects easily in .NET.
+
+Table of contents:
+Course Overview1m 25s
+Understanding Constructors and Their Roles40m 30s
+Advancing from Constructor to Abstract Factory36m 53s
+Avoiding Excess Factory Abstractness35m 26s
+Understanding Dependencies, Covariance, and Contravariance37m 17s
+Applying the Substitution and Liskov Substitution Principles44m 19s
+Returning to Concrete Classes with the Builder Pattern40m 11s
+Embedding Calling Protocols into the Builder1h 0m
+Breathing Life Back into Factory Methods with Lambdas43m 51s
+Building Complex Objects with the Specification Pattern46m 53s
+Building Object Graphs with the Specification Pattern43m 5s
+
+
+426 <--> Intelligent Numerical Methods II
+http://www.springer.com/gp/book/9783319336053
+https://www.nitroflare.com/payment?webmaster=10405
+http://www.avaxhm.com/blogs/Underaglassmoon
+http://nitroflare.com/view/C038F29A4216EB2/10.1007%40978-3-319-33606-0.pdf
+
+
+Intelligent Numerical Methods II: Applications to Multivariate Fractional Calculus
+Springer | Engineering | Apr 27 2016 | ISBN-10: 3319336053 | 118 pages | pdf | 1.52 mb
+
+Authors: Anastassiou, George A., Argyros, Ioannis K.
+Presents recent original research of the authors in Numerical Analysis and Fractional Calculus
+The chapters are self-contained and can be read independently including an extensive list of references per chapter
+Newton-like and other similar numerical methods with applications to solving multivariate equations are developed, involvingCaputo type fractional mixed partial derivatives and multivariate fractional Riemann-Liouville integral operators
+
+In this short monograph Newton-like and other similar numerical methods with applications to solving multivariate equations are developed, which involve Caputo type fractional mixed partial derivatives and multivariate fractional Riemann-Liouville integral operators. These are studied for the first time in the literature. The chapters are self-contained and can be read independently. An extensive list of references is given per chapter. The book’s results are expected to find applications in many areas of applied mathematics, stochastics, computer science and engineering. As such this short monograph is suitable for researchers, graduate students, to be used in graduate classes and seminars of the above subjects, also to be in all science and engineering libraries.
+
+Topics
+Computational Intelligence
+Artificial Intelligence (incl. Robotics)
+Computational Science and Engineering
+Complexity
+
+
+429 <--> Linux Academy - SQL Primer
+http://avaxhome.ws/blogs/serpmolot
+http://nitroflare.com/view/2F014FE22E3B6E4/SQLP_by_1_file.rar
+http://nitroflare.com/view/EC3B1B1642BBB19/SQLP.part1.rar
+http://nitroflare.com/view/B6E9C17120F2447/SQLP.part2.rar
+http://nitroflare.com/view/B70D6116C1370CE/SQLP.part3.rar
+
+
 Linux Academy - SQL Primer
+English | ts | H264 1920x1080 | AAC 2 ch | 4 hrs 14 min | 1.3 GB 
+eLearning
+
+The Structured Query Language (or SQL) is how we both define and manipulate data within a traditional Relational Database Management System (or RDBMS). In this course, we are going to learn how to structure SQL statements that do just that. Learn how to create databases, manage access, create tables, insert and update data, create indexes and more. We will demonstrate SQL functions and talk about how they differ from the more traditional SQL statements. All of this will be accomplished at a SQL command line within MySQL, but will apply equally to SQL compliant RDBMS systems in general.
+
+430 <--> SQL Wall Street CHEAT SHEET, to get HIRED FAST! 2016
+http://avaxhome.ws/blogs/serpmolot
+http://nitroflare.com/view/8F1E879303E4143/SQLFast.rar
+
+
 SQL Wall Street CHEAT SHEET, to get HIRED FAST! 2016
-Linux Academy - Apache Tomcat 8 Application Server
-Gnuplot in Action: Understanding Data with Graphs
-14th IEEE International Conference on Embedded and Real-time Computing Systems and Applications
-Sass and Compass for Designers (Repost)
-Object-Oriented Software Engineering: Practical Software Development using UML and Java (2nd edition) (Repost)
-Hybrid Cloud Management with Red Hat CloudForms [Repost]
-Mastering Unit Testing Using Mockito and JUnit [Repost]
-Object-Oriented Software Engineering: Practical Software Development using UML and Java (Repost)
-Phonegap 3.X Mobile Application Development Hotshot (Repost)
+English | 2016 | mp4 | H264 1280x720 | AAC 2 ch | 1 hrs | 442 MB 
+eLearning, IT & Software, Other | Skill level: All level
+
+Don't waste hours learning SQL concepts you will never use. Pass most technical interviews or get your money back!
+
+I produced the highest rated SQL training video with over 301,000 views and 2800 likes. If you have any doubts, scroll down and read the comments on my SQL videos! Just ranked in the top group of instructors!
+
+This is an SQL course for job seeking beginners or people who are out of practice, that is designed to guarantee that you pass most SQL tech interviews. This is NOT for Database Administrators. This is for trading support applicants or business folks who might need to use the database for research. If you are trying to learn SQL, then my more advanced courses are awesome for that. This class is a very good video cliff note. Nothing more.
+
+I highly recommend this course for people looking for jobs with other (other than SQL) priorities. For example a job that says "Required: FIX Protocol. Plus: SQL". That is the ideal candidate for this course. I'll tell you exactly what the interviewers will be looking for as far as SQL.
+
+I have years working for companies like investment banks and FinTech venders, so I know what software they have and what you need to know. This course gets you right to the information you need faster than anything else. This frees up your time for other pursuits and getting you to that 6 figure job fast!
+
+Don't take MY word for it, take a look at what some of the 301,000 people who have enjoyed my SQL videos have said:
+
+[From my FIXProtocol Channel]
+
+"Didou Reznov2
+
+the delivery and presentation is just genius , he got me hooked from sec 1﻿"
+
+"Flynn Davies
+haha love the video man, the enthusiasm kept my ADHD infused brain entertained and helped me learn this. thanks so much and keep em up!﻿"
+
+Dirovame1
+
+FIXProtocol, you are a true hero. My Database professor has been spewing googlypoop for the last 4 months and I aced my final from just watching this video. 
+
+"ricochet08
+
+
+definitely the most entertaining sql video i've seen :D will be watching more of your videos!﻿"
+
+"Al Johnson5
+
++FIXProtocol Very interesting, informative and passionate video about the subject scary for many people. You like to teach, and you know stuff you're talking about!"
+
+
+"Richard Cooper4
+
+Great video love your enthusiasm! I am a sql developer who is looking to expand his skill set. Keep it up I like it! :-)﻿"
+
+"TrollAndPlay1
+
+You sir, are an amzing teacher ! Thank you so much !﻿"
+
+"Thomas Rönnberg2
+
+
+A charismatic teacher and very clear teaching methods"
+
+"Mark Ganus
+
+thanks heaps man. I'm on a race to learn SQL as quickly as and have been scouring youtube for useful videos and yours have been of great help. again thanks a bunch﻿"
+
+"Siddy Kay1
+
+I did a course on cyber-security this summer. You explain things well. i understand things better now haha, even though I'm a CS major. Wished my professors were as good in explaining as you lol﻿"
+
+What are the requirements? 
+- Need to be computer literate.
+- Need a Windows or MAC computer with internet access and a modern browser
+
+What am I going to get from this course? 
+- Get hired for a job requiring SQL/Database skills
+
+What is the target audience? 
+- A job seeker looking to get hired for jobs that require SQL/Database skills
+
+
+432 <--> Gnuplot in Action: Understanding Data with Graphs
+http://avxhome.in/blogs/Grev27
+http://nitroflare.com/view/BC484437852D5EC/1933988398.epub
+http://turbobit.net/wxx2633edgbi/1933988398.epub.html
+
+
+Philipp K. Janert, "Gnuplot in Action: Understanding Data with Graphs"
+English | ISBN: 1933988398 | 2009 | EPUB | 396 pages | 5 MB
+
+Statistical data is only as valuable as your ability to analyze, interpret, and present it in a meaningful way. Gnuplot is the most widely used program to plot and visualize data for Unix/Linux systems and it is also popular for Windows and the Mac. It's open-source (as in free!), actively maintained, stable, and mature. It can deal with arbitrarily large data sets and is capable of producing high-quality, publication-ready graphics.
+
+So far, the only comprehensive documentation available about gnuplot is the online reference documentation, which makes it both hard to get started and almost impossible to get a complete overview over all of its features. If you've never tried gnuplot "or have found it tough to get your arms around "read on.
+
+Gnuplot in Action is the first comprehensive introduction to gnuplot "from the basics to the power features and beyond. Besides providing a tutorial on gnuplot itself, it demonstrates how to apply and use gnuplot to extract intelligence from data. Particular attention is paid to tricky or poorly-explained areas. You will learn how to apply gnuplot to actual data analysis problems. This book looks at different types of graphs that can be generated with gnuplot and will discuss when and how to use them to extract actual information from data.
+
+One of gnuplot's main advantages is that it requires no programming skills nor knowledge of advanced mathematical or statistical concepts. Gnuplot in Action assumes you have no previous knowledge of either gnuplot or statistics and data analysis. The books starts out with basic gnuplot concepts, then describes in depth how to get a graph ready for final presentation and to make it look "just right" by including arrows, labels, and other decorations.
+
+Next the book looks at advanced concepts, such as multi-dimensional graphs and false-color plots "powerful features for special purposes. The author also describes advanced applications of gnuplot, such as how to script gnuplot so that it can run unattended as a batch job, and how to call gnuplot from within a CGI script to generate graphics for dynamic websites on demand.
+
+Gnuplot in Action makes gnuplot easy for anyone who needs to do data analysis, but doesn't have an education in analytical tools and methods. It's perfect for DBAs, programmers, and performance engineers; business analysts and MBAs; and Six-Sigma Black Belts, and process engineers.
+
+What's Inside:
+
+Creating graphs with gnuplot
+Data transformations and filters
+Preparing/polishing graphs for final presentation
+Publishing graphs in print or on the Web
+Using gnuplot's power features
+Gnuplot scripting and programming
+Types of graphs and when to use them
+Techniques of graphical analysis
+How to build, install, and develop for gnuplot
+Command and Option reference organized by concept
+
+
+
+440 <--> Beautiful C++: STL Algorithms
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/2E4A855EDECBB84/Beautiful_C%2B%2B_STL_Algorithms.part1.rar
+http://nitroflare.com/view/FD164FA4B532F08/Beautiful_C%2B%2B_STL_Algorithms.part2.rar
+http://nitroflare.com/view/925FA89345DE784/Beautiful_C%2B%2B_STL_Algorithms.part3.rar
+http://nitroflare.com/view/5AC87A0872370FF/Beautiful_C%2B%2B_STL_Algorithms.part4.rar
+http://nitroflare.com/view/DB6D0D5D3D93412/Beautiful_C%2B%2B_STL_Algorithms.part5.rar
+http://nitroflare.com/view/0CB6E2101B7B09B/Beautiful_C%2B%2B_STL_Algorithms.part6.rar
+
+
 Beautiful C++: STL Algorithms
-Simply Learn HTML5 and CSS3 (Projected code included)
-SQL Server: Replacing Profiler with Extended Events
-Become a Certified Web Developer - Beginner to Expert
-Learn to Make Android Apps - for Absolute Beginners [Updated]
-Mesos in Action2016-07-27
+June 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4.5 Hours | 757 MB
+Genre: eLearning | Language: English
+
+Very few C++ developers know the time and effort they could save with the algorithm header of the Standard Library. This course unlocks that header by connecting tasks you need to perform to the single line of code from the STL to do them.
+
+If you're a C++ developer, save yourself valuable time and work by learning how to use the algorithm header. In this course, Beautiful C++: STL Algorithms, you'll learn the functions in the algorithm header. You'll find out how iterators multiply the power of the library. Next, you'll learn the conventions that lower your mental burden. Finally, you'll learn how to use the same algorithm with different collections so you don't have to learn new functions. After this course, you'll know what the algorithm header has to offer you and how to use it to your advantage while developing.
+
+457 <--> Game Coding Complete (4th edition) (Repost)
+http://nitroflare.com/view/94E0525F2474E0F/1133776574_Gamespr.epub
+http://nitroflare.com/view/CD6D1E47E60B101/1133776574_Gamespr.mobi
+http://nitroflare.com/view/D3770A212CCB51B/1133776574_Gamespr.pdf
+
+
+Game Coding Complete (4th edition) By Mike McShaffry, David Graham
+2012 | 940 Pages | ISBN: 1133776574 | EPUB, MOBI, PDF | 15 MB
+
+
+Welcome to Game Coding Complete, Fourth Edition, the newest edition of the essential, hands-on guide to developing commercial-quality games. Written by two veteran game programmers, the book examines the entire game development process and all the unique challenges associated with creating a game. In this excellent introduction to game architecture, you'll explore all the major subsystems of modern game engines and learn professional techniques used in actual games, as well as Teapot Wars, a game created specifically for this book. This updated fourth edition uses the latest versions of DirectX and Visual Studio, and it includes expanded chapter coverage of game actors, AI, shader programming, LUA scripting, the C# editor, and other important updates to every chapter. All the code and examples presented have been tested and used in commercial video games, and the book is full of invaluable best practices, professional tips and tricks, and cautionary advice.
+
+
+464 <--> Mastering Machine Learning with scikit-learn (Repost)
+http://nitroflare.com/view/2AA8D6C73E7CFBC/1783988363_Masteringspr.epub
+http://nitroflare.com/view/87E0A86DB3642D5/1783988363_Masteringspr.pdf
+
+
+Mastering Machine Learning with scikit-learn By Gavin Hackeling
+2014 | 238 Pages | ISBN: 1783988363 | EPUB + PDF | 10 MB
+
+
+Apply effective learning algorithms to real-world problems using scikit-learn About This Book Design and troubleshoot machine learning systems for common tasks including regression, classification, and clustering Acquaint yourself with popular machine learning algorithms, including decision trees, logistic regression, and support vector machines A practical example-based guide to help you gain expertise in implementing and evaluating machine learning systems using scikit-learn Who This Book Is For If you are a software developer who wants to learn how machine learning models work and how to apply them effectively, this book is for you. Familiarity with machine learning fundamentals and Python will be helpful, but is not essential.
+
+
+490 <--> Udemy - AI Programming with Finite State Machines in Unity (2016)
+http://avxhome.se/blogs/house23
+http://nitroflare.com/view/3A4D89F6220D1EB/AI_Prog_Fin_St_Mac_Un.part01.rar
+http://nitroflare.com/view/1BA9EEA73A86560/AI_Prog_Fin_St_Mac_Un.part02.rar
+http://nitroflare.com/view/861FE8C00F100EB/AI_Prog_Fin_St_Mac_Un.part03.rar
+http://nitroflare.com/view/D21A5B1D746E5CF/AI_Prog_Fin_St_Mac_Un.part04.rar
+http://nitroflare.com/view/95C71D2F348A58E/AI_Prog_Fin_St_Mac_Un.part05.rar
+http://nitroflare.com/view/8B02B0C03870B45/AI_Prog_Fin_St_Mac_Un.part06.rar
+http://nitroflare.com/view/E7C251115018D62/AI_Prog_Fin_St_Mac_Un.part07.rar
+http://nitroflare.com/view/482F7932FFF41B5/AI_Prog_Fin_St_Mac_Un.part08.rar
+
+
+Udemy - AI Programming with Finite State Machines in Unity (2016)
+MP4 + Project files | AVC 223kbps | English | 1980x1080 | 25fps | 1h 30mins | AAC stereo 189kbps | 2.74 GB
+Genre: Video Training
+
+Game developers can learn AI Programming using Finite State Machines in Unity using a real time strategy project example. Complex behavior and decision-making is the goal of any good game AI. There are many methods in approaching this, and one of them is using a decision model called a Finite State Machine (FSM).
+
+A state machine is a very useful model in which the possible conditions of an agent are divided into “states”, which can have “transitions” into and out of each other under defined conditions. This is a concept used in many automatic decision-making implementations, including AI programming in games. In fact, Unity’s animation controller uses the state machine concept to model animation behaviors.
+
+In this tutorial we will implement an FSM-based character AI in the context of a point-and-click real-time-tactical combat game in Unity. 
+
+Enemy characters are expected to be on the lookout for the player characters, attack any within sight, pursue any who try to escape, and try to escape combat themselves when their health is below a certain threshold. Within the tutorial an introduction of the Unity project to be worked on is also included.
+
+Prerequisites
+
+Before starting this course, you should be familiar with C# programming in Unity and the concept of 3D transforms as it is used in the engine. Although the concept of the state machine itself is also introduced in the tutorial, it would also help if you read up on it first.
+
+Also, it should be noted that the game project in this tutorial is controlled using the Unity Remote 4 app, so make sure you have it installed in your device.
+
+
+508 <--> Functional Programming in C#: Classic Programming Techniques for Modern Projects (Repost)
+http://nitroflare.com/view/E6AD4E16F33D742/0470744588_Functional.pdf
+
+
+Functional Programming in C#: Classic Programming Techniques for Modern Projects By Oliver Sturm
+2011 | 288 Pages | ISBN: 0470744588 | PDF | 7 MB
+
+
+Take advantage of the growing trend in functional programming. C# is the number–one language used by .NET developers and one of the most popular programming languages in the world. It has many built–in functional programming features, but most are complex and little understood. With the shift to functional programming increasing at a rapid pace, you need to know how to leverage your existing skills to take advantage of this trend. Functional Programming in C# leads you along a path that begins with the historic value of functional ideas. Inside, C# MVP and functional programming expert Oliver Sturm explains the details of relevant language features in C# and describes theory and practice of using functional techniques in C#, including currying, partial application, composition, memoization, and monads. Next, he provides practical and versatile examples, which combine approaches to solve problems in several different areas, including complex scenarios like concurrency and high–performance calculation frameworks as well as simpler use cases like Web Services and business logic implementation. Shows how C# developers can leverage their existing skills to take advantage of functional programming Uses very little math theory and instead focuses on providing solutions to real development problems with functional programming methods, unlike traditional functional programming titles Includes examples ranging from simple cases to more complex scenarios Let Functional Programming in C# show you how to get in front of the shift toward functional programming.
+
+514 <--> Mastering matplotlib (Repost)
+http://nitroflare.com/view/80B72057008AC92/1783987545_Mastering.pdf
+
+
+Mastering matplotlib By Duncan M. McGreggor
+2015 | 292 Pages | ISBN: 1783987545 | PDF | 19 MB
+
+
+A practical guide that takes you beyond the basics of matplotlib and gives solutions to plot complex data About This Book Customize, configure, and handle events, and interact with figures using matplotlib Create highly intricate and complicated graphs using matplotlib Explore matplotlib's depths through examples and explanations in IPython notebooks Who This Book Is For If you are a scientist, programmer, software engineer, or student who has working knowledge of matplotlib and now want to extend your usage of matplotlib to plot complex graphs and charts and handle large datasets, then this book is for you.
+
+521 <--> Mastering JavaScript High Performance (Repost)
+http://nitroflare.com/view/8268F38AE30F72A/1784397296_Mastering.epub
+http://nitroflare.com/view/72F108E3F943FC0/1784397296_Mastering.pdf
+
+
+Mastering JavaScript High Performance By Chad R. Adams
+2015 | 208 Pages | ISBN: 1784397296 | EPUB + PDF | 36 MB
+
+
+Master the art of building, deploying, and optimizing faster web applications with JavaScript About This Book Test and optimize JavaScript code efficiently Build faster and more proficient JavaScript programs for web browsers and hybrid mobile apps Step-by-step tutorial stuffed with real-world examples Who This Book Is For If you are a JavaScript developer with some experience in development and want to increase the performance of JavaScript projects by building faster web apps, then this book is for you. You should know the basic concepts of JavaScript.
+
+532 <--> openFrameworks Essentials (Repost)
+http://nitroflare.com/view/8D8C9B55E5F02D1/1784396141_openFrameworks.pdf
+
+
+openFrameworks Essentials By Denis Perevalov, Igor (Sodazot) Tatarnikov
+2015 | 206 Pages | ISBN: 1784396141 | PDF | 3 MB
+
+
+Create stunning, interactive openFrameworks-based applications with this fast-paced guide About This Book Generate 2D and 3D graphics with openFrameworks Create a video synthesizer project and run it on multi-platform devices Use networking and Arduino to control your application Who This Book Is For If you are a programmer, visual artist, or designer with experience in creative coding, and want to use openFrameworks to create fun, stunning, and interactive applications, this is the book for you. Basic knowledge of programming languages, such as C++, Java, Python, or JavaScript, will be enough to proceed with the book.
+
+547 <--> Introduction to Nonlinear Optimization: Theory, Algorithms, and Applications with MATLAB (repost)
+http://nitroflare.com/view/3330FCE6AE14841/1611973643.pdf
+https://filejoker.net/xhgqau7al08d
+
+
+Amir Beck, "Introduction to Nonlinear Optimization: Theory, Algorithms, and Applications with MATLAB" 
+English | 2014 | ISBN: 1611973643 | 294 pages | PDF | 3 MB
+
+This book provides the foundations of the theory of nonlinear optimization as well as some related algorithms and presents a variety of applications from diverse areas of applied sciences. The author combines three pillars of optimization-theoretical and algorithmic foundation, familiarity with various applications, and the ability to apply the theory and algorithms on actual problems-and rigorously and gradually builds the connection between theory, algorithms, applications, and implementation.
+
+Readers will find more than 170 theoretical, algorithmic, and numerical exercises that deepen and enhance the reader's understanding of the topics. The author includes several subjects not typically found in optimization books-for example, optimality conditions in sparsity-constrained optimization, hidden convexity, and total least squares. The book also offers a large number of applications discussed theoretically and algorithmically, such as circle fitting, Chebyshev center, the Fermat-Weber problem, denoising, clustering, total least squares, and orthogonal regression and theoretical and algorithmic topics demonstrated by the MATLAB toolbox CVX and a package of m-files that is posted on the book's web site.
+
+Audience: This book is intended for graduate or advanced undergraduate students of mathematics, computer science, and electrical engineering as well as other engineering departments. The book will also be of interest to researchers.
+
+Contents: Chapter 1: Mathematical Preliminaries; Chapter 2: Optimality Conditions for Unconstrained Optimization; Chapter 3: Least Squares; Chapter 4: The Gradient Method; Chapter 5: Newton s Method; Chapter 6: Convex Sets; Chapter 7: Convex Functions; Chapter 8: Convex Optimization; Chapter 9: Optimization Over a Convex Set; Chapter 10: Optimality Conditions for Linearly Constrained Problems; Chapter 11: The KKT Conditions; Chapter 12: Duality
+
+
+577 <--> Learn Linux in 5 Days and Level Up Your Career (Updated)
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/340E6C13F198B1E/Learn_Linux_in_5_Days_and_Level_Up_Your_Career.part1.rar
+http://nitroflare.com/view/BD5315E525DF778/Learn_Linux_in_5_Days_and_Level_Up_Your_Career.part2.rar
+http://nitroflare.com/view/516CDEFA82635E1/Learn_Linux_in_5_Days_and_Level_Up_Your_Career.part3.rar
+http://nitroflare.com/view/376EE6D6843BF9D/Learn_Linux_in_5_Days_and_Level_Up_Your_Career.part4.rar
+http://nitroflare.com/view/38F0612FE90C889/Learn_Linux_in_5_Days_and_Level_Up_Your_Career.part5.rar
+
+
+Learn Linux in 5 Days and Level Up Your Career
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 12 Hours | 573 MB
+Genre: eLearning | Language: English
+
+Use the in-demand Linux skills you learn in this course to get promoted or start a new career as a Linux professional.
+
+If you want to learn how to use Linux and level up your career but are pressed for time, read on. Hello. My name is Jason Cannon and I'm the author of Linux for Beginners as well as the founder of the Linux Training Academy. When I ask people to tell me what their biggest challenge is to learning Linux, they all say the same thing: Time.
+
+That's why I've created this course. Give me just 45 minutes a day for the next 5 days and I will teach you exactly what you need to know about the Linux operating system. You'll learn the most important concepts and commands, and I'll even guide you step-by-step through several practical and real-world examples.
+
+So, if you can spare a few minutes a day and want to learn the ins-and-outs of the Linux Operating System, join me and the other students in this course today.
+
+Free Bonus - How to Install WordPress on Your Very Own Linux System
+
+As an added bonus for enrolling in the Learn Linux in 5 Days video training course, you'll receive a step-by-step checklist and video that teaches you how to install WordPress on an Ubuntu Linux system. First, you'll learn what software is required for WordPress to run on a Linux system. Next, you'll be given the exact commands to type that install all the required software and WordPress.
+
+You'll learn how to install a web server, how to install a database server, how to create database users, and how to configure WordPress. Before you know it, you'll have a fully functioning blog on your hands. This is a great way to put your new-found Linux skills to good use. Totally optional, but very cool: If you want to host your blog on the internet on your very own installation of Linux, I'll show you were you can get hosting for just $5 a month.
+
+____________________
+
+Learn Linux in 5 Days doesn't make any assumptions about your background or knowledge of Linux. You need no prior knowledge to benefit from this course. You will be guided step by step using a logical and systematic approach. As new concepts, commands, or jargon are encountered they are explained in plain language, making it easy for anyone to understand. Here is what you will learn by taking Learn Linux in 5 Days:
+
+How to get access to a Linux server if you don't already.
+What a Linux distribution is and which one to choose.
+What software is needed to connect to Linux from Mac and Windows computers.
+What SSH is and how to use it.
+The file system layout of Linux systems and where to find programs, configurations, and documentation.
+The basic Linux commands you'll use most often.
+Creating, renaming, moving, and deleting directories.
+Listing, reading, creating, editing, copying, and deleting files.
+Exactly how permissions work and how to decipher the most cryptic Linux permissions with ease.
+How to use the nano, vi, and emacs editors.
+Two methods to search for files and directories.
+How to compare the contents of files.
+What pipes are, why they are useful, and how to use them.
+How to compress files to save space and make transferring data easy.
+How and why to redirect input and output from applications.
+How to customize your shell prompt.
+How to be efficient at the command line by using aliases, tab completion, and your shell history.
+How to schedule and automate jobs using cron.
+How to switch users and run processes as others.
+How to find and install software.
+Unconditional Udemy 30 day money-back guarantee - that's my personal promise of your success!
+What you learn in Learn Linux in 5 Days applies to any Linux environment including Ubuntu, Debian, Linux Mint, RedHat, Fedora, OpenSUSE, Slackware, and more.
+
+
+
+2016-07-27
 ******
 0 <--> Computer Systems: A Programmer's Perspective (2nd Edition) (Repost)
 
@@ -3236,311 +4056,448 @@ New projects will be added periodically in the future, but the course price will
 
 
 
-Click Here to get more tutorials in my Blog
+========================================
+
+Before 2016/07
+
+0 <--> Algorithms in C : Concepts, Examples, Code + Time Complexity (2016)
+http://nitroflare.com/view/14329E87B0D8EC1/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part1.rar
+http://nitroflare.com/view/9DCBA37141BE6EA/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part2.rar
+http://nitroflare.com/view/BC9433AAD9D8F6B/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part3.rar
+http://nitroflare.com/view/3071379B0539CF5/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part4.rar
+http://nitroflare.com/view/4F46F4EC7A8C08B/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part5.rar
+http://nitroflare.com/view/3A50456497266C8/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part6.rar
+
+
+Algorithms in C : Concepts, Examples, Code + Time Complexity (2016)
+WEBRip | English | MP4 + PDF Guides | 1280 x 720 | AVC ~610 kbps | 30 fps
+AAC | 75.1 Kbps | 44.1 KHz | 2 channels | 3h 30mn | 1.08 GB
+Genre: Video Tutorial / Development, Programming
+
+Learn algorithms in C language. Understand Logic with examples, practice code and crack those programming interviews!
+What's New: New section on Transform and Conquer algorithms,Time Complexity Quiz, Master Theorem, Number Theoretic Algorithms Algorithms are very important for programmers to develop efficient software designing and programming skills. This Course introduces you to most important algorithms in computer science. Each video explains the concept/logic behind the algorithm, provides an example and explains pseudo-code. Each video also has working C programs of algorithm implementations with sample input & output. This course will help you crack those programming interviews on algorithms.
+
+Lectures: 32
+Video: 3.5 hours
+Skill level: All Levels
+Recently updated: February 16, 2016!
+
+Contents:
+
+Section 1 - Introduction
+
+1. Course Introduction and Author Bio
+2. Course Curriculum & Upcoming lectures
+
+Section 2 - Brute Force Approach
+
+3. Selection Sort Algorithm
+C_Program_on_SelectionSort.pdf
+4. Bubble Sort Algorithm
+C Program On Bubble Sort
+5. Sequential Search Algorithm
+C Program Sequential Search
+6. Brute Force String Matching Algorithm
+C Program On String Matching
+BruteForceStringMatch.pdf
+quiz 1: Brute Force Quiz
+
+Section 3 - Divide and Conquer Approach
+
+7. Merge Sort Algorithm
+C Program On Merge Sort
+8. Quick Sort Algorithm
+C Program Quick Sort
+quiz 2: Divide and Conquer Quiz
+
+Section 4 - Decrease and Conquer Approach
+
+9. Binary Search Algorithm
+C Program Binary Search
+10. Insertion Sort Algorithm
+C Program On Insertion Sort
+11. Depth First Search Algorithm
+C Program On DFS
+12. Breadth First Search Algorithm
+C Program BFS
+quiz 3: Decrease and Conquer Quiz
+
+Section 5 - Transform and Conquer Approach
+
+13. Heaps
+Heaps.pdf
+14. Heap Construction [bottom-up approach]
+C_Program_HeapConstruction.pdf
+15. Heap Sort Algorithm
+C_Program_HeapSort.pdf
+
+Section 6 - Dynamic Programming
+
+16. Warshall's Algorithm
+C Program Warshall 's Algorithm
+17. Floyd's Algorithm
+C Program On Floyd 's Algorithm
+quiz 4: Dynamic Programming Quiz
+
+Section 7 - Greedy Technique
+
+18. Prim's Algorithm
+C Program On Prim 's Algorithm
+19. Kruskal's Algorithm
+C Program On Kruskal 's Algorithm
+quiz 5: Greedy Technique Quiz
+
+Section 8 - Bonus Section : Time Complexity
+
+20. Introduction to Analysis of Algorithms
+21. Asymptotic Notations
+22. Time Complexity - Selection Sort Algorithm
+23. Time Complexity - Bubble Sort Algorithm
+24. Time Complexity - Sequential Search Algorithm
+25. Time Complexity - String Matching Algorithm
+26. Time Complexity - Insertion Sort Algorithm
+27. Time Complexity - Warshall's Algorithm
+Time Complexity of Warshall's algorithm.pdf
+28. Time Complexity - Floyd's Algorithm
+Time Complexity of Floyd's algorithm.pdf
+29. Master Theorem
+quiz 6: Time Complexity Quiz
+
+Section 9 - Number Theoretic Algorithms
+
+30. Euclid's Algorithm [GCD of two numbers]
+C Program on Euclid's Algorithm.pdf
+Euclid_Algorithm.pdf
+31. C Program on Euclid's Algorithm
+32. RSA Algorithm
+CProgramOnRSA.pdf
+RSA_Algorithm.pdf
+quiz 7: Number Theory Quiz
 
 ******
+1 <--> Build a Match 3 Game with Unity
+http://nitroflare.com/view/2977EB1EB7F5AF1/Build_a_Match_3_Game_with_Unity.part1.rar
+http://nitroflare.com/view/146856FED26036E/Build_a_Match_3_Game_with_Unity.part2.rar
+http://nitroflare.com/view/23A50D4FACCE67B/Build_a_Match_3_Game_with_Unity.part3.rar
+http://nitroflare.com/view/31BE960249262AE/Build_a_Match_3_Game_with_Unity.part4.rar
+http://nitroflare.com/view/06F2CE4A8DE32D3/Build_a_Match_3_Game_with_Unity.part5.rar
+http://nitroflare.com/view/DAFCC5A356F2DC9/Build_a_Match_3_Game_with_Unity.part6.rar
 
 
-2016-07-15
-Swift Quick Syntax Reference (Repost)
-Solaris 9 System Administration Training Guide
-Mastering Python
-Learning Linux Binary Analysis
-Udemy - The Ultimate PHP Training Bundle for Beginner to Advanced
-Linux Network Security (LPIC-3 303)
-Java SE Desktop Application with Swing, JPA and Maven
-Using the Web Speech API with AngularJS
-Play by Play: Docker for Web Developers with John Papa and Dan Wahlin
-Ionic Apps for WooCommerce Build an eCommerce Mobile App
-Applying SQL Server 2016 Features to Real-world Data Problems
-Introduction to TypeScript
-Subscribe Me: Making, Marketing & Monetizing Online Digital Content with Membership Sites, Online Courses
-Your Customer Creation Equation: Unexpected Website Formulas of The Conversion Scientist™
-Million Dollar Plan: Leveraging Technology to Scale
-SQL Fur Dummies (6. Auflage) (Repost)
-Implementing NetScaler VPX (Repost)
-Big Data
-C# Deconstructed: Discover How C# Works on the .Net Framework (Repost)
-C# 3.0: The Complete Reference (3rd edition) (Repost)
-SAP Performance Optimization Guide: Analyzing and Tuning SAP Systems (7th edition) (Repost)
-Nonlinear Systems
-Java Programming for Android Developers For Dummies (Repost)
-Rabi N. Bhattacharya: Selected Papers
-iOS 8 Swift Programming Cookbook (Repost)
-networklessons - CCIE Routing & Switching
-Coursera - Java for Android
-Cisco Firepower and Advanced Malware Protection
+Build a Match 3 Game with Unity
+MP4 | Video: AVC 1280x720 | Audio: AAC 48KHz 2ch | Duration: 2 Hours 25M | 763 MB
+Genre: eLearning | Language: English
 
-2016-07-10
-Discrete Optimization in Architecture
-25 Quintessential Programming Interview Problems: Set A
-Programmieren mit Maple V
-Udemy - The Unreal Engine Developer Course - Learn C++ & Make Games
-Reporting in TFS (Repost)
-AngularJS Deployment Essentials (Repost)
-Scientific Software Development in Fortran
-Enabling Programmable Self with HealthVault [Repost]
-Solving Large Scale Learning Tasks. Challenges and Algorithms
-Finite Difference Computing with Exponential Decay Models
-Theory and Applications of Applied Electromagnetics
-Data Security Compliance
-Essential SharePoint [Repost]
-Getting Started with OUYA (Repost)
-Professional C# 6 and .NET Core 1.0
-Developing Enterprise iOS Applications [Repost]
-Building Virtual Pentesting Labs for Advanced Penetration Testing (Repost)
-Cocos2d Game Development Blueprints (Repost)
-Programming Languages for MIS: Concepts and Practice (Repost)
-Cognitive Networks: Applications and Deployments (Repost)
-iBATIS in Action [Repost]
-Whole-Body Impedance Control of Wheeled Humanoid Robots
-Statistics and Data Analysis for Microarrays Using R and Bioconductor (2nd Edition) (Repost)
-DSLs in Action [Repost]
-Master The Essentials of Conversion Optimization: Experts' Approach to Optimization
-Real Wholesale Sources: Over 200 Legitimate Sources of Online Inventory for your Online and Offline Business
-Mastering Dyalog APL: A Complete Introduction to Dyalog APL (repost)
-Selenium Design Patterns and Best Practices (Repost)
-Play by Play: The Science Behind Microsoft Exams
-Play by Play: Nano Server
-Introduction to SVN [repost]
-Play by Play: Just Enough Administration (JEA)
-Play by Play: Elastic Scale and Consistency with Azure Automation DSC
-Play by Play: The Application Platform in Windows Server 2016
-Computer Hacking Forensic Investigator (CHFI)
-Becoming Agile: ...in an imperfect world: .in a Imperfect World [Repost]
-Storytelling with Data: A Data Visualization Guide for Business Professionals
-Building on SugarCRM [Repost]
-Rails Deep Dive (Repost)
-The Cyborg Subject
-Mastering Unit Testing Using Mockito and JUnit (Repost)
-Udemy - jQuery Fundamentals Powerful Bootcamp for beginners
-AngularJS Web Application Development Blueprints (Repost)
-Android NDK Beginner's Guide (2nd Revised edition) (Repost)
-SQL Server Analysis Services 2012 Cube Development Cookbook (Repost)
-Microsoft Dynamics GP 2013 Cookbook (Repost)
-From Human Attention to Computational Attention: A Multidisciplinary Approach
-Seminal Contributions to Modelling and Simulation: 30 Years of the European Council of Modelling and Simulation
-Mastering Predictive Analytics with R (Repost)
-Jump Start Git (Repost)
-Pluralsight - Hands On Foundation 5 [repost]
-OpenGL 4 Shading Language Cookbook (2nd Revised edition) (Repost)
-Force.com Developer Certification Handbook (DEV401) (Repost)
-Node.js Design Patterns (Repost)
-Database Systems: The Complete Book (2nd edition) (Repost)
-Front-End Frameworks: Ember.js (Part I - III)
-CCNP Collaboration: Cisco Exams 300-070 CIPTV1, 300-075 CIPTV2, 300-080 CAPPS, and 300-085 CTCOLLAB
-Designing Interfaces [Repost]
-Innovations and Approaches for Resilient and Adaptive Systems (Repost)
-Pluralsight - Building Strongly-typed AngularJS Apps with ASP.NET MVC 5 [repost]
-Programming: Principles and Practice Using C++ (2nd edition)
-Introduction to Scientific Programming and Simulation Using R (Repost)
-cbtnuggets - Penetration Testing with Linux Tools (Repost)
-Complete Web Monitoring [Repost]
-Data Analysis with Open Source Tools [Repost]
-CompTIA Network+ Training Kit [Repost]
-Learning C# Programming with Unity 3D (Repost)
-Functional Python Programming (Repost)
-Practitioner's Guide to Health Informatics (Repost)
-An Architectural Approach to Level Design (Repost)
-Virtual und Augmented Reality (VR / AR): Grundlagen und Methoden der Virtuellen und Augmentierten Realität (Repost)
-Systems Analysis and Design, UML Version 2.0: An Object-Oriented Approach (4th edition)
-Aperture?Exposed: The Mac?Photographer's Guide to Taming the Workflow
-Wireshark 2.0: Fundamentals
-Facebook: Make $2000 a Month Using Facebook - Passive Income System
-Java EE: Programming Servlets
-C# 6 from Scratch
-Clickbank Affiliate Marketing Bible How to Earn a Passive Online Income
-Moving Beyond JSON and XML with Protocol Buffers
-99 Ways To Flood Your Website With Traffic: Website Traffic Tips
-WordPress for Beginners - Build Your First WordPress Website (2016)
-iOS Animation with Swift IV - Custom Animated Transition
-Build WordPress E-Commerce Stores to Sell Digital Downloads [Updated]
-Publish your Own Guess the Word Game for Kids, iOS & Android
-CompTIA A+ Complete Fast Pass [Repost]
-Code School - Python
-Tutsplus - Get Started With Ionic 2
-Tutsplus - Understanding the WordPress Theme Template Hierarchy
-Tutsplus - Craft: Designing With Real-World Data
-Tutsplus - Single-Page Apps With Angular UI-Router
-Industry 4.0: The Industrial Internet of Things
-Tutsplus - Unit Testing React Components
-Tutsplus - Build a Color-Shifting Gallery With JavaScript
-Tutsplus - Get Started With Core Data
-Tutsplus - Testing Angular Filters
-Tutsplus - Start Here: Learn CSS Layout
-"Applications from Engineering with MATLAB Concepts" ed. by Jan Valdman
-Code Simplicity [Repost]
-ReSharper Essentials
-Getting Started with Clickteam Fusion (Repost)
-Learning OpenStack Networking (Neutron) (Repost)
-Learning R for Geospatial Analysis (Repost)
-Administering ArcGIS for Server
-Practical Data Science Cookbook (Repost)
-Scala for Machine Learning (Repost)
-Guide to Programming and Algorithms Using R (Repost)
-Application Development in iOS 7
-50 Ways To Build Your Email Marketing List
-A Practical Guide to Affiliate Marketing: Quick Reference for Affiliate Managers & Merchants
-Mini Membership Sites 2.0: Think It! Build It! Launch It! How I Replaced My Day Job With Membership Sites
-Python 3 Text Processing with NLTK 3 Cookbook (Repost)
-SignalR: Real-time Application Development (Repost)
-Google Maps JavaScript API Cookbook (Repost)
-Getting Started with LLVM Core Libraries (Repost)
-ASP.NET MVC 4 and the Web API: Building a REST Service from Start to Finish (Repost)
-Sams Teach Yourself C++ in One Hour a Day (7th edition)
-Pro JavaFX 8: A Definitive Guide to Building Desktop, Mobile, and Embedded Java Clients (Repost)
-HTML5 Pocket Reference (5th edition) (Repost)
-HTML5 Programming with JavaScript For Dummies (Repost)
-Programming in Objective-C (Developer's Library) (6th edition) (Repost)
-Activiti 5.x Business Process Management: Beginner's Guide
-AngularJS Web Application Development Cookbook (Repost)
-Gamemaker: Studio For Dummies (Repost)
-Getting Started with Grunt: The JavaScript Task Runner (Repost)
-Hl7 for BizTalk (Repost)
-Learning Bootstrap (Repost)
-Learning PrimeFaces Extensions Development (Repost)
-Learning System Center App Controller (Repost)
-How to Find Profitable Niches: 5 Five-Minute Free & Easy Methods for Any Niche Endeavor
-Content Marketing Playbook
-Youtube Marketing: How to Create a Successful Channel and Make Money
-Natural Language Processing in Python
-Convolutional Neural Networks in Python
-Unsupervised Machine Learning in Python
-Kompendium Medieninformatik: Medienpraxis [Repost]
-High Performance iOS Apps: Optimize Your Code for Better Apps
-Building and Testing with Gradle [Repost]
-Apache Mahout Essentials (Repost)
-Amazon EC2 Cookbook (Repost)
-AngularJS Directives Cookbook (Repost)
-Android for the BeagleBone Black (Repost)
-Objective-C Cheat Sheet
-ArcGIS Blueprints (Repost)
-Swift vs. Objective-C: Compared Everything of Both Programming Languages
-Arduino Development Cookbook (Repost)
-Learning Apache Thrift (Repost)
-Algorithmic and Geometric Aspects of Robotics
-Learning iOS UI Development (Repost)
-Learning Geospatial Analysis with Python (2nd Revised edition)
-Game Development with Swift (Repost)
-HTML5 Game Development by Example: Beginner's Guide (2nd Revised edition) (Repost)
-GitHub Essentials (Repost)
-Learning C++ by Creating Games with UE4 (Repost)
-Learning Ceph (Repost)
-Learning ExtJS (4th edition) (Repost)
-Murach's SQL Server 2016 for Developers
-Learning Java by Building Android Games (Repost)
-Liferay 6.x Portal Enterprise Intranets Cookbook (Repost)
-Learning VMware vCloud Air (Repost)
-Learning Yii Testing (Repost)
-LibGDX Cross-Platform Development Blueprints (Repost)
-Learning Predictive Analytics with R (Repost)
-Lua Game Development Cookbook (Repost)
-Big Data For Dummies (Repost)
-Office 2013 For Dummies (Repost)
-Quickbooks 2016 All-in-One For Dummies (Repost)
-Zabbix 1.8 Network Monitoring [Repost]
-Caring for People with Problem Behaviors
-Clear Blogging: How People Blogging Are Changing the World and How You Can Join Them
-Computers Helping People with Special Needs
-Computers Helping People with Special Needs, Part II
-Advances in Biometrics for Secure Human Authentication and Recognition (Repost)
-Red Team Hacking Course
-RESTful Web API Design with Node.js (Repost)
-Redis Essentials (Repost)
-Raspberry Pi Mechatronics Projects (Repost)
-Raspberry Pi Projects for Kids (2nd Revised edition) (Repost)
-Raspberry Pi Computer Vision Programming (Repost)
-Matthew MacDonald, "Attract Visitors to Your Site: The Mini Missing Manual" [Repost]
-Beautiful Security [Repost]
-Beautiful Testing: Leading Professionals Reveal How They Improve Software [Repost]
-Beautiful Teams
-Membership Site Plan: Your First Steps To Passive Income
-Certified Scrum Master (CSM)
-jQuery – Grundlagen
-Facebook for Business: How to Uncover Facebook's New Super-Profitable Hidden Niches
-SoapUI Cookbook (Repost)
-SFML Essentials (Repost)
-Testing with F# (Repost)
-CBT Nuggets - JNCIS-ENT (JN0-343) - OSPF
-Salesforce Reporting and Dashboards (Repost)
-Splunk Essentials (Repost)
-CBT Nuggets - Database Fundamentals
-Mastering Python Data Visualization
-ITPro.tv - VMware Certified Professional 6 VCP6-DCV
-Introduction to Java Programming, Brief Version (8 edition) (Repost)
-Cisco 640-554: CCNA Security - Implementing Cisco IOS Network Security - IINS
-The Definitive Guide to Google AdWords: Create Versatile and Powerful Marketing and Advertising Campaigns (Repost)
-ITPro.tv - Kali Linux
-ITPro.tv - CEH v9
-Reasoning About Asynchronous JavaScript
-PHP for Beginners (2016)
-Learning Python Data Visualization
-Mastering Python Scientific Computing
-Expert Oracle RAC 12c (Repost)
-Tactical Design Patterns in .NET: Creating Objects [HD Original]
-Tkinter GUI Application Development Blueprints (Repost)
-Materials Management with SAP ERP: Functionality and Technical Configuration (3rd Edition) (Repost)
-Xcode 4 iOS Development Beginner's Guide [Repost]
-ABAP Basics (2nd edition) (Repost)
-Yii 1.1 Application Development Cookbook [Repost]
-Autonomous Driving
-Shell Scripting Recipes
-Zend Framework 2.0 Cookbook
-Cloud-Lösungen mit ownCloud und dem Raspberry Pi
-Image Processing and Acquisition using Python (Repost)
-Learn iOS 7 App Development (Repost)
-Beginning Xcode (Repost)
-Android Game Recipes: A Problem-Solution Approach (Repost)
-Office 365: Migrating and Managing Your Business In The Cloud (Repost)
-Beginning Haskell: A Project-Based Approach (Repost)
-Database Development and Management (Repost)
-A Beginners Guide To Learning AJAX For Web Development Professionals
-Implementing Search in .NET Applications
-WordPress LMS: E-Learning Website Made Easy
-Selenium TestNG working with Java [Updated]
-Monetizing a WordPress Blog: Beginner-Friendly Strategies
-Programming Computer Vision with Python: Tools and algorithms for analyzing images (Repost)
-3D Game Engine Architecture: Engineering Real-Time Applications with Wild Magic
-APIs: A Strategy Guide [Repost]
-97 Things Every Software Architect Should Know [Repost]
-Modern Statistical Methods for HCI
-Peripheral Interaction: Challenges and Opportunities for HCI in the Periphery of Attention
-Machine Learning for Microbial Phenotype Prediction
-Dynamic Products: Shaping Information to Engage and Persuade
-Internet of Things (IoT) in 5G Mobile Technologies
-Listen and Talk
-Multimedia Content Analysis
-Beginning Programming with C For Dummies (Repost)
-Java Programming for Android Developers For Dummies (Repost)
-Mastering Unity 2D Game Development (Repost)
-Mastering Unity Scripting (Repost)
-Sviluppare applicazioni per Apple Watch (Repost)
-Mastering Python Design Patterns (Repost)
-React.js Essentials (Repost)
-Pluralsight - Tactical Design Patterns in .NET: Creating Objects (2016)
-Jenkins Continuous Integration Cookbook (2nd Edition) (Repost)
-50 Tips and Tricks for MongoDB Developers [Repost]
-25 Recipes for Getting Started with [Repost]
-21 Recipes for Mining Twitter [Repost]
-AppleScript [Repost]
-3D Game Engine Design: A Practical Approach to Real-Time Computer Graphics
-Intelligent Numerical Methods II
-Machine Tool Metrology: An Industrial Handbook
-HCI International 2014 - Posters' Extended Abstracts
-Linux Academy - SQL Primer
-SQL Wall Street CHEAT SHEET, to get HIRED FAST! 2016
-Linux Academy - Apache Tomcat 8 Application Server
-Gnuplot in Action: Understanding Data with Graphs
-14th IEEE International Conference on Embedded and Real-time Computing Systems and Applications
-Sass and Compass for Designers (Repost)
-Object-Oriented Software Engineering: Practical Software Development using UML and Java (2nd edition) (Repost)
-Hybrid Cloud Management with Red Hat CloudForms [Repost]
-Mastering Unit Testing Using Mockito and JUnit [Repost]
-Object-Oriented Software Engineering: Practical Software Development using UML and Java (Repost)
-Phonegap 3.X Mobile Application Development Hotshot (Repost)
-Beautiful C++: STL Algorithms
-Simply Learn HTML5 and CSS3 (Projected code included)
-SQL Server: Replacing Profiler with Extended Events
-Become a Certified Web Developer - Beginner to Expert
-Learn to Make Android Apps - for Absolute Beginners [Updated]
-Mesos in Action
+Match 3 games are simple puzzle games where the player is asked to pair three or more identical items on a tiled game board. Popular modern variations include Candy Crush and Bejeweled. Unity is ideally suited to this kind of game design, and it's a great entry point to more complex kinds of game development. This training course is here to help you complete your own match 3 game.
+
+Game developer Kelley Hecker covers topics like creating a grid-based game board, using inheritance to create different types of game pieces, adding obstacles and new levels, detecting matches and clearing pieces, and implementing a user interface complete with a score screen. By the end of the course, members will have a completed game and learned new techniques to apply to their next Unity project.
+
+
+
+******
+******
+2 <--> Concurrency Theory: Calculi an Automata for Modelling Untimed and Timed Concurrent Systems (Repost)
+http://nitroflare.com/view/8F02AF7C321525A/Concurrency_Theory.pdf
+https://filejoker.net/i1uh9ucaf4em
+
+
+Howard Bowman, Rodolfo Gomez, "Concurrency Theory: Calculi an Automata for Modelling Untimed and Timed Concurrent Systems" 
+2005 | pages: 444 | ISBN: 1852338954 | PDF | 7,4 mb
+
+Concurrency Theory is a synthesis of one of the major threads of theoretical computer science research focusing on languages and graphical notations for describing collections of simultaneously evolving components that interact through synchronous communication. The main specification notation focused on in this book is LOTOS. An extensive introduction to this particular process calculus is given, highlighting how the approach differs from competitor techniques, such as CCS and CSP.The book covers linear-time semantics, based on traces; branching-time semantics, using both labeled transition systems and refusals; and true concurrency semantics, using (bundle) event structures. In addition, the book discusses communicating automata approaches (both finite and infinite state); how the theory can be generalised to the timed setting; and, finally the authors generalise the (finite and infinite state) communicating automata notations to yield timed automata and discrete timed automata.This book represents a comprehensive pass through the spectrum of concurrency theory research: From untimed to timed syntax and semantics and process calculi to automata. Researchers and practitioners in the field of concurrency theory, as well as MSc and PhD students, will find the comprehensive coverage in this book essential reading.
+******
+3 <--> Deep Learning in Python Prerequisites
+http://nitroflare.com/view/84F652350F82050/Deep_Learning_in_Python_Prerequisites_-_LazyProgrammer.rar
+https://filejoker.net/gpnx0s2sq6ul
+
+
+Deep Learning in Python Prerequisites: Master Data Science and Machine Learning with Linear Regression and Logistic Regression in Python (Machine Learning in Python) by LazyProgrammer
+English | March 19, 2016 | ASIN: B01D7GDRQ2 | 43 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.31 MB
+
+Do you find deep learning difficult? So you want to learn about deep learning and neural networks, but you don’t have a clue what machine learning even is. This book is for you. 
+
+Perhaps you’ve already tried to read some tutorials about deep learning, and were just left scratching your head because you did not understand any of it. This book is for you. 
+
+Believe the hype. Deep learning is making waves. At the time of this writing (March 2016), Google’s AlghaGo program just beat 9-dan professional Go player Lee Sedol at the game of Go, a Chinese board game. 
+
+Experts in the field of Artificial Intelligence thought we were 10 years away from achieving a victory against a top professional Go player, but progress seems to have accelerated! 
+
+While deep learning is a complex subject, it is not any more difficult to learn than any other machine learning algorithm. I wrote this book to introduce you to the prerequisites of neural networks, so that learning about neural networks in the future will seem like a natural extension of these topics. You will get along fine with undergraduate-level math and programming skill. 
+
+All the materials in this book can be downloaded and installed for free. We will use the Python programming language, along with the numerical computing library Numpy. 
+
+Unlike other machine learning algorithms, deep learning is particularly powerful because it automatically learns features. That means you don’t need to spend your time trying to come up with and test “kernels” or “interaction effects” - something only statisticians love to do. Instead, we will eventually let the neural network learn these things for us. Each layer of the neural network is made up of logistic regression units. 
+
+Do you want a gentle introduction to this “dark art”, with practical code examples that you can try right away and apply to your own data? Then this book is for you. 
+
+This book was designed to contain all the prerequisite information you need for my next book, Deep Learning in Python: Master Data Science and Machine Learning with Modern Neural Networks written in Python, Theano, and TensorFlow. 
+
+There are many techniques that you should be comfortable with before diving into deep learning. For example, the “backpropagation” algorithm is just gradient descent, which is the same technique that is used to solve logistic regression. 
+
+The error functions and output functions of a neural network are exactly the same as those used in linear regression and logistic regression. The training process is nearly identical. Thus, learning about linear regression and logistic regression before you embark on your deep learning journey will make things much, much simpler for you. 
+
+******
+5 <--> Designing Machine Learning Systems with Python
+http://avxhome.in/blogs/Grev27
+http://nitroflare.com/view/98A19B0ED2E7E66/1785882953.pdf
+http://nitroflare.com/view/6520FB5F6DF2112/1785882953.epub
+http://nitroflare.com/view/DEC4490835FE165/1785882953.mobi
+
+
+David Julian, "Designing Machine Learning Systems with Python"
+English | ISBN: 1785882953 | 2016 | PDF/EPUB/MOBI | 252 pages | 2 MB/5 MB/8 MB
+
+Design efficient machine learning systems that give you more accurate results
+
+About This Book
+Gain an understanding of the machine learning design process
+Optimize machine learning systems for improved accuracy
+Understand common programming tools and techniques for machine learning
+Develop techniques and strategies for dealing with large amounts of data from a variety of sources
+Build models to solve unique tasks
+
+Who This Book Is For
+This book is for data scientists, scientists, or just the curious. To get the most out of this book, you will need to know some linear algebra and some Python, and have a basic knowledge of machine learning concepts.
+
+What You Will Learn
+Gain an understanding of the machine learning design process
+Optimize the error function of your machine learning system
+Understand the common programming patterns used in machine learning
+Discover optimizing techniques that will help you get the most from your data
+Find out how to design models uniquely suited to your task
+
+In Detail
+Machine learning is one of the fastest growing trends in modern computing. It has applications in a wide range of fields, including economics, the natural sciences, web development, and business modeling. In order to harness the power of these systems, it is essential that the practitioner develops a solid understanding of the underlying design principles.
+
+There are many reasons why machine learning models may not give accurate results. By looking at these systems from a design perspective, we gain a deeper understanding of the underlying algorithms and the optimisational methods that are available. This book will give you a solid foundation in the machine learning design process, and enable you to build customised machine learning models to solve unique problems. You may already know about, or have worked with, some of the off-the-shelf machine learning models for solving common problems such as spam detection or movie classification, but to begin solving more complex problems, it is important to adapt these models to your own specific needs. This book will give you this understanding and more.
+
+Style and approach
+This easy-to-follow, step-by-step guide covers the most important machine learning models and techniques from a design perspective.
+
+6 <--> Distributed Computing with Python
+http://nitroflare.com/view/27465A917ADDF82/Distributed_Computing_with_Python_-_Francesco_Pierfederici.rar
+https://filejoker.net/3f7r7qycxqis
+
+
+Distributed Computing with Python by Francesco Pierfederici
+English | May 5, 2016 | ISBN: 1785889699 | 156 Pages | AZW3/MOBI/EPUB/PDF (conv) | 15.28 MB
+
+CPU-intensive data processing tasks have become crucial considering the complexity of the various big data applications that are used today. Reducing the CPU utilization per process is very important to improve the overall speed of applications.
+
+Key Features
+
+You'll learn to write data processing programs in Python that are highly available, reliable, and fault tolerant
+Make use of Amazon Web Services along with Python to establish a powerful remote computation system
+Train Python to handle data-intensive and resource hungry applications
+
+Book Description
+
+This book will teach you how to perform parallel execution of computations by distributing them across multiple processors in a single machine, thus improving the overall performance of a big data processing task. We will cover synchronous and asynchronous models, shared memory and file systems, communication between various processes, synchronization, and more.
+
+What You Will Learn
+
+Get an introduction to parallel and distributed computing
+See synchronous and asynchronous programming
+Explore parallelism in Python
+Distributed application with Celery
+Python in the Cloud
+Python on an HPC cluster
+Test and debug distributed applications
+
+About the Author
+
+Francesco Pierfederici is a software engineer who loves Python. He has been working in the fields of astronomy, biology, and numerical weather forecasting for the last 20 years.
+
+He has built large distributed systems that make use of tens of thousands of cores at a time and run on some of the fastest supercomputers in the world. He has also written a lot of applications of dubious usefulness but that are great fun. Mostly, he just likes to build things.
+
+Table of Contents
+
+An Introduction to Parallel and Distributed Computing
+Asynchronous Programming
+Parallelism in Python
+Distributed Applications – with Celery
+Python in the Cloud
+Python on an HPC Cluster
+Testing and Debugging Distributed Applications
+The Road Ahead
+
+7 <--> Embedded Linux Systems with the Yocto Project (Prentice Hall Open Source Software Development)
+http://avxhome.se/blogs/AlenMiler
+http://nitroflare.com/view/A8114B0E8D0D966/Embedded_Linux_Systems_with_the_Yocto_Project_-_Rudolf_J._Streif.rar
+https://filejoker.net/965rsmubl4zp
+
+
+Embedded Linux Systems with the Yocto Project (Prentice Hall Open Source Software Development) by Rudolf J. Streif
+English | May 16, 2016 | ISBN: 0133443248 | 480 Pages | AZW3/MOBI/EPUB/PDF (conv) | 75.32 MB
+
+Developers are increasingly integrating Linux into their embedded systems: It supports virtually all hardware architectures and many peripherals, scales well, offers full source code, and requires no royalties. The Yocto Project makes it much easier to customize Linux for embedded systems. If you’re a developer with working knowledge of Linux, Embedded Linux Systems with the Yocto Project™ will help you make the most of it.
+
+An indispensable companion to the official documentation, this guide starts by offering a solid grounding in the embedded Linux landscape and the challenges of creating custom distributions for embedded systems. You’ll master the Yocto Project’s toolbox hands-on, by working through the entire development lifecycle with a variety of real-life examples that you can incorporate into your own projects.
+
+Author Rudolf Streif offers deep insight into Yocto Project’s build system and engine, and addresses advanced topics ranging from board support to compliance management.
+
+You’ll learn how to
+
+Overcome key challenges of creating custom embedded distributions
+Jumpstart and iterate OS stack builds with the OpenEmbedded Build System
+Master build workflow, architecture, and the BitBake Build Engine
+Quickly troubleshoot build problems
+Customize new distros with built-in blueprints or from scratch
+Use BitBake recipes to create new software packages
+Build kernels, set configurations, and apply patches
+Support diverse CPU architectures and systems
+Create Board Support Packages (BSP) for hardware-specific adaptations
+Provide Application Development Toolkits (ADT) for round-trip development
+Remotely run and debug applications on actual hardware targets
+Ensure open-source license compliance
+Scale team-based projects with Toaster, Build History, Source Mirrors, and Autobuilder
+
+My Blog with Updates!
+
+******
+8 <--> Learning Apache Mahout Classification (Repost)
+http://nitroflare.com/view/6EC9FBB2336C304/1783554959_Learningmpr.rar
+https://filejoker.net/7nqpib37ncx5
+
+
+Learning Apache Mahout Classification By Ashish Gupta
+2015 | 130 Pages | ISBN: 1783554959 | EPUB | 10 MB
+
+
+Build and personalize your own classifiers using Apache Mahout If you are a data scientist who has some experience with the Hadoop ecosystem and machine learning methods and want to try out classification on large datasets using Mahout, this book is ideal for you. Knowledge of Java is essential. This book is a practical guide that explains the classification algorithms provided in Apache Mahout with the help of actual examples. Starting with the introduction of classification and model evaluation techniques, we will explore Apache Mahout and learn why it is a good choice for classification. Next, you will learn about different classification algorithms and models such as the Naive Bayes algorithm, the Hidden Markov Model, and so on. Finally, along with the examples that assist you in the creation of models, this book helps you to build a mail classification system that can be produced as soon as it is developed. After reading this book, you will be able to understand the concept of classification and the various algorithms along with the art of building your own classifiers.
+******
+******
+9 <--> Learning Image Processing with OpenCV
+http://nitroflare.com/view/80057BB255E913A/1783287659_Learningmpr.epub
+http://nitroflare.com/view/763F432324CB03C/1783287659_Learningmpr.pdf
+https://filejoker.net/9d4zue5vb5e4
+https://filejoker.net/x63lco5hpwyn
+Learning Image Processing with OpenCV By Deniz Oscar Suarez's, Salido Jesús Tercero, Vallez Noelia Enano
+2015 | 232 Pages | ISBN: 1783287659 | EPUB + PDF | 19 MB
+
+
+Exploit the amazing features of OpenCV to create powerful image processing applications through easy-to-follow examples If you are a competent C++ programmer and want to learn the tricks of image processing with OpenCV, then this book is for you. A basic understanding of image processing is required. OpenCV, arguably the most widely used computer vision library, includes hundreds of ready-to-use imaging and vision functions and is used in both academia and enterprises. This book provides an example-based tour of OpenCV's main image processing algorithms. Starting with an exploration of library installation, wherein the library structure and basics of image and video reading/writing are covered, you will dive into image filtering and the color manipulation features of OpenCV with LUTs. You'll then be introduced to techniques such as inpainting and denoising to enhance images as well as the process of HDR imaging. Finally, you'll master GPU-based accelerations. By the end of this book, you will be able to create smart and powerful image processing applications with ease! All the topics are described with short, easy-to-follow examples.
+******
+******
+10 <--> Mathematica 10 Advanced Analysis [repost]
+http://nitroflare.com/view/6F2B5E3FF0DF7E1/Mathematica_10_Advanced_Analysis.part1.rar
+http://nitroflare.com/view/A2613FA21634605/Mathematica_10_Advanced_Analysis.part2.rar
+http://nitroflare.com/view/1927BC065FEDF63/Mathematica_10_Advanced_Analysis.part3.rar
+
+
+Mathematica 10 Advanced Analysis
+Size: 274MB | Duration: 2h 29m | Video: AVC (.mp4) 1280x720 15fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Advanced | Language: English
+
+This training course teaches analysts how to go beyond the basics of Mathematica 10 and start analyzing financial data, applying machine-learning algorithms, predicting and classifying data using linear and logistic regression, and analyzing relationships on social networks. Author Curt Frye also shows how to display maps, investigate data about different countries and time periods, visualize random data, and gain better insights from text. Using these techniques, you'll have the power and flexibility you need to dive deep into the information at hand and make good decisions for your organization.
+******
+11 <--> Multi Threading: Questions and Answers
+http://avxhome.se/blogs/AlenMiler
+http://nitroflare.com/view/17068FB7B878F97/Multi_Threading_-_George_Duckett.rar
+https://filejoker.net/8e4wvzub9its
+
+
+Multi Threading: Questions and Answers by George A Duckett
+English | Apr. 18, 2016 | ISBN: 1532806868 | 416 Pages | AZW3/MOBI/EPUB/PDF (conv) | 24.66 MB
+
+If you have a question about Multi Threading this is the book with the answers. Multi Threading: Questions and Answers takes some of the best questions and answers asked on the stackoverflow.com website. You can use this book to look up commonly asked questions, browse questions on a particular topic, compare answers to common topics, check out the original source and much more. This book has been designed to be very easy to use, with many internal references set up that makes browsing in many different ways possible. Topics covered include: Concurrency, Python, Thread Safety, Android, Synchronization, Locking, Parallel Processing, Objective C, Linux, iOS, Threadpool, Mutex, Pthreads, Volatile and many more.
+******
+12 <--> Python Descriptors: A Comprehensive Guide
+https://github.com/sad2project/descriptor-tools
+http://nitroflare.com/view/412C72DAD4C1464/Python_Descriptors_-_Jacob_Zimmerman.rar
+https://filejoker.net/becv747yldmb
+
+
+Python Descriptors: A Comprehensive Guide by Jacob Zimmerman
+English | Apr. 5, 2016 | ASIN: B01EGBZTTU | 75 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.64 MB
+
+There aren't a ton of really good resources out there for writing Python descriptors, and extremely few books (this may be the only one). This is a sad state of affairs, as it makes it difficult for Python developers to get a really good understanding of how descriptors work and the techniques to avoid the big gotchas associated with working with them.
+
+This book hopes to rectify that situation. Between these covers is a collection of knowledge and ideas from many sources on dealing with and creating descriptors. And, after going through the things all descriptors have in common, it explores ideas that have multiple ways of being implemented as well as completely new ideas never seen elsewhere before.
+
+This truly is a comprehensive guide to creating Python descriptors.
+
+BONUS: A pip installable library, descriptor_tools, was written alongside this book and is an open source library on GitHub at https://github.com/sad2project/descriptor-tools
+
+******
+13 <--> R Deep Learning Essentials
+http://avxhome.se/blogs/AlenMiler
+http://nitroflare.com/view/4D6891E8496751A/R_Deep_Learning_Essentials_-_Dr._Joshua_F._Wiley.rar
+https://filejoker.net/noyvfek4dzes
+
+
+R Deep Learning Essentials by Dr. Joshua F. Wiley
+English | Mar. 30, 2016 | ISBN: 1785280589 | 170 Pages | AZW3/MOBI/EPUB/PDF (conv) | 10.04 MB
+
+Deep learning is a branch of machine learning based on a set of algorithms that attempt to model high-level abstractions in data by using model architectures. With the superb memory management and the full integration with multi-node big data platforms, the H2O engine has become more and more popular among data scientists in the field of deep learning.
+
+Key Features
+
+Harness the ability to build algorithms for unsupervised data using deep learning concepts with R
+Master the common problems faced such as overfitting of data, anomalous datasets, image recognition, and performance tuning while building the models
+Build models relating to neural networks, prediction and deep prediction
+
+Book Description
+
+This book will introduce you to the deep learning package H2O with R and help you understand the concepts of deep learning. We will start by setting up important deep learning packages available in R and then move towards building models related to neural networks, prediction, and deep prediction, all of this with the help of real-life examples.
+
+After installing the H2O package, you will learn about prediction algorithms. Moving ahead, concepts such as overfitting data, anomalous data, and deep prediction models are explained. Finally, the book will cover concepts relating to tuning and optimizing models.
+
+What you will learn
+
+Set up the R package H2O to train deep learning models
+Understand the core concepts behind deep learning models
+Use Autoencoders to identify anomalous data or outliers
+Predict or classify data automatically using deep neural networks
+Build generalizable models using regularization to avoid overfitting the training data
+
+About the Author
+
+Dr. Joshua F. Wiley is a lecturer at Monash University and a senior partner at Elkhart Group Limited, a statistical consultancy. He earned his PhD from the University of California, Los Angeles. His research focuses on using advanced quantitative methods to understand the complex interplays of psychological, social, and physiological processes in relation to psychological and physical health. In statistics and data science, Joshua focuses on biostatistics and is interested in reproducible research and graphical displays of data and statistical models. Through consulting at Elkhart Group Limited and his former work at the UCLA Statistical Consulting Group, Joshua has helped a wide array of clients, ranging from experienced researchers to biotechnology companies. He develops or codevelops a number of R packages including varian, a package to conduct Bayesian scale-location structural equation models, and MplusAutomation, a popular package that links R to the commercial Mplus software.
+
+Table of Contents
+
+Getting Started with Deep Learning
+Training a Prediction Model
+Preventing Overfitting
+Identifying Anomalous Data
+Training Deep Prediction Models
+Tuning and Optimizing Models
+******
+14 <--> Shell-Bash Scripting Tutorial with examples for Linux/Bash/Unix
+http://nitroflare.com/view/54B27A97C9DCDA6/Shell-Bash_Scripting_Tutorial_with_examples_for_Linux_Bash_Unix_-_Rudra_Josh.rar
+https://filejoker.net/4bs2ffqdcse5
+
+
+Shell-Bash Scripting Tutorial with examples for Linux/Bash/Unix by Rudra Josh
+English | April 19, 2016 | ASIN: B01EJZKS0I | 120 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.95 MB
+
+This Book which also include Free Online Video Tutorial step by step - will take you from basics of shell scripting which includes how to write or save shell scripts, changing permissions fro execution, taking input from user, loop concepts etc. And will take you slowly to advance concepts like pipes, filters, processes, linux utilities like cut, paste, join etc. 
+
+Every concept has been explained with lot of examples so you would know when to apply it and how to apply them in real time world. At the end of course you will find full downloadable ebook containing all concepts and related examples. 
+
+You will become a shell programming expert with comprehensive knowledge of shell programming 
+You will learn with more than 60+ programming & real world examples 
+You will know How to make use of Mathematical, String and Logical operators in shell script to make decisions 
+How to Create functions in shell scripts and improve reusability 
+You will learn How to make use of Exit values to determine shell script output status 
+How to Accept input from a user and then make decisions on that input. 
+You will know How to make use of Expressions in shell scripts 
+Dealing with command line arguments and use of it with examples 
+You will learn How to make use of Pipe & Process concepts while creating shell scripts 
+Use of utilities like cut, paste, join, tr in shell scripts with examples 
+Practice exercises with solutions so you can start using what you learn right away. 
+Real-world examples of shell scripts, how it is used in corporate world. 
+Last but not least, you will get downloadable material containing the scripts and topics contents 
+
+******
+15 <--> The CLI Book: Writing successful Command Line Clients with Node.js
+http://avxhome.se/blogs/AlenMiler
+http://nitroflare.com/view/0E5FC0D81E07191/The_CLI_Book_-_Robert_Kowalski.rar
+https://filejoker.net/0xzxg1gytalf
+
+
+The CLI Book: Writing successful Command Line Clients with Node.js by Robert Kowalski
+English | Apr. 15, 2016 | ASIN: B01ED4QWPA | 88 Pages | AZW3/MOBI/EPUB/PDF (conv) | 5.07 MB
+
+The CLI Book is your step-by-step guide to write Command Line Clients with Node.js. Learn everything what makes Command Line Clients successful and learn to compose the best Command Line Interfaces (CLI). The first part of the book explains what is needed for a successful Command Line Client, in the second part we build an application based on the learned principles. You'll get everything you need to make an impact in the areas you care about with Command Line Clients.

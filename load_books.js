@@ -13,6 +13,13 @@ var save_count = 1
 
 var links = content.split('\n')
 console.log('total number of books = ' + links.length)
+
+for( var i = 0; i< links.length; ++i)
+{
+	links[i] = links[i].trim();
+	console.log(links[i])
+}
+
 var count = 0;
 var retry = false;
 
