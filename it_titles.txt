@@ -1,3 +1,237 @@
+2016/08/15
+
+******
+0 <--> ITIL® Intermediate Capability: OSA
+
+1 <--> Unity 5 2D: Combat in an RPG Game
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/4060388CF029903/Unity_5_2D_-_Combat_in_an_RPG_Game.part1.rar
+http://nitroflare.com/view/9A62B0F13666651/Unity_5_2D_-_Combat_in_an_RPG_Game.part2.rar
+http://nitroflare.com/view/9442D8C4BC4BC4F/Unity_5_2D_-_Combat_in_an_RPG_Game.part3.rar
+http://nitroflare.com/view/50A7571DF925595/Unity_5_2D_-_Combat_in_an_RPG_Game.part4.rar
+http://nitroflare.com/view/93B9BBB4C8482C5/Unity_5_2D_-_Combat_in_an_RPG_Game.part5.rar
+
+
+Unity 5 2D: Combat in an RPG Game
+MP4 | Video: AVC 1280x720 | Audio: AAC 48KHz 2ch | Duration: 2h 11m | 429 MB
+Genre: eLearning | Language: English
+
+The hallmark of any popular RPG game is combat. Building on the lessons in the rest of the Unity 5 2D series, these tutorials show how to build simple turn-based combat like you would experience in classic RPGs. In the Movement in an RPG Game course, you learned how to move a player in a 2D tile-based map. Here you'll program, trigger, and manage random battles on the map. Author Jesse Freeman shows how to create pop-up battle windows, add monsters, and create player and monster attack actions—including evasive maneuvers. When the battle is over, you'll learn to reward the player and clean up for future moves.
+
+34 <--> Data Mining with R: Go from Beginner to Advanced! [repost]
+http://nitroflare.com/view/CAE147C6EEAE16A/U-Da.M.wi.R.part1.rar
+http://nitroflare.com/view/4837AE435F9375C/U-Da.M.wi.R.part2.rar
+http://nitroflare.com/view/6C92D47D25F7E8E/U-Da.M.wi.R.part3.rar
+http://nitroflare.com/view/E8E5950C8A6F235/U-Da.M.wi.R.part4.rar
+http://nitroflare.com/view/1749C8234590B53/U-Da.M.wi.R.part5.rar
+http://nitroflare.com/view/6DE735134502E11/U-Da.M.wi.R.part6.rar
+
+
+Data Mining with R: Go from Beginner to Advanced!
+HDRips | MP4/AVC, ~306 kb/s | 1280x720 | Duration: 12 hours | English: AAC, 76 kb/s (2 ch) | 3.79 GB
+Genre: Development / Programming
+
+Learn to use R software for data analysis, visualization, and to perform dozens of popular data mining techniques.
+
+This is a "hands-on" business analytics, or data analytics course teaching how to use the popular, no-cost R software to perform dozens of data mining tasks using real data and data mining cases. It teaches critical data analysis, data mining, and predictive analytics skills, including data exploration, data visualization, and data mining skills using one of the most popular business analytics software suites used in industry and government today. The course is structured as a series of dozens of demonstrations of how to perform classification and predictive data mining tasks, including building classification trees, building and training decision trees, using random forests, linear modeling, regression, generalized linear modeling, logistic regression, and many different cluster analysis techniques. The course also trains and instructs on "best practices" for using R software, teaching and demonstrating how to install R software and RStudio, the characteristics of the basic data types and structures in R, as well as how to input data into an R session from the keyboard, from user prompts, or by importing files stored on a computer's hard drive. All software, slides, data, and R scripts that are performed in the dozens of case-based demonstration video lessons are included in the course materials so students can "take them home" and apply them to their own unique data analysis and mining cases. There are also "hands-on" exercises to perform in each course section to reinforce the learning process. The target audience for the course includes undergraduate and graduate students seeking to acquire employable data analytics skills, as well as practicing predictive analytics professionals seeking to expand their repertoire of data analysis and data mining knowledge and capabilities.
+
+35 <--> MySQL Troubleshooting: What To Do When Queries Don't Work (Repost)
+http://nitroflare.com/view/123DCB106194289/1449312004.rar
+
+
+Sveta Smirnova, "MySQL Troubleshooting: What To Do When Queries Don't Work" 
+English | 2012 | 264 Pages | ISBN: 1449312004 | EPUB + PDF | 9 MB
+
+Stuck with bugs, performance problems, crashes, data corruption, and puzzling output? If you’re a database programmer or DBA, they’re part of your life. The trick is knowing how to quickly recover from them. This unique, example-packed book shows you how to handle an array of vexing problems when working with MySQL. Written by a principal technical support engineer at Oracle, MySQL Troubleshooting provides the background, tools, and expert steps for solving problems from simple to complex—whether data you thought you inserted doesn’t turn up in a query, or the entire database is corrupt because of a server failure. With this book in hand, you’ll work with more confidence.
+
+
+49 <--> Building Real-time Applications with Socket.io (2016)
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/44592B9598825DA/Building_Real-time_Applications_with_Socket.io.part1.rar
+http://nitroflare.com/view/0A8C46167B6E3CD/Building_Real-time_Applications_with_Socket.io.part2.rar
+http://nitroflare.com/view/EE7298E5A4CEDF2/Building_Real-time_Applications_with_Socket.io.part3.rar
+
+
+Building Real-time Applications with Socket.io
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 13M | 213 MB
+Genre: eLearning | Language: English
+
+This course introduces developers to the Socket.io library, a free Node.js module for simplifying real-time functionality.
+
+Using Socket.io, developers are able to configure sockets for sending and receiving messages using the browser. In this course, Building Real-time Applications with Socket.io, you'll learn to build modern, real-time applications using the power of Socket.io. You'll start with an introduction to Socket.io and some of the demo apps that will be used in the course. Next, you'll discover some of the basics of what Socket.io is and how it's used within the Node.js framework. Finally, you'll build a chat application which will be able to send messages to all users, emit private messages, and you'll see how to set up private rooms. By the end of this course, you'll be prepared to tackle projects that can then deliver streaming data using simple event-driven methods.
+
+
+53 <--> Verified Functional Programming in Agda
+http://nitroflare.com/view/88DCEEF260D0F25/1970001240.pdf
+
+
+Aaron Stump, "Verified Functional Programming in Agda" 
+2016 | ISBN-10: 1970001240 | 283 pages | PDF | 1 MB
+
+Agda is an advanced programming language based on Type Theory. Agda's type system is expressive enough to support full functional verification of programs, in two styles. In external verification, we write pure functional programs and then write proofs of properties about them. The proofs are separate external artifacts, typically using structural induction. In internal verification, we specify properties of programs through rich types for the programs themselves. This often necessitates including proofs inside code, to show the type checker that the specified properties hold. The power to prove properties of programs in these two styles is a profound addition to the practice of programming, giving programmers the power to guarantee the absence of bugs, and thus improve the quality of software more than previously possible. Verified Functional Programming in Agda is the first book to provide a systematic exposition of external and internal verification in Agda, suitable for undergraduate students of Computer Science. No familiarity with functional programming or computer-checked proofs is presupposed. The book begins with an introduction to functional programming through familiar examples like booleans, natural numbers, and lists, and techniques for external verification. Internal verification is considered through the examples of vectors, binary search trees, and Braun trees. More advanced material on type-level computation, explicit reasoning about termination, and normalization by evaluation is also included. The book also includes a medium-sized case study on Huffman encoding and decoding. Exercises are provided at the end of each chapter.
+
+63 <--> Design Patterns in C++: Behavioral - Chain of Responsibility to Memento (2016)
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/9B58EA382C832AC/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part1.rar
+http://nitroflare.com/view/5AF1940E6083560/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part2.rar
+http://nitroflare.com/view/6ACC9B28E550636/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part3.rar
+http://nitroflare.com/view/CEFCE5B2CB27E55/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part4.rar
+http://nitroflare.com/view/7D0A1F082EC0846/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part5.rar
+
+
+Design Patterns in C++: Behavioral - Chain of Responsibility to Memento
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 49M | 595 MB
+Genre: eLearning | Language: English
+
+This course will teach you about Behavioral design patterns and their implementation in modern C++. This is part of a multi-course series on C++ patterns.
+
+The correct application and recognition of design patterns is an important skill for developers and architects. This course, Design Patterns in C++: Behavioral - Chain of Responsibility to Memento, introduces the viewer to Behavioral design patterns. It covers the Chain of Responsibility, Command, Interpreter, Iterator, Mediator, and Memento design patterns. You'll be shown different ways in which these patterns can be implemented in modern C++ (C++ 11 and beyond). By the end of this course, you'll be more familiar with Behavioral design patterns in C++. Software required: a C++ IDE (e.g., Visual Studio, CLion) or a text editor (e.g., VIM, EMACS) together with a C++ compiler (e.g., GCC, Clang).
+
+
+
+71 <--> Practical Machine Learning (Repost)
+http://nitroflare.com/view/91A149FD15ADE79/178439968X_Practical.pdf
+
+
+Practical Machine Learning By Sunila Gollapudi
+2016 | 468 Pages | ISBN: 178439968X | PDF (conv) | 17 MB
+
+
+Fully-coded working examples using a wide range of machine learning libraries and tools, including Python, R, Julia, and Spark Comprehensive practical solutions taking you into the future of machine learning Go a step further and integrate your machine learning projects with Hadoop Who This Book Is For This book has been created for data scientists who want to see Machine learning in action and explore its real-world applications. Knowledge of programming (Python and R) and mathematics is advisable if you want to get started immediately.
+
+
+79 <--> Raspberry Pi Computer Vision Programming (Repost)
+http://nitroflare.com/view/6E44E0133D09513/1784398284_Raspberrysp1.pdf
+
+
+Raspberry Pi Computer Vision Programming By Ashwin Pajankar
+2015 | 178 Pages | ISBN: 1784398284 | PDF | 9 MB
+
+
+Design and implement your own computer vision applications with the Raspberry Pi About This Book Explore the vast opportunities of computer vision with the Raspberry Pi and Python Design and develop webcam and Raspberry Pi based applications The book features ample screenshots that will offer a play-by-play account on how to implement computer vision fundamentals and applications Who This Book Is For This book is intended for novices, as well as seasoned Raspberry Pi and Python enthusiasts, who would like to explore the area of computer vision. Readers with very little programming or coding/scripting experience can create wonderful image processing and computer vision applications with relatively fewer lines of code in Python.
+
+
+84 <--> Functional Reactive Programming
+http://nitroflare.com/view/C0E0A8B2FE629CD/1633430103.pdf
+
+
+Functional Reactive Programming by Blackheath, Jones
+2016 | ISBN: 1633430103 | English | 360 pages | PDF | 10 MB
+
+Summary
+
+Functional Reactive Programming teaches the concepts and applications of FRP. It offers a careful walk-through of core FRP operations and introduces the concepts and techniques you'll need to use FRP in any language.
+
+Purchase of the print book includes a free eBook in PDF, Kindle, and ePub formats from Manning Publications.
+
+About the Technology
+
+Today's software is shifting to more asynchronous, event-based solutions. For decades, the Observer pattern has been the go-to event infrastructure, but it is known to be bug-prone. Functional reactive programming (FRP) replaces Observer, radically improving the quality of event-based code.
+
+About the Book
+
+Functional Reactive Programming teaches you how FRP works and how to use it. You'll begin by gaining an understanding of what FRP is and why it's so powerful. Then, you'll work through greenfield and legacy code as you learn to apply FRP to practical use cases. You'll find examples in this book from many application domains using both Java and JavaScript. When you're finished, you'll be able to use the FRP approach in the systems you build and spend less time fixing problems.
+
+What's Inside
+
+Think differently about data and events
+FRP techniques for Java and JavaScript
+Eliminate Observer one listener at a time
+Explore Sodium, RxJS, and Kefir.js FRP systems
+About the Reader
+
+Readers need intermediate Java or JavaScript skills. No experience with functional programming or FRP required.
+
+About the Authors
+
+Stephen Blackheath and Anthony Jones are experienced software developers and the creators of the Sodium FRP library for multiple languages. Foreword by Heinrich Apfelmus. Illustrated by Duncan Hill.
+
+Table of Contents
+
+Stop listening!
+Core FRP
+Some everyday widget stuff
+Writing a real application
+New concepts
+FRP on the web
+Switch
+Operational primitives
+Continuous time
+Battle of the paradigms
+Programming in the real world
+Helpers and patterns
+Refactoring
+Adding FRP to existing projects
+Future directions
+
+99 <--> Mastering Machine Learning with R (repost)
+http://nitroflare.com/view/F8B027F1FA63D57/Mastering_Machine_Learning_with.rar
+
+
+Cory Lesmeister "Mastering Machine Learning with R"
+Publisher: Packt Publishing | English | 2015 | ISBN: 178398452X | 400 pages | PDF | 8.8 MB
+
+If you want to learn how to use R's machine learning capabilities to solve complex business problems, then this book is for you. Some experience with R and a working knowledge of basic statistical or machine learning will prove helpful.
+
+Master machine learning techniques with R to deliver insights for complex projects
+
+About This Book
+
+Get to grips with the application of Machine Learning methods using an extensive set of R packages
+Understand the benefits and potential pitfalls of using machine learning methods
+Implement the numerous powerful features offered by R with this comprehensive guide to building an independent R-based ML system
+
+What You Will Learn
+
+Gain deep insights to learn the applications of machine learning tools to the industry
+Manipulate data in R efficiently to prepare it for analysis
+Master the skill of recognizing techniques for effective visualization of data
+Understand why and how to create test and training data sets for analysis
+Familiarize yourself with fundamental learning methods such as linear and logistic regression
+Comprehend advanced learning methods such as support vector machines
+Realize why and how to apply unsupervised learning methods
+
+In Detail
+
+Machine learning is a field of Artificial Intelligence to build systems that learn from data. Given the growing prominence of R―a cross-platform, zero-cost statistical programming environment―there has never been a better time to start applying machine learning to your data.
+
+The book starts with introduction to Cross-Industry Standard Process for Data Mining. It takes you through Multivariate Regression in detail. Moving on, you will also address Classification and Regression trees. You will learn a couple of “Unsupervised techniques”. Finally, the book will walk you through text analysis and time series.
+
+The book will deliver practical and real-world solutions to problems and variety of tasks such as complex recommendation systems. By the end of this book, you will gain expertise in performing R machine learning and will be able to build complex ML projects using R and its packages.
+
+Style and approach
+
+This is a book explains complicated concepts with easy to follow theory and real-world, practical applications. It demonstrates the power of R and machine learning extensively while highlighting the constraints.
+
+
+122 <--> Mastering Predictive Analytics with R (Repost)
+http://nitroflare.com/view/83A4F6361100860/1783982802_Masteringsp1.epub
+http://nitroflare.com/view/1F5EB73B9F4FEE9/1783982802_Masteringsp1.mobi
+http://nitroflare.com/view/3A90155571B0E9B/1783982802_Masteringsp1.pdf
+
+
+Mastering Predictive Analytics with R By Rui Miguel Forte
+2015 | 414 Pages | ISBN: 1783982802 | EPUB, MOBI, PDF | 23 MB
+
+
+Master the craft of predictive modeling by developing strategy, intuition, and a solid foundation in essential concepts Grasp the major methods of predictive modeling and move beyond black box thinking to a deeper level of understanding Leverage the flexibility and modularity of R to experiment with a range of different techniques and data types Packed with practical advice and tips explaining important concepts and best practices to help you understand quickly and easily This book is intended for the budding data scientist, predictive modeler, or quantitative analyst with only a basic exposure to R and statistics. It is also designed to be a reference for experienced professionals wanting to brush up on the details of a particular type of predictive model. Mastering Predictive Analytics with R assumes familiarity with only the fundamentals of R, such as the main data types, simple functions, and how to move data around. No prior experience with machine learning or predictive modeling is assumed, however you should have a basic understanding of statistics and calculus at a high school level. R offers a free and open source environment that is perfect for both learning and deploying predictive modeling solutions in the real world. With its constantly growing community and plethora of packages, R offers the functionality to deal with a truly vast array of problems. This book is designed to be both a guide and a reference for moving beyond the basics of predictive modeling. The book begins with a dedicated chapter on the language of models and the predictive modeling process. Each subsequent chapter tackles a particular type of model, such as neural networks, and focuses on the three important questions of how the model works, how to use R to train it, and how to measure and assess its performance using real world data sets. By the end of this book, you will have explored and tested the most popular modeling techniques in use on real world data sets and mastered a diverse range of techniques in predictive analytics.
+
+
+130 <--> TensorFlow For Machine Intelligence
+http://avxhome.in/blogs/AlenMiler
+http://nitroflare.com/view/6A2CA6A8BF451B6/B01IZ43JV4.rar
+
+
+TensorFlow For Machine Intelligence: A hands-on introduction to learning algorithms by Sam Abrahams
+English | 23 July 2016 | ASIN: B01IZ43JV4 | 322 Pages | AZW3/MOBI/EPUB/PDF (conv) | 26.87 MB
+
+This book is a hands-on introduction to learning algorithms. It is for people who may know a little machine learning (or not) and who may have heard about TensorFlow, but found the documentation too daunting to approach. The learning curve is gentle and you always have some code to illustrate the math step-by-step. 
+
+TensorFlow, a popular library for machine learning, embraces the innovation and community-engagement of open source, but has the support, guidance, and stability of a large corporation. Because of its multitude of strengths, TensorFlow is appropriate for individuals and businesses ranging from startups to companies as large as, well, Google. TensorFlow is currently being used for natural language processing, artificial intelligence, computer vision, and predictive analytics. 
+
+TensorFlow, open sourced to the public by Google in November 2015, was made to be flexible, efficient, extensible, and portable. Computers of any shape and size can run it, from smartphones all the way up to huge computing clusters. This book starts with the absolute basics of TensorFlow. We found that most tutorials on TensorFlow start by attempting to teach both machine learning concepts and TensorFlow terminology at the same time. Here we first make sure you've had the opportunity to become comfortable with TensorFlow's mechanics and core API before covering machine learning concepts. 
+
+
 2016/08/08
 ******
 0 <--> Pro jQuery (Repost)
