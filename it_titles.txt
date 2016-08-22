@@ -1,3 +1,339 @@
+2016/08/22
+
+0 <--> A Modern Perspective on Type Theory: From its Origins until Today (Repost)
+9 <--> Increase Productivity: Add a Dev Console to Your App with JavaScript (2016)
+http://pxhst.co/avaxhome/5b/11/003f115b.jpg
+http://pxhst.co/avaxhome/5d/11/003f115d.jpg
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/FA6630846917DF8/Increase_Productivity_Add_a_Dev_Console_to_Your_App_with_JavaScript.part1.rar
+http://nitroflare.com/view/AE4786A64747690/Increase_Productivity_Add_a_Dev_Console_to_Your_App_with_JavaScript.part2.rar
+http://nitroflare.com/view/3B5D0F4E320C258/Increase_Productivity_Add_a_Dev_Console_to_Your_App_with_JavaScript.part3.rar
+http://nitroflare.com/view/22D47321743192E/Increase_Productivity_Add_a_Dev_Console_to_Your_App_with_JavaScript.part4.rar
+
+
+Increase Productivity: Add a Dev Console to Your App with JavaScript
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 384 MB
+Genre: eLearning | Language: English
+
+Consoles can provide a faster way to code and execute site functionality. In this course, you'll learn to build a console for your web application using JavaScript.
+
+Console applications - like those used in video games such as "Quake" or "The Elder Scrolls" - can save a lot of time for developers, allowing you to code and test site functionality in a fraction of the time it would take otherwise. In this course, you'll learn to build a reusable console that can be integrated into new or existing applications. You'll learn how to design a console control, process commands, integrate with a Node or ASP.NET server, and set up help and command history. By the end of this course, you'll have a working console application that you can add to any web application.
+
+14 <--> Pluralsight - Data Visualization for Developers
+http://nitroflare.com/view/4B0EC943846E3E4/Dat_Visual_Devel.part1.rar
+http://nitroflare.com/view/173CAD5BAB7BEEC/Dat_Visual_Devel.part2.rar
+http://nitroflare.com/view/E6EA411AB132629/Dat_Visual_Devel.part3.rar
+http://nitroflare.com/view/2DB38ECFBF9132D/Dat_Visual_Devel.part4.rar
+http://nitroflare.com/view/AB394505185814C/Dat_Visual_Devel.part5.rar
+
+
+Pluralsight - Data Visualization for Developers
+MP4 | AVC 694kbps | English | 1024x768 | 30fps | 1h 55mins | AAC stereo 128kbps | 535 MB
+Genre: Video Training
+
+This course covers the fundamentals of data visualization that every developer needs to know regardless of architecture, platform, tools, or language. At some point in your software development career, you may be called upon to produce a graph or a chart. Delivering on even a simple request can be remarkably complex. How much data is there and where does it live? What kind of chart should you use? Should the chart be rendered on a server or on the client? What kind of clients should you support, and what are the consequences of that choice? This course introduces every aspect of visualization, from story, to numbers, to architecture, to code.
+
+Table of contents:
+Introduction8m 51s
+Charting - 1A34m 15s
+Business Intelligence11m 16s
+Visualization Architecture17m 9s
+Hands-On Visualization43m 29s
+
+26 <--> Pluralsight - Windows Internals 3
+http://nitroflare.com/view/DD5FE10B334C6A4/Wind_Inter_3.part1.rar
+http://nitroflare.com/view/C7B8A082FAB0ED2/Wind_Inter_3.part2.rar
+http://nitroflare.com/view/1F6A8ED6C16D6F7/Wind_Inter_3.part3.rar
+http://nitroflare.com/view/8DDAB6EC404E632/Wind_Inter_3.part4.rar
+http://nitroflare.com/view/9796800D8B69A9F/Wind_Inter_3.part5.rar
+http://nitroflare.com/view/957E3436DD776B2/Wind_Inter_3.part6.rar
+
+
+Pluralsight - Windows Internals 3
+MP4 | AVC 495kbps | English | 1024x768 | 15fps | 5h 16mins | AAC stereo 128kbps | 988 MB
+Genre: Video Training
+
+Software developers for Windows should understand the way Windows works, its mechanisms and algorithms, so they are able to write better software that can take advantage of Windows' strengths. The course deals with all the major terms in Windows, such as processes, threads, virtual memory and more. Whether you're a Win32 programmer, a .NET programmer or a device driver programmer, you should benefit from understanding Windows, which may help in troubleshooting difficult issues as well.
+
+Table of contents:
+Services (part 1)31m 53s
+Services (part 2)34m 58s
+The I/O System (Part 1)37m 37s
+The I/O System (Part 2)49m 25s
+Device Drivers (Part 1)36m 42s
+Device Drivers (Part 2)37m 10s
+Writing Software Device Drivers (Part 1)47m 56s
+Writing Software Device Drivers (Part 2)40m 51s
+
+30 <--> Simplified .NET Background Tasks with Hangfire (2016)
+http://pxhst.co/avaxhome/ff/08/003f08ff.jpg
+http://pxhst.co/avaxhome/00/09/003f0900.jpg
+http://avxhome.in/blogs/naag
+http://nitroflare.com/view/0E269F1438A5655/Simplified_.NET_Background_Tasks_with_Hangfire.part1.rar
+http://nitroflare.com/view/F60932CD3CBC92D/Simplified_.NET_Background_Tasks_with_Hangfire.part2.rar
+http://nitroflare.com/view/C72D5B42DC1635E/Simplified_.NET_Background_Tasks_with_Hangfire.part3.rar
+http://nitroflare.com/view/D4DC44C391E0575/Simplified_.NET_Background_Tasks_with_Hangfire.part4.rar
+http://nitroflare.com/view/5D016E4120D8810/Simplified_.NET_Background_Tasks_with_Hangfire.part5.rar
+
+
+Simplified .NET Background Tasks with Hangfire
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 46M | 460 MB
+Genre: eLearning | Language: English
+
+Need a solution for long running/scheduled background .NET jobs? Hangfire is a framework that can be used to reliably create, process, and manage asynchronous .NET background jobs. In this course, learn how to use Hangfire in your .NET applications.
+
+Reliable asynchronous background jobs are a common requirement that .NET developers inevitably need to implement at some point. In this course, Simplified .NET Background Jobs with Hangfire, you will learn all about using Hangfire as a framework to help you fulfill this requirement. First, you'll learn all about creating, processing, and managing these long running tasks. Next, you'll learn about how Hangfire lets you run these long tasks. Finally, you'll learn how to manage these jobs, by using Hangfire's excellent dashboard. By the end of this course, you'll how to install Hangfire and the Hangfire dashboard, and how to create the different types of background jobs that Hangfire supports.
+
+38 <--> Unity 5.x Shaders and Effects Cookbook
+http://pxhst.co/avaxhome/16/06/003f0616.jpg
+http://nitroflare.com/view/841C8958314A782/1785285246.pdf
+
+
+Unity 5.x Shaders and Effects Cookbook by Alan Zucconi, Kenneth Lammers
+2016 | ISBN: 1785285246 | English | 240 pages | True PDF | 5 MB
+
+Master the art of Shader programming to bring life to your Unity projects
+
+About This Book
+
+This book will help you master the technique of physically based shading in Unity 5 to add realism to your game quickly through precise recipes
+From an eminent author, this book offers you the fine technicalities of professional post-processing effects for stunning results
+This book will help you master Shader programming through easy-to-follow examples to create stunning visual effects that can be used in 3D games and high quality graphics.
+Who This Book Is For
+
+Unity Effects and Shader Cookbook is written for developers who want to create their first Shaders in Unity 5 or wish to take their game to a whole new level by adding professional post-processing effects. A solid understanding of Unity is required.
+
+What You Will Learn
+
+Understand physically based rendering to fit the aesthetic of your game
+Enter the world of post-processing effects to make your game look visually stunning
+Add life to your materials, complementing Shader programming with interactive scripts
+Design efficient Shaders for mobile platforms without sacrificing their realism
+Use state-of-the-art techniques such as volumetric explosions and fur shading
+Build your knowledge by understanding how Shader models have evolved and how you can create your own
+Discover what goes into the structure of Shaders and why lighting works the way it does
+Master the math and algorithms behind the most used lighting models
+In Detail
+
+Since their introduction to Unity, Shaders have been notoriously difficult to understand and implement in games: complex mathematics have always stood in the way of creating your own Shaders and attaining that level of realism you crave. With Shaders, you can transform your game into a highly polished, refined product with Unity's post-processing effects.
+
+Unity Shaders and Effects Cookbook is the first of its kind to bring you the secrets of creating Shaders for Unity3D―guiding you through the process of understanding vectors, how lighting is constructed with them, and also how textures are used to create complex effects without the heavy math.
+
+We'll start with essential lighting and finishing up by creating stunning screen Effects just like those in high quality 3D and mobile games. You'll discover techniques including normal mapping, image-based lighting, and how to animate your models inside a Shader. We'll explore the secrets behind some of the most powerful techniques, such as physically based rendering! With Unity Shaders and Effects Cookbook, what seems like a dark art today will be second nature by tomorrow.
+
+Style and approach
+
+The recipes in this book contain step-by-step instructions, complemented by screenshots and code, and real-world examples.
+
+43 <--> Pluralsight - The Case For Powershell Tutorial
+http://nitroflare.com/view/9DA427EC4905903/The_Cas_Powers_Tut.part1.rar
+http://nitroflare.com/view/267E31FEBFDA1AB/The_Cas_Powers_Tut.part2.rar
+http://nitroflare.com/view/EED5D056267E987/The_Cas_Powers_Tut.part3.rar
+http://nitroflare.com/view/035F373DFAC5DFE/The_Cas_Powers_Tut.part4.rar
+http://nitroflare.com/view/1B23E723DC9DC17/The_Cas_Powers_Tut.part5.rar
+http://nitroflare.com/view/EE4876A20C55DD3/The_Cas_Powers_Tut.part6.rar
+
+
+Pluralsight - The Case For Powershell Tutorial
+MP4 | AVC 911kbps | English | 1024x768 | 30fps | 1h 17mins | AAC stereo 128kbps | 869 MB
+Genre: Video Training
+
+In this course, Mark Minasi makes the case for learning PowerShell, and shows why it's one of the most valuable tools an admin can learn. If you run a Windows network, learning PowerShell will help you do your job, keep your job, and enjoy your job more.
+
+Table of contents:
+Why PowerShell?30m 57s
+Meet PowerShell20m 27s
+Digging into PowerShell26m 12s
+
+2016-08-18
+
+0 <--> Do the Right Thing: Studies in Limited Rationality
+
+7 <--> Pluralsight - Improving Testability Through Design
+http://nitroflare.com/view/DA28F6521FB6EAE/Impr_Test_Thr_Des.part1.rar
+http://nitroflare.com/view/9B5EA81D65D6A82/Impr_Test_Thr_Des.part2.rar
+http://nitroflare.com/view/43FD95461F625FE/Impr_Test_Thr_Des.part3.rar
+http://nitroflare.com/view/E6F0407AEE4D6B7/Impr_Test_Thr_Des.part4.rar
+http://nitroflare.com/view/145BAE837678020/Impr_Test_Thr_Des.part5.rar
+http://nitroflare.com/view/47A43BF92D04ADE/Impr_Test_Thr_Des.part6.rar
+
+
+Pluralsight - Improving Testability Through Design
+MP4 | AVC 308kbps | English | 1024x768 | 15fps | 4h 36mins | AAC stereo 127kbps | 852 MB
+Genre: Video Training
+
+A well designed application is not necessarily the one which has a perfect separation of layers, or the one which perfectly implements some predefined design patterns. It is certainly a plus to have these two goals met, but that is not sufficient to make the application really good. We can learn the most about one application by reading the source code of particular methods embedded deep inside of it. A common for loop often reveals more about the design than the whole diagram depicting responsibilities of an application layer in which it is located. The devil is in the details. The best of all intentions in design fails miserably when the low-profile design of small, seemingly unimportant classes is misconceived. In this course, the order of decisions is sorted bottom-up.
+
+It is the small class to which we pay attention the most. Only when all things are in place at the microscopic level can we discuss responsibilities of layers, isolation of modules and other high profile topics. The result is a well-built, easily testable and easily maintainable application.
+
+Table of contents:
+Assessing Reliability of Tests18m 35s
+Developing an Application the Old Way38m 20s
+Guidelines of Redesign for Reliability46m 37s
+Getting the Most Out of Immutable Objects43m 13s
+Improving the Unit Tests42m 43s
+Crossing Responsibility Boundaries41m 42s
+Managing Operations on Database and External Systems45m 9s
+
+13 <--> Pluralsight - Defensive Coding in C#
+http://nitroflare.com/view/EE287FABA0785AF/Defen_Cod_Csh.part1.rar
+http://nitroflare.com/view/5BBA0C7D324F2D8/Defen_Cod_Csh.part2.rar
+http://nitroflare.com/view/88B15E7287DE238/Defen_Cod_Csh.part3.rar
+http://nitroflare.com/view/BEAA9E8E1942090/Defen_Cod_Csh.part4.rar
+http://nitroflare.com/view/87626971EFF1716/Defen_Cod_Csh.part5.rar
+http://nitroflare.com/view/C626ECDF47E1098/Defen_Cod_Csh.part6.rar
+
+
+Pluralsight - Defensive Coding in C#
+MP4 | AVC 269kbps | English | 1024x768 | 15fps | 4h 32mins | AAC stereo 128kbps | 848 MB
+Genre: Video Training
+
+This course will show you how to write clean, maintainable, and testable code, and how to keep that code great using defensive coding techniques. You will learn how to write clean, maintainable, and testable code when faced with constantly changing requirements, legacy issues, intensive time pressures, and a rapidly evolving environment. You will also learn how to keep that code great after maintenance activities, multiple developers, and the ravages of time.
+
+Table of contents:
+Introduction16m 14s
+Defending Your Methods - Part 157m 7s
+Defending Your Methods - Part 223m 45s
+Automated Code Testing46m 58s
+Defending Your Methods Part 3: Returning Predictable Results32m 36s
+Defending Your Code Constructs32m 29s
+Asserts, Errors, and Exceptions54m 29s
+Final Words9m 7s
+
+
+
+20 <--> Large Scale Machine Learning with Python
+http://nitroflare.com/view/C6ABBBDEEBB55B7/525254545454.rar
+
+
+Large Scale Machine Learning with Python
+Packt Publishing | August 4, 2016 | English | ISBN: 1785887211 | 439 pages | PDF/Epub | 11.5 Mb
+
+Large Python machine learning projects involve new problems associated with specialized machine learning architectures and designs that many data scientists have yet to tackle. But finding algorithms and designing and building platforms that deal with large sets of data is a growing need. Data scientists have to manage and maintain increasingly complex data projects, and with the rise of big data comes an increasing demand for computational and algorithmic efficiency. Large Scale Machine Learning with Python uncovers a new wave of machine learning algorithms that meet scalability demands together with a high predictive accuracy.
+
+Dive into scalable machine learning and the three forms of scalability. Speed up algorithms that can be used on a desktop computer with tips on parallelization and memory allocation. Get to grips with new algorithms that are specifically designed for large projects and can handle bigger files, and learn about machine learning in big data environments. We will also cover the most effective machine learning techniques on a map reduce framework in Hadoop and Spark in Python.
+
+35 <--> A Practical Guide to Linux Commands, Editors, and Shell Programming (3rd edition)
+http://nitroflare.com/view/900A9CDC12CB45E/013308504X_A.pdf
+
+
+A Practical Guide to Linux Commands, Editors, and Shell Programming (3rd edition) By Mark G. Sobell
+2013 | 1200 Pages | ISBN: 013308504X | PDF (conv) | 62 MB
+
+
+New Chapters on Python and MySQL–Covers Perl, too! Learn from hundreds of realistic, high-quality examples, and become a true Linux command-line guru! NEW! Covers busybox, Midnight Commander, screen, and sshfs/curlftpf Covers the Mac OS X command line and its unique tools 295-page reference covers 98 utilities, including Mac OS X commands! For use with all popular versions of Linux, including Ubuntu™, Fedora™, openSUSE™, Red Hat®, Debian, Mageia, Mint, Arch, CentOS, and Mac OS X, too! The Most Useful Tutorial and Reference, with Hundreds of High-Quality Examples for Every Popular Linux Distribution Linux is today’s dominant Internet server platform. System administrators and Web developers need deep Linux fluency, including expert knowledge of shells and the command line. This is the only guide with everything you need to achieve that level of Linux mastery. Renowned Linux expert Mark Sobell has brought together comprehensive, insightful guidance on the tools sysadmins, developers, and power users need most, and has created an outstanding day-to-day reference.
+
+38 <--> Pluralsight - .NET Interoperability Fundamentals
+http://nitroflare.com/view/50E2819CF0D5A92/NET_Interop_Fund.part1.rar
+http://nitroflare.com/view/DC3DE1AF682CB06/NET_Interop_Fund.part2.rar
+http://nitroflare.com/view/2CA31DF56521304/NET_Interop_Fund.part3.rar
+http://nitroflare.com/view/B59A48A99967CCA/NET_Interop_Fund.part4.rar
+http://nitroflare.com/view/CF14067D1347BE8/NET_Interop_Fund.part5.rar
+http://nitroflare.com/view/EA6DA4B5451C204/NET_Interop_Fund.part6.rar
+
+
+Pluralsight - .NET Interoperability Fundamentals
+MP4 | AVC 425kbps | English | 1024x768 | 15fps | 5h 45mins | AAC stereo 128kbps | 1.01 GB
+Genre: Video Training
+
+Managed code is great, but sometimes .NET code must call native code, such as Windows API DLLs or COM components. The course explores most options for interop, from P/Invoke, to COM and even C++/CLI. Best practices are spread throughout the course. A deeper understanding of COM mechanisms provides a better experience and the ability to solve issues should they arise. This course should be helpful for any .NET developer that must introp with native code (and vice versa).
+
+Table of contents:
+Introduction14m 43s
+P/Invoke: The Basics35m 6s
+P/Invoke: Digging Deeper54m 3s
+COM Interop: Foundations57m 33s
+COM Interop: Digging Deeper58m 7s
+COM Interop: Threading48m 44s
+Interop With C++/CLI49m 20s
+Tidbits and Tips28m 15s
+
+53 <--> Udemy - Learn Basic Data Visualization with R (2016) [repost]
+http://nitroflare.com/view/5236C5BD843900A/Easyl_gur_Lear_Bas_Data_Vis_R.part1.rar
+http://nitroflare.com/view/A9011BE981685A5/Easyl_gur_Lear_Bas_Data_Vis_R.part2.rar
+http://nitroflare.com/view/A757D9190221D33/Easyl_gur_Lear_Bas_Data_Vis_R.part3.rar
+http://nitroflare.com/view/3F47D1273ECC9F4/Easyl_gur_Lear_Bas_Data_Vis_R.part4.rar
+http://nitroflare.com/view/2E3F431A2B6317D/Easyl_gur_Lear_Bas_Data_Vis_R.part5.rar
+http://nitroflare.com/view/45952D620857D84/Easyl_gur_Lear_Bas_Data_Vis_R.part6.rar
+
+
+Udemy - Learn Basic Data Visualization with R (2016)
+MP4 | AVC 603kbps | English | 1280x720 | 30fps | 3 hours | AAC stereo 53kbps | 875 MB
+Genre: Video Training
+
+Data Visualization with R course provides basic as well as advance skills & knowledge required to become a Data visualization Analyst. This course provides you a better vision of Data visualization in order to train you excellently. Participants, at the end of the training, will be technically competent in essential concepts of Analysis such as why Data visualization is important and basic R, Graphical Parameters used in data visualization, various types of graphs such as Line Graph, Scatterplot, Bar plot, Histogram, Organizational chart and a brief introduction of ggplot2 package.
+
+This course contains lectures as videos along with the hands-on implementation of the concepts, additional assignments are also provided in the last section for your self-practice, working files are provided along with the every lectures.
+
+What are the requirements?
+It will be an advantage if you know how to work with R tool. But if you are not familiar with R tool, don’t worry…you’ll learn how to use them, in this course.
+if you are familiar with the charts and graphs, you will get the concepts quickly.
+Basic R Programming knowledge is helpful but not required
+
+What am I going to get from this course?
+Over 33 lectures and 3 hours of content!
+Data visualization and its importance
+R Analytics tool
+Importing Data into R from different Sources.
+Graphical parameters.
+Basic plotting
+Ways to give colors in graphs such as RColorBrewer, RGB specification, Color palettes.
+Different types of graph
+Understanding how ggplot2 package used for visualization
+Working on Twitter Streaming Data by making a network graph of friends and followers in R.
+
+Curriculum
+Section 1: Introduction
+Lecture 1 Welcome 04:15
+Lecture 2 Why Data Visualization is Important 02:59
+Lecture 3 Overview of R 04:02
+Lecture 4 Basic math and variables 05:30
+Lecture 5 Vector and Matrices 05:22
+Lecture 6 List and DataFrame 03:36
+Lecture 7 Factors, Subset and summarizing methods 06:59
+Lecture 8 Importing Data into R-Part I 07:04
+Lecture 9 Importing Data into R-Part II 06:37
+Section 2: Basic Plotting
+Lecture 10 Plot Function in R 09:25
+Lecture 11 Plot Function in R part-II 11:12
+Lecture 12 Working with colors-RGB 07:15
+Lecture 13 Working with Colors-Color Palette 05:02
+Lecture 14 Working with Colors-RColorBrewer 07:30
+Section 3: Types of Graphs
+Lecture 15 Types of Graphs 03:54
+Lecture 16 Line Graph 06:20
+Lecture 17 Scatterplot 06:43
+Lecture 18 Barplot 06:08
+Lecture 19 Histogram 04:49
+Lecture 20 PieChart 05:39
+Lecture 21 Table Plot 04:08
+Lecture 22 Boxplot 06:30
+Lecture 23 Pictograph 02:58
+Lecture 24 Organizational Chart 03:23
+Section 4: Plotting with ggplot2
+Lecture 25 Introduction to ggplot2 03:22
+Lecture 26 qplot in R 04:11
+Lecture 27 visualize with ggplot2 09:12
+Lecture 28 ggthemes 06:15
+Lecture 29 Facets 07:10
+Lecture 30 Legends 04:08
+Lecture 31 Annotation 04:44
+Section 5: Network Graph and Project
+Lecture 32 Network Graph 03:42
+Lecture 33 Twitter data analysis 09:27
+
+56 <--> OpenCV with Python Blueprints
+http://nitroflare.com/view/84EE2B6D2D1AC5D/1785282697_OpenCV.epub
+http://nitroflare.com/view/F2150A120A7867E/1785282697_OpenCV.mobi
+http://nitroflare.com/view/EEAA66CCC8BB034/1785282697_OpenCV.pdf
+http://nitroflare.com/view/90D6E8A81AE8435/1785282697_OpenCV_code.rar
+
+
+OpenCV with Python Blueprints By Michael Beyeler
+2015 | 230 Pages | ISBN: 1785282697 | EPUB, MOBI, PDF | 226 MB
+
+
+Design and develop advanced computer vision projects using OpenCV with Python About This Book Program advanced computer vision applications in Python using different features of the OpenCV library Practical end-to-end project covering an important computer vision problem All projects in the book include a step-by-step guide to create computer vision applications Who This Book Is For This book is for intermediate users of OpenCV who aim to master their skills by developing advanced practical applications. Readers are expected to be familiar with OpenCV's concepts and Python libraries. Basic knowledge of Python programming is expected and assumed. What You Will Learn Generate real-time visual effects using different filters and image manipulation techniques such as dodging and burning Recognize hand gestures in real time and perform hand-shape analysis based on the output of a Microsoft Kinect sensor Learn feature extraction and feature matching for tracking arbitrary objects of interest Reconstruct a 3D real-world scene from 2D camera motion and common camera reprojection techniques Track visually salient objects by searching for and focusing on important regions of an image Detect faces using a cascade classifier and recognize emotional expressions in human faces using multi-layer peceptrons (MLPs) Recognize street signs using a multi-class adaptation of support vector machines (SVMs) Strengthen your OpenCV2 skills and learn how to use new OpenCV3 features
 2016/08/15
 
 ******
