@@ -1,3 +1,23 @@
+2016/08/22
+0 <--> English for Careers: English Course Collection
+
+115 <--> The Ultimate Algorithmic Trading System Toolbox + Website
+
+The Ultimate Algorithmic Trading System Toolbox + Website: Using Today's Technology To Help You Become A Better Trader
+Wiley | Investing | Jun 20 2016 | ISBN-10: 111909657X | 368 pages | pdf | 9.77 mb
+
+by George Pruitt (Author)
+
+The accessible, beneficial guide to developing algorithmic trading solutions
+The Ultimate Algorithmic Trading System Toolbox is the complete package savvy investors have been looking for. An integration of explanation and tutorial, this guide takes you from utter novice to out-the-door trading solution as you learn the tools and techniques of the trade. You'll explore the broad spectrum of today's technological offerings, and use several to develop trading ideas using the provided source code and the author's own library, and get practical advice on popular software packages including TradeStation, TradersStudio, MultiCharts, Excel, and more. You'll stop making repetitive mistakes as you learn to recognize which paths you should not go down, and you'll discover that you don't need to be a programmer to take advantage of the latest technology. The companion website provides up-to-date TradeStation code, Excel spreadsheets, and instructional video, and gives you access to the author himself to help you interpret and implement the included algorithms.
+
+Algorithmic system trading isn't really all that new, but the technology that lets you program, evaluate, and implement trading ideas is rapidly evolving. This book helps you take advantage of these new capabilities to develop the trading solution you've been looking for.
+
+Exploit trading technology without a computer science degree
+Evaluate different trading systems' strengths and weaknesses
+Stop making the same trading mistakes over and over again
+Develop a complete trading solution using provided source code and libraries
+New technology has enabled the average trader to easily implement their ideas at very low cost, breathing new life into systems that were once not viable. If you're ready to take advantage of the new trading environment but don't know where to start, The Ultimate Algorithmic Trading System Toolbox will help you get on board quickly and easily.
 ******
 0 <--> Introduction of Biotechnology in India's Agriculture
 ******

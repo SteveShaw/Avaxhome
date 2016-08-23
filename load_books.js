@@ -11,6 +11,8 @@ var book_titles = []
 var limits = 45
 var save_count = 1
 
+var key_list = ["avxhome","avaxhome","payment","avaxsearch", "avxsearch"]
+
 var links = content.split('\n')
 console.log('total number of books = ' + links.length)
 
@@ -44,6 +46,33 @@ function SavePageContents()
     console.log('Save to "' + outPath + '"')
     fs.write(outPath, page_contents.join('\n'), {mode: 'w', charset: 'UTF-8'})
     page_contents = []
+}
+
+function FilterLinks( links, keys )
+{
+	//remove all urls that have avaxhome
+	var filtered_links = []
+	for( var i = 0; i < links.length; ++ i)
+	{
+		var bInvalid = false;
+		for ( var j = 0 ;j < keys.length; ++j )
+		{
+			if( links[i].indexOf( keys[j] ) >= 0)
+			{
+				bInvalid = true;
+				break;
+			}
+		}
+		
+		if( bInvalid )
+		{
+			continue;
+		}
+		
+		filtered_links.push( links[i] );
+	}
+	
+	return filtered_links;
 }
 
 function RetrieveBookContent( )
@@ -106,7 +135,8 @@ function RetrieveBookContent( )
         console.log(titles[0])
         console.log('found inners length = ' + inners.length)
         AddToPageContents( titles[0], inners[0] )
-        book_titles.push( [titles[0], a_links.join('\n'), descriptions[0]] )
+		var good_links = FilterLinks( a_links, key_list );
+        book_titles.push( [titles[0], good_links.join('\n'), descriptions[0]] )
     }
     else
     {
@@ -134,11 +164,11 @@ function LoadPage()
             var writeContents = []
             for(var i = 0;i<numBooks;++i)
             {
-                writeContents.push('******')
+				writeContents.push('\n')
                 writeContents.push( i + ' <--> ' + book_titles[i][0] )
                 writeContents.push( book_titles[i][1] )
                 writeContents.push( book_titles[i][2] )
-                writeContents.push('******')
+				writeContents.push('\n')
             }
             fs.write(title_filename, writeContents.join('\n'), {mode: 'w', charset: 'UTF-8'})
             phantom.exit()
