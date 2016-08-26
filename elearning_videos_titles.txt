@@ -1,0 +1,1150 @@
+August 24, 2016 | [STRAT]
+
+0 <--> Country Blues Musicianship
+
+6 <--> Yeoman for Three.js (2016)
+http://nitroflare.com/view/3E3DC151830E50E/Yeoman_for_Three.js.part1.rar
+http://nitroflare.com/view/5394A86F8E09E17/Yeoman_for_Three.js.part2.rar
+http://nitroflare.com/view/643EBEA55587BF6/Yeoman_for_Three.js.part3.rar
+
+
+Yeoman for Three.js
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 34M | Lec: 7 | 243 MB
+Genre: eLearning | Language: English
+
+Learn to use yeoman to boost your three.js workflow and have fun making a WebGL nyancat in the process.
+
+This course is a step by step tutorial where you will learn how to use yeoman to speed up your three.js workflow.
+After taking this course you will be able to:
+
+Create a Nyancat in WebGl, starting from nothing and
+Get to know Three.js , if you don’t know it already and all the cool 3D games you can do with this technology
+Get to know yeoman and it’s tools: bower for packaging, grunt for automatic tasks and yo for Scafolding
+Generate a three.js Boilerplate.
+Install any of the threex extensions and use that in your own games. There are 32 of them as of today. All free for you to use.
+Combine three x and yeoman and understand how they work together
+The idea behind this course is to help you become a creator. You will be able to develop your own WebGL demos. I believe that everybody is capable of creating web 3D. I believe that if you’re motivated enough you can learn how to use the elements I will teach during this course to develop your own 3D creation.
+
+Why this course?
+
+I will take you through the demo-making process step by step. We will create a Nyancat together using yeoman, an effort from Google that is worth the time to learn. It will be simple and smooth. It will be fun all while learning real skills and tools to help you develop your own WebGl demos.
+You will learn Three.js, a new leading-edge technology that starts to be hot and deployed worldwide.
+You will see and code practical applications of Three.js extensions on 3D demos and mini-games.
+You will be able to reproduce everything you learn during the course in your own computer. It is easy to learn and easy to use!
+Bonuses:
+
+You will learn to develop a cool WebGl demo in 3D. You can surprise your family, friends and colleagues with your creations.
+It will be fun! I will show you my off-beat demos. Plus, you will be able to use my code and modify it however you want!
+I encourage motivated developers and anybody interested in 3D to to contact me. I would love for you to share your passion, your ideas and your skills. Also, don’t hesitate to give me feedback and to tell me what you think of this course.
+
+7 <--> Electron Fundamentals (2016)
+http://nitroflare.com/view/CB199B23F9A3C22/Electron_Fundamentals.part1.rar
+http://nitroflare.com/view/DCE91F1C3729714/Electron_Fundamentals.part2.rar
+http://nitroflare.com/view/28107A52C72BABD/Electron_Fundamentals.part3.rar
+http://nitroflare.com/view/AD42721C33A31CC/Electron_Fundamentals.part4.rar
+
+
+Electron Fundamentals
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 50M | 348 MB
+Genre: eLearning | Language: English
+
+In this course, you'll get a clear picture of what Electron is, as a platform using web tech to create native desktop applications. You will learn how to put your web tech skills to work, building with HTML, JavaScript and CSS.
+
+Previously, creating an desktop application may have been hard or would use some foreign technology. Now, using Electron, it is easy, straightforward, and fun. In this course, Electron Fundamentals, you're going to learn all about Electron and how it can help you create desktop applications, using the web tech skills you already possess. First, you'll going to learn all about the features and the APIs Electron offers and see how you can make them work for you. Next, you'll bring everything you know and have learned together by creating a project that you can turn into a compelling desktop application. Finally, you'll learn how to package up what you've made and share it with others. By the end of this course, you'll feel comfortable starting your own Electron project and using its features to bring your ideas to life.
+
+10 <--> Getting started with jMock (2016)
+http://nitroflare.com/view/6885D33C6871E8C/Getting_started_with_jMock.part1.rar
+http://nitroflare.com/view/0E8AF844F181420/Getting_started_with_jMock.part2.rar
+
+
+Getting started with jMock
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 35M | Lec: 8 | 113 MB
+Genre: eLearning | Language: English
+
+Learn to use jMock in day to day testing
+
+In this course you will learn about jMock, a mocking test framework. Mocking test frameworks are fairly common standard across all software companies as it allows you to simulate all dependencies without making network calls and even when dependencies are not ready. The focus is on testing the code you have written as fast as possible and with all possible permutations and combinations. Show you boss that you mean business when you write powerful and robust tests to defend your code and catch bugs before customer sees them. 
+
+Here are objectives of this course
+
+What is iMock?
+Why do we need to use mock?
+What is dependency injection or Invetsion of Control (IOC)
+Learn how to set up jMock.
+Live example of wrting jMock tests
+Advanced features
+At the end of this course a student will be able kickstart writing jMock tests immediately and prove to his peer about new robust and efficient way of writing unit tests.
+
+13 <--> How to edit your Video and Audio for free
+http://nitroflare.com/view/160FD8C2DAA5543/How_to_edit_your_Video_and_Audio_for_free.part1.rar
+http://nitroflare.com/view/BEBD59BB7F091AC/How_to_edit_your_Video_and_Audio_for_free.part2.rar
+
+
+How to edit your Video and Audio for free
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 42M | 135 MB
+Genre: eLearning | Language: English
+
+In this class I show you how I use 3 Open Source tools (Blender, Audacity and Handbrake) for editing my videos, editing audios and then compressing the video files. All these applications are very capable, feature rich and still FREE. They are constantly supported and upgraded by the developer community.
+
+All my online class videos and YouTube videos go through this same editing workflow which I show you here. Though all of these applications have hundreds of settings, I show you exact settings that I use so that even if you do not understand or do not want to understand how they work, these settings will do the work of editing videos for you. You are of course free to try different combinations of settings once you get familiar with the usage.
+
+So if you are a video enthusiast or a online teacher like me, this class will give you lot of information that you can implement right away.
+
+49 <--> Become an Electricity & Electronics Pro! (2016)
+http://nitroflare.com/view/6B3120A69ADEC94/Become_an_Electricity_%26_Electronics_Pro%21.part1.rar
+http://nitroflare.com/view/EA0C0EC95EDB7C7/Become_an_Electricity_%26_Electronics_Pro%21.part2.rar
+http://nitroflare.com/view/543584C1E8473CD/Become_an_Electricity_%26_Electronics_Pro%21.part3.rar
+http://nitroflare.com/view/9A5E7047F4137AD/Become_an_Electricity_%26_Electronics_Pro%21.part4.rar
+http://nitroflare.com/view/3106B8494459812/Become_an_Electricity_%26_Electronics_Pro%21.part5.rar
+http://nitroflare.com/view/94FDB0AF2F2134E/Become_an_Electricity_%26_Electronics_Pro%21.part6.rar
+http://nitroflare.com/view/7EC99A5FC77F3D0/Become_an_Electricity_%26_Electronics_Pro%21.part7.rar
+
+
+Become an Electricity & Electronics Pro!
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4 Hours | Lec: 40 | 4.04 GB
+Genre: eLearning | Language: English
+
+Electricity and electronics MADE EASY!
+
+DO YOU WANT TO SAVE TIME AND MONEY?
+
+Are you looking for a shortcut to learn the ENTIRE MODULE'S CONTENT in as little time as possible?
+
+Why spend money on personal Electricity and Electronics tutors when you can get taught the entire modules content online for the same price as just one sitting with a tutor?
+
+I have done this exact course at university, so i am able to explain the concepts in a manner that students understand. Ultimately, i know how and why people struggle with electricity and electronics, and I can help make it easier for you!
+
+How is the course structured?
+
+Basic concepts
+Basic laws
+Methods of analysis
+Circuit theorems
+Operational amplifiers
+Capacitors and inductors
+Sinusoids and phasors
+Sinusoidal steady-state analysis
+Why enroll in "Become a Electricity and Electronics Pro!"?
+
+Over 40 worked through examples with Very-Easy-to-Understand explanations.
+Tips and tricks on how to study for this course as well as how to save time in tests and exams.
+Work at your own pace leaving you comfortable and confident to tackle those final exams!
+This course is perfect for anyone currently enrolled in an Electricity and Electronics class, anyone planning to take it in the near future, or anyone who's interested in learning Electricity and Electronics. So whether you're looking to just pass or get your distinction, this course will provide you with the necessary tools to help you reach your goals!
+
+132 <--> Basic Freestyle Swimming Technique [repost]
+http://nitroflare.com/view/3DAFE763BD1DF57/Mi.We-Ba.Fr.Sw.Te.part1.rar
+http://nitroflare.com/view/DE8CC7F59A3545D/Mi.We-Ba.Fr.Sw.Te.part2.rar
+http://nitroflare.com/view/6BCA2FEB207CD6C/Mi.We-Ba.Fr.Sw.Te.part3.rar
+
+Basic Freestyle Swimming Technique
+DVDRip | AVI/XviD, ~1746 kb/s | 712x480 | Duration: 00:52:08 | English: MP3, 128 kb/s (2 ch) | 704 MB
+
+151 <--> Full Candidate Interview (Cracking the Coding Interview, Video 1)
+http://nitroflare.com/view/3FD0B6EEE84C1C1/Fu.Ca.Int.Cr.Co.part1.rar
+http://nitroflare.com/view/975491D8AF1F41A/Fu.Ca.Int.Cr.Co.part2.rar
+http://nitroflare.com/view/66B822445D56D02/Fu.Ca.Int.Cr.Co.part3.rar
+http://nitroflare.com/view/4D07F653BBC9B54/Fu.Ca.Int.Cr.Co.part4.rar
+
+
+Full Candidate Interview (Cracking the Coding Interview, Video 1)
+DVDRips | MP4/AVC, ~269 kb/s | 640x360 | Duration: 04:23:30 | English: AAC, 96 kb/s (2 ch) | + 2 PDF Books
+Size: 809 MB | Genre: Business, Job
+
+The Cracking the Coding Interview Videos are unscripted videos showing you what happens in a real technical interview. Watch Gayle L. McDowell, the founder and CEO of CareerCup, interview a candidate, just like she did over 100 times for big companies like Google and Microsoft. Watch how candidates face a new problem, dissect it, and code it on the white board.
+
+What do we mean by "unscripted?"
+
+Exactly what it sounds like. The candidates were not told what to say when, or how to solve the question. They didn't even know what they would be asked until the cameras were rolling! In other words, what you are watching is 100% true-to-life.
+These videos will:
+Expose you to what a real Google / Microsoft / Amazon interview is like.
+Show you how to handle questions when you don't know the answer.
+Show you, via mid-video pop-ups, what is going well and what the interviewer is thinking about.
+Teach you what Google, Microsoft and Amazon look for in an interview.
+
+The Full Interview Video is a video that shows you what an interview is like, from start to end. The contents include:
+- Overview of what companies like Google, Microsoft and Amazon look for.
+- Discussion of the candidate's resume, to show you how to discuss your resume and what you're likely to be asked.
+- Two coding and algorithms questions (including white-boarding coding). This candidate didn't know the answers, so you can learn how to handle this situation.
+Great For: General / Resume Questions. Algorithms and Whiteboard Coding. Understanding what a real interview is like.
+
+
+152 <--> Pluralsight - Windows Internals 3
+http://nitroflare.com/view/DD5FE10B334C6A4/Wind_Inter_3.part1.rar
+http://nitroflare.com/view/C7B8A082FAB0ED2/Wind_Inter_3.part2.rar
+http://nitroflare.com/view/1F6A8ED6C16D6F7/Wind_Inter_3.part3.rar
+http://nitroflare.com/view/8DDAB6EC404E632/Wind_Inter_3.part4.rar
+http://nitroflare.com/view/9796800D8B69A9F/Wind_Inter_3.part5.rar
+http://nitroflare.com/view/957E3436DD776B2/Wind_Inter_3.part6.rar
+
+
+Pluralsight - Windows Internals 3
+MP4 | AVC 495kbps | English | 1024x768 | 15fps | 5h 16mins | AAC stereo 128kbps | 988 MB
+Genre: Video Training
+
+Software developers for Windows should understand the way Windows works, its mechanisms and algorithms, so they are able to write better software that can take advantage of Windows' strengths. The course deals with all the major terms in Windows, such as processes, threads, virtual memory and more. Whether you're a Win32 programmer, a .NET programmer or a device driver programmer, you should benefit from understanding Windows, which may help in troubleshooting difficult issues as well.
+
+Table of contents:
+Services (part 1)31m 53s
+Services (part 2)34m 58s
+The I/O System (Part 1)37m 37s
+The I/O System (Part 2)49m 25s
+Device Drivers (Part 1)36m 42s
+Device Drivers (Part 2)37m 10s
+Writing Software Device Drivers (Part 1)47m 56s
+Writing Software Device Drivers (Part 2)40m 51s
+
+
+158 <--> Simplified .NET Background Tasks with Hangfire (2016)
+http://nitroflare.com/view/0E269F1438A5655/Simplified_.NET_Background_Tasks_with_Hangfire.part1.rar
+http://nitroflare.com/view/F60932CD3CBC92D/Simplified_.NET_Background_Tasks_with_Hangfire.part2.rar
+http://nitroflare.com/view/C72D5B42DC1635E/Simplified_.NET_Background_Tasks_with_Hangfire.part3.rar
+http://nitroflare.com/view/D4DC44C391E0575/Simplified_.NET_Background_Tasks_with_Hangfire.part4.rar
+http://nitroflare.com/view/5D016E4120D8810/Simplified_.NET_Background_Tasks_with_Hangfire.part5.rar
+
+
+Simplified .NET Background Tasks with Hangfire
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 46M | 460 MB
+Genre: eLearning | Language: English
+
+Need a solution for long running/scheduled background .NET jobs? Hangfire is a framework that can be used to reliably create, process, and manage asynchronous .NET background jobs. In this course, learn how to use Hangfire in your .NET applications.
+
+Reliable asynchronous background jobs are a common requirement that .NET developers inevitably need to implement at some point. In this course, Simplified .NET Background Jobs with Hangfire, you will learn all about using Hangfire as a framework to help you fulfill this requirement. First, you'll learn all about creating, processing, and managing these long running tasks. Next, you'll learn about how Hangfire lets you run these long tasks. Finally, you'll learn how to manage these jobs, by using Hangfire's excellent dashboard. By the end of this course, you'll how to install Hangfire and the Hangfire dashboard, and how to create the different types of background jobs that Hangfire supports.
+
+
+
+
+232 <--> Pluralsight - Improving Testability Through Design
+http://nitroflare.com/view/DA28F6521FB6EAE/Impr_Test_Thr_Des.part1.rar
+http://nitroflare.com/view/9B5EA81D65D6A82/Impr_Test_Thr_Des.part2.rar
+http://nitroflare.com/view/43FD95461F625FE/Impr_Test_Thr_Des.part3.rar
+http://nitroflare.com/view/E6F0407AEE4D6B7/Impr_Test_Thr_Des.part4.rar
+http://nitroflare.com/view/145BAE837678020/Impr_Test_Thr_Des.part5.rar
+http://nitroflare.com/view/47A43BF92D04ADE/Impr_Test_Thr_Des.part6.rar
+
+
+Pluralsight - Improving Testability Through Design
+MP4 | AVC 308kbps | English | 1024x768 | 15fps | 4h 36mins | AAC stereo 127kbps | 852 MB
+Genre: Video Training
+
+A well designed application is not necessarily the one which has a perfect separation of layers, or the one which perfectly implements some predefined design patterns. It is certainly a plus to have these two goals met, but that is not sufficient to make the application really good. We can learn the most about one application by reading the source code of particular methods embedded deep inside of it. A common for loop often reveals more about the design than the whole diagram depicting responsibilities of an application layer in which it is located. The devil is in the details. The best of all intentions in design fails miserably when the low-profile design of small, seemingly unimportant classes is misconceived. In this course, the order of decisions is sorted bottom-up.
+
+It is the small class to which we pay attention the most. Only when all things are in place at the microscopic level can we discuss responsibilities of layers, isolation of modules and other high profile topics. The result is a well-built, easily testable and easily maintainable application.
+
+Table of contents:
+Assessing Reliability of Tests18m 35s
+Developing an Application the Old Way38m 20s
+Guidelines of Redesign for Reliability46m 37s
+Getting the Most Out of Immutable Objects43m 13s
+Improving the Unit Tests42m 43s
+Crossing Responsibility Boundaries41m 42s
+Managing Operations on Database and External Systems45m 9s
+
+
+
+238 <--> Pluralsight - Defensive Coding in C#
+http://nitroflare.com/view/EE287FABA0785AF/Defen_Cod_Csh.part1.rar
+http://nitroflare.com/view/5BBA0C7D324F2D8/Defen_Cod_Csh.part2.rar
+http://nitroflare.com/view/88B15E7287DE238/Defen_Cod_Csh.part3.rar
+http://nitroflare.com/view/BEAA9E8E1942090/Defen_Cod_Csh.part4.rar
+http://nitroflare.com/view/87626971EFF1716/Defen_Cod_Csh.part5.rar
+http://nitroflare.com/view/C626ECDF47E1098/Defen_Cod_Csh.part6.rar
+
+
+Pluralsight - Defensive Coding in C#
+MP4 | AVC 269kbps | English | 1024x768 | 15fps | 4h 32mins | AAC stereo 128kbps | 848 MB
+Genre: Video Training
+
+This course will show you how to write clean, maintainable, and testable code, and how to keep that code great using defensive coding techniques. You will learn how to write clean, maintainable, and testable code when faced with constantly changing requirements, legacy issues, intensive time pressures, and a rapidly evolving environment. You will also learn how to keep that code great after maintenance activities, multiple developers, and the ravages of time.
+
+Table of contents:
+Introduction16m 14s
+Defending Your Methods - Part 157m 7s
+Defending Your Methods - Part 223m 45s
+Automated Code Testing46m 58s
+Defending Your Methods Part 3: Returning Predictable Results32m 36s
+Defending Your Code Constructs32m 29s
+Asserts, Errors, and Exceptions54m 29s
+Final Words9m 7s
+
+
+249 <--> RabbitMQ by Example (2016)
+http://nitroflare.com/view/8A1EB9EB1ECC998/RabbitMQ_by_Example.part1.rar
+http://nitroflare.com/view/127858A71A49565/RabbitMQ_by_Example.part2.rar
+http://nitroflare.com/view/D371C76037807A8/RabbitMQ_by_Example.part3.rar
+http://nitroflare.com/view/5D499E499BFB598/RabbitMQ_by_Example.part4.rar
+http://nitroflare.com/view/93BE0CF99A90D03/RabbitMQ_by_Example.part5.rar
+
+
+RabbitMQ by Example
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 43M | 447 MB
+Genre: eLearning | Language: English
+
+This course will show you, in a practical way, how to use RabbitMQ in your .NET applications.
+
+In this course, RabbitMQ by Example, you will see how to use RabbitMQ by using practical examples featuring a fictional company and a software development scenario based around taking card payments and purchase order payments. You'll start with an introduction to RabbitMQ and how it compares to Windows' default queue technology, MSMQ. As well as looking at RabbitMQ specifically, you will look at message queuing architectures, micro services, and how RabbitMQ can work as a broker for handling asynchronous and synchronous messages in this architecture. You will also get to explore the use of the topics exchange for routing and synchronous remote procedure calls. By the end of this course, you'll be ready to use RabbitMQ in your .NET applications.
+
+272 <--> Pluralsight - .NET Interoperability Fundamentals
+http://nitroflare.com/view/50E2819CF0D5A92/NET_Interop_Fund.part1.rar
+http://nitroflare.com/view/DC3DE1AF682CB06/NET_Interop_Fund.part2.rar
+http://nitroflare.com/view/2CA31DF56521304/NET_Interop_Fund.part3.rar
+http://nitroflare.com/view/B59A48A99967CCA/NET_Interop_Fund.part4.rar
+http://nitroflare.com/view/CF14067D1347BE8/NET_Interop_Fund.part5.rar
+http://nitroflare.com/view/EA6DA4B5451C204/NET_Interop_Fund.part6.rar
+
+
+Pluralsight - .NET Interoperability Fundamentals
+MP4 | AVC 425kbps | English | 1024x768 | 15fps | 5h 45mins | AAC stereo 128kbps | 1.01 GB
+Genre: Video Training
+
+Managed code is great, but sometimes .NET code must call native code, such as Windows API DLLs or COM components. The course explores most options for interop, from P/Invoke, to COM and even C++/CLI. Best practices are spread throughout the course. A deeper understanding of COM mechanisms provides a better experience and the ability to solve issues should they arise. This course should be helpful for any .NET developer that must introp with native code (and vice versa).
+
+Table of contents:
+Introduction14m 43s
+P/Invoke: The Basics35m 6s
+P/Invoke: Digging Deeper54m 3s
+COM Interop: Foundations57m 33s
+COM Interop: Digging Deeper58m 7s
+COM Interop: Threading48m 44s
+Interop With C++/CLI49m 20s
+Tidbits and Tips28m 15s
+
+
+
+
+287 <--> Advanced Excel: Date Cleaning, Formulas, Tricks and Calcs (2016)
+http://nitroflare.com/view/C222B89BF28F0FF/Advanced_Excel_Date_Cleaning%2C_Formulas%2C_Tricks_and_Calcs.part1.rar
+http://nitroflare.com/view/87DA4A56D9A2921/Advanced_Excel_Date_Cleaning%2C_Formulas%2C_Tricks_and_Calcs.part2.rar
+http://nitroflare.com/view/4479F7C3882EFF7/Advanced_Excel_Date_Cleaning%2C_Formulas%2C_Tricks_and_Calcs.part3.rar
+
+
+Advanced Excel: Date Cleaning, Formulas, Tricks and Calcs
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 44M | Lec: 14 | 213 MB
+Genre: eLearning | Language: English
+
+Learn time saving Advanced Excel concepts & tricks on Date Cleaning, Formulas, Tricks and Calcs
+
+"Date" data type is crucial for every report as lot of important decision making exercises are based on it. Similarly, The aesthetics and design of every report helps read the report better and faster.
+
+Concept: How Excel reads date
+Date formulas & tricks
+Pivot Table - Grouping based on Dates
+Formatting tricks
+Paste Special & Auto-fill tricks
+We have 14 videos of duration 42 mins (in one sitting). Through practical examples, You'll learn Ninja level application on Advanced Excel: Date Cleaning, Formulas, Tricks and Calcs
+
+
+288 <--> LFCE: Advanced Linux Networking (2016)
+http://nitroflare.com/view/9039A0B4D1E7497/LFCE_Advanced_Linux_Networking.part1.rar
+http://nitroflare.com/view/333799DEF90D6B6/LFCE_Advanced_Linux_Networking.part2.rar
+http://nitroflare.com/view/6E2ADE4C3190462/LFCE_Advanced_Linux_Networking.part3.rar
+http://nitroflare.com/view/72F9F9ADBBAC6D9/LFCE_Advanced_Linux_Networking.part4.rar
+http://nitroflare.com/view/233C8F764343E6A/LFCE_Advanced_Linux_Networking.part5.rar
+
+
+LFCE: Advanced Linux Networking
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 45M | 400 MB
+Genre: eLearning | Language: English
+
+This course will teach you the core knowledge needed to understand and troubleshoot Linux networking, and prepare you for the networking topics tested on the LFCE/RHCE certification.
+
+Looking to boost your knowledge of Linux networking and abilities as a system administrator? This course, LFCE: Advanced Linux Networking, teaches Linux networking topics that will take your sysadmin skills to the next level. First, you will learn network topologies and the OSI Model. Next, you'll learn how data moves through networks with Internet Protocol, including addressing, subnetting, ARP, DNS and routing packets. Then, you'll learn how to get data to its destination reliably with TCP internals. Finally, you'll learn to troubleshoot network connectivity issues. When you're finished with this course, you will have the skills and knowledge of Linux networking needed for design and troubleshooting.
+
+
+
+289 <--> JavaScript Rockstar How to create Incredible Useful code
+http://nitroflare.com/view/07DE678206F5CBB/JavaScript_Rockstar_How_to_create_Incredible_Useful_code.part1.rar
+http://nitroflare.com/view/B9F0803C9295460/JavaScript_Rockstar_How_to_create_Incredible_Useful_code.part2.rar
+http://nitroflare.com/view/635589F847BF3CF/JavaScript_Rockstar_How_to_create_Incredible_Useful_code.part3.rar
+http://nitroflare.com/view/080636965FFFF8D/JavaScript_Rockstar_How_to_create_Incredible_Useful_code.part4.rar
+http://nitroflare.com/view/5AFC96467103B66/JavaScript_Rockstar_How_to_create_Incredible_Useful_code.part5.rar
+
+
+JavaScript Rockstar How to create Incredible Useful code
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | Lec: 27 | 731 MB
+Genre: eLearning | Language: English
+
+JavaScript learning with real world examples learn to code optimize development using the JavaScript DOM
+
+JavaScript Step by Step training, we show you how to build projects from Scratch. Learn at your own pace resources provided, source code included everything you need to practice and learn JavaScript.
+
+This course is designed for beginners who are familiar with JavaScript and want to see it in action. Learning how to build small mini apps. By the end of this course you will be able to create projects like the ones outlined in the course. 
+
+JavaScript is the foundation for so much online, including all the new JS libraries. Knowing how to apply JavaScript can help to learn further JS code.
+
+Project #1 - Create and apply JavaScript to buttons that can be used across multiple web pages.
+
+Project #2 - Tooltips applying DOM event tooltips, find positions of elements and attached floating tooltip box.
+
+Project #3 - Create a Rock Paper Scissors game from start to finish. Learn how to apply game logic and build simple JavaScript games. Use the DOM for events and more.
+
+Knowing how to apply JavaScript is an excellent skill to have. JavaScript is everywhere and by the end of this course you will have what you need to use it on your own webpages. Interact with your web users, dynamic web content using JavaScript.
+
+We walk you through step by step with detailed explanations of code and more. We add and update a webpage from scratch adding JavaScript to bring it to life.
+
+
+294 <--> Astrophotography Basics
+http://nitroflare.com/view/6340DB4C3EEBAFB/Astrophotography_Basics.part1.rar
+http://nitroflare.com/view/5ED153B4265D20F/Astrophotography_Basics.part2.rar
+http://nitroflare.com/view/B51AE9C3B559F6E/Astrophotography_Basics.part3.rar
+http://nitroflare.com/view/B8334A93E3CEBF5/Astrophotography_Basics.part4.rar
+http://nitroflare.com/view/EA0CDBB101EE025/Astrophotography_Basics.part5.rar
+
+
+Astrophotography Basics
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1H 20M | 1.45 GB
+Genre: eLearning | Language: English
+
+Ever look up at the night sky and marveled at it's magnificence? Do you love photography? Do you want to learn how to capture the stunning nighttime sky in all it's glory?
+
+I know I do and I get out every chance I can to photograph our night skies, and from me you will learn all the steps needed to make each night shooting session successful
+
+You will learn how to photograph the Milky Way, our home galaxy.
+
+The first part of this course will involve the planning stages of a successful shoot. What software is necessary and camera settings that are an absolute must
+
+The second part I will take you into the field as I am taking the photos, I will also include basic light painting techniques
+
+The third and final part I will show you basic post processing of your photos.
+
+I will not be holding anything back, there will be no trade secrets, everything I know and all my techniques will be taught
+
+I will include many assignments along the way for you to try out without having to leave your home, that is until you are ready to go out into the field where the real fun begins
+
+
+
+296 <--> Udemy - Learn Basic Data Visualization with R (2016) [repost]
+http://nitroflare.com/view/5236C5BD843900A/Easyl_gur_Lear_Bas_Data_Vis_R.part1.rar
+http://nitroflare.com/view/A9011BE981685A5/Easyl_gur_Lear_Bas_Data_Vis_R.part2.rar
+http://nitroflare.com/view/A757D9190221D33/Easyl_gur_Lear_Bas_Data_Vis_R.part3.rar
+http://nitroflare.com/view/3F47D1273ECC9F4/Easyl_gur_Lear_Bas_Data_Vis_R.part4.rar
+http://nitroflare.com/view/2E3F431A2B6317D/Easyl_gur_Lear_Bas_Data_Vis_R.part5.rar
+http://nitroflare.com/view/45952D620857D84/Easyl_gur_Lear_Bas_Data_Vis_R.part6.rar
+
+
+Udemy - Learn Basic Data Visualization with R (2016)
+MP4 | AVC 603kbps | English | 1280x720 | 30fps | 3 hours | AAC stereo 53kbps | 875 MB
+Genre: Video Training
+
+Data Visualization with R course provides basic as well as advance skills & knowledge required to become a Data visualization Analyst. This course provides you a better vision of Data visualization in order to train you excellently. Participants, at the end of the training, will be technically competent in essential concepts of Analysis such as why Data visualization is important and basic R, Graphical Parameters used in data visualization, various types of graphs such as Line Graph, Scatterplot, Bar plot, Histogram, Organizational chart and a brief introduction of ggplot2 package.
+
+This course contains lectures as videos along with the hands-on implementation of the concepts, additional assignments are also provided in the last section for your self-practice, working files are provided along with the every lectures.
+
+What are the requirements?
+It will be an advantage if you know how to work with R tool. But if you are not familiar with R tool, don’t worry…you’ll learn how to use them, in this course.
+if you are familiar with the charts and graphs, you will get the concepts quickly.
+Basic R Programming knowledge is helpful but not required
+
+What am I going to get from this course?
+Over 33 lectures and 3 hours of content!
+Data visualization and its importance
+R Analytics tool
+Importing Data into R from different Sources.
+Graphical parameters.
+Basic plotting
+Ways to give colors in graphs such as RColorBrewer, RGB specification, Color palettes.
+Different types of graph
+Understanding how ggplot2 package used for visualization
+Working on Twitter Streaming Data by making a network graph of friends and followers in R.
+
+Curriculum
+Section 1: Introduction
+Lecture 1 Welcome 04:15
+Lecture 2 Why Data Visualization is Important 02:59
+Lecture 3 Overview of R 04:02
+Lecture 4 Basic math and variables 05:30
+Lecture 5 Vector and Matrices 05:22
+Lecture 6 List and DataFrame 03:36
+Lecture 7 Factors, Subset and summarizing methods 06:59
+Lecture 8 Importing Data into R-Part I 07:04
+Lecture 9 Importing Data into R-Part II 06:37
+Section 2: Basic Plotting
+Lecture 10 Plot Function in R 09:25
+Lecture 11 Plot Function in R part-II 11:12
+Lecture 12 Working with colors-RGB 07:15
+Lecture 13 Working with Colors-Color Palette 05:02
+Lecture 14 Working with Colors-RColorBrewer 07:30
+Section 3: Types of Graphs
+Lecture 15 Types of Graphs 03:54
+Lecture 16 Line Graph 06:20
+Lecture 17 Scatterplot 06:43
+Lecture 18 Barplot 06:08
+Lecture 19 Histogram 04:49
+Lecture 20 PieChart 05:39
+Lecture 21 Table Plot 04:08
+Lecture 22 Boxplot 06:30
+Lecture 23 Pictograph 02:58
+Lecture 24 Organizational Chart 03:23
+Section 4: Plotting with ggplot2
+Lecture 25 Introduction to ggplot2 03:22
+Lecture 26 qplot in R 04:11
+Lecture 27 visualize with ggplot2 09:12
+Lecture 28 ggthemes 06:15
+Lecture 29 Facets 07:10
+Lecture 30 Legends 04:08
+Lecture 31 Annotation 04:44
+Section 5: Network Graph and Project
+Lecture 32 Network Graph 03:42
+Lecture 33 Twitter data analysis 09:27
+
+
+304 <--> Outlook Pro Tricks Inbox, Search Folders, Tasks & Calendar
+http://nitroflare.com/view/62E49D190FBEB27/Outlook_Pro_Tricks_Inbox%2C_Search_Folders%2C_Tasks_%26_Calendar.part1.rar
+http://nitroflare.com/view/832B5989960CDCF/Outlook_Pro_Tricks_Inbox%2C_Search_Folders%2C_Tasks_%26_Calendar.part2.rar
+http://nitroflare.com/view/72DC23AF979D01E/Outlook_Pro_Tricks_Inbox%2C_Search_Folders%2C_Tasks_%26_Calendar.part3.rar
+http://nitroflare.com/view/E78C75480442407/Outlook_Pro_Tricks_Inbox%2C_Search_Folders%2C_Tasks_%26_Calendar.part4.rar
+
+
+Outlook Pro Tricks Inbox, Search Folders, Tasks & Calendar
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1.5 Hours | Lec: 28 | 300 MB
+Genre: eLearning | Language: English
+
+Outlook Pro Tricks on Inbox, Search Folders, Tasks & Calendar will improve your speed and productivity level at work
+
+Do you wish you could save time by managing your email more effectively? 
+Do you wish you could become more organized and keep better track of all your appointments and the things you need to do? 
+Would you like to manage your email, calendar, tasks and contacts more effectively?
+
+If so, this is the course for you! The short videos will give you a visual overview and provide step by step instructions.
+
+Here's What we got in store for you in this course:
+
+Workspace Navigation
+Search Tools & Techniques
+Email related Tasks
+Calendar
+
+311 <--> Lynda - Photoshop CC 2015 One-on-One: Advanced (updated Aug 15, 2016)
+http://nitroflare.com/view/3F5360E9B3D8E0E/LcPsCC20151x1Adv2016Q3.part01.rar
+http://nitroflare.com/view/0BD33625DA540A2/LcPsCC20151x1Adv2016Q3.part02.rar
+http://nitroflare.com/view/95F4CC28EBF80FD/LcPsCC20151x1Adv2016Q3.part03.rar
+http://nitroflare.com/view/6591E506428096B/LcPsCC20151x1Adv2016Q3.part04.rar
+http://nitroflare.com/view/0F430404DA5F20A/LcPsCC20151x1Adv2016Q3.part05.rar
+http://nitroflare.com/view/A68DBAF9D616C8A/LcPsCC20151x1Adv2016Q3.part06.rar
+http://nitroflare.com/view/C89BC572E61AF1E/LcPsCC20151x1Adv2016Q3.part07.rar
+http://nitroflare.com/view/D3F0B4E27DB2B55/LcPsCC20151x1Adv2016Q3.part08.rar
+http://nitroflare.com/view/EDD6167D9761CE5/LcPsCC20151x1Adv2016Q3.part09.rar
+http://nitroflare.com/view/C8CFE923B9F536C/LcPsCC20151x1Adv2016Q3.part10.rar
+http://nitroflare.com/view/571C40FD2861828/LcPsCC20151x1Adv2016Q3.part11.rar
+http://nitroflare.com/view/869012F8464FA37/LcPsCC20151x1Adv2016Q3.part12.rar
+
+
+Lynda - Photoshop CC 2015 One-on-One: Advanced (updated Aug 15, 2016)
+Size: 10.08 GB | Duration: 18h 8m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Advanced | Language: English
+
+Take your Photoshop skills to the next level. Photoshop CC 2015 One-on-One: Advanced is the second course in the comprehensive Photoshop training series by industry expert Deke McClelland. One-on-One teaches you everything you need to know about Photoshop, in the order you need to know it, on the schedule that work best for you. In this installment, Deke takes you through Photoshop's more advanced features. Learn about Photoshop's automated selection tools (Color Range, Focus Area, and Refine Edge), the nondestructive editing capabilities of Smart Objects, Liquify's slimming and trimming power, and techniques for drawing and designing with vector shapes. Plus, discover how to improve a photo with poor composition by reconstructing it with Photoshop's Content-Aware Scale tool, healing tools, and blend modes. These tutorials feature all-new projects and exercise files, so there's something new for even long-time Deke fans. NEW IN 2016: Chapters 24–30 offer a whole new way to work with Photoshop CC. This new set of tutorials covers layer effects, Levels and Curves adjustments, lens corrections and perspective warping, black and white photography, and so much more. Check back often. We'll continue to update the training whenever Photoshop changes.
+
+
+314 <--> Unity 5 2D: Combat in an RPG Game
+http://nitroflare.com/view/4060388CF029903/Unity_5_2D_-_Combat_in_an_RPG_Game.part1.rar
+http://nitroflare.com/view/9A62B0F13666651/Unity_5_2D_-_Combat_in_an_RPG_Game.part2.rar
+http://nitroflare.com/view/9442D8C4BC4BC4F/Unity_5_2D_-_Combat_in_an_RPG_Game.part3.rar
+http://nitroflare.com/view/50A7571DF925595/Unity_5_2D_-_Combat_in_an_RPG_Game.part4.rar
+http://nitroflare.com/view/93B9BBB4C8482C5/Unity_5_2D_-_Combat_in_an_RPG_Game.part5.rar
+
+
+Unity 5 2D: Combat in an RPG Game
+MP4 | Video: AVC 1280x720 | Audio: AAC 48KHz 2ch | Duration: 2h 11m | 429 MB
+Genre: eLearning | Language: English
+
+The hallmark of any popular RPG game is combat. Building on the lessons in the rest of the Unity 5 2D series, these tutorials show how to build simple turn-based combat like you would experience in classic RPGs. In the Movement in an RPG Game course, you learned how to move a player in a 2D tile-based map. Here you'll program, trigger, and manage random battles on the map. Author Jesse Freeman shows how to create pop-up battle windows, add monsters, and create player and monster attack actions—including evasive maneuvers. When the battle is over, you'll learn to reward the player and clean up for future moves.
+
+
+
+323 <--> Excel Tricks: Data Cleaning - Must for further data analysis (2016)
+http://nitroflare.com/view/8EFE13B6D2BB6D1/Excel_Tricks_Data_Cleaning_-_Must_for_further_data_analysis.part1.rar
+http://nitroflare.com/view/527F9B97338ECC1/Excel_Tricks_Data_Cleaning_-_Must_for_further_data_analysis.part2.rar
+http://nitroflare.com/view/D38DFC380CE4964/Excel_Tricks_Data_Cleaning_-_Must_for_further_data_analysis.part3.rar
+http://nitroflare.com/view/BFEBDF241D22E32/Excel_Tricks_Data_Cleaning_-_Must_for_further_data_analysis.part4.rar
+http://nitroflare.com/view/EB5E1D16B6A96C7/Excel_Tricks_Data_Cleaning_-_Must_for_further_data_analysis.part5.rar
+
+
+Excel Tricks: Data Cleaning - Must for further data analysis
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1.5 Hours | Lec: 27 | 489 MB
+Genre: eLearning | Language: English
+
+Learn Beginner to Advanced tricks on Data Cleaning - Go To, Date correction, Replace using wildcards, Text to Columns
+
+We get data from various sources like ERP, SAP and in different formats. In order to make it useful to analyse, we have to clean this and put them in a structured format. It's a pure time-consuming activity. In order to save time and effort on cleaning and put the structure in place, We need few important data cleaning techniques as mentioned below which are part of this course. Check the list of Topics being covered in this course on Data Cleaning in Excel:
+
+Go To (Special) with Errors 
+Go To (Special) without Errors
+Go To (Special) with Ctrl + Enter
+Go To (Special) – Fill Intermittent Black Cells
+Go To (Special) –Visible Cells vs Shortcuts 
+Text Formulas – Change Case using UPPER(), PROPER() & LOWER()
+Text Formulas – Remove Leading, Trailing & excess Intermittent spaces using TRIM()
+Text Formulas – Using LEN() & TRIM() together
+Text Formulas – T(), N() & VALUE()
+Text Formulas – REPT() for artificial Column Chart in a Cell
+Text Formulas – REPT() & LEN() for adding leading zero before incomplete Cheque Nos.
+Find & Replace – Using Wildcard character ( )
+Find & Replace – Neutralising Wildcard characters to remove them from data
+Find & Replace – Word vs. Excel
+Find & Replace – Cell Format
+Text to Columns – Basics (Delimited)
+Text to Columns – Basics (Fixed Width) + Hidden Trick
+Text to Columns – Cleaning up numbers w. trailing minus sign
+Text to Columns – Cleaning up numbers w. leading DrCr text
+Text to Columns – Correcting invalid Dates (DMY)
+Text to Columns – Correcting invalid Dates (YMD)
+Text Formulas – LEFT(), RIGHT() & SEARCH()
+Text Formulas – MID() & LEN()
+
+
+333 <--> PowerPoint Animation Ninja (including button triggers)
+http://nitroflare.com/view/497A8E902FC1A7E/PowerPoint_Animation_Ninja_%28including_button_triggers%29.part1.rar
+http://nitroflare.com/view/7337B973DF4A3F2/PowerPoint_Animation_Ninja_%28including_button_triggers%29.part2.rar
+http://nitroflare.com/view/6AD2C7DDC6A3444/PowerPoint_Animation_Ninja_%28including_button_triggers%29.part3.rar
+
+
+PowerPoint Animation Ninja (including button triggers)
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | Lec: 14 | 217 MB
+Genre: eLearning | Language: English
+
+Learn Basic to Advanced tricks on PowerPoint Animation Ninja (including button triggers)
+
+PowerPoint and Excel together make an awesome productivity tool. Management Consultants having great knowledge of these 2 software, creates stunning presentations which are automated, data-driven, beautifully designed and impressive to read.
+
+What would it be like if each and every one of your PowerPoint presentations were stunning and impressed your attendees, co-workers, senior managers or investors without you saying a word yet?
+
+Here's What we got in store for you in this course:
+- Basics of Animation (Pics & Text)
+- Button-based triggered animation
+- Motion path animation
+- Case Studies: Rotating gear, Blinking dot (GIF)
+
+
+335 <--> Learn Chi-Square from beginning to advance level
+http://nitroflare.com/view/5CFA00BB3466CCB/Learn_Chi-Square_from_beginning_to_advance_level.part1.rar
+http://nitroflare.com/view/EDFEC71F2F2F6DD/Learn_Chi-Square_from_beginning_to_advance_level.part2.rar
+
+
+Learn Chi-Square from beginning to advance level
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 26M | Lec: 17 | 105 MB
+Genre: eLearning | Language: English
+
+Course covers everything that Statistics students want to gain knowledge about Chi-Square
+
+Welcome to my course on "Learn Chi-Square from beginning to advance level" . This course will cover the complete understanding of Chi-Sqiuare with Hypothesis Testing in Statistics . In this course students will learn the numerically and theoratically concepts of Chi-Square. And also they can download material in the form of PDF Files .
+
+With a lot of Examples that will clear the concepts of Chi-Square , and they will learn how to solve the questions of Hypothesis Testing and Goodness of fit test and its limitations. 
+
+342 <--> Data Mining with R: Go from Beginner to Advanced! [repost]
+http://nitroflare.com/view/CAE147C6EEAE16A/U-Da.M.wi.R.part1.rar
+http://nitroflare.com/view/4837AE435F9375C/U-Da.M.wi.R.part2.rar
+http://nitroflare.com/view/6C92D47D25F7E8E/U-Da.M.wi.R.part3.rar
+http://nitroflare.com/view/E8E5950C8A6F235/U-Da.M.wi.R.part4.rar
+http://nitroflare.com/view/1749C8234590B53/U-Da.M.wi.R.part5.rar
+http://nitroflare.com/view/6DE735134502E11/U-Da.M.wi.R.part6.rar
+
+
+Data Mining with R: Go from Beginner to Advanced!
+HDRips | MP4/AVC, ~306 kb/s | 1280x720 | Duration: 12 hours | English: AAC, 76 kb/s (2 ch) | 3.79 GB
+Genre: Development / Programming
+
+Learn to use R software for data analysis, visualization, and to perform dozens of popular data mining techniques.
+
+This is a "hands-on" business analytics, or data analytics course teaching how to use the popular, no-cost R software to perform dozens of data mining tasks using real data and data mining cases. It teaches critical data analysis, data mining, and predictive analytics skills, including data exploration, data visualization, and data mining skills using one of the most popular business analytics software suites used in industry and government today. The course is structured as a series of dozens of demonstrations of how to perform classification and predictive data mining tasks, including building classification trees, building and training decision trees, using random forests, linear modeling, regression, generalized linear modeling, logistic regression, and many different cluster analysis techniques. The course also trains and instructs on "best practices" for using R software, teaching and demonstrating how to install R software and RStudio, the characteristics of the basic data types and structures in R, as well as how to input data into an R session from the keyboard, from user prompts, or by importing files stored on a computer's hard drive. All software, slides, data, and R scripts that are performed in the dozens of case-based demonstration video lessons are included in the course materials so students can "take them home" and apply them to their own unique data analysis and mining cases. There are also "hands-on" exercises to perform in each course section to reinforce the learning process. The target audience for the course includes undergraduate and graduate students seeking to acquire employable data analytics skills, as well as practicing predictive analytics professionals seeking to expand their repertoire of data analysis and data mining knowledge and capabilities.
+
+
+
+350 <--> Building Real-time Applications with Socket.io (2016)
+http://nitroflare.com/view/44592B9598825DA/Building_Real-time_Applications_with_Socket.io.part1.rar
+http://nitroflare.com/view/0A8C46167B6E3CD/Building_Real-time_Applications_with_Socket.io.part2.rar
+http://nitroflare.com/view/EE7298E5A4CEDF2/Building_Real-time_Applications_with_Socket.io.part3.rar
+
+
+Building Real-time Applications with Socket.io
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 13M | 213 MB
+Genre: eLearning | Language: English
+
+This course introduces developers to the Socket.io library, a free Node.js module for simplifying real-time functionality.
+
+Using Socket.io, developers are able to configure sockets for sending and receiving messages using the browser. In this course, Building Real-time Applications with Socket.io, you'll learn to build modern, real-time applications using the power of Socket.io. You'll start with an introduction to Socket.io and some of the demo apps that will be used in the course. Next, you'll discover some of the basics of what Socket.io is and how it's used within the Node.js framework. Finally, you'll build a chat application which will be able to send messages to all users, emit private messages, and you'll see how to set up private rooms. By the end of this course, you'll be prepared to tackle projects that can then deliver streaming data using simple event-driven methods.
+
+360 <--> PowerPoint Samurai Recipes: Shapes, SmartArt, Objects
+http://nitroflare.com/view/B38CFF6EE410655/PowerPoint_Samurai_Recipes_Shapes%2C_SmartArt%2C_Objects.part1.rar
+http://nitroflare.com/view/9E03D528368DA36/PowerPoint_Samurai_Recipes_Shapes%2C_SmartArt%2C_Objects.part2.rar
+http://nitroflare.com/view/1D8E0630F13E717/PowerPoint_Samurai_Recipes_Shapes%2C_SmartArt%2C_Objects.part3.rar
+http://nitroflare.com/view/A887C38CA7B8E30/PowerPoint_Samurai_Recipes_Shapes%2C_SmartArt%2C_Objects.part4.rar
+
+
+PowerPoint Samurai Recipes: Shapes, SmartArt, Objects
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | Lec: 29 | 365 MB
+Genre: eLearning | Language: English
+
+PowerPoint and Excel together make an awesome productivity tool. Management Consultants having great knowledge of these 2 software, creates stunning presentations which are automated, data-driven, beautifully designed and impressive to read.
+
+What would it be like if each and every one of your PowerPoint presentations were stunning and impressed your attendees, co-workers, senior managers or investors without you saying a word yet?
+
+Here's What we got in store for you in this course:
+- Working with Shapes
+- SmartArt trick
+- De-Assembling Objects
+- Evergreen Shortcut
+- Aligning Objects
+
+
+
+435 <--> PowerPoint: Presentations Pro Recipe Revealed
+http://nitroflare.com/view/CADE803D365B4BF/PowerPoint_Presentations_Pro_Recipe_Revealed.part1.rar
+http://nitroflare.com/view/48C7CD90E2D47F0/PowerPoint_Presentations_Pro_Recipe_Revealed.part2.rar
+
+
+PowerPoint: Presentations Pro Recipe Revealed
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 35M | Lec: 14 | 159 MB
+Genre: eLearning | Language: English
+
+Add edge to your presentation using techniques like Layering, WaterFall Chart, Magnifier, SmartArt, Irfanview & FlatIcon
+
+PowerPoint and Excel together make an awesome productivity tool. Management Consultants having great knowledge of these 2 software, creates stunning presentations which are automated, data-driven, beautifully designed and impressive to read.
+
+What would it be like if each and every one of your PowerPoint presentations were stunning and impressed your attendees, co-workers, senior managers or investors without you saying a word yet?
+
+Here's What we got in store for you in this course:
+
+1) There are certain freely available tools that will add edge to your presentation. The section focusses on:
+
+IrfanView: A freeware that allows LIVE magnification during a slideshow and that too, very fast
+FlatIcon: How flat icons can add zing to the boring slides
+Google recommended colour combinations
+UnSplash: Free source for HD images (commercially usable)
+2) Making existing pictures look attractive using special tricks is what this section focusses on:
+
+Tricks: Layering
+3) One of the emerging trends to present maps, products, software screenshots & tables is Magnifier. It helps draw the audience's attention to a specific part of the object or slide. This section focusses on:
+
+Creating the Magnifier effect with special tricks
+Industry examples
+4) Emerging best practices - This course will also give you a glimpse of some of the emerging trends in data visualization. E.g. 
+"Topic Tracker" (used by BMW, UN, Tata Group etc.). 
+Another such technique is "Waterfall Chart" for showing important financial numbers in a Chart form (used by Tata Power, BMW, Bain & Co.).
+5) Presenting multiple pictures of different sizes and dry bullet points is a challenge. This section focusses on:
+
+Converting multiple pictures in Smart Art in under 5 seconds
+Converting multiple bullet points in Smart Art in under 5 seconds
+
+We have 12 videos of duration 33 mins. Through practical examples, You'll learn Ninja level application on PowerPoint: Presentations Pro Secrets.
+
+
+375 <--> Design Patterns in C++: Behavioral - Chain of Responsibility to Memento (2016)
+http://nitroflare.com/view/9B58EA382C832AC/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part1.rar
+http://nitroflare.com/view/5AF1940E6083560/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part2.rar
+http://nitroflare.com/view/6ACC9B28E550636/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part3.rar
+http://nitroflare.com/view/CEFCE5B2CB27E55/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part4.rar
+http://nitroflare.com/view/7D0A1F082EC0846/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part5.rar
+
+
+Design Patterns in C++: Behavioral - Chain of Responsibility to Memento
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 49M | 595 MB
+Genre: eLearning | Language: English
+
+This course will teach you about Behavioral design patterns and their implementation in modern C++. This is part of a multi-course series on C++ patterns.
+
+The correct application and recognition of design patterns is an important skill for developers and architects. This course, Design Patterns in C++: Behavioral - Chain of Responsibility to Memento, introduces the viewer to Behavioral design patterns. It covers the Chain of Responsibility, Command, Interpreter, Iterator, Mediator, and Memento design patterns. You'll be shown different ways in which these patterns can be implemented in modern C++ (C++ 11 and beyond). By the end of this course, you'll be more familiar with Behavioral design patterns in C++. Software required: a C++ IDE (e.g., Visual Studio, CLion) or a text editor (e.g., VIM, EMACS) together with a C++ compiler (e.g., GCC, Clang).
+
+423 <--> Solve Math Problems With A Computer Using Maple (2016)
+http://nitroflare.com/view/7D649A250FCA186/Solve_Math_Problems_With_A_Computer_Using_Maple.part1.rar
+http://nitroflare.com/view/D0A4236866749F4/Solve_Math_Problems_With_A_Computer_Using_Maple.part2.rar
+http://nitroflare.com/view/EE14BADD3C0E33F/Solve_Math_Problems_With_A_Computer_Using_Maple.part3.rar
+http://nitroflare.com/view/36BC825123C1E6E/Solve_Math_Problems_With_A_Computer_Using_Maple.part4.rar
+http://nitroflare.com/view/81DD11FCDB6F55B/Solve_Math_Problems_With_A_Computer_Using_Maple.part5.rar
+
+
+Solve Math Problems With A Computer Using Maple
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4 Hours | Lec: 26 | 683 MB
+Genre: eLearning | Language: English
+
+Get Better Grades! Complete HW and Projects Faster! Use Modern Technology To Solve Advanced Problems!
+
+Tired of doing super long calculations in mathematics and engineering and not even knowing if your final answer is correct? Want to increase your knowledge of mathematics and programming? Want to learn how to solve the majority of undergraduate math problems in a few lines of code?
+
+Then this course is for you!
+
+In this course you will learn to use the software and programming language Maple. No programming experience is required. Maple is super easy to learn!
+
+You will quickly learn the basics and then learn how to solve any math problem from algebra, calculus, linear algebra, differential equations, and more!
+
+
+425 <--> Beauty Retouching - Camera Raw Processing
+http://nitroflare.com/view/5FA806EB33483E7/Beauty_Retouching_-_Camera_Raw_Processing.part1.rar
+http://nitroflare.com/view/CE2A4D098124F35/Beauty_Retouching_-_Camera_Raw_Processing.part2.rar
+http://nitroflare.com/view/A9F092982910901/Beauty_Retouching_-_Camera_Raw_Processing.part3.rar
+
+
+Beauty Retouching - Camera Raw Processing
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 24M | 236 MB
+Genre: eLearning | Language: English
+
+In this first class on beauty retouching we are going to walk though the proper camera raw processing.
+
+We will start simple - You will know what is the difference between jpg image and raw image. After that I will show You few notes before raw processing. After we jump into camera raw, we will do basic raw conversion and familiarize with basic panel. You will know what is important - what needs to be taken care of to do right retouching.
+
+In the following parts we will go into more advanced areas like how to fix the colors and tones of the image, including even specific details.
+
+
+436 <--> How to Create Effective Presentations with Great Design Tool
+http://nitroflare.com/view/1FFE6AEFB8E9891/How_to_Create_Effective_Presentations_with_Great_Design_Tool.part1.rar
+http://nitroflare.com/view/157A7CC6C868C52/How_to_Create_Effective_Presentations_with_Great_Design_Tool.part2.rar
+http://nitroflare.com/view/79D1D60BCFA0FA6/How_to_Create_Effective_Presentations_with_Great_Design_Tool.part3.rar
+http://nitroflare.com/view/CECC216BC2E4F6C/How_to_Create_Effective_Presentations_with_Great_Design_Tool.part4.rar
+http://nitroflare.com/view/EBD5262493080B9/How_to_Create_Effective_Presentations_with_Great_Design_Tool.part5.rar
+http://nitroflare.com/view/8418FFAA8CCF2B3/How_to_Create_Effective_Presentations_with_Great_Design_Tool.part6.rar
+
+
+How to Create Effective Presentations with Great Design Tool
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | Lec: 34 | 1.10 GB
+Genre: eLearning | Language: English
+
+This course will teach you how to make better presentations using the right tools available free on the Internet.
+
+A well-designed presentation helps you a lot in making that first impression with your target audiences, managers or to get your dream job. However, to create a great presentation that won’t suck, you have to put in a great amount of effort, time and resources. But the outcome may not live up to your expectation, and that depends on how well you are with your Powerpoint or Keynote skills. Sometimes, it just doesn’t work.
+
+So you have to look for other options. And the good news is, here they are.
+
+In this course, we’ll show you how to create great presentations that pop out of the screen and grab your audiences’ attention. And even better, we show you top 4 free online tools that can transform the way you make presentations forever. 
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+
+
+
+
+
+500 <--> Modern Asynchronous JavaScript (2016)
+http://nitroflare.com/view/BFF1F7F8A7BF5EB/Modern_Asynchronous_JavaScript.part1.rar
+http://nitroflare.com/view/2184266554FC815/Modern_Asynchronous_JavaScript.part2.rar
+http://nitroflare.com/view/41F973508D1B676/Modern_Asynchronous_JavaScript.part3.rar
+http://nitroflare.com/view/62CA9DBC9E3266A/Modern_Asynchronous_JavaScript.part4.rar
+http://nitroflare.com/view/01625DAA29E17E7/Modern_Asynchronous_JavaScript.part5.rar
+http://nitroflare.com/view/436BE0D93D5007F/Modern_Asynchronous_JavaScript.part6.rar
+
+
+Modern Asynchronous JavaScript
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 6.5 Hours | Lec: 108 | 1.38 GB
+Genre: eLearning | Language: English
+
+When it comes to writing asynchronous code in JavaScript, callbacks can be a hassle. In this course, you'll see alternatives to callbacks, including ES6 promises, and how to combine generators with promises to write async code in a synchronous style.
+
+In this course, Modern Asynchronous JavaScript, you will learn how to write asynchronous code that's a joy to maintain, not a burden. You will learn how to reason about promises, an alternative to callbacks, by creating a promise framework. Seeing promises from the perspective of a producer helps reason better about being the consumer of promise based APIs. Then, you will learn about ES6 generators and how to combine them with promises to write code that looks synchronous but that's actually asynchronous. This style cuts out the inherent verbosity of callbacks and even promises alone. When you're finished with this course, you'll know how to write asynchronous code in a fashion that's not a hassle to maintain.
+
+
+
+555 <--> cbtnuggets - Photoshop for Developers (Repost)
+http://nitroflare.com/view/3A65DAE7D89DFDA/PfDe_vs_by_1_file.rar
+http://nitroflare.com/view/1B54573B7782777/PfDe_vs.part1.rar
+http://nitroflare.com/view/AAE60B75BB4E349/PfDe_vs.part2.rar
+http://nitroflare.com/view/C596D33EE1A6F6B/PfDe_vs.part3.rar
+http://nitroflare.com/view/0A62D3B9ECC4468/PfDe_vs.part4.rar
+http://nitroflare.com/view/B0855578686F588/PfDe_vs.part5.rar
+http://nitroflare.com/view/54F071F55E08F87/PfDe_vs.part6.rar
+
+
+cbtnuggets - Photoshop for Developers (Repost)
+English | mp4 | H264 1280x720 | AAC 2 ch | 9 hrs 25 min | 2.1 GB 
+eLearning, Development | Level: Beginner
+
+In this Photoshop for Developers course, Glen Stephens dives into Adobe Photoshop and covers basic and advanced techniques in the software.
+
+Related area of expertise:
+- Web Development Level 1
+
+Recommended skills:
+- Basic computer skills
+
+Recommended equipment:
+Computer running the latest version of Adobe Photoshop
+
+Related certifications:
+- N/A
+
+Related job functions:
+- Web designer
+- Graphic designer
+- UI designer
+
+In addition to techniques, this course also spends time covering graphics standards, best practices, and tips and techniques that are valuable for a successful Photoshop experience.
+
+
+558 <--> Lynda - R for Excel Users
+http://nitroflare.com/view/3958FDA965DE751/LcRExcelUsers.part1.rar
+http://nitroflare.com/view/01677D3D9A23FCB/LcRExcelUsers.part2.rar
+
+
+Lynda - R for Excel Users
+Size: 239 MB | Duration: 1h 26m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Data scientists who use Excel realize that R is emerging as the new standard for statistical wrangling (especially for larger data sets). This course serves as the perfect bridge for the many Excel-reliant data analysts and business users who need to update their data science skills by learning R. Much of the course focuses on how crucial statistical tasks and operations are done in R—often with the DescTools package—as contrasted with Excel's functions and Data Analysis add-in, and then scales up from there, showing R's more powerful features. Conrad Carlberg will help you effectively toggle between both programs, moving data back and forth so you can get the best of both worlds. Start by learning how to install R and the DescTools package, and the data files used in all the hands-on exercises. Then learn about calculating descriptive statistics on numeric and nominal variables, and running bivariate analyses in both Excel and R. In the "Next steps" video, Conrad breaks down the pros and cons of Excel vs. R and provides tips for learning more about statistics in each application.
+
+
+561 <--> Lynda - Unity 5 2D: Movement in an RPG Game
+http://nitroflare.com/view/C081AC1175E92EF/LcUnity52DMovementRPGGame.part1.rar
+http://nitroflare.com/view/6631C2E80CF450E/LcUnity52DMovementRPGGame.part2.rar
+
+
+Lynda - Unity 5 2D: Movement in an RPG Game
+Size: 273 MB | Duration: 1h 22m | Video: AVC (.mp4) 1280x720 15fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Learn how to move a player on a tile-based 2D map and use that movement to trigger events—creating a gaming experience similar to classic RPGs. In this course, Jesse Freeman builds upon the lessons learned in the Unity 5 2D: Random Map Generation: adding a player, moving the player from tile to tile, and making the camera follow the movement, as well as triggering events on the map. Jesse also shows how to add a "fog of war" effect that reveals parts of the map as the player moves around and explores, and how to detect and update the artwork for visited tiles.
+
+
+
+566 <--> How To Implement Your First VHDL Design on FPGA
+http://nitroflare.com/view/5CF38BE19AB3130/How_To_Implement_Your_First_VHDL_Design_on_FPGA.part1.rar
+http://nitroflare.com/view/2626A03F7268C3F/How_To_Implement_Your_First_VHDL_Design_on_FPGA.part2.rar
+http://nitroflare.com/view/82FE0FD4459AB42/How_To_Implement_Your_First_VHDL_Design_on_FPGA.part3.rar
+http://nitroflare.com/view/044DFE30C2D0780/How_To_Implement_Your_First_VHDL_Design_on_FPGA.part4.rar
+http://nitroflare.com/view/ED698404F0282FD/How_To_Implement_Your_First_VHDL_Design_on_FPGA.part5.rar
+http://nitroflare.com/view/E2E222839053113/How_To_Implement_Your_First_VHDL_Design_on_FPGA.part6.rar
+
+
+How To Implement Your First VHDL Design on FPGA
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3.5 Hours | Lec: 41 | 1.17 GB
+Genre: eLearning | Language: English
+
+Learn VHDL Syntax and realize a simple design on FPGA using VHDL starting from scratch
+
+This course is not sponsored or affiliated with Udemy, Inc.
+
+Do you like to start with VHDL without pain?
+
+Here you can watch a complete example about how to implement your first VHDL design on FPGA.
+
+You will learn step by step how to implement a simple VHDL design on FPGA starting from the architecture definition to the FPGA layout.
+
+During this course, you will learn how to:
+
+Define hardware architecture
+Write the VHDL code
+Simulate your VHDL code using ModelSim
+Debug the VHDL code
+Layout on FPGA
+Test the design
+You start to learn how to write a good VHDL/RTL and how to approach the FPGA world.
+
+
+
+616 <--> Scaling Java Applications Through Concurrency (2016)
+http://nitroflare.com/view/856387FEA2A3223/Scaling_Java_Applications_Through_Concurrency.part1.rar
+http://nitroflare.com/view/B9A2A00312CFC3A/Scaling_Java_Applications_Through_Concurrency.part2.rar
+http://nitroflare.com/view/078AC83151201F1/Scaling_Java_Applications_Through_Concurrency.part3.rar
+http://nitroflare.com/view/DDBD93B8A0B77A3/Scaling_Java_Applications_Through_Concurrency.part4.rar
+http://nitroflare.com/view/E5A9F8436212609/Scaling_Java_Applications_Through_Concurrency.part5.rar
+
+
+Scaling Java Applications Through Concurrency
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours 19M | 497 MB
+Genre: eLearning | Language: English
+
+Distributed systems and multi-core platforms are far too prevalent now to dismiss everyday concurrency. This course outlines several concurrency patterns that the Java Concurrency API simplifies, making it much easier to scale your Java application.
+
+There are several gems inside the existing concurrency API that have been hiding in the background for years, waiting to be discovered by curious software engineers. The existing Java Concurrency API makes it much easier to build a Java application that is scalable and performant without having to settle for lots of low-level wait-notify usage or lots of locking using the synchronized keyword. In this course, Scaling Java Applications Through Concurrency, you'll cover several concurrency patterns simplified by the Java Concurrency API; these patterns will make scaling new and existing Java applications simpler than ever. First, you'll learn about how the Java Concurrency API has changed scalability and how to run processes in the background. Next, you'll cover classes that will help you avoid mistakes like lost updates when sharing resources. Finally, you'll discover how to coordinate dependent processes and implementing throttling. By the end of this course, you will be able to easily scale your Java applications through concurrency so that they work better and faster.
+
+
+
+
+661 <--> Become a Game Designer : The Complete Master Series
+http://nitroflare.com/view/E4181C957D4253D/Become_a_Game_Designer_The_Complete_Master_Series.part01.rar
+http://nitroflare.com/view/26E882E58D38431/Become_a_Game_Designer_The_Complete_Master_Series.part02.rar
+http://nitroflare.com/view/9C2E0111F4F7709/Become_a_Game_Designer_The_Complete_Master_Series.part03.rar
+http://nitroflare.com/view/DCB2219A2E9D120/Become_a_Game_Designer_The_Complete_Master_Series.part04.rar
+http://nitroflare.com/view/8098DD4D0BC8F56/Become_a_Game_Designer_The_Complete_Master_Series.part05.rar
+http://nitroflare.com/view/949DAB4DD49BE94/Become_a_Game_Designer_The_Complete_Master_Series.part06.rar
+http://nitroflare.com/view/67A0A4851D1F40D/Become_a_Game_Designer_The_Complete_Master_Series.part07.rar
+http://nitroflare.com/view/23DF76710AF48D5/Become_a_Game_Designer_The_Complete_Master_Series.part08.rar
+http://nitroflare.com/view/EA6770247B82E31/Become_a_Game_Designer_The_Complete_Master_Series.part09.rar
+http://nitroflare.com/view/4EAD3C311E43F38/Become_a_Game_Designer_The_Complete_Master_Series.part10.rar
+http://nitroflare.com/view/6B9FC8AA6243822/Become_a_Game_Designer_The_Complete_Master_Series.part11.rar
+http://nitroflare.com/view/16F28B7ECE27971/Become_a_Game_Designer_The_Complete_Master_Series.part12.rar
+http://nitroflare.com/view/2D7D3EFC5BACC36/Become_a_Game_Designer_The_Complete_Master_Series.part13.rar
+http://nitroflare.com/view/36DE25146F3EA6C/Become_a_Game_Designer_The_Complete_Master_Series.part14.rar
+http://nitroflare.com/view/33416906C8D2C11/Become_a_Game_Designer_The_Complete_Master_Series.part15.rar
+http://nitroflare.com/view/45C019B29FB4F6B/Become_a_Game_Designer_The_Complete_Master_Series.part16.rar
+http://nitroflare.com/view/086527B8C18870B/Become_a_Game_Designer_The_Complete_Master_Series.part17.rar
+http://nitroflare.com/view/F7D21653F5AD23C/Become_a_Game_Designer_The_Complete_Master_Series.part18.rar
+http://nitroflare.com/view/0F66894806FD4A6/Become_a_Game_Designer_The_Complete_Master_Series.part19.rar
+
+
+Become a Game Designer : The Complete Master Series
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 70 Hours | 17.8 GB
+Genre: eLearning | Language: English
+
+Learn everything you need to become a master game designer/developer! Unity, Maya, 3DSmax, Mudbox, Photoshop, c#
+
+If you are serious about becoming a game designer, then you already know that you need the most current and complete game design training possible. To succeed in this competitive industry it is essential to have an expert knowledge of the entire game development pipeline. Whether it's your goal to work for a major game studio, or to develop and publish your own indie games, one thing is clear, you will need to be well trained as both a programmer and an artist.
+
+Throughout this extensive training series you will learn beginner to expert level techniques in the areas of 3D game development (Unity3D), computer animation, digital painting, and programming.
+
+You will be learning expert techniques and workflows from veterans who have been working in the game industry for over 15 years and have a passion for making great games.
+
+You will be extensively trained on programs like Unity3D, Maya, 3DS Max, Mudbox, and Photoshop. Learning powerful tools like these are made easy with fun projects that are designed to take the fear out of learning such advanced software like Unity3D.
+
+Your training will start with Unity3D, which is a powerful game engine that has been used by countless studios and indie developers all over the world to build some amazing games. Unity's intuitive and user friendly interface is an excellent place to start your path to becoming a game designer. You will start by learning the fundamentals of Unity3D, giving you a great foundation for you to get excited and confident to move on to more advanced Unity projects which will have you building incredible worlds. In addition to mastering the Unity interface you will be learning how to code in the c# programming language, letting you create any 2D or 3D your imagination can come up with.
+
+
+
+
+
+
+672 <--> Photoshop CS5 One-on-One: Fundamentals with Deke McClelland [repost]
+http://nitroflare.com/view/A9EEDA85DABDB3E/Photoshop.CS5_One-on-One.Fundamentals.part1.rar
+http://nitroflare.com/view/5DC7ECAE6F24309/Photoshop.CS5_One-on-One.Fundamentals.part2.rar
+http://nitroflare.com/view/C6A9BA2B1D40A77/Photoshop.CS5_One-on-One.Fundamentals.part3.rar
+http://nitroflare.com/view/CAD49DFD587BF1B/Photoshop.CS5_One-on-One.Fundamentals.part4.rar
+http://nitroflare.com/view/2976A4CFE77C366/Photoshop.CS5_One-on-One.Fundamentals.part5.rar
+http://nitroflare.com/view/7A7FE227278DD55/Photoshop.CS5_One-on-One.Fundamentals.part6.rar
+
+
+Photoshop CS5 One-on-One: Fundamentals
+WEBRip | MOV + Project files | English | 960 x 540 | AVC ~54 kbps | 15 fps
+AAC | 96.0 Kbps | 48.0 KHz | 2 channels | 17h 33mn | 3.71 GB
+Genre: eLearning Video / Adobe Photoshop
+
+Photoshop is the world’s most powerful image editor, and it’s arguably the most complex, as well. Fortunately, nobody knows the program like award-winning book and video author Deke McClelland. Join Deke as he explores such indispensable Photoshop features as resolution, cropping, color correction, retouching, and layers. Gain expertise with real-world projects that make sense. Exercise files accompany the course.
+Topics include:
+
+•	Assembling photorealistic compositions
+•	Understanding image size and resolution 
+•	Correcting the brightness and color of images 
+•	Creating accurate selection outlines 
+•	Retouching and healing photos 
+•	Mastering layers and effects 
+•	Printing and exporting to the web
+
+673 <--> Photoshop CS5 One-on-One: Advanced with Deke McClelland [repost]
+http://nitroflare.com/view/DBC8707C504B985/Photoshop.CS5.One-on-One.Advanced.part1.rar
+http://nitroflare.com/view/81A54D1470EBA97/Photoshop.CS5.One-on-One.Advanced.part2.rar
+http://nitroflare.com/view/6AECBF461772B56/Photoshop.CS5.One-on-One.Advanced.part3.rar
+http://nitroflare.com/view/68484C6D238579E/Photoshop.CS5.One-on-One.Advanced.part4.rar
+http://nitroflare.com/view/BFB4531FCB9A0F3/Photoshop.CS5.One-on-One.Advanced.part5.rar
+http://nitroflare.com/view/7E5623D7D302D56/Photoshop.CS5.One-on-One.Advanced.part6.rar
+http://nitroflare.com/view/0CF6525CB2CE569/Photoshop.CS5.One-on-One.Advanced.part7.rar
+
+
+Photoshop CS5 One-on-One: Advanced
+WEBRip | MOV + Project files | English | 960 x 540 | AVC ~40.9 kbps | 15 fps
+AAC | 96.0 Kbps | 48.0 KHz | 2 channels | 26h 24min | 4.72 GB
+Genre: eLearning Video / Adobe Photoshop
+
+Photoshop CS5 One-on-One: Advanced, the second part of the popular and comprehensive series, updated for CS5, follows internationally renowned Photoshop guru Deke McClelland as he dives into the workings of Photoshop. He explores such digital-age wonders as the Levels and Curves commands, edge-detection filters, advanced compositing techniques, vector-based text, the Liquify filter, and Camera Raw. Deke also teaches tried-and-true methods for sharpening details, smoothing over wrinkles and imperfections, and enhancing colors without harming the original image. Exercise files accompany the course.
+Topics include:
+
+•	Using blend modes, adjustment layers, and layer styles
+•	Organizing a layered composition so it is fluid and editable
+•	Creating and editing type in Photoshop
+•	Using blur effectively
+•	Using adjustment layers to add color
+•	Combining layers into a clipping mask
+•	Working with Camera Raw
+
+
+
+674 <--> Photoshop CS5 One-on-One: Mastery with Deke McClelland [repost]
+http://nitroflare.com/view/FCA6C52B27A80F8/Photoshop.CS5.One-on-One.Mastery.part1.rar
+http://nitroflare.com/view/ECE36947A528911/Photoshop.CS5.One-on-One.Mastery.part2.rar
+http://nitroflare.com/view/89AFB4AE8AF1839/Photoshop.CS5.One-on-One.Mastery.part3.rar
+http://nitroflare.com/view/AEAB67AE3EA2C7C/Photoshop.CS5.One-on-One.Mastery.part4.rar
+http://nitroflare.com/view/A275D15AEBD4F65/Photoshop.CS5.One-on-One.Mastery.part5.rar
+http://nitroflare.com/view/A765583E9600DBC/Photoshop.CS5.One-on-One.Mastery.part6.rar
+http://nitroflare.com/view/24C6BB5534EF5F7/Photoshop.CS5.One-on-One.Mastery.part7.rar
+http://nitroflare.com/view/B6F64386C8E1630/Photoshop.CS5.One-on-One.Mastery.part8.rar
+
+
+Photoshop CS5 One-on-One: Mastery with Deke McClelland
+WEBRip | MOV + Project files | English | 960 x 540 | AVC ~32.7 kbps | 15 fps
+AAC | 96.0 Kbps | 48.0 KHz | 2 channels | 20h 1min | 4.84 GB
+Genre: eLearning Video / Adobe Photoshop
+
+In the all-new Photoshop CS5 One-on-One: Mastery, the third and final installment of the popular series, join industry expert and award-winning author Deke McClelland for an in-depth tour of the most powerful and empowering features of Photoshop CS5. Discover the vast possibilities of traditional tools, such as masking and blend modes, and then delve into Smart Objects, Photomerge, as well as the new Puppet Warp, Mixer Brush, and HDR features. Exercise files accompany the course.
+Topics include:
+
+•	Using masks and blend modes in radically new ways
+•	Mastering the Pen tool and Paths panel
+•	Transforming and maximizing Smart Objects
+•	Employing Smart Filters to create complex effects
+•	Exploring the capabilities of Bristle brushes and the Mixer Brush
+•	Merging multiple images into seamless panoramas
+•	Exploring the full range of luminance with HDR Pro
+•	Recording actions and batching-processing images
+
+
+676 <--> Play Violin and Fiddle for beginners - it's fun - Course 1
+http://nitroflare.com/view/DC560AEACDA1CFF/Play_Violin_and_Fiddle_for_beginners_-_it%27s_fun_-_Course_1.part1.rar
+http://nitroflare.com/view/510DC2128870055/Play_Violin_and_Fiddle_for_beginners_-_it%27s_fun_-_Course_1.part2.rar
+http://nitroflare.com/view/F7A19FF9F7B90DA/Play_Violin_and_Fiddle_for_beginners_-_it%27s_fun_-_Course_1.part3.rar
+http://nitroflare.com/view/6300D0B3544FA14/Play_Violin_and_Fiddle_for_beginners_-_it%27s_fun_-_Course_1.part4.rar
+http://nitroflare.com/view/3976E7F90F87272/Play_Violin_and_Fiddle_for_beginners_-_it%27s_fun_-_Course_1.part5.rar
+
+
+Play Violin and Fiddle for beginners - it's fun - Course 1
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | Lec: 9 | 2.17 GB
+Genre: eLearning | Language: English
+
+Learn to play violin from zero to playing simple tunes in a few simple steps - suitable for all ages
+
+This course teaches students the first steps in learning how to play the violin. So if you've just got a new violin and don't know where to start it's the perfect beginners course for you.
+
+The course videos last less than an hour but you can expect to have to practice each individual lesson repeatedly to get good results. Everybody learns at a different pace so it's important that you just work through the course steadily at you own individual speed.
+
+The course starts right at the beginning and teaches you hold to hold the violin and bow. How to identify the different parts of the violin. How to tune the strings correctly. How to position the bow on the strings and make simple bowing movements. Then a 3 finger pattern is demonstrated so that you can play different notes correctly. Finally all the newly learned techniques are combined and you will be taught how to play three simple traditional tunes.
+
+There's no fluff in this course and technical jargon and music theory has been kept to a minimum, I have concentrated on teaching good practical techniques and tried to make them as enjoyable and fun to learn as I can.
+
+I believe that everyone has the ability to learn an instrument if they have the right mental attitude and are prepared to put a bit of work in. So if you if you fancy learning the violin join me now and I'll have you playing a simple tune in a matter of a few hours!.
+
+
+
+678 <--> Windows Workflows with PowerShell
+http://nitroflare.com/view/80D6CB1DFF26DEF/Windows_Workflows_with_PowerShell.part1.rar
+http://nitroflare.com/view/466D24D1D26E610/Windows_Workflows_with_PowerShell.part2.rar
+http://nitroflare.com/view/17EE93716F83B3F/Windows_Workflows_with_PowerShell.part3.rar
+http://nitroflare.com/view/7E10BB7DB4BC617/Windows_Workflows_with_PowerShell.part4.rar
+
+
+Windows Workflows with PowerShell
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 350 MB
+Genre: eLearning | Language: English
+
+Running the same individual scripts all day is not the best use of your time–but workflows are the solution! This course describes PowerShell workflows and shows how to write/develop, run, and troubleshoot workflows.
+
+Workflows are used to execute long-running and restartable scripts that are a bother to run individually–they can greatly increase your productivity. This course, Windows Workflows with PowerShell, you'll learn how to use PowerShell workflows to help you do your work more efficiently. You'll first begin by learning about different workflows and how to write and run them with Windows PowerShell. Next, you'll look at some of the issues that might arise when you convert a script or set of scripts into a workflow. Finally, you'll learn how to convert a set of scripts to a workflow. By the end of this course, you'll have the resources to understand Windows workflows with PowerShell and you'll be able to work faster then ever.
+
+
+
+701 <--> Tutsplus - JavaScript Refactoring Techniques
+http://nitroflare.com/view/6D69FD00C127662/RTechniques.rar
+
+
+Tutsplus - JavaScript Refactoring Techniques
+English | 1 Aug 2016 | mp4 | H264 1280x720 | AAC 2 ch | 14 min | 200 MB 
+eLearning | JavaScript, Programming Fundamentals, JavaScript ES6, ECMAScript 2015, Functional Programming
+
+We all read more code than we write. Naturally we should be doing something to optimize the reading experience. Refactoring is the process of improving the structure and readability of code without changing its functionality.
+
+In this course, Envato Tuts+ instructor Pavan Podila will show you seven different techniques that can help you write more readable and refactored code. You'll see how to leverage the JavaScript ES6 (ECMAScript 2015) syntax and features such as template strings, hoisting, IIFE, Function.bind, and a few more. By the end of this ten-minute Coffee Break Course, you will have some powerful techniques to improve and simplify your JavaScript code.
+
+
+704 <--> The Unreal Engine Developer Course - Learn C++ & Make Games [Updated]
+http://nitroflare.com/folder/7860/L24xlYXJuLWMtbWFrZS1nYW1lcw
+
+
+The Unreal Engine Developer Course - Learn C++ & Make Games (2016)
+WEBRip | English | MP4 + Project files | 1280 x 720 | AVC ~499 kbps | 30 fps
+AAC | 192 Kbps | 48.0 KHz | 2 channels | 31:49:01 | 12.44 GB
+Genre: eLearning Video / Computer Science, Development, Programming
+
+This course is the beginning of a project that was a runaway success on Kickstarter. Get involved now, and get access to all future content as it's added. The final course will be over 30 hours of content and 200+ lectures.
+Learn how to create and mod video games using Unreal Engine 4, the free-to-use game development platform used by AAA studios and indie developers worldwide. We start super simple so you need no prior experience of Unreal or coding! With our online tutorials, you'll be amazed what you can achieve.
+Benefit from our world-class support from both other students, and Ben who is on the forums regularly. Go on to build several games including a full 3D version of Pong with an online multiplayer scoreboard, and more.
+You will have access to a course forum where you can discuss topics on a course-wide basis, or down to the individual video. Our thriving discussion forum will help you learn and share ideas with other students.
+You will learn C++, the powerful industry standard language from scratch. By the end of the course you'll be very confident in the basics of coding and game development, and hungry to learn more.
+Anyone who wants to learn to create games: Unreal Engine is a fantastic platform which enables you to make AAA-quality games. Furthermore these games can be created for Windows, consoles, MacOS, iOS, Android and Web from a single source!
+If you're a complete beginner, we'll teach you all the coding and game design principles you'll need. If you're an artist, we'll teach you to bring your assets to life. If you're a coder, we'll teach you game design principles.
+
+August 24, 2016 | [END]
