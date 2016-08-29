@@ -11,7 +11,7 @@ var book_titles = []
 var limits = 45
 var save_count = 1
 
-var key_list = ["avxhome","avaxhome","payment","avaxsearch", "avxsearch"]
+var key_list = ["avxhome","avaxhome","payment","avaxsearch", "avxsearch", "avaxhm"]
 
 var links = content.split('\n')
 console.log('total number of books = ' + links.length)

@@ -1,3 +1,262 @@
+8/29/2016 [BEGIN]
+
+0 <--> Le Guide Complet - Joomla!
+2009 | ISBN: 2300022192 | Français | 415 pages | PDF | 15 MB
+
+1 <--> The Design of Interpreters, Compilers, and Editors for Augmented Transition Networks
+http://nitroflare.com/view/48B37D61653CF43/The_Design_of_Interpreters%2C_Compilers%2C_and_Editors_for_Augmented_Transition_Networks.djvu
+
+
+Leonard Bolc, "The Design of Interpreters, Compilers, and Editors for Augmented Transition Networks" 
+1983 | pages: 224 | ISBN: 3642821243 | DJVU | 1,4 mb
+
+Augmented Transition Network Grammars are at present the most widely used method for analyzing natural languages. Despite the increasing po­ pularity of this method, however, no extensive papers on ATN-Grammars have been presented which would be accessible to a larger number of per­ sons engaged in the problem from both the theoretical and practical points of view. Augmented Transition Networks (ATN) are derived from state automata. Like a finite state automaton, an ATN consists of a collection of la­ beled states and arcs, a distinguished start state and a set of distin­ guished final states. States are connected with each other by arcs crea­ ting a directed graph or net. The label on an arc indicates a terminal symbol (word) or the type of words which must occur in an input stream to allow the transition to the next state. It is said that a sequence of words (or sentence) is accepted by such a net if there exists a se­ quence of arcs (usually called a path), connecting the start state with a final state, which can be followed to the sentence. The finite state automaton is then enriched by several facilities which increase its computational power. The most important of them permits some arcs to be labeled by nonterminal rather than terminal symbols. This means that the transition through such an arc is actually the re­ cursive application of the net beginning with a pointed state.
+
+
+25 <--> Harley Hahn's Emacs Field Guide
+http://nitroflare.com/view/0673E353B57D890/1484217020.epub
+
+
+Harley Hahn, "Harley Hahn's Emacs Field Guide"
+English | ISBN: 1484217020 | 2016 | EPUB | 276 pages | 3,5 MB
+
+Emacs, the world's most powerful text editor-based work environment, is easy to use, but far from easy to learn. As such, integrating Emacs into your personal world of thinking and creating is a long-term process.
+
+Harley Hahn, one of the most respected technical authors in the world, makes learning fun and stimulating. In this book, Hahn demystifies Emacs for programmers, students, and everyday users.
+
+The first part of the book carefully creates a context for your work with Emacs. What exactly is Emacs? How does it relate to your personal need to work quickly and to solve problems? Hahn then explains the technical details you need to understand to work with your operating system, the various interfaces, and your file system.
+
+In the second part of the book, Hahn provides an authoritative guide to the fundamentals of thinking and creating within the Emacs environment. You start by learning how to install and use Emacs with Linux, BSD-based Unix, Mac OS X, or Microsoft Windows.
+You then move on to learn about:
+
+Special Emacs keys
+Emacs commands
+Buffers and windows
+Cursor, point, and region
+Kill/delete, move/copy, correcting, spell checking, and filling
+Searching, including regular expressions
+Emacs major modes and minor modes
+Customizing using your .emacs file
+Built-in tools, including Dired
+Games and Diversions
+Written with Hahn's clear, comfortable, and engaging style, Harley Hahn's Emacs Field Guide will surprise you: an engaging book to enjoy now, a comprehensive reference to treasure for years to come.
+
+
+29 <--> Pro Photo Colorizing with GIMP
+http://nitroflare.com/view/8E0366F6BC2F84C/1484219481.epub
+
+
+Phillip Whitt, "Pro Photo Colorizing with GIMP"
+English | ISBN: 1484219481 | 2016 | EPUB | 176 pages | 7 MB
+
+Obtain techniques for adding color to black and white or monochrome photographic images using GIMP. In this book you'll also learn to create a hand-tinted effect to add an element of antiquity. Pro Photo Colorizing with GIMP also teaches techniques that enable you to selectively colorize images, mixing black and white with color. There are also tips to go the opposite way: converting color images into black and white (there's more to it than just removing color).
+
+Written with both beginning and experienced GIMP users in mind, Pro Photo Colorizing with GIMP shows you how to colorize black and white images to achieve a high degree of realism.
+
+What You'll Learn 
+
+Gain a basic overview of the GIMP workspace, tools, color palettes, layers, and layer masks
+Learn how to make the proper tonal adjustments to black and white images before starting the colorizing process
+Complete simple colorizing exercises for beginners and progress to more advanced colorizing techniques
+Colorize skin, teeth, hair, and eyes
+Create a nostalgic hand-tinted look and selectively colorize (mixing color with black and white) to create interesting images
+Use textures and patterns to create artistic colorized images
+Properly convert color images into black and white
+Colorize black and white portraits, and re-colorize old faded color portraits
+Who This Book Is For
+
+Pro Photo Colorizing with GIMP is primarily for GIMP users (but users of other photo editing software packages can benefit as well). It is especially useful for those who edit photographs, restore old photographs, or those who want to apply colorizing techniques for artistic effect.
+
+39 <--> Learn GREP and SED on Linux for Beginners - Lite (2016)
+http://nitroflare.com/view/05FD39B2E86FD51/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part1.rar
+http://nitroflare.com/view/F3FC4A4E4582FFE/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part2.rar
+http://nitroflare.com/view/4AE1D26CA2A2DE5/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part3.rar
+http://nitroflare.com/view/76884E82C106DFA/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part4.rar
+
+
+Learn GREP and SED on Linux for Beginners - Lite
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 38M | Lec: 8 | 311 MB
+Genre: eLearning | Language: English
+
+This course explores in details of two powerful tools grep and sed
+
+One of the most important tasks we undertake in Linux is processing text in files. This course explores two powerful tools we have to do this: grep and sed. Grep and sed find and manipulate text in files using regular expressions, which use special characters for searching and replacing text.
+
+In the course, we’ll introduce regular expression syntax in the context of learning grep, then apply what we’ve learned as we work with sed. Topics include:
+
+- finding text with grep
+- regular expression syntax
+- meta characters
+- validating emails and phone numbers
+
+
+
+43 <--> C++ Operating on Files
+http://nitroflare.com/view/82281F17B91E7A9/C%2B%2B_Operating_on_Files.part1.rar
+http://nitroflare.com/view/0B1E4C5CCA2C06B/C%2B%2B_Operating_on_Files.part2.rar
+http://nitroflare.com/view/FEAA33035B5A0E3/C%2B%2B_Operating_on_Files.part3.rar
+http://nitroflare.com/view/5A3B5BAD3D58753/C%2B%2B_Operating_on_Files.part4.rar
+
+
+C++ Operating on Files
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | Lec: 17 | 304 MB
+Genre: eLearning | Language: English
+
+Learn how to easly use fstream library with the help of expert in that matter
+
+This course is about operating on files in C++ language using the fstream (file stream) library.
+
+This course consists of over 2 hours of great content. Before buying, please watch free videos so that you will see for yourself if you like the way I teach.
+
+You do not need to know anything about operating on files, but it's good idea to know the basics of C++ language.
+
+After this course you will know:
+
+how to operate on input and output streams,
+how to open and close files and how to handle errors connected to that operations,
+states of file opening,
+stream’s error flags,
+how to check the size of an opened file,
+what binary files are and how to compare them,
+how to extract and save the content of a file,
+how to create a mini database that allows you to add, show, search, remove, load, and save,
+many functions about working on files
+Over 1000 students bought my course, and all of them are happy. You will also be satisfied with this course. If you do not like the course, remember that you can take for 30 days a full refund. I guarantee you satisfaction.
+
+If you have any questions regarding the topics covered in this course after watching the videos please feel free to ask. I'm always happy to help.
+
+
+46 <--> Intermediate Python Programming
+http://nitroflare.com/view/4C04A4728346C40/Or-Int.Py.Pro.part1.rar
+http://nitroflare.com/view/F0D2AB06CB7E25A/Or-Int.Py.Pro.part2.rar
+http://nitroflare.com/view/11AD34222774FC2/Or-Int.Py.Pro.part3.rar
+
+
+Intermediate Python Programming
+HDRips | MP4/AVC, ~1251 kb/s | 1280x720 | Duration: 02:56:37 | English: AAC, 128 kb/s (2 ch) | + Work Files
+Size: 1.58 GB | Genre: Development / Programming
+
+What do Scrabble cheaters, Shakespearean sonnets, Twitter, and the Astronomy Picture of the Day have to do with Python software programming? For software impresario Jessica McKellar, they’re playful tools for teaching intermediate-level Python programming techniques. During her time as an organizer of the Boston Python User Group (one of the world’s largest Python groups), she taught hundreds of Python wannabees to happily program like pros. She uses that experience to benefit the next generation of Pythonistas in this follow-up to her widely popular Introduction to Python video.
+
+Review data structures like lists, dictionaries, and sets; and when to best use them
+Discover list comprehensions, a conceptual technique for constructing lists in an easy way
+Analyze code performance using tools like profiling, code timing, and Big O notation
+Understand why refractoring code can make it more testable
+Learn best practices for scripting and documentation
+Practice the smart ways to navigate an existing codebase
+Search for, replace, and parse text using regular expressions and the re module
+Understand single threaded programs, threading primitives, and multi-threaded programs
+
+Jessica McKellar is the Director of Engineering at DropBox in San Francisco. A graduate of MIT, she enjoys the Internet, networking, low-level systems engineering, and contributing to and helping other people contribute to open source software. She is a Python Twisted maintainer and a local STEM volunteer.
+
+
+60 <--> Projects in Hadoop and Big Data - Learn by Building Apps
+http://nitroflare.com/view/EA9001D27B8D5BA/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part1.rar
+http://nitroflare.com/view/86499B6281B991B/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part2.rar
+http://nitroflare.com/view/1FF559A503C33C9/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part3.rar
+http://nitroflare.com/view/8D2A900295060D9/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part4.rar
+http://nitroflare.com/view/C6CAC158CB0EED7/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part5.rar
+http://nitroflare.com/view/84E4990255FA818/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part6.rar
+http://nitroflare.com/view/305F1852E4F38CB/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part7.rar
+
+
+Projects in Hadoop and Big Data - Learn by Building Apps
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 10 Hours | Lec: 43 | 2.64 GB
+Genre: eLearning | Language: English
+
+A Practical Course to Learn Big Data Technologies While Developing Professional Projects
+
+The most awaited Big Data course on the planet is here. The course covers all the major big data technologies within the Hadoop ecosystem and weave them together in real life projects. So while doing the course you not only learn the nuances of the hadoop and its associated technologies but see how they solve real world problems and how they are being used by companies worldwide.
+
+This course will help you take a quantum jump and will help you build Hadoop solutions that will solve real world problems. However we must warn you that this course is not for the faint hearted and will test your abilities and knowledge while help you build a cutting edge knowhow in the most happening technology space. The course focuses on the following topics
+
+Add Value to Existing Data - Learn how technologies such as Mapreduce applies to Clustering problems. The project focus on removing duplicate or equivalent values from a very large data set with Mapreduce.
+
+Hadoop Analytics and NoSQL - Parse a twitter stream with Python, extract keyword with apache pig and map to hdfs, pull from hdfs and push to mongodb with pig, visualise data with node js . Learn all this in this cool project.
+
+Kafka Streaming with Yarn and Zookeeper - Set up a twitter stream with Python, set up a Kafka stream with java code for producers and consumers, package and deploy java code with apache samza. 
+
+Real-Time Stream Processing with Apache Kafka and Apache Storm - This project focus on twitter streaming but uses Kafka and apache storm and you will learn to use each of them effectively.
+
+Big Data Applications for the Healthcare Industry with Apache Sqoop and Apache Solr - Set up the relational schema for a Health Care Data dictionary used by the US Dept of Veterans Affairs, demonstrate underlying technology and conceptual framework. Demonstrate issues with certain join queries that fail on MySQL, map technology to a Hadoop/Hive stack with Scoop and HCatalog, show how this stack can perform the query successfully.
+
+Log collection and analytics with the Hadoop Distributed File System using Apache Flume and Apache HCatalog - Use Apache Flume and Apache HCatalog to map real time log stream to hdfs and tail this file as Flume event stream. , Map data from hdfs to Python with Pig, use Python modules for analytic queries
+
+Data Science with Hadoop Predictive Analytics - Create structured data with Mapreduce, Map data from hdfs to Python with Pig, run Python Machine Learning logistic regression, use Python modules for regression matrices and supervise training
+
+Visual Analytics with Apache Spark on Yarn - Create structured data with Mapreduce, Map data from hdfs to Python with Spark, convert Spark dataframes and RDD’s to Python datastructures, Perform Python visualisations
+
+Customer 360 degree view, Big Data Analytics for e-commerce - Demonstrate use of EComerce tool ‘Datameer’ to perform many fof the analytic queries from part 6,7 and 8. Perform queries in the context of Senitment analysis and Twiteer stream.
+
+Putting it all together Big Data with Amazon Elastic Map Reduce - Rub clustering code on AWS Mapreduce cluster. Using AWS Java sdk spin up a Dedicated task cluster with the same attributes.
+
+So after this course you can confidently built almost any system within the Hadoop family of technologies. This course comes with complete source code and fully operational Virtual machines which will help you build the projects quickly without wasting too much time on system setup. The course also comes with English captions. So buckle up and join us on our journey into the Big Data.
+
+8/29/2016 [END]
+
+
+8/26/2016 [START]
+
+9 <--> Formatting With PowerShell
+http://nitroflare.com/view/C50356579E49F09/Formatting_With_PowerShell.part1.rar
+http://nitroflare.com/view/548BFAB72362F39/Formatting_With_PowerShell.part2.rar
+http://nitroflare.com/view/8248C2F779435A7/Formatting_With_PowerShell.part3.rar
+http://nitroflare.com/view/85D8F4A29A52D89/Formatting_With_PowerShell.part4.rar
+
+
+Formatting With PowerShell
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 380 MB
+Genre: eLearning | Language: English
+
+This course looks at formatting with PowerShell. It examines all your potential formatting options using PowerShell.
+
+This course takes a close look at a variety of mechanisms you can leverage to get great looking output from Powershell. The first two modules focus on string formatting and using the ToString() method. The rest of the course looks at using Format-* cmdlets, hash tables, and using format files and Format XML.
+
+
+23 <--> WPF Productivity Playbook (2016)
+http://nitroflare.com/view/40B26A3B362623A/WPF_Productivity_Playbook.part1.rar
+http://nitroflare.com/view/8D48F9A6296F37D/WPF_Productivity_Playbook.part2.rar
+http://nitroflare.com/view/B2019FA2943228E/WPF_Productivity_Playbook.part3.rar
+http://nitroflare.com/view/2A45FD7E0D692E6/WPF_Productivity_Playbook.part4.rar
+http://nitroflare.com/view/1A69951F51E0067/WPF_Productivity_Playbook.part5.rar
+
+
+WPF Productivity Playbook
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | 707 MB
+Genre: eLearning | Language: English
+
+This course contains a collection of tips, tricks, and techniques that will help you become a more productive and confident WPF developer, able to leverage the full power of the platform.
+
+This course, WPF Productivity Playbook, walks you through a couple dozen capabilities and techniques with WPF that will help you fully harness the WPF platform to build user interfaces that delight your users while letting you be as productive as possible writing clean, maintainable code. First, you'll to see some the best ways to be productive using the Visual Studio XAML designer to layout controls, as well as how to use drag and drop data binding features in the designer. Next, you'll use the template editing modes of Blend and Visual Studio to have a visual editing experience when working with custom controls, ControlTemplates, and DataTemplates. You'll also get some XAML coding guidelines that you can use when writing XAML by hand to make sure that code is easy to read and more maintainable. After completing this course, you'll be ready to unlock the full potential of Visual Studio and Blend tooling.
+
+8/26/2016 [END]8/24/2016 START
+
+0 <--> Swift Development for the Apple Watch: An Intro to the WatchKit Framework, Glances, and Notifications
+
+15 <--> Foundations for Analytics with Python: From Non-Programmer to Hacker
+http://nitroflare.com/view/FF1FF431F2EE97D/1491922532.pdf
+http://nitroflare.com/view/76173E33B45177F/1491922532.epub
+http://nitroflare.com/view/C03711FD81733EC/1491922532.mobi
+
+
+Clinton W. Brownley, "Foundations for Analytics with Python: From Non-Programmer to Hacker"
+English | ISBN: 1491922532 | 2016 | PDF/EPUB/MOBI | 356 pages | 313 MB/20 MB/27 MB
+
+If you’re like many of Excel’s 750 million users, you want to do more with your data—like repeating similar analyses over hundreds of files, or combining data in many files for analysis at one time. This practical guide shows ambitious non-programmers how to automate and scale the processing and analysis of data in different formats—by using Python.
+
+After author Clinton Brownley takes you through Python basics, you’ll be able to write simple scripts for processing data in spreadsheets as well as databases. You’ll also learn how to use several Python modules for parsing files, grouping data, and producing statistics. No programming experience is necessary.
+
+Create and run your own Python scripts by learning basic syntax
+Use Python’s csv module to read and parse CSV files
+Read multiple Excel worksheets and workbooks with the xlrd module
+Perform database operations in MySQL or with the mysqlclient module
+Create Python applications to find specific records, group data, and parse text files
+Build statistical graphs and plots with matplotlib, pandas, ggplot, and seaborn
+Produce summary statistics, and estimate regression and classification models
+Schedule your scripts to run automatically in both Windows and Mac environments
+
+8/24/2016 END
+
 2016/08/22
 
 0 <--> A Modern Perspective on Type Theory: From its Origins until Today (Repost)
@@ -4808,7 +5067,6 @@ The error functions and output functions of a neural network are exactly the sam
 
 ******
 5 <--> Designing Machine Learning Systems with Python
-http://avxhome.in/blogs/Grev27
 http://nitroflare.com/view/98A19B0ED2E7E66/1785882953.pdf
 http://nitroflare.com/view/6520FB5F6DF2112/1785882953.epub
 http://nitroflare.com/view/DEC4490835FE165/1785882953.mobi
