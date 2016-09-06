@@ -1,3 +1,243 @@
+August 31, 2016 | [START]
+
+0 <--> Google+ Marketing Secret - Step-By-Step Training Guide 2.0
+
+6 <--> Hadoop for .NET Developers (2016)
+http://nitroflare.com/view/8EACFA8022D44DE/Hadoop_for_.NET_Developers.part1.rar
+http://nitroflare.com/view/B027AB78F869165/Hadoop_for_.NET_Developers.part2.rar
+http://nitroflare.com/view/AC0220695BFF84D/Hadoop_for_.NET_Developers.part3.rar
+http://nitroflare.com/view/E1E4E94F03676B9/Hadoop_for_.NET_Developers.part4.rar
+http://nitroflare.com/view/C835DCE863260FE/Hadoop_for_.NET_Developers.part5.rar
+
+
+Hadoop for .NET Developers
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | 419 MB
+Genre: eLearning | Language: English
+
+Big Data is becoming part of every company, and Hadoop is the core technology for storing and accessing huge quantities of data. This course will teach you how to use Hadoop in the Microsoft world - running on Windows and using .NET to write queries.
+
+Big Data is an established discipline, and every company can benefit from storing and analyzing large amounts of data to improve their products and services. Hadoop is the key technology in Big Data, but it's too often seen as something which is only for Java and Linux people. This course, Hadoop for .NET Developers, will teach you how to use this key technology. First, you'll learn how to bring Hadoop into a Microsoft environment. You'll also discover how to run the services on Windows and create fast, understandable MapReduce queries in .NET using C#. The course takes a proof-of-concept approach, demonstrating how to evaluate Hadoop on Windows with .NET and .NET Core. By the end of the course, you'll be able to start your own Hadoop journey with confidence.
+
+
+107 <--> C++ Operating on Files
+http://nitroflare.com/view/82281F17B91E7A9/C%2B%2B_Operating_on_Files.part1.rar
+http://nitroflare.com/view/0B1E4C5CCA2C06B/C%2B%2B_Operating_on_Files.part2.rar
+http://nitroflare.com/view/FEAA33035B5A0E3/C%2B%2B_Operating_on_Files.part3.rar
+http://nitroflare.com/view/5A3B5BAD3D58753/C%2B%2B_Operating_on_Files.part4.rar
+
+
+C++ Operating on Files
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | Lec: 17 | 304 MB
+Genre: eLearning | Language: English
+
+Learn how to easly use fstream library with the help of expert in that matter
+
+This course is about operating on files in C++ language using the fstream (file stream) library.
+
+This course consists of over 2 hours of great content. Before buying, please watch free videos so that you will see for yourself if you like the way I teach.
+
+You do not need to know anything about operating on files, but it's good idea to know the basics of C++ language.
+
+After this course you will know:
+
+how to operate on input and output streams,
+how to open and close files and how to handle errors connected to that operations,
+states of file opening,
+stream’s error flags,
+how to check the size of an opened file,
+what binary files are and how to compare them,
+how to extract and save the content of a file,
+how to create a mini database that allows you to add, show, search, remove, load, and save,
+many functions about working on files
+Over 1000 students bought my course, and all of them are happy. You will also be satisfied with this course. If you do not like the course, remember that you can take for 30 days a full refund. I guarantee you satisfaction.
+
+If you have any questions regarding the topics covered in this course after watching the videos please feel free to ask. I'm always happy to help.
+
+126 <--> Intermediate Python Programming
+http://nitroflare.com/view/4C04A4728346C40/Or-Int.Py.Pro.part1.rar
+http://nitroflare.com/view/F0D2AB06CB7E25A/Or-Int.Py.Pro.part2.rar
+http://nitroflare.com/view/11AD34222774FC2/Or-Int.Py.Pro.part3.rar
+
+
+Intermediate Python Programming
+HDRips | MP4/AVC, ~1251 kb/s | 1280x720 | Duration: 02:56:37 | English: AAC, 128 kb/s (2 ch) | + Work Files
+Size: 1.58 GB | Genre: Development / Programming
+
+What do Scrabble cheaters, Shakespearean sonnets, Twitter, and the Astronomy Picture of the Day have to do with Python software programming? For software impresario Jessica McKellar, they’re playful tools for teaching intermediate-level Python programming techniques. During her time as an organizer of the Boston Python User Group (one of the world’s largest Python groups), she taught hundreds of Python wannabees to happily program like pros. She uses that experience to benefit the next generation of Pythonistas in this follow-up to her widely popular Introduction to Python video.
+
+Review data structures like lists, dictionaries, and sets; and when to best use them
+Discover list comprehensions, a conceptual technique for constructing lists in an easy way
+Analyze code performance using tools like profiling, code timing, and Big O notation
+Understand why refractoring code can make it more testable
+Learn best practices for scripting and documentation
+Practice the smart ways to navigate an existing codebase
+Search for, replace, and parse text using regular expressions and the re module
+Understand single threaded programs, threading primitives, and multi-threaded programs
+
+Jessica McKellar is the Director of Engineering at DropBox in San Francisco. A graduate of MIT, she enjoys the Internet, networking, low-level systems engineering, and contributing to and helping other people contribute to open source software. She is a Python Twisted maintainer and a local STEM volunteer.
+
+
+143 <--> How to Build a Custom Gaming PC (2016)
+http://nitroflare.com/view/0382A3F7BD4DA2A/How_to_Build_a_Custom_Gaming_PC.part1.rar
+http://nitroflare.com/view/E1046516BA4591A/How_to_Build_a_Custom_Gaming_PC.part2.rar
+http://nitroflare.com/view/A0DA9CBDA8FF542/How_to_Build_a_Custom_Gaming_PC.part3.rar
+http://nitroflare.com/view/5D4C4F3725B2B5E/How_to_Build_a_Custom_Gaming_PC.part4.rar
+http://nitroflare.com/view/0E3B57FBEC0997A/How_to_Build_a_Custom_Gaming_PC.part5.rar
+http://nitroflare.com/view/2E55D238122BF21/How_to_Build_a_Custom_Gaming_PC.part6.rar
+http://nitroflare.com/view/2C81E770564288E/How_to_Build_a_Custom_Gaming_PC.part7.rar
+
+
+How to Build a Custom Gaming PC
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | Lec: 42 | 4.24 GB
+Genre: eLearning | Language: English
+
+The complete guide to designing and building your own custom PC.
+
+Learn how to build your very own custom gaming PC from the ground up! No prior experience or knowledge is required to enroll in this do-it-yourself project course.
+
+My name is Cody Ray Miller, an IT professional and complete computer geek. I'll be walking you through the process of building your own PC step-by-step.
+
+The course covers everything from selecting custom parts, to putting it all together. Plus bonus sections to help you DIG DEEP inside each piece of hardware and understand how it works and why..
+
+Although intended for absolute beginners, anyone can enroll in this course and follow along to build an awesome gaming PC for less than $1,000.
+
+After taking this course, you'll know exactly how to DESIGN and BUILD a computer system of any kind, for any purpose. You'll be fully equipped to create systems for other people, according to their specific needs.
+
+You'll also increase your knowledge of all system components, thereby improving your ability to diagnose, troubleshoot, and repair PC hardware.
+
+All course updates are 100% FREE. Buy this course one time and you own it for life. Not only that, but you will also gain lifetime access to me as your personal instructor. Have a question about building a PC? Just ask! You, as my student, are my #1 priority.
+
+
+150 <--> Projects in Hadoop and Big Data - Learn by Building Apps
+http://nitroflare.com/view/EA9001D27B8D5BA/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part1.rar
+http://nitroflare.com/view/86499B6281B991B/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part2.rar
+http://nitroflare.com/view/1FF559A503C33C9/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part3.rar
+http://nitroflare.com/view/8D2A900295060D9/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part4.rar
+http://nitroflare.com/view/C6CAC158CB0EED7/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part5.rar
+http://nitroflare.com/view/84E4990255FA818/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part6.rar
+http://nitroflare.com/view/305F1852E4F38CB/Projects_in_Hadoop_and_Big_Data_-_Learn_by_Building_Apps.part7.rar
+
+
+Projects in Hadoop and Big Data - Learn by Building Apps
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 10 Hours | Lec: 43 | 2.64 GB
+Genre: eLearning | Language: English
+
+A Practical Course to Learn Big Data Technologies While Developing Professional Projects
+
+The most awaited Big Data course on the planet is here. The course covers all the major big data technologies within the Hadoop ecosystem and weave them together in real life projects. So while doing the course you not only learn the nuances of the hadoop and its associated technologies but see how they solve real world problems and how they are being used by companies worldwide.
+
+This course will help you take a quantum jump and will help you build Hadoop solutions that will solve real world problems. However we must warn you that this course is not for the faint hearted and will test your abilities and knowledge while help you build a cutting edge knowhow in the most happening technology space. The course focuses on the following topics
+
+Add Value to Existing Data - Learn how technologies such as Mapreduce applies to Clustering problems. The project focus on removing duplicate or equivalent values from a very large data set with Mapreduce.
+
+Hadoop Analytics and NoSQL - Parse a twitter stream with Python, extract keyword with apache pig and map to hdfs, pull from hdfs and push to mongodb with pig, visualise data with node js . Learn all this in this cool project.
+
+Kafka Streaming with Yarn and Zookeeper - Set up a twitter stream with Python, set up a Kafka stream with java code for producers and consumers, package and deploy java code with apache samza. 
+
+Real-Time Stream Processing with Apache Kafka and Apache Storm - This project focus on twitter streaming but uses Kafka and apache storm and you will learn to use each of them effectively.
+
+Big Data Applications for the Healthcare Industry with Apache Sqoop and Apache Solr - Set up the relational schema for a Health Care Data dictionary used by the US Dept of Veterans Affairs, demonstrate underlying technology and conceptual framework. Demonstrate issues with certain join queries that fail on MySQL, map technology to a Hadoop/Hive stack with Scoop and HCatalog, show how this stack can perform the query successfully.
+
+Log collection and analytics with the Hadoop Distributed File System using Apache Flume and Apache HCatalog - Use Apache Flume and Apache HCatalog to map real time log stream to hdfs and tail this file as Flume event stream. , Map data from hdfs to Python with Pig, use Python modules for analytic queries
+
+Data Science with Hadoop Predictive Analytics - Create structured data with Mapreduce, Map data from hdfs to Python with Pig, run Python Machine Learning logistic regression, use Python modules for regression matrices and supervise training
+
+Visual Analytics with Apache Spark on Yarn - Create structured data with Mapreduce, Map data from hdfs to Python with Spark, convert Spark dataframes and RDD’s to Python datastructures, Perform Python visualisations
+
+Customer 360 degree view, Big Data Analytics for e-commerce - Demonstrate use of EComerce tool ‘Datameer’ to perform many fof the analytic queries from part 6,7 and 8. Perform queries in the context of Senitment analysis and Twiteer stream.
+
+Putting it all together Big Data with Amazon Elastic Map Reduce - Rub clustering code on AWS Mapreduce cluster. Using AWS Java sdk spin up a Dedicated task cluster with the same attributes.
+
+So after this course you can confidently built almost any system within the Hadoop family of technologies. This course comes with complete source code and fully operational Virtual machines which will help you build the projects quickly without wasting too much time on system setup. The course also comes with English captions. So buckle up and join us on our journey into the Big Data.
+
+
+
+180 <--> Formatting With PowerShell
+http://nitroflare.com/view/C50356579E49F09/Formatting_With_PowerShell.part1.rar
+http://nitroflare.com/view/548BFAB72362F39/Formatting_With_PowerShell.part2.rar
+http://nitroflare.com/view/8248C2F779435A7/Formatting_With_PowerShell.part3.rar
+http://nitroflare.com/view/85D8F4A29A52D89/Formatting_With_PowerShell.part4.rar
+
+
+Formatting With PowerShell
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 380 MB
+Genre: eLearning | Language: English
+
+This course looks at formatting with PowerShell. It examines all your potential formatting options using PowerShell.
+
+This course takes a close look at a variety of mechanisms you can leverage to get great looking output from Powershell. The first two modules focus on string formatting and using the ToString() method. The rest of the course looks at using Format-* cmdlets, hash tables, and using format files and Format XML.
+
+
+184 <--> More Data Mining with R
+http://nitroflare.com/view/997B88D0B727642/More_Data_Mining_With_R.part1.rar
+http://nitroflare.com/view/0B6701388871A27/More_Data_Mining_With_R.part2.rar
+http://nitroflare.com/view/CD0040EFC59D69E/More_Data_Mining_With_R.part3.rar
+http://nitroflare.com/view/825D634D22F1FB0/More_Data_Mining_With_R.part4.rar
+http://nitroflare.com/view/B7C70AA1B5B88C3/More_Data_Mining_With_R.part5.rar
+http://nitroflare.com/view/ECB9614C72104DF/More_Data_Mining_With_R.part6.rar
+http://nitroflare.com/view/A44757104792F32/More_Data_Mining_With_R.part7.rar
+
+
+More Data Mining with R
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 10.5 Hours | Lec: 67 | 3.06 GB
+Genre: eLearning | Language: English
+
+How to perform market basket analysis, analyze social networks, mine Twitter data, text, and time series data.
+
+More Data Mining with R presents a comprehensive overview of a myriad of contemporary data mining techniques. More Data Mining with R is the logical follow-on course to the preceding Udemy course More Data Mining with R: Go from Beginner to Advanced although it is not necessary to take these courses in sequential order. Both courses examine and explain a number of data mining methods and techniques, using concrete data mining modeling examples, extended case studies, and real data sets. Whereas the preceding More Data Mining with R: Go from Beginner to Advanced course focuses on: (1) linear, logistic and local polynomial regression; (2) decision, classification and regression trees (CART); (3) random forests; and (4) cluster analysis techniques, this course, More Data Mining with R presents detailed instruction and plentiful "hands-on" examples about: (1) association analysis (or market basket analysis) and creating, mining and interpreting association rules using several case examples; (2) network analysis, including the versatile iGraph visualization capabilities, as well as social network data mining analysis cases (marriage and power; friendship links); (3) text mining using Twitter data and word clouds; (4) text and string manipulation, including the use of 'regular expressions'; (5) time series data mining and analysis, including an extended case study forecasting house price indices in Canberra, Australia.
+
+
+217 <--> Pluralsight - Windows Internals
+http://nitroflare.com/view/DCB3F3E62F2D6D0/Wind_Inter_Pl.part1.rar
+http://nitroflare.com/view/665E5870E965E87/Wind_Inter_Pl.part2.rar
+http://nitroflare.com/view/0566B28F1171179/Wind_Inter_Pl.part3.rar
+http://nitroflare.com/view/83AE97CA420758C/Wind_Inter_Pl.part4.rar
+http://nitroflare.com/view/AC1E8F06E12BC0C/Wind_Inter_Pl.part5.rar
+http://nitroflare.com/view/21FBE21F8E3E54F/Wind_Inter_Pl.part6.rar
+
+
+Pluralsight - Windows Internals
+WMV | WMV3 248kbps | English | 1024x768 | 25fps | 6h 47mins | WMA2 stereo 128kbps | 831 MB
+Genre: Video Training
+
+Software developers for Windows should understand the way Windows works, its mechanisms and algorithms, so they are able to write better software that can take advantage of Windows' strengths. The course deals with all the major terms in Windows, such as processes, threads, virtual memory and more. Whether you're a Win32 programmer, a .NET programmer or a device driver programmer, you should benefit from understanding Windows, which may help in troubleshooting difficult issues as well.
+
+Table of contents:
+Introduction12m 15s
+Basic Concepts1h 7m
+System Architecture (Part 1)1h 3m
+System Architecture (Part 2)1h 12m
+Processes and Threads (Part 1)1h 3m
+Processes and Threads (Part 2)58m 38s
+Processes and Threads (Part 3)1h 9m
+
+
+
+212 <--> Pluralsight - Windows Runtime Internals [repost]
+http://nitroflare.com/view/B1437F5EEFC062A/Wind_Runt_Int.part1.rar
+http://nitroflare.com/view/BADA89CE9652EB2/Wind_Runt_Int.part2.rar
+http://nitroflare.com/view/939D219F4DC19E7/Wind_Runt_Int.part3.rar
+http://nitroflare.com/view/7857519BAE81198/Wind_Runt_Int.part4.rar
+http://nitroflare.com/view/7165424E0ABA790/Wind_Runt_Int.part5.rar
+
+
+Pluralsight - Windows Runtime Internals
+MP4 | AVC 313kbps | English | 1024x576 | 15fps | 2h 41mins | AAC stereo 192kbps | 564 MB
+Genre: Video Training
+
+This course will help you understand how the class-based component abstraction presented by Windows Runtime language projections is actually implemented in terms of traditional COM interfaces. You will learn all about the tools and compilers that are necessary to build rich components entirely with Standard C++ in the most efficient manner. You will discover how abstractions like constructors and static methods are implemented with activation factories. You will learn how delegates and events are actually implemented with COM interfaces and lock-free algorithms. And you will discover the weird and wonderful way that the Windows Runtime uses C++ templates to simulate CLR generics using parameterized interfaces.
+
+Table of contents:
+Introduction3m 3s
+Windows Runtime Apps35m 50s
+Windows Runtime Components42m 11s
+Constructors and Statics23m 19s
+Delegates and Events31m 12s
+Generics23m 44s
+Summary1m 44s
+
+August 31, 2016 | [END]
+
 August 24, 2016 | [STRAT]
 
 0 <--> Country Blues Musicianship

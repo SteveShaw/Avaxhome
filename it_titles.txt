@@ -1,7 +1,319 @@
-8/29/2016 [BEGIN]
+Tuesday, September 06, 2016 [START]
 
-0 <--> Le Guide Complet - Joomla!
-2009 | ISBN: 2300022192 | Français | 415 pages | PDF | 15 MB
+0 <--> A Python Book: Beginning Python, Advanced Python, and Python Exercises
+http://nitroflare.com/view/7F56CF659A39397/0984221239.pdf
+
+
+Dave Kuhlman, "A Python Book: Beginning Python, Advanced Python, and Python Exercises" 
+2011 | ISBN-10: 0984221239 | 200 pages | PDF | 1 MB
+
+This document is a self learning document for a course in Python programming. This course contains (1) a part for beginners, (2) a discussion of several advanced topics that are of interest to Python programmers, and (3) a Pythonworkbook with lots of exercises.
+
+
+
+15 <--> Curve-Fitting: The Science and Art of Approximation
+http://nitroflare.com/view/91B2E901A02821C/Curve-Fitting_-_D._James_Benton.rar
+
+
+Curve-Fitting: The Science and Art of Approximation by D. James Benton
+English | 31 Aug 2016 | ASIN: B01LDUK032 | 166 Pages | AZW3/MOBI/EPUB/PDF (conv) | 8.39 MB
+
+This is a how-to guide on the approximation of data. There are many books and articles on curve-fitting. This is intended as a supplement to, not a replacement for, such texts. Most references are either esoteric or simplistic. I hope to strike a balance between these two extremes and trust you will find this helpful. Many examples are included and all of the source code is available on-line.
+
+
+
+18 <--> Murach's MySQL, 2nd Edition
+http://nitroflare.com/view/9EE2783942EA6C7/1890774820.djvu
+
+
+Murach's MySQL, 2nd Edition by Joel Murach
+English | 2015 | ISBN: 1890774820 | 612 pages | DJVU | 11,5 MB
+
+"If you ever wanted to learn to use MySQL, write SQL queries, create database elements, then this is the book to pick up." (JavaRanch)
+
+"I was amazed at how much information was packed into this book."
+
+"As a developer with almost 10 years of MySQL experience, I still picked up a lot of new detail on things I thought I knew."
+
+"I found this to be a great introductory book to MySQL."
+
+"Has already proven to be helpful in solving several challenges I've encountered on my current MySQL project."
+
+That's a sampling of what developers said about the 1st Edition of Murach's MySQL.
+
+Now, this 2nd Edition has been updated and improved throughout. As a result, it's easier than ever to use for learning MySQL from scratch, for switching to MySQL from another flavor of SQL (like MS SQL Server or Oracle), or for quickly looking up the forgotten details that are so essential as you develop database applications.
+
+Section 1 introduces you to relational databases and SQL, shows you how to use the graphical MySQL Workbench to work with a MySQL database, and teaches you to code SQL queries to retrieve, add, update, and delete data in a MySQL database. Section 2 goes deeper into querying, showing you how to work with summary queries, subqueries, data types, and functions. Section 3 shows you how to design a MySQL database using an EER model, implement the design, and create views. Section 4 shows how to create stored procedures that provide functionality similar to procedural programming languages like PHP, Java, C++, C#, and VB. And Section 5 introduces you to database administration tasks like securing and backing up database data.
+
+Whether you start from the beginning or jump in anywhere, it's a great guide for MySQL users at any level. 
+
+
+19 <--> Forex Trading: From Nothing to Everything in 30 Days
+http://nitroflare.com/view/194F233A2EEF935/Forex_Trading_-_Ross_Wright.epub
+
+
+Ross Wright, "Forex Trading: From Nothing to Everything in 30 Days" 
+2016 | EPUB | 68 pages | ISBN: 1535235691 | English | 0.1 MB
+
+Do YOU want to Make Money Online from Forex?
+
+The Forex Market is huge and has huge potential for anyone who has an internet connection and $100
+
+I will personally teach you on how to start from nothing to making a ton of money from this money making machine. YOU will learn the following: 
+
+Forex Trading Plan 
+Forex Trading Strategies 
+Forex Technical Analysis 
+Forex Charts 
+Forex Price Action Trading 
+Forex Trading Basics 
+Risk Control 
+
+
+22 <--> How Machines Learn: An Illustrated Guide to Machine Learning
+http://nitroflare.com/view/2F297579411D09C/How_Machines_Learn_-_Helen_Edwards.pdf
+
+
+How Machines Learn: An Illustrated Guide to Machine Learning by Helen Edwards
+English | 30 Aug. 2016 | ASIN: B01LBQLR6M | 63 Pages | PDF (True) | 15.03 MB
+
+Artificial intelligence is changing our lives in ways we need to understand. Algorithms govern how we find information, how we learn, how we move, how we buy, what we buy, how we stay healthy, how we meet, whom we meet, how we are treated and what we are treated with. Marketing, analytics, diagnostics, manufacturing, driving, searching, speaking, seeing, hearing are all being disrupted and reshaped by machines that learn. Algorithms that can operate at the speed and scale that data is now generated are now making, what once was impossible, a practical reality. 
+
+The goal of this book is to get you up to speed on what drives the artificial intelligence you encounter today so you can understand what makes this field of computer science different from the software engineering of the past. It is aimed at executives who would like to use machine learning in their business and want to understand the underlying mechanics, and for anyone else who wants to understand more about the architectures driving artificial intelligence and machine learning.
+
+
+
+25 <--> Design Patterns Through C++
+http://nitroflare.com/view/A56F696DE372082/C%2B%2B_Design_Patterns.part1.rar
+http://nitroflare.com/view/24659583CE6F202/C%2B%2B_Design_Patterns.part2.rar
+http://nitroflare.com/view/DC29A753383C4F6/C%2B%2B_Design_Patterns.part3.rar
+http://nitroflare.com/view/465F459783DA201/C%2B%2B_Design_Patterns.part4.rar
+http://nitroflare.com/view/427FDE61683F1FD/C%2B%2B_Design_Patterns.part5.rar
+
+
+Design Patterns Through C++
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5.5 Hours | Lec: 63 | 574 MB
+Genre: eLearning | Language: English
+
+Learn best practices of software design to provide flexible and reusable software solution
+
+Subtitles are available for Introduction, Case Study and Design Patterns Concepts.
+
+Design and architecture of any software/solution provides the base and makes it flexible, extensible for future requirements. A good designed software/solution makes it easy to understand and maintain. Design patterns are known as best practices to design software for problems which are repeated in nature.
+
+This course "Design Patterns Through C++" gives you understanding of all 23 patterns described in Gang Of Four book - "Design Patterns: Elements of Reusable Object-Oriented Software", by Gamma, Helm, Johnson and Vlissides.
+
+Each pattern is explained in a simple way with intent, problem, solution and structure. Also the information of participants, collaboration, consequences and implementation are explained for each one. The pattern structure or example implementation of C++ source are explained to understand how it will be implemented in Object Oriented language C++.
+
+The course also provides C++ source code of each pattern to understand it in better way. This helps in applying the variation on implementation to see how it can resolve some other implementation bottleneck. There are quizzes after Creational, Structural and Behavioral patterns to check your understanding.
+
+This course will help to understand the best practices for design and apply them to do the better design of software/solution in C++.
+
+It will be good to have the Gang Of Four book - "Design Patterns: Elements of Reusable Object-Oriented Software", by Gamma, Helm, Johnson and Vlissides as a reference book for this course.
+
+
+
+47 <--> Pluralsight - High-performance Computing in C++ [repost]
+http://nitroflare.com/view/F6FE90221D8EEBE/High-perf_Com_C_Pl.part1.rar
+http://nitroflare.com/view/EE522008F76EB01/High-perf_Com_C_Pl.part2.rar
+http://nitroflare.com/view/A8DD88875841A3A/High-perf_Com_C_Pl.part3.rar
+http://nitroflare.com/view/2A9197670A723BF/High-perf_Com_C_Pl.part4.rar
+http://nitroflare.com/view/CEF298EF9A56757/High-perf_Com_C_Pl.part5.rar
+http://nitroflare.com/view/8D198877323CF70/High-perf_Com_C_Pl.part6.rar
+
+
+Pluralsight - High-performance Computing in C++
+MP4 | AVC 261kbps | English | 1024x576 | 15fps | 4h 03mins | AAC stereo 192kbps | 860 MB
+Genre: Video Training
+
+A course on topics related to high-performance computation. Covers SIMD, OpenMP, C++ AMP, and MPI. Do you want to get the absolute most performance out of your hardware? Want to write code that scales across CPU registers, multi-core, and machine clusters? Then this is the course for you!
+
+Table of contents:
+Single Instruction Multiple Data (SIMD)52m 29s
+Open Multi-Processing (OpenMP)37m 15s
+Message Passing Interface (MPI)56m 14s
+C++ Accelerated Massive Parallelism (C++ AMP)1h 0m
+Generative Art Demo36m 59s
+
+
+
+48 <--> Introduction to SQL
+http://nitroflare.com/view/14E43DF618F67B4/Introduction_to_SQL.part1.rar
+http://nitroflare.com/view/94FCCAA9A2FB096/Introduction_to_SQL.part2.rar
+http://nitroflare.com/view/56A8E6666C51300/Introduction_to_SQL.part3.rar
+
+
+Introduction to SQL
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | Lec: 24 | 228 MB
+Genre: eLearning | Language: English
+
+Learn the basics of the most popular programming language designed for managing data
+
+Learn the basic concepts and functions that you will need to make queries with the most popular data manipulating programming language, SQL.
+
+This course is about SQL commands in the main. You will learn the basics of queries. This is a fundamental part of databases so it is definitly worth learning.
+
+Learning the fundamentals of SQL is a good choice and puts a powerful tool at your fingertips. SQL is easy to learn as well as it has excellent documentations.
+
+The most important fact about SQL that it is used in almost every speciality from software engineering to financial analysis, so understanding the concepts and basic language features can prove to be very marketable.
+
+
+58 <--> Pluralsight - JavaScript: Advanced Fundamentals to jQuery & Pure DOM Scripting [repost]
+http://nitroflare.com/view/7A5E3E60B93F439/JavaSc_Adv_jQu_DOM_Scr.part01.rar
+http://nitroflare.com/view/89D35173FF8EB6B/JavaSc_Adv_jQu_DOM_Scr.part02.rar
+http://nitroflare.com/view/75B00436450AB48/JavaSc_Adv_jQu_DOM_Scr.part03.rar
+http://nitroflare.com/view/54B79B1CB51DA07/JavaSc_Adv_jQu_DOM_Scr.part04.rar
+http://nitroflare.com/view/46FAD30150ABBDF/JavaSc_Adv_jQu_DOM_Scr.part05.rar
+http://nitroflare.com/view/745AA2E67F030C5/JavaSc_Adv_jQu_DOM_Scr.part06.rar
+http://nitroflare.com/view/D2EE93BAD0F2CA5/JavaSc_Adv_jQu_DOM_Scr.part07.rar
+http://nitroflare.com/view/9E86A5E45DB867C/JavaSc_Adv_jQu_DOM_Scr.part08.rar
+
+
+Pluralsight - JavaScript: Advanced Fundamentals to jQuery & Pure DOM Scripting
+MP4 | AVC 571kbps | English | 1280x720 | 24fps | 8h 59mins | AAC stereo 71kbps | 2.51 GB
+Genre: Video Training
+
+Gain an advanced understanding of difficult JavaScript concepts such as JavaScript closure, new keyword, “this”, prototypical inheritance, type comparators, coercion, and delete. Learn what happens in memory with pointers when using assignments and “delete”. Then learn what’s under the hood of the popular jQuery library by building your own version of the library in vanilla JavaScript and the DOM API. Learn to build interactive components from scratch using pure DOM scripting and advanced JS concepts.
+
+Table of contents:
+JavaScript Basics20m 24s
+Data Types, Operators, and Primitives39m 36s
+Comparison15m 9s
+Closures58m 38s
+Context1h 2m
+Prototypal Inheritance51m 56s
+jQuery Functional Units1h 13m
+Finding Elements1h 42m
+Traversing Elements37m 8s
+Attributes and Properties30m 24s
+Events31m 25s
+Building a Tabs Widget16m 23s
+
+75 <--> Embedded Software Development for the Internet Of Things
+http://nitroflare.com/view/F693E3A25ECBE3E/Embedded_Software_Development_for_the_Internet_Of_Things_-_Klaus_Elk.pdf
+
+
+Embedded Software Development for the Internet Of Things: The Basics, the Technologies and Best Practices by Klaus Elk
+English | 27 Aug 2016 | ASIN: B01L63C0C0 | 239 Pages | PDF | 14.09 MB
+
+The aim of this book is to help you understand the technologies behind the devices used in the Internet Of Things. This is done with a mixture of theory, examples and 'war-stories'.
+This book may be read by senior students, but it is more likely to be read by programmers and developers, who have done some programming of PC's in Windows or Linux, 
+and are now faced with developing devices for the Internet Of Things. 
+Basic programming skills are thus assumed, whereas no prior knowledge on TCP/IP and Digital Signal Processing is needed. 
+Based on many years of experience as developer, university-teacher and manager, the author's personal view on best practices in the embedded world is offered. 
+
+Part I introduces the main features of Embedded Operating Systems and modern highly integrated CPU's and thus builds the foundation for part II.
+
+Part II - on Internet Protocols and Digital Filters - is the main 'textbook'. It provides a lot of facts, backed up by examples. 
+The many network cases are illustrated with the help of WireShark Captures. 
+The chapter on digital filters is focused on making the reader understand the basics, without getting lost in formulas. 
+
+Part III describes the authors experience with best practices when working with embedded networking. 
+The author's experience as a developer, combined with his overview as manager, results in a pragmatic and higly usable set of guidelines. 
+
+One of the strongest features of this book is the many B/W figures. They make the book inviting and helps the reader remember the knowledge given.
+
+
+78 <--> Security for Hackers and Developers: Code Auditing (2016)
+http://nitroflare.com/view/7EE59CFB12ACBBD/Security_for_Hackers_and_Developers_Code_Auditing.part1.rar
+http://nitroflare.com/view/F87011FEAE62BCF/Security_for_Hackers_and_Developers_Code_Auditing.part2.rar
+http://nitroflare.com/view/09BB46D8898ED23/Security_for_Hackers_and_Developers_Code_Auditing.part3.rar
+http://nitroflare.com/view/C3881C4BC0206C0/Security_for_Hackers_and_Developers_Code_Auditing.part4.rar
+
+
+Security for Hackers and Developers: Code Auditing
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 305 MB
+Genre: eLearning | Language: English
+
+(C/C++) Did you know that bugs in software costs the economy billions of dollars a year? In this course, you are going to help turn the tide as you learn how to find and fix critical bugs quicker.
+
+Bugs in software can be very expensive issues that can arise from not thoroughly testing and re-testing your code. In this course, Security for Hackers and Developers: Code Auditing, you will learn about manual code pentesting and all about how a professional code auditor finds bugs in code. You'll mainly be focusing on C/C++, but the high level ideas apply to all languages. By going deep into the weeds on C and C++ code, learners will appreciate the depth and experience required to audit this and any language code. First you'll learn about code auditing tools and techniques, as well has why memory corruption happens and how to prevent it. Then you'll learn all about the newer bug types such as use-after-free, type confusion, and kernel double fetch. You'll wrap up the course by learning about the real-world vulnerabilities like Heartbleed and other critical browser bugs. By the end this course, you'll know how to audit code with confidence. You'll know how to spot bugs, understand why they're important, and architect modern protections.
+
+
+
+96 <--> SCILAB: A Practical Introduction to Programming and Problem Solving
+http://nitroflare.com/view/FA7E36B271037B1/SCILAB_A_Practical_Introduction_to_Programming_and_Problem_Solving_-_Tejas_Sheth.pdf
+
+
+SCILAB: A Practical Introduction to Programming and Problem Solving by Tejas Sheth
+English | 25 Aug 2016 | ASIN: B01L1R0IIE | 243 Pages | PDF (True) | 21.56 MB
+
+Scilab is open source software distributed under CeCILL license. Scilab is widely used in Engineering, Sciences and mathematics as a free tool. Scilab includes hundreds of mathematical functions. It has a high level programming language allowing access to advanced data structures, 2D and 3D graphical functions. Scilab is used as matrix laboratory. 
+Assuming no knowledge of programming, this book guides the reader through both programming and built-in functions to easily exploit Scilab's extensive capabilities for tackling engineering problems. 
+The book starts with programming concepts, such as variables, assignments, and selection statements, moves on to loops, and then solves problems using both the programming concept. In-depth coverage is given to input/output, data structure a topic fundamental to many engineering applications. Book introduce the numerical analysis. Books also show the capability of SCILAB in 2D and 3D plotting. 
+This book is based on the most recent version of Scilab (5.5) and a great deal of care has been put into communicating the best practices relevant to the current software. Scilab is available for Windows/ Mac and Linux but this book is written as platform independent. 
+•	Presents programming concepts and Scilab built-in functions and developing scripts. 
+•	Systematic, step-by-step approach, building on concepts throughout the book, facilitating easier learning 
+•	Sections on common pitfalls and programming guidelines direct students towards best practice 
+
+The books is 238 pages with the ten different chapter like 
+1.	Scilab: An Introduction 
+2.	Arrays: Vector Matrix 
+3.	Mathematical Operation with Arrays 
+4.	Using Script Files and Managing Data 
+5.	Two-Dimensional Plots 
+6.	Programming in Scilab 
+7.	User-Defined Function and Function Library
+8.	Polynomials, Curve Fittings, and Interpolation 
+9.	Application in Numerical Analysis 
+10.	Three-Dimensional Plots. 
+A-1 XCOS 
+A-2 ATOMS 
+
+
+94 <--> Introduction to WinAPI
+http://nitroflare.com/view/D5A7480DB74279A/Introduction_to_WinAPI_-_Ivan_Shumskiy.pdf
+
+
+Introduction to WinAPI by Ivan Shumskiy
+English | 20 Aug 2016 | ASIN: B01KRSYRXU | 362 Pages | PDF (True) | 2.52 MB
+
+Win32 API (hereinafter WinAPI) - a set of functions (API - application programming interfaces), running under Windows environment. These functions are contained in windows.h library. 
+Windows API is designed to be used with C language to write the applications under MS Windows operating system environment. Windows API is the closest way to interact with operating system from the application level. The lower level access is required only for device drivers in the current versions 
+of Windows and is available through the Windows Driver Model. 
+Windows API is a set of functions, data structures and numerical constants, that follow C language conventions. All programming languages that can call to such functions and to operate these types of data in the programs executed under Windows, can use this API. In particular, the languages C ++, 
+Pascal, Visual Basic, and many others. 
+Using WinAPI functions you can easily create different window procedures, dialog boxes, software and even games. This library, so far, is the base for the development of Windows Forms programming, 
+MFC, because these interfaces are add-ons for that library. If you master it, you will easily create forms and understand how this happens.
+
+Tuesday, September 06, 2016 [END]
+
+Wednesday, August 31, 2016 | [START]
+
+39 <--> Python 3 Object-Oriented Programming - Second Edition (repost)
+http://nitroflare.com/view/5A3DB1F6FC2B105/Python_3_Object_Oriented_Programming.rar
+
+
+Dusty Phillips "Python 3 Object-Oriented Programming - Second Edition"
+Publisher: Packt Publishing | English | 2015 | ISBN: 1784398780 | 460 pages | PDF | 32 MB
+
+Unleash the power of Python 3 objects About This Book Stop writing scripts and start architecting programs Learn the latest Python syntax and libraries A practical, hands-on tutorial that teaches you all about abstract design patterns and how to implement them in Python 3 Who This Book Is For If you're new to object-oriented programming techniques, or if you have basic Python skills and wish to learn in depth how and when to correctly apply object-oriented programming in Python to design software, this is the book for you.
+
+40 <--> Effective Python: 59 Specific Ways to Write Better Python (repost)
+http://nitroflare.com/view/2242586C716B6E8/Effective_Python_59_Specific_Ways_to_Write_Better_Python.rar
+
+
+Brett Slatkin "Effective Python: 59 Specific Ways to Write Better Python"
+Publisher: Addison-Wesley Professional | English | 2015 | ISBN: 0134034287 | 256 pages | PDF | 12.2 MB
+
+It's easy to start writing code with Python: that's why the language is so immensely popular. However, Python has unique strengths, charms, and expressivity that can be hard to grasp at first – as well as hidden pitfalls that can easily trip you up if you aren't aware of them. Effective Python will help you harness the full power of Python to write exceptionally robust, efficient, maintainable, and well-performing code. Utilizing the concise, scenario-driven style pioneered in Scott Meyers's best-selling Effective C++, Brett Slatkin brings together 59 Python best practices, tips, shortcuts, and realistic code examples from expert programmers.
+
+Through realistic examples, Slatkin uncovers little-known Python quirks, intricacies, and idioms that powerfully impact code behavior and performance. You'll learn how to choose the most efficient and effective way to accomplish key tasks when multiple options exist, and how to write code that's easier to understand, maintain, and improve.
+
+Drawing on his deep understanding of Python's capabilities, Slatkin offers practical advice for each major area of development with both Python 3.x and Python 2.x. Coverage includes:
+Algorithms
+Objects
+Concurrency
+Collaboration
+Built-in modules
+Production techniques
+And more
+Each section contains specific, actionable guidelines organized into items, each with carefully worded advice supported by detailed technical arguments and illuminating examples. Using Effective Python, you can systematically improve all the Python code you write: not by blindly following rules or mimicking incomprehensible idioms, but by gaining a deep understanding of the technical reasons why they make sense.
+
+Wednesday, August 31, 2016 | [END]
+
+
+8/29/2016 [BEGIN]
 
 1 <--> The Design of Interpreters, Compilers, and Editors for Augmented Transition Networks
 http://nitroflare.com/view/48B37D61653CF43/The_Design_of_Interpreters%2C_Compilers%2C_and_Editors_for_Augmented_Transition_Networks.djvu
