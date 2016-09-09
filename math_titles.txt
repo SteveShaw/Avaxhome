@@ -1,4 +1,244 @@
-2016/08/23
+Wednesday, September 07, 2016 [START]
+
+
+1 <--> Nonlinear Functional Analysis
+
+
+Nonlinear Functional Analysis by Klaus Deimling
+Publisher: Springer | 1985 | ISBN: 3540139281 | 450 pages | DJVU | 17,9 MB
+
+
+
+14 <--> Fractional Calculus for Scientists and Engineers (Repost)
+http://nitroflare.com/view/528E1061747640D/Fractional_Calculus_for_Scientists_and_Engineers.pdf
+
+
+Manuel Duarte Ortigueira, "Fractional Calculus for Scientists and Engineers" 
+2011 | pages: 159 | ISBN: 9400707460 | PDF | 1,5 mb
+
+This book gives a practical overview of Fractional Calculus as it relates to Signal Processing
+
+
+
+
+
+67 <--> Hands-On Start to Wolfram Mathematica
+http://nitroflare.com/view/ECF6F1A67E053DB/1579550770.pdf
+
+
+Cliff Hastings, Kelvin Mischo, Michael Morrison, "Hands-On Start to Wolfram Mathematica" 
+2015 | ISBN-10: 1579550770 | 469 pages | PDF | 19 MB
+
+For more than 25 years, Mathematica has been the principal computation environment for millions of innovators, educators, students, and others around the world. This book is an introduction to Mathematica. The goal is to provide a hands-on experience introducing the breadth of Mathematica, with a focus on ease of use. Readers get detailed instruction with examples for interactive learning and end-of-chapter exercises. Each chapter also contains authors tips from their combined 50+ years of Mathematica use.
+
+
+
+
+
+68 <--> Regression Analysis and Linear Models: Concepts, Applications, and Implementation
+http://www.afhayes.com/
+http://nitroflare.com/view/D2E42218DB569B7/1462521134.pdf
+
+
+Richard B. Darlington, Andrew F. Hayes, "Regression Analysis and Linear Models: Concepts, Applications, and Implementation" 
+2016 | ISBN-10: 1462521134 | 661 pages | PDF | 8 MB
+
+Emphasizing conceptual understanding over mathematics, this user-friendly text introduces linear regression analysis to students and researchers across the social, behavioral, consumer, and health sciences. Coverage includes model construction and estimation, quantification and measurement of multivariate and partial associations, statistical control, group comparisons, moderation analysis, mediation and path analysis, and regression diagnostics, among other important topics. Engaging worked-through examples demonstrate each technique, accompanied by helpful advice and cautions. The use of SPSS, SAS, and STATA is emphasized, with an appendix on regression analysis using R. The author's website (www.afhayes.com) provides datasets for the book's examples as well as the RLM macro for SPSS and SAS.
+
+Pedagogical Features:
+*Chapters include SPSS, SAS, or STATA code pertinent to the analyses described, with each distinctively formatted for easy identification.
+*An appendix documents the RLM macro, which facilitates computations for estimating and probing interactions, dominance analysis, heteroscedasticity-consistent standard errors, and linear spline regression, among other analyses.
+*Students are guided to practice what they learn in each chapter using datasets provided online.
+
+
+
+
+82 <--> Mathematical Morphology and Its Applications to Image and Signal Processing
+http://nitroflare.com/view/2004B5592C8E706/Mathematical_Morphology_and_Its_Applications_to_Image_and_Signal_Processing.djvu
+
+
+Petros Maragos, Ronald W. Schafer, Muhammad Akmal Butt, "Mathematical Morphology and Its Applications to Image and Signal Processing" 
+1996 | pages: 479 | ISBN: 1461380634 | DJVU | 9,3 mb
+
+Mathematical morphology (MM) is a powerful methodology for the quantitative analysis of geometrical structures. It consists of a broad and coherent collection of theoretical concepts, nonlinear signal operators, and algorithms aiming at extracting, from images or other geometrical objects, information related to their shape and size. Its mathematical origins stem from set theory, lattice algebra, and integral and stochastic geometry. 
+MM was initiated in the late 1960s by G. Matheron and J. Serra at the Fontainebleau School of Mines in France. Originally it was applied to analyzing images from geological or biological specimens. However, its rich theoretical framework, algorithmic efficiency, easy implementability on special hardware, and suitability for many shape- oriented problems have propelled its widespread diffusion and adoption by many academic and industry groups in many countries as one among the dominant image analysis methodologies. 
+The purpose of Mathematical Morphology and its Applications to Image and Signal Processing is to provide the image analysis community with a sampling from the current developments in the theoretical (deterministic and stochastic) and computational aspects of MM and its applications to image and signal processing. The book consists of the papers presented at the ISMM'96 grouped into the following themes:
+Theory
+Connectivity
+Filtering
+Nonlinear System Related to Morphology
+Algorithms/Architectures
+Granulometries, Texture
+Segmentation
+Image Sequence Analysis
+Learning
+Document Analysis
+Applications
+
+
+99 <--> Introduction to Statistics and Data Analysis, 5th edition
+http://nitroflare.com/view/2B57A712FF92E27/1305115341.pdf
+
+
+Roxy Peck, "Introduction to Statistics and Data Analysis, 5th edition" 
+English | ISBN: 1305115341 | 2015 | 844 pages | PDF | 72 MB
+
+INTRODUCTION TO STATISTICS AND DATA ANALYSIS introduces you to the study of statistics and data analysis by using real data and attention-grabbing examples. The authors guide you through an intuition-based learning process that stresses interpretation and communication of statistical information. Simple notation–including frequent substitution of words for symbols–helps you grasp concepts and cement your comprehension. You'll also find coverage of most major technologies as a problem-solving tool, plus hands-on activities in each chapter that allow you to practice statistics firsthand.
+
+
+
+
+
+101 <--> Hungarian Problem Book 1
+http://nitroflare.com/view/5C4F900CD8B6C59/0883856115.pdf
+
+
+E. Rapaport, "Hungarian Problem Book 1" 
+1975 | ISBN-10: 0883856115 | 118 pages | PDF | 8 MB
+
+
+
+
+
+102 <--> Hungarian Problem Book II: Based on the Eotvos Competitions 1906-1928
+http://nitroflare.com/view/26789B4923A7A8C/0883856123.pdf
+
+
+Jozsef Kurschak, "Hungarian Problem Book II: Based on the Eotvos Competitions 1906-1928" 
+1963 | ISBN-10: 0883856123 | 120 pages | PDF | 7 MB
+
+The Eötvös Contests in elementary mathematics have been open to Hungarian students in their last year of high school ever since 1894. They are famous for the simplicity of the concepts employed, the mathematical depth reached, and the diversity of elementary mathematical fields touched. But perhaps their most remarkable feature is the influence that they, together with a mathematics journal for students, seem to have had on the young people of that small country. Among the winners of the first eleven contests (i.e., those contained in volume 11) many turned into scientists of international fame; e.g., L. Fejér, T. von Kármán, D. Kónig, M. Riesz. Among the winners of the next twenty contests (i.e., those contained in this volume) are G. Szegö, T. Radó, E. Teller; all three are well known in the United States, where they now reside. This translation of the Eötvös Contests Problems from 1894-1928 is based on the revised Hungarian edition of J. Kürschák's original compilation. Kürschák combined his excellence in mathematics with his interest in education when he supplied the elegant solutions and illuminating explanations.
+
+
+
+103 <--> Hungarian Problem Book III
+http://nitroflare.com/view/DB0F6B9DBB81051/0883856441.pdf
+
+
+Andy Liu (Translator), "Hungarian Problem Book III" 
+2001 | ISBN-10: 0883856441 | 160 pages | PDF | 2 MB
+
+This book contains the problems and solutions of a famous Hungarian mathematics competition for high school students, from 1929 to 1943. The competition is the oldest in the world, and started in 1894. Two earlier volumes in this series contain the papers up to 1928, and further volumes are planned. The current edition adds a lot of background material which is helpful for solving the problems therein and beyond. Multiple solutions to each problem are exhibited, often with discussions of necessary background material or further remarks. This feature will increase the appeal of the book to experienced mathematicians as well as the beginners for whom it is primarily intended.
+
+
+
+
+104 <--> Hungarian Problem Book IV
+http://nitroflare.com/view/C37CB7D44838002/0883858312.pdf
+
+
+Robert Barrington Leigh, "Hungarian Problem Book IV" 
+2012 | ISBN-10: 0883858312 | 130 pages | PDF | 2 MB
+
+The Kürschák Mathematics Competition is the oldest high school mathematics competition in the world, dating back to 1894. This book is a continuation of Hungarian Problem Book III and takes the contest through 1963. Forty-eight problems in all are presented in this volume. Problems are classified under combinatorics, graph theory, number theory, divisibility, sums and differences, algebra, geometry, tangent lines and circles, geometric inequalities, combinatorial geometry, trigonometry and solid geometry. Multiple solutions to the problems are presented along with background material. There is a substantial section entitled 'Looking Back', which provides additional insights into the problems. Hungarian Problem Book IV is intended for beginners, although the experienced student will find much here. Beginners are encouraged to work the problems in each section and then to compare their results against the solutions presented in the book. They will find ample material in each section to help them improve their problem-solving techniques.
+
+
+
+
+
+105 <--> Exploring Advanced Euclidean Geometry with GeoGebra
+http://nitroflare.com/view/75C395229B2AB52/0883857847.pdf
+
+
+Gerard A. Venema, "Exploring Advanced Euclidean Geometry with GeoGebra" 
+2013 | ISBN-10: 0883857847 | 186 pages | PDF | 4 MB
+
+This book provides an enquiry-based introduction to advanced Euclidean geometry. It utilises the dynamic geometry program GeoGebra to explore many of the most interesting theorems in the subject. Topics covered include triangle centres, inscribed, circumscribed and escribed circles, medial and orthic triangles, the nine-point circle, the theorems of Ceva and Menelaus, and many applications. The final chapter explores constructions in the Poincaré disk model for hyperbolic geometry. The book can be used either as a computer laboratory manual to supplement an undergraduate course or as a stand-alone introduction to advanced topics in Euclidean geometry. The exposition consists almost entirely of exercises (with hints) that guide students as they discover the geometric relationships for themselves. The ideas are first explored at the computer and then assembled into a proof of the result under investigation, allowing readers to experience the joy of discovery and develop a deeper appreciation for the subject.
+
+
+
+
+
+109 <--> A Survey of Matrix Theory and Matrix Inequalities
+http://nitroflare.com/view/D57C06472E092D3/048667102X.epub
+http://nitroflare.com/view/947704DDBD60AE8/048667102X.pdf
+
+
+A Survey of Matrix Theory and Matrix Inequalities (Dover Books on Mathematics) by Marvin Marcus, Henryk Minc
+2010 | ISBN: 048667102X | English | 192 pages | EPUB/PDF (conv) | 11 MB/4 MB
+
+Written for advanced undergraduate students, this highly regarded book presents an enormous amount of information in a concise and accessible format. Beginning with the assumption that the reader has never seen a matrix before, the authors go on to provide a survey of a substantial part of the field, including many areas of modern research interest.
+Part One of the book covers not only the standard ideas of matrix theory, but ones, as the authors state, "that reflect our own prejudices," among them Kronecker products, compound and induced matrices, quadratic relations, permanents, incidence matrices and generalizations of commutativity.
+Part Two begins with a survey of elementary properties of convex sets and polyhedra and presents a proof of the Birkhoff theorem on doubly stochastic matrices. This is followed by a discussion of the properties of convex functions and a list of classical inequalities. This material is then combined to yield many of the interesting matrix inequalities of Weyl, Fan, Kantorovich and others. The treatment is along the lines developed by these authors and their successors and many of their proofs are included. This chapter contains an account of the classical Perron Frobenius-Wielandt theory of indecomposable nonnegative matrices and ends with some important results on stochastic matrices.
+Part Three is concerned with a variety of results on the localization of the characteristic roots of a matrix in terms of simple functions of its entries or of entries of a related matrix. The presentation is essentially in historical order, and out of the vast number of results in this field the authors have culled those that seemed most interesting or useful. Readers will find many of the proofs of classical theorems and a substantial number of proofs of results in contemporary research literature.
+
+
+
+113 <--> "Numerical Simulation: From Brain Imaging to Turbulent Flows" ed. by Ricardo Lopez-Ruiz
+http://nitroflare.com/view/2198FC2DAAAB3FF/NumericalSimulation16ITAe.pdf
+http://nitroflare.com/view/0BDFAED112665B8/
+http://nitroflare.com/view/363904FD1E3E42C/AdvancesDiscreteTimeSystemsITO12.pdf
+http://nitroflare.com/view/589083E8E1FFB44/AdvancesModelingFluidDynamicsITO12.pdf
+http://nitroflare.com/view/BD39B04B00F2FC8/NumericalSimulationFromTheory2IndustryITO12.pdf
+http://nitroflare.com/view/6999B6C14283232/Mathematical_Methods_for_Physicists_and_Engineers%2C_2_ed_2011.epub
+http://nitroflare.com/view/BECBAF59F6197AE/
+http://nitroflare.com/view/59B5F118DAF81BB/Mathematical_Models%2C_Methods_and_Applications_2016.pdf
+http://nitroflare.com/view/EC3EE423C77B53C/Mathematics_for_the_Physical_Sciences_2015.epub
+http://nitroflare.com/view/B123C3DA0C0FEED/MathematicsComplexityDynamicalSystems12.pdf
+http://nitroflare.com/view/3D27EAB048CFEB4/ModelingControlAspectsWindPowerSystemsITO13.pdf
+http://nitroflare.com/view/90103C8BF407A9B/ModelingMeasurementMethods4Acoustic_ITO13.pdf
+http://nitroflare.com/view/C8CED3382CBA761/ModelingSimulationEngineeringITO.pdf
+http://nitroflare.com/view/19BD5B6D169239D/Numerical_Simulations_of_Incompressible_Flows_2003.pdf
+http://www.nitroflare.com/view/A077436A4C93A47
+http://nitroflare.com/view/FC3FAB5A3A36651/
+http://depositfiles.com/files/pr5pgatpe
+http://www.filedwon.info/qzt04wcb3o9y/NumericalSimulation16ITAe.pdf.html
+http://turbobit.net/bfr4mzqul9mz.html
+http://www.hitfile.net/QOG7sKW
+
+
+"Numerical Simulation: From Brain Imaging to Turbulent Flows" ed. by Ricardo Lopez-Ruiz
+ITexLi | 2016 | ISBN: 9535125648 9535125656 9789535125655 9789535125648 | 429 pages | PDF | 83 MB
+
+This book presents an overview of some models, methods, and numerical computations that are useful for the applied research scientists and mathematicians, fluid tech engineers, and postgraduate students. 
+
+Nowadays mathematical modeling and numerical simulations play an important role in life and natural science. Numerous researchers are working in developing different methods and techniques to help understand the behavior of very complex systems, from the brain activity with real importance in medicine to the turbulent flows with important applications in physics and engineering. 
+
+Contents
+Preface
+1 BOLD fMRI Simulation 
+2 Basics of Multibody Systems: Presented by Practical Simulation Examples of Spine Models
+3 Simulation of Neural Behavior 
+4 Numerical Simulations of Dynamics Behaviour of the Action Potential of the Human Heart's Conduction System 
+5 Numerical Simulation Using Artificial Neural Network on Fractional Differential Equations 
+6 Numerical Simulations of Some Real-Life Problems Governed by ODEs 
+7 A Multi-Domain Spectral Collocation Approach for Solving Lane-Emden Type Equations 
+8 Numerical Solution of System of Fractional Differential Equations in Imprecise Environment 
+9 Analysis of Heat Transfer in an Experimental Heat Exchanger Using Numerical Simulation 
+10 Solving Inverse Heat Transfer Problems When Using CFD Modeling 
+11 A Numerical Procedure for 2D Fluid Flow Simulation in Unstructured Meshes 
+12 On a New Numerical Approach on Micropolar Fluid, Heat and Mass Transfer Over an Unsteady Stretching Sheet Through Porous Media in the Presence of a Heat Source/Sink and Chemical Reaction 
+13 Computational Fluid Dynamics in Turbulent Flow Applications 
+14 Two-Fluid RANS-RSTM-PDF Model for Turbulent Particulate Flows 
+15 Free Surface Flow Simulation Using VOF Method 
+16 Transport and Mixing in Liquid Phase Using Large Eddy Simulation: A Review 
+1st true PDF with TOC BookMarkLinks
+
+
+
+123 <--> Algebra and Trigonometry with Analytic Geometry, 12 edition (repost)
+http://nitroflare.com/view/B03E7632701F51B/049510826X.pdf
+
+
+Earl W. Swokowski, Jeffery A. Cole, "Algebra and Trigonometry with Analytic Geometry, 12 edition" 
+2007 | ISBN: 049510826X | 1024 pages | PDF | 55 MB
+
+Clear explanations, an uncluttered and appealing layout, and examples and exercises featuring a variety of real-life applications have made this text popular among students year after year. This latest edition of Swokowski and Cole's ALGEBRA AND TRIGONOMETRY WITH ANALYTIC GEOMETRY retains these features. The problems have been consistently praised for being at just the right level for precalculus students like you. The book also provides calculator examples, including specific keystrokes that show you how to use various graphing calculators to solve problems more quickly. Perhaps most important-this book effectively prepares you for further courses in mathematics.
+
+0 <--> Modular Theory in Operator Algebras
+http://nitroflare.com/view/4E494C3D7C3876C/0856261904.pdf
+http://depositfiles.com/files/e73dkw2bh
+
+
+Modular Theory in Operator Algebras 
+Publisher: Routledge | 1981 | ISBN: 0856261904 | 492 pages | PDF (scan) | 19,1 MB
+
+The discovery of the modular operator and the modular automorphism group associated a normal semifinite weight has led to a powerful theory - the modular theory - which is nowadays essential to the consideration of many problems concerning operator algebras.
+
+Wednesday, September 07, 2016 [END]
+
+
+2016/08/23 [START]
 
 0 <--> Manifolds, Sheaves, and Cohomology (Springer Studium Mathematik - Master)
 

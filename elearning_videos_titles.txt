@@ -1,3 +1,376 @@
+Thursday, September 08, 2016 [START]
+
+1 <--> CompuWorks - Windows 10 End User
+
+3 <--> Packt Learning Path: Next Level JavaScript
+https://www.safaribooksonline.com/library/view/learning-path-next/9781786461216/
+http://nitroflare.com/view/E45ABB6F3700C87/LPNextLevelJavaScript.part1.rar
+http://nitroflare.com/view/0DC5BCE2E1EC77D/LPNextLevelJavaScript.part2.rar
+http://nitroflare.com/view/238384212EA9378/LPNextLevelJavaScript.part3.rar
+http://nitroflare.com/view/4EA0A6AA0125EC6/LPNextLevelJavaScript.part4.rar
+
+
+Packt Learning Path: Next Level JavaScript
+.MP4, AVC, 461 kbps, 1280x720 | English, AAC, 64 kbps, 2 Ch | 14+ hours | 3.77 GB
+Curator: Erol Staveley
+
+Upgrade your JavaScript skills to ES6 and beyond
+
+Great JavaScript is more than just syntax or style guides. This Learning Path starts by leading you through advanced JavaScript concepts, swiftly moving on to showing you how you can use ES6 and functional programming right away in live projects and applications.
+
+This path navigates across the following products (in sequential order):
+
+Mastering JavaScript (4h 10m)
+JavaScript Design Patterns (3h 15m)
+Learning JavaScript Promises (2h 37m)
+Learning Functional JavaScript (2h)
+JavaScript High Performance (2h 40m)
+
+
+12 <--> O'Reilly Learning Paths - Mastering Java
+http://shop.oreilly.com/category/learning-path/mastering-java.do
+http://nitroflare.com/view/2FFEF835466BD44/LPMasteringJava.part01.rar
+http://nitroflare.com/view/A4A37720017E3B6/LPMasteringJava.part02.rar
+http://nitroflare.com/view/8E631112C2B1177/LPMasteringJava.part03.rar
+http://nitroflare.com/view/8671F3939632E1E/LPMasteringJava.part04.rar
+http://nitroflare.com/view/6B9F41E1796F638/LPMasteringJava.part05.rar
+http://nitroflare.com/view/5BCB74DDE841B2C/LPMasteringJava.part06.rar
+http://nitroflare.com/view/1F900A1E9753206/LPMasteringJava.part07.rar
+http://nitroflare.com/view/245AA2032902A53/LPMasteringJava.part08.rar
+http://nitroflare.com/view/1B0CA49443CB7BD/LPMasteringJava.part09.rar
+http://nitroflare.com/view/F87027B5D8F55DB/LPMasteringJava.part10.rar
+http://nitroflare.com/view/CF1D86F8475798B/LPMasteringJava.part11.rar
+
+
+O'Reilly Learning Paths - Mastering Java
+.MP4, AVC, 2500/470 kbps, 1920x1080/1280x720 | English, AAC, 64 kbps, 2 Ch | 16 hours | 10.6 GB
+Instructors: Ken Kousen, Madhusudhan Konda, Ian Darwin
+
+This Learning Path doesn’t merely introduce you to advanced Java concepts, it makes sure that you’ve got the concepts nailed down. After tackling concurrency and network programming, you’ll explore functional programming in Java 8 using lambdas, streams, collectors, and more. Next you’ll practice testing and static code analysis with JUnit, Spock, and other tools as you complete your journey to advanced Java proficiency.
+
+
+
+
+
+
+
+13 <--> How to make advanced data structures for reporting in Excel (2016)
+http://nitroflare.com/view/D472EDC2F500B80/How_to_make_advanced_data_structures_for_reporting_in_Excel.part1.rar
+http://nitroflare.com/view/B157C4CB50F29E5/How_to_make_advanced_data_structures_for_reporting_in_Excel.part2.rar
+http://nitroflare.com/view/C1FAD96E5AF6BDC/How_to_make_advanced_data_structures_for_reporting_in_Excel.part3.rar
+http://nitroflare.com/view/2E50C089AA6CFF7/How_to_make_advanced_data_structures_for_reporting_in_Excel.part4.rar
+http://nitroflare.com/view/85B0DA2C9717AFF/How_to_make_advanced_data_structures_for_reporting_in_Excel.part5.rar
+http://nitroflare.com/view/601F70DE39D797E/How_to_make_advanced_data_structures_for_reporting_in_Excel.part6.rar
+
+
+How to make advanced data structures for reporting in Excel
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5.5 Hours | Lec: 50 | 0.98 GB
+Genre: eLearning | Language: English
+
+A case study for transforming data structures or dashboards into reporting layouts in 5 steps
+
+The aim of this course is to give you a combination of knowledge about basic and advanced functions and functionalities provided by Microsoft Excel, while guiding you in creating a dashboard and/or advanced data structures step by step from the beginning till the very end. 
+
+When I started learning Excel, I realized that it is very 
+important to know Excel functions, but knowing them is not enough. You 
+have to build it into your daily work and start thinking the way Excel 
+"thinks". 
+
+I would like to give you a case study, where starting from the beginning we are building a dashboard together while explaining all the necessary steps to do so. My goal is to show you how to create an interactive, automated, easy to use data structure for reporting purposes by using basic and advanced functions, moreover, designing and advanced controlling elements. 
+
+With this course I will focus on a real-life example I had
+to face during my work and try to shed light on what Excel is capable 
+of. The structure of the course touches the basics as well, so that if
+you do not have a strong basis, it still gives you guidance and a firm 
+fund to continues and handle more complex data structures and dashboards. My aim is to show you how the functions work and then give you some tips how to use them in creating data structures. 
+Although this case study covers one specific problem and its solution, I would encourage you to use all the skills you can learn from it, as dozens of similar structures can be created on the basis of the curriculum you find in this course.
+
+
+
+19 <--> Complete MongoDB Course Series : Part 2 -Basics Of MongoDB
+http://nitroflare.com/view/783B66A2A1A9621/Complete_MongoDB_Course_Series__Part_2_-Basics_Of_MongoDB.rar
+
+
+Complete MongoDB Course Series : Part 2 -Basics Of MongoDB
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 17M | 57 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series : Part 2 -Basics Of MongoDB
+
+Topics Covered in this class:
+
+Create First Database in MongoDB
+Creating Document and Saving it to Collection
+Dropping a Database
+Creating a Collection - Using db.createCollection(name,options)
+Dropping a Collection
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+
+Click Here to get more tutorials in my Blog
+
+
+
+
+
+20 <--> Complete MongoDB Course Series : Part 1- Introduction to NoSQL Databases & Installation
+http://nitroflare.com/view/7CEB48FF4BFF23F/Complete_MongoDB_Course_Series__Part_1-_Introduction_to_NoSQL_Databases_%26_Installation.rar
+
+
+Complete MongoDB Course Series : Part 1- Introduction to NoSQL Databases & Installation
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 26M | 86 MB
+Genre: eLearning | Language: English
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+
+37 <--> Lynda - Data Science Foundations: Data Mining
+http://nitroflare.com/view/D468290FE7DD376/LcDataScienceFndDtMining.part1.rar
+http://nitroflare.com/view/DFFC670120559BB/LcDataScienceFndDtMining.part2.rar
+http://nitroflare.com/view/D37BB54137AB7E6/LcDataScienceFndDtMining.part3.rar
+http://nitroflare.com/view/BB9EDC6F826FE60/LcDataScienceFndDtMining.part4.rar
+
+
+Lynda - Data Science Foundations: Data Mining
+Size: 634 MB | Duration: 4h 41m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+All data science begins with good data. Data mining is a framework for collecting, searching, and filtering raw data in a systematic matter, ensuring you have clean data from the start. It also helps you parse large data sets, and get at the most meaningful, useful information. This course, Data Science Foundations: Data Mining, is designed to provide a solid point of entry to all the tools, techniques, and tactical thinking behind data mining. Barton Poulson covers data sources and types, the languages and software used in data mining (including R and Python), and specific task-based lessons that help you practice the most common data-mining techniques: text mining, data clustering, association analysis, and more. This course is an absolute necessity for those interested in joining the data science workforce, and for those who need to obtain more experience in data mining.
+
+
+42 <--> O'Reilly Learning Paths - Designing Windows Applications with WPF
+http://shop.oreilly.com/category/learning-path/designing-windows-applications-with-wpf.do
+http://nitroflare.com/view/4EAF5D3F7F8CE86/DesigningWindowsAppswithWPF.part1.rar
+http://nitroflare.com/view/632A968673AFC07/DesigningWindowsAppswithWPF.part2.rar
+http://nitroflare.com/view/1F7C6E2B1E837E9/DesigningWindowsAppswithWPF.part3.rar
+http://nitroflare.com/view/E4506299E9AF4A6/DesigningWindowsAppswithWPF.part4.rar
+
+
+O'Reilly Learning Paths - Designing Windows Applications with WPF
+.MP4, AVC, 786 kbps, 1280x720 | English, AAC, 128 kbps, 2 Ch | 13 hrs 51 mins | 3.04 GB
+Instructor: Mark Long
+
+Learn to create visually stunning user experiences that incorporate UI, media, and complex business models. With his entertaining style, WPF wizard Mark Long will have you creating impressive enterprise-class Windows applications in no time.
+
+ Contents
+
+More Info
+
+
+
+See also:
+
+O'Reilly Learning Paths - Data Science with R Video Training
+O'Reilly Learning Paths - Beginning Java Video Training
+O'Reilly Learning Paths - Beginning JavaScript Video Training
+O'Reilly Learning Paths - CSS Fundamentals Video Training
+O'Reilly Learning Paths - Beginning UX Design Video Training
+O'Reilly Learning Paths - C# Video Training
+
+
+
+80 <--> Design Patterns Through C++
+http://nitroflare.com/view/A56F696DE372082/C%2B%2B_Design_Patterns.part1.rar
+http://nitroflare.com/view/24659583CE6F202/C%2B%2B_Design_Patterns.part2.rar
+http://nitroflare.com/view/DC29A753383C4F6/C%2B%2B_Design_Patterns.part3.rar
+http://nitroflare.com/view/465F459783DA201/C%2B%2B_Design_Patterns.part4.rar
+http://nitroflare.com/view/427FDE61683F1FD/C%2B%2B_Design_Patterns.part5.rar
+
+
+Design Patterns Through C++
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 5.5 Hours | Lec: 63 | 574 MB
+Genre: eLearning | Language: English
+
+Learn best practices of software design to provide flexible and reusable software solution
+
+Subtitles are available for Introduction, Case Study and Design Patterns Concepts.
+
+Design and architecture of any software/solution provides the base and makes it flexible, extensible for future requirements. A good designed software/solution makes it easy to understand and maintain. Design patterns are known as best practices to design software for problems which are repeated in nature.
+
+This course "Design Patterns Through C++" gives you understanding of all 23 patterns described in Gang Of Four book - "Design Patterns: Elements of Reusable Object-Oriented Software", by Gamma, Helm, Johnson and Vlissides.
+
+Each pattern is explained in a simple way with intent, problem, solution and structure. Also the information of participants, collaboration, consequences and implementation are explained for each one. The pattern structure or example implementation of C++ source are explained to understand how it will be implemented in Object Oriented language C++.
+
+The course also provides C++ source code of each pattern to understand it in better way. This helps in applying the variation on implementation to see how it can resolve some other implementation bottleneck. There are quizzes after Creational, Structural and Behavioral patterns to check your understanding.
+
+This course will help to understand the best practices for design and apply them to do the better design of software/solution in C++.
+
+
+93 <--> Advanced Databases and SQL Querying
+http://nitroflare.com/view/E8955CDF3D33191/Advanced_Databases_and_SQL_Querying.part1.rar
+http://nitroflare.com/view/0200A9305D6EBC9/Advanced_Databases_and_SQL_Querying.part2.rar
+http://nitroflare.com/view/77B156F4E99DF7F/Advanced_Databases_and_SQL_Querying.part3.rar
+http://nitroflare.com/view/501ED26865D3D6F/Advanced_Databases_and_SQL_Querying.part4.rar
+http://nitroflare.com/view/6FEE904CCDF5C91/Advanced_Databases_and_SQL_Querying.part5.rar
+http://nitroflare.com/view/A6B092DC09796E3/Advanced_Databases_and_SQL_Querying.part6.rar
+
+
+Advanced Databases and SQL Querying
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3.5 Hours | Lec: 27 | 1.20 GB
+Genre: eLearning | Language: English
+
+Learn advanced T-SQL Querying concepts. Go from a beginner SQL programmer to writing complex SQL Queries.
+
+This course is an advanced TSQL Querying course. The course expects that student are already aware of basic database concepts and are comfortable writing basic TSQL queries like SELECT, JOINS etc. Students are expected to have taken my previous course (Introduction to databases and Querying). This course cover advanced concepts like Views, Triggers, Dynamic Queries etc. The TSQL Scripts for all demos are uploaded. The course about 2+hours and has assignments at the end of each concept.
+
+162 <--> Introduction to FPGA's and prototyping with the Elbert
+
+https://www.udemy.com/inexpensive-fpga-development-with-the-elbert-v2/
+
+Introduction to FPGA's and prototyping with the Elbert
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 38M | Lec: 9 | 143 MB
+Genre: eLearning | Language: English
+
+How to get started developing on FPGA's for under thirty dollars in hardware and software
+
+This is a free course which will teach you how to get up and running with field programmable gate arrays (FPGA's). You will learn the basics of programming in HDL on an inexpensive FPGA development board which is a valuable tool for both the hobbyist interested in "making" or the full time engineer with an interest in expanding his career options. FPGA's are both fun and challenging and provide many useful applications that can be applied to the real world. Whether you are a student, hobbyist, or engineer it is important to have the skills demanded in the digital age. By having a working knowledge of FPGA's you can differentiate yourself from your competitors in the marketplace and turbo charge your career with an additional, well paid, skill set that is currently needed in the marketplace. With these new digital skills you can help design communication equipment, audio and video, or signal processing and filtering applications; the ability to program and implement FPGA's can help you succeed in whichever engineering career path you choose..
+
+This courtse will be taught using the Elbert V2 FPGA demonstration board and the Xilinx tool flow with the Xilinx Webpack ISE. I will explain the basics of FPGA development on the Elbert V2 board and end up the introduction to FPGA's with an uploaded programming example to see the HDL code at work on the Elbert development board. This free lecture will be followed by a more extensive lecture series getting into further detail of programming and implementing FPGA's.
+
+
+
+
+190 <--> Security for Hackers and Developers: Code Auditing (2016)
+http://nitroflare.com/view/7EE59CFB12ACBBD/Security_for_Hackers_and_Developers_Code_Auditing.part1.rar
+http://nitroflare.com/view/F87011FEAE62BCF/Security_for_Hackers_and_Developers_Code_Auditing.part2.rar
+http://nitroflare.com/view/09BB46D8898ED23/Security_for_Hackers_and_Developers_Code_Auditing.part3.rar
+http://nitroflare.com/view/C3881C4BC0206C0/Security_for_Hackers_and_Developers_Code_Auditing.part4.rar
+
+
+Security for Hackers and Developers: Code Auditing
+August 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 305 MB
+Genre: eLearning | Language: English
+
+(C/C++) Did you know that bugs in software costs the economy billions of dollars a year? In this course, you are going to help turn the tide as you learn how to find and fix critical bugs quicker.
+
+Bugs in software can be very expensive issues that can arise from not thoroughly testing and re-testing your code. In this course, Security for Hackers and Developers: Code Auditing, you will learn about manual code pentesting and all about how a professional code auditor finds bugs in code. You'll mainly be focusing on C/C++, but the high level ideas apply to all languages. By going deep into the weeds on C and C++ code, learners will appreciate the depth and experience required to audit this and any language code. First you'll learn about code auditing tools and techniques, as well has why memory corruption happens and how to prevent it. Then you'll learn all about the newer bug types such as use-after-free, type confusion, and kernel double fetch. You'll wrap up the course by learning about the real-world vulnerabilities like Heartbleed and other critical browser bugs. By the end this course, you'll know how to audit code with confidence. You'll know how to spot bugs, understand why they're important, and architect modern protections.
+
+
+
+
+207 <--> Basic Shapes Beautiful Designs
+http://nitroflare.com/view/4CDDF5AB37B2438/Basic_Shapes_Beautiful_Designs.part1.rar
+http://nitroflare.com/view/256A8F56CC01DF4/Basic_Shapes_Beautiful_Designs.part2.rar
+http://nitroflare.com/view/0A17066F2F64DF7/Basic_Shapes_Beautiful_Designs.part3.rar
+http://nitroflare.com/view/270274C143864EC/Basic_Shapes_Beautiful_Designs.part4.rar
+
+
+Basic Shapes Beautiful Designs
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 18M | 336 MB
+Genre: eLearning | Language: English
+
+In this class, I will show you how to draw a few basic shapes and then we will experiment with ways to use them to create a multitude of simple and beautiful designs. We will play with filling a page with our creations and make drawing a daily habit. The more you draw the more you will find ways to add design and creativity into your life.
+
+In the second part of the class I will show you how I use containers and frameworks to create more ideas with the shapes we learned and then we will walk through the process of creating a mandala design with these techniques.
+
+What you will need:
+
+pencil
+felt tip pen or marker
+paper, drawing pad or sketchbook
+eraser
+
+
+No drawing experience is required. The purpose of this class is to inspire you to just pick up the pencil and draw. The more we just allow ourselves to play on the paper, without judging our designs, the better we will become at drawing and the more open we will become to our own creative style.
+
+
+
+208 <--> Lynda - Windows Performance Toolkit: Detecting Memory Leaks
+http://nitroflare.com/view/75F58ACD6F1F963/LcWinPerfTlktDetectMemLks.part1.rar
+http://nitroflare.com/view/591C1C9696A3654/LcWinPerfTlktDetectMemLks.part2.rar
+http://nitroflare.com/view/0542EB940097811/LcWinPerfTlktDetectMemLks.part3.rar
+http://nitroflare.com/view/3B8FF8CD9C2AAD6/LcWinPerfTlktDetectMemLks.part4.rar
+http://nitroflare.com/view/B55B4D3A254C160/LcWinPerfTlktDetectMemLks.part5.rar
+http://nitroflare.com/view/9F516D5DB14E16E/LcWinPerfTlktDetectMemLks.part6.rar
+http://nitroflare.com/view/AE18D5B376BD784/LcWinPerfTlktDetectMemLks.part7.rar
+
+
+Lynda - Windows Performance Toolkit: Detecting Memory Leaks
+Size: 2.13 GB | Duration: 0h 49m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Diagnosing application performance problems on a PC can feel like you have to be one part detective and one part psychic. Your application may compile and run fine—until boom, it crashes. These crashes are usually caused by memory leaks: poorly managed resource allocations in the application. Luckily, with Windows Performance Toolkit, you can locate and correct problems such as memory leaks quickly and efficiently. Thomas Pantels, former application engineer at Intel, shows how to analyze and optimize applications with memory leaks using Windows Performance Recorder (WPR) and Windows Performance Analyzer (WPA). He drills into an OpenCV application developed in C++, walks through the source code, and fixes the leak, providing a thorough overview of Windows Performance Toolkit in action and practical techniques that will help your applications make better use of system resources.
+
+
+0 <--> The Manual Labor of Zen Meditation
+https://www.udemy.com/the-manual-labor-of-zen-meditation/
+http://nitroflare.com/view/E7D02561F01CA82/TheManualLaborofZenMeditation.part1.rar
+http://nitroflare.com/view/EED618121193D66/TheManualLaborofZenMeditation.part2.rar
+http://nitroflare.com/view/C14B0AD6C305EF3/TheManualLaborofZenMeditation.part3.rar
+
+
+The Manual Labor of Zen Meditation
+.MP4, AVC, 5000 kbps, 1920x1080 | English, AAC, 192 kbps, 2 Ch | 1 hour | 2.6 GB
+Instructor: Gordon Greene
+
+a course for beginners who like to use their bodies for learning meditation
+
+People often start meditating out of a need to connect the world in their head with the reality around them. One way to do that is through use of your senses. This course focuses on a way in which you can use a deeply visceral sense of your breath and the sensation of gravity throughout your body to do the work of meditation.
+
+Feel Your Meditation Come Alive as Your Use of Breath and Gravity Comes Alive
+
+Many traditions teach that your meditation deepens as the length of your exhalations deepen.
+
+Lengthening exhalations comes out of exploration of the connection between your breathing and the ways in which every part of your body experiences gravity.
+
+One way to explore that connection is through practice with a sword.
+
+Another way is to split firewood with a splitting maul.
+
+When done properly both of those practices strongly reinforce the use of breath and gravity when doing Zen meditation.
+
+The work of Zen meditation is to resolve duality – the simplest duality to begin working on is the mind and body duality.
+
+Zen Meditation is Manual Labor
+
+This course began when I met a young Swedish tech entrepreneur last November. He is self-taught in almost all things that interest him. This openness is what led him to Spring Green Dojo, a curiosity to see what he might learn about using his whole body to engage the world instead of just his thoughts.
+
+He spent three days training with us in Zen, with the focus of that training being the physical ways in which we deepen our use of breath. Given the short amount of time to work together, I wanted him to viscerally grasp the two core principles that guide Zen training: the work is to resolve duality, and your body and your senses are your tools to do that. So we trained with a sword and then did Zen meditation. We trained with a splitting maul and then did Zen meditation. With a sword and a maul, the movements are big and obvious. When sitting on a meditation cushion, the movements are far more subtle.
+
+Overview of the Course
+
+This course takes you through the same steps that this young Swede experienced. First, understand that the work of Zen training is physical. Then, find how using a sword and a splitting maul can teach how use of breath and gravity lie at the heart of that work. And finally, take that learning to the meditation cushion. You'll find sixteen lectures, taking up a total of just under 70 minutes.
+
+Thursday, September 08, 2016 
+[END]
+
 August 31, 2016 | [START]
 
 0 <--> Google+ Marketing Secret - Step-By-Step Training Guide 2.0
