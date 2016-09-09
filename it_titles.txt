@@ -1,3 +1,236 @@
+
+Friday, September 09, 2016 [START]
+
+0 <--> Mac OS X Snow Leopard Pocket Guide {Repost}
+
+Mac OS X Snow Leopard Pocket Guide by Chris Seibold
+English | 3 Oct. 2009 | ISBN: 0596802722 | 234 Pages | PDF | 2 MB
+
+
+22 <--> Complete MongoDB Course Series: Part 6- Aggregation Framework
+http://nitroflare.com/view/02F32F99A84EFFA/Complete_MongoDB_Course_Series_Part_6-_Aggregation_Framework.rar
+
+
+Complete MongoDB Course Series: Part 6- Aggregation Framework
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 27M | 92 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series: Part 6- Aggregation Framework
+
+Topics Covered in this class:
+
+Aggregation Framework In MongoDB
+Using aggregate() method- Aggregation Example 
+Using distinct() and count()
+Sorting documents
+Natural Order Sorting
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+
+23 <--> Complete MongoDB Course Series : Part 5: ObjectIds in MongoDB
+http://nitroflare.com/view/EA6A61C40965E62/Complete_MongoDB_Course_Series__Part_5_ObjectIds_in_MongoDB.rar
+
+
+Complete MongoDB Course Series : Part 5: ObjectIds in MongoDB
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 13M | 45 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series : Part 5: ObjectIds in MongoDB
+
+Topics Covered in this class:
+
+Introduction to ObjectIds in MongoDB
+Understanding ObjectIds
+Creating ObjectIds
+Advantages of ObjectIds created by MongoDB
+Disadvantages of ObjectIds created by MongoDB
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+30 <--> C# Concurrent Collections (repost)
+http://nitroflare.com/view/1582D238A864E35/C%23_Concurrent_Collections.part1.rar
+http://nitroflare.com/view/15A0261965509EE/C%23_Concurrent_Collections.part2.rar
+http://nitroflare.com/view/BE0558AD090CD12/C%23_Concurrent_Collections.part3.rar
+http://nitroflare.com/view/E42FFFB76A5E632/C%23_Concurrent_Collections.part4.rar
+http://nitroflare.com/view/6D3688AC720F83A/C%23_Concurrent_Collections.part5.rar
+
+
+C# Concurrent Collections
+Size: 894MB | Duration: 3h 30m | Video: AVC (.mp4) 1024x768 15fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Advanced | Language: English
+
+Learn how to use concurrent collections in multithreaded code! This course is a comprehensive introduction to the concurrent collections. It shows you how to use each of the main collection types: ConcurrentDictionary, ConcurrentQueue, ConcurrentBag, and ConcurrentStack. You'll learn the correct techniques for using these collections to avoid bugs such as race conditions, and also how to use BlockingCollection with the concurrent collections correctly in producer-consumer scenarios. The course rounds off with a look at some concurrent collection best practices.
+
+
+34 <--> Big Data, MapReduce, Hadoop, and Spark with Python
+http://nitroflare.com/view/A72AF7BBFF32B91/Big_Data%2C_MapReduce%2C_Hadoop%2C_and_Spark_with_Python_-_LazyProgrammer.rar
+
+
+Big Data, MapReduce, Hadoop, and Spark with Python: Master Big Data Analytics and Data Wrangling with MapReduce Fundamentals using Hadoop, Spark, and Python by LazyProgrammer
+English | 15 Aug 2016 | ASIN: B01KH9YWSY | 58 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.07 MB
+
+What’s the big deal with big data? It was recently reported in the Wall Street Journal that the government is collecting so much data on its citizens that they can’t even use it effectively. 
+
+A few “unicorns” have popped up in the past decade or so, promising to help solve the big data problems that billion dollar corporations and the people running your country can’t. 
+
+It goes without saying that programming with frameworks that can do big data processing is a highly-coveted skill. 
+
+Machine learning and artificial intelligence algorithms, which have garnered increased attention (and fear-mongering) in recent years, mainly due to the rise of deep learning, are completely dependent on data to learn. 
+
+The more data the algorithm learns from, the smarter it can become. The problem is, the amount of data we collect has outpaced gains in CPU performance. Therefore, scalable methods for processing data are needed. 
+
+In the early 2000s, Google invented MapReduce, a framework to systematically and methodically process big data in a scalable way by distributing the work across multiple machines. 
+
+Later, the technology was adopted into an open-source framework called Hadoop, and then Spark emerged as a new big data framework which addressed some problems with MapReduce. 
+
+In this book we will cover all 3 - the fundamental MapReduce paradigm, how to program with Hadoop, and how to program with Spark. 
+
+Advance your Career
+
+If Spark is a better version of MapReduce, why are we even talking about it? 
+
+Good question! 
+
+Corporations, being slow-moving entities, are often still using Hadoop due to historical reasons. Just search for “big data” and “Hadoop” on LinkedIn and you will see that there are a large number of high-salary openings for developers who know how to use Hadoop. 
+
+In addition to giving you deeper insight into how big data processing works, learning about the fundamentals of MapReduce and Hadoop first will help you really appreciate how much easier Spark is to work with. 
+
+Any startup or technical engineering team will appreciate a solid background with all of these technologies. Many will require you to know all of them, so that you can help maintain and patch their existing systems, and build newer and more efficient systems that improve the performance and robustness of the old systems. 
+
+My Blog with Updates!
+
+
+
+
+
+35 <--> Agile: Agile Project Management CherryTree Style Guide
+http://nitroflare.com/view/090BCAA2AC6F79F/Agile_-_Mark_Jobs.rar
+
+
+Agile: Agile Project Management CherryTree Style Guide (Scrum,Agile Scrum,agile methodology,Agile development,agile coaching,agile leader,agile methods,scrum master certification,agile introduction) by Mark Jobs
+English | 30 Aug. 2016 | ISBN: 1537311697 | 86 Pages | AZW3/MOBI/EPUB/PDF (conv) | 3.12 MB
+
+This fascinating book on Agile/Scrum has been written by the hispter geek Mark Jobs. He is a strong believer in Agile and also an Agile Coach.
+
+This book packed with astonishing details, amazing facts and vital information. Stemming all the invaluable information from true life’s experience, you are in for quite the ride. 
+
+If you’re thinking about getting started with Agile project management, then this book is absolute must-buy for you as it carries all the knowledge you need, in the sweetest and most well written way possible.
+
+And remember, Agile takes true passion and patience!
+
+I hope you can give this book a chance, click on the book cover and check out the contents or go download and read the whole book now! 
+
+Why is this book a must read?
+
+1. We do CherryTree Style, CherryTree Style means: clear, organized, straight to the point without unnessasary repetition. We have found out the cherrytree style helps reader to learn a new subject most efficiently.
+
+2. The author is a firm believer of agile methology and is very experienced with the subject.
+
+My Blog with Updates!
+
+
+
+
+43 <--> Complete MongoDB Course Series : Part 4: Performance tuning with Indexes
+http://nitroflare.com/view/B2DF9BC4431AF30/Complete_MongoDB_Course_Series__Part_4_Performance_tuning_with_Indexes.rar
+
+
+Complete MongoDB Course Series : Part 4: Performance tuning with Indexes 
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 17M | 48 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series : Part 4: Performance tuning with Indexes
+
+Topics Covered in this class:
+
+Introduction to Indexes
+Understanding Impact of Indexes
+Creating Index
+Finding Indexes
+Dropping Index
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+
+47 <--> Pluralsight - Tactical Design Patterns in .NET: Control Flow [repost]
+http://nitroflare.com/view/40CD7886290FD67/Tact_Des_Pat_NET_Cont.part1.rar
+http://nitroflare.com/view/B7D7EBC2A3CF9F4/Tact_Des_Pat_NET_Cont.part2.rar
+http://nitroflare.com/view/3B350FC46D3BA8A/Tact_Des_Pat_NET_Cont.part3.rar
+http://nitroflare.com/view/E9DAD49D1D6EA16/Tact_Des_Pat_NET_Cont.part4.rar
+
+
+Pluralsight - Tactical Design Patterns in .NET: Control Flow
+MP4 | AVC 436kbps | English | 1280x720 | 15fps | 4h 40mins | AAC stereo 90kbps | 802 MB
+Genre: Video Training
+
+Do you have to think about null references in every line of code? Do you have to think about boundary conditions in every loop? Do you have to stop and think at every branching instruction? The way we code is a matter of choice. This course demonstrates choices which help reduce code complexity and make code easier to write and easier to understand.
+
+Table of contents:
+Understanding Control Flow36m 42s
+Coping with Null References28m 20s
+Null Object and Special Case Patterns36m 26s
+Map-reduce Pattern in Domain Logic32m 53s
+Iterator Pattern and Sequences30m 21s
+Option Functional Type37m 54s
+Service Locator vs. Object-oriented Code41m 33s
+Guard Clause and If-Then-Throw Pattern36m 31s
+
+
+Friday, September 09, 2016 [END]
 Tuesday, September 06, 2016 [START]
 
 0 <--> A Python Book: Beginning Python, Advanced Python, and Python Exercises
