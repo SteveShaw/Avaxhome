@@ -1,3 +1,361 @@
+Wednesday, September 14, 2016 [START]
+
+0 <--> Copyhackers - Conversion Copywriting Course with Joanna Wiebe [repost]
+
+29 <--> Data Science Fundamentals
+http://nitroflare.com/view/8DDF405AE438168/Ad-We-Da.Sc.Fun.part1.rar
+http://nitroflare.com/view/3AE7186022F2AFC/Ad-We-Da.Sc.Fun.part2.rar
+http://nitroflare.com/view/8FE1884FF8A6F0B/Ad-We-Da.Sc.Fun.part3.rar
+
+
+Data Science Fundamentals
+HDRips | MP4/AVC, ~1299 kb/s | 1280x720 | Duration: 03:14:32 | English: AAC, 126 kb/s (2 ch) | 2,02 GB
+Genre: Editing
+
+The Rough Cuts/Sneak Peek program provides early access to Pearson video products and is exclusively available to Safari subscribers. Content for titles in this program is made available throughout the development cycle, so products may not be complete, edited, or finalized, including video post-production editing.
+
+Data Science Fundamentals LiveLessons teaches you the foundational concepts, theory, and techniques you need to know to become an effective data scientist. The videos present you with applied, example-driven lessons in Python and its associated ecosystem of libraries, where you get your hands dirty with real datasets and see real results.
+
+Description
+
+If nothing else, by the end of this video course you will have analyzed a number of datasets from the wild, built a handful of applications, and applied machine learning algorithms in meaningful ways to get real results. And all along the way you learn the best practices and computational techniques used by a professional data scientist. More specifically, you learn how to acquire data that is openly accessible on the Internet by working with APIs. You learn how to parse XML and JSON data to load it into a relational database. You get hands-on experience with the PyData ecosystem by manipulating and modeling data. You explore and transform data with the pandas library, perform statistical analysis with scipy and numpy, build regression models with statsmodels, and train machine learning algorithms with scikit-learn. All throughout the course you learn to test your assumptions and models by engaging in rigorous validation. Finally, you learn how to share your results through effective data visualization.
+
+
+
+33 <--> Lynda - Python Generators
+http://nitroflare.com/view/AE0B19763D6C91A/LcPythonGenerators.rar
+
+
+Lynda - Python Generators
+Size: 141 MB | Duration: 0h 44m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Generators are a concept unique to Python. They're incredibly helpful if you know how and when to use them. Simply put, generators are the best way to iterate through large and complex data sets. Pythonista Josh McQuiston explains everything you need to know about Python generators, providing examples of generators in action. Learn how to build a basic generator function, use generator expressions and objects, and see how generators work behind the scenes to power context managers and coroutines.
+
+Wednesday, September 14, 2016 [END]
+
+Monday, September 12, 2016 [START]
+
+0 <--> Matthew Weiss - Advanced Mixing (2016)
+
+84 <--> Complete MongoDB Course Series: Part 8- Relationships in MongoDB
+http://nitroflare.com/view/2ACC0BE056971F5/Complete_MongoDB_Course_Series_Part_8-_Relationships_in_MongoDB.rar
+
+
+Complete MongoDB Course Series: Part 8- Relationships in MongoDB
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 18 | 47 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series: Part 8- Relationships in MongoDB
+
+Topics Covered in this class:
+
+Relationships in MongoDB
+One-To-One Relationship
+One-To-Many Relationship
+Many-To-Many Relationship
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+
+
+
+85 <--> Complete MongoDB Course Series: Part 7- Data Modeling in MongoDB
+http://nitroflare.com/view/1A22F4BA08A239C/Complete_MongoDB_Course_Series_Part_7-_Data_Modeling_in_MongoDB.rar
+
+
+Complete MongoDB Course Series: Part 7- Data Modeling in MongoDB
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 12M | 38 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series: Part 7- Data Modeling in MongoDB
+
+Topics Covered in this class:
+
+Introduction to Data Modelling in MongoDB
+Data Modeling using References
+Data Modeling using Embedded documents
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+97 <--> Functional Programming with C#
+http://nitroflare.com/view/3E5D4D30AD681D0/Functional_Programming_with_C_Sharp.part1.rar
+http://nitroflare.com/view/3002EA27706895A/Functional_Programming_with_C_Sharp.part2.rar
+http://nitroflare.com/view/812100A2010F98C/Functional_Programming_with_C_Sharp.part3.rar
+
+
+Functional Programming with C#
+MP4 | Duration: 1h 25m | Video: AVC (.mp4) 1280x720 15fps | Audio: AAC 44.1KHz 2ch | Size: 205 MB
+Genre: eLearning | Level: Intermediate | Language: English
+
+You've probably heard about the benefits that functional programming can bring to your applications, but did you know you can apply many of the same techniques in C#? Did you know that you're probably already using some of them? In this course, you'll learn how to use C# as a functional language by taking advantage of immutability, delegation, generics, and extension methods. You'll even see how these techniques can enhance the usefulness of several of the features introduced in C# 6. Through careful application of these techniques you'll be writing more concise, predictable code with fewer defects in no time.
+
+
+
+
+103 <--> Lynda - Mastering Django Web Development
+http://nitroflare.com/view/8BEE0C07A1E64DB/LcMasterDjangoWebDev.part1.rar
+http://nitroflare.com/view/658CADD93C83F5C/LcMasterDjangoWebDev.part2.rar
+
+
+Lynda - Mastering Django Web Development
+Size: 152 MB | Duration: 1h 0m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Advanced | Language: English
+
+Django is one of the world's leading web development platforms. This Python web framework makes your app building experience smoother, faster, and easier. It is a key feature behind the success of many start-ups across the world, including Instagram and Nextdoor. This course introduces next-level advanced concepts to help you build your own professional-grade Django applications. Author Kevin Veroneau starts off by explaining how class-based views—a powerful, but often poorly understood feature—work in Django. Then learn how to create custom middleware to help organize frequently used code. Have you ever wanted to build a complete RESTful API? Find out how to do just that, starting with a basic read-only API and then adding key-based authentication to allow the full range of CRUD functionality. Plus, discover how to use model managers and the Q method to make it easier to get the data we need to our views and clients. For the finishing touches, dive into the details of caching to improve application performance, and then add custom management commands to help automate routine tasks. Note: Mastering Django Web Development was created by Packt Publishing. We are pleased to host this training in our library.
+
+
+129 <--> Complete MongoDB Course Series: Part 6- Aggregation Framework
+http://nitroflare.com/view/02F32F99A84EFFA/Complete_MongoDB_Course_Series_Part_6-_Aggregation_Framework.rar
+
+
+Complete MongoDB Course Series: Part 6- Aggregation Framework
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 27M | 92 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series: Part 6- Aggregation Framework
+
+Topics Covered in this class:
+
+Aggregation Framework In MongoDB
+Using aggregate() method- Aggregation Example 
+Using distinct() and count()
+Sorting documents
+Natural Order Sorting
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+130 <--> Complete MongoDB Course Series : Part 5: ObjectIds in MongoDB
+http://nitroflare.com/view/EA6A61C40965E62/Complete_MongoDB_Course_Series__Part_5_ObjectIds_in_MongoDB.rar
+
+
+Complete MongoDB Course Series : Part 5: ObjectIds in MongoDB
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 13M | 45 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series : Part 5: ObjectIds in MongoDB
+
+Topics Covered in this class:
+
+Introduction to ObjectIds in MongoDB
+Understanding ObjectIds
+Creating ObjectIds
+Advantages of ObjectIds created by MongoDB
+Disadvantages of ObjectIds created by MongoDB
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+
+
+153 <--> C# Concurrent Collections (repost)
+http://nitroflare.com/view/1582D238A864E35/C%23_Concurrent_Collections.part1.rar
+http://nitroflare.com/view/15A0261965509EE/C%23_Concurrent_Collections.part2.rar
+http://nitroflare.com/view/BE0558AD090CD12/C%23_Concurrent_Collections.part3.rar
+http://nitroflare.com/view/E42FFFB76A5E632/C%23_Concurrent_Collections.part4.rar
+http://nitroflare.com/view/6D3688AC720F83A/C%23_Concurrent_Collections.part5.rar
+
+
+C# Concurrent Collections
+Size: 894MB | Duration: 3h 30m | Video: AVC (.mp4) 1024x768 15fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Advanced | Language: English
+
+Learn how to use concurrent collections in multithreaded code! This course is a comprehensive introduction to the concurrent collections. It shows you how to use each of the main collection types: ConcurrentDictionary, ConcurrentQueue, ConcurrentBag, and ConcurrentStack. You'll learn the correct techniques for using these collections to avoid bugs such as race conditions, and also how to use BlockingCollection with the concurrent collections correctly in producer-consumer scenarios. The course rounds off with a look at some concurrent collection best practices.
+
+182 <--> Complete MongoDB Course Series : Part 4: Performance tuning with Indexes
+http://nitroflare.com/view/B2DF9BC4431AF30/Complete_MongoDB_Course_Series__Part_4_Performance_tuning_with_Indexes.rar
+
+
+Complete MongoDB Course Series : Part 4: Performance tuning with Indexes 
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 17M | 48 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series : Part 4: Performance tuning with Indexes
+
+Topics Covered in this class:
+
+Introduction to Indexes
+Understanding Impact of Indexes
+Creating Index
+Finding Indexes
+Dropping Index
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+
+183 <--> Complete MongoDB Course Series Part 3- MongoDB CRUD Operations
+http://nitroflare.com/view/5C3AD45B6FED1B8/Complete_MongoDB_Course_Series_Part_3-_MongoDB_CRUD_Operations.part1.rar
+http://nitroflare.com/view/B53519EE2B31A4E/Complete_MongoDB_Course_Series_Part_3-_MongoDB_CRUD_Operations.part2.rar
+
+
+Complete MongoDB Course Series Part 3- MongoDB CRUD Operations
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 38M | 136 MB
+Genre: eLearning | Language: English
+
+Complete MongoDB Course Series : Part 3- MongoDB CRUD Operations
+
+Topics Covered in this class:
+
+Creating/Inserting a document in collection using javascript file
+Inserting Array of Documents
+Reading a Document - Querying
+Reading a Document with $lt, $gt operator
+Other Query Operators
+Updating Documents
+Deleting documents
+
+In this series of MongoDB classes we will start with basics of MongoDB and then we go on learning advance concepts to build MongoDB based applications.
+
+In this Complete MongoDB Course Series (Part 1 -Part 11), we will start by learning basic concepts of MongoDB, MongoDB installation process, creating databases, Collections, CRUD operations, Indexing, ObjectIds in MongoDB, Aggregation Framework in MongoDB,Data Modeling in MongoDB,Relationships in MongoDB, User/Role Management In MongoDB, Regular Expressions in MongoDB, Map-Reduce in MongoDB.
+
+At the end of this course you will be mastering MongoDB based application development.
+
+Course Highlights
+
+Most comprehensive course series on MongoDB with NoSQL database design approach
+Simple, easy and well explained lectures with practical examples
+
+Course Objective
+
+Mastering MongoDB based application development
+Decide where and when to use MongoDB in your application development
+Design MongoDB database from start to finish
+Differentiate between RDBMS and NoSQL databases
+Spot key features and advantages of NoSQL database MongoDB over RDBMS databases
+
+
+194 <--> Pluralsight - Tactical Design Patterns in .NET: Control Flow [repost]
+http://nitroflare.com/view/40CD7886290FD67/Tact_Des_Pat_NET_Cont.part1.rar
+http://nitroflare.com/view/B7D7EBC2A3CF9F4/Tact_Des_Pat_NET_Cont.part2.rar
+http://nitroflare.com/view/3B350FC46D3BA8A/Tact_Des_Pat_NET_Cont.part3.rar
+http://nitroflare.com/view/E9DAD49D1D6EA16/Tact_Des_Pat_NET_Cont.part4.rar
+
+
+Pluralsight - Tactical Design Patterns in .NET: Control Flow
+MP4 | AVC 436kbps | English | 1280x720 | 15fps | 4h 40mins | AAC stereo 90kbps | 802 MB
+Genre: Video Training
+
+Do you have to think about null references in every line of code? Do you have to think about boundary conditions in every loop? Do you have to stop and think at every branching instruction? The way we code is a matter of choice. This course demonstrates choices which help reduce code complexity and make code easier to write and easier to understand.
+
+Table of contents:
+Understanding Control Flow36m 42s
+Coping with Null References28m 20s
+Null Object and Special Case Patterns36m 26s
+Map-reduce Pattern in Domain Logic32m 53s
+Iterator Pattern and Sequences30m 21s
+Option Functional Type37m 54s
+Service Locator vs. Object-oriented Code41m 33s
+Guard Clause and If-Then-Throw Pattern36m 31s
+
+
+195 <--> Learn the Unity 3D Shuriken Particle System
+http://nitroflare.com/view/EEB5D8C70473763/Learn_the_Unity_3D_Shuriken_Particle_System.part1.rar
+http://nitroflare.com/view/B927205E58402B4/Learn_the_Unity_3D_Shuriken_Particle_System.part2.rar
+http://nitroflare.com/view/9D5C99AE63C7881/Learn_the_Unity_3D_Shuriken_Particle_System.part3.rar
+
+
+Learn the Unity 3D Shuriken Particle System
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1.5 Hours | Lec: 10 | 268 MB
+Genre: eLearning | Language: English
+
+Learn how to create game effects with the famous Shuriken Particle System on Unity 3D.
+
+Create awesome particle effects with Unity 3Ds Shuriken Particle system. Send rockets blazing into space, create muzzle blast shooting effects, create particle emitters and much more.
+
+This course seeks to teach students how to work with the Shuriken Particle System in Game development. The lectures include working with textures and voxels, emitters, modules, smoke plumes and muzzle flashes; all of which are crucial to the success of any game development projects.
+
+
+Monday, September 12, 2016 [END]
+
 Thursday, September 08, 2016 [START]
 
 1 <--> CompuWorks - Windows 10 End User

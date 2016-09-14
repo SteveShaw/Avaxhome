@@ -1,3 +1,85 @@
+Wednesday, September 14, 2016 [START]
+
+0 <--> Python: A Beginner to Expert Guide to Learning the Essence of Python Programming in One Day
+
+Python: A Beginner to Expert Guide to Learning the Essence of Python Programming in One Day (Python, Python Programming, Beginner to Expert Guide) by Morgan Carey
+English | 1 Aug 2016 | ASIN: B01JJDCP7Y | 48 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.84 MB
+
+
+6 <--> Exception Handling in Python 3.5
+http://nitroflare.com/view/15B1820E2AE92F4/Exception_Handling_in_Python_3.5_-_Rajeev_Vashisht.rar
+
+
+Exception Handling in Python 3.5 by Rajeev Vashisht
+English | 7 Jul 2016 | ASIN: B01I4U6W0Y | 10 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.26 MB
+
+About The Book
+
+Exception Handling in Python 3.5 
+This is a real short & interesting treatise of subject, no beating about the bush but jumping into the sea of subject matter & best of all compiled running examples. 
+A short book which gives introduction to the basics of Python language, including and up to class concepts & recursion & Internal Functions
+A really short book of compiled examples in Python 3.5
+
+
+
+15 <--> "Modeling and Simulation in Engineering Sciences" ed. by Noreen Sher Akbar and O. Anwar Beg
+http://nitroflare.com/view/214FE4206518DAB/ModelingSimulationEngineeringSciences16ITAe.pdf
+http://nitroflare.com/view/33914A2F0003C71/RecentAdvancesModellingSimulationITO08.pdf
+http://nitroflare.com/view/6999B6C14283232/Mathematical_Methods_for_Physicists_and_Engineers%2C_2_ed_2011.epub
+http://nitroflare.com/view/BECBAF59F6197AE/Mathematical_Modelling_and_Numerical_Simulation_of_Oil_Pollution_Problems_2015.pdf
+http://nitroflare.com/view/59B5F118DAF81BB/Mathematical_Models%2C_Methods_and_Applications_2016.pdf
+http://nitroflare.com/view/8BBE2AB297E72B1/HandbookGranularComputing08.pdf
+http://nitroflare.com/view/C045A80698350DF/HandbookFingerprintRecognition09.pdf
+http://nitroflare.com/view/0BDFAED112665B8/Numerical_Methods_for_Engineers_and_Scientists__An_Introduction_with_Applications_using_MATLAB-3ed2014.pdf
+http://nitroflare.com/view/FC3FAB5A3A36651/Numerical_Modelling_and_Analysis_of_Fluid_Flow_and_Deformation_of_Fractured_Rock_Masses-0080439314.pdf
+http://nitroflare.com/view/19BD5B6D169239D/Numerical_Simulations_of_Incompressible_Flows_2003.pdf
+http://nitroflare.com/view/453E7FF3AC9648F/MathematicalModelingCollectiveBehavior.pdf
+http://nitroflare.com/view/94C4AA86240ED62/ModelingOptimizationRenewableEnergySystemsITO12.pdf
+http://nitroflare.com/view/589083E8E1FFB44/AdvancesModelingFluidDynamicsITO12.pdf
+http://nitroflare.com/view/A2A5E6534EE176F/ApplicationsMATLABScienceEngineeringITO11.pdf
+http://nitroflare.com/view/726494A74621ECF/ComputationalFluidDynamicsITO10.pdf
+http://nitroflare.com/view/40C612394CB60C6/ComputationalFluidDynamicsTechnologiesApplicationsITO11.pdf
+http://nitroflare.com/view/C25D52A94E84E28/ComputationalNumericalSimulationsITae14.pdf
+http://nitroflare.com/view/19BBF0503AAB75C/ComputerVisionITO08.pdf
+http://nitroflare.com/view/66E5B9176724C12/MATLABApplications4PracticalEngineer14ITAe.pdf
+http://nitroflare.com/view/3D27EAB048CFEB4/ModelingControlAspectsWindPowerSystemsITO13.pdf
+http://nitroflare.com/view/90103C8BF407A9B/ModelingMeasurementMethods4Acoustic_ITO13.pdf
+http://nitroflare.com/view/C8CED3382CBA761/ModelingSimulationEngineeringITO.pdf
+http://nitroflare.com/view/B19472CB86B81A1/Modeling_Atmospheric_and_Oceanic_Flows_2014.pdf
+http://nitroflare.com/view/1C3AA6834FA8727/OptimalInventoryModelingSystems04.pdf
+http://depositfiles.com/files/bulc9sm5a
+http://www.filedwon.info/6fxl7apu79s5/ModelingSimulationEngineeringSciences16ITAe.pdf.html
+http://turbobit.net/g5rj3healjeh.html
+http://www.hitfile.net/14x237u
+
+
+"Modeling and Simulation in Engineering Sciences" ed. by Noreen Sher Akbar and O. Anwar Beg
+ITexLi | 2016 | ISBN: 9535126083 9535126091 | 289 pages | PDF | 81 MB
+
+This book features state-of-the-art contributions in mathematical, experimental and numerical simulations in engineering sciences. Topics include metal micro-forming, compressible reactive flows, radio frequency circuits, barrier infrared detectors, fiber Bragg and long-period fiber gratings, semiconductor modelling, many-core architecture computers, laser processing of materials, alloy phase decomposition, nanofluids, geo-materials and rheo-kinetics.
+
+The contributions in this book spanning mechanical, aerospace, electrical, electronic, computer, materials, geotechnical and chemical engineering. 
+The chapters feature many sophisticated approaches including Monte Carlo simulation, FLUENT and ABAQUS computational modelling, discrete element modelling and partitioned frequency-time methods. 
+The book will be of interest to researchers and also consultants engaged in many areas of engineering simulation. 
+
+Contents
+Preface
+1 Numerical Simulation in Microforming for Very Small Metal Elements 
+2 Numerical Simulation of Compressible Reactive Flows 
+3 Hybrid Time-Frequency Numerical Simulation of Electronic Radio Frequency Systems 
+4 HgCdTe Mid- and Long-Wave Barrier Infrared Detectors for Higher Operating Temperature Condition 
+5 Numerical Simulation Methods Applied at Fiber Grating Sensors Design 
+6 Charge Collection Physical Modeling for Soft Error Rate Computational Simulation in Digital Circuits 
+7 Training Images-Based Stochastic Simulation on Many-Core Architectures 
+8 Numerical Simulation of Laser Processing Materials: An Engineering Approach 
+9 Mathematical Modeling for Nanofluids Simulation: A Review of the Latest Works 
+10 Application of Phase-Field Method to the Analysis of Phase Decomposition of Alloys 
+11 DEM Simulation Based on Experimental Testing 
+12 Impact of Fluid Flow on Free Radical Polymerization in a Batch Reactor 
+
+
+Wednesday, September 14, 2016 [END]
+
 Monday, September 12, 2016 [START]
 
 0 <--> Data Warehouse Implementation with the Corporate Information Factory (CIF)
