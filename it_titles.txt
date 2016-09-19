@@ -1,3 +1,55 @@
+0 <--> RenderScript: parallel computing on Android, the easy way
+
+RenderScript: parallel computing on Android, the easy way by Alberto Marchetti
+English | 3 July 2016 | ASIN: B01HX066T8, B01HOWDJ5O | 106 Pages | AZW3/MOBI/EPUB/PDF (conv) | 6.83 MB
+
+1 <--> Scientific software R. Programming language and applications
+http://nitroflare.com/view/33408DE2A0F13CE/Scientific_software_R._Programming_language_and_applications_-_Scientific_Books.rar
+
+
+Scientific software R. Programming language and applications by Scientific Books
+English | 21 Jun. 2016 | ISBN: 1534798161 | 212 Pages | AZW3/MOBI/EPUB/PDF (conv) | 16.75 MB
+
+R is a language and programming environment for statistical analysis and graphic. It is a project of free software , a result of the implementation GNU classic scientific language S-plus. R and S-plus are probably the two languages most commonly used in research by community statistics, is also very popular in the field of the biomedical research , the bioinformatics and the financial mathematics . This contributes to the possibility of charging different libraries or packages for specific purposes of calculation or graph. is available for the operating systems Windows , Macintosh , UNIX and GNU/Linux .
+R provides a wide range of statistical tools (models linear and non-linear , statistical tests , analysis of time series , algorithms of classification and clustering , etc.) and graphic. Like S-Plus, it's a programming language, allowing users to extend it by defining your own functions. In fact, most of the functions of R are written in the same R, although algorithms for computationally demanding is possible to develop libraries in C , C++ or Fortran that are loaded dynamically. Advanced users can also manipulate R objects directly from code developed in C. R also can spread through packages developed by its community of users.
+R is part of a collaborative and open project. Your users can publish packages that extend its basic configuration. Given the huge number of new packages, these have been organized in views (or themes) , which allow you to group them according to their nature and function. For example, there are groups of related packages with Bayesian statistics , Econometrics , time series , etc.
+R, like S plus, can be considered an object oriented programming language. In addition, R can be integrated with different databases and there are libraries that facilitate its use from programming languages interpreted as Perl and Python . R also has its own format for the documentation based on LaTeX .
+Another feature of R is its graphical capability, which allows you to generate high-quality graphics.
+R can also be used as a tool of numerical calculation , field in which it can be as effective as other specific tools such as GNU Octave and its commercial equivalent, MATLAB.
+
+
+2 <--> Scientific software R. Graphical Programming
+http://nitroflare.com/view/8AEBB190DFD4803/Scientific_software_R._Graphical_Programming_-_Scientific_Books.rar
+
+
+Scientific Software R. Graphical Programming by Scientific Books
+English | 21 Jun. 2016 | ISBN: 1534799451 | 184 Pages | AZW3/MOBI/EPUB/PDF (conv) | 14.44 MB
+
+R provides a wide range of statistical tools (models linear and non-linear , statistical tests , analysis of time series , algorithms of classification and clustering , etc.) and graphic. Like S-Plus, it's a programming language, allowing users to extend it by defining your own functions. In fact, most of the functions of R are written in the same R, although algorithms for computationally demanding is possible to develop libraries in C , C++ or Fortran that are loaded dynamically. Advanced users can also manipulate R objects directly from code developed in C. R also can spread through packages developed by its community of users. Another feature of R is its graphical capability, which allows you to generate high-quality graphics. The graphics package in the Basic module of R allows a great variety of graphics. It is possible to represent functions, plane curves in parametric, polar, implicit, and explicit coordinates and surfaces. There are several graphics to low level commands that allow you to add certain elements, such as points, lines, texts, legends, titles, axes, boxes and other additional elements to the existing graphics in R. Additionally R performs statistical graphics of all kinds.
+
+
+30 <--> Data Visualization in R With ggplot2 Training Video
+http://nitroflare.com/view/1112A486F903B40/Da.Vi.in.R.w.G.part1.rar
+http://nitroflare.com/view/5E6702237188A64/Da.Vi.in.R.w.G.part2.rar
+
+
+Data Visualization in R With ggplot2 Training Video
+HDRips | MP4/AVC, ~189 kb/s | 1280x720 | Duration: 01:03:38 | English: AAC, 125 kb/s (2 ch) | 200 MB
+Genre: Development / Programming
+
+In this project-based Data Visualization in R With ggplot2 video tutorial series, you'll quickly have relevant skills for real-world applications.
+
+Follow along with our expert instructor in this training course to get:
+
+Concise, informative and broadcast-quality Data Visualization in R With ggplot2 training videos delivered to your desktop
+The ability to learn at your own pace with our intuitive, easy-to-use interface
+A quick grasp of even the most complex Data Visualization in R With ggplot2 subjects because they're broken into simple, easy to follow tutorial videos
+
+Practical working files further enhance the learning process and provide a degree of retention that is unmatched by any other form of Data Visualization in R With ggplot2 tutorial, online or offline… so you'll know the exact steps for your own projects.
+
+
+
+
 Wednesday, September 14, 2016 [START]
 
 0 <--> Python: A Beginner to Expert Guide to Learning the Essence of Python Programming in One Day
