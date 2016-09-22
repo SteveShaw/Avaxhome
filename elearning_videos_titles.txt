@@ -1,3 +1,352 @@
+Wednesday, September 21, 2016 [START]
+
+0 <--> Lynda - Running a Design Business: Grow Your Business
+
+Lynda - Running a Design Business: Grow Your Business
+Size: 886 MB | Duration: 0h 45m | Video: AVC (.mp4) 1280x720 30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Beginner | Language: English
+
+Many of the mistakes business owners make arise from not understanding what they do well. This is true for any industry—including creative fields like graphic design. If you want to successfully grow and sustain your design business, there are some important questions to ask to identify your strengths, weaknesses, and opportunities for expansion. For over 15 years now, Justin Ahrens has led Rule29, a design firm by recognized by AIGA, Communication Arts, HOW, and more. Here he shares stories and tips for determining what you do best, leaving the things that you don't do well to others, and finding areas to grow. The focus of his advice is on building culture, brand uniqueness, business acumen, and better processes. Plus, learn new ways to promote your business to potential clients and strategies to build your team.
+
+
+14 <--> Git Advanced Series Part 1-10
+http://nitroflare.com/view/998037DC788188B/Git_Advanced_Series_Part_1-10.part1.rar
+http://nitroflare.com/view/747BE9A2B93EF06/Git_Advanced_Series_Part_1-10.part2.rar
+http://nitroflare.com/view/CD4225611416681/Git_Advanced_Series_Part_1-10.part3.rar
+http://nitroflare.com/view/249E0A3273F7F8F/Git_Advanced_Series_Part_1-10.part4.rar
+http://nitroflare.com/view/8BAD1940207C439/Git_Advanced_Series_Part_1-10.part5.rar
+http://nitroflare.com/view/B2D6D5A3D994839/Git_Advanced_Series_Part_1-10.part6.rar
+
+
+Git Advanced Series Part 1-10
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 6.5 Hours | 1.70 GB
+Genre: eLearning | Language: English
+
+Prerequisites to the course: It's recommended that you complete the course "Git Fundamentals Mastery with GitHub : a complete Hands-on Git Guide" if you are new to Git & GitHub.
+
+
+
+16 <--> SQL Injection Master Course
+http://nitroflare.com/view/A9B6A1F305B6157/SQL_Injection_Master_Course.part1.rar
+http://nitroflare.com/view/7177994182E42B2/SQL_Injection_Master_Course.part2.rar
+http://nitroflare.com/view/9CC76EED4FB0CE1/SQL_Injection_Master_Course.part3.rar
+http://nitroflare.com/view/D06EB53E6E03AF3/SQL_Injection_Master_Course.part4.rar
+http://nitroflare.com/view/D94457F6F2DDAB5/SQL_Injection_Master_Course.part5.rar
+
+
+SQL Injection Master Course
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 467 MB
+Genre: eLearning | Language: English
+
+A complete guide to SQL Injection in which you will design your own lab and learn to attack it. Pentesting+hacking+SQLI
+Instructed by Mr. Hitesh Choudhary
+
+SQL Injection is a powerful code injection technique that is used to attack data driven web applications. An SQL Injection attack compromises a database and gives the attacker the access to the private data. Its implications can be far reaching as it can be used to access and modify data, bypass logins or even shutdown the website.
+With this course you will see how to implement SQL Injection for pentesting purposes. You can create your own challenges and see how they can be penetrated. You will learn to hack custom created sites so that you can know what the weaknesses and vulnerabilities are. 
+
+
+44 <--> Packt Learning Path: The Road to Tensorflow
+https://www.safaribooksonline.com/library/view/learning-path-the/9781787123700/
+http://nitroflare.com/view/10F2EE2406D22D4/PacktLPTheRoadtoTensorflow.part1.rar
+http://nitroflare.com/view/B1EE4DDED049747/PacktLPTheRoadtoTensorflow.part2.rar
+http://nitroflare.com/view/8331117343DA71D/PacktLPTheRoadtoTensorflow.part3.rar
+
+
+Packt Learning Path: The Road to Tensorflow
+.MP4, AVC, 461 kbps, 1280x720 | English, AAC, 128 kbps, 2 Ch | 8.3 hours | 1.63 GB
+Curator: Vedika Naik
+
+It can be hard to get started with machine learning, particularly as new frameworks like TensorFlow start to gain traction across enterprise companies. If you have no prior exposure to one of the most important trends impacting how we do data science in the next few years, this path will help you get up to speed. It specifically focuses on getting you up and running with TensorFlow, after up-and-running coverage of Python and Deep Learning in Python with Theano.
+
+This path navigates across the following products (in sequential order):
+
+Mastering Python (2h 35m)
+Data Mining with Python (2h 3m)
+Deep Learning with Python (1h 45m)
+Deep Learning with TensorFlow (2h 0m)
+
+
+69 <--> Make a low poly Autumn Scene in Blender and Unity in 30 Mins
+http://nitroflare.com/view/F8A7028FA617B4B/Make_a_low_poly_Autumn_Scene_in_Blender_and_Unity_in_30_Mins.part1.rar
+http://nitroflare.com/view/042A17982E86F46/Make_a_low_poly_Autumn_Scene_in_Blender_and_Unity_in_30_Mins.part2.rar
+http://nitroflare.com/view/07357A27478AF0B/Make_a_low_poly_Autumn_Scene_in_Blender_and_Unity_in_30_Mins.part3.rar
+http://nitroflare.com/view/C82A6486F17088B/Make_a_low_poly_Autumn_Scene_in_Blender_and_Unity_in_30_Mins.part4.rar
+
+
+Make a low poly Autumn Scene in Blender and Unity in 30 Mins
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 40M | Lec: 8 | 300 MB
+Genre: eLearning | Language: English
+
+Build models in Blender and import them to Unity. Learn how to make easy low poly models.
+
+Learn how to make simple low poly art in Blender and then import it to Unity3D. 
+
+One of the best features is that you can watch the courses at any speed you want. This means you can speed up the or slow down the video if you want to.
+
+This course is project based so you will not be learning a bunch of useless coding practices. At the end of this course you will have real world apps to use in your portfolio. We feel that project based training content is the best way to get from A to B. Taking this course means that you learn practical, employableskills immediately.
+
+You can use the projects you build in this course to add to your LinkedIn profile. Give your portfolio fuel to take your career to the next level.
+
+Learning how to code is a great way to jump in a new career or enhance your current career. Coding is the new math and learning how to code will propel you forward for any situation. Learn it today and get a head start for tomorrow. People who can master technology will rule the future.
+
+You will get full lifetime access to this course for a single one off fee. John Bura has created many games, apps and training courses so he is extremely qualified to teach you how to master technology. This is an instructor that does not only teach, he produces apps. This means you get the most relevant information on how to code. Most courses do not show you practical skills and real world examples.
+
+What makes you a good teacher?
+
+I have released over 40 games and apps that have done very well in the app store.
+I run a company called Mammoth Interactive so I am actively in the field building apps and making money
+I have been teaching since 2002
+I personally love learning online and my life is much better because I have learned online rather than a classroom
+I am one of the top 10 highest grossing Udemy teachers
+I have been a Udemy instructor since 2011.
+I make sure people learn how to make money from their creations.
+I have over 150k students worldwide
+Who is this class for?
+
+People who want to improve their technical skills
+Complete beginners
+People who want to make money. I show people the tools on how to make money through various methods of passive income
+People who want to get ahead of the pack by learning online.
+How you will make money by learning new skills
+
+Learn practical skills
+Learn about how leverage your new skills to greater wealth
+Learn through practical examples
+Why should you learn online?
+
+There is an online education revolution taking place. You may have heard about it in the news or heard it from a friend. Either-way, education is going to be changed forever. In this short course I talk about how Online Education has
+
+Motivated me
+Helped my career
+Helped me as a teacher
+Impacted several lives around the planet
+I promise that this course will be better and more effective than reading books. I show how to master technology through the use of video. This course will give you everything you need to thrive in our technological society.
+
+
+77 <--> cgcookie - Fundamentals of Dynamics
+http://nitroflare.com/view/E31666A95D0F6C4/FDy_by_1_file.rar
+http://nitroflare.com/view/5178204F83B61BD/FDy.part1.rar
+http://nitroflare.com/view/8F22EF5E91DDD07/FDy.part2.rar
+http://nitroflare.com/view/E46CC84DBDFEF68/FDy.part3.rar
+
+
+cgcookie - Fundamentals of Dynamics
+English | mp4 | H264 1920x1080 | AAC 2 ch | 1 hr 55 min | 1.13 GB 
+eLearning | Level: Beginner | Software: Blender 2.77
+
+Dynamic Simulation is one of the most “magical” things we can do with Blender. In short, it’s a way to create complex procedural animations that mimic physics.
+
+If you’ve taken a high school math class, you’ll understand that physics calculations require a lot of math. Fortunately, we don’t have to do any math in order to make our models bounce, shatter, splash, and squish – Blender does that math for us! We just give it input materials and Blender does the rest.
+
+In this course we will be taking an introductory look at the nine types of dynamic effects that are available in Blender:
+
+Particles: Dust floating in the air, snow falling from the sky, sparks from a welder, and so much more. This type of effect involves the simulation of large quantities of small bits; i.e. particles.
+Hair: Exactly what it sounds like.
+Force Fields: Blender objects that mimic real-world forces like gravity, magnetism, vortex, etc.
+Rigid Bodies: You know when a Jenga tower falls? It’s like that: The simulation of rigid, non-deforming objects.
+Cloth: Also, what it sounds like – The simulation of fabric.
+Soft Bodies: In contrast to rigid bodies, this kind of simulation accounts for deformation of objects.
+Smoke: The simulation of smoke and fire! Muahaha
+Fluid: Liquid simulation like a pipe gushing water for example.
+Dynamic Paint: Think of this like writing with your finger on a foggy mirror. This is an interesting simulation genre that interprets object-to-object interaction into surface information like vertex weights.
+
+
+115 <--> Make a low poly scene in Blender and Unity in 30 minutes (2016)
+http://nitroflare.com/view/4949C9DFA0DBF66/Make_a_low_poly_scene_in_Blender_and_Unity_in_30_minutes.part1.rar
+http://nitroflare.com/view/A3B96057A84DAC6/Make_a_low_poly_scene_in_Blender_and_Unity_in_30_minutes.part2.rar
+http://nitroflare.com/view/8FB30A58189A89D/Make_a_low_poly_scene_in_Blender_and_Unity_in_30_minutes.part3.rar
+http://nitroflare.com/view/DA0C8495C6E78F2/Make_a_low_poly_scene_in_Blender_and_Unity_in_30_minutes.part4.rar
+
+
+Make a low poly scene in Blender and Unity in 30 minutes
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 37M | Lec: 10 | 340 MB
+Genre: eLearning | Language: English
+
+Learn something new in just 30 minutes! Learn how to make low poly art in blender!
+
+Learn how to make simple low poly art in Blender and then import it to Unity3D. 
+
+One of the best features is that you can watch the courses at any speed you want. This means you can speed up the or slow down the video if you want to.
+
+This course is project based so you will not be learning a bunch of useless coding practices. At the end of this course you will have real world apps to use in your portfolio. We feel that project based training content is the best way to get from A to B. Taking this course means that you learn practical, employableskills immediately.
+
+You can use the projects you build in this course to add to your LinkedIn profile. Give your portfolio fuel to take your career to the next level.
+
+Learning how to code is a great way to jump in a new career or enhance your current career. Coding is the new math and learning how to code will propel you forward for any situation. Learn it today and get a head start for tomorrow. People who can master technology will rule the future.
+
+You will get full lifetime access to this course for a single one off fee. John Bura has created many games, apps and training courses so he is extremely qualified to teach you how to master technology. This is an instructor that does not only teach, he produces apps. This means you get the most relevant information on how to code. Most courses do not show you practical skills and real world examples.
+
+
+
+118 <--> Mastering Events and Delegates in C# Training Video
+http://www.infiniteskills.com/training/mastering-events-and-delegates-in-c-sharp.html
+http://nitroflare.com/view/658AE116F7D8D3B/MasteringEventsandDelegatesinCSharp.part1.rar
+http://nitroflare.com/view/BDD4C70142893C2/MasteringEventsandDelegatesinCSharp.part2.rar
+http://nitroflare.com/view/4324919B0FE049F/MasteringEventsandDelegatesinCSharp.part3.rar
+
+
+Mastering Events and Delegates in C# Training Video
+2016-06-30 | SKU: 02377 | .MP4, AVC, 1000 kbps, 1280x720 | English, AAC, 128 kbps, 2 Ch | 2.5 hours | 588 MB
+Instructor: Rod Stephens
+
+Simple event handlers that do things like make buttons and menu items perform actions, are commonly used by even novice C# programmers. The concept of delegates can seem more complicated and is often avoided by beginners for that reason. However, delegates are working behind the scenes and you are using them without realizing it every time you use events. A better understanding and more control of event handlers will come with a better understanding of delegates. 
+
+In this course, C# wizard Rod Stephens reveals the relationship between delegates and events. He shows you how delegates function, and once that is clear he takes you on a tour of the advanced ways in which you can now work with events. Prerequisites for the course include some C# experience and a computer running Visual Studio 2015.
+
+* Become a better C# programmer by understanding the relationship between delegates and events
+* Learn to use delegate types pre-defined by the .NET framework, and define your own delegates
+* Discover how to create delegate variables that let you manipulate methods as if they were data
+* Learn how to use event handlers in Windows forms and WPF applications
+* Understand how to define and raise events, and how to create and use routed events
+* Explore tunneling, bubbling, and custom routed events
+
+
+121 <--> Intermediate Windows Presentation Foundation Training Video
+http://nitroflare.com/view/EB7BD114D3C8174/Int.Wi.Pr.Fo.part1.rar
+http://nitroflare.com/view/E62A875043F266E/Int.Wi.Pr.Fo.part2.rar
+http://nitroflare.com/view/1360223BE3E2436/Int.Wi.Pr.Fo.part3.rar
+http://nitroflare.com/view/D60C696BB89A170/Int.Wi.Pr.Fo.part4.rar
+http://nitroflare.com/view/CA7D6FBCCBF3E8E/Int.Wi.Pr.Fo.part5.rar
+
+
+Intermediate Windows Presentation Foundation Training Video
+HDRips | MP4/AVC, ~163 kb/s | 1280x720 | Duration: 5 hours | English: AAC, 125 kb/s (2 ch) | 1.09 GB
+Genre: Development / Programming
+
+In this project-based Intermediate Windows Presentation Foundation video tutorial series, you'll quickly have relevant skills for real-world applications.
+
+Follow along with our expert instructor in this training course to get:
+
+Concise, informative and broadcast-quality Intermediate Windows Presentation Foundation training videos delivered to your desktop
+The ability to learn at your own pace with our intuitive, easy-to-use interface
+A quick grasp of even the most complex Intermediate Windows Presentation Foundation subjects because they're broken into simple, easy to follow tutorial videos
+
+Practical working files further enhance the learning process and provide a degree of retention that is unmatched by any other form of Intermediate Windows Presentation Foundation tutorial, online or offline… so you'll know the exact steps for your own projects.
+
+
+126 <--> Lynda - Linux: Bash Shell and Scripts
+http://nitroflare.com/view/8708F69055DD69E/LcLinuxBashShellScripts.part1.rar
+http://nitroflare.com/view/71756F59466C64A/LcLinuxBashShellScripts.part2.rar
+http://nitroflare.com/view/B0D22D2F9425520/LcLinuxBashShellScripts.part3.rar
+
+
+Lynda - Linux: Bash Shell and Scripts
+Size: 305 MB | Duration: 2h 46m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Bash scripting can help you automate routine tasks and save valuable time, whether you're a Linux user, sys admin, or software developer. Kevin Dankwardt has written thousands of bash scripts, short and long. Here he teaches you how to read and write scripts, and provides a series of scripting challenges to help you test your new skills. Learn about the bash environment, local variables, functions, loops, case statements, string operations, and coprocesses. Plus, learn how to use the text processing utilities sed and AWK to read and edit data in text files. The topics covered in this course are vital for Linux administration, and required for many Linux certifications.
+
+
+
+132 <--> Data Wrangling and Analysis with Python Training Video
+http://www.infiniteskills.com/training/data-wrangling-and-analysis-with-python.html
+http://nitroflare.com/view/F6DE2ADDF569A61/DataWranglingandAnalysiswithPython.part1.rar
+http://nitroflare.com/view/B1B876539ACD8CC/DataWranglingandAnalysiswithPython.part2.rar
+http://nitroflare.com/view/9797AC7B5058881/DataWranglingandAnalysiswithPython.part3.rar
+
+
+Data Wrangling and Analysis with Python Training Video
+2016-06-15 | SKU: 02364 | .MP4, AVC, 1000 kbps, 1280x720 | English, AAC, 64 kbps, 2 Ch | 3.5 hours | 1.41 GB
+Instructor: Katharine Jarmul
+
+Discover the data analysis capabilities of the Python Pandas software library in this introduction to data wrangling and data analytics. Designed for learners with some core knowledge of Python, you'll explore the basics of importing, exporting, parsing, cleaning, analyzing, and visualizing data. 
+
+The course focuses on Pandas, where you'll learn to filter, group, match, and join data and then move on to advanced functions like analyzing trends and normalizing your data. There is also an introduction to some nifty skills like web scraping, working with API data, fuzzy matching, multiprocessing, and analyzing code performance. 
+
+- Master the basics of Python data wrangling and data analysis
+- Discover the Pandas software library and its use as a data analysis tool
+- Learn to pull data from disparate sources (Excel, CSV, PDF, APIs, etc.)
+- Explore web scraping and how to handle encoding and decoding
+- Understand how to identify and clean data using RegEx and fuzzy matching
+- Sample other data analysis tools like natural language processing and Numpy
+- Learn the data visualization capabilities of Matplotlib and Bokeh
+
+
+135 <--> Microservices AntiPatterns and Pitfalls Training Video
+http://www.infiniteskills.com/training/microservices-antipatterns-and-pitfalls.html
+http://nitroflare.com/view/2B0C6D1F819E643/MicroservicesAntiPatternsandPitfalls.part1.rar
+http://nitroflare.com/view/F8DD00E7C2850E0/MicroservicesAntiPatternsandPitfalls.part2.rar
+http://nitroflare.com/view/6F666BB83B75AC9/MicroservicesAntiPatternsandPitfalls.part3.rar
+
+
+Microservices AntiPatterns and Pitfalls Training Video
+2016-07-13 | SKU: 02384 | .MP4, AVC, 1000 kbps, 1280x720 | English, AAC, 128 kbps, 2 Ch | 4 hours | 1.27 GB
+Instructor: Mark Richards
+
+Microservices is an increasingly popular architecture style that promotes scalability and ease of testing and deployment through small, highly distributed service components. It may sound like the correct architecture for your situation, but if you're new to microservices, how do you really know? Understanding microservices' pitfalls (practices that are never a good idea) and anti-patterns (practices that seem like a good idea, but aren't) is a good place to start. 
+
+In this video, 20+ year software architecture veteran Mark Richards (IBM, CSC, etc.) doesn't just identify the pitfalls and anti-patterns of microservices, he shows you how to avoid them. You'll learn about service granularity estimation, database migration, microservices reporting, distributed transaction management, remote access latency, contract versioning, distributed logging, and much more.
+
+* Understand how to recognize and avoid costly microservices development mistakes
+* Survey each of the 10 most common pitfalls associated with microservices
+* Get wise to the 6 hidden anti-patterns that can ruin a microservices effort
+* Master the knowledge required to stay clear of these pitfalls and anti-patterns
+* Tap into an assessment tool that tells you if you truly understand microservices development
+* Learn to determine if microservices is the right architecture style for your situation\
+
+136 <--> Text Mining & Natural Language Understanding at Scale Training Video
+http://www.infiniteskills.com/training/text-mining-and-natural-language-understanding-at-scale.html
+http://nitroflare.com/view/B8F1555318E334D/TextMiningNaturalLanguageUnderstandingatScale.part1.rar
+http://nitroflare.com/view/103192C676BDE73/TextMiningNaturalLanguageUnderstandingatScale.part2.rar
+http://nitroflare.com/view/43CC845A730FFCF/TextMiningNaturalLanguageUnderstandingatScale.part3.rar
+
+
+Text Mining & Natural Language Understanding at Scale Training Video
+2016-07-27 | SKU: 02392 | .MP4, AVC, 1000 kbps, 1280x720 | English, AAC, 128 kbps, 2 Ch | 2.25 hours | 871 MB
+Instructors: David Talby, Claudiu Branzan
+
+A text mining system must go way beyond indexing and search to appear truly intelligent. First, it should understand language beyond keyword matching. For example, it should be able to distinguish the critical difference between "Jane has the flu" and "Jane had the flu when she was 9". Second, it should be capable of making likely inferences even if they're not explicitly written. 
+
+For example, inferring that Jane may have the flu if she has had a fever, headache, fatigue, and runny nose for three days. And third, it should do its work as part of a robust, scalable, efficient and easy to extend system. This course teaches software engineers and data scientists how to build intelligent natural language understanding (NLU) based text mining systems at scale using Java, Scala and Spark for distributed processing.
+
+* Learn the meaning of natural language understanding (NLU) and its use in text mining
+
+* Discover how to build a natural language processing (NLP) pipeline within a big data framework
+
+* Recognize the differences between NLP pipelines and other approaches to semantic text mining
+
+* Learn about standard UIMA annotators, custom annotators, and machine learned annotators
+
+* Discover how different types of annotators are composed into a text processing pipeline
+
+* Use machine learning to generate annotators and apply them within a data pipeline
+
+* See pipeline architectures that incorporate Kafka, Spark, SparkSQL, Cassandra, and ElasticSearch
+
+
+178 <--> Lynda - Python Scripting for Blender
+http://nitroflare.com/view/9AB552EBAD1CEE9/LcPythonScriptingBlender.part1.rar
+http://nitroflare.com/view/2E8D92F74C90CF9/LcPythonScriptingBlender.part2.rar
+
+
+Lynda - Python Scripting for Blender
+Size: 289 MB | Duration: 2h 2m | Video: AVC (.mp4) 1280x720 30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Make Blender better by harnessing the power of Python. Whether you're an artist or a developer, scripting is a great selling point to add to your resume. Once you master the basics, you can automate time-consuming modeling and animation tasks, customize the Blender interface, or even package to share or sell your enhancements to other users. Patrick W. Crawford shows how to use Blender's built-in Python console window and the bpy library to create simple one-line scripts, create custom panels and menus, and build and package add-ons. These techniques will take your Blender skills to the next level and help you enter an exciting new world of Python programming.
+
+
+183 <--> Data Visualization in R With ggplot2 Training Video
+http://nitroflare.com/view/1112A486F903B40/Da.Vi.in.R.w.G.part1.rar
+http://nitroflare.com/view/5E6702237188A64/Da.Vi.in.R.w.G.part2.rar
+
+
+Data Visualization in R With ggplot2 Training Video
+HDRips | MP4/AVC, ~189 kb/s | 1280x720 | Duration: 01:03:38 | English: AAC, 125 kb/s (2 ch) | 200 MB
+Genre: Development / Programming
+
+In this project-based Data Visualization in R With ggplot2 video tutorial series, you'll quickly have relevant skills for real-world applications.
+
+Follow along with our expert instructor in this training course to get:
+
+Concise, informative and broadcast-quality Data Visualization in R With ggplot2 training videos delivered to your desktop
+The ability to learn at your own pace with our intuitive, easy-to-use interface
+A quick grasp of even the most complex Data Visualization in R With ggplot2 subjects because they're broken into simple, easy to follow tutorial videos
+
+Practical working files further enhance the learning process and provide a degree of retention that is unmatched by any other form of Data Visualization in R With ggplot2 tutorial, online or offline… so you'll know the exact steps for your own projects.
+
+Wednesday, September 21, 2016 [END]
+
 Wednesday, September 14, 2016 [START]
 
 0 <--> Copyhackers - Conversion Copywriting Course with Joanna Wiebe [repost]

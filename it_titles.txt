@@ -1,3 +1,119 @@
+Thursday, September 22, 2016 [START]
+
+0 <--> Social Machines: The Coming Collision of Artificial Intelligence, Social Networking, and Humanity
+
+
+Social Machines: The Coming Collision of Artificial Intelligence, Social Networking, and Humanity
+James Hendler, Alice Mulvehill | 2016 | EPUB, True PDF | ISBN: 148421157X | 174 pages | 2 Mb, 10 Mb
+
+
+33 <--> Computer Vision Metrics: Textbook Edition
+http://nitroflare.com/view/E095A7801C2FD58/10.1007%40978-3-319-33762-3.pdf
+
+
+Computer Vision Metrics: Textbook Edition
+Springer | Computer Science | October 18, 2016 | ISBN-10: 3319337610 | 637 pages | pdf | 26.18 mb
+
+Authors: Krig, Scott
+Provides the most complete survey of computer vision feature description methods including local, regional, global, basis, and feature learning via deep learning and neural networks
+Offers learning assignments at the end of each chapter for student or instructor use
+Includes techniques for optimizing computer vision algorithm performance such as SW and HW architecture considerations
+
+Based on the successful 2014 book published by Apress, this textbook edition is expanded to provide a comprehensive history and state-of-the-art survey for fundamental computer vision methods. With over 800 essential references, as well as chapter-by-chapter learning assignments, both students and researchers can dig deeper into core computer vision topics. The survey covers everything from feature descriptors, regional and global feature metrics, feature learning architectures, deep learning, neuroscience of vision, neural networks, and detailed example architectures to illustrate computer vision hardware and software optimization methods.
+To complement the survey, the textbook includes useful analyses which provide insight into the goals of various methods, why they work, and how they may be optimized. 
+The text delivers an essential survey and a valuable taxonomy, thus providing a key learning tool for students, researchers and engineers, to supplement the many effective hands-on resources and open source projects, such as OpenCVand other imaging and deep learning tools. 
+
+Number of Illustrations and Tables
+192 b/w illustrations, 139 illustrations in colour
+Topics
+Image Processing and Computer Vision
+Signal, Image and Speech Processing
+Document Preparation and Text Processing
+
+
+
+45 <--> Mastering Natural Language Processing with Python
+http://nitroflare.com/view/6577370BD3F3ED3/1783989041.pdf
+
+
+Mastering Natural Language Processing with Python by Deepti Chopra, Nisheeth Joshi, Iti Mathur
+2016 | ISBN: 1783989041 | English | 238 pages | PDF | 2 MB
+
+Maximize your NLP capabilities while creating amazing NLP projects in Python
+
+About This Book
+
+Learn to implement various NLP tasks in Python
+Gain insights into the current and budding research topics of NLP
+This is a comprehensive step-by-step guide to help students and researchers create their own projects based on real-life applications
+Who This Book Is For
+
+This book is for intermediate level developers in NLP with a reasonable knowledge level and understanding of Python.
+
+What You Will Learn
+
+Implement string matching algorithms and normalization techniques
+Implement statistical language modeling techniques
+Get an insight into developing a stemmer, lemmatizer, morphological analyzer, and morphological generator
+Develop a search engine and implement POS tagging concepts and statistical modeling concepts involving the n gram approach
+Familiarize yourself with concepts such as the Treebank construct, CFG construction, the CYK Chart Parsing algorithm, and the Earley Chart Parsing algorithm
+Develop an NER-based system and understand and apply the concepts of sentiment analysis
+Understand and implement the concepts of Information Retrieval and text summarization
+Develop a Discourse Analysis System and Anaphora Resolution based system
+In Detail
+
+Natural Language Processing is one of the fields of computational linguistics and artificial intelligence that is concerned with human-computer interaction. It provides a seamless interaction between computers and human beings and gives computers the ability to understand human speech with the help of machine learning.
+
+This book will give you expertise on how to employ various NLP tasks in Python, giving you an insight into the best practices when designing and building NLP-based applications using Python. It will help you become an expert in no time and assist you in creating your own NLP projects using NLTK.
+
+You will sequentially be guided through applying machine learning tools to develop various models. We'll give you clarity on how to create training data and how to implement major NLP applications such as Named Entity Recognition, Question Answering System, Discourse Analysis, Transliteration, Word Sense disambiguation, Information Retrieval, Sentiment Analysis, Text Summarization, and Anaphora Resolution.
+
+Style and approach
+
+This is an easy-to-follow guide, full of hands-on examples of real-world tasks. Each topic is explained and placed in context, and for the more inquisitive, there are more details of the concepts used.
+
+Thursday, September 22, 2016 [END]
+Monday, September 19, 2016 [START]
+0 <--> Enterprise Modeling and Computing with UML {Repost}
+
+Enterprise Modeling and Computing with UML by Peter Rittgen
+English | 30 Jan. 2007 | ISBN: 159904174X | 336 Pages | PDF | 14 MB
+
+
+1 <--> tmux: Productive Mouse-Free Development
+http://nitroflare.com/view/3B3325C6219015F/1934356964.epub
+
+
+tmux: Productive Mouse-Free Development by Brian P. Hogan
+English | 22 Sept. 2013 | ISBN: 1934356964 | 88 Pages | PDF | 1 MB
+
+Your mouse is slowing you down. The time you spend context switching between your editor and your consoles eats away at your productivity. Take control of your environment with tmux, a terminal multiplexer that you can tailor to your workflow. Learn how to customize, script, and leverage tmux's unique abilities and keep your fingers on your keyboard's home row. 
+
+
+37 <--> Intermediate Windows Presentation Foundation Training Video
+http://nitroflare.com/view/EB7BD114D3C8174/Int.Wi.Pr.Fo.part1.rar
+http://nitroflare.com/view/E62A875043F266E/Int.Wi.Pr.Fo.part2.rar
+http://nitroflare.com/view/1360223BE3E2436/Int.Wi.Pr.Fo.part3.rar
+http://nitroflare.com/view/D60C696BB89A170/Int.Wi.Pr.Fo.part4.rar
+http://nitroflare.com/view/CA7D6FBCCBF3E8E/Int.Wi.Pr.Fo.part5.rar
+
+
+Intermediate Windows Presentation Foundation Training Video
+HDRips | MP4/AVC, ~163 kb/s | 1280x720 | Duration: 5 hours | English: AAC, 125 kb/s (2 ch) | 1.09 GB
+Genre: Development / Programming
+
+In this project-based Intermediate Windows Presentation Foundation video tutorial series, you'll quickly have relevant skills for real-world applications.
+
+Follow along with our expert instructor in this training course to get:
+
+Concise, informative and broadcast-quality Intermediate Windows Presentation Foundation training videos delivered to your desktop
+The ability to learn at your own pace with our intuitive, easy-to-use interface
+A quick grasp of even the most complex Intermediate Windows Presentation Foundation subjects because they're broken into simple, easy to follow tutorial videos
+
+Practical working files further enhance the learning process and provide a degree of retention that is unmatched by any other form of Intermediate Windows Presentation Foundation tutorial, online or offline… so you'll know the exact steps for your own projects.
+
+Monday, September 19, 2016 [END]
+
 0 <--> RenderScript: parallel computing on Android, the easy way
 
 RenderScript: parallel computing on Android, the easy way by Alberto Marchetti
