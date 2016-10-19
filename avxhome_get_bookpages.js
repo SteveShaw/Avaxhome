@@ -6,10 +6,10 @@
 var wp = require('webpage')
 var page = wp.create();
 var fs = require('fs')
-// var page_root = 'http://avxhome.in/ebooks/programming_development/pages/'
+var page_root = 'http://avxhome.in/ebooks/programming_development/pages/'
 // var page_root = 'http://avxhome.in/ebooks/economics_finances/pages/'
 // var page_root = 'http://avxhome.in/ebooks/science_books/math/pages/'
-var page_root = 'http://avxhome.in/ebooks/eLearning/pages/';
+// var page_root = 'http://avxhome.in/ebooks/eLearning/pages/';
 // var url = page_root + 1
 var url_root = 'http://avxhome.in'
 var urls = []
@@ -19,7 +19,7 @@ var topPageUrls = []
 var page_contents = []
 var isTopPage = false
 
-var num_of_pages = 50;
+var num_of_pages = 30;
 var start_page = 1;
 
 // var saveDirPath = 'page_1/'
