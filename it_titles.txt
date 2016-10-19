@@ -1,3 +1,134 @@
+Friday, September 30, 2016 [START]
+0 <--> Programming and Interfacing ATMEL AVR Microcontrollers
+http://nitroflare.com/view/25DF27C527EA94F/Thomas_Grace_-_Programming_and_Interfacing_ATMEL_AVR_Microcontrollers.pdf
+
+
+Programming and Interfacing ATMEL AVR Microcontrollers by Thomas Grace
+English | ISBN: 1305509994 | 2015 | PDF | 272 pages | 4.65 MB
+
+
+Atmel's AVR microcontrollers are the go-to chip for many hobbyists and hardware hacking projects. In this book, PROGRAMMING AND INTERFACING ATMEL'S AVRS, you will learn how to program and interface using three of Atmel's microcontrollers–the ATtiny13, the ATmega328, and the ATmega32. The book begins with the binary number system and move into programming in assembly, then C and C++. Very little prior engineering knowledge is assumed. You'll work step-by-step through sections on connecting to devices such as DC motors, servos, steppers, touch pads, GPS sensors, temperature sensors, accelerometers, and more. Get started working with Atmel's AVRs today, with PROGRAMMING AND INTERFACING ATMEL'S AVRS.
+
+
+
+1 <--> Python with Oracle Database (2016) (updated)
+http://nitroflare.com/view/4557B37D74FB02C/Python_with_Oracle_Database.part1.rar
+http://nitroflare.com/view/BCC4A8DDC89D62D/Python_with_Oracle_Database.part2.rar
+http://nitroflare.com/view/BE99CF9D809EB28/Python_with_Oracle_Database.part3.rar
+http://nitroflare.com/view/CF8F1FAA67004D0/Python_with_Oracle_Database.part4.rar
+http://nitroflare.com/view/A90423DE946A36D/Python_with_Oracle_Database.part5.rar
+
+
+Python with Oracle Database
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4 Hours | Lec: 31 | 935 MB
+Genre: eLearning | Language: English
+
+Using Python with Oracle will make the processing performance much better and complex tasks will be done in few lines!!
+
+Students that have little knowledge about Oracle SQL/PLSQL and Python, this course will be very useful for them, as using Python with Oracle will make the processing performance much much better as we will see in a lot of examples during the course.
+
+Why Python?
+
+Very fast language
+Easy to learn
+Cross platform
+Unlimited third party libraries
+Get your job done with few lines
+Ranked as #1 for the most popular programming languages
+
+
+In case of big data python we will be very useful as it has below features:-
+
+Bulk DML Operations, so you can hit Oracle DB only one time to insert Bulk of records
+Process Forking, which enable to run multi instances from the process.
+Multi Threading which enable you to do parallel processing.
+Create DLLs and call them from Python and Oracle.
+Learn how to embedded SQL into DLL.
+Learn how to create Windows Service from python.
+
+11 <--> Learning SciPy for Numerical and Scientific Computing, Second Edition (repost)
+http://nitroflare.com/view/C3D6E554B3BB835/1783987707.pdf
+
+
+Learning SciPy for Numerical and Scientific Computing, Second Edition by Sergio J. Rojas G.
+English | ISBN: 1783987707 | 2015 | 136 pages | PDF | 3,5 MB
+
+SciPy is an open source Python library used to perform scientific computing. The SciPy (Scientific Python) package extends the functionality of NumPy with a substantial collection of useful algorithms.
+
+Quick solutions to complex numerical problems in physics, applied mathematics, and science with SciPy
+
+About This Book
+
+Use different modules and routines from the SciPy library quickly and efficiently
+Create vectors and matrices and learn how to perform standard mathematical operations between them or on the respective array in a functional form
+A step-by-step tutorial that will help users solve research-based problems from various areas of science using Scipy
+Who This Book Is For
+
+This book targets programmers and scientists who have basic Python knowledge and who are keen to perform scientific and numerical computations with SciPy.
+
+In Detail
+
+The book starts with a brief description of the SciPy libraries, followed by a chapter that is a fun and fast-paced primer on array creation, manipulation, and problem-solving. You will also learn how to use SciPy in linear algebra, which includes topics such as computation of eigenvalues and eigenvectors. Furthermore, the book is based on interesting subjects such as definition and manipulation of functions, computation of derivatives, integration, interpolation, and regression. You will also learn how to use SciPy in signal processing and how applications of SciPy can be used to collect, organize, analyze, and interpret data.
+
+By the end of the book, you will have fast, accurate, and easy-to-code solutions for numerical and scientific computing applications. 
+
+
+
+73 <--> JavaScript the Basics for Beginners- Section 6: Functional Programming
+http://nitroflare.com/view/50B3EC4ACE7A4CF/JavaScript_the_Basics_for_Beginners-_Section_6_Functional_Programming.part1.rar
+http://nitroflare.com/view/44A69205409FBA5/JavaScript_the_Basics_for_Beginners-_Section_6_Functional_Programming.part2.rar
+http://nitroflare.com/view/795FC5C80E87224/JavaScript_the_Basics_for_Beginners-_Section_6_Functional_Programming.part3.rar
+http://nitroflare.com/view/962B22876DCF56E/JavaScript_the_Basics_for_Beginners-_Section_6_Functional_Programming.part4.rar
+
+
+JavaScript the Basics for Beginners- Section 6: Functional Programming
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 50M | 362 MB
+Genre: eLearning | Language: English
+
+Course 6 - Functional Programming in JavaScript
+
+In this course you will cover: 
+
+filter
+map
+reduce
+course review
+Through our whole JavaScript the Basics for Beginners course series you will find this is your one stop necessary to enter into the language of JavaScript. We are going to start from scratch and build up our understanding of the world's most popular programming language together. 
+
+View JavaScript in action with whiteboard videos optimized for viewing on your smartphone. This is truly a course that you can engage with no matter where you are. Take your JavaScript eduction on the go! With whiteboard videos you get to visualize what JavaScript does under the hood. 
+
+You can practice JavaScript in your web browser! Take advantage of Google Chrome developer tools to put the JavaScript you have learned during our whiteboard lesson into practice with further examples and challenges. This is our JavaScript playground.
+
+Learning JavaScript is like learning a language. This course won't make a false promise of saying you will master JavaScript overnight. However, this course will immerse you into the world's most popular programming language. 
+
+Each course will introduce you to something new in JavaScript :
+
+JavaScript Syntax
+JavaScript Building Blocks
+JavaScript Best Practices
+JavaScript Objects
+JavaScript Arrays
+JavaScript Regular Expressions
+JavaScript Functional Programming
+JavaScript Algorithms
+JavaScript Data Structures
+JavaScript ES6 Syntax
+You'll finish this course with an understanding of JavaScript that will let you take a deeper dive into the language and possibly launch you into a new career as a JavaScript web developer.
+
+Learning a new language can be difficult and even feel intimidating. JavaScript the Basics makes the the learning process feel accessible and welcoming!
+
+
+
+302 <--> Progress in Image Analysis and Processing
+http://nitroflare.com/view/F643F24A6CD18B7/3642411800.pdf
+
+
+Progress in Image Analysis and Processing, ICIAP 2013 (Lecture Notes in Computer Science) by Alfredo Petrosino
+English | 12 Sept. 2013 | ISBN: 3642411800 | 888 Pages | PDF | 40 MB
+
+The papers aim at highlighting the connection and synergies of image processing and analysis with pattern recognition and machine learning, human computer systems, biomedical imaging and applications, multimedia interaction and processing, 3D computer vision, and understanding objects and scene. 
+
+Friday, September 30, 2016 [END]
 Thursday, September 22, 2016 [START]
 
 0 <--> Social Machines: The Coming Collision of Artificial Intelligence, Social Networking, and Humanity
@@ -114,11 +245,6 @@ Practical working files further enhance the learning process and provide a degre
 
 Monday, September 19, 2016 [END]
 
-0 <--> RenderScript: parallel computing on Android, the easy way
-
-RenderScript: parallel computing on Android, the easy way by Alberto Marchetti
-English | 3 July 2016 | ASIN: B01HX066T8, B01HOWDJ5O | 106 Pages | AZW3/MOBI/EPUB/PDF (conv) | 6.83 MB
-
 1 <--> Scientific software R. Programming language and applications
 http://nitroflare.com/view/33408DE2A0F13CE/Scientific_software_R._Programming_language_and_applications_-_Scientific_Books.rar
 
@@ -167,12 +293,6 @@ Practical working files further enhance the learning process and provide a degre
 
 
 Wednesday, September 14, 2016 [START]
-
-0 <--> Python: A Beginner to Expert Guide to Learning the Essence of Python Programming in One Day
-
-Python: A Beginner to Expert Guide to Learning the Essence of Python Programming in One Day (Python, Python Programming, Beginner to Expert Guide) by Morgan Carey
-English | 1 Aug 2016 | ASIN: B01JJDCP7Y | 48 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.84 MB
-
 
 6 <--> Exception Handling in Python 3.5
 http://nitroflare.com/view/15B1820E2AE92F4/Exception_Handling_in_Python_3.5_-_Rajeev_Vashisht.rar
@@ -249,12 +369,6 @@ Preface
 Wednesday, September 14, 2016 [END]
 
 Monday, September 12, 2016 [START]
-
-0 <--> Data Warehouse Implementation with the Corporate Information Factory (CIF)
-
-
-Data Warehouse Implementation with the Corporate Information Factory (CIF)
-HDRips | MP4/AVC, ~110 kb/s | 1280x720 | Duration: 01:33:11 | English: AAC, 254 kb/s (2 ch) | 337 MB
 
 26 <--> Introduction to .NET Core
 http://nitroflare.com/view/82D4DC85D65A5AA/Intr.toNe.Co.part1.rar
