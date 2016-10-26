@@ -1,14 +1,19 @@
-Friday, September 30, 2016 [START]
-0 <--> Programming and Interfacing ATMEL AVR Microcontrollers
-http://nitroflare.com/view/25DF27C527EA94F/Thomas_Grace_-_Programming_and_Interfacing_ATMEL_AVR_Microcontrollers.pdf
+
+3:22 PM 10/20/2016 [START]
+
+0 <--> A Finite Element Framework for Geotechnical Applications Based on Object-orientated Programming (Repost)
 
 
-Programming and Interfacing ATMEL AVR Microcontrollers by Thomas Grace
-English | ISBN: 1305509994 | 2015 | PDF | 272 pages | 4.65 MB
+11 <--> Python The Complete Manual 2nd Edition
+http://nitroflare.com/view/3B2E83CB17650FF/Python_The_Complete_Manual_2nd_Edition_AvxHome.se.pdf
 
 
-Atmel's AVR microcontrollers are the go-to chip for many hobbyists and hardware hacking projects. In this book, PROGRAMMING AND INTERFACING ATMEL'S AVRS, you will learn how to program and interface using three of Atmel's microcontrollers–the ATtiny13, the ATmega328, and the ATmega32. The book begins with the binary number system and move into programming in assembly, then C and C++. Very little prior engineering knowledge is assumed. You'll work step-by-step through sections on connecting to devices such as DC motors, servos, steppers, touch pads, GPS sensors, temperature sensors, accelerometers, and more. Get started working with Atmel's AVRs today, with PROGRAMMING AND INTERFACING ATMEL'S AVRS.
+Python The Complete Manual 2nd Edition
+Imagine Publishing Ltd | 2016 | English | ISBN: 178546440X | True PDF | 133 pages | 14 MB
 
+Python is a versatile language and its rise in popularity is certainly no surprise. Its similarity to everyday language has made it a perfect companion for the Raspberry Pi, which is often a first step into practical programming. But don’t be fooled by its beginner-friendly credentials – Python has plenty of more advanced functions. In this new edition you will learn how to program in Python, discover amazing projects to improve your understanding, and find ways to use Python to enhance your experience of computing. You’ll also create a variety of fun projects!
+
+3:22 PM 10/20/2016 [END]
 
 
 1 <--> Python with Oracle Database (2016) (updated)
