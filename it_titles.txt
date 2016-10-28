@@ -1,8 +1,582 @@
+2:10 PM 10/26/2016 [START]
+
+0 <--> Ruby Programming Fundamentals
+http://nitroflare.com/view/D5138D90081F9D4/Rub.Progr.Fun.part1.rar
+http://nitroflare.com/view/DA4C2022DA8CA3E/Rub.Progr.Fun.part2.rar
+http://nitroflare.com/view/5321D68F907324E/Rub.Progr.Fun.part3.rar
+http://nitroflare.com/view/F3BF1D1DEA29527/Rub.Progr.Fun.part4.rar
+http://nitroflare.com/view/FF7038D5E649BD8/Rub.Progr.Fun.part5.rar
+http://nitroflare.com/view/A0AFB26302F0098/Rub.Progr.Fun.part6.rar
+
+
+Ruby Programming Fundamentals
+HDRips | MP4/AVC, ~375 kb/s | 1920x1080 | Duration: 05:22:30 | English: AAC, 128 kb/s (2 ch) | 1,48 GB
+Genre: Development / Programming
+
+There are some programming languages that require seemingly endless lines of code to make the smallest of programs. There are some languages that are so complex even experts' heads hurt if they try to use them. And then there's Ruby, which has all of the performance of these aforementioned languages and none of the complexity. Productive, powerful, simple and easy to learn, it's the perfect starter language. Oh, and a huge (and growing) number of companies use it too…
+
+
+3 <--> Modular Programming with Python
+http://nitroflare.com/view/E97BB8559705B51/2016_Erik_Westra_-_Modular_Programming_with_Python_Rsvl.pdf
+
+
+Erik Westra, "Modular Programming with Python"
+English | 2016 | ISBN: 1785884484 | 246 pages | PDF | 2.5 MB
+
+
+Key Features
+The book would help you develop succinct, expressive programs using modular deign
+The book would explain best practices and common idioms through carefully explained and structured examples
+It will have broad appeal as far as target audience is concerned and there would be take away for all beginners to Python
+Book Description
+Python has evolved over the years and has become the primary choice of developers in various fields. The purpose of this book is to help readers develop readable, reliable, and maintainable programs in Python.
+
+Starting with an introduction to the concept of modules and packages, this book shows how you can use these building blocks to organize a complex program into logical parts and make sure those parts are working correctly together.
+
+Using clearly written, real-world examples, this book demonstrates how you can use modular techniques to build better programs. A number of common modular programming patterns are covered, including divide-and-conquer, abstraction, encapsulation, wrappers and extensibility. You will also learn how to test your modules and packages, how to prepare your code for sharing with other people, and how to publish your modules and packages on GitHub and the Python Package Index so that other people can use them. Finally, you will learn how to use modular design techniques to be a more effective programmer.
+
+What you will learn
+Learn how to use modules and packages to organize your Python code
+Understand how to use the import statement to load modules and packages into your program
+Use common module patterns such as abstraction and encapsulation to write better programs
+Discover how to create self-testing Python packages
+Create reusable modules that other programmers can use
+Learn how to use GitHub and the Python Package Index to share your code with other people
+Make use of modules and packages that others have written
+Use modular techniques to build robust systems that can handle complexity and changing requirements over time
+
+
+
+16 <--> Udemy – Data Analysis with Python and Pandas [repost]
+http://nitroflare.com/view/4B8DB328FCDD62C/Dat_An_Pyt_Pand.part01.rar
+http://nitroflare.com/view/B31A0D388CB09D8/Dat_An_Pyt_Pand.part02.rar
+http://nitroflare.com/view/DF9BF3686F93473/Dat_An_Pyt_Pand.part03.rar
+http://nitroflare.com/view/BF52ED561D265A3/Dat_An_Pyt_Pand.part04.rar
+http://nitroflare.com/view/37D8FDDC6126FC7/Dat_An_Pyt_Pand.part05.rar
+http://nitroflare.com/view/A5D5DDB52EC8CB1/Dat_An_Pyt_Pand.part06.rar
+http://nitroflare.com/view/DBF93E60E5CB471/Dat_An_Pyt_Pand.part07.rar
+http://nitroflare.com/view/DB08524D01B1D47/Dat_An_Pyt_Pand.part08.rar
+
+
+Udemy – Data Analysis with Python and Pandas
+MP4 | AVC 462kbps | English | 1280x720 | 30fps | 6 hours | AAC stereo 64kbps | 2.26 GB
+Genre: Video Training
+
+Python programmers are some of the most sought-after employees in the tech world, and Python itself is fast becoming one of the most popular programming languages. One of the best applications of Python however is data analysis; which also happens to be something that employers can't get enough of. Gaining skills in one or the other is a guaranteed way to boost your employability – but put the two together and you'll be unstoppable!
+
+Become and expert data analyser
+
+Learn efficient python data analysis
+Manipulate data sets quickly and easily
+Master python data mining
+Gain a skillset in Python that can be used for various other applications
+
+Python data analytics made Simple
+
+This course contains 51 lectures and 6 hours of content, specially created for those with an interest in data analysis, programming, or the Python programming language. Once you have Python installed and are familiar with the language, you'll be all set to go.
+
+The course begins with covering the fundamentals of Pandas (the library of data structures you'll be using) before delving into the most important functions you'll need for data analysis; creating and navigating data frames, indexing, visualising, and so on. Next, you'll get into the more intricate operations run in conjunction with Pandas including data manipulation, logical categorising, statistical functions and applications, and more. Missing data, combining data, working with databases, and advanced operations like resampling, correlation, mapping and buffering will also be covered.
+
+By the end of this course, you'll have not only have grasped the fundamental concepts of data analysis, but through using Python to analyse and manipulate your data, you'll have gained a highly specific and much in demand skill set that you can put to a variety of practical used for just about any business in the world.
+
+Tools Used
+
+Python: Python is a general purpose programming language with a focus on readability and concise code, making it a great language for new coders to learn. Learning Python gives a solid foundation for learning more advanced coding languages, and allows for a wide variety of applications.
+
+Pandas: Pandas is a free, open source library that provides high-performance, easy to use data structures and data analysis tools for Python; specifically, numerical tables and time series. If your project involves lots of numerical data, Pandas is for you.
+
+NumPy: Like Pandas, NumPy is another library of high level mathematical functions. The difference with NumPy however is that was specifically created as an extension to the Python programming language, intended to support large multi-dimensional arrays and matrices.
+
+
+
+
+35 <--> Stack Frames: A Look From Inside
+
+
+Stack Frames: A Look From Inside by Giuseppe Di Cataldo
+English | ISBN: 148422180X | 2016 | EPUB | 171 pages | 2.62 MB
+
+
+Teaches you exactly how program memory content and organization is vital for computer security, especially Unix-like operating systems. You will learn how it is manipulated to take control of a computer system, as well as the countermeasures that system designers set up to avoid this. Neither a guide for hackers nor an all-out theory book, this book is ideal for anyone studying computer security who wants to learn by doing.
+
+Using a practical approach, you will understand how stack frames relate to hardware and software theory and the various GNU/Linux distributions, before moving on to Base 2, 8 and 16 notations, executables and libraries. Lastly you will go in-depth to understand the intricacies of stack frames. A vital resource for all computer security students and enthusiasts, add Stack Frames: A Look Inside to your library today.
+
+What You Will Learn
+In-depth knowledge on activation records of functions, and how this information can be used.
+A better understanding on how conventions used by compilers work.
+Clarify some concepts on libraries and their relationship with executable programs.
+Get, or recall, technical skills using compilers, debuggers, and other tools.
+
+Who This Book Is For
+The book is suitable for college students with a good knowledge of the C language, who are interested in deepening their study of the content and organization of program memory, namely the activation records of functions, as regards possible implications in computer security. A basic knowledge of both the Assembly language and the UNIX operating system is certainly helpful, as well as some practice with compilers and debuggers; but they are not compulsory.
+
+
+40 <--> Coursera: Algorithms - Princeton University (Part I + Part II) [repost]
+http://nitroflare.com/view/525C53140EAE16B/Algorithms.Princeton.University.part1.rar
+http://nitroflare.com/view/C2D1BDB0D2994BD/Algorithms.Princeton.University.part2.rar
+http://nitroflare.com/view/4077DC63B4AFE5D/Algorithms.Princeton.University.part3.rar
+http://nitroflare.com/view/C1782FE91520FBB/Algorithms.Princeton.University.part4.rar
+http://nitroflare.com/view/3D3C8D4D3B3AAB3/Algorithms.Princeton.University.part5.rar
+http://nitroflare.com/view/53C71501E5F1A3B/Algorithms.Princeton.University.part6.rar
+http://nitroflare.com/view/C1C46F53C1AA17A/Algorithms.Princeton.University.part7.rar
+http://nitroflare.com/view/84C38B8F5DB5D34/Algorithms.Princeton.University.part8.rar
+
+
+Coursera: Algorithms - Princeton University
+WEBRip | English | MP4 + PDF Guides + Excercises files | 960 x 540 | AVC ~76.2 kbps | 29.970 fps
+AAC | 128 Kbps | 44.1 KHz | 2 channels | 28:38:37 | 2.78 GB
+Genre: eLearning Video / Computer Science, Development, Programming
+
+This course covers the essential information that every serious programmer needs to know about algorithms and data structures, with emphasis on applications and scientific performance analysis of Java implementations. An introduction to fundamental data types, algorithms, and data structures, with emphasis on applications and scientific performance analysis of Java implementations. Specific topics covered include: union-find algorithms; basic iterable data types (stack, queues, and bags); sorting algorithms (quicksort, mergesort, heapsort) and applications; priority queues; binary search trees; red-black trees; hash tables; and symbol-table applications.
+Part I covers basic iterable data types, sorting, and searching algorithms.
+Part II covers graph-processing algorithms, including minimum spanning tree and shortest paths algorithms, and string processing algorithms, including string sorts, tries, substring search, regular expressions, and data compression, and concludes with an overview placing the contents of the course in a larger context.
+
+Content:
+
+Part 1:
+01 - Course Introduction.mp4
+02 - Union-Find - Dynamic Connectivity.mp4
+03 - Union-Find - Quick Find.mp4
+04 - Union-Find - Quick Union.mp4
+05 - Union-Find - Quick-Union Improvements.mp4
+06 - Union-Find - Applications.mp4
+07 - Analysis of Algorithms - Introduction.mp4
+08 - Analysis of Algorithms - Observations.mp4
+09 - Analysis of Algorithms - Mathematical Models.mp4
+10 - Analysis of Algorithms - Order-of-Growth Classifications.mp4
+11 - Analysis of Algorithms - Theory of Algorithms.mp4
+12 - Analysis of Algorithms - Memory.mp4
+13 - Bags, Queues, And Stacks - Stacks.mp4
+14 - Bags, Queues, And Stacks - Resizing Arrays.mp4
+15 - Bags, Queues, And Stacks - Queues.mp4
+16 - Bags, Queues, And Stacks - Generics.mp4
+17 - Bags, Queues, And Stacks - Iterators.mp4
+18 - Bags, Queues, And Stacks - Applications.mp4
+19 - Elementary Sorts - Rules of the Game.mp4
+20 - Elementary Sorts - Selection Sort.mp4
+21 - Elementary Sorts - Insertion Sort.mp4
+22 - Elementary Sorts - Shellsort.mp4
+23 - Elementary Sorts - Shuffling.mp4
+24 - Elementary Sorts - Convex Hull.mp4
+25 - Mergesort - Mergesort.mp4
+26 - Mergesort - Bottom-up Mergesort.mp4
+27 - Mergesort - Sorting Complexity.mp4
+28 - Mergesort - Comparators.mp4
+29 - Mergesort - Stability.mp4
+30 - Quicksort - Quicksort.mp4
+31 - Quicksort - Selection.mp4
+32 - Quicksort - Duplicate Keys.mp4
+33 - Quicksort - System Sorts.mp4
+34 - Priority Queues - APIs and Elementary Implementations.mp4
+35 - Priority Queues - Binary Heaps.mp4
+36 - Priority Queues - Heapsort.mp4
+37 - Priority Queues - Event-Driven Simulation.mp4
+38 - Symbol Tables - API.mp4
+39 - Symbol Tables - Elementary Implementations.mp4
+40 - Symbol Tables - Ordered Operations.mp4
+41 - Binary Search Trees - BSTs.mp4
+42 - Binary Search Trees - Ordered Operations.mp4
+43 - Binary Search Trees - Deletion.mp4
+44 - Balanced Search Trees - 2-3 Search Trees.mp4
+45 - Balanced Search Trees - Red-Black BSTs.mp4
+46 - Balanced Search Trees - B-Trees.mp4
+47 - Hash Tables - Hash Functions.mp4
+48 - Hash Tables - Separate Chaining.mp4
+49 - Hash Tables - Linear Probing.mp4
+50 - Hash Tables - Context.mp4
+51 - Geometric Applications of BSTs - 1d Range Search.mp4
+52 - Geometric Applications of BSTs - Line Segment Intersection.mp4
+53 - Geometric Applications of BSTs - Kd-Trees.mp4
+54 - Geometric Applications of BSTs - Interval Search Trees.mp4
+55 - Geometric Applications of BSTs - Rectangle Intersection.mp4
+56 - Symbol Table Applications - Sets.mp4
+57 - Symbol Table Applications - Dictionary Clients.mp4
+58 - Symbol Table Applications - Indexing Clients.mp4
+59 - Symbol Table Applications - Sparse Vectors.mp4
+
+Part 2:
+01 - Undirected Graphs - Introduction.mp4
+02 - Undirected Graphs - Graph API.mp4
+03 - Undirected Graphs - Depth-First Search.mp4
+04 - Undirected Graphs - Breadth-First Search.mp4
+05 - Undirected Graphs - Connected Components.mp4
+06 - Undirected Graphs - Challenges.mp4
+07 - Directed Graphs - Introduction.mp4
+08 - Directed Graphs - Digraph API.mp4
+09 - Directed Graphs - Digraph Search.mp4
+10 - Directed Graphs - Topological Sort.mp4
+11 - Directed Graphs - Strong Components.mp4
+12 - Minimum Spanning Trees - Introduction.mp4
+13 - Minimum Spanning Trees - Greedy Algorithm.mp4
+14 - Minimum Spanning Trees - Edge-Weighted Graph API.mp4
+15 - Minimum Spanning Trees - Kruskal's Algorithm.mp4
+16 - Minimum Spanning Trees - Prim's Algorithm.mp4
+17 - Minimum Spanning Trees - Context.mp4
+18 - Shortest Paths - APIs.mp4
+19 - Shortest Paths - Shortest Paths Properties.mp4
+20 - Shortest Paths - Dijkstra's Algorithm.mp4
+21 - Shortest Paths - Edge-Weighted DAGs.mp4
+22 - Shortest Paths - Negative Weights.mp4
+23 - Maximum Flow - Introduction.mp4
+24 - Maximum Flow - Ford-Fulkerson Algorithm.mp4
+25 - Maximum Flow - Maxflow-Mincut Theorem.mp4
+26 - Maximum Flow - Running Time Analysis.mp4
+27 - Maximum Flow - Java Implementation.mp4
+28 - Maximum Flow - Applications.mp4
+29 - String Sorts - Strings in Java.mp4
+30 - String Sorts - Key Indexed Counting.mp4
+31 - String Sorts - LSD Radix Sort.mp4
+32 - String Sorts - MSD Radix Sort.mp4
+33 - String Sorts - 3-Way Radix Quicksort.mp4
+34 - String Sorts - Suffix Arrays.mp4
+35 - Tries - R-Way Tries.mp4
+36 - Tries - Ternary Search Tries.mp4
+37 - Tries - Ternary Search Tries - 2.mp4
+38 - Tries - Character-Based Operations.mp4
+39 - Substring Search - Introduction.mp4
+40 - Substring Search - Brute Force.mp4
+41 - Substring Search - Knuth-Morris-Pratt.mp4
+42 - Substring Search - Boyer-Moore.mp4
+43 - Substring Search - Rabin-Karp.mp4
+44 - Regular Expressions - Regular Expressions.mp4
+45 - Regular Expressions - NFAs.mp4
+46 - Regular Expressions - NFA Simulation.mp4
+47 - Regular Expressions - NFA Construction.mp4
+48 - Regular Expressions - Applications.mp4
+49 - Data Compression - Introduction.mp4
+50 - Data Compression - Run-Length Coding.mp4
+51 - Data Compression - Huffman Compression.mp4
+52 - Data Compression - LZW Compression.mp4
+53 - Reductions - Introduction.mp4
+54 - Reductions - Designing Algorithms.mp4
+55 - Reductions - Establishing Lower Bonds.mp4
+56 - Reductions - Classifying Problems.mp4
+57 - Linear Programming - Brewer's Problem.mp4
+58 - Linear Programming - Simplex Algorithm.mp4
+59 - Linear Programming - Implementations.mp4
+60 - Linear Programming - Reductions.mp4
+61 - Intractability - Introduction.mp4
+62 - Intractability - Search Problems.mp4
+63 - Intractability - P vs. NP.mp4
+64 - Intractability - Classifying Problems.mp4
+65 - Intractability - NP-Completeness.mp4
+66 - Intractability - Coping with Intractability.mp4
+
+48 <--> A Tutorial on Elliptic Pde Solvers and Their Parallelization
+http://nitroflare.com/view/C1C70DEA6590467/0898715415.pdf
+http://turbobit.net/2on3qqmot3g7/0898715415.pdf.html
+
+
+A Tutorial on Elliptic Pde Solvers and Their Parallelization by Craig C. Douglas, Gundolf Haase, Ulrich Langer
+Publisher: Society for Industrial & Applied | 2003 | ISBN: 0898715415 | 135 pages | PDF | 13,8 MB
+
+This compact yet thorough tutorial is the perfect introduction to the basic concepts of solving partial differential equations (PDEs) using parallel numerical methods. In just eight short chapters, the authors provide readers with enough basic knowledge of PDEs, discretization methods, solution techniques, parallel computers, parallel programming, and the run-time behavior of parallel algorithms to allow them to understand, develop, and implement parallel PDE solvers. Examples throughout the book are intentionally kept simple so that the parallelization strategies are not dominated by technical details. A Tutorial on Elliptic PDE Solvers and Their Parallelization is a valuable aid for learning about the possible errors and bottlenecks in parallel computing. One of the highlights of the tutorial is that the course material can run on a laptop, not just on a parallel computer or cluster of PCs, thus allowing readers to experience their first successes in parallel computing in a relatively short amount of time.
+
+
+
+
+94 <--> Udemy - Python Step by Step: Build a Data Analysis Program [repost]
+http://nitroflare.com/view/D622C25C54A41ED/Pyt_Step_Buil_Dat_An_Progr.part1.rar
+http://nitroflare.com/view/BFFB13134C1FBBE/Pyt_Step_Buil_Dat_An_Progr.part2.rar
+http://nitroflare.com/view/C4C1E5C92498631/Pyt_Step_Buil_Dat_An_Progr.part3.rar
+http://nitroflare.com/view/EBE1C68703FCC88/Pyt_Step_Buil_Dat_An_Progr.part4.rar
+http://nitroflare.com/view/A9F7D46FB9A1B07/Pyt_Step_Buil_Dat_An_Progr.part5.rar
+http://nitroflare.com/view/F95BFAC9690AD92/Pyt_Step_Buil_Dat_An_Progr.part6.rar
+
+
+Udemy - Python Step by Step: Build a Data Analysis Program
+MP4 | AVC 791kbps | English | 1280x720 | 30fps | 5 hours | AAC stereo 52kbps | 961 MB
+Genre: Video Training
+
+This Python course will get you up and running with using Python for data analysis and visualization. You will learn how to handle, analyze and visualize data in Python by actually completing two big data analysis projects, one demonstrated through videos and another laid out through six exercises. The course assumes you have no prior knowledge of Python, so you also get to learn the basics of Python in the first two sections of the course. However, if you already know Python, the first two sections can serve as a refresher before you jump into the data analysis and visualization part.
+
+In the course you will learn to use Python third-party data analysis libraries such as Pandas, Matplotlib, Seaborn, just to mention a few and tools to boost your productivity such as Spyder and Jupyter.
+
+As you progress through the course, you will be guided step by step on building a program that uses real world data containing hundreds of files and millions of records. You will learn to write Python code that downloads, extracts, cleans, manipulates, aggregates and visualizes these datasets using Python. Apart from following the video screencasts, you will also be required to write your own Python scripts from scratch for completing a data analysis project on income data.
+
+Content:
+01 Getting Started
+
+02 Python Basics
+
+03 Working with Files and Folders
+
+04 Downloading Files from FTP Sites
+
+05 Working with Archive Files
+
+06 Reading and Writing TXT and CSV Data Files
+
+07 A tour with pandas
+
+08 Concatenating and Joining Tables of Data with Pandas
+
+09 Pivoting Data
+
+10 Visualizing Data
+
+11 Mapping Spatial Data
+
+12 Putting everything together
+
+
+
+113 <--> .NET Development Using the Compiler API (Repost)
+http://nitroflare.com/view/6732A56423365A0/1484221109_.NET.epub
+
+
+.NET Development Using the Compiler API By Jason Bock
+2016 | 176 Pages | ISBN: 1484221109 | EPUB | 2 MB
+
+
+This is the first book to describe the recent significant changes to the .NET compilation process and demonstrate how .NET developers can use the new Compiler API to create compelling applications. As an open source compiler, the Compiler API now makes its code available for anyone to use. In this book, you’ll get a concise, focused view of this tremendous resource for developers, who can now use any part of the platform implementation to their advantage in analyzing applications, improving code generation, and providing enforceable patterns, all under an OSS model. You will learn how to analyze your code for defects in a fast, clean manner never available before. You’ll work with solutions and projects to provide automatic refactoring, and you’ll discover how you can generate code dynamically to provide application implementations at runtime Having the Compiler API available opens a number of doors for .NET developers that were either simply not there before, or difficult to achieve. However, the API is vast, and this concise book provides a valuable roadmap to this new development environment. What You Will Learn: Understand how to generate, compile, and execute code for a number of scenarios How to create diagnostics and refactoring to help developers enforce conventions and design idioms Experiment with the compiler code base and see what can be done to influence the inner workings of the compilation pipeline Who This Book Is For: Experienced .NET developers, but detailed compiler knowledge is not necessary.
+
+
+117 <--> Issues in the Use of Neural Networks in Information Retrieval
+http://nitroflare.com/view/082F478716BE5E7/3319438700.pdf
+
+
+Iuliana F. Iatan, "Issues in the Use of Neural Networks in Information Retrieval" 
+2016 | ISBN-10: 3319438700 | 199 pages | PDF | 7 MB
+
+This book highlights the ability of neural networks (NNs) to be excellent pattern matchers and their importance in information retrieval (IR), which is based on index term matching. The book defines a new NN-based method for learning image similarity and describes how to use fuzzy Gaussian neural networks to predict personality.
+It introduces the fuzzy Clifford Gaussian network, and two concurrent neural models: (1) concurrent fuzzy nonlinear perceptron modules, and (2) concurrent fuzzy Gaussian neural network modules.
+Furthermore, it explains the design of a new model of fuzzy nonlinear perceptron based on alpha level sets and describes a recurrent fuzzy neural network model with a learning algorithm based on the improved particle swarm optimization method.
+
+
+
+123 <--> Group-target Tracking
+http://nitroflare.com/view/1FFADF76E31F4B0/9811018863.pdf
+
+
+Wen-dong Geng, Yuan-qin Wang, "Group-target Tracking" 
+2016 | ISBN-10: 9811018863 | 168 pages | PDF | 4 MB
+
+This book describes grouping detection and initiation; group initiation algorithm based on geometry center; data association and track continuity; as well as separate-detection and situation cognition for group-target. It specifies the tracking of the target in different quantities and densities. At the same time, it integrates cognition into the application.
+
+Group-target Tracking is designed as a book for advanced-level students and researchers in the area of radar systems, information fusion of multi-sensors and electronic countermeasures. It is also a valuable reference resource for professionals working in this field.
+
+
+
+
+124 <--> The New Statistics with R: An Introduction for Biologists
+http://nitroflare.com/view/9472974F703EB91/0198729057_The.pdf
+
+
+The New Statistics with R: An Introduction for Biologists By Andy Hector
+2015 | 224 Pages | ISBN: 0198729057 , 0198729065 | PDF | 34 MB
+
+
+Statistical methods are a key tool for all scientists working with data, but learning the basic mathematical skills can be one of the most challenging components of a biologist's training. This accessible book provides a contemporary introduction to the classical techniques and modern extensions of linear model analysis: one of the most useful approaches in the analysis of scientific data in the life and environmental sciences. It emphasizes an estimation-based approach that accounts for recent criticisms of the over-use of probability values, and introduces alternative approaches using information criteria. Statistics are introduced through worked analyses performed in R, the free open source programming language for statistics and graphics, which is rapidly becoming the standard software in many areas of science and technology. These analyses use real data sets from ecology, evolutionary biology and environmental science, and the data sets and R scripts are available as support material. The book's structure and user friendly style stem from the author's 20 years of experience teaching statistics to life and environmental scientists at both the undergraduate and graduate levels. The New Statistics with R is suitable for senior undergraduate and graduate students, professional researchers, and practitioners in the fields of ecology, evolution, environmental studies, and computational biology.
+
+
+
+128 <--> Practice advanced SQL queries with MySQL 5.7+ (2016)
+http://nitroflare.com/view/6BDC0AED5E61885/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part1.rar
+http://nitroflare.com/view/5443D33693178F2/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part2.rar
+http://nitroflare.com/view/3FBCC378FD666BD/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part3.rar
+http://nitroflare.com/view/89ECAC21CAD0286/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part4.rar
+http://nitroflare.com/view/27CC54C399D0003/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part5.rar
+http://nitroflare.com/view/6953A011AEDE98F/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part6.rar
+http://nitroflare.com/view/C2F52A9786314A3/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part7.rar
+
+
+Practice advanced SQL queries with MySQL 5.7+ (2016)
+MP4 | Video: AVC 1920x1080 | Audio: AAC 44KHz 2ch | Duration: 5 Hours | Lec: 74 | 1.98 GB
+Genre: eLearning | Language: English
+
+Build on your current knowledge and get to a next level in SQL. Learn by writing - lots of examples are waiting for you.
+
+I designed this course especially for those who already know the basics and wonder how to get to the next level. Maybe you’re a BI analyst, IT specialist, QA analyst, automation tester, DB admin, aspiring data scientist or just passionate to learn SQL. You’ll learn how to use analytic functions, how to take advantage of table partitioning, how to write user-defined functions, procedures with cursors and even how to write beautiful code. All of that with the focus on the most popular open-source database: MySQL.
+
+In this course we’ll write the code & MySQL queries together. I prepared 2 test databases, 70+ lectures, 4+ hours of video and lots of examples and practices so that you can learn advanced SQL techniques by writing the code. You’ll not learn just by watching me and eating pop-corn. You need to write the queries and I’ll help you! I believe that’s the only way for you to really adopt this new knowledge.
+
+At the end of this course you will not just know these advanced techniques, but also know how to use them in practice.
+
+To help you out, I also created a Slack group where you can join and chat with me or my colleagues if you get stuck.
+
+Anyways, you have nothing to lose. Try this course and if you can honestly say that you learnt nothing, just email Udemy and they will give you a 100% refund within 30 days.
+
+
+
+
+132 <--> Test-Driving JavaScript Applications: Rapid, Confident, Maintainable Code
+http://nitroflare.com/view/063A7B15B9A1C07/1680501747.pdf
+http://nitroflare.com/view/51CB7249CE410FA/1680501747.epub
+
+
+Venkat Subramaniam, "Test-Driving JavaScript Applications: Rapid, Confident, Maintainable Code"
+English | ISBN: 1680501747 | 2016 | PDF/EPUB | 200 pages | 10 MB/5 MB
+
+Debunk the myth that JavaScript is not easily testable. Whether you use Node.js, Express, MongoDB, jQuery, AngularJS, or directly manipulate the DOM, you can test-drive JavaScript. Learn the craft of writing meaningful, deterministic automated tests with Karma, Mocha, and Chai. Test asynchronous JavaScript, decouple and properly mock out dependencies, measure code coverage, and create lightweight modular designs of both server-side and client-side code. Your investment in writing tests will pay high dividends as you create code that's predictable and cost-effective to change.
+
+Design and code JavaScript applications with automated tests. Writing meaningful tests is a skill that takes learning, some unlearning, and a lot of practice, and with this book, you'll hone that skill. Fire up the editor and get hands-on through practical exercises for effective automated testing and designing maintainable, modular code.
+
+Start by learning when and why to do manual testing vs. automated verification. Focus tests on the important things, like the pre-conditions, the invariants, complex logic, and gnarly edge cases. Then begin to design asynchronous functions using automated tests. Carefully decouple and mock out intricate dependencies such as the DOM, geolocation API, file and database access, and Ajax calls to remote servers.
+
+Step by step, test code that uses Node.js, Express, MongoDB, jQuery, and AngularJS. Know when and how to use tools such as Chai, Istanbul, Karma, Mocha, Protractor, and Sinon. Create tests with minimum effort and run them fast without having to spin up web servers or manually edit HTML pages to run in browsers. Then explore end-to-end testing to ensure all parts are wired and working well together.
+
+Don't just imagine creating testable code, write it.
+
+What You Need:
+
+A computer with a text editor and your favorite browser. The book provides instructions to install the necessary automated testing-related tools.
+
+
+138 <--> Data Structures and Algorithms with Python
+http://nitroflare.com/view/7EDD20F6B4A469D/3319130714P.epub
+
+
+Kent D. Lee, Steve Hubbard, "Data Structures and Algorithms with Python"
+ISBN: 3319130714 | 2015 | True EPUB | 363 pages | 12 MB
+
+This textbook explains the concepts and techniques required to write programs that can handle large amounts of data efficiently. Project-oriented and classroom-tested, the book presents a number of important algorithms supported by examples that bring meaning to the problems faced by computer programmers. The idea of computational complexity is also introduced, demonstrating what can and cannot be computed efficiently so that the programmer can make informed judgements about the algorithms they use. Features: includes both introductory and advanced data structures and algorithms topics, with suggested chapter sequences for those respective courses provided in the preface; provides learning goals, review questions and programming exercises in each chapter, as well as numerous illustrative examples; offers downloadable programs and supplementary files at an associated website, with instructor materials available from the author; presents a primer on Python for those from a different language background.
+
+Visit my blog for more eBooks and Audiobooks | RSS
+
+
+
+
+140 <--> Udemy - Everything About MySQL Database [repost]
+http://nitroflare.com/view/F7B38A259786A57/Ever_MySQL_Dat.part1.rar
+http://nitroflare.com/view/B06C611BB202121/Ever_MySQL_Dat.part2.rar
+http://nitroflare.com/view/FFE484E45AE4C62/Ever_MySQL_Dat.part3.rar
+http://nitroflare.com/view/C1BB4A3108C372F/Ever_MySQL_Dat.part4.rar
+http://nitroflare.com/view/C9F95C343791B63/Ever_MySQL_Dat.part5.rar
+http://nitroflare.com/view/BF019A51D7DE90C/Ever_MySQL_Dat.part6.rar
+
+
+Udemy - Everything About MySQL Database
+MP4 | AVC 321kbps | English | 1280x720 | 15fps | 7 hours | AAC stereo 58kbps | 1.05 GB
+Genre: Video Training
+
+A guide to work with MySQL and it's syntax, CRUD, data types, transactions, sub selects, views, and store routines. MySQL is by far the most popular database management system for small- to medium-sized web projects. Only the proprietary Oracle database and the small embeddable SQLite are more widely deployed. MySQL is named after the eldest daughter of Ulf Michael Widenius, the main author of the original version of MySQL whose daughter's name is My.
+
+MySQL routines the Structured Query Language also known as SQL to define, update and query the database. SQL is used on fundamentally all major relational database systems, on many platforms and in many applications. I will cover the necessary skills to use and program a database using MySQL. It is the nature of database management systems that there is marvellous divergence between how SQL is implemented in each system. Most of this course is keen on showing you how SQL is implemented by MySQL and how it can be used effectively in your database applications.
+
+In this course, I will provide clear, concise tutorials that guide you through creating and maintaining a MySQL database of your own. We will start with the basic syntax of SQL as it's implemented by MySQL. I will explain how to use the select statement, and how to create, update, and delete data from your tables. I'll show you specifically where the MySQL version of SQL differs from the standard, and how to get the most out of MySQL specific dialect.
+
+I also will explore the
+
+basic syntax,
+using SQL statements to
+Create
+Insert
+Update
+And delete data from your tables
+I will also cover creating a new database from scratch
+Data types
+Transactions
+Subselects
+Views
+And stored routines
+Plus, learn about the multi-platform PHP PDO interface that will help you connect your database to web applications.
+
+I will cover creating and deleting databases, data types, transactions, sub selects, views, and stored routines. And finally, I will show you a full working CRUD application. CRUD is an acronym for Create, Read, Update and Delete. MySQL is one of the most widely deployed database management systems in the world. Understanding MySQL will serve you well in your database applications.
+
+151 <--> Learning Python Design Patterns, Second Edition
+http://nitroflare.com/view/972CD849FD62C10/178588803X.pdf
+
+
+Chetan Giridhar, "Learning Python Design Patterns, Second Edition" 
+2016 | ISBN-10: 178588803X | 130 pages | true PDF | 3 MB
+
+Leverage the power of design patterns to solve real-world problems in Python software architecture, design, and application development.
+
+About This Book
+
+Understand the structural, creational, and behavioral Python design patterns
+Get to know the context and application of design patterns to solve real-world problems in software architecture, design, and application development
+Get practical exposure through sample implementations in Python v3.5 for the design patterns featured
+
+Who This Book Is For
+
+This book is for software architects and Python developers, and will be useful for novice engineers and seasoned architects as well. It requires a basic understanding of programming concepts and beginner level Python development experience. It will also be helpful for educational experiences for students and teachers in live learning environments.
+
+What You Will Learn
+
+Enhance your skills to create a better software architecture
+Understand proven solutions to commonly occurring design issues
+Explore the design principles that form the basis of software design, such as loose coupling, the Hollywood principle and the Open Close principle among others
+Delve into the object-oriented programming concepts and find out how they are used in software applications
+Develop an understanding of Creational Design Patterns and the different object creation methods that help you solve issues in software development
+Use Structural Design Patterns and find out how objects and classes interact to build larger applications
+Focus on the interaction between objects with the command and observer patterns
+Improve the productivity and code base of your application using Python design patterns
+
+In Detail
+
+With the increasing focus on optimized software architecture and design, it is important that software architects think about optimizations in object creation, code structure, and interaction between objects at the architecture or design level. This makes sure that the cost of software maintenance is low and code can be easily reused or is adaptable to change. The key to this is reusability and low maintenance in design patterns.
+
+Building on the success of the previous edition, Learning Python Design Patterns, Second Edition will help you implement real-world scenarios with Python's latest release, Python v3.5.
+
+We start by introducing design patterns from the Python perspective. As you progress through the book, you will learn about Singleton patterns, Factory patterns, and Facade patterns in detail. After this, we'll look at how to control object access with proxy patterns. It also covers observer patterns, command patterns, and compound patterns.
+
+By the end of the book, you will have enhanced your professional abilities in software architecture, design, and development.
+152 <--> Making Your C# Code More Object-oriented (2016)
+http://nitroflare.com/view/992CC99E16EDFC6/Making_Your_C%23_Code_More_Object-oriented.part1.rar
+http://nitroflare.com/view/F6345BDA548BEC1/Making_Your_C%23_Code_More_Object-oriented.part2.rar
+http://nitroflare.com/view/6C48A5CA20BFFB6/Making_Your_C%23_Code_More_Object-oriented.part3.rar
+http://nitroflare.com/view/010B1FBE949765D/Making_Your_C%23_Code_More_Object-oriented.part4.rar
+http://nitroflare.com/view/44D57E1F5E4E4EB/Making_Your_C%23_Code_More_Object-oriented.part5.rar
+http://nitroflare.com/view/DE00636BF2D0A65/Making_Your_C%23_Code_More_Object-oriented.part6.rar
+
+
+Making Your C# Code More Object-oriented
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 7 Hours | 1.25 GB
+Genre: eLearning | Language: English
+
+This course will help leverage your conceptual understanding to produce proper object-oriented code, where objects will completely replace procedural code for the sake of flexibility and maintainability.
+
+Programmers do have conceptual understanding of OO concepts, but often fail to turn that into a proper object-oriented code. In this course, Making Your C# Code More Object-oriented, you'll learn how to create proper object-oriented code. First, you'll learn how to avoid branching and looping. Next, you'll learn how to avoid Boolean expressions. Finally, you'll learn how to make domain logic implementation dynamic and configurable. By the end of this course, you'll be able to recognize your own error of the past and build more correct coding style.
+
+
+154 <--> Big data Internship Program - Part 1 Foundation
+http://nitroflare.com/view/92A0F534879905E/Big_data_Internship_Program_-_Part_1_Foundation.part1.rar
+http://nitroflare.com/view/673A5C4C480214E/Big_data_Internship_Program_-_Part_1_Foundation.part2.rar
+http://nitroflare.com/view/23ED3EC233D44B3/Big_data_Internship_Program_-_Part_1_Foundation.part3.rar
+http://nitroflare.com/view/AA97AD3DE72C94F/Big_data_Internship_Program_-_Part_1_Foundation.part4.rar
+http://nitroflare.com/view/F09B0C1FF05FED7/Big_data_Internship_Program_-_Part_1_Foundation.part5.rar
+http://nitroflare.com/view/FBCE6D71843687D/Big_data_Internship_Program_-_Part_1_Foundation.part6.rar
+http://nitroflare.com/view/46AE751AC7AA6B1/Big_data_Internship_Program_-_Part_1_Foundation.part7.rar
+
+
+Big data Internship Program - Part 1 Foundation
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4.5 Hours | Lec: 44 | 3.06 GB
+Genre: eLearning | Language: English
+
+A Complete Guide to Learn Big data and Hadoop from Scratch.
+
+This course is part of “Big data Internship Program” which is aligned to a typical Big data project life cycle stage.
+
+Foundation
+Ingestion
+Storage
+Processing
+Visualization
+This part 1 course is focused on the foundation of Big data . It cover technical and non-technical items like
+
+Technical Foundation
+
+Refresh your knowledge on Unix
+Java based on usage into Big Data .
+Understand git /github which is used by most of the companies for source control
+Hadoop Installation
+Non-technical Foundation
+
+Understand Big data project life cycle
+Understand Roles in Big data Implementation
+Understand the Real life Project
+Big data Topics
+
+Learn about the hadoop ecosystem
+HDFS
+MapReduce
+Why Spark?
+
+2:10 PM 10/26/2016 [END]
 
 3:22 PM 10/20/2016 [START]
-
-0 <--> A Finite Element Framework for Geotechnical Applications Based on Object-orientated Programming (Repost)
-
 
 11 <--> Python The Complete Manual 2nd Edition
 http://nitroflare.com/view/3B2E83CB17650FF/Python_The_Complete_Manual_2nd_Edition_AvxHome.se.pdf
