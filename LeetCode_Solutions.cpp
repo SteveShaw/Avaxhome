@@ -484,3 +484,115 @@ public:
     }
 };
 */
+
+/*
+12. Integer to Roman (1~3999)
+*/
+
+/*My Code*/
+class Solution {
+    
+public:
+
+    Solution()
+    {
+        RMap[1] = "I";
+        RMap[5] = "V";
+        RMap[10] = "X";
+        RMap[50] = "L";
+        RMap[100] = "C";
+        RMap[500] = "D";
+        RMap[1000] = "M";
+
+        RMap[4] = "IV";
+        RMap[9] = "IX";
+        RMap[40] = "XL";
+        RMap[90] = "XC";
+        RMap[400] = "CD";
+        RMap[900] = "CM";
+    }
+
+    string intToRoman(int num) {
+     
+        int n = num;
+        
+        std::vector<int> e{1000,100,10,1};
+        
+        std::size_t idx = 0;
+        
+        std::string r = "";
+        
+        while( n > 0 && idx < 4 )
+        {
+            if( n < e[idx] )
+            {
+                ++idx;
+                continue;
+            }
+            
+            int c = e[idx];
+            int q = n / c;
+            
+			/*4 and 9 have special codes*/
+            if( q == 4 || q == 9 )
+            {
+                r += RMap[q*c];
+                n = n - q*c;
+                continue;
+            }
+            
+			/* process 500, 50 and 5 */
+            if( q > 4 )
+            {
+                r += RMap[5*c];
+                n = n - 5*c;
+                
+                continue;
+            }
+            
+            for( int l = 0; l < q; ++l )
+            {
+                r += RMap[c];
+            }
+            
+            n = n - q*c;
+        }
+
+
+        return r;
+
+    }
+    
+private:
+
+    std::map<int,std::string> RMap;
+};
+
+/*Other Solutions*/
+class Solution {
+public:
+    string intToRoman(int num) {
+        string res = "";
+        vector<int> val{1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1};
+        vector<string> str{"M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I"};
+        for (int i = 0; i < val.size(); ++i) {
+            while (num >= val[i]) {
+                num -= val[i];
+                res += str[i];
+            }
+        }
+        return res;
+    }
+};
+
+class Solution {
+public:
+    string intToRoman(int num) {
+        string res = "";
+        vector<string> v1{"", "M", "MM", "MMM"};
+        vector<string> v2{"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+        vector<string> v3{"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+        vector<string> v4{"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+        return v1[num / 1000] + v2[(num % 1000) / 100] + v3[(num % 100) / 10] + v4[num % 10];
+    }
+};
