@@ -596,3 +596,134 @@ public:
         return v1[num / 1000] + v2[(num % 1000) / 100] + v3[(num % 100) / 10] + v4[num % 10];
     }
 };
+
+
+/*
+14. Longest Common Prefix
+Write a function to find the longest common prefix string amongst an array of strings.
+*/
+
+class Solution {
+public:
+    string longestCommonPrefix(vector<string>& strs) {
+        
+        const auto num = strs.size();
+        
+        if( num ==  0 )
+        {
+            return "";
+        }
+        
+        if( num ==  1 )
+        {
+            return strs[0];
+        }
+        // we get first string's length
+        const auto len = strs[0].size();
+        
+        std::string result = "";
+        
+		// 1. iterate through each character in the first string.
+		
+        for( std::size_t cp = 0; cp < len; ++cp )
+        {
+            const auto c = strs[0][cp];
+            
+            bool bDiff = false;
+            bool bSearchEnd = false;
+        
+			// 2. for current character, iterate through remaining strings in the vector.		
+            for( std::size_t pos = 1; pos < num; ++pos )
+            {
+				// 3. get current string length 
+                const auto lenComp = strs[pos].size();
+                
+				// 4. if the position of current character in the first string is larger than the length of current string.
+				//  then mark the search will be end after the loop is ended. 
+                if( cp >= lenComp )
+                {
+                    bSearchEnd = true;
+                    continue;
+                }
+                
+				// 5 if the character at the same position in the current string is not same as current character.
+				// the loop can be ended immediately since we cannot get any longer common prefix.
+                if( strs[pos][cp] != c )
+                {
+                    bDiff = true;
+                    break;
+                }
+            }
+            
+            if( bDiff || bSearchEnd )
+            {
+                break;
+            }
+            
+			//6. if the all strings have same character at same position, added this character into the final result.
+			
+            result += c; 
+        }
+        
+        return result;
+        
+    }
+};
+ 
+/* 15  3Sum
+Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero
+
+Note: The solution set must not contain duplicate triplets.
+
+For example, given array S = [-1, 0, 1, 2, -1, -4],
+
+A solution set is:
+[
+  [-1, 0, 1],
+  [-1, -1, 2]
+]
+
+*/
+
+class Solution {
+public:
+    vector<vector<int>> threeSum(vector<int>& nums) {
+ 
+    }
+};
+
+//most effient solution
+//Reference website: http://www.sigmainfy.com/
+/*
+3Sum Problem Analysis: Handling Duplicates Without Using Set
+
+Overview
+
+We discuss the 3sum problem here and give a sorting approach with time complexity O(N^2) to generate all the triplets without using set to remove the repeated triplets at the end. Approach based on hash would be touched a bit too and an open question about using hash to handle duplicates in the input would be raised (copyright @sigmainfy) which for now I haven’t found a good solution to resolve. Hope the readers enjoy and any comments are highly appreciated especially on the questions that are raised here.
+
+3Sum Problem Definition
+
+Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.
+
+Note:
+
+Elements in a triplet (a,b,c) must be in non-descending order. (ie, a ≤ b ≤ c)
+The solution set must not contain duplicate triplets.
+For example, given array S = {-1 0 1 2 -1 -4}, A solution set is: (-1, 0, 1) (-1, -1, 2). Note the triplets consists of real values in the input rather than the index of the input numbers
+
+3Sum Solution Analysis
+
+As I have mentioned a bit in previous two sum problem analysis “Two Sum Problem Analysis 3: Handling Duplicates Input“: We need to distinguish VALUE pairs and INDEX pair (To see more on two sum problems, also check these two posts: post 1, post 2). It is a bit different context here in 3sum, we need to return triplets consisting of the input values rather than the index as the two sum problem requires previously. Of course, you can do the same thing in two sum problem to find value pairs too, but let’s just try something in a different context, and you need to keep this difference in mind, otherwise, you might get confused.
+
+The general idea would be to convert 3 sum into 2 sum problem: pick one value A[i] from the input array, the next would be find the two two sum -A[i] in the rest of the array. And the detailed steps are:
+
+Sort the whole input array by increasing order: O(NlogN)
+Linear scan the sorted array, say the current element to process is A[i], check if A[i] is the same with the previous one, only when they are different we go the next steps.
+Treat A[i] as the first value in the potential triplet, and solve a two sum problem in the rest of the input starting from i+1 with the target as -A[i], similar trick as in step 2 should be performed to avoid repeated triplets.
+Remarks: Several noteworthy things from the above steps are:
+
+The total time complexity would be O(N^2) rather than O(N^2logN) because we sort the array for only one time at the beginning, many people will interpret it in a wrong way by converting 3 sum into 2 sum problems, that is, they convert it in a simple way, and do a “complete” 2 sum every time for each element in the array.
+Everytime we pick A[i] in step three, we only need to do 2 sum in the rest of the input starting from i + 1, think about why?
+We avoid repeated triplets before generating any of them by comparing the current value A[i] with the previous one A[i-1], this is the issue which bothered me for quite a while (I raised this in my earlier post in Chinese). Now we indeed managed to remove actually avoid duplicates (copyright @sigmainfy) in the final results without using the set data structure.
+As noted in the problem description, it says the solution set must not contain duplicate triplets, a naive and straightforward way to do this is to use set to do a post-filtering after all the triplets are generated. We managed to avoid this in this post.
+*/
