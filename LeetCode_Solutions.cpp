@@ -899,10 +899,216 @@ Input:Digit string "23"
 Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
 */
 
+/*my solution*/
+
+
+
 class Solution {
 public:
     vector<string> letterCombinations(string digits) {
+       vector<string> result{""};
         
-        return {""};
+        const auto len = digits.size();
+        
+        if( len < 1 )
+        {
+            return vector<string>{};
+        }
+        
+		//this is the map from number to telephone strings
+        std::vector<std::string> tel_strs{"","","abc", "def", "ghi", 
+          "jkl","mno","pqrs","tuv","wxyz"};
+          
+        std::size_t start_pos = 0;
+        
+        for(std::size_t pos = 0;pos<len;++pos)
+        {
+            if( digits[pos] == '1' || digits[pos] == '0' )
+            {
+                return vector<string>{};
+            }
+            
+			//we start from the end of the input string
+			//actually, we can start from the beginning of the input string. see another solution as below.
+            int key_num = digits[len -1 - pos] - '0';
+            
+            if( key_num > 9 || key_num < 0 )
+            {
+                return vector<string>{};
+            }
+            
+			//we get the string corresponds to current number.
+            const auto& tel_str = tel_strs[key_num];
+            
+			//this is the current size of the vector.
+			//we need to save this length since this is the 
+			//position that we finally output the result.
+			//another method is to erase the begin of the vector. 
+			//See another solution as below.
+			
+            const auto cur_len = result.size();
+            
+            for( std::size_t idx = 0; idx < tel_str.size(); ++idx )
+            {
+				//iterate over each character in the string.
+                const auto& prefix = tel_str.substr(idx,1);
+                
+				//add this character with the elements in the vector that starts from start_pos;
+				
+                for( std::size_t v_pos = start_pos; v_pos < cur_len; ++v_pos )
+                {
+                    result.emplace_back( prefix + result[v_pos] );
+                }
+            }
+            
+			//we must update start_pos to the previous recorded length of the vector
+            start_pos = cur_len;
+            
+        }
+        
+		//finally, we generate the vector from the saved start_pos to end.
+        return vector<string>{ begin(result)+start_pos, end(result) };
+    }
+};
+
+/*另外一种解法*/
+// Iterative
+// From: http://www.cnblogs.com/grandyang/p/4452220.html
+class Solution {
+public:
+    vector<string> letterCombinations(string digits) {
+        vector<string> res;
+        if (digits.empty()) return res;
+        string dict[] = {"abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
+        res.push_back("");
+        for (int i = 0; i < digits.size(); ++i) {
+            int n = res.size();
+            string str = dict[digits[i] - '2'];
+            for (int j = 0; j < n; ++j) {
+                string tmp = res.front();
+                res.erase(res.begin());
+                for (int k = 0; k < str.size(); ++k) {
+                    res.push_back(tmp + str[k]);
+                }
+            }
+        }
+        return res;
+    }
+};
+
+/*
+18. 4 Sum
+Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
+
+Note:
+Elements in a quadruplet (a,b,c,d) must be in non-descending order. (ie, a ≤ b ≤ c ≤ d)
+The solution set must not contain duplicate quadruplets.
+    For example, given array S = {1 0 -1 0 -2 2}, and target = 0.
+
+    A solution set is:
+    (-1,  0, 0, 1)
+    (-2, -1, 1, 2)
+    (-2,  0, 0, 2)
+*/
+
+class Solution {
+public:
+    vector<vector<int>> fourSum(vector<int>& nums, int target) {
+        
+        const auto len = nums.size();
+        
+        vector<vector<int>> result;
+        
+        if( len < 4 )
+        {
+            return result;
+        }
+        
+        sort( begin(nums), end(nums) );
+        
+        auto get_3sum = [&result,&nums,&len, &target](std::size_t start, int cur) {
+          
+          for( std::size_t i = start; i < len - 2; ++i )
+          {
+              if( ( i > start ) && ( nums[i-1] == nums[i] ) ) continue;
+              
+              auto k = i + 1;
+              auto m = len - 1;
+              
+              auto sub_target = target - cur;
+              
+              while( k < m )
+              {
+                  if( ( k > i + 1 )  && ( nums[k-1] == nums[k] ) )
+                  {
+                      ++k;
+                      continue;
+                  }
+                  
+                  int sum = nums[i] + nums[k] + nums[m];
+                  
+                  if( sum == sub_target )
+                  {
+                      result.emplace_back(std::initializer_list<int>{cur, nums[i], nums[k], nums[m]});
+                      ++k;
+                      --m;
+                      continue;
+                  }
+                  
+                  if( sum > sub_target )
+                  {
+                      --m;
+                      continue;
+                  }
+                  
+                  ++k;
+              }
+          }
+            
+        };
+        
+        for( std::size_t pos = 0; pos < len; ++pos )
+        {
+            if( pos > 0 && nums[pos-1] == nums[pos] )
+            {
+                continue;
+            }
+            
+            get_3sum( pos + 1, nums[pos] );
+        }
+        
+        return result;
+        
+    }
+};
+
+/*
+another solution (actually, this solution has same time complexity as my solution)
+*/
+// O(n^3)
+class Solution {
+public:
+    vector<vector<int> > fourSum(vector<int> &nums, int target) {
+        set<vector<int> > res;
+        sort(nums.begin(), nums.end());
+        for (int i = 0; i < int(nums.size() - 3); ++i) {
+            for (int j = i + 1; j < int(nums.size() - 2); ++j) {
+                int left = j + 1, right = nums.size() - 1;
+                while (left < right) {
+                    int sum = nums[i] + nums[j] + nums[left] + nums[right];
+                    if (sum == target) {
+                        vector<int> out;
+                        out.push_back(nums[i]);
+                        out.push_back(nums[j]);
+                        out.push_back(nums[left]);
+                        out.push_back(nums[right]);
+                        res.insert(out);
+                        ++left; --right;
+                    } else if (sum < target) ++left;
+                    else --right;
+                }
+            }
+        }
+        return vector<vector<int> > (res.begin(), res.end());
     }
 };

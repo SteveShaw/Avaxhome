@@ -36,5 +36,124 @@ struct when.
 	struct tag_of<T&&> : tag_of<T>
 3. is_a: is_a<Tag,T> is a compile_time logical representing whether the tag of T is exactly tag. i.e. std::is_same<Tag, tag_of<T>::type> ??
 
-4. 
+4. Monoid (From : https://functionalcpp.wordpress.com/ )
+	4.1 Type classes are a feature of Haskell which is very similar to the upcoming Concepts. Both define interfaces to a data type, which can be defined separately from the data, in contrast to member functions. To introduce the notion of type classes, let’s start with a simple one: the monoid. A monoid is an object which has a binary operation and an identity for that operation. For our purposes, we will call the identity empty() and the operation append.
+	4.2 The basic template for the type class follows:
+		template<class T>
+		struct monoid
+		{
+			// T empty()
+			// T append(T,T)
+			static constexpr bool is_instance = false;
+		};
+		
+	Most things are not monoids and so we also add a boolean which marks this. This allows us to do type checking using std::enable_if or static_assert.
+	4.3 When an object has the type class interface, we say that it is an instance of the type class. For example, the monoid instance for integers can be written as:
+		template<>
+		struct monoid<int>
+		{
+			static int empty(){return 0;}
+			static int append(int lhs, int rhs){return lhs+rhs;}
+			static constexpr bool is_instance = true;
+		};
+	Now if we wanted to write a function using monoids, we could do so easily and with guarantees of type safety. For example, here is a function which “accumulates” monoid values from a vector:
+	
+	template< class T,  class = typename std::enable_if<monoid<T>::is_instance>::type>
+	T accumulator(const std::vector<T>& in)
+	{
+		T out{monoid<T>::empty()};
+ 
+		for (const T& t : in)
+			out = monoid<T>::append(out,t);
+		return out;
+	}
+ 
+	int main()
+	{
+		std::cout << accumulator(std::vector<int>{1,2,3}) << "\n";
+	 
+		return 0;
+	}
+	
+	output: 6
+	
+	4.4 Obviously, there are quite a few data types which display monoid behaviour, including all the fundamental data types. There’s quite a bit of repetition which can be removed, also reducing the chance for error. Many of the monoids, including all the fundamental types implement operator+ and are value-initialized to a reasonable value. A default monoid can be written to represent this.
+		template<class T>
+		struct default_monoid
+		{
+			static T empty(){return T{};}
+			static T append(const T& lhs, const T& rhs){return lhs+rhs;}
+			static constexpr bool is_instance = true;
+		};
+		 
+		// example use
+		template<>
+		struct monoid<int> : public default_monoid<int>
+		{};
+		 
+		template<>
+		struct monoid<char> : public default_monoid<char>
+		{}
+	4.5 We can further reduce the repetition through the use of x macros (search x macros in wikipedia):
+	
+		#define FUNDAMENTAL_TYPES\
+			X(bool)\
+			X(signed char)\
+			X(unsigned char)\
+			X(char)\
+			X(wchar_t)\
+			X(char16_t)\
+			X(char32_t)\
+			X(short)\
+			X(unsigned short)\
+			X(int)\
+			X(unsigned)\
+			X(long)\
+			X(unsigned long)\
+			X(long long)\
+			X(unsigned long long)
+		 
+		#define X(a)\
+			template<>\
+			struct monoid<a> : public default_monoid<a>\
+			{};
+		 
+		FUNDAMENTAL_TYPES;
+		#undef X
+		This code will generate monoid instances based on default_monoid for all the fundamental data types.We can also use default_monoid for strings:
+			template<>
+			struct monoid<std::string> : public default_monoid<std::string>
+			{};
+	4.6 But for some types we need to customize a bit more:
+			template<class T>
+			struct monoid<std::vector<T>>
+			{
+				static std::vector<T> empty(){return std::vector<T>{};}
+			 
+				static std::vector<T> append(std::vector<T> lhs, const std::vector<T>& rhs)
+				{
+					for (const T& t : rhs)
+						lhs.push_back(t);
+			 
+					return lhs;
+				}
+			 
+				static constexpr bool is_instance = true;
+			};
+		it is suffice to say that containers, string streams, numerical types and many more can all instantiate the monoid type class. The combination of generic programming and functional programming is very powerful. The accumulator function from earlier can now work with every type that is an instance of monoid! Pretty neat. For example:
+		
+		int main()
+		{
+			int a = accumulator(std::vector<int>{1,2,3});
+			std::cout << a << "\n";
+		 
+			int b = accumulator(accumulator(std::vector<std::vector<int>>{{1,2,3},{4,5,6},{7,8,9}}));
+			std::cout << b << "\n";
+		 
+			std::string c = accumulator(std::vector<std::string>{"hello ","world","!"});
+			std::cout << c << "\n";
+		 
+			return 0;
+		}
+
 
