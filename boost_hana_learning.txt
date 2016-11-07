@@ -1,0 +1,40 @@
+Boost Hana:
+
+Core:
+
+1	when: it is a template with bool as template typename. only define as a simple struct
+template<bool condition>
+struct when.
+
+2	tag_of: when using with when<>, the SFINAE will only enable the specialization if and only if on when<true>. (similar to std::enable_if)
+	2.1 tag_of<T> is same type as tag_of<U>, where U is the type T after being stripped of all reference and cv-qualifers. This make it unnecessary to specialize tag_of for all reference and cv combinations.
+	2.2 tag_of<tag_of<T>::type>::type is same type as tag_of<T>::type;
+	2.3 The general template definition:
+		
+		template<typename T, typename = void> struct tag_of
+		
+	then define a specialization for when<true>
+	
+		template<typename T, typename>
+		struct tag_of : tag_of<T, when<true>> {} 
+	
+	we must provide how tag_of<T, when<{boolean value}>> looks like
+	
+		template<typename T, bool condition>
+		struct tag_of<T, when<condition>>
+		{
+			using type = T;
+		}
+	
+	so, if expression in when<expression> is a well formed, tag_of will have a type = T. Otherwise, only tag_of<T,when<false>> has a type = T, not type tag_of<T>
+	
+	then provide a series of specialization for different cv and reference combinations;
+	struct tag_of<T const> : tag_of<T>
+	struct tag_of<T volatile> : tag_of<T>
+	struct tag_of<T const volatile> : tag_of<T>
+	struct tag_of<T&> : tag_of<T>
+	struct tag_of<T&&> : tag_of<T>
+3. is_a: is_a<Tag,T> is a compile_time logical representing whether the tag of T is exactly tag. i.e. std::is_same<Tag, tag_of<T>::type> ??
+
+4. 
+

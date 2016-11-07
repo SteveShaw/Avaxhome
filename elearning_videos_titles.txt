@@ -1,3 +1,1065 @@
+Monday, November 07, 2016 [START]
+
+0 <--> Lynda - Learning Cloud Computing: Core Concepts
+
+
+Lynda - Learning Cloud Computing: Core Concepts
+Size: 162 MB | Duration: 1h 4m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+
+
+
+42 <--> Pluralsight - Hardcore Functional Programming in JavaScript [repost]
+http://nitroflare.com/view/35205DA0317F9D8/Hardc_Func_Progr_Jav.part01.rar
+http://nitroflare.com/view/5679FC72C0B43EB/Hardc_Func_Progr_Jav.part02.rar
+http://nitroflare.com/view/94D7B4DA0EED3FC/Hardc_Func_Progr_Jav.part03.rar
+http://nitroflare.com/view/FCA4E8EFED1987B/Hardc_Func_Progr_Jav.part04.rar
+http://nitroflare.com/view/FB83EE6943AE18C/Hardc_Func_Progr_Jav.part05.rar
+http://nitroflare.com/view/542475914EAECA9/Hardc_Func_Progr_Jav.part06.rar
+http://nitroflare.com/view/940F16D78752207/Hardc_Func_Progr_Jav.part07.rar
+http://nitroflare.com/view/260FE2049D9981D/Hardc_Func_Progr_Jav.part08.rar
+
+
+Pluralsight - Hardcore Functional Programming in JavaScript
+MP4 | AVC 415kbps | English | 1024x768 | 24fps | 6h 03mins | AAC stereo 192kbps | 1.5 GB
+Genre: Video Training
+
+Learn to apply techniques from the forefront of computer science research to solve practical problems in JavaScript. Using real-world examples and practical exercises, Joe Nelson and Brian Lonsdorf demonstrate how functional programming allows you to write cleaner and more reusable code, while at the same time avoiding JavaScript “gotchas” like side effects and mutation. At the of the course, Joe and Brian build an example web app using abstract interfaces such as Monads, Functors, Monoids, and Applicatives.
+
+Table of contents:
+The Silence2h 25m
+The Voyage2h 42m
+The Demo55m 35s
+
+
+
+
+
+44 <--> Lynda - Photoshop: Smart Objects
+http://nitroflare.com/view/499AF33A0E7F9FD/LcPsSmartObjects.part1.rar
+http://nitroflare.com/view/FA59661E98D0773/LcPsSmartObjects.part2.rar
+http://nitroflare.com/view/83ABDE61C990B21/LcPsSmartObjects.part3.rar
+http://nitroflare.com/view/580FAB319E5D4D7/LcPsSmartObjects.part4.rar
+
+
+Lynda - Photoshop: Smart Objects
+Size: 477 MB | Duration: 1h 22m | Video: AVC (.mp4) 1280x720 30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Most Adobe Photoshop artists don't make use of Smart Objects, and thus miss out on a potentially very powerful tool. With Smart Objects you can create a complex transformation once and then swap out the contents for any artwork you choose. In this workshop, Photoshop artist and author Steve Caplin shows you how you can use Smart Objects to enhance almost all your Photoshop work. Learn to simplify and speed up repetitive tasks, and create templates that can be repurposed as many times as you wish.
+
+
+75 <--> Udemy – Data Analysis with Python and Pandas [repost]
+http://nitroflare.com/view/4B8DB328FCDD62C/Dat_An_Pyt_Pand.part01.rar
+http://nitroflare.com/view/B31A0D388CB09D8/Dat_An_Pyt_Pand.part02.rar
+http://nitroflare.com/view/DF9BF3686F93473/Dat_An_Pyt_Pand.part03.rar
+http://nitroflare.com/view/BF52ED561D265A3/Dat_An_Pyt_Pand.part04.rar
+http://nitroflare.com/view/37D8FDDC6126FC7/Dat_An_Pyt_Pand.part05.rar
+http://nitroflare.com/view/A5D5DDB52EC8CB1/Dat_An_Pyt_Pand.part06.rar
+http://nitroflare.com/view/DBF93E60E5CB471/Dat_An_Pyt_Pand.part07.rar
+http://nitroflare.com/view/DB08524D01B1D47/Dat_An_Pyt_Pand.part08.rar
+
+
+Udemy – Data Analysis with Python and Pandas
+MP4 | AVC 462kbps | English | 1280x720 | 30fps | 6 hours | AAC stereo 64kbps | 2.26 GB
+Genre: Video Training
+
+Python programmers are some of the most sought-after employees in the tech world, and Python itself is fast becoming one of the most popular programming languages. One of the best applications of Python however is data analysis; which also happens to be something that employers can't get enough of. Gaining skills in one or the other is a guaranteed way to boost your employability – but put the two together and you'll be unstoppable!
+
+Become and expert data analyser
+
+Learn efficient python data analysis
+Manipulate data sets quickly and easily
+Master python data mining
+Gain a skillset in Python that can be used for various other applications
+
+Python data analytics made Simple
+
+This course contains 51 lectures and 6 hours of content, specially created for those with an interest in data analysis, programming, or the Python programming language. Once you have Python installed and are familiar with the language, you'll be all set to go.
+
+The course begins with covering the fundamentals of Pandas (the library of data structures you'll be using) before delving into the most important functions you'll need for data analysis; creating and navigating data frames, indexing, visualising, and so on. Next, you'll get into the more intricate operations run in conjunction with Pandas including data manipulation, logical categorising, statistical functions and applications, and more. Missing data, combining data, working with databases, and advanced operations like resampling, correlation, mapping and buffering will also be covered.
+
+By the end of this course, you'll have not only have grasped the fundamental concepts of data analysis, but through using Python to analyse and manipulate your data, you'll have gained a highly specific and much in demand skill set that you can put to a variety of practical used for just about any business in the world.
+
+Tools Used
+
+Python: Python is a general purpose programming language with a focus on readability and concise code, making it a great language for new coders to learn. Learning Python gives a solid foundation for learning more advanced coding languages, and allows for a wide variety of applications.
+
+Pandas: Pandas is a free, open source library that provides high-performance, easy to use data structures and data analysis tools for Python; specifically, numerical tables and time series. If your project involves lots of numerical data, Pandas is for you.
+
+NumPy: Like Pandas, NumPy is another library of high level mathematical functions. The difference with NumPy however is that was specifically created as an extension to the Python programming language, intended to support large multi-dimensional arrays and matrices.
+
+
+
+
+
+179 <--> Create and sell animated videos in minutes using PowerPoint
+http://nitroflare.com/view/0DEB28B2618EDCF/Create_and_sell_animated_videos_in_minutes_using_PowerPoint.part1.rar
+http://nitroflare.com/view/AA46779CEDCAB10/Create_and_sell_animated_videos_in_minutes_using_PowerPoint.part2.rar
+
+
+Create and sell animated videos in minutes using PowerPoint
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 34M | Lec: 8 | 105 MB
+Genre: eLearning | Language: English
+
+The ultimate guide to creating animated videos using only PowerPoint and with no animation skills
+
+Creating a good animated video is known to be a hard task and requires you a lot of money,time and effort! but today all these myths are gone!
+
+once you join this course and finish it you will be able to create and sell amazing looking animated videos within minutes without the need for any design skills or animation skills and with no expensive animation software too! 
+
+
+
+
+
+199 <--> Lynda - Linux: Multitasking at the Command Line
+http://nitroflare.com/view/E9B9436D8A7E6F0/LcLinuxMultitaskCmdLine.rar
+
+
+Lynda - Linux: Multitasking at the Command Line
+Size: 111 MB | Duration: 0h 39m | Video: AVC (.mp4) 1280x720 30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+When you're working at the Linux command line, you don't have to give up the multitasking flexibility you're accustomed to in a graphical user interface. Have a long-running copy operation preventing you from editing a configuration file? Send it to the background and reclaim your time! In this short course, author Scott Simpson shows you how to switch tasks to the background and bring them back to the foreground. He also demonstrates screen and tmux, two very popular utilities for creating working environments that persist between connections.
+
+
+
+
+
+271 <--> Linux Academy - Learning Vagrant (2016)
+http://nitroflare.com/view/F394BD52436D237/Lin_Lear_Vagr.part1.rar
+http://nitroflare.com/view/CCBBF587D178C5A/Lin_Lear_Vagr.part2.rar
+http://nitroflare.com/view/58E9127A4F81355/Lin_Lear_Vagr.part3.rar
+http://nitroflare.com/view/49C8EFD3B689979/Lin_Lear_Vagr.part4.rar
+http://nitroflare.com/view/02F8CA649716511/Lin_Lear_Vagr.part5.rar
+http://nitroflare.com/view/92E565278ED0774/Lin_Lear_Vagr.part6.rar
+
+
+Linux Academy - Learning Vagrant (2016)
+TS | AVC 713kbps | English | 1920x1080 | 30fps | 2h 18mins | AAC stereo 317kbps | 801 MB
+Genre: Video Training
+
+Vagrant allows you to create portable work environments which can be easily reproduced on any system. It's useful for developers and system administrators who want to mimic a server's configuration on their local machine. It's useful for teams who want to quickly get designers and project managers up and running with a local installation. In this introductory course in to vagrant we learn the basic concepts of what vagrant is, how to install it, and how to get started with our own Vagrantfile configs to get up and running.
+
+Content:
+Vagrant Intro
+
+What is Vagrant?
+
+00:05:03
+
+Virtualization Overview
+
+00:02:54
+
+Setting Up Vagrant
+
+VirtualBox Installation on OSX
+
+00:02:01
+
+VirtualBox Installation on Windows
+
+00:01:39
+
+VirtualBox Installation on Linux
+
+00:06:53
+
+Vagrant Install With OSX
+
+00:01:29
+
+Vagrant Install With Windows
+
+00:01:24
+
+Vagrant Install With Linux
+
+00:01:50
+
+Vagrant Without VirtualBox?
+
+00:01:06
+
+Using Vagrant
+
+Our First Vagrant Machine
+
+00:02:57
+
+Vagrantfiles
+
+00:05:06
+
+Boxes
+
+00:04:12
+
+(Vagrant Up) Running Vagrant Machines
+
+00:05:08
+
+SSH To Vagrant Machines
+
+00:02:32
+
+Synced Folders
+
+00:03:26
+
+Networking Basics
+
+00:03:44
+
+Environment Management
+
+00:06:06
+
+Automated Provisioning
+
+Provisioners
+
+00:01:53
+
+Installing Apache Manually
+
+00:05:25
+
+Installing Apache / Shell Script
+
+00:06:09
+
+Installing Apache / Chef
+
+00:07:10
+
+Installing Apache / Puppet
+
+00:15:23
+
+Networking
+
+Private Networking
+
+00:03:36
+
+Public Networking
+
+00:02:05
+
+Multiple Machines With Vagrant
+
+Managing Your Multiple Machines
+
+00:03:34
+
+Hands On With Multiple Machines
+
+00:09:50
+
+Boxes
+
+Vagrant Boxes
+
+00:03:47
+
+Basic Box Management
+
+00:05:40
+
+How To Create Boxes From An Existing Environment
+
+00:05:13
+
+Creating Your Own Boxes
+
+00:10:26
+
+
+
+
+360 <--> Python and Network Automation: Build 5 Python Apps [repost]
+http://nitroflare.com/view/1E7E14284B6F0D3/Python.for.real_life.Networking.use.get.5.Apps.part1.rar
+http://nitroflare.com/view/19605ED39E5D098/Python.for.real_life.Networking.use.get.5.Apps.part2.rar
+http://nitroflare.com/view/29937E54345A040/Python.for.real_life.Networking.use.get.5.Apps.part3.rar
+http://nitroflare.com/view/F60F4C2CAD8B7BD/Python.for.real_life.Networking.use.get.5.Apps.part4.rar
+http://nitroflare.com/view/9E6DE9A60619095/Python.for.real_life.Networking.use.get.5.Apps.part5.rar
+http://nitroflare.com/view/B5B68CA25E8411D/Python.for.real_life.Networking.use.get.5.Apps.part6.rar
+http://nitroflare.com/view/6F73679FF6B3418/Python.for.real_life.Networking.use.get.5.Apps.part7.rar
+
+
+Python and Network Automation: Build 5 Python Apps
+WEBRip | English | MP4 + Project files | 1280 x 720 | AVC ~135 kbps | 30 fps
+AAC | 33.6 Kbps | 44.1 KHz | 1 channel | 10h 47mn | 1.3 GB
+Genre: eLearning Video / Development, Programming
+
+Learn Python From Scratch! Go from zero programming to building great network apps with Python. Full Python Apps Inside! Do you want to become a Python Developer without having to spend a lot of money on books and boring theoretical courses? Are you a network professional who wants to start automating network tasks? Or maybe you're seeking a raise or even a career change? Join over 1,500 successful students who have decided to learn Python, upgrade their networking skills and boost their careers using this 100% hands-on course!
+During this course you will learn Python concepts which are relevant to your networking job and build some amazing tools:
+
+Python App#1: Subnet calculator.
+Python App#2: Configuring multiple devices concurrently via SSH and Telnet.
+Python App#3: DHCP client simulator for testing a DHCP server.
+Python App#4: Collecting information from routers and storing it in a MySQL database.
+Python App#5: OSPF network discovery via SNMP. Building the OSPF topology.
+
+Sounds unbelievable given your current programming experience? Well, it's true! How?
+
+First, you will learn and practice every Python key concept, which is explained in one or more video lectures, followed by a short quiz. Each video is filled with relevant examples, in a learn-by-doing fashion and the quizzes will help you consolidate the main ideas behind each Python topic.
+
+After laying the foundation (and also exploring some advanced Python topics), you will dive right into the real-life networking scenarios and apply your knowledge to build 5 great network tools.
+
+"There is no major prerequisite and the material is hand-on from the go. Besides new lectures are being uploaded in response to suggestions and discussions." by Zafar Iqbal
+
+Equipped with working files, network topologies and Python code samples (in .pdf and .py formats), you will be able to work alongside me on each lecture and each application. I will provide a virtual machine with all the Python modules already installed and also the full code for each application, so you can save time and start coding and testing on the spot.
+
+We will use emulated routers in GNS3 to test our Python apps in a network environment, so you can see the actual results of running your code.
+
+I encourage you to learn Python, an amazingly beginner-friendly programming language and take your (networking) job to a higher level of automation.
+
+What are the requirements?
+
+You should have a great desire to learn programming and do it in a hands-on fashion, without having to watch countless lectures filled with slides and theory.
+You should already be familiar with networking concepts like: Routing, SSH, Telnet, SNMP.
+I will provide a fully configured virtual machine with all the necessary software (Python modules, MySQL, IDE). This way you can save time and start writing code as soon as possible.
+I am going to use only free software throughout the course: Python 2.7, Linux, GNS3.
+All you need is a decent PC/Laptop (2GHz CPU, 4GB RAM). You will get the rest from me.
+
+Content:
+
+01 - Getting Started
+01 - Course introduction
+02 - Introduction to Python
+03 - Necessary software
+04 - List of necessary applications.pdf
+05 - Python interpreter
+06 - Python scripts
+07 - Python argument passing
+08 - User input
+09 - dir and help
+3.1 - Download Link.txt
+02 - Data Types
+10 - Variables
+11 - Python keywords.pdf
+12 - Data Types
+13 - Strings
+14 - String methods
+14.1 - String methods - Link.txt
+15 - String operators and formatting
+16 - String slices
+17 - Numbers and math operators
+18 - Booleans and logical operators
+18.1 - Data Types - Link.txt
+19 - Lists introduction
+20 - List methods
+21 - List slices
+22 - Sets introduction
+23 - Set methods
+23.1 - Sets - Links.txt
+24 - Tuples introduction
+25 - Tuple methods
+26 - Dictionaries introduction
+27 - Dictionary methods
+27.1 - Dictionaries - Link.txt
+28 - Conversions between data types
+03 - Control Flow
+29 - If Elif Else conditionals
+29.1 - Control Flow - Link.txt
+30 - For For-Else loops
+30.1 - For Loops - Link.txt
+31 - While While-Else loops
+31.1 - While Loops - Link.txt
+32 - If For While nesting
+33 - Break Continue Pass
+34 - Exceptions
+35 - Try Except Else Finally
+35.1 - Exceptions - Link.txt
+04 - Functions
+36 - Functions
+37 - Arguments
+37.1 - Types of arguments - Link.txt
+38 - Namespaces
+39 - Modules and importing
+39.1 - if name EqualsEquals main - Link.txt
+05 - File operations
+40 - File opening and reading
+41 - File writing and appending
+42 - File closing The with method
+42.1 - Files - Link.txt
+43 - File access modes table.pdf
+06 - Regular Expressions
+44 - The re.match and re.search methods
+45 - The re.findall and re.sub methods
+45.1 - The re module - Link.txt
+46 - Regular expressions sheet.pdf
+07 - Classes Object-Oriented Programming Basics
+47 - Classes and Objects
+48 - Classes and Inheritance
+48.1 - Classes - Link.txt
+08 - Bonus Python Tools
+49 - List Set Dictionary comprehensions
+50 - Lambda functions
+51 - Map Filter Reduce
+52 - Threading basics
+53 - Some advice on coding
+53.1 - Linux Permissions - Link.txt
+53.2 - PEP8 - Link.txt
+09 - Setting up the working environment
+54 - Link to the necessary resources.pdf
+55 - GNS3 Setup
+56 - Linking VirtualBox to the GNS3 network
+10 - Python Networking 141.33 MB
+57 - Python networking with Telnet
+58 - Python networking with SSH
+58.1 - Telnet And SSH Config .txt
+59 - Python networking with SNMP
+59.1 - SNMP.pdf
+60 - Python networking with Scapy. Creating your own packets.
+60.1 - Scapy - Link.txt
+61 - Code snippet .pdf Plus .py - Telnet.pdf
+61.1 - Telnet Template .py
+62 - Code snippet .pdf Plus .py - SSH.pdf
+62.1 - SSH Template.py
+63 - Code snippet .pdf Plus .py - SNMP.pdf
+63.1 - SNMP Template.py
+11 - Python and MySQL
+64 - Setting up the MySQL database
+64.1 - My SQL Commands .txt
+65 - Python interacting with MySQL
+65.1 - My SQL Linux Remote Access .txt
+12 - Application 1 - Basic subnet calculator
+66 - Short introduction
+67 - What are we going to build
+67.1 - Subnet Calc README .txt
+68 - Planning the application
+69 - Application 1 - Part 1
+70 - Application 1 - Part 2
+71 - Application 1 - Part 3
+72 - Application 1 - Part 4
+73 - Testing the application
+73.1 - Online Subnet Calculator - Link.txt
+74 - Entire application code .pdf Plus .py .pdf
+74.1 - Subnet Calc Final .py
+13 - Application 2 - SSH Telnet network configuration
+75 - What are we going to build
+76 - Planning the application
+77 - Application 2 - Part 1
+78 - Application 2 - Part 2
+78.1 - Linux Ping - Link.txt
+79 - Application 2 - Part 3
+80 - Application 2 - Part 4
+81 - Testing the application
+82 - Entire SSH application code .pdf Plus .py .pdf
+82.1 - SSH Config Final.py
+83 - Entire Telnet application code .pdf Plus .py .pdf
+83.1 - Telnet Config Final .py
+14 - Application 3 - DHCP client simulator
+84 - What are we going to build
+85 - Planning the application
+86 - Application 3 - Part 1
+86.1 - DHCP Sim README.txt
+87 - Application 3 - Part 2
+88 - Application 3 - Part 3
+89 - Application 3 - Part 4
+90 - Testing the application
+91 - Entire application code .pdf Plus .py .pdf
+91.1 - DHCP Sim Final.py
+15 - Application 4 - Network parameters extraction
+100 - Entire application code .pdf Plus .py .pdf
+100.1 - Net Mon SQL Final .py
+92 - What are we going to build
+93 - Planning the application
+94 - Application 4 - Part 1
+95 - Application 4 - Part 2
+96 - Application 4 - Part 3
+97 - Application 4 - Part 4
+98 - Application 4 - Part 5
+99 - Testing the application
+16 - Application 5 - OSPF network discovery via SNMP
+101 - What are we going to build
+102 - Planning the application
+103 - Application 5 - Part 1
+104 - Application 5 - Part 2
+105 - Application 5 - Part 3
+106 - Application 5 - Part 4
+107 - Application 5 - Part 5
+108 - Application 5 - Part 6
+108.1 - The networkx module - Link.txt
+109 - Testing the application
+109.1 - OSPF SNMP README.txt
+110 - Entire application code .pdf Plus .py .pdf
+110.1 - OSPF SNMP Final.py
+17 - Conclusions
+111 - Final words
+
+
+
+
+400 <--> Advanced Java Performance: Hotspot GC Tuning
+http://nitroflare.com/view/7A92F74001E7C25/Adv.Ja.Pe.Ho.G.part1.rar
+http://nitroflare.com/view/50223019341C9B3/Adv.Ja.Pe.Ho.G.part2.rar
+http://nitroflare.com/view/4DCF55B0DC1171A/Adv.Ja.Pe.Ho.G.part3.rar
+http://nitroflare.com/view/E2B58F50C455046/Adv.Ja.Pe.Ho.G.part4.rar
+
+
+Advanced Java Performance: Hotspot GC Tuning
+HDRips | MP4/AVC, ~1250 kb/s | 1280x720 | Duration: 02:02:47 | English: AAC, 128 kb/s (2 ch) | 924 MB
+Genre: Development / Programming
+
+Advanced Java Performance: HotSpot GC Tuning LiveLessons covers the common fundamentals between all the HotSpot GCs and emphasize the differences. The eight lessons will arm you with what you need to tackle your application’s performance problems where the garbage collector has been identified as the bottleneck. You'll also get an introduction to G1 GC to hit the ground running now, or in the future when G1 GC becomes the default GC in JDK9.
+
+
+
+
+499 <--> Design Patterns with Python (2016)
+http://nitroflare.com/view/3BA396A49AE1726/Design_Patterns_with_Python.part1.rar
+http://nitroflare.com/view/5B2E36FAD6916DD/Design_Patterns_with_Python.part2.rar
+http://nitroflare.com/view/881F66E41087FF0/Design_Patterns_with_Python.part3.rar
+
+
+Design Patterns with Python
+October 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 250 MB
+Genre: eLearning | Language: English
+
+This course will introduce you to eight classic software design patterns and how they can be implemented in Python to help you create programs that are professional, extendable, and maintainable.
+
+At the core of professional programming practice is a thorough knowledge of software design patterns. In this course, Design Patterns with Python, you will learn eight classic patterns and how to implement them in Python. You will learn how to recognize problems that are solvable using design patterns, how to implement them professionally, and how they can be used to make your programs easier to write, easier to read, and easier to maintain. When you're finished with this course, you will have a better understanding of the elements of reusable object-oriented software design, which will help you as you move beyond simple scripts to complex systems built in Python. Software required: A Python interpreter in the 2.7 series or the 3.5 series and a Python-aware integrated development environment (IDE).
+
+
+
+510 <--> Scilab for beginners
+http://nitroflare.com/view/D5872ACF260C38A/Scilab_for_beginners.part1.rar
+http://nitroflare.com/view/A67505AF3AAC151/Scilab_for_beginners.part2.rar
+http://nitroflare.com/view/D6A5889DC438EAA/Scilab_for_beginners.part3.rar
+
+
+Scilab for beginners
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | Lec: 10 | 259 MB
+Genre: eLearning | Language: English
+
+Learn Easy Matrices, Vectors and Scalars Computation
+
+Scilab for Beginners" takes a little bit more than 1 hour to introduce you to the main feature of Scilab: Matrices, Vectors and Scalars computation.
+
+The videos include many Scilab sessions to demonstrate the matrices, vectors and scalars definition and manipulation.
+The "basic" operations introduced here are not so basis, as they are globally managed matrices, vectors and scalars manipulation.
+
+The addition and subtraction are intuive, as they are element by element operations. But the multiplication is the matricial global one, and you have to know a littke bit of linear algebra to understand it. The exponent and even matrices division are also introduced in that course.
+
+By the end of the course, you will be able to use Scilab as a high level caculator. You will be also ready to use Scilab as a laboratoty in our forthcoming series of courses in practical mathematics.
+
+
+
+
+603 <--> Lynda - Harmony to Unity: Animate 2D Characters
+http://nitroflare.com/view/C68CCDBD62209EE/LcHarmonyUnityAnim2DChar.part1.rar
+http://nitroflare.com/view/AAE8E56F116FA2B/LcHarmonyUnityAnim2DChar.part2.rar
+
+
+Lynda - Harmony to Unity: Animate 2D Characters
+Size: 258 MB | Duration: 1h 30m | Video: AVC (.mp4) 1280x720 15fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Toon Boom Harmony is an award-winning industry-standard program for animating 2D cartoons. But Harmony also has the tools to create animations for games. By partnering with Unity, Toon Boom has created a pipeline in which you can now rig and animate characters in Harmony, and then export those animations to be used in Unity's game engine. Learn how in this course with motion comics artist, animator, and teacher Tony Ross. Tony shows you the basics of rigging characters, animating with bone defomers and pegs, and prepping files for use in Unity. Finally, learn how to import and test out your character moves and animations in a simple Unity game environment.
+
+
+
+613 <--> Chef for Linux Admins
+http://nitroflare.com/view/45F592FF2B2198E/Chef_for_Linux_Admins.part1.rar
+http://nitroflare.com/view/6874ADB02D84786/Chef_for_Linux_Admins.part2.rar
+http://nitroflare.com/view/4E048743FFB1F81/Chef_for_Linux_Admins.part3.rar
+http://nitroflare.com/view/D6EADC7BE89F73A/Chef_for_Linux_Admins.part4.rar
+http://nitroflare.com/view/CBA53BBE105CBBD/Chef_for_Linux_Admins.part5.rar
+
+
+Chef for Linux Admins
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | 510 MB
+Genre: eLearning | Language: English
+
+Are you a LINUX ADMIN looking for Automating, Managing of your Linux Servers? But not sure what tool to use?
+
+Are you Looking to elevate your Career as LINUX ADMIN? But not sure what tool to Learn?
+
+Then this course is for you !
+
+In this course, you would be learning how to Automate, Managing of your Linux Servers using Chef Step-By-Step from Scratch.
+
+Chef is used by some of the most reputed companies that includes, Facebook, Target, Yahoo, MSN, Etsy, GE Capital to name a few.
+
+Course Overview:
+
+Most demanding and sought after skill for SYSTEM / LINUX ADMINS.
+Secure and give a boost to your career by learning Chef from OpsCode.
+Course taught using a most innovative and simplified method of teaching.
+Course covers all the topics on, how to manage LINUX Servers using Chef.
+Course Description:
+
+You would begin this course, by understanding what is Chef, what are the core components of Chef EcoSystem, then you would take a Deep Dive to understand, that functionality offered by each of these components. We would also discuss about the different flavors that Chef offers and the pros and cons attached to each of the flavor. We would also try to understand how the traditional terminologies of IT are mapped within Chef.
+
+You would also get step-by-step walk through from scratch on how to install and configure Chef on their proprietary cloud platform and bootstrap the nodes.
+
+Later in the course, you would understand what are cookbooks, recipes, resources and attributes in Chef, you would also learn to how to create cookbooks and write recipes.
+
+In short, this course would teach you everything, that you would require to automate your Linux Servers running within your infrastructure using Chef from OpsCode.
+
+
+
+
+614 <--> JavaScript manipulation of the DOM Document Object Model (2016)
+http://nitroflare.com/view/836169FE5432A89/JavaScript_manipulation_of_the_DOM_Document_Object_Model.part1.rar
+http://nitroflare.com/view/23A3FD48EFE8F8C/JavaScript_manipulation_of_the_DOM_Document_Object_Model.part2.rar
+http://nitroflare.com/view/AF0D293FB50B44B/JavaScript_manipulation_of_the_DOM_Document_Object_Model.part3.rar
+http://nitroflare.com/view/8C2CCE3989914BB/JavaScript_manipulation_of_the_DOM_Document_Object_Model.part4.rar
+
+
+JavaScript manipulation of the DOM Document Object Model
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1.5 Hours | Lec: 20 | 316 MB
+Genre: eLearning | Language: English
+
+Access HTML elements using JavaScript make updates, set up event listeners and create new HTML elements.
+
+JavaScript manipulation of the DOM - Start creating Dynamic and Interactive Content. 
+
+Learning how to interact with the DOM, will get you started quickly with more interaction on your webpages.
+
+The Document Object Model is a model of your HTML document represent within JavaScript as objects.
+
+Elements are within the HTML page rendered out by the browser. JavaScript engine in the browser then create representations of the elements as JavaScript Objects. Which in turn gives you the developer a whole lot to work with, the sky's the limit with what you can do at this point. You can communicate with these objects using JavaScript and then manipulate them. Any changes you make will be visible within the webpage itself.
+
+Use JavaScript to select elements from your HTML code. All the web page elements are represented within the DOM. Document Object Model. Learning to better utilize the DOM will allow you to create more advanced user interactions, and update the content dynamically. 
+
+See how easy it is to select elements and make the interactive.
+
+Select any element from within your HTML and bring it to life with JavaScript. 
+
+From an instructor with over 15 years of real world web development experience, learn how to use the DOM for your web projects.
+
+Every element is an element object, which contains details about the object. The DOM is like a doorway to access all of this functionality that is already there. JavaScript gives you the ability to open up that door and make amazing things happen on your website.
+
+Selecting Elements from your HTML
+Update the element HTML on the fly. 
+Add event triggers.
+Style your elements dynamically
+Read and validate inputs
+By the end of the course you will have the skills and know how to manipulate the DOM within you website. 
+
+I am here to help you learn how to create your own websites and ready to answer any questions you may have.
+
+JavaScript is the most in demand skills, and learning how to use JavaScript will help to separate you from the crowd.
+
+Want to know more, what are you waiting for take the first step. Join now to start learning how you too can create DYNAMIC and INTERACTIVE pages within your website today.
+
+
+
+
+
+624 <--> Hand-Drawn Animation: Pt. 1 - The Bouncing Ball
+http://nitroflare.com/view/25F5E91E012E0BA/Hand-Drawn_Animation_Pt._1_-_The_Bouncing_Ball.part1.rar
+http://nitroflare.com/view/F4145F70B62C979/Hand-Drawn_Animation_Pt._1_-_The_Bouncing_Ball.part2.rar
+http://nitroflare.com/view/CCBD26380AC1B36/Hand-Drawn_Animation_Pt._1_-_The_Bouncing_Ball.part3.rar
+
+
+Hand-Drawn Animation: Pt. 1 - The Bouncing Ball
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 37M | 240 MB
+Genre: eLearning | Language: English
+
+In this class we are going to learn how to animate a simple ball bounce in Photoshop. We will begin by using a simple exercise, the oh-so-amazing bouncing ball, to help us understand keyframes, movement and timing and then we'll move to a simple character walk later on! This is going to be a ton of fun and anyone can do it! If you've ever wanted to learn to do hand-drawn animation, this is the place! Join up and we'll have you animating in no time.
+
+
+
+650 <--> Mastering in Visualization with R programming (2016)
+http://nitroflare.com/view/4682ACBF7CFD828/Mastering_in_Visualization_with_R_programming.part1.rar
+http://nitroflare.com/view/A4F053EBF2CA61B/Mastering_in_Visualization_with_R_programming.part2.rar
+http://nitroflare.com/view/7B9E63EB7082577/Mastering_in_Visualization_with_R_programming.part3.rar
+http://nitroflare.com/view/1578BD31F5D1DDD/Mastering_in_Visualization_with_R_programming.part4.rar
+http://nitroflare.com/view/BEA92E7C4D22847/Mastering_in_Visualization_with_R_programming.part5.rar
+
+
+Mastering in Visualization with R programming
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3.5 Hours | Lec: 45 | 434 MB
+Genre: eLearning | Language: English
+
+Graphs with R analytic tool
+
+This course is about R programming's feature of visualizing the data. R is a programming language and software environment for statistical computing and graphics supported by the R Foundation for Statistical Computing. The R language is widely used among data miners and statisticians for developing statistical software. R has many features like Programming feature, statistical feature and visualizing feature.
+
+In this course first we'll focusing towards Basic understanding of R programming and then from very basic to advanced graphics features with use of several packages like ggplot2, plotrix, googleVis etc. In this Course we'll plot different kinds of specialised charts and graphs like bar plots, scatter plots, histograms, pie charts, google maps, wordclouds, box plot, organizational charts, pictographs, table plot, line graphs, nested barcharts, gantt chart, zoom in plot, fan plots, 3D plots, Radial plots, tree maps, heat maps, area charts, venn diagram and many more.
+
+
+
+
+
+
+678 <--> Lynda - Unity 5 2D: Pathfinding (updated Oct 10, 2016)
+http://nitroflare.com/view/EA17AC5A868E0A1/LcUnity52DPathfind2016Q3.rar
+
+
+Lynda - Unity 5 2D: Pathfinding (updated Oct 10, 2016)
+Size: 93 MB | Duration: 0h 32m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Learn how to move characters and objects from point A to B with this introduction to pathfinding in Unity 5. This training focuses on pathfinding in the 2D world: programming simple ways to connect different locations in 2D games. Jesse Freeman starts by explaining the data structures (graphs and nodes) and the A* pathfinding algorithm: the technology that makes traversal of 2D games possible. Then he shows you how to connect paths in a 2D map, and find the fastest path between two points. You'll also build a simple demo map to illustrate and test the pathfinding logic.
+
+ Topics include:
+
+
+
+
+707 <--> Pluralsight - Exploratory Data Analysis with R [repost]
+http://nitroflare.com/view/FAC28829F8CCC54/Expl_Dat_An_R.part1.rar
+http://nitroflare.com/view/04219595483CC0D/Expl_Dat_An_R.part2.rar
+http://nitroflare.com/view/E269E280808E381/Expl_Dat_An_R.part3.rar
+
+
+Pluralsight - Exploratory Data Analysis with R
+MP4 | AVC 426kbps | English | 1024x768 | 15fps | 2h 29mins | AAC stereo 79kbps | 422 MB
+Genre: Video Training
+
+R is a popular open-source programming language for data analysis. Its interactive programming environment and data visualization capabilities make R an ideal tool for exploratory data analysis. This course will provide an introduction to the R programming language and demonstrate how R can be used for exploratory data analysis to complete day-to-day developer tasks.
+
+Introduction to R
+Introduction
+Intro to R
+Hello World Demo
+RStudio
+Language Basics Demo
+Data Structures Demo
+Data Frames Demo
+Other Language Features Demo
+Summary
+
+Transforming and Cleaning Data
+Overview
+Introduction
+Demo Setup
+Loading Data
+Cleaning Data
+Exporting Data
+Demo Conclusion
+Summary
+
+Calculating Descriptive Statistics
+Overview
+Introduction
+Types of Analysis
+Guidance
+Demo Setup
+Univariate Analysis Demo
+Bivariate Analysis Demo
+Demo Conclusion
+Summary
+
+Visualizing Data
+Overview
+Introduction
+Univariate Analysis
+Bivariate Analysis
+Guidance
+Demo Setup
+Univariate Analysis Demo
+Bivariate Analysis Demo
+Demo Conclusion
+Summary
+
+Moving Beyond R and Exploratory Data Analysis
+Overview
+Beyond Exploratory Data Analysis
+Linear Regression Analysis Demo
+Cluster Analysis Demo
+Alternatives to R
+Summary
+
+
+
+763 <--> Masking Women Hair in Photoshop : Part1
+http://nitroflare.com/view/38DE5A139965574/Masking_Women_Hair_in_Photoshop__Part1.part1.rar
+http://nitroflare.com/view/AADA5030105BC24/Masking_Women_Hair_in_Photoshop__Part1.part2.rar
+http://nitroflare.com/view/8B058E73B387356/Masking_Women_Hair_in_Photoshop__Part1.part3.rar
+http://nitroflare.com/view/5E658A6DFEDB795/Masking_Women_Hair_in_Photoshop__Part1.part4.rar
+
+
+Masking Women Hair in Photoshop : Part1
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 23M | 318 MB
+Genre: eLearning | Language: English
+
+Do you Find it Really Hard in Masking Women Hair ?
+Are you searching for the best technique of Masking ?
+Do you want to take your masking skill to advanced level ?
+
+if answer to any of these question is yes , then this course is for you.
+
+We will start with the techniques that we will use through out the course .
+
+Then we will start doing projects .
+First , we will mask hair of a woman on white background.
+Even though its white background , it has lots of hair details .
+
+Then we will proceed to the next project , where we will mask woman with short hair with many details in it .
+
+Next we will mask blonde hair on Light Background and I will show you how to handle these kind of projects .
+
+Next we will mask woman who has Spreaded hair and also the hair is blurred in some position . So , here also , I will show u how to handle this project .
+
+Next we will mask dark hair on dark background and also the background has varying colours.
+
+So we will start with basics and we will proceed to advanced level step by step.
+
+
+774 <--> Lynda - NumPy Data Science Essential Training
+http://nitroflare.com/view/C3CA14A9343A4CB/LcNumPyDataSciEssT.part1.rar
+http://nitroflare.com/view/8AFD50867447ED7/LcNumPyDataSciEssT.part2.rar
+http://nitroflare.com/view/C9D03D421CB52AA/LcNumPyDataSciEssT.part3.rar
+http://nitroflare.com/view/12E39B23645A8D3/LcNumPyDataSciEssT.part4.rar
+
+
+Lynda - NumPy Data Science Essential Training
+Size: 606 MB | Duration: 3h 54m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+NumPy Data Science Essential Training introduces the beginning to intermediate data scientist to NumPy, the Python library that supports numerical, scientific, and statistical programming, including machine learning. The library supports several aspects of data science, providing multidimensional array objects, derived objects (matrixes and masked arrays), and routines for math, logic, sorting, statistics, and random number generation. Here Charles Kelly shows how to work with NumPy and Python within Jupyter Notebook, a browser-based tool for creating interactive documents with live code, annotations, and even visualizations such as plots. Learn how to create NumPy arrays, use NumPy statements and snippets, and index, slice, iterate, and otherwise manipulate arrays. Plus, learn how to plot data and combine NumPy arrays with Python classes, and get examples of NumPy in action: solving linear equations, finding patterns, performing statistics, generating magic cubes, and more.
+
+
+
+
+787 <--> Lynda - Mastering Express Web Application Development
+http://nitroflare.com/view/5E3AAA6D774E8F7/LcMasterExpressWebAppDev.part1.rar
+http://nitroflare.com/view/137B59D1E587ED5/LcMasterExpressWebAppDev.part2.rar
+http://nitroflare.com/view/E7EFF06A6853576/LcMasterExpressWebAppDev.part3.rar
+http://nitroflare.com/view/C3BB2551C927B4B/LcMasterExpressWebAppDev.part4.rar
+
+
+Lynda - Mastering Express Web Application Development
+Size: 482 MB | Duration: 2h 51m | Video: AVC (.mp4) 1280x720 15fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Note: Mastering Express Web Application Development was created by Packt Publishing. It was originally released on 6/30/2015. We are pleased to host this training in our library. Express. js is a fantastic JavaScript framework, but most people only scratch the surface. Express is perfect for developing APIs with performance in mind and, as a thin layer, it allows you to add any additional technology you want. Mastering Express Web Application Development introduces the tools and libraries you need to take your Express development career to the next level. To start, author Michael Heap creates a new Express application, showing how to configure it and increase application visibility with logs. Explore Express along with various libraries that will help improve your development experience. Then take a look at technologies such as SSL and nginx, and work through deploying your application to production in a secure and scalable way. Michael also introduces some existing open-source Express projects and reviews how they are structured, to help you organize your own applications in a systematic way. By the end of the course, you'll be familiar with a wide range of new Express tools and libraries, all of which will help you deliver the best value to your customers.
+
+799 <--> Python GUI Programming Solutions (2016)
+http://nitroflare.com/view/C438F3F69D4685E/Python_GUI_Programming_Solutions.part1.rar
+http://nitroflare.com/view/06205CA7563F996/Python_GUI_Programming_Solutions.part2.rar
+http://nitroflare.com/view/53ADBD2509F5004/Python_GUI_Programming_Solutions.part3.rar
+http://nitroflare.com/view/405FD5DEDD3A4AD/Python_GUI_Programming_Solutions.part4.rar
+http://nitroflare.com/view/6250A35F5040CDB/Python_GUI_Programming_Solutions.part5.rar
+http://nitroflare.com/view/A8AB6805BBF3181/Python_GUI_Programming_Solutions.part6.rar
+
+
+Python GUI Programming Solutions
+September 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 6 Hours | 1.20 GB
+Genre: eLearning | Language: English
+
+Python is a multi-domain, interpreted programming language. It is a widely used general-purpose, high-level programming language. It is often used as a scripting language because of its forgiving syntax and compatibility with a wide variety of different eco-systems. Its flexible syntax enables developers to write short scripts while at the same time being able to use object-oriented concepts to develop very large projects.
+
+This course follows a task-based approach to help you create beautiful and very effective GUIs with the least amount of code necessary. This course uses the simplest programming style, using the fewest lines of code to create a GUI in Python, and then advances to using object-oriented programming in later sections. If you are new to object-oriented programming (OOP), this video course will teach you how to take advantage of the OOP coding style in the context of creating GUIs written in Python.
+
+Throughout this course, you will develop an entire GUI application, building features into it and connecting the GUI to a database. In the later sections, you will explore additional Python GUI frameworks using best practices. You will also learn how to use threading to ensure your GUI doesn't go unresponsive.
+
+
+1075 <--> How to Think About Machine Learning Algorithms (2016)
+http://nitroflare.com/view/D87507407EF0818/How_to_Think_About_Machine_Learning_Algorithms.part1.rar
+http://nitroflare.com/view/D747218E656EEBE/How_to_Think_About_Machine_Learning_Algorithms.part2.rar
+http://nitroflare.com/view/7D76E53AD345EBA/How_to_Think_About_Machine_Learning_Algorithms.part3.rar
+http://nitroflare.com/view/2A29131A0ABB0BF/How_to_Think_About_Machine_Learning_Algorithms.part4.rar
+
+
+How to Think About Machine Learning Algorithms
+September 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | 375 MB
+Genre: eLearning | Language: English
+
+If you don't know the question, you probably won't get the answer right. This course is all about asking the right machine learning questions, modeling real-world situations as one of several well understood machine learning problems.
+
+Machine learning is behind some of the coolest technological innovations today, Contrary to popular perception, however, you don't need to be a math genius to successfully apply machine learning. As a data scientist facing any real-world problem, you first need to identify whether machine learning can provide an appropriate solution. In this course, How to Think About Machine Learning Algorithms, you'll learn how to identify those situations. First, you will learn how to determine which of the four basic approaches you'll take to solve the problem: classification, regression, clustering or recommendation. Next, you'll learn how to set up the problem statement, features, and labels. Finally you'll plug in a standard algorithm to solve the problem. At the end of this course, you'll have the skills and knowledge required to recognize an opportunity for a machine learning application and seize it.
+
+
+
+
+
+
+1219 <--> Option Trading for Rookies Understand Options Completely (2016)
+http://nitroflare.com/view/A2057A524764F89/Option_Trading_for_Rookies_Understand_Options_Completely.part1.rar
+http://nitroflare.com/view/1D284CFC2F45DB3/Option_Trading_for_Rookies_Understand_Options_Completely.part2.rar
+http://nitroflare.com/view/B958F7F2C236268/Option_Trading_for_Rookies_Understand_Options_Completely.part3.rar
+http://nitroflare.com/view/11835FD0FB2087A/Option_Trading_for_Rookies_Understand_Options_Completely.part4.rar
+
+
+Option Trading for Rookies Understand Options Completely
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | Lec: 56 | 345 MB
+Genre: eLearning | Language: English
+
+Learn everything you need to know about options and how to trade options with confidence
+
+This course will teach you how to Trade Options and Earn Consistent Returns in the Stock Market for the Rest of Your Life. It will take you from absolute ground zero of Stock Option Trading knowledge (i.e. "What is an Option?") all the way to trading different option strategies in only a few courses. 
+
+There is no frivolous information here. Our goal is to get you up and trading right away, so everything you need to know is here and presented in a straightforward and easy to understand format. All the information is laid out and explained thoroughly on slides, and then illustrated on live trading platforms to show you how to use it in reality.
+
+Myths will be busted:
+
+1) Trading is not as complicated as professionals would lead you to believe, in fact it’s pretty easy
+
+2) Trading does not take a lot of time. You can do it from work or home in less than 15 minutes a day 
+
+3) Trading does not take years to learn, I am going to teach you in only a few courses
+
+No Fundamental or Technical Analysis is used or needed. This program is based on strategy. And strategy can be applied to any stock at any time.
+
+I'm a firm believer that "Nobody Cares About Your Money More Than You Do." I want to teach you how to manage your own money, so you don't have to pay exorbitant fees to Money Managers who get paid whether they make money for you or not. 
+
+Young or Old, everyone can learn to trade. All you need is the calculator on your phone and you have all the tools necessary to take this course and learn a skill that can make you money for the rest of your life!
+
+
+1271 <--> All Things Chess (1-10 Volumes Complete Set) [repost]
+http://nitroflare.com/view/291AD59ED2544AE/AL.Th.Ch.Co.part1.rar
+http://nitroflare.com/view/C3220FBABEBF488/AL.Th.Ch.Co.part2.rar
+http://nitroflare.com/view/9B338B91D126E1F/AL.Th.Ch.Co.part3.rar
+http://nitroflare.com/view/419D269F8CCE3EB/AL.Th.Ch.Co.part4.rar
+http://nitroflare.com/view/D2BD6EB488AF0D7/AL.Th.Ch.Co.part5.rar
+http://nitroflare.com/view/FE2CFEE2207C14E/AL.Th.Ch.Co.part6.rar
+
+
+All Things Chess (1-10 Volumes Complete Set)
+10xDVDRip | AVI/XviD, ~169 kb/s | 852x480 | Duration: 14:28:40 | English: MP3, 48 kb/s (2 ch) | 1.27 GB
+Genre: Chess
+
+Complete one-stop chess course, covering everything from basic chess strategy to advanced tactics and ideas in the opening, middlegame, and endgame. Altogether an amazing amount of chess knowledge (10 DVDs!) and presented in a style both engaging and authoritative. A compendium of chess improvement!
+
+hess DVD 1: The Basics
+
+Chess DVD 2: Chess Openings #1
+
+Chess DVD 3: Chess Openings #2
+
+Chess DVD 4: Chess Openings #3
+
+Chess DVD 5: Chess Middlegame #1
+
+Chess DVD 6: Chess Middlegame #2
+
+Chess DVD 7: Chess Traps #1
+
+Chess DVD 8: Chess Traps #2
+
+Chess DVD 9: Chess Endgames
+
+Chess DVD 10: Famous Chess Games
+
+
+Roman's Lab Volumes 1 - 113 - COMPLETE SET
+
+Foxy Openings - The Complete Collection
+
+Empire Chess MEGA BUNDLE Volumes 1-40
+
+Winning Chess the Easy Way (13 Volume DVD Set)
+
+
+
+
+1277 <--> Building PowerShell GUIs in WPF for Free (2016)
+http://nitroflare.com/view/50279280E2E458A/Building_PowerShell_GUIs_in_WPF_for_Free.part1.rar
+http://nitroflare.com/view/742CC7D09AF2DAC/Building_PowerShell_GUIs_in_WPF_for_Free.part2.rar
+http://nitroflare.com/view/20D096D055C1681/Building_PowerShell_GUIs_in_WPF_for_Free.part3.rar
+http://nitroflare.com/view/6DC3676E4CFAE50/Building_PowerShell_GUIs_in_WPF_for_Free.part4.rar
+
+
+Building PowerShell GUIs in WPF for Free
+September 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 374 MB
+Genre: eLearning | Language: English
+
+This course teaches you how to create UIs in PowerShell using WPF. You'll also learn to use Visual Studio Community edition to create UIs in Designer and how to make a PowerShell script into an executable, all for free.
+
+At the core of creating PowerShell UIs is a thorough knowledge of Windows Presentation Framework. In this course, Building PowerShell GUIs in WPF for Free, you will learn how to create UIs for your PowerShell scripts. You will first learn how to create WPF XAML and import that into PowerShell. Then, you'll learn about the controls and spending some time working with them. Finally, you'll learn how to create executable PowerShell scripts with UIs for redistribution. When you're finished with this course, you will have a foundational knowledge of creating UIs in WPF for PowerShell that will help you as you move forward to creating your own UIs for your PowerShell scripts.
+
+
+
+1286 <--> Mastering Hadoop The How to Guide of a Practical Approach (2016)
+http://nitroflare.com/view/A05A0BCF7D39E89/Mastering_Hadoop_The_How_to_Guide_of_a_Practical_Approach.part1.rar
+http://nitroflare.com/view/4622D9A2EE1A134/Mastering_Hadoop_The_How_to_Guide_of_a_Practical_Approach.part2.rar
+http://nitroflare.com/view/251A61D004A829F/Mastering_Hadoop_The_How_to_Guide_of_a_Practical_Approach.part3.rar
+http://nitroflare.com/view/6C2691F48F2BDA3/Mastering_Hadoop_The_How_to_Guide_of_a_Practical_Approach.part4.rar
+http://nitroflare.com/view/C1DB56B9ADE51A4/Mastering_Hadoop_The_How_to_Guide_of_a_Practical_Approach.part5.rar
+
+
+Mastering Hadoop The How to Guide of a Practical Approach
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 7 Hours | Lec: 23 | 1.08 GB
+Genre: eLearning | Language: English
+
+Learn how to master Big Data and Hadoop in a simple manner and with a practical approach that will help you in your work
+
+Data Analytics is a core part of any service based company now, more and more companies are pushing distributed computing and analytical processing into mainstream solution offering.
+
+With these current industry requirements and the business need to provide customer intrinsic needs, its important to identify and work on offering solution by understanding customers historical and predictive trends and suggest and offer to him with services which can bond and maintain customer loyalty.
+
+
+
+However, earning customer loyalty and understanding the customer behaviour to make business decisions are easier said than done. In todays social world where data collection process is so diverse and possibly extreme in terms of ways and process where and how to collect data is becoming increasingly business as well as technology challenge to collect and process data from all possible channels/media.
+
+In this course we try to explain using business cases, examples and use cases to identify potential business bottleneck and why traditional data storage and data processing is a challenge with these diverse channels of data and provide an intuitive and interactive guide and how Big Data in general and Hadoop in specific can solve the challenges proposed.
+
+We have been working on Hadoop Big Data based solution offerings for past 9+ years and we provide our experience with a very intuitive flow while explaining the concepts of Hadoop in every video. We understand the challenges in learning a new service platform and have tried to explain every topic with many examples and real life situations to make the learning interesting. Wishing you a great career in Big Data and happy learning…
+
+
+
+
+
+1314 <--> Winning Chess the Easy Way (13 Volume DVD Set) [repost]
+http://nitroflare.com/view/71A5194FC3027DD/Wi.Ch.Ea.Wa.part1.rar
+http://nitroflare.com/view/38505C0EF0927C4/Wi.Ch.Ea.Wa.part2.rar
+http://nitroflare.com/view/1AAF8A17003B7D2/Wi.Ch.Ea.Wa.part3.rar
+http://nitroflare.com/view/C6DB19582331184/Wi.Ch.Ea.Wa.part4.rar
+http://nitroflare.com/view/17E5929D1C9D845/Wi.Ch.Ea.Wa.part5.rar
+http://nitroflare.com/view/F91BC3BE6C718CC/Wi.Ch.Ea.Wa.part6.rar
+
+
+Winning Chess the Easy Way (13 Volume DVD Set)
+DVDRips | AVI/XviD, ~384 kb/s | 640x480 | Duration: 23:54:12 | English: MP3, 128 kb/s (2 ch) | 3.68 GB
+
+1315 <--> Lynda - Windows Performance Toolkit: CPU Analysis
+http://nitroflare.com/view/056F0E698C246C5/LcWinPerfTlktCPUAnls.part1.rar
+http://nitroflare.com/view/60676FE9E9BD382/LcWinPerfTlktCPUAnls.part2.rar
+http://nitroflare.com/view/608CD93EC9A657E/LcWinPerfTlktCPUAnls.part3.rar
+http://nitroflare.com/view/DA822045BA99BF5/LcWinPerfTlktCPUAnls.part4.rar
+
+
+Lynda - Windows Performance Toolkit: CPU Analysis
+Size: 565 MB | Duration: 1h 5m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+The CPU is the brain of the computer. Sometimes it gets overtaxed. As a Windows developer, it's important to make your applications execute as fast as possible while minimizing the consumption of system resources. Analyzing the CPU usage of your application with the Windows Performance Toolkit can help you understand its inner workings and optimize its performance. Here Thomas Pantels uses two tools in Windows Performance Toolkit—Windows Performance Analyzer and Windows Performance Recorder—to profile an application and transform a single-threaded app into a multithreaded version where tasks run in parallel.
+
+1320 <--> Understanding the MapReduce Programming Model (2016)
+http://nitroflare.com/view/33DBF942EA47E05/Understanding_the_MapReduce_Programming_Model.part1.rar
+http://nitroflare.com/view/2B19C11B91CB433/Understanding_the_MapReduce_Programming_Model.part2.rar
+http://nitroflare.com/view/A603CFAB2C2A412/Understanding_the_MapReduce_Programming_Model.part3.rar
+
+
+Understanding the MapReduce Programming Model
+September 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 48M | 225 MB
+Genre: eLearning | Language: English
+
+The MapReduce programming model is the de facto standard for parallel processing of Big Data. This course introduces MapReduce, explains how data flows through a MapReduce program, and guides you through writing your first MapReduce program in Java.
+
+Processing millions of records requires that you first understand the art of breaking down your tasks into parallel processes. The MapReduce programming model, part of the Hadoop eco-system, gives you a framework to define your solution in terms of parallel tasks, which are then combined to give you the final desired result. In this course, Understanding the MapReduce Programming Model, you'll get an introduction to the MapReduce paradigm. First, you'll learn how it helps you visualize how data flows through the map, partition, shuffle, and sort phases before it gets to the reduce phase and gives you the final result. Next, it will guide you through your very first MapReduce program in Java. Finally, you'll learn to extend the framework Mapper and Reducer classes to plug in your own logic and then run this code on your local machine without using a Hadoop cluster. By the end of this course, you will be able to break big data problems into parallel tasks to help tackle large-scale data munging operations.
+
+
+
+
+1365 <--> Design Patterns in C++: Behavioral - Observer to Visitor (2016)
+http://nitroflare.com/view/6424ED18154790F/Design_Patterns_in_C%2B%2B_Behavioral_-_Observer_to_Visitor.part1.rar
+http://nitroflare.com/view/42DB5C32DABA558/Design_Patterns_in_C%2B%2B_Behavioral_-_Observer_to_Visitor.part2.rar
+http://nitroflare.com/view/E2F5FD1C7880DFA/Design_Patterns_in_C%2B%2B_Behavioral_-_Observer_to_Visitor.part3.rar
+http://nitroflare.com/view/E2CAF46979824F3/Design_Patterns_in_C%2B%2B_Behavioral_-_Observer_to_Visitor.part4.rar
+http://nitroflare.com/view/AA882255B269814/Design_Patterns_in_C%2B%2B_Behavioral_-_Observer_to_Visitor.part5.rar
+
+
+Design Patterns in C++: Behavioral - Observer to Visitor
+September 2016 | MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 436 MB
+Genre: eLearning | Language: English
+
+This course will teach you about behavioral design patterns and their implementation in modern C++. It covers the Observer, State, Stategy, Template Method, and Visitor patterns.
+
+The correct application and recognition of design patterns is an important skill for developers and architects. This course, Design Patterns in C++: Behavioral - Observer to Visitor, part of a multi-series course on C++ patterns, continues to introduce the viewer to Behavioral design patterns. It covers the Observer, State, Stategy, Template Method, and Visitor patterns, showing different ways in which these patterns can be implemented in modern C++ (C++ 11 and beyond). Software required: a C++ IDE (e.g., Visual Studio, CLion) or a text editor (e.g., VIM, EMACS) together with a C++ compiler (e.g., GCC, Clang).
+
+
+Monday, November 07, 2016 [END]
+
 Wednesday, September 21, 2016 [START]
 
 0 <--> Lynda - Running a Design Business: Grow Your Business

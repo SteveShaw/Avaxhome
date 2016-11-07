@@ -688,9 +688,74 @@ A solution set is:
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
- 
+         const auto len = nums.size();
+        
+        vector<vector<int>> result;
+        
+        if( len < 3 )
+        {
+            return result;
+        }
+        
+        sort( std::begin(nums), std::end(nums));
+        
+        for( std::size_t i = 0; i < len - 2 ; ++i )
+        {
+			//note: 必须和前一个数字比较看是否相同，如果是和后一个数字比较，会错过诸如-1,-1,2这样的结果哦。
+            if( i > 0 && nums[i-1] == nums[i] )
+            {
+                continue;
+            }
+            
+            int k = i + 1;
+            int m = len - 1;
+            
+            while( k < m )
+            {
+                if( k > (i+1) && nums[k-1] == nums[k] )
+                {
+                    ++k;
+                    continue;
+                }
+				//Interesting thing: if I added following, the speed of execution is slow.
+				/*
+                if( m <(len-1) && nums[m+1] == nums[m] )
+                {
+                    --m;
+                    continue;
+                }
+				*/
+                
+                int sum = nums[k]+nums[m];
+            
+                if( sum + nums[i] == 0 )
+                {
+                    result.emplace_back( std::initializer_list<int>{nums[i],nums[k],nums[m]} );
+                    ++k;
+                    --m;
+                    continue;
+                }
+                
+				//如果结果大于0，由于数组是排序过的，所以，我们要从尾部往回走
+                if( sum +nums[i] > 0 )
+                {
+                    --m;
+                    continue;
+                }
+                
+				//如果结果小于0，因为数组是排序过的，要找一个更大的数，所以，从头部往前走。
+                ++k;
+            }
+            
+        }
+        
+        return result;
     }
 };
+
+/*
+ 第一步最好是对原数组进行排序。
+*/
 
 //most effient solution
 //Reference website: http://www.sigmainfy.com/
@@ -717,13 +782,127 @@ As I have mentioned a bit in previous two sum problem analysis “Two Sum Proble
 
 The general idea would be to convert 3 sum into 2 sum problem: pick one value A[i] from the input array, the next would be find the two two sum -A[i] in the rest of the array. And the detailed steps are:
 
-Sort the whole input array by increasing order: O(NlogN)
-Linear scan the sorted array, say the current element to process is A[i], check if A[i] is the same with the previous one, only when they are different we go the next steps.
-Treat A[i] as the first value in the potential triplet, and solve a two sum problem in the rest of the input starting from i+1 with the target as -A[i], similar trick as in step 2 should be performed to avoid repeated triplets.
+1. Sort the whole input array by increasing order: O(NlogN)
+2. Linear scan the sorted array, say the current element to process is A[i], check if A[i] is the same with the previous one, only when they are different we go the next steps.
+3. Treat A[i] as the first value in the potential triplet, and solve a two sum problem in the rest of the input starting from i+1 with the target as -A[i], similar trick as in step 2 should be performed to avoid repeated triplets.
+
 Remarks: Several noteworthy things from the above steps are:
 
-The total time complexity would be O(N^2) rather than O(N^2logN) because we sort the array for only one time at the beginning, many people will interpret it in a wrong way by converting 3 sum into 2 sum problems, that is, they convert it in a simple way, and do a “complete” 2 sum every time for each element in the array.
-Everytime we pick A[i] in step three, we only need to do 2 sum in the rest of the input starting from i + 1, think about why?
+1. The total time complexity would be O(N^2) rather than O(N^2logN) because we sort the array for only one time at the beginning, many people will interpret it in a wrong way by converting 3 sum into 2 sum problems, that is, they convert it in a simple way, and do a “complete” 2 sum every time for each element in the array.
+2. Everytime we pick A[i] in step three, we only need to do 2 sum in the rest of the input starting from i + 1, think about why?
 We avoid repeated triplets before generating any of them by comparing the current value A[i] with the previous one A[i-1], this is the issue which bothered me for quite a while (I raised this in my earlier post in Chinese). Now we indeed managed to remove actually avoid duplicates (copyright @sigmainfy) in the final results without using the set data structure.
-As noted in the problem description, it says the solution set must not contain duplicate triplets, a naive and straightforward way to do this is to use set to do a post-filtering after all the triplets are generated. We managed to avoid this in this post.
+3. As noted in the problem description, it says the solution set must not contain duplicate triplets, a naive and straightforward way to do this is to use set to do a post-filtering after all the triplets are generated. We managed to avoid this in this post.
 */
+
+/*
+16. 3Sum Closest
+
+Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.
+
+For example, given array S = {-1 2 1 -4}, and target = 1.
+
+    The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+
+*/
+
+/*
+采用类似 15  3Sum 的解法，不过这时候我们要比较和target的差，确定哪三个可以得到最小的差，另外，如果得到的和刚好和target相等就直接返回target.
+*/
+
+class Solution {
+public:
+    int threeSumClosest(vector<int>& nums, int target) {
+        
+        const auto len = nums.size();
+        
+        if( len <= 3 )
+        {
+            return accumulate( begin(nums), end(nums), 0 ); 
+        }
+        
+        sort( begin(nums), end(nums) );
+        
+        auto min_diff = numeric_limits<int>::max();
+        int result = 0;
+        
+        for( std::size_t i = 0; i < len - 2; ++i )
+        {
+            if( i > 0 && nums[i-1] == nums[i] )
+            {
+                continue;
+            }
+            
+            int k = i+1;
+            int m = len - 1;
+
+            while( k < m )
+            {
+                if( k > i+1 && nums[k-1] == nums[k] )
+                {
+                    ++k;
+                    continue;
+                }
+                
+                if( m < len - 1 && nums[m+1] == nums[m] )
+                {
+                    --m;
+                    continue;
+                }
+                
+                int sum = nums[k] + nums[m] + nums[i];
+                
+                if( sum ==  target )
+                {
+                    return target;
+                }
+                
+				// if sum is larger than target
+				// we need to search back from right
+                if( sum > target )
+                {
+                    auto diff = sum - target;
+                    if( min_diff > diff )
+                    {
+                        min_diff = diff;
+                        result = sum;
+                    }
+                    --m;
+                    continue;
+                }
+                
+				// if sum is less than target
+				// going forward from left.
+                if( sum < target )
+                {
+                    auto diff = target - sum;
+                    if( min_diff > diff )
+                    {
+                        min_diff = diff;
+                        result = sum;
+                    }
+                    ++k;
+                }
+            }
+                
+        }
+        
+        return result;
+    }
+};
+
+/*
+17. Letter Combinations of a Phone Number
+Given a digit string, return all possible letter combinations that the number could represent.
+A mapping of digit to letters (just like on the telephone buttons) is given below.
+
+Input:Digit string "23"
+Output: ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].
+*/
+
+class Solution {
+public:
+    vector<string> letterCombinations(string digits) {
+        
+        return {""};
+    }
+};
