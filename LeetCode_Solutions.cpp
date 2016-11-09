@@ -1112,3 +1112,67 @@ public:
         return vector<vector<int> > (res.begin(), res.end());
     }
 };
+
+/*
+19. Remove Nth Node From End of List
+Given a linked list, remove the nth node from the end of list and return its head.
+
+For example,
+
+Given linked list: 1->2->3->4->5, and n = 2.
+After removing the second node from the end, the linked list becomes 1->2->3->5.
+*/
+
+/*
+基本思路就是用双指针，让fast指针往前走n+1个节点，然后slow和fast同时一起走.
+之所以要走n+1，是因为我们希望slow指针最终停留在待删除节点的前一个节点上。
+special cases:
+1. n >= number of nodes: delete head node.
+*/
+class Solution {
+public:
+    ListNode* removeNthFromEnd(ListNode* head, int n) {
+        
+        int m = n+1;
+        int count = 0;
+        
+        ListNode* slow = head;
+        ListNode* fast = head;
+        
+        for(;count<m;++count)
+        {
+            if( !fast )
+            {
+                break;
+            }
+            
+            fast = fast->next;
+        }
+        
+        if( count < m )
+        {
+			//this means N is larger than or equal to he number of nodes in the list
+			//we will remove the head
+            slow = slow->next;
+            delete head;
+            return slow;
+        }
+        
+        while( fast )
+        {
+            slow = slow->next;
+            fast = fast->next;
+        }
+        
+        ListNode* remove_node = slow->next;
+        if(remove_node)
+        {
+            ListNode* remove_node_next = remove_node->next;
+            slow->next = remove_node_next;
+            delete remove_node;
+        }
+
+        return head;
+        
+    }
+};
