@@ -1,7 +1,15 @@
 Boost Hana:
 
 Functional programming concepts:
-
+0. useful links
+	0.1 Monads : https://monadmadness.wordpress.com/2015/01/02/monoids-functors-applicatives-and-monads-10-main-ideas/
+	https://bartoszmilewski.com/2011/07/11/monads-in-c/
+	https://bartoszmilewski.com/2015/05/18/using-monads-in-c-to-solve-constraints-3-the-tale-of-two-monads/
+	https://bartoszmilewski.com/2015/05/11/using-monads-in-c-to-solve-constraints-1-the-list-monad/
+	https://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/
+	0.2 Tag dispatching: A tag is simply an empty class whose only purpose is to convey some information at compile time
+		0.2.1 If a tag AA is derived from another tag BB, the compiler will select the BB version for both types are marked with tag AA and BB. This is not possible for specialization on tags. 
+		
 1. Monads example
 	1.1 here’s a problem that you may get as an interview question. It’s a small problem, so the advantages of various approaches might not be immediately obvious, especially if you’ve been trained all your life in imperative programming, and you are seeing monads for the first time.
 
@@ -67,7 +75,102 @@ Functional programming concepts:
 		There is a slight difference between a loop and a function on lists like for_each: for_each takes a whole list as an argument, while a loop might generate individual items — in this case integers — on the fly. This is not a problem in a lazy functional language like Haskell, where a list is evaluated on demand. The same behavior may be implemented in C++ using streams or lazy ranges. I won’t use it here, since the lists we are dealing with are short, but you can read more about it in my earlier post Getting Lazy with C++ (https://bartoszmilewski.com/2014/04/21/getting-lazy-with-c/)
 		We are not ready yet to implement the solution to our puzzle, but I’d like to give you a glimpse of what it looks like. For now, think of StateL as just a list. See if it starts making sense (I grayed out the usual C++ noise):
 
+=================================================
+Variadic expansion:
+1. A universe way of writing a function overload for some traits
 
+// enabled via the return type
+template<typename T>
+auto function(const T &) -> typename std::enable_if<interesting_traits<T>::value>::type;
+
+or 
+
+//enabled via a template parameter
+template<typename T, typename std::enable_if<interesting_traits<T>::value, int>::type = 0>
+auto function( const T& );
+
+2. Variadic SFINAE
+template<typename T, typename std::enable_if<interesting_traits<T>::value, int>::type...>
+auto function( const T& );
+
+or 
+
+template<typename T, typename std::enable_if<interesting_traits<T>::value>::*...>
+auto function( const T& );
+
+3. How to call a function per each argument, like
+template<typename ...Args>
+void foo( Args... args )
+{
+	bar( args )... // invalid
+}
+Solution: define a function that accept varadic arguments and then calling the function we want to call, like
+template<typename ...Args>
+void swallow( Args &&... )
+{
+	//empty
+}
+
+template<typename ...Args>
+void foo( Args... args )
+{
+	swallow(bar( args )...) 
+}
+
+however, if bar() returns void for one of arguments, the above cannot work. An alternative way is
+
+template<typename ...Args>
+void foo( Args... args )
+{
+	swallow((bar( args ),0)...) 
+}
+
+In this way, the void type will be accepted.
+
+However, since the unpacking of the arguments for the function is not defined, the sequence of the expanded arguments is different for different compilers.
+
+The solution to this issue is using brace initialized list 
+* define a empty struct
+struct unit{};
+
+*rewrite swallow as a struct
+struct swallow
+{
+	template<typename ...Args>
+	swallow( Args&&.... )
+	{
+	}
+}
+
+then calling bar is like
+template<typename ...Args>
+void foo( Args... args )
+{
+	swallow{(bar<std::forward<Args>(args),unit{})...}
+}
+
+4. Lambdas
+* Lambdas are expressions
+
+template<typename ...Ts>
+void print(variant<Ts...> v)
+{
+	using visitor_type = void(*)(variant<Ts...>);
+	
+	static visitor_type handlers[] = {
+		[]( variant<Ts...> v )
+		{
+			using T = Ts;
+			bar( std::forward<decltype<get<index_of<T,Ts...>::value>>( v ) );
+		}
+	}...;
+	
+	handlers[v.index()](std::move(v));
+}
+
+notice: handlers are packs and "using T = Ts" will be expanded outside of the lambda body.
+
+=================================================
 
 Core:
 

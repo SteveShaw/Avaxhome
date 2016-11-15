@@ -1,3 +1,892 @@
+11/14/2016 [START]
+
+0 <--> Options and Derivatives Programming in C++ (repost)
+http://nitroflare.com/view/8E925D1FC1889FB/1484218132.pdf
+
+
+Carlos Oliveira, "Options and Derivatives Programming in C++: Algorithms and Programming Techniques for the Financial Industry" 
+2016 | ISBN-10: 1484218132 | 288 pages | PDF | 7 MB
+
+This is a hands-on book for programmers wanting to learn how C++ is used in the development of solutions for options and derivatives trading in the financial industry. As an important part of the financial industry, options and derivatives trading has become increasingly sophisticated. Advanced trading techniques using financial derivatives have been used at banks, hedge funds, and pension funds. Because of stringent performance characteristics, most of these trading systems are developed using C++ as the main implementation language.
+Options and Derivatives Programming in C++ covers features that are frequently used to write financial software for options and derivatives, including the STL, templates, functional programming, and support for numerical libraries. New features introduced in the C++11 and C++14 standard are also covered: lambda functions, automatic type detection, custom literals, and improved initialization strategies for C++ objects.Readers will enjoy the how-to examples covering all the major tools and concepts used to build working solutions for quantitative finance. It includes advanced C++ concepts as well as the basic building libraries used by modern C++ developers, such as the STL and Boost, while also leveraging knowledge of object-oriented and template-based programming. Options and Derivatives Programming in C++ provides a great value for readers who are trying to use their current programming knowledge in order to become proficient in the style of programming used in large banks, hedge funds, and other investment institutions. The topics covered in the book are introduced in a logical and structured way and even novice programmers will be able to absorb the most important topics and competencies.What You Will Learn
+
+Grasp the fundamental problems in options and derivatives trading Converse intelligently about credit default swaps, Forex derivatives, and more Implement valuation models and trading strategies Build pricing algorithms around the Black-Sholes Model, and also using the Binomial and Differential Equations methods Run quantitative finance algorithms using linear algebra techniques Recognize and apply the most common design patterns used in options trading Save time by using the latest C++ features such as the STL and the Boost libraries Who This Book Is For
+
+Options and Derivatives Programming in C++ is for professional developers who have some experience with the C++ language and would like to leverage that knowledge into financial software development. This book is written with the goal of reaching readers who need a concise, algorithms-based book, providing basic information through well-targeted examples and ready to use solutions. Readers will be able to directly apply the concepts and sample code to some of the most common problems faced in the analysis of options and derivative contracts.
+
+
+26 <--> Nonparametric Statistical Methods Using R (Repost)
+http://nitroflare.com/view/E2E961431981C00/Nonparametric_Statistical_Methods_Using_R.pdf
+
+
+John Kloke, Joseph W. McKean, "Nonparametric Statistical Methods Using R" 
+English | 2014 | ISBN: 1439873437 | PDF | pages: 283 | 2.0 mb
+
+A Practical Guide to Implementing Nonparametric and Rank-Based Procedures
+
+
+Nonparametric Statistical Methods Using R covers traditional nonparametric methods and rank-based analyses, including estimation and inference for models ranging from simple location models to general linear and nonlinear models for uncorrelated and correlated responses. The authors emphasize applications and statistical computation. They illustrate the methods with many real and simulated data examples using R, including the packages Rfit and npsm.
+
+
+The book first gives an overview of the R language and basic statistical concepts before discussing nonparametrics. It presents rank-based methods for one- and two-sample problems, procedures for regression models, computation for general fixed-effects ANOVA and ANCOVA models, and time-to-event analyses. The last two chapters cover more advanced material, including high breakdown fits for general regression models and rank-based inference for cluster correlated data.
+
+
+The book can be used as a primary text or supplement in a course on applied nonparametric or robust procedures and as a reference for researchers who need to implement nonparametric and rank-based methods in practice. Through numerous examples, it shows readers how to apply these methods using R.
+
+
+
+28 <--> An Introduction to the Microsoft Bot Framework
+http://nitroflare.com/view/B675E78B26F46A6/An_Introduction_to_the_Microsoft_Bot_Framework_-_Michael_Washington.rar
+
+
+An Introduction to the Microsoft Bot Framework: Create Facebook and Skype Chatbots using Microsoft Visual Studio and C# by Michael Washington
+English | 11 Nov. 2016 | ISBN: 1539963020 | 264 Pages | MOBI/EPUB/PDF | 26.28 MB
+
+The Microsoft Bot Framework allows you to easily create Bots.
+
+This book covers using Visual Studio 2015 to create Chatbots using the Microsoft Bot Framework. The purpose of this book is to demonstrate, provide examples of, and to explain important concepts of the technology.
+
+You can create bots that interact with your users naturally wherever they are, including Facebook, text, Skype, Office 365 email, and other popular services.
+
+Chapter 1: Understanding the Microsoft Bot Framework
+Chapter 2: Create a Hello World! Bot
+Chapter 3: Using FormFlow
+Chapter 4: Using Dialogs
+Chapter 5: Using Images, Cards, Carousels, and Buttons
+Chapter 6: Implementing A SQL Server Database With Your Bot
+Chapter 7: Implementing Language Understanding Intelligent Service (LUIS)
+Chapter 8: Calling The Microsoft Bot Framework Using The Direct Line API
+Chapter 9: Using Application Insights To Monitor Your Bot
+Chapter 10: Creating a Skype Bot
+Chapter 11: Creating A Facebook Messenger Bot
+
+29 <--> TCP/IP Unleashed[Repost]
+http://nitroflare.com/view/7585867AF9B038A/0672323516.pdf
+
+
+TCP/IP Unleashed by Karanjit S. Siyan Ph.D.
+English | 20 Feb. 2002 | ISBN: 0672323516 | 1120 Pages | PDF | 10 MB
+
+TCP/IP Unleashed, Third Edition, explains the features and complexities of the TCP/IP protocol suite in a comprehensive, logical format. The book is designed for easy reference and incorporates step-by-step guidelines and configuration examples to enhance the reader's learning experience.
+
+
+
+36 <--> Apache Log4J Logging Framework Tutorial for Beginners
+http://nitroflare.com/view/72C4EA1D193200C/Apache_Log4J_Logging_Framework_Tutorial_for_Beginners.part1.rar
+http://nitroflare.com/view/BD892397172215F/Apache_Log4J_Logging_Framework_Tutorial_for_Beginners.part2.rar
+
+
+Apache Log4J Logging Framework Tutorial for Beginners
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | Lec: 19 | 154 MB
+Genre: eLearning | Language: English
+
+Learn about apache log4j, logging frame works, loggers, appenders and layouts
+
+Apache Log4J is the major logging framework and most used in almost every where. In this tutorial we are trying to teach you the basic concepts of apache log4j and logging frame work and also explained a practical example which will be helpful in understanding the concepts easily.
+
+Upon completing this course, my goal is that you should be familiar with concepts like:
+
+loggers
+appenders
+layouts
+log4j Features
+Advantages and Disadvantages of logging
+and so on.
+All the material which is used in this course is attached.
+
+You can complete this course in 2-3 hours and please don't ignore any Quiz.
+
+We made this course such a way that everyone can understand easily, we added the basic concepts in the beginning lectures , then added advanced topics and added practical examples for every new concept to understand it better.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+
+
+
+
+44 <--> Python Recipes Handbook: A Problem-Solution Approach
+http://nitroflare.com/view/75387694ABEC388/10.1007%40978-1-4842-0241-8.pdf
+
+
+Python Recipes Handbook: A Problem-Solution Approach
+Apress | Python | December 7, 2016 | ISBN-10: 1484202422 | 123 pages | pdf | 4.54 mb
+
+Authors: Bernard, Joey
+Learn how to code with the new pandas (Python Data Analysis Library)
+Learn how to code with Python algorithms useful for today's big data analytics and cloud applications
+Learn how to code with NumPy and other numerical Python packages and code for doing various kinds of analysis
+
+Learn the code to write algorithms, numerical computations, data analysis and much more using the Python language: look up and re-use the recipes for your own Python coding. This book is your handy code cookbook reference. Whether you're a maker, game developer, cloud computing programmer and more, this is a must-have reference for your library.
+Python Recipes Handbook gives you the most common and contemporary code snippets, using pandas (Python Data Analysis Library), NumPy, and other numerical Python packages.
+What You'll Learn
+Code with the pandas (Python Data Analysis Library)
+Work with the various Python algorithms useful for today's big data analytics and cloud applications
+Use NumPy and other numerical Python packages and code for doing various kinds of analysis
+Discover Python's new popular modules, packages, extensions and templates library
+Who This Book Is For
+This handy reference is for those with some experience with Python. 
+
+Number of Pages
+XXXII, 123
+Number of Illustrations and Tables
+1 b/w illustrations
+Topics
+Python
+Computer Science (general)
+
+
+50 <--> Dynamic Systems for Everyone: Understanding How Our World Works, Second Edition
+http://nitroflare.com/view/D353D5988FD331D/10.1007%40978-3-319-43943-3.pdf
+
+
+Dynamic Systems for Everyone: Understanding How Our World Works, Second Edition
+Springer | Engineering | December 7, 2016 | ISBN-10: 3319439421 | 293 pages | pdf | 9.83 mb
+
+Authors: Ghosh, Asish
+Apply system knowledge at work and in daily life without deep mathematical knowledge
+Build models and simulate system behaviors on a personal computer
+Optimize systems in many different ways
+Reduce or eliminate unintended consequences
+Develop a holistic world view
+
+Systems are everywhere and we are surrounded by them. We are a complex amalgam of systems that enable us to interact with an endless array of external systems in our daily lives. They are electrical, mechanical, social, biological, and many other types that control our environment and our well-being. By appreciating how these systems function, will broaden our understanding of how our world works. 
+Readers from a variety of disciplines will benefit from the knowledge of system behavior they will gain from this book and will be able to apply those principles in various contexts. The treatment of the subject is non-mathematical, and the book considers some of the latest concepts in the systems discipline, such as agent based systems, optimization, and discrete events and procedures. The diverse range of examples provided in this book, will allow readers to:
+Apply system knowledge at work and in daily life without deep mathematical knowledge;
+Build models and simulate system behaviors on a personal computer;
+Optimize systems in many different ways;
+Reduce or eliminate unintended consequences;
+Develop a holistic world view .
+This book will enable readers to not only better interact with the systems in their professional and daily lives, but also allow them to develop and evaluate them for their effectiveness in achieving their designed purpose.
+Comments from Reviewers:
+“This is a marvelously well written introduction to Systems Thinking and System Dynamics - I like it because it introduces Systems Thinking with meaningful examples, which everyone should be able to readily connect” - Gene Bellinger, Organizational theorist, systems thinker, and consultant, Director Systems Thinking World
+“Excellent book …very well written. Mr. Ghosh's world view of system thinking is truly unique” - Peter A. Rizzi, Professor Emeritus, University of Massachusetts Dartmouth
+“A thorough reading of the book provides an interesting way to view many problems in our society” –Bradford T. Stokes, Poppleton Chair and Professor Emeritus, The Ohio State University College of Medicine
+“This is a very good and very readable book that is a must read for any person involved in systems theory in any way - which may actually include just about everyone” - Peter G. Martin, Vice President Business Value Consulting, Schneider Electric 
+
+Number of Pages
+XXII, 293
+Number of Illustrations and Tables
+68 b/w illustrations, 48 illustrations in colour
+Topics
+Job Career in Science and Engineering
+Vibration, Dynamical Systems, Control
+Computers and Society
+Operation Research/Decision Theory
+Data-driven Science, Modeling and Theory Building
+Complexity
+
+
+69 <--> An Introduction to Data Analysis using Aggregation Functions in R
+http://nitroflare.com/view/127ADC34B2AE939/10.1007%40978-3-319-46762-7.pdf
+
+
+An Introduction to Data Analysis using Aggregation Functions in R
+Springer | Computer Science | December 6, 2016 | ISBN-10: 3319467611 | 199 pages | pdf | 4.56 mb
+
+Authors: James, Simon
+Provides an overview of aggregation functions
+Includes hands-on tutorials on how to program the functions covered in R without needing extensive programming courses
+Does not assume a mathematics background
+
+This textbook helps future data analysts comprehend aggregation function theory and methods in an accessible way, focusing on a fundamental understanding of the data and summarization tools. Offering a broad overview of recent trends in aggregation research, it complements any study in statistical or machine learning techniques. Readers will learn how to program key functions in R without obtaining an extensive programming background.
+Sections of the textbook cover background information and context, aggregating data with averaging functions, power means, and weighted averages including the Borda count. It explains how to transform data using normalization or scaling and standardization, as well as log, polynomial, and rank transforms. The section on averaging with interaction introduces OWS functions and the Choquet integral, simple functions that allow the handling of non-independent inputs. The final chapters examine software analysis with an emphasis on parameter identification rather than technical aspects.
+This textbook is designed for students studying computer science or business who are interested in tools for summarizing and interpreting data, without requiring a strong mathematical background. It is also suitable for those working on sophisticated data science techniques who seek a better conception of fundamental data aggregation. Solutions to the practice questions are included in the textbook.
+
+Number of Pages
+X, 199
+Number of Illustrations and Tables
+9 b/w illustrations, 20 illustrations in colour
+Topics
+Computing Methodologies
+Statistics for Engineering, Physics, Computer Science, Chemistry and Earth Sciences
+Applications of Mathematics
+Mathematics of Computing
+
+76 <--> Learning Path: The Road to Tensorflow
+http://nitroflare.com/view/D6071926E2354D8/L.Pa-Ro.to.Te.part1.rar
+http://nitroflare.com/view/F52315BCEBA1FF7/L.Pa-Ro.to.Te.part2.rar
+http://nitroflare.com/view/5E11ED3EDBB4D84/L.Pa-Ro.to.Te.part3.rar
+
+
+Learning Path: The Road to Tensorflow
+HDRips | MP4/AVC, ~70 kb/s | 1280x720 | Duration: 08:45:10 | English: AAC, 128 kb/s (2 ch) | 1.55 GB
+Genre: Development / Programming
+
+Discover deep learning with Python and TensorFlow.
+
+It can be hard to get started with machine learning, particularly as new frameworks like TensorFlow start to gain traction across enterprise companies. If you have no prior exposure to one of the most important trends impacting how we do data science in the next few years, this path will help you get up to speed. It specifically focuses on getting you up and running with TensorFlow, after up-and-running coverage of Python and Deep Learning in Python with Theano.
+
+
+
+82 <--> Deep Learning
+http://nitroflare.com/view/94FFFCFBCA0C99E/0262035618.pdf
+
+
+Ian Goodfellow, Yoshua Bengio, "Deep Learning (draft)" 
+2016 | ISBN-10: 0262035618 | 800 pages | PDF | 23 MB
+
+"Written by three experts in the field, Deep Learning is the only comprehensive book on the subject." – Elon Musk, co-chair of OpenAI; co-founder and CEO of Tesla and SpaceX
+
+Deep learning is a form of machine learning that enables computers to learn from experience and understand the world in terms of a hierarchy of concepts. Because the computer gathers knowledge from experience, there is no need for a human computer operator to formally specify all the knowledge that the computer needs. The hierarchy of concepts allows the computer to learn complicated concepts by building them out of simpler ones; a graph of these hierarchies would be many layers deep. This book introduces a broad range of topics in deep learning.
+
+The text offers mathematical and conceptual background, covering relevant concepts in linear algebra, probability theory and information theory, numerical computation, and machine learning. It describes deep learning techniques used by practitioners in industry, including deep feedforward networks, regularization, optimization algorithms, convolutional networks, sequence modeling, and practical methodology; and it surveys such applications as natural language processing, speech recognition, computer vision, online recommendation systems, bioinformatics, and videogames. Finally, the book offers research perspectives, covering such theoretical topics as linear factor models, autoencoders, representation learning, structured probabilistic models, Monte Carlo methods, the partition function, approximate inference, and deep generative models.
+
+95 <--> Udemy - R Programming for Simulation and Monte Carlo Methods [repost]
+http://nitroflare.com/view/9606D6FDA93901C/R_Progr_Sim_Mon_Carl_Met.part01.rar
+http://nitroflare.com/view/3AFDC70C7ED37D5/R_Progr_Sim_Mon_Carl_Met.part02.rar
+http://nitroflare.com/view/28DF05041D5DD9D/R_Progr_Sim_Mon_Carl_Met.part03.rar
+http://nitroflare.com/view/D7B3EE00691F664/R_Progr_Sim_Mon_Carl_Met.part04.rar
+http://nitroflare.com/view/FCF75FC3995053E/R_Progr_Sim_Mon_Carl_Met.part05.rar
+http://nitroflare.com/view/997B5E90B64B353/R_Progr_Sim_Mon_Carl_Met.part06.rar
+http://nitroflare.com/view/B80BFE9DDDCDE44/R_Progr_Sim_Mon_Carl_Met.part07.rar
+http://nitroflare.com/view/EBA83FB402966DB/R_Progr_Sim_Mon_Carl_Met.part08.rar
+http://nitroflare.com/view/F9001675A8A32DA/R_Progr_Sim_Mon_Carl_Met.part09.rar
+http://nitroflare.com/view/E613F788B996AB3/R_Progr_Sim_Mon_Carl_Met.part10.rar
+
+
+Udemy - R Programming for Simulation and Monte Carlo Methods
+MP4 | AVC 928kbps | English | 1280x720 | 30fps | 11h 42mins | AAC stereo 60kbps | 3.79 GB
+Genre: Video Training
+
+Learn to program statistical applications and Monte Carlo simulations with numerous "real-life" cases and R software.
+
+R Programming for Simulation and Monte Carlo Methods focuses on using R software to program probabilistic simulations, often called Monte Carlo Simulations. Typical simplified "real-world" examples include simulating the probabilities of a baseball player having a 'streak' of twenty sequential season games with 'hits-at-bat' or estimating the likely total number of taxicabs in a strange city when one observes a certain sequence of numbered cabs pass a particular street corner over a 60 minute period. In addition to detailing half a dozen (sometimes amusing) 'real-world' extended example applications, the course also explains in detail how to use existing R functions, and how to write your own R functions, to perform simulated inference estimates, including likelihoods and confidence intervals, and other cases of stochastic simulation. Techniques to use R to generate different characteristics of various families of random variables are explained in detail. The course teaches skills to implement various approaches to simulate continuous and discrete random variable probability distribution functions, parameter estimation, Monte-Carlo Integration, and variance reduction techniques. The course partially utilizes the Comprehensive R Archive Network (CRAN) spuRs package to demonstrate how to structure and write programs to accomplish mathematical and probabilistic simulations using R statistical software.
+
+Use R software to program probabilistic simulations, often called Monte Carlo simulations.
+Use R software to program mathematical simulations and to create novel mathematical simulation functions.
+Use existing R functions and understand how to write their own R functions to perform simulated inference estimates, including likelihoods and confidence intervals, and to model other cases of stochastic simulation.
+Be able to generate different different families (and moments) of both discrete and continuous random variables.
+Be able to simulate parameter estimation, Monte-Carlo Integration of both continuous and discrete functions, and variance reduction techniques.
+
+
+
+101 <--> The Comprehensive Programming in R Course [repost]
+http://nitroflare.com/view/A6117174C0F4EEE/Udemy.The.Comprehensive.Programming.in.R.Course.part01.rar
+http://nitroflare.com/view/FC437D06876B521/Udemy.The.Comprehensive.Programming.in.R.Course.part02.rar
+http://nitroflare.com/view/1D5E2D576FBAB38/Udemy.The.Comprehensive.Programming.in.R.Course.part03.rar
+http://nitroflare.com/view/134BD46C944C260/Udemy.The.Comprehensive.Programming.in.R.Course.part04.rar
+http://nitroflare.com/view/27CB67CE27B1042/Udemy.The.Comprehensive.Programming.in.R.Course.part05.rar
+http://nitroflare.com/view/0AC69C6F17C00EF/Udemy.The.Comprehensive.Programming.in.R.Course.part06.rar
+http://nitroflare.com/view/36DC10F81C8F826/Udemy.The.Comprehensive.Programming.in.R.Course.part07.rar
+http://nitroflare.com/view/5493309C393107D/Udemy.The.Comprehensive.Programming.in.R.Course.part08.rar
+http://nitroflare.com/view/32EA13B6E1A398B/Udemy.The.Comprehensive.Programming.in.R.Course.part09.rar
+
+
+The Comprehensive Programming in R Course
+WEBRip | English | MP4 | 1280 x 720 | AVC ~799 kbps | 30 fps
+AAC | 64 Kbps | 44.1 KHz | 2 channels | 22:56:53 | 8.1 GB
+Genre: eLearning Video / Business, Data Analysis
+
+The Comprehensive Programming in R Course is actually a combination of two R programming courses that together comprise a gentle, yet thorough introduction to the practice of general-purpose application development in the R environment. The original first course (Sections 1-8) consists of approximately 12 hours of video content and provides extensive example-based instruction on details for programming R data structures.
+The original second course (Sections 9-14), an additional 12 hours of video content, provides a comprehensive overview on the most important conceptual topics for writing efficient programs to execute in the unique R environment. Participants in this comprehensive course may already be skilled programmers (in other languages) or they may be complete novices to R programming or to programming in general, but their common objective is to write R applications for diverse domains and purposes. No statistical knowledge is necessary. These two courses, combined into one course here on Udemy, together comprise a thorough introduction to using the R environment and language for general-purpose application development.
+
+The Comprehensive Programming in R Course (Sections 1-8) presents an detailed, in-depth overview of the R programming environment and of the nature and programming implications of basic R objects in the form of vectors, matrices, dataframes and lists. The Comprehensive Programming in R Course (Sections 9-14) then applies this understanding of these basic R object structures to instruct with respect to programming the structures; performing mathematical modeling and simulations; the specifics of object-oriented programming in R; input and output; string manipulation; and performance enhancement for computation speed and to optimize computer memory resources.
+
+
+115 <--> R for Data Science Solutions
+http://nitroflare.com/view/1FE1D17248088BF/R.for.D.Sc.So.part1.rar
+http://nitroflare.com/view/1FFBD4D307602C6/R.for.D.Sc.So.part2.rar
+http://nitroflare.com/view/BB98CF15CF51AA5/R.for.D.Sc.So.part3.rar
+http://nitroflare.com/view/31FCD23FE9614FD/R.for.D.Sc.So.part4.rar
+http://nitroflare.com/view/91F1AE88A93317F/R.for.D.Sc.So.part5.rar
+http://nitroflare.com/view/F18F93A37234757/R.for.D.Sc.So.part6.rar
+http://nitroflare.com/view/E96B53F1CA92CCD/R.for.D.Sc.So.part7.rar
+
+
+R for Data Science Solutions
+HDRips | MP4/AVC, ~421 kb/s | 1280x720 | Duration: 05:32:47 | English: AAC, 128 kb/s (2 ch) | 1.67 GB
+Genre: Development / Programming / Software
+
+Over 100 hands-on tasks to help you effectively solve real-world data problems using the most popular R packages and techniques
+
+Gain insight into how data scientists collect, process, analyze, and visualize data using some of the most popular R packages
+
+Understand how to apply useful data analysis techniques in R for real-world applications
+
+An easy-to-follow guide to make the life of data scientist easier with the problems faced while performing data analysis
+
+
+R is a data analysis software as well as a programming language. Data scientists, statisticians and analysts use R for statistical analysis, data visualization and predictive modeling. R is open source and allows integration with other applications and systems. Compared to other data analysis platforms, R has an extensive set of data products. Problems faced with data are cleared with R’s excellent data visualization feature.
+
+The first section in this course deals with how to create R functions to avoid the unnecessary duplication of code. You will learn how to prepare, process, and perform sophisticated ETL for heterogeneous data sources with R packages. An example of data manipulation is provided, illustrating how to use the ‘dplyr’ and ‘data.table’ packages to efficiently process larger data structures. We also focus on ‘ggplot2’ and show you how to create advanced figures for data exploration.
+
+In addition, you will learn how to build an interactive report using the “ggvis” package. Later sections offer insight into time series analysis, while there is detailed information on the hot topic of machine learning, including data classification, regression, clustering, association rule mining, and dimension reduction.
+
+By the end of this course, you will understand how to resolve issues and will be able to comfortably offer solutions to problems encountered while performing data analysis.
+
+11/14/2016 [END]
+
+2016/11/10 [START]
+0 <--> 2D and 3D Image Analysis by Moments
+http://nitroflare.com/view/9C4F1F8B4E48F54/9781119039358.pdf
+
+
+2D and 3D Image Analysis by Moments
+Wiley | Imaging Systems | Dec 19, 2016 | ISBN-10: 1119039355 | 560 pages | pdf | 24.09 mb
+
+by Jan Flusser (Author), Tomas Suk (Author), Barbara Zitova (Author)
+
+Presents recent significant and rapid development in the field of 2D and 3D image analysis
+
+2D and 3D Image Analysis by Moments, is a unique compendium of moment-based image analysis which includes traditional methods and also reflects the latest development of the field.
+
+The book presents a survey of 2D and 3D moment invariants with respect to similarity and affine spatial transformations and to image blurring and smoothing by various filters. The book comprehensively describes the mathematical background and theorems about the invariants but a large part is also devoted to practical usage of moments. Applications from various fields of computer vision, remote sensing, medical imaging, image retrieval, watermarking, and forensic analysis are demonstrated. Attention is also paid to efficient algorithms of moment computation.
+
+Key features:
+
+Presents a systematic overview of moment-based features used in 2D and 3D image analysis.
+Demonstrates invariant properties of moments with respect to various spatial and intensity transformations.
+Reviews and compares several orthogonal polynomials and respective moments.
+Describes efficient numerical algorithms for moment computation.
+It is a "classroom ready" textbook with a self-contained introduction to classifier design.
+The accompanying website contains around 300 lecture slides, Matlab codes, complete lists of the invariants, test images, and other supplementary material.
+2D and 3D Image Analysis by Moments, is ideal for mathematicians, computer scientists, engineers, software developers, and Ph.D students involved in image analysis and recognition. Due to the addition of two introductory chapters on classifier design, the book may also serve as a self-contained textbook for graduate university courses on object recognition.
+
+About the Author
+Jan Flusser is a professor of Computer Science and a director of the Institute of Information Theory and Automation, Czech Academy of Sciences, Prague, Czech Republic. His research interest covers moments and moment invariants, image registration, image fusion, multichannel blind deconvolution, and super-resolution imaging. He has authored and coauthored more than 200 research publications, including the monograph Moments and Moment Invariants in Pattern Recognition (Wiley, 2009), and has delivered 20 tutorials and invited/keynote talks at major conferences. His publications have received about 10,000 citations. Jan Flusser received several scientific awards and prizes, such as the Award of the Chairman of the Czech Science Foundation (2007), the Prize of the Czech Academy of Sciences (2007), the SCOPUS 1000 Award presented by Elsevier (2010), and the Felber Medal of the Czech Technical University for excellent contribution to research and education (2015).
+
+
+Tomáš Suk received a Ph.D degree in computer science from the Czechoslovak Academy of Sciences in 1992. He is a senior research fellow with the Institute of Information Theory and Automation, Czech Academy of Sciences, Prague. His research interests include invariant features, moment and point-based invariants, color spaces, geometric transformations, and applications in botany, remote sensing, astronomy, medicine, and computer vision. He has authored and coauthored more than 30 journal papers and 50 conference papers in these areas, including tutorials on moment invariants held at the conferences ICIP'07 and SPPRA'09. He coauthored the monograph Moments and Moment Invariants in Pattern Recognition (Wiley, 2009). His publications have received about 1000 citations. In 2002 he received the Otto Wichterle Premium of the Czech Academy of Sciences for young scientists.
+
+
+Barbara Zitová received her Ph.D degree in software systems from the Charles University, Prague, Czech Republic, in 2000. She is a head of Department of Image Processing at the Institute of Information Theory and Automation, Czech Academy of Sciences, Prague. She teaches courses on Digital Image Processing and Wavelets in Image Processing. Her research interests include geometric invariants, image enhancement, image registration, image fusion, medical image processing, and applications in cultural heritage. She has authored/coauthored more than 70 research publications in these areas, including the monograph Moments and Moment Invariants in Pattern Recognition (Wiley, 2009). In 2003 Barbara Zitová received the Josef Hlavka Student Prize, the Otto Wichterle Premium of the Czech Academy of Sciences for young scientists in 2006, and in 2010 she was awarded by the SCOPUS 1000 Award for receiving more than 1000 citations of a single paper.
+
+
+
+
+38 <--> Design Patterns in the Real World, an Analysis-Based Approach [repost]
+http://nitroflare.com/view/2702D80F5C7BB4B/De.Pa.in.re.Wo.An.part1.rar
+http://nitroflare.com/view/C333961268B562C/De.Pa.in.re.Wo.An.part2.rar
+http://nitroflare.com/view/1AE50233B37D219/De.Pa.in.re.Wo.An.part3.rar
+http://nitroflare.com/view/7476CDA6BD1D14E/De.Pa.in.re.Wo.An.part4.rar
+http://nitroflare.com/view/F432D5282667205/De.Pa.in.re.Wo.An.part5.rar
+http://nitroflare.com/view/50DA9FAD9220031/De.Pa.in.re.Wo.An.part6.rar
+http://nitroflare.com/view/6BFA87951654327/De.Pa.in.re.Wo.An.part7.rar
+http://nitroflare.com/view/BA587CCD83A65F3/De.Pa.in.re.Wo.An.part8.rar
+
+
+Design Patterns in the Real World, an Analysis-Based Approach 
+HDRips | MP4/AVC, ~495 kb/s | 1280x720 | Duration: 07:10:12 | English: AAC, 125 kb/s (2 ch) | 1.87 GB
+Genre: Design
+
+Alan Holub takes coders deep into the reality of Gang-of-Four design patterns, those reusable guides to common object-oriented design problems. He deconstructs two significant software programs (Mel Conway's "Game of Life" and a SQL interpreter) to demonstrate how design patterns work and interact in complex ways, share classes with other patterns, and have pros and cons. Each of the three primary design pattern categories, creational, structural, and behavioral are discussed and illustrated.
+
+Discover what design patterns are and when they are used in the Agile environment
+Exercise better control over object creation using the Factory, Builder, Singleton, Abstract, and Prototype design patterns
+Identify easier ways to realize relationships between entities using the Adapter, Decorator, Bridge, Facade, Composite, Flyweight, and Proxy design patterns
+Recognize common communication patterns between objects using the Template Method, Command, Chain of Responsibility, Iterator, Observer, Visitor, Mediator, Memento, Strategy, and State design patterns
+Examine the Active Object design pattern, an architectural solution to problems inherent in multi-threading
+Understand how the strengths and weaknesses of design patterns play off one another
+Learn how a given pattern can be implemented in various ways
+
+Alan Holub is one of the world’s top experts in object-oriented design techniques. His clients include Autodesk, Microsoft, Stanford Linear Accelerator, Lawrence Berkeley Laboratory, Genentech, Sybase, and many more. He describes himself as fully buzzword compliant, which is another way of saying that there isn’t a programming language, acronym, or meme existent that he hasn’t used, wrestled with, taught or blogged about during his thirty-six year software development journey.
+
+
+
+
+59 <--> Learning Data Mining with R
+http://nitroflare.com/view/3D659C8437255CA/Pa-Le.Da.M.w.R.part1.rar
+http://nitroflare.com/view/C6A4F2759938E3C/Pa-Le.Da.M.w.R.part2.rar
+
+
+Learning Data Mining with R
+HDRips | MP4/AVC, ~84 kb/s | 1280x720 | Duration: 02:17:02 | English: AAC, 128 kb/s (2 ch) | 335 MB
+Genre: Development / Programming
+
+A complete course to help you learn all the relevant aspects of data mining using R.
+
+Use powerful R libraries to effectively get the most out of your datat
+
+Gain a good level of knowledge and an understanding of the data mining disciplines to solve real-world challenges in R
+
+This hands-on tutorial covers topics in three dimensions: the mathematical foundations, the actual implementation in R, and practical examples
+
+
+In Detail
+
+Data mining is a growing demand on the market as the world is generating data at an increasing pace. R is a popular programming language for statistics. It can be used for day-to-day data analysis tasks.
+
+Data mining is a very broad topic and takes some time to learn. This course will help you to understand the mathematical basics quickly, and then you can directly apply what you’ve learned in R. This course covers each and every aspect of data mining in order to prepare you for real-world problems. You'll come to understand the different disciplines in data mining. In every discipline, there exist a variety of different algorithms. At least one algorithm of the various classes of algorithms will be covered to give you a foundation to further apply your knowledge to dive deeper into the different flavors of algorithms.
+
+
+83 <--> Extending R
+http://nitroflare.com/view/F7F882588506008/1498775713.pdf
+
+
+Extending R (The R Series) by John M. Chambers
+2016 | ISBN: 1498775713 | English | 382 pages | PDF | 3 MB
+
+Up-to-Date Guidance from One of the Foremost Members of the R Core Team
+
+Written by John M. Chambers, the leading developer of the original S software, Extending R covers key concepts and techniques in R to support analysis and research projects. It presents the core ideas of R, provides programming guidance for projects of all scales, and introduces new, valuable techniques that extend R.
+
+The book first describes the fundamental characteristics and background of R, giving readers a foundation for the remainder of the text. It next discusses topics relevant to programming with R, including the apparatus that supports extensions. The book then extends R’s data structures through object-oriented programming, which is the key technique for coping with complexity. The book also incorporates a new structure for interfaces applicable to a variety of languages.
+
+A reflection of what R is today, this guide explains how to design and organize extensions to R by correctly using objects, functions, and interfaces. It enables current and future users to add their own contributions and packages to R.
+
+
+
+
+
+104 <--> Udemy - Python, The Next Level (Intermediate)
+http://nitroflare.com/view/469AABC3FA3566D/Pyt_Nex_Lev_Interm.part1.rar
+http://nitroflare.com/view/0236A5F7CCC9C0D/Pyt_Nex_Lev_Interm.part2.rar
+http://nitroflare.com/view/8D6A8169868AF21/Pyt_Nex_Lev_Interm.part3.rar
+http://nitroflare.com/view/E98B660FCA84DAA/Pyt_Nex_Lev_Interm.part4.rar
+http://nitroflare.com/view/B12EA238AB5B22A/Pyt_Nex_Lev_Interm.part5.rar
+http://nitroflare.com/view/4D30003EEFF386B/Pyt_Nex_Lev_Interm.part6.rar
+
+
+Udemy - Python, The Next Level (Intermediate)
+MP4 | AVC 215kbps | English | 1280x720 | 30fps | 6h 45mins | AAC stereo 68kbps | 1.13 GB
+Genre: Video Training
+
+This Python Training For Intermediate class will be giving you an introduction to the design and analysis of algorithms, enabling you to discover how individuals are connected, puzzles are solved, and problems are worked out. All with the help of Python. This is an intermediate python course, so a minimum amount of python is recommended. But no need to be an advanced user, that is a different course.
+
+Take this python training course if you have the basics of Python down pat and want to learn how to apply everything to hard problems. You will also learn new tools and tricks along the way.
+
+The python training for intermediate course can be taken as one whole class or as 4 separate classes, as each problem set is self contained.
+
+There is a Python Glossary at the end which contains all the videos dealing with Python Tools used in the course. If you forget a tool's use, you can easily look there for quick access to the information.
+
+Some of the Python tools discussed in this course include:
+
+args AND kwargs
+class objects
+eval function
+generator expressions
+generator functions
+itertools Permutations
+Lambda Functions
+List Comprehension
+Modules
+Profiles
+Recursion
+re Search
+string Format Function
+string Translate Function
+Try Except Blocks
+Writing Tests
+Take this ultimate Python Course: Python Training for Intermediate right now and take your expertise to the next level.
+
+
+
+109 <--> Apache Maven Cookbook (Repost)
+http://nitroflare.com/view/6E8DDE700DD2CD5/1785286129_Apache1bst.epub
+http://nitroflare.com/view/7150DF91EC60F40/1785286129_Apache1bst.mobi
+http://nitroflare.com/view/4F9797451137D04/1785286129_Apache1bst.pdf
+
+
+Apache Maven Cookbook By Raghuram Bharathan
+2015 | 272 Pages | ISBN: 1785286129 | EPUB, MOBI, PDF | 46 MB
+
+
+Over 90 hands-on recipes to successfully build and automate development life cycle tasks following Maven conventions and best practices If you are a Java developer or a manager who has experience with Apache Maven and want to extend your knowledge, then this is the ideal book for you. Apache Maven Cookbook is for those who want to learn how Apache Maven can be used for build automation. It is also meant for those familiar with Apache Maven, but want to understand the finer nuances of Maven and solve specific problems.
+
+
+
+
+121 <--> The Art of Application Performance Testing [Repost]
+http://nitroflare.com/view/11A1307B7C6EE7B/0596520662.chm
+
+
+The Art of Application Performance Testing: Help for Programmers and Quality Assurance by Ian Molyneaux
+English | 2 Feb. 2009 | ISBN: 0596520662 | 158 Pages | CHM | 2 MB
+
+This practical book provides a step-by-step approach to testing mission-critical applications for scalability and performance before they're deployed – a vital topic to which other books devote one chapter, if that.
+
+
+146 <--> Automated Trading with R: Quantitative Research and Platform Development
+http://nitroflare.com/view/FE9C6D2BBCB51DC/148422177X.epub
+
+
+Automated Trading with R: Quantitative Research and Platform Development by Christopher Conlan
+2016 | ISBN: 148422177X | English | 205 pages | EPUB | 1 MB
+
+This book explains the broad topic of automated trading, starting with its mathematics and moving to its computation and execution. Readers will gain a unique insight into the mechanics and computational considerations taken in building a backtester, strategy optimizer, and fully functional trading platform.
+
+Automated Trading with R provides automated traders with all the tools they need to trade algorithmically with their existing brokerage, from data management, to strategy optimization, to order execution, using free and publically available data. If your brokerage’s API is supported, the source code is plug-and-play.
+
+The platform built in this book can serve as a complete replacement for commercially available platforms used by retail traders and small funds. Software components are strictly decoupled and easily scalable, providing opportunity to substitute any data source, trading algorithm, or brokerage. The book’s three objectives are:
+To provide a flexible alternative to common strategy automation frameworks, like Tradestation, Metatrader, and CQG, to small funds and retail traders.
+To offer an understanding the internal mechanisms of an automated trading system.
+To standardize discussion and notation of real-world strategy optimization problems.
+What you’ll learn
+
+Programming an automated strategy in R gives the trader access to R and its package library for optimizing strategies, generating real-time trading decisions, and minimizing computation time.
+How to best simulate strategy performance in their specific use case to derive accurate performance estimates.
+Important machine-learning criteria for statistical validity in the context of time-series.
+An understanding of critical real-world variables pertaining to portfolio management and performance assessment, including latency, drawdowns, varying trade size, portfolio growth, and penalization of unused capital.
+Who This Book Is For
+
+This book is for traders/practitioners at the retail or small fund level with at least an undergraduate background in finance or computer science. Graduate level finance or data science students.
+
+
+184 <--> Advanced C and C++ Compiling (Repost)
+http://nitroflare.com/view/00FE77132A77C2B/1430266678.pdf
+http://turbobit.net/r9excdvqnb11/1430266678.pdf.html
+
+
+Advanced C and C++ Compiling By Milan Stevanovic
+2014 | 340 Pages | ISBN: 1430266678 | PDF | 29 MB
+
+Learning how to write C/C++ code is only the first step. To be a serious programmer, you need to understand the structure and purpose of the binary files produced by the compiler: object files, static libraries, shared libraries, and, of course, executables. Advanced C and C++ Compiling explains the build process in detail and shows how to integrate code from other developers in the form of deployed libraries as well as how to resolve issues and potential mismatches between your own and external code trees. With the proliferation of open source, understanding these issues is increasingly the responsibility of the individual programmer. Advanced C and C++ Compiling brings all of the information needed to move from intermediate to expert programmer together in one place – an engineering guide on the topic of C/C++ binaries to help you get the most accurate and pertinent information in the quickest possible time. C/C++ software designers aspiring to senior levels, software architects, build engineers, and Linux system administrators.
+
+
+
+
+
+
+219 <--> Learning with Support Vector Machines (Repost)
+http://nitroflare.com/view/614213685C7375F/1608456161.pdf
+
+
+Learning with Support Vector Machines by Colin Campbell, Yiming Ying
+Publisher: Morgan & Claypool | 2011 | ISBN: 1608456161 | 100 pages | PDF | 0,6 MB
+
+Support Vectors Machines have become a well established tool within machine learning. They work well in practice and have now been used across a wide range of applications from recognizing hand-written digits, to face identification, text categorisation, bioinformatics, and database marketing. In this book we give an introductory overview of this subject. We start with a simple Support Vector Machine for performing binary classification before considering multi-class classification and learning in the presence of noise. We show that this framework can be extended to many other scenarios such as prediction with real-valued outputs, novelty detection and the handling of complex output structures such as parse trees. Finally, we give an overview of the main types of kernels which are used in practice and how to learn and make predictions from multiple types of input data. Table of Contents: Support Vector Machines for Classification / Kernel-based Models / Learning with Kernels
+
+
+
+231 <--> Learning Python Application Development
+http://nitroflare.com/view/213D55D23E5D9B5/1785889192.pdf
+
+
+Ninad Sathaye, "Learning Python Application Development" 
+2016 | ISBN-10: 1785889192 | 454 pages | PDF | 12 MB
+
+Key Features
+Get to grips with Python techniques that address commonly encountered problems in general application development.
+Develop, package, and deploy efficient applications in a fun way.
+All-practical coverage of the major areas of application development, including best practices, exception handling, testing, refactoring, design patterns, performance, and GUI application development.
+Book Description
+Python is one of the most widely used dynamic programming languages, supported by a rich set of libraries and frameworks that enable rapid development. But fast paced development often comes with its own baggage that could bring down the quality, performance, and extensibility of an application. This book will show you ways to handle such problems and write better Python applications.
+
+From the basics of simple command-line applications, develop your skills all the way to designing efficient and advanced Python apps. Guided by a light-hearted fantasy learning theme, overcome the real-world problems of complex Python development with practical solutions. Beginning with a focus on robustness, packaging, and releasing application code, you'll move on to focus on improving application lifetime by making code extensible, reusable, and readable. Get to grips with Python refactoring, design patterns and best practices. Techniques to identify the bottlenecks and improve performance are covered in a series of chapters devoted to performance, before closing with a look at developing Python GUIs.
+
+What you will learn
+Build a robust application by handling exceptions.
+Modularize, package, and release the source distribution.
+Document the code and implement coding standards.
+Create automated tests to catch bugs in the early development stage.
+Identify and re-factor badly written code to improve application life.
+Detect recurring problems in the code and apply design patterns.
+Improve code efficiency by identifying performance bottlenecks and fixing them.
+Develop simple GUI applications using Python.
+
+
+
+235 <--> OpenGL Data Visualization Cookbook (repost)
+http://nitroflare.com/view/89A6519B4C48B3E/OpenGL_Data_Visualization_Cookbook.pdf
+http://nitroflare.com/view/1A89B7D0495A7A9/OpenGL_Data_Visualization_Cookbook.epub
+
+
+Raymond C. H. Lo, William C. Y. Lo, "OpenGL Data Visualization Cookbook"
+English | 2015 | ISBN: 1782169725 | 298 pages | EPUB / PDF | 9.4 MB / 5.7 MB
+
+
+Over 35 hands-on recipes to create impressive, stunning visuals for a wide range of real-time, interactive applications using OpenGL
+
+About This Book
+Get acquainted with a set of fundamental OpenGL primitives and concepts that enable users to create stunning visuals of arbitrarily complex 2D and 3D datasets for many common applications
+Explore interactive, real-time visualization of large 2D and 3D datasets or models, including the use of more advanced techniques such as stereoscopic 3D rendering.
+Create stunning visuals on the latest platforms including mobile phones and state-of-the-art wearable computing devices
+Who This Book Is For
+This book is aimed at anyone interested in creating impressive data visualization tools using modern graphics hardware. Whether you are a developer, engineer, or scientist, if you are interested in exploring the power of OpenGL for data visualization, this book is for you. While familiarity with C/C++ is recommended, no previous experience with OpenGL is assumed.
+
+What You Will Learn
+Install, compile, and integrate the OpenGL pipeline into your own project
+Create interactive applications using GLFW to handle user inputs and the Android Sensor framework to detect gestures and motions on mobile devices
+Use OpenGL primitives to plot 2-D datasets such as time series dynamically
+Render complex 3D volumetric datasets with techniques such as data slicers and multiple viewpoint projection
+Render images, videos, and point cloud data from 3D range-sensing cameras using the OpenGL Shading Language (GLSL)
+Develop video see-through augmented reality applications on mobile devices with OpenGL ES 3.0 and OpenCV
+Visualize 3D models with meshes and surfaces using stereoscopic 3D technology
+
+
+
+
+
+239 <--> Designing Data Structures in Python [repost]
+http://nitroflare.com/view/D445B49F77F1B97/De.Da.Str.in.Py.part1.rar
+http://nitroflare.com/view/440AE6459D82024/De.Da.Str.in.Py.part2.rar
+http://nitroflare.com/view/FA326AD82306ED7/De.Da.Str.in.Py.part3.rar
+http://nitroflare.com/view/4FF312353CDD1CF/De.Da.Str.in.Py.part4.rar
+http://nitroflare.com/view/5FDEBA7EDFF54F6/De.Da.Str.in.Py.part5.rar
+http://nitroflare.com/view/F0B9163C51F1674/De.Da.Str.in.Py.part6.rar
+http://nitroflare.com/view/5C38180EC134996/De.Da.Str.in.Py.part7.rar
+
+
+Designing Data Structures in Python
+HDRips | MP4/AVC, ~489 kb/s | 1280x720 | Duration: 06:04:21 | English: AAC, 125 kb/s (2 ch) | 1.52 GB
+Genre: Development / Programming
+
+When should you use Python’s built-in data types, and when should you develop your own? In this video course, George Heineman introduces Python programmers to several important data structures and demonstrates their use with example algorithms. Generic data structures such as arrays, linked lists, and stacks can solve many problems, but to work through some specialized problems, you need to learn different ways to structure data appropriately.
+
+Many Python programmers learned their skills through non-traditional routes, rather than through an undergraduate computer science degree. This video helps complete your education in fundamental data types step-by-step. For many of the data structures, you’ll write sample code using a variety of existing modules, and define a process that will help you evaluate and assess these modules for use in your own software. All you need to get started is a working knowledge of Python's built-in data types.
+
+Topics include:
+
+Built-in Python data structures
+Python standard library types
+Design principles for data structures
+Data structures and associated algorithm examples
+Graph representations
+Heaps, circular buffers, balanced binary trees, and their variants
+
+
+
+
+241 <--> Mastering Predictive Analytics with R (Repost)
+http://nitroflare.com/view/6441578C46C487C/1783982802_Mastering1bst.epub
+http://nitroflare.com/view/B00F6A0324372BD/1783982802_Mastering1bst.mobi
+http://nitroflare.com/view/76A0B168EA75702/1783982802_Mastering1bst.pdf
+
+
+Mastering Predictive Analytics with R By Rui Miguel Forte
+2015 | 414 Pages | ISBN: 1783982802 | EPUB, MOBI, PDF | 23 MB
+
+
+Master the craft of predictive modeling by developing strategy, intuition, and a solid foundation in essential concepts Grasp the major methods of predictive modeling and move beyond black box thinking to a deeper level of understanding Leverage the flexibility and modularity of R to experiment with a range of different techniques and data types Packed with practical advice and tips explaining important concepts and best practices to help you understand quickly and easily This book is intended for the budding data scientist, predictive modeler, or quantitative analyst with only a basic exposure to R and statistics. It is also designed to be a reference for experienced professionals wanting to brush up on the details of a particular type of predictive model. Mastering Predictive Analytics with R assumes familiarity with only the fundamentals of R, such as the main data types, simple functions, and how to move data around. No prior experience with machine learning or predictive modeling is assumed, however you should have a basic understanding of statistics and calculus at a high school level. R offers a free and open source environment that is perfect for both learning and deploying predictive modeling solutions in the real world. With its constantly growing community and plethora of packages, R offers the functionality to deal with a truly vast array of problems. This book is designed to be both a guide and a reference for moving beyond the basics of predictive modeling. The book begins with a dedicated chapter on the language of models and the predictive modeling process. Each subsequent chapter tackles a particular type of model, such as neural networks, and focuses on the three important questions of how the model works, how to use R to train it, and how to measure and assess its performance using real world data sets. By the end of this book, you will have explored and tested the most popular modeling techniques in use on real world data sets and mastered a diverse range of techniques in predictive analytics.
+
+
+
+245 <--> Automated Trading with R: Quantitative Research and Platform Development
+http://nitroflare.com/view/1418E6854BA6D96/148422177X.pdf
+
+
+Christopher Conlan, "Automated Trading with R: Quantitative Research and Platform Development" 
+English | ISBN: 148422177X | 2016 | 236 pages | PDF | 7 MB
+
+This book explains the broad topic of automated trading, starting with its mathematics and moving to its computation and execution. Readers will gain a unique insight into the mechanics and computational considerations taken in building a backtester, strategy optimizer, and fully functional trading platform.
+
+Automated Trading with R provides automated traders with all the tools they need to trade algorithmically with their existing brokerage, from data management, to strategy optimization, to order execution, using free and publically available data. If your brokerage’s API is supported, the source code is plug-and-play.
+
+The platform built in this book can serve as a complete replacement for commercially available platforms used by retail traders and small funds. Software components are strictly decoupled and easily scalable, providing opportunity to substitute any data source, trading algorithm, or brokerage. The book’s three objectives are:
+To provide a flexible alternative to common strategy automation frameworks, like Tradestation, Metatrader, and CQG, to small funds and retail traders.
+To offer an understanding the internal mechanisms of an automated trading system.
+To standardize discussion and notation of real-world strategy optimization problems.
+What you’ll learn
+
+Programming an automated strategy in R gives the trader access to R and its package library for optimizing strategies, generating real-time trading decisions, and minimizing computation time.
+How to best simulate strategy performance in their specific use case to derive accurate performance estimates.
+Important machine-learning criteria for statistical validity in the context of time-series.
+An understanding of critical real-world variables pertaining to portfolio management and performance assessment, including latency, drawdowns, varying trade size, portfolio growth, and penalization of unused capital.
+Who This Book Is For
+
+This book is for traders/practitioners at the retail or small fund level with at least an undergraduate background in finance or computer science. Graduate level finance or data science students.
+
+
+
+
+264 <--> Shell Programming in Unix, Linux and OS X: The Fourth Edition of Unix Shell Programming (4th Edition)
+http://nitroflare.com/view/F9FD8933D1BF3A0/0134496000.pdf
+http://nitroflare.com/view/638882214A89B79/0134496000.epub
+
+
+Stephen G. Kochan, Patrick Wood, "Shell Programming in Unix, Linux and OS X: The Fourth Edition of Unix Shell Programming (4th Edition) "
+English | ISBN: 0134496000 | 2016 | PDF/EPUB | 456 pages | 5 MB/19 MB
+
+Shell Programming in Unix, Linux and OS X is a thoroughly updated revision of Kochan and Wood’s classic Unix Shell Programming tutorial. Following the methodology of the original text, the book focuses on the POSIX standard shell, and teaches you how to develop programs in this useful programming environment, taking full advantage of the underlying power of Unix and Unix-like operating systems.
+
+After a quick review of Unix utilities, the book’s authors take you step-by-step through the process of building shell scripts, debugging them, and understanding how they work within the shell’s environment. All major features of the shell are covered, and the large number of practical examples make it easy for you to build shell scripts for your particular applications. The book also describes the major features of the Korn and Bash shells.
+
+Learn how to…
+Take advantage of the many utilities provided in the Unix system
+Write powerful shell scripts
+Use the shell’s built-in decision-making and looping constructs
+Use the shell’s powerful quoting mechanisms
+Make the most of the shell’s built-in history and command editing capabilities
+Use regular expressions with Unix commands
+Take advantage of the special features of the Korn and Bash shells
+Identify the major differences between versions of the shell language
+Customize the way your Unix system responds to you
+Set up your shell environment
+Make use of functions
+Debug scripts
+
+
+
+
+283 <--> Data Science with R
+http://nitroflare.com/view/2DF624B3A221C0B/Data_Science_with_R.part1.rar
+http://nitroflare.com/view/4DE2086BDB59A71/Data_Science_with_R.part2.rar
+http://nitroflare.com/view/CA9F9C1FC5CAE70/Data_Science_with_R.part3.rar
+http://nitroflare.com/view/66C20AB33399C95/Data_Science_with_R.part4.rar
+http://nitroflare.com/view/35B01B09D181F1D/Data_Science_with_R.part5.rar
+
+
+Data Science with R
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 418 MB
+Genre: eLearning | Language: English
+
+Data science is becoming more and more valuable to the workplace and to the global economy. Learn how to use the practice of data science and the programming language R to transform your data into actionable insight.
+
+Data science is the practice of transforming data into knowledge, and R is one of the most popular programming language used by data scientists. In a data-driven economy, this combination of skills is in extremely high demand, commanding significant increases in salary, as it is revolutionizing the world. In this course, Data Science with R, you'll learn first learn about the practice of data science, the R programming language, and how they can be used to transform data into actionable insight. Next, you'll learn how to transform and clean your data, create and interpret descriptive statistics, data visualizations, and statistical models. Finally, you'll learn how to handle Big Data, make predictions using machine learning algorithms, and deploy R to production. By the end of this course, you'll have the skills necessary to use R and the principles of data science to transform your data into actionable insight.
+
+
+
+314 <--> Create Circle Mind Maps with Google Drawings
+http://nitroflare.com/view/BE555B05D4A3F95/Create_Circle_Mind_Maps_with_Google_Drawings_-_Alex_Reyes.mobi
+
+
+Create Circle Mind Maps with Google Drawings by Alex Reyes
+English | 22 Oct. 2016 | ASIN: B01M289R3X | 17 Pages | MOBI | 558.3 KB
+
+Google Drawings can be used to create Circle Thinking Maps. This free application from Google can be used to teach students basic computer skills and the skills needed to develop their own thinking maps.
+
+
+
+
+318 <--> Creating Bubble Maps With Google Drawings
+http://nitroflare.com/view/957148681C60F64/Creating_Bubble_Maps_With_Google_Drawings_-_Alex_Reyes.mobi
+
+
+Creating Bubble Maps With Google Drawings by Alex Reyes
+English | 23 Oct. 2016 | ASIN: B01M28OJER | 15 Pages | MOBI | 556.62 KB
+
+Bubble thinking maps are used for describing. Google Drawings is a free application that is part of a Google account. This application can be used to create thinking maps from scratch. The process of creating thinking maps from scratch helps students learn about the creation and use of thinking maps by providing the visual and kinesthetic tools we all use to learn. Through the process of using Google Drawings to create thinking maps, students will also learn essential technology skills that can be used in other applications.
+
+
+322 <--> Creating Tree Thinking Maps with Google Drawings
+http://nitroflare.com/view/14444192FD59CB6/Creating_Tree_Thinking_Maps_with_Google_Drawings_-_Alex_Reyes.mobi
+
+
+Creating Tree Thinking Maps with Google Drawings by Alex Reyes
+English | 23 Oct. 2016 | ASIN: B01M7TP0PE | 27 Pages | MOBI | 973.77 KB
+
+Google Drawings is a free drawing tool that is part of every Google account. Drawings can be used to create Tree Thinking maps. The process of creating thinking maps with Google Drawings helps students understand the process of creating thinking maps and develops technology skills they need in other applications.
+
+
+
+329 <--> C++ Unit Testing Fundamentals Using Catch (2016)
+http://nitroflare.com/view/6F112699488E629/C%2B%2B_Unit_Testing_Fundamentals_Using_Catch.part1.rar
+http://nitroflare.com/view/9EAE8FB7E0D829A/C%2B%2B_Unit_Testing_Fundamentals_Using_Catch.part2.rar
+http://nitroflare.com/view/3EB8D623921FCF9/C%2B%2B_Unit_Testing_Fundamentals_Using_Catch.part3.rar
+
+
+C++ Unit Testing Fundamentals Using Catch
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 38M | 203 MB
+Genre: eLearning | Language: English
+
+Writing unit tests is a big part of being a professional software developer. This course would teach you how to write readable and robust unit tests using Catch, a simple, yet powerful unit testing framework.
+
+Writing unit tests is a big part of being a good software developer. Unfortunately, unit testing in C++ is far from being trivial and good unit testing frameworks are hard to find. In this course, C++ Unit Testing Fundamentals Using Catch, you will learn how to write robust unit tests using Catch, a simple-to-use, yet flexible and powerful unit testing framework for C++. You will learn what makes Catch different from other xUnit frameworks, and how it can be used to write unit tests for your C++ code. You will also get to see how to run Catch from the command line, how to use test fixtures, and how to create maintainable tests. When you're finished with this course, you will have a foundational knowledge of Catch and unit testing in C++ that would help you create better, cleaner C++ code.
+
+
+
+
+336 <--> OpenGL Superbible: Comprehensive Tutorial and Reference (Sams Teach Yourself -- Hours) [Repost]
+http://nitroflare.com/view/56134E6AE718FB1/Graham_Sellers%2C_Richard_S_Wright_Jr.%2C_Nicholas_Haemel-OpenGL_Superbible__Comprehensive_Tutorial_and_Reference_%287th_Edition%29-Addison-Wesley_Professional_%282015%29.epub
+
+
+OpenGL Superbible: Comprehensive Tutorial and Reference (Sams Teach Yourself – Hours) by Graham Sellers
+English | 21 July 2015 | ISBN: 0672337479 | 880 Pages | EPUB | 21.1 MB
+
+OpenGL® SuperBible, Seventh Edition, is the definitive programmer’s guide, tutorial, and reference for OpenGL 4.5, the world’s leading 3D API for real-time computer graphics. The best introduction for any developer, it clearly explains OpenGL’s newest APIs; key extensions; shaders; and essential, related concepts. You’ll find up-to-date, hands-on guidance for all facets of modern OpenGL development—both desktop and mobile.
+
+
+
+The authors explain what OpenGL does, how it connects to the graphics pipeline, and how it manages huge datasets to deliver compelling experiences. Step by step, they present increasingly sophisticated techniques, illuminating key concepts with worked examples. They introduce OpenGL on several popular platforms, and offer up-to-date best practices and performance advice.
+
+
+
+This revised and updated edition introduces many new OpenGL 4.5 features, including important ARB and KHR extensions that are now part of the standard. It thoroughly covers the latest Approaching Zero Driver Overhead (AZDO) performance features, and demonstrates key enhancements with new example applications.
+
+
+
+Coverage includes
+
+A practical introduction to real-time 3D graphics, including foundational math
+Core techniques for rendering, transformations, and texturing
+Shaders and the OpenGL Shading Language (GLSL) in depth
+Vertex processing, drawing commands, primitives, fragments, and framebuffers
+Compute shaders: harnessing graphics cards for more than graphics
+Pipeline monitoring and control
+Managing, loading, and arbitrating access to data
+Building larger applications and deploying them across platforms
+Advanced rendering: light simulation, artistic and non-photorealistic effects, and more
+Reducing CPU overhead and analyzing GPU behavior
+Supercharging performance with persistent maps, bindless textures, and fine-grained synchronization
+Preventing and debugging errors
+New applications: texture compression, text drawing, font rendering with distance fields, high-quality texture filtering, and OpenMP 
+
+
+
+
+345 <--> Optimization Modeling with Spreadsheets
+http://nitroflare.com/view/914FC2FCA3FCE73/Optimization_Modeling_with_Spreadsheets.pdf
+
+
+Kenneth R. Baker, "Optimization Modeling with Spreadsheets" 
+2011 | pages: 431 | ISBN: 0470928638 | PDF | 10,7 mb
+
+Reflects the latest applied research and features state-of-the-art software for building and solving spreadsheet optimization models
+
+Thoroughly updated to reflect the latest topical and technical advances in the field, Optimization Modeling with Spreadsheets, Second Edition continues to focus on solving real-world optimization problems through the creation of mathematical models and the use of spreadsheets to represent and analyze those models. Developed and extensively classroom-tested by the author, the book features a systematic approach that equips readers with the skills to apply optimization tools effectively without the need to rely on specialized algorithms.
+
+This new edition uses the powerful software package Risk Solver Platform (RSP) for optimization, including its Evolutionary Solver, which employs many recently developed ideas for heuristic programming. The author provides expanded coverage of integer programming and discusses linear and nonlinear programming using a systematic approach that emphasizes the use of spreadsheet-based optimization tools. The Second Edition also features:
+
+Classifications for the various problem types, providing the reader with a broad framework for building and recognizing optimization models
+
+Network models that allow for a more general form of mass balance
+
+A systematic introduction to Data Envelopment Analysis (DEA)
+
+The identification of qualitative patterns in order to meaningfully interpret linear programming solutions
+
+An introduction to stochastic programming and the use of RSP to solve problems of this type
+
+Additional examples, exercises, and cases have been included throughout, allowing readers to test their comprehension of the material. In addition, a related website features Microsoft Office® Excel files to accompany the figures and data sets in the book.
+
+With its accessible and comprehensive presentation, Optimization Modeling with Spreadsheets, Second Edition is an excellent book for courses on deterministic models, optimization, and spreadsheet modeling at the upper-undergraduate and graduate levels. The book can also serve as a reference for researchers, practitioners, and consultants working in business, engineering, operations research, and management science.
+
+
+
+
+363 <--> Unreal Engine 4 Scripting with C++ Cookbook
+http://nitroflare.com/view/0E8C1AF159906AA/1785885545.pdf
+
+
+William Sherif, Stephen Whittle, "Unreal Engine 4 Scripting with C++ Cookbook" 
+2016 | ISBN-10: 1785885545 | 431 pages | PDF | 7 MB
+
+Key Features
+A straightforward and easy-to-follow format
+A selection of the most important tasks and problems
+Carefully organized instructions to solve problems efficiently
+Clear explanations of what you did
+Solutions that can be applied to solve real-world problems
+Book Description
+Unreal Engine 4 (UE4) is a complete suite of game development tools made by game developers, for game developers. With more than 100 practical recipes, this book is a guide showcasing techniques to use the power of C++ scripting while developing games with UE4. It will start with adding and editing C++ classes from within the Unreal Editor. It will delve into one of Unreal's primary strengths, the ability for designers to customize programmer-developed actors and components. It will help you understand the benefits of when and how to use C++ as the scripting tool. With a blend of task-oriented recipes, this book will provide actionable information about scripting games with UE4, and manipulating the game and the development environment using C++. Towards the end of the book, you will be empowered to become a top-notch developer with Unreal Engine 4 using C++ as the scripting language.
+
+What you will learn
+Build function libraries (Blueprints) containing reusable code to reduce upkeep
+Move low-level functions from Blueprint into C++ to improve performance
+Abstract away complex implementation details to simplify designer workflows
+Incorporate existing libraries into your game to add extra functionality such as hardware integration
+Implement AI tasks and behaviors in Blueprints and C++
+Generate data to control the appearance and content of UI elements
+
+
+
+
+371 <--> Dianne Cook, Deborah F. Swayne - Interactive and Dynamic Graphics for Data Analysis: With R and GGobi [Repost]
+http://nitroflare.com/view/5DEB2C71C66CA05/Interactive_and_Dynamic_Graphics_for_Data_Analysis_-_With_R_and_GGobi.pdf
+
+
+Dianne Cook, Deborah F. Swayne - Interactive and Dynamic Graphics for Data Analysis: With R and GGobi
+2007 | ISBN: 0387717617 | English | 190 pages | PDF | 5.2 MB
+
+This richly illustrated book describes the use of interactive and dynamic graphics as part of multidimensional data analysis. Chapters include clustering, supervised classification, and working with missing values. A variety of plots and interaction methods are used in each analysis, often starting with brushing linked low-dimensional views and working up to manual manipulation of tours of several variables. The role of graphical methods is shown at each step of the analysis, not only in the early exploratory phase, but in the later stages, too, when comparing and evaluating models.
+All examples are based on freely available software: GGobi for interactive graphics and R for static graphics, modeling, and programming. The printed book is augmented by a wealth of material on the web, encouraging readers follow the examples themselves. The web site has all the data and code necessary to reproduce the analyses in the book, along with movies demonstrating the examples. 
+The book may be used as a text in a class on statistical graphics or exploratory data analysis, for example, or as a guide for the independent learner. Each chapter ends with a set of exercises.
+The authors are both Fellows of the American Statistical Association, past chairs of the Section on Statistical Graphics, and co-authors of the GGobi software. Dianne Cook is Professor of Statistics at Iowa State University. Deborah Swayne is a member of the Statistics Research Department at AT&T Labs
+
+2016/11/10 [END]
 2:10 PM 10/26/2016 [START]
 
 0 <--> Ruby Programming Fundamentals

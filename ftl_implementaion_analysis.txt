@@ -1,0 +1,68 @@
+FLT (function template library analysis)
+1.	type_function.h: this header provides a set of type manipulators
+	1.1 gen_seq: generate a series of index sequence. For example: gen_seq<0,5> will generate a index sequence type index_seq<0,1,2,3,5>
+	* Define a type that can hold generated indices.
+		template<std::size_t ...Is>
+		struct index_seq{}
+	* The implementation shall be designed to expand the bigger number. This expansion will be treated as a varadic template parameter. As such, we must define the general form of the template as
+		template<std::size_t START, std::size_t END, std::size_t ...Is>
+		struct gen_seq_impl
+	
+	At start, varadic template parameter (Is) is empty, but will be expanded as follows
+		template<std::size_t START, std::size_t END, std::size_t ...Is>
+		struct gen_seq_impl : gen_seq_impl<START,END-1,END,Is...>
+		{
+		}
+	As can be seen, (Is) will be expanded to (END-1,END) during the first iteration. (Notice: using private inheritance from a specialization is a technique of doing expansion of varadic template )
+	To stop the iteration, we shall provide a specialization to end up.
+		template<std::size_t START, std::size_t ...Is>
+		struct gen_seq_impl : gen_seq_impl<START,START,Is...>
+		{
+			using type = index_seq<START, Is...>;
+		}
+	This specialization will stop the iteration when END is decreased to START. When this specialization is called, (Is) already holds from START+1 to N.
+	* Since this is a type, to expose to the final users, we can just provide a alias name to the underlying type of implementation, like
+		typename<std::size_t S, std::size_t E>
+		using gen_seq = typename gen_seq_impl<S,E>::type;
+		
+	1.2 a type that can hold any number of types, even zero types.
+	* define a type_seq as
+		template<typename ...Ts>
+		struct type_seq.
+	As such, type_seq<> is a type of hold empty values. type_seq is the building base of many type operators
+	
+	1.3 apply a binary type template function to two type sequences. (In this case, type_seq plays an important role in holding empty types)
+	* define the general form
+			template<template<typename> class F, typename T1, typename T2>
+			struct zip_type_impl;
+		notice that since F is a template function, template keyword is required.
+	* define a specialization for T1 and T2 both are empty types
+			template<template<typename> class F>
+			struct zip_type_impl<F,type_seq<>,type_seq<>>
+			{
+				using type = type_seq<>;
+			}
+	* define a specialization for T1 = empty and T2 is a varadic template. In this case, the result is a empty set since F cannot apply to a non-exist type.
+			template<template<typename> class F, typename U, typename Us...>
+			struct zip_type_impl<F,type_seq<>,type_seq<U,Us...>>
+			{
+				using type = type_seq<>;
+			}
+	* define a specialization for T2 = empty and T1 is a varadic template. In this case, the result is a empty set since F cannot apply to a non-exist type.
+			template<template<typename> class F, typename T, typename Ts...>
+			struct zip_type_impl<F,type_seq<U,Us...>,type_seq<>>
+			{
+				using type = type_seq<>;
+			}
+	* define a specialization for T2 = empty and T1 is a varadic template. In this case, the result is a empty set since F cannot apply to a non-exist type.
+			template<template<typename> class F, typename T, typename Ts...>
+			struct zip_type_impl<F,type_seq<U,Us...>,type_seq<>>
+			{
+				using type = type_seq<>;
+			}
+	* define a specialization for T1 = T1, T1... and T2 = T2, T2..., i.e. retrieve the first type from each type sequence and apply F.
+			template<template<typename> class F, typename T, typename Ts..., typename U, typename Us...>
+			struct zip_type_impl<F,type_seq<T,Ts...>,type_seq<U,Us...>>
+			{
+				using type = type_seq<typename F<T,U>::type, typename zip_type_impl<F,Ts...,Us...>::type>;
+			}
