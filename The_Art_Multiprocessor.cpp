@@ -1,5 +1,13 @@
 /*
-Basics:
+books:
+search with multicore
+
+1. Shared Memory Application Programming
+2. Multicore Software Development Techniques
+3. Multicore Application Programming: For Windows, Linux, and Oracle Solaris
+*/
+/*
+Basics: (From Multicore Application Programming: For Windows, Linux, and Oracle Solaris )
 1. threads, cpus.
 	1.1 A software thread is a stream of instructions that the processor executes
 	1.2 A hardware thread is the hardware resources that execute a single software thread. A multicore processor has multiple hardware threads—these are the virtual CPUs. Other sources might refer to hardware threads as strands. Each hardware thread can support a software thread.
@@ -90,7 +98,46 @@ Basics:
 	
 	10.2 Multiple threads have advantages in low costs of sharing data between threads—one thread can store an item of data to memory, and that data becomes immediately visible to all the other threads in that process. The other advantage to sharing is that all threads share the same TLB and cache entries, so multithreaded applications can end up with lower cache miss rates. The disadvantage is that one thread failing will probably cause the entire application to fail.
 	
-	10.3 
+11 Library calls cost: A call into a function provided by a library will typically be more costly than a call into a function that is in the main executable. Code provided in a library may also have more overhead than code provided in the executable. There are a few contributors to cost:
+	11.1 Library calls may be implemented using a table of function addresses. This table may be a list of addresses for the routines included in a library. A library routine calls into this table, which then jumps to the actual code for the routine.
+	11.2 Each library and its data are typically placed onto new TLB entries. Calls into a library will usually also result in an ITLB miss and possibly a DTLB miss if the code accesses library-specific data.
+	11.3 If the library is being lazy loaded (that is, loaded into memory on demand), there will be costs associated with disk access and setting up the addresses of the library functions in memory.
+	11.4 Unix platforms typically provide libraries as position-independent code. This enables the same library to be shared in memory between multiple running applications. The cost of this is an increase in code length. Windows makes the opposite trade-off; it uses position-dependent code in libraries, reducing the opportunity of sharing libraries between running applications but producing slightly faster code.
+	11.5 The advantage of position-independent code is that the library can reside at any location in memory. The same library can even be shared between multiple applications and have each application map it at a different address.
+	11.6 After the library is loaded into the memory, it will occupy at least two segments (in SPARC): one for code ( read and exec permission ) and the other for data ( read, write and execute ).
+12. Impact of data structure on performance:
+	12.1 Fetch data from memory will also bring adjacent items into the caches. So, placing data that is likely to be used at nearly the same time in close proximity will mean that when one of the items of data is fetched, the related data is also fetched.
+	12.2 The amount of data loaded into each level of cache by a load instruction depends on the size of the cache line.
+	12.3 On a cache miss, a cache line will be fetched from memory and installed into the second-level cache. The portion of the cache line requested by the memory operation is installed into the first-level cache. In this scenario:  
+		* Accesses to data on the same 16-byte cache line as the original item will also be available from the first-level cache. 
+		* Accesses to data that share the same 64-byte cache line will be fetched from the second-level cache.
+		* Accesses to data outside the 64-byte cache line will result in another fetch from memory.
+	12.4 If data is fetched from memory when it is needed, the processor will experience the entire latency of the memory operation. On a modern processor, the time taken to perform this fetch can be several hundred cycles. However, there are techniques that reduce this latency:
+		* <Out-of-order execution> is where the processor will search the instruction stream for future instructions that it can execute. If the processor detects a future load instruction, it can fetch the data for this instruction at the same time as fetching data for a previous load instruction. Both loads will be fetched simultaneously, and in the best case, the total cost of the loads can be potentially halved. If more than two loads can be simultaneously fetched, the cost is further reduced.
+		* <Hardware prefetching of data streams> is where part of the processor is dedicated to detecting streams of data being read from memory. When a stream of data is identified, the hardware starts fetching the data before it is requested by the processor. If the hardware prefetch is successful, the data might have become resident in the cache before it was actually needed. Hardware prefetching can be very effective in situations where data is fetched as a stream or through a strided access pattern. It is not able to prefetch data where the access pattern is less apparent.
+		* <Software prefetching> is the act of adding instructions to fetch data from memory before it is needed. Software prefetching has an advantage in that it does not need to guess where the data will be requested from in the memory, because the prefetch instruction can fetch from exactly the right address, even when the address is not a linear stride from the previous address. Software prefetch is an advantage when the access pattern is nonlinear. When the access pattern is predictable, hardware prefetching may be more efficient because it does not take up any space in the instruction stream.
+	12.5 The order in which variables are declared and laid out in memory can be used to improve performance
+		For example:
+	
+						struct s
+						{
+						  int var1;
+						  int padding1[15];
+						  int var2;
+						  int padding2[15];
+						}
+		If a cache line is 64 bytes: When the structure member <var1> is accessed, the fetch will also bring in the surrounding 64 bytes. The size of an integer variable is 4 bytes, so the total size of var1 plus padding1 is 64 bytes. This ensures that the variable var2 is located on the next cache line. 
+		if var1 and var2 are expected to load first, arrange the structure as 
+		
+								struct s
+						{
+						  int var1;
+						  int var2;
+						  int padding1[15];
+						  int padding2[15];
+						}
+
+
 
 
 */
@@ -149,9 +196,9 @@ Chapter 007
 			* writes : store()
 			* replace the stored value with a new one and returns the original value: exchange() (read-modify-write)
 			* reads : load()
-		1.2.2 TASLock using std::atomic<bool>
+		1.2.2 TTASLock using std::atomic<bool>
 		
-				class TASLock
+				class TTASLock
 				{
 					std::atomic<bool> state;
 					
@@ -180,7 +227,7 @@ Chapter 007
 						}
 				}
 		1.2.3 How does this lock work?
-			Assume there are two threads: t1 and t2. They share one TASLock object: tas_lock. Both use this lock to protect a critical section as follows:
+			Assume there are two threads: t1 and t2. They share one TTASLock object: tas_lock. Both use this lock to protect a critical section as follows:
 			
 			t1: 													t2:
 			
@@ -207,4 +254,11 @@ Chapter 007
 			1) Assume thread A and B are contenting to acquire the lock. If the lock is held by thread A, the first time thread B reads the state, it takes a cache miss. B is forced to block and the value is loaded into B's cache. B repeatedly reads the state's value, but hits in the cache every time while A is holding the lock. Thus thread B produces no bus traffic and does not slow down other threads' memory access. 
 			2) If A release the lock, there will be a problem. A releases the lock by writing false to the state, which immediately invalidates B (the spinning thread)'s cached copies. Each one take a cache miss, rereads the new value, and they all call exchange() to acquire the lock. The first thread acquires the lock will invalidate the others, who must then reread the value, causing a storm of bus traffic. 
 		1.3.6 Local spinning: threads repeatedly reread cached values instead of repeatedly using the bus, is an important principle in the design of spin locks.
+	1.4 TTASLock: contention occurs when multiple threads try to acquire a lock at the same time. <High contention> means means there are many such threads. 
+		1.4.1 TTASLock's lock method takes 2 steps: 
+			1st: repeatedly reads the lock and when the lock appears to be free, 
+			2nd: it attemps to acquire the lock by calling exchange(true);
+			High contention will happen if there are many threads try to acquire the lock between 1st and 2nd. These attempts contibutes to high bus traffic. 
+		1.4.2 It will be more effective if some threads can be delayed for some duration, giving other threads a chance to acquire the lock.
+		1.4.3 the larger the number of unsuccessful tries, the higher the likely contention, and the longer the thread should back off. A simple approach: Whenever the thread sees the lock has become free but fails to acquire it, it delays before retrying. For all threads, the delayed duration should be random to ensure not all of them to try to acquire the lock at the same time. 
 
