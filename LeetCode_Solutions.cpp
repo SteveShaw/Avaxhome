@@ -1191,9 +1191,116 @@ For example, given n = 3, a solution set is:
 ]
 */
 
+/*
+在LeetCode中有关括号的题共有三道，除了这一道的另外两道是 Valid Parentheses 验证括号和 Longest Valid Parentheses 最长有效括号，这道题给定一个数字n，让生成共有n个括号的所有正确的形式，对于这种列出所有结果的题首先还是考虑用递归Recursion来解，由于字符串只有左括号和右括号两种字符，而且最终结果必定是左括号3个，右括号3个，所以我们定义两个变量left和right分别表示剩余左右括号的个数，如果在某次递归时，左括号的个数大于右括号的个数，说明此时生成的字符串中右括号的个数大于左括号的个数，即会出现')('这样的非法串，所以这种情况直接返回，不继续处理。如果left和right都为0，则说明此时生成的字符串已有3个左括号和3个右括号，且字符串合法，则存入结果中后返回。如果以上两种情况都不满足，若此时left大于0，则调用递归函数，注意参数的更新，若right大于0，则调用递归函数，同样要更新参数。代码如下：
+*/
+
 class Solution {
 public:
     vector<string> generateParenthesis(int n) {
         
+    }
+};
+
+/*
+再来看那一种方法，这种方法是CareerCup书上给的方法，感觉也是满巧妙的一种方法，这种方法的思想是找左括号，每找到一个左括号，就在其后面加一个完整的括号，最后再在开头加一个()，就形成了所有的情况，需要注意的是，有时候会出现重复的情况，所以我们用set数据结构，好处是如果遇到重复项，不会加入到结果中，最后我们再把set转为vector即可，参见代码如下：：
+*/
+
+/*
+23. Merge k Sorted Lists --- Hard
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* mergeKLists(vector<ListNode*>& lists) {
+        
+    }
+};
+
+/*
+24. Swap Nodes in Pairs
+Given a linked list, swap every two adjacent nodes and return its head.
+
+For example,
+Given 1->2->3->4, you should return the list as 2->1->4->3.
+
+Your algorithm should use only constant space. You may not modify the values in the list, only nodes itself can be changed.
+*/
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* swapPairs(ListNode* head) {
+        
+    }
+};
+
+/*
+406 [LeetCode] Queue Reconstruction by Height
+Suppose you have a random list of people standing in a queue. Each person is described by a pair of integers(h, k), where h is the height of the person and k is the number of people in front of this person who have a height greater than or equal to h. Write an algorithm to reconstruct the queue.
+
+Note:
+The number of people is less than 1,100.
+
+Example
+
+Input:
+[[7,0], [4,4], [7,1], [5,0], [6,1], [5,2]]
+
+Output:
+[[5,0], [7,0], [5,2], [6,1], [4,4], [7,1]]
+*/
+
+
+/*
+这道题让我们求下一个排列顺序，有题目中给的例子可以看出来，如果给定数组是降序，则说明是全排列的最后一种情况，则下一个排列就是最初始情况，可以参见之前的博客 Permutations 全排列。我们再来看下面一个例子，有如下的一个数组
+
+1　　2　　7　　4　　3　　1
+
+下一个排列为：
+
+1　　3　　1　　2　　4　　7
+
+那么是如何得到的呢，我们通过观察原数组可以发现，如果从末尾往前看，数字逐渐变大，到了2时才减小的，然后我们再从后往前找第一个比2大的数字，是3，那么我们交换2和3，再把此时3后面的所有数字转置一下即可，步骤如下：
+
+1　　2　　7　　4　　3　　1
+
+1　　3　　7　　4　　2　　1
+
+1　　3　　1　　2　　4　　7
+*/
+
+
+/*
+这道题给了我们一个队列，队列中的每个元素是一个pair，分别为身高和前面身高不低于当前身高的人的个数，让我们重新排列队列，使得每个pair的第二个参数都满足题意。首先我们来看一种超级简洁的方法，不得不膜拜想出这种解法的大神。首先我们给队列先排个序，按照身高高的排前面，如果身高相同，则第二个数小的排前面。然后我们新建一个空的数组，遍历之前排好序的数组，然后根据每个元素的第二个数字，将其插入到res数组中对应的位置，参见代码如下：
+*/
+
+class Solution {
+public:
+    vector<pair<int, int>> reconstructQueue(vector<pair<int, int>>& people) {
+        sort(people.begin(), people.end(), [](const pair<int, int>& a, const pair<int, int>& b) {
+            return a.first > b.first || (a.first == b.first && a.second < b.second);
+        });
+        vector<pair<int, int>> res;
+        for (auto a : people) {
+            res.insert(res.begin() + a.second, a);
+        }
+        return res;
     }
 };
