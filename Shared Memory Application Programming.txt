@@ -1,0 +1,63 @@
+Shared Memory Application Programming
+
+Chapter 1:
+
+1. Shared Memory Multiprocessor Systems (SMP)
+	1.1  In this kind of system, a network interconnect links a number of processor chips to a common, shared memory block. Symmetric means that all CPUs have an equivalent status with respect to memory accesses. Memory is shared, and all CPUs can access the whole common memory address space.
+	1.2 SMP computing platforms are not perfectly symmetric. The reason is that a huge, logically shared memory block is normally constructed by using, say, M identical memory devices. Therefore, the SMP network interconnect is really connecting all N processor chips to all M memory blocks. According to the topology and the quality of the network, a given CPU may not be at the same “effective distance” of all M memory blocks, and the access times may be non-uniform with differences in memory access performance. This kind of computing platform is called a NUMA (Non-Uniform Memory Access) architecture. This observation is sometimes relevant in multithreaded programming, because performance may be optimized by placing data items as close as possible to the CPU running the thread that is accessing them. This issue—placing threads as near as possible to the data they access—is called <memory affinity>. It plays a significant role in multithreaded programming.
+	
+	
+2. Hybrid mulitiprocessor systems:
+	2.1 most general computing platform has the following hierarchical structure
+		* Several cores inside a socket
+		* A few sockets interconnected around a shared memory block to implement a SMP node
+		* A substantial number of SMP nodes interconnected in a distributed memory cluster
+	2.2 Three programming models are implemented on this kind of system:
+		* Shared memory multithreaded programming inside a SMP node: From a programmer’s point of view, the logical view of a SMP node is just a number of virtual CPUs <the cores> sharing a common memory address space. It does not matter whether the different cores are in the same or in different sockets.
+		* Flat MPI distributed memory programming across cores: each core in the system runs a full MPI process, and they all communicate via MPI message passing primitives. It does not matter whether the MPI processes are all in the same or in different SMP nodes.
+		* A hybrid MPI-Threads model in which each MPI process is internally multithreaded, running on several cores. These MPI processes communicate with one another via the MPI message passing protocol.
+		
+3. Caches:
+	3.1 L1 and L2 cache: intermediate memory level between the main memory and the core registers.
+	3.2 Current CPUs are load-store architectures in which data is always moved to core registers before being processed. Direct manipulation of memory locations does not occur in these architectures.
+	3.3 L1 caches are never shared.
+	3.4 L2 caches store data, and they may be shared by several cores.
+
+4. Writing data to memory: When a data value is changed in a processor register, the CPU must proceed to update the original main memory location. Typically, the new data value is updated first in the L2 cache, and from there on the network interconnect is activated to update the main memory. The following issues arise every time a new data value is updated in the L2 cache:
+	4.1  First, the cache memory is no longer coherent with the main memory. How and when the main memory is updated is system dependent, but there is in most cases a time delay: the memory update is not atomic (instantaneous). Some systems choose to delay the writes in order to collect several data items in a write buffer, and then move them in a unique memory access in order to pay the big latency cost only once.
+	4.2 Secondly, the updated cache memory is no longer coherent with other L2 caches in other sockets that may contain the old invalid value of the updated variable. The CPU that has performed the update must therefore inform all other CPUs engaged in the application that the relevant cache line is invalid, and that further reads of data in this cache line must get the data values from main memory. This is the <cache coherency issue>. (inform other cpus that the data needs to be updated)
+	4.3 Finally, because of the time delays in memory updates mentioned before, those threads that must get updated data values from main memory must know, when the new updated values are available. They must make sure that, in performing a read, they recover the last updated value of the target data item. This is the <memory consistency issue>.
+
+5. the cache coherency mechanism requires a persistent communication context among sockets in a SMP platform, and this is the main reason why it is not possible to extend a shared memory SMP architecture into the massive parallel domain. It is just too expensive and unrealistic to try to enforce cache coherency among hundreds or thousands of sockets in a SMP node.
+
+Chapter 2
+
+1. If two threads T1 and T2 are calling same functions, the function body constructed by the compiler references all local addresses inside the function with the offset to an unknown stack pointer SP. Let SP1 and SP2 be the stack pointers of threads T1 and T2. The core running the thread T1 (or T2) has a stack pointer register SP holding the value SP1 (or SP2). When using a stack to manage local variables, switching the SP values switches a complete data set.
+
+2. hyperthreading actually means hardware threads.
+
+Chapter 3
+1. C++ 11 thread class ctor copies the thread function or function object's address and arguments to some internal working place. If the thread function expects a <reference> to some external variable to return a result, (using std::ref())
+
+2. std::chrono:
+	2.1 The second template parameter is a type that defines the time period between successive ticks, expressed as a fraction of a second. This is achieved by an instance of the std::ration<N, D> class that defines the rational number N/D:
+		std::ratio< 1, 50> is one fiftieth of a second.
+		std::ratio<1, 1000> is one millisecond.
+		std::ratio<60, 1> is one minute.
+	2.2 The first template parameter is the integer type of the data item that stores the number of ticks (time_duration above): short, int, long, long long.
+		std::chrono::duration<short, std::ratio<1, 50>> count stores in a short the number of one fiftieths of a second.
+		std::chrono::duration<long, std::ratio<60, 1>> stores in a long the number of minutes.
+	This is the most general way of defining a duration. There are also template specialization that simplify programming, like std::chrono::milliseconds and std::chrono::seconds, that declare integers representing milliseconds and seconds, respectively. They have been used in our previous examples.
+
+3. A RACE CONDITION occurs when several asynchronous threads are operating on the same shared global data item, and the result of the operations depends on the way the threads have been scheduled.
+
+4. Threads entering a critical section are forced to acquire ownership of a shared global resource that can only be owned by one thread at a time. Such a resource is called a mutex
+
+5. Stanard Mutex: using idle wait. Another is spin wait. For very short waits spinning in user space is more efficient because putting a thread to sleep in a blocked state takes cycles. But for long waits, a sleeping thread releases its CPU making cycles available to other threads. There is also a Fair/UnFair mutex. 
+
+
+6. Recursive mutex:
+	6.1 has a internal counter. Only be released after being unlocked by its owner thread as many times as it was locked.
+	6.2 applied in  recursive algorithms and/or 
+
+7.Shared mutexes: A shared mutex has two lock modes: shared and exclusive. In shared mode, several threads can take simultaneous ownership. This feature, introduced for optimization purposes, seems to contradict the very nature of the mutex operation. But the point is that, when several threads are accessing a data set, the operations performed can be classified as write operations, which modify the data set, and read operations, which don’t. It is true that write operations need exclusive access to the data set. Read operations, instead, only need the guarantee that the data set will not be modified while they are reading, so they need to exclude simultaneous writes. But they do not need to exclude simultaneous reads, and can share the mutex with other readers.
