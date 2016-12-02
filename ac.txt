@@ -96,3 +96,10 @@ Suppose there is an arbitrary triangle in a plane and a point in the plane is gi
 Suppose there is a circle with unit circumference in a two-dimensional plane. You throw three points randomly onto the circumference of the circle. What is the probability that the center of the circle is inside the triangle formed by these three random points?  
 
 http://math.stackexchange.com/questions/268635/what-is-the-probability-that-the-center-of-the-circle-is-contained-within-the-tr
+
+Hash collision.
+Expected number of Friday the 13ths per year.
+Here's how I'd calculate it. 12 months, each with a 13th. 7 days in a week, so each month has 1/7 chance of having a Friday 13. 1/7 x 12 = 1.71. 
+Reference https://www.physicsforums.com/threads/how-many-friday-the-13ths-would-you-expect-in-a-year.292141/
+
+How to detect discrepancy in market data feeds.
