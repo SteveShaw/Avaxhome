@@ -94,3 +94,5 @@ What is polymorphism? What is inheritance? What is a virtual function?
 Suppose there is an arbitrary triangle in a plane and a point in the plane is give. How can you determine whether the point is inside or outside the triangle by writing a simple (pseudo-)code?
 
 Suppose there is a circle with unit circumference in a two-dimensional plane. You throw three points randomly onto the circumference of the circle. What is the probability that the center of the circle is inside the triangle formed by these three random points?  
+
+http://math.stackexchange.com/questions/268635/what-is-the-probability-that-the-center-of-the-circle-is-contained-within-the-tr
