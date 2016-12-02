@@ -100,47 +100,7 @@ We made this course such a way that everyone can understand easily, we added the
 
 
 
-
-Click Here to get more tutorials in my Blog
-
-
-
-
-
-44 <--> Python Recipes Handbook: A Problem-Solution Approach
-http://nitroflare.com/view/75387694ABEC388/10.1007%40978-1-4842-0241-8.pdf
-
-
-Python Recipes Handbook: A Problem-Solution Approach
-Apress | Python | December 7, 2016 | ISBN-10: 1484202422 | 123 pages | pdf | 4.54 mb
-
-Authors: Bernard, Joey
-Learn how to code with the new pandas (Python Data Analysis Library)
-Learn how to code with Python algorithms useful for today's big data analytics and cloud applications
-Learn how to code with NumPy and other numerical Python packages and code for doing various kinds of analysis
-
-Learn the code to write algorithms, numerical computations, data analysis and much more using the Python language: look up and re-use the recipes for your own Python coding. This book is your handy code cookbook reference. Whether you're a maker, game developer, cloud computing programmer and more, this is a must-have reference for your library.
-Python Recipes Handbook gives you the most common and contemporary code snippets, using pandas (Python Data Analysis Library), NumPy, and other numerical Python packages.
-What You'll Learn
-Code with the pandas (Python Data Analysis Library)
-Work with the various Python algorithms useful for today's big data analytics and cloud applications
-Use NumPy and other numerical Python packages and code for doing various kinds of analysis
-Discover Python's new popular modules, packages, extensions and templates library
-Who This Book Is For
-This handy reference is for those with some experience with Python. 
-
-Number of Pages
-XXXII, 123
-Number of Illustrations and Tables
-1 b/w illustrations
-Topics
-Python
-Computer Science (general)
-
-
 50 <--> Dynamic Systems for Everyone: Understanding How Our World Works, Second Edition
-http://nitroflare.com/view/D353D5988FD331D/10.1007%40978-3-319-43943-3.pdf
-
 
 Dynamic Systems for Everyone: Understanding How Our World Works, Second Edition
 Springer | Engineering | December 7, 2016 | ISBN-10: 3319439421 | 293 pages | pdf | 9.83 mb
@@ -179,32 +139,6 @@ Data-driven Science, Modeling and Theory Building
 Complexity
 
 
-69 <--> An Introduction to Data Analysis using Aggregation Functions in R
-http://nitroflare.com/view/127ADC34B2AE939/10.1007%40978-3-319-46762-7.pdf
-
-
-An Introduction to Data Analysis using Aggregation Functions in R
-Springer | Computer Science | December 6, 2016 | ISBN-10: 3319467611 | 199 pages | pdf | 4.56 mb
-
-Authors: James, Simon
-Provides an overview of aggregation functions
-Includes hands-on tutorials on how to program the functions covered in R without needing extensive programming courses
-Does not assume a mathematics background
-
-This textbook helps future data analysts comprehend aggregation function theory and methods in an accessible way, focusing on a fundamental understanding of the data and summarization tools. Offering a broad overview of recent trends in aggregation research, it complements any study in statistical or machine learning techniques. Readers will learn how to program key functions in R without obtaining an extensive programming background.
-Sections of the textbook cover background information and context, aggregating data with averaging functions, power means, and weighted averages including the Borda count. It explains how to transform data using normalization or scaling and standardization, as well as log, polynomial, and rank transforms. The section on averaging with interaction introduces OWS functions and the Choquet integral, simple functions that allow the handling of non-independent inputs. The final chapters examine software analysis with an emphasis on parameter identification rather than technical aspects.
-This textbook is designed for students studying computer science or business who are interested in tools for summarizing and interpreting data, without requiring a strong mathematical background. It is also suitable for those working on sophisticated data science techniques who seek a better conception of fundamental data aggregation. Solutions to the practice questions are included in the textbook.
-
-Number of Pages
-X, 199
-Number of Illustrations and Tables
-9 b/w illustrations, 20 illustrations in colour
-Topics
-Computing Methodologies
-Statistics for Engineering, Physics, Computer Science, Chemistry and Earth Sciences
-Applications of Mathematics
-Mathematics of Computing
-
 76 <--> Learning Path: The Road to Tensorflow
 http://nitroflare.com/view/D6071926E2354D8/L.Pa-Ro.to.Te.part1.rar
 http://nitroflare.com/view/F52315BCEBA1FF7/L.Pa-Ro.to.Te.part2.rar
@@ -218,7 +152,6 @@ Genre: Development / Programming
 Discover deep learning with Python and TensorFlow.
 
 It can be hard to get started with machine learning, particularly as new frameworks like TensorFlow start to gain traction across enterprise companies. If you have no prior exposure to one of the most important trends impacting how we do data science in the next few years, this path will help you get up to speed. It specifically focuses on getting you up and running with TensorFlow, after up-and-running coverage of Python and Deep Learning in Python with Theano.
-
 
 
 82 <--> Deep Learning
@@ -499,46 +432,6 @@ English | 2 Feb. 2009 | ISBN: 0596520662 | 158 Pages | CHM | 2 MB
 This practical book provides a step-by-step approach to testing mission-critical applications for scalability and performance before they're deployed – a vital topic to which other books devote one chapter, if that.
 
 
-146 <--> Automated Trading with R: Quantitative Research and Platform Development
-http://nitroflare.com/view/FE9C6D2BBCB51DC/148422177X.epub
-
-
-Automated Trading with R: Quantitative Research and Platform Development by Christopher Conlan
-2016 | ISBN: 148422177X | English | 205 pages | EPUB | 1 MB
-
-This book explains the broad topic of automated trading, starting with its mathematics and moving to its computation and execution. Readers will gain a unique insight into the mechanics and computational considerations taken in building a backtester, strategy optimizer, and fully functional trading platform.
-
-Automated Trading with R provides automated traders with all the tools they need to trade algorithmically with their existing brokerage, from data management, to strategy optimization, to order execution, using free and publically available data. If your brokerage’s API is supported, the source code is plug-and-play.
-
-The platform built in this book can serve as a complete replacement for commercially available platforms used by retail traders and small funds. Software components are strictly decoupled and easily scalable, providing opportunity to substitute any data source, trading algorithm, or brokerage. The book’s three objectives are:
-To provide a flexible alternative to common strategy automation frameworks, like Tradestation, Metatrader, and CQG, to small funds and retail traders.
-To offer an understanding the internal mechanisms of an automated trading system.
-To standardize discussion and notation of real-world strategy optimization problems.
-What you’ll learn
-
-Programming an automated strategy in R gives the trader access to R and its package library for optimizing strategies, generating real-time trading decisions, and minimizing computation time.
-How to best simulate strategy performance in their specific use case to derive accurate performance estimates.
-Important machine-learning criteria for statistical validity in the context of time-series.
-An understanding of critical real-world variables pertaining to portfolio management and performance assessment, including latency, drawdowns, varying trade size, portfolio growth, and penalization of unused capital.
-Who This Book Is For
-
-This book is for traders/practitioners at the retail or small fund level with at least an undergraduate background in finance or computer science. Graduate level finance or data science students.
-
-
-184 <--> Advanced C and C++ Compiling (Repost)
-http://nitroflare.com/view/00FE77132A77C2B/1430266678.pdf
-http://turbobit.net/r9excdvqnb11/1430266678.pdf.html
-
-
-Advanced C and C++ Compiling By Milan Stevanovic
-2014 | 340 Pages | ISBN: 1430266678 | PDF | 29 MB
-
-Learning how to write C/C++ code is only the first step. To be a serious programmer, you need to understand the structure and purpose of the binary files produced by the compiler: object files, static libraries, shared libraries, and, of course, executables. Advanced C and C++ Compiling explains the build process in detail and shows how to integrate code from other developers in the form of deployed libraries as well as how to resolve issues and potential mismatches between your own and external code trees. With the proliferation of open source, understanding these issues is increasingly the responsibility of the individual programmer. Advanced C and C++ Compiling brings all of the information needed to move from intermediate to expert programmer together in one place – an engineering guide on the topic of C/C++ binaries to help you get the most accurate and pertinent information in the quickest possible time. C/C++ software designers aspiring to senior levels, software architects, build engineers, and Linux system administrators.
-
-
-
-
-
 
 219 <--> Learning with Support Vector Machines (Repost)
 http://nitroflare.com/view/614213685C7375F/1608456161.pdf
@@ -580,9 +473,6 @@ Develop simple GUI applications using Python.
 
 
 235 <--> OpenGL Data Visualization Cookbook (repost)
-http://nitroflare.com/view/89A6519B4C48B3E/OpenGL_Data_Visualization_Cookbook.pdf
-http://nitroflare.com/view/1A89B7D0495A7A9/OpenGL_Data_Visualization_Cookbook.epub
-
 
 Raymond C. H. Lo, William C. Y. Lo, "OpenGL Data Visualization Cookbook"
 English | 2015 | ISBN: 1782169725 | 298 pages | EPUB / PDF | 9.4 MB / 5.7 MB
@@ -726,39 +616,6 @@ Genre: eLearning | Language: English
 Data science is becoming more and more valuable to the workplace and to the global economy. Learn how to use the practice of data science and the programming language R to transform your data into actionable insight.
 
 Data science is the practice of transforming data into knowledge, and R is one of the most popular programming language used by data scientists. In a data-driven economy, this combination of skills is in extremely high demand, commanding significant increases in salary, as it is revolutionizing the world. In this course, Data Science with R, you'll learn first learn about the practice of data science, the R programming language, and how they can be used to transform data into actionable insight. Next, you'll learn how to transform and clean your data, create and interpret descriptive statistics, data visualizations, and statistical models. Finally, you'll learn how to handle Big Data, make predictions using machine learning algorithms, and deploy R to production. By the end of this course, you'll have the skills necessary to use R and the principles of data science to transform your data into actionable insight.
-
-
-
-314 <--> Create Circle Mind Maps with Google Drawings
-http://nitroflare.com/view/BE555B05D4A3F95/Create_Circle_Mind_Maps_with_Google_Drawings_-_Alex_Reyes.mobi
-
-
-Create Circle Mind Maps with Google Drawings by Alex Reyes
-English | 22 Oct. 2016 | ASIN: B01M289R3X | 17 Pages | MOBI | 558.3 KB
-
-Google Drawings can be used to create Circle Thinking Maps. This free application from Google can be used to teach students basic computer skills and the skills needed to develop their own thinking maps.
-
-
-
-
-318 <--> Creating Bubble Maps With Google Drawings
-http://nitroflare.com/view/957148681C60F64/Creating_Bubble_Maps_With_Google_Drawings_-_Alex_Reyes.mobi
-
-
-Creating Bubble Maps With Google Drawings by Alex Reyes
-English | 23 Oct. 2016 | ASIN: B01M28OJER | 15 Pages | MOBI | 556.62 KB
-
-Bubble thinking maps are used for describing. Google Drawings is a free application that is part of a Google account. This application can be used to create thinking maps from scratch. The process of creating thinking maps from scratch helps students learn about the creation and use of thinking maps by providing the visual and kinesthetic tools we all use to learn. Through the process of using Google Drawings to create thinking maps, students will also learn essential technology skills that can be used in other applications.
-
-
-322 <--> Creating Tree Thinking Maps with Google Drawings
-http://nitroflare.com/view/14444192FD59CB6/Creating_Tree_Thinking_Maps_with_Google_Drawings_-_Alex_Reyes.mobi
-
-
-Creating Tree Thinking Maps with Google Drawings by Alex Reyes
-English | 23 Oct. 2016 | ASIN: B01M7TP0PE | 27 Pages | MOBI | 973.77 KB
-
-Google Drawings is a free drawing tool that is part of every Google account. Drawings can be used to create Tree Thinking maps. The process of creating thinking maps with Google Drawings helps students understand the process of creating thinking maps and develops technology skills they need in other applications.
 
 
 

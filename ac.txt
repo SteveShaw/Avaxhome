@@ -1,0 +1,96 @@
+	
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+I applied online. The process took 2 weeks. I interviewed at AKUNA CAPITAL (Shanghai, Shanghai (China)) in August 2016.
+
+Interview
+First, they asked me to do a online test on hackerrank.com. There were 16 test cases. I passed 15 of them. I tried lots of time and could not pass the last test case. After a couple of days, they mailed me to do the phone interview. After a couple of hours of the phone interview, they mailed me to do the onsite interview.
+
+In phone interview, they asked structure packing, signal, gdb, soft/hard link, inode and so on. Not difficult, but I failed to answer some of them.
+
+The onsite interview was 1:1 with two interviewers. The first was the technical interview, he asked:
+1. Implement power of 10 template without runtime overhead.
+2. How to check if a class has a member function. (Failed to answer)
+3. Write the syntax to specialise the template function of a template class. (Failed to answer)
+4. Explain the implementation of virtual function.
+5. Giving the root of a binary tree and a value, find the two nodes of the tree, which the sum of them equals to the value. (I wrote the codes which the complexity is O(nlogn) ).
+6. Explain how mmap works. (I thought OS mapped the region in heap, instead, it mapped between heap and stack.)
+7. How to compute the size of L1/L2 cache of CPU without read /proc/cpuinfo. (Failed to answer)
+
+
+system call 是什么 （回答不好）
+
+	
+A system call, sometimes referred to as a kernel call, is a request in a Unix-like operating system made via a software interrupt by an active process for a service performed by the kernel.
+
+A process (also frequently referred to as a task) is an executing (i.e., running) instance of a program. An active process is a process that is currently progressing in the CPU (central processing unit), as contrasted with processes that are waiting for their next turns in the CPU.
+
+An interrupt is a signal to the kernel that an event has occurred, and this results in changes in the sequence of instructions that is executed by the CPU. A software interrupt, also referred to as an exception, is an interrupt that originates in software, usually by a program in user mode.
+
+User mode is one of two distinct execution modes of operation for the CPU in Linux. It is a non-privileged mode in which each process starts out. It is non-privileged in that processes in this mode are not allowed to access those portions of memory that have been allocated to the kernel or to other programs.
+
+The kernel is a program that constitutes the core of an operating system, and it has complete control over all resources on the system and everything that occurs on it. When a user mode process (i.e., a process currently in user mode) wants to utilize a service provided by the kernel (i.e., access system resources other than the limited memory space that is allocated to the user program), it must switch temporarily into kernel mode, also called system mode, by means of a system call.
+
+Kernel mode has root (i.e., administrative) privileges, including root access permissions (i.e., permission to access any memory space or other resources on the system). This allows the operating system to perform restricted actions such as accessing hardware devices or the memory management unit (MMU). When the kernel has satisfied the request made by a process, it restores that process to user mode. The MMU is a type of circuitry that is responsible for handling memory access requested by the CPU.
+
+System calls can also be viewed as clearly-defined, direct entry points into the kernel through which programs request services from the kernel. They allow programs to perform tasks that would not normally be permitted.
+
+Examples of the services performed by the kernel include as input/output (I/O) and process creation. The former can be defined as any movement of data to or from the combination of the CPU and main memory (i.e. RAM), that is, communication between this combination and the computer's users (e.g., via the keyboard or mouse), its storage devices (e.g., disk or tape drives) or other computers. Process creation is the creation of a new process.
+
+A system call is accomplished in Linux on x86 (i.e., Intel-compatible) processors by calling the interrupt 0x80 (i.e., int 0x80) together with the register values. A register is a very small amount of high speed memory inside of the CPU. int 0x80 is the assembly language instruction that is used to invoke system calls in Linux on x86 processors. The calling of this instruction is preceded by the storing in the process register of the system call number (i.e., the integer assigned to each system call) for that system call and any arguments (i.e., input data) for it.
+
+System calls can be classified into six groups: process management, interprocess communication, memory management, file system, initialization and other. The kernel maintains a list of all registered system calls in the system call table. This table assigns each valid system call a unique system call number which cannot be changed or recycled. Processes do not refer to system calls by name, but rather by their system call number.
+
+
+
+3. 编程题- 口述思路。 3题很简单，每题要提供两种解法 （秒杀） - remove duplicates from unsorted array - print all odd numbers between 1 - 100 - power of 2 
+4.还有一条逻辑智力题 （回答不好） 有三个麻包袋，里面分别有 apple， orange， apple & orange， 然而 麻包袋里 的labels 可能贴错了。 分别从3个袋子里面取出一个fruit， 问如何把label 重亲贴对。
+
+Tell me a project you did related to data analysis. Tell me a project that you work in a team and how you achieve the goal. Describe this project to me.
+
+
+之前拿到72hr OA， 
+感觉运气不好，做完了也觉得一般，就没有太在意。前些天被Recruiter联系了，说move on，然后就是两轮电话面试. 
+
+第一轮HR
+自我介绍
+为什么申请他们公司这类基本Behav
+说简历如何对申请这个职位有帮助
+就结束了，说等下面Recruiter消息. 
+
+第二轮技术店面.
+
+
+问答：什么是多态. 
+虚拟内存
+mutex. Waral 
+TCP vs UDP
+线程和进程
+多种解法：
+删除无序数组里的重复元素. 1point3acres.com/bbs
+Power of 2
+
+There's a simple trick for this problem:
+
+bool IsPowerOfTwo(ulong x)
+{
+    return (x & (x - 1)) == 0;
+}
+For completeness, zero is not a power of two. If you want to take into account that edge case, here's how:
+
+bool IsPowerOfTwo(ulong x)
+{
+    return (x != 0) && ((x & (x - 1)) == 0);
+}
+
+
+SF:
+
+Interview Questions
+What is polymorphism? What is inheritance? What is a virtual function?
+
+Suppose there is an arbitrary triangle in a plane and a point in the plane is give. How can you determine whether the point is inside or outside the triangle by writing a simple (pseudo-)code?
+
+Suppose there is a circle with unit circumference in a two-dimensional plane. You throw three points randomly onto the circumference of the circle. What is the probability that the center of the circle is inside the triangle formed by these three random points?  

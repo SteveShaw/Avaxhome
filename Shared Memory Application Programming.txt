@@ -61,3 +61,34 @@ Chapter 3
 	6.2 applied in  recursive algorithms and/or 
 
 7.Shared mutexes: A shared mutex has two lock modes: shared and exclusive. In shared mode, several threads can take simultaneous ownership. This feature, introduced for optimization purposes, seems to contradict the very nature of the mutex operation. But the point is that, when several threads are accessing a data set, the operations performed can be classified as write operations, which modify the data set, and read operations, which don’t. It is true that write operations need exclusive access to the data set. Read operations, instead, only need the guarantee that the data set will not be modified while they are reading, so they need to exclude simultaneous writes. But they do not need to exclude simultaneous reads, and can share the mutex with other readers.
+
+8. Condition variables are agents that signal that something has happened. They are associated to a contract between cooperating threads, but they know nothing about the nature of the contract or the threads to which their signal is addressed.
+
+9. How does the wait_on_condition work? why it requies a mutex
+	A usual way of using condition_wait() function as follows
+	
+	lock(&mutex);
+	while( {wait_condition} ) 
+	{
+		cond_wait( &mutex, &cond );
+	}
+	unlock(&mutex);
+	
+	C++11 version:
+	std::mutex my_mutex;
+	std::conditional_variable cv;
+	std::unique_lock<std::mutex> my_lock(my_mutex);
+	
+	while(wait_condition is met )
+	cv.wait(my_lock);
+	
+	
+	9.1 cond_wait function starts by atomically unlocking the mutex passed as argument and setting the thread in a wait state. Then it waits peacefully until the condition is notified.
+	9.2 The mutex is therefore unlocked while the thread is waiting. Otherwise, nobody else would ever be able to access and modify the predicate. However, before returning, the wait function locks again the mutex passed as argument.
+	9.3 Now we can understand why the mutex must be passed to the function that executes the wait on condition: she is in charge of unlocking the mutex during the wait, and locking it again after the thread wakes up.
+	9.4 Another subtle point to be observed is that this protocol is tailored to force a new check of the predicate after return from the wait. A while{} loop is mandatory for this to happen; using a conditional if() statement will not force the check of the predicate after return from the wait. This check is imposed by thread safety, to prevent a subtle race condition from happening. Indeed, the above described wait protocol leaves a tiny window open for a race condition. It is possible that, between the condition variable notification that wakes up the sleeping thread and the mutex re-lock, another thread comes in and changes again the predicate. If this is the case, when the function returns and the predicate is checked, the thread goes back to a wait as it should. Therefore, the while() loop is mandatory for thread safety. so, the conclusion is that the other thread may change the condition between conditional variable wakeup and the mutex re-lock.
+	9.5 Why are the lock-unlock mutex actions delegated to the cond_wait() function itself? The reason is that the two actions---unlocking the mutex and moving the thread to a blocked state—must be done atomically, which means this compound operation must look instantaneous to other threads. Otherwise, there is the risk of missing a condition variable notification.
+	9.6 C++11: to start a thread for a member function of a class
+		std::thread thr([this](){ mem_fn(); });
+		
+	
