@@ -87,7 +87,15 @@
 	\begin{CJK}{UTF8}{gbsn}
 	像这种结果要求返回所有符合要求解的题十有八九都是要利用到递归，而且解题的思路都大同小异，相类似的题目有 Path Sum II 二叉树路径之和之二，Subsets II 子集合之二，Permutations 全排列，Permutations II 全排列之二，Combinations 组合项等等，如果仔细研究这些题目发现都是一个套路，都是需要另写一个递归函数，这里我们新加入三个变量，start记录当前的递归到的下标，out为一个解，res保存所有已经得到的解，每次调用新的递归函数时，此时的target要减去当前数组的的数，具体看代码如下：
 	\end{CJK}
+	
+	\subsection*{38}
+	\begin{CJK}{UTF8}{gbsn}
+	这道计数和读法问题还是第一次遇到，看似挺复杂，其实仔细一看，算法很简单，就是对于前一个数，找出相同元素的个数，把个数和该元素存到新的string里
+	\end{CJK}
+	
+	
 	\section*{Solutions}
+	
 	\subsection*{39}
 	\begin{lstlisting}
 	vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
@@ -109,4 +117,47 @@
         }
     }
 	\end{lstlisting}
+	
+	\subsection*{38}
+	\begin{lstlisting}
+	    string countAndSay(int n) {
+        if (n <= 0) return NULL;
+        string res = "1";
+        for (int i = 1; i < n; ++i) {
+            string tmp;
+            res.push_back('$'); // Add extra char to deal with boundary
+            int count = 0;
+            int len = strlen(res.c_str());
+            for (int j = 0; j < len; ++j) {
+                if (j == 0) ++count;
+                else {
+                    if (res[j] != res[j - 1]) {
+                        tmp.push_back(count + '0');
+                        tmp.push_back(res[j - 1]);
+                        count = 1;
+                    } else ++count;
+                }
+            }
+            res = tmp;
+        }
+        return res;
+    }
+	\end{lstlisting}
+	
+	\subsection*{37}
+	\begin{lstlisting}
+	\end{lstlisting}
+	
+	\subsection*{36}
+	\begin{lstlisting}
+	\end{lstlisting}
+
+	\subsection*{35}
+	\begin{lstlisting}
+	\end{lstlisting}
+
+	\subsection*{34}
+	\begin{lstlisting}
+	\end{lstlisting}
+	
 \end{document}
