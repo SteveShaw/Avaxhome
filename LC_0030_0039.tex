@@ -1,6 +1,6 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{charter}
-\usepackage[latin1]{inputenc}
+%\usepackage[latin1]{inputenc}
 \usepackage[left=1.50cm, right=1.50cm, top=1.20cm]{geometry}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -13,6 +13,7 @@
 \definecolor{listinggray}{gray}{0.9}
 \definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
 \usepackage{float}
+\usepackage{CJKutf8}
 %\lstset{
 %	backgroundcolor=\color{lbcolor},
 %	tabsize=4,    
@@ -73,167 +74,39 @@
 	stringstyle=\color{orange},
 }
 
-\lstdefinestyle{customasm}{
-	belowcaptionskip=1\baselineskip,
-	frame=L,
-	xleftmargin=\parindent,
-	language=[x86masm]Assembler,
-	basicstyle=\footnotesize\ttfamily,
-	commentstyle=\itshape\color{purple!40!black},
-}
+
 
 \lstset{escapechar=@,style=customc}
 
 \begin{document}
-	\title{LeetCode: 41---50}
+	\title{LeetCode: 30---39}
 	\maketitle
-	\section*{Problem 41: First Missing Positive}
-	Given an unsorted integer array, find the first missing positive integer.
-	For example,
-	\par
-	Given [1,2,0] return 3,
-	and [3,4,-1,1] return 2.
-	\noindent
-	\par
-	Your algorithm should run in $O(n)$ time and uses constant space
-	
+	\section*{Problems}
+	\section*{Hints}
+	\subsection*{39}
+	\begin{CJK}{UTF8}{gbsn}
+	像这种结果要求返回所有符合要求解的题十有八九都是要利用到递归，而且解题的思路都大同小异，相类似的题目有 Path Sum II 二叉树路径之和之二，Subsets II 子集合之二，Permutations 全排列，Permutations II 全排列之二，Combinations 组合项等等，如果仔细研究这些题目发现都是一个套路，都是需要另写一个递归函数，这里我们新加入三个变量，start记录当前的递归到的下标，out为一个解，res保存所有已经得到的解，每次调用新的递归函数时，此时的target要减去当前数组的的数，具体看代码如下：
+	\end{CJK}
+	\section*{Solutions}
+	\subsection*{39}
 	\begin{lstlisting}
-    int firstMissingPositive(vector<int>& nums) 
-    {
+	vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
+        vector<vector<int> > res;
+        vector<int> out;
+        sort(candidates.begin(), candidates.end());
+        combinationSumDFS(candidates, target, 0, out, res);
+        return res;
+    }
+    void combinationSumDFS(vector<int> &candidates, int target, int start, vector<int> &out, vector<vector<int> > &res) {
+        if (target < 0) return;
+        else if (target == 0) res.push_back(out);
+        else {
+            for (int i = start; i < candidates.size(); ++i) {
+                out.push_back(candidates[i]);
+                combinationSumDFS(candidates, target - candidates[i], i, out, res);
+                out.pop_back();
+            }
+        }
     }
 	\end{lstlisting}
-	
-\section*{Problem 42: Trapping Rain Water}
-Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining.
-\par
-For example, 
-Given [0,1,0,2,1,0,1,3,2,1,2,1], return 6.
-\begin{center}
-	\includegraphics[width=\linewidth]{rainwatertrap.png}
-\end{center}
-The above elevation map is represented by array [0,1,0,2,1,0,1,3,2,1,2,1]. In this case, 6 units of rain water (blue section) are being trapped
-\begin{lstlisting}
-int trap(vector<int>& height) {}
-\end{lstlisting}
-
-\section*{Problem 43: Multiply Strings}
-Given two numbers represented as strings, return multiplication of the numbers as a string.
-\par
-Note:
-\begin{itemize}
-	\item The numbers can be arbitrarily large and are non-negative.
-	\item Converting the input string to integer is NOT allowed.
-	\item You should NOT use internal library such as BigInteger.
-\end{itemize}
-\begin{lstlisting}
- string multiply(string num1, string num2) {}
-\end{lstlisting}
-
-\section*{Problem 44: Wildcard Matching}
-Implement wildcard pattern matching with support for ``?" and ``*".
-\par
-``?" Matches any single character.
-\par
-``*" Matches any sequence of characters (including the empty sequence).
-\par
-The matching should cover the entire input string (not partial).
-\par
-Some examples:
-\begin{lstlisting}
-isMatch("aa","a") = false;
-isMatch("aa","aa") = true;
-isMatch("aaa","aa") = false;
-isMatch("aa", "*") = true;
-isMatch("aa", "a*") = true;
-isMatch("ab", "?*") = true;
-isMatch("aab", "c*a*b") = false;
-\end{lstlisting}
-
-\section*{Problem 45: Jump Game II}
-Given an array of non-negative integers, you are initially positioned at the first index of the array.
-\par
-Each element in the array represents your maximum jump length at that position.
-\par
-Your goal is to reach the last index in the minimum number of jumps.
-\par
-For example:
-\par
-Given array A = [2,3,1,1,4]
-\par
-The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
-\par
-\textbf{Note:}
-You can assume that you can always reach the last index.
-\begin{lstlisting}
-int jump(vector<int>& nums) {}
-\end{lstlisting}
-
-\section*{Problem 46: Permutations}
-Given a collection of distinct numbers, return all possible permutations.
-\par
-For example,
-[1,2,3] have the following permutations:
-[
-[1,2,3],
-[1,3,2],
-[2,1,3],
-[2,3,1],
-[3,1,2],
-[3,2,1]
-]
-\begin{lstlisting}
- vector<vector<int>> permute(vector<int>& nums) {}
-\end{lstlisting}
-\section*{Problem 47: Permutations II}
-Given a collection of numbers that might contain duplicates, return all possible unique permutations.
-\par
-For example,
-\par
-[1,1,2] have the following unique permutations:
-\par
-[
-[1,1,2],
-[1,2,1],
-[2,1,1]
-]
-\begin{lstlisting}
-vector<vector<int>> permuteUnique(vector<int>& nums) {}
-\end{lstlisting}
-
-\section*{Problem 48: Rotate Image}
-You are given an $n \times n$ 2D matrix representing an image. Rotate the image by 90 degrees (clockwise).
-\par
-Follow up:
-\par
-Could you do this in-place?
-\begin{lstlisting}
-void rotate(vector<vector<int>>& matrix) {}
-\end{lstlisting}
-
-\section*{Problem 49: Group Anagrams}
-Given an array of strings, group anagrams together.
-\par
-For example, given: [``eat", ``tea", ``tan", ``ate", ``nat", ``bat"], 
-\par
-Return:
-\par
-[
-\par
-[``ate", ``eat",``tea"],
-\par
-[``nat",``tan"],
-\par
-[``bat"]
-\par
-]
-\begin{lstlisting}
-vector<vector<string>> groupAnagrams(vector<string>& strs) {}
-\end{lstlisting}
-
-\section*{Problem 50: Pow}
-Implement Pow(x, n)
-
-\begin{lstlisting}
-double myPow(double x, int n) {}
-\end{lstlisting}
 \end{document}
