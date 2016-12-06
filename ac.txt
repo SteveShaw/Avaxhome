@@ -85,6 +85,70 @@ bool IsPowerOfTwo(ulong x)
     return (x != 0) && ((x & (x - 1)) == 0);
 }
 
+楼主下午刚做完的Akuna OA Jr Dev#3， 五道题，都不难。 1. 给一个vector，返回1st, 3rd, 5th……元素的sum和average。 2. 给一个vector和int n，除掉vector里面出现n次的元素，并返回升序排列的结果。 3. 给四个点pair A, pair B, pair Q, pair P 和一个int n, n指定了Grid的大小，A与B、P与Q之间进行连线，线是直上直下走的。返回是否两个连线是否有交点。这个题很坑，题意不清，有无交点是与false还是true对应关系都得自己试……楼主最后有两个case没过。 4. 给一个vector和int n， 找到vector里面两个与n difference最小的数，并返回这两个数的和。 5. 给一个vector，找到频率第二大的元素。 1, 2, 4 和5都没有什么坑，直接做就好了，3有点tricky。 
+
+刚做了，第三题是n*n 的网格，放AB PQ四个点，只能沿着网格上下左右移动。A->B P->Q的连线有没有相交。我也是三个没过，但是想到一个case 是这样的 
+0 0 0 0 
+0 P 0 0 
+0 0 0 A 
+0 0 B Q 
+这样类型的一定相交
+
+[LeetCode] Find Median from Data Stream 找出数据流的中位数
+ 
+
+Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
+
+Examples:
+
+[2,3,4] , the median is 3
+
+[2,3], the median is (2 + 3) / 2 = 2.5
+
+Design a data structure that supports the following two operations:
+
+void addNum(int num) - Add a integer number from the data stream to the data structure.
+double findMedian() - Return the median of all elements so far.
+For example:
+
+add(1)
+add(2)
+findMedian() -> 1.5
+add(3) 
+findMedian() -> 2
+Credits:
+ 
+
+这道题给我们一个数据流，让我们找出中位数，由于数据流中的数据并不是有序的，所以我们首先应该想个方法让其有序。
+如果我们用vector来保存数据流的话，每进来一个新数据都要给数组排序，很不高效。
+所以之后想到用multiset这个数据结构，是有序保存数据的，但是它不能用下标直接访问元素，找中位数也不高效。
+这里用到的解法十分巧妙，我们使用大小堆来解决问题，其中大堆保存右半段较大的数字，小堆保存左半段较小的数组。
+这样整个数组就被中间分为两段了，由于堆的保存方式是由大到小，我们希望大堆里面的数据是从小到大，
+这样取第一个来计算中位数方便。我们用到一个小技巧，就是存到大堆里的数先取反再存，
+这样由大到小存下来的顺序就是实际上我们想要的从小到大的顺序。当大堆和小堆中的数字一样多时，
+我们取出大堆小堆的首元素求平均值，当小堆元素多时，取小堆首元素为中位数，参见代码如下：
+class MedianFinder {
+public:
+
+	// Adds a number into the data structure.
+	void addNum( int num ) {
+		small.push( num );
+		large.push( -small.top() );
+		small.pop();
+		if ( small.size() < large.size() ) {
+			small.push( -large.top() );
+			large.pop();
+		}
+	}
+
+	// Returns the median of current data stream
+	double findMedian() {
+		return small.size() > large.size() ? small.top() : 0.5 *(small.top() - large.top());
+	}
+
+private:
+	priority_queue<long> small, large;
+};
 
 SF:
 
