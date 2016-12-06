@@ -299,170 +299,59 @@ int minPathSum( vector<vector<int> > &grid ) {
 \end{lstlisting}
 
 \subsection{65}
+Skip for now. 
+
+\subsection{66}
 \begin{enumerate}
 \item
 \begin{CJK}{UTF8}{gbsn}
-首先，从题目中给的一些例子可以分析出来，我们所需要关注的除了数字以外的特殊字符有空格， 小数点, 自然数 ``e/E'', 还要加上正负号 ``+/-''，
-除了这些字符需要考虑意外，出现了任何其他的字符，可以马上判定不是数字。下面我们来一一分析这些出现了也可能是数字的特殊字符：
-\begin{enumerate}
-\item 空格： 空格分为两种情况需要考虑，一种是出现在开头和末尾的空格，一种是出现在中间的字符。出现在开头和末尾的空格不影响数字，而一旦中间出现了空格，则立马不是数字。解决方法：预处理时去掉字符的首位空格，中间再检测到空格，则判定不是数字。
-\item 小数点： 小数点需要分的情况较多，首先的是小数点只能出现一次，但是小数点可以出现在任何位置，开头(".3"), 中间("1.e2"), 以及结尾("1." ), 而且需要注意的是，小数点不能出现在自然数 ``e/E'' 之后，如 "1e.1" false, "1e1.1" false。还有，当小数点位于末尾时，前面必须是数字，如 "1."  true，" -." false。解决方法：开头中间结尾三个位置分开讨论情况。
-
-3. 自然数 'e/E'：自然数的前后必须有数字，即自然数不能出现在开头和结尾，如 "e" false,  ".e1" false, "3.e" false, "3.e1" true。而且小数点只能出现在自然数之前，还有就是自然数前面不能是符号，如 "+e1" false, "1+e" false. 解决方法：开头中间结尾三个位置分开讨论情况。
-
-4. 正负号 '+/-"，正负号可以再开头出现，可以再自然数e之后出现，但不能是最后一个字符，后面得有数字，如  "+1.e+5" true。解决方法：开头中间结尾三个位置分开讨论情况。
-
- 
-
-下面我们开始正式分开头中间结尾三个位置来讨论情况：
-
-1. 在讨论三个位置之前做预处理，去掉字符串首尾的空格，可以采用两个指针分别指向开头和结尾，遇到空格则跳过，分别指向开头结尾非空格的字符。
-
-2. 对首字符处理，首字符只能为数字或者正负号 '+/-"，我们需要定义三个flag在标示我们是否之前检测到过小数点，自然数和正负号。首字符如为数字或正负号，则标记对应的flag，若不是，直接返回false。
-
-3. 对中间字符的处理，中间字符会出现五种情况，数字，小数点，自然数，正负号和其他字符。
-
-若是数字，标记flag并通过。
-
-若是自然数，则必须是第一次出现自然数，并且前一个字符不能是正负号，而且之前一定要出现过数字，才能标记flag通过。
-
-若是正负号，则之前的字符必须是自然数e，才能标记flag通过。
-
-若是小数点，则必须是第一次出现小数点并且自然数没有出现过，才能标记flag通过。
-
-若是其他，返回false。
-
-4. 对尾字符处理，最后一个字符只能是数字或小数点，其他字符都返回false。
-
-若是数字，返回true。
-
-若是小数点，则必须是第一次出现小数点并且自然数没有出现过，还有前面必须是数字，才能返回true。
+将一个数字的每个位上的数字分别存到一个一维向量中，最高位在最开头，我们需要给这个数字加一，即在末尾数字加一，
+如果末尾数字是9，那么则会有进位问题，而如果前面位上的数字仍为9，则需要继续向前进位。
+具体算法如下：首先判断最后一位是否为9，若不是，直接加一返回，若是，则该位赋0，再继续查前一位，
+同样的方法，知道查完第一位。如果第一位原本为9，加一后会产生新的一位，那么最后要做的是，
+查运算完的第一位是否为0，如果是，则在最前头加一个1
 \end{CJK}
 \begin{lstlisting}
-bool canJump( int A[], int n ) {
-	vector<int> dp( n, 0 );
-	for ( int i = 1; i < n; ++i ) {
-		dp[i] = max( dp[i - 1], A[i - 1] ) - 1;
-		if ( dp[i] < 0 ) return false;
+vector<int> plusOne( vector<int> &digits ) {
+	int n = digits.size();
+	for ( int i = n - 1; i >= 0; --i ) {
+		if ( digits[i] == 9 ) digits[i] = 0;
+		else {
+			digits[i] += 1;
+			return digits;
+		}
 	}
-	return dp[n - 1] >= 0;
+	if ( digits.front() == 0 ) digits.insert( digits.begin(), 1 );
+	return digits;
 }
 \end{lstlisting}
 \item
 \begin{CJK}{UTF8}{gbsn}
-还有一种省空间的DP方法，维护一个常量maxIdx，表示最远能到达的位置，
-遍历数组中每一个数字，如果当前坐标大于maxIdx或者maxIdx已经抵达最后一个位置则跳出循环，
-否则就更新maxIdx的值为其和i + A[i]中的较大值，其中i + A[i]表示当前位置能到达的最大位置
+我们也可以使用跟之前那道Add Binary类似的做法，
+我们将carry初始化为1，然后相当于digits加了一个0，
+处理方法跟之前那道题一样
 \end{CJK}
 \begin{lstlisting}
-bool canJump( int A[], int n ) {
-	int maxIdx = 0;
-	for ( int i = 0; i < n; ++i ) {
-		if ( i > maxIdx || maxIdx >= n - 1 ) break;
-		maxIdx = max( maxIdx, i + A[i] );
+vector<int> plusOne( vector<int>& digits ) {
+	if ( digits.empty() ) return digits;
+	int carry = 1, n = digits.size();
+	for ( int i = n - 1; i >= 0; --i ) {
+		if ( carry == 0 ) return digits;
+		int sum = digits[i] + carry;
+		digits[i] = sum % 10;
+		carry = sum / 10;
 	}
-	return maxIdx >= n - 1;
+	if ( carry == 1 ) digits.insert( digits.begin(), 1 );
+	return digits;
 }
-\end{lstlisting}
 \end{enumerate}
 
-\subsection{56}
-\begin{enumerate}
-\item
+\subsection{67}
 \begin{CJK}{UTF8}{gbsn}
-这道和之前那道 Insert Interval 插入区间 很类似，这次题目要求我们合并区间，
-之前那题明确了输入区间集是有序的，而这题没有，
-所有我们首先要做的就是给区间集排序，由于我们要排序的是个结构体，
-所以我们要定义自己的comparator，才能用sort来排序，
-我们以start的值从小到大来排序，排完序我们就可以开始合并了，
-首先把第一个区间存入结果中，然后从第二个开始遍历区间集，
-如果结果中最后一个区间和遍历的当前区间无重叠，直接将当前区间存入结果中，
-如果有重叠，将结果中最后一个区间的end值更新为结果中最后一个区间的end和当前end值之中的较大值，
-然后继续遍历区间集，以此类推可以得到最终结果
-\end{CJK}
-\begin{lstlisting}
-class Solution {
-public:
-	static bool comp( const Interval &a, const Interval &b ) {
-		return (a.start < b.start);
-	}
-	vector<Interval> merge( vector<Interval> &intervals ) {
-		vector<Interval> res;
-		if ( intervals.empty() ) return res;
-		sort( intervals.begin(), intervals.end(), comp );
-		res.push_back( intervals[0] );
-		for ( int i = 1; i < intervals.size(); ++i ) {
-			if ( res.back().end >= intervals[i].start ) {
-				res.back().end = max( res.back().end, intervals[i].end );
-			}
-			else {
-				res.push_back( intervals[i] );
-			}
-		}
-		return res;
-	}
-};
-\end{lstlisting}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题还有另一种解法，这个解法直接调用了之前那道题 Insert Interval 插入区间 的函数，
-由于插入的过程中也有合并的操作，所以我们可以建立一个空的集合，
-然后把区间集的每一个区间当做一个新的区间插入结果中，也可以得到合并后的结果
-\end{CJK}
-\begin{lstlisting}
-// Using insert method
-class Solution {
-public:
-	vector<Interval> merge( vector<Interval> &intervals ) {
-		vector<Interval> res;
-		for ( int i = 0; i < intervals.size(); ++i ) {
-			res = insert( res, intervals[i] );
-		}
-		return res;
-	}
-	vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
-		vector<Interval> res = intervals;
-		vector<Interval>::iterator it = res.begin();
-		int overlap = 0;
-		while ( it != res.end() ) {
-			if ( newInterval.end < it->start ) break;
-			else if ( newInterval.start > it->end ) {}
-			else {
-				newInterval.start = min( newInterval.start, it->start );
-				newInterval.end = max( newInterval.end, it->end );
-				++overlap;
-			}
-			++it;
-		}
-		if ( overlap != 0 ) it = res.erase( it - overlap, it );
-		res.insert( it, newInterval );
-		return res;
-	}
-};
-\end{lstlisting}
-\end{enumerate}
-
-\subsection{57}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题让我们在一系列非重叠的区间中插入一个新的区间，可能还需要和原有的区间合并，
-那么我们需要对给区间集一个一个的遍历比较，那么会有两种情况，重叠或是不重叠，
-不重叠的情况最好，直接将新区间插入到对应的位置即可，重叠的情况比较复杂，
-有时候会有多个重叠，我们需要更新新区间的范围以便包含所有重叠，
-而且最后处理的时候还需要删除原区间集中所有和新区间重叠的区间，然后插入新区间即可。具体思路如下：
-\begin{itemize}
-\item 对区间集中每个区间进行遍历
-\begin{itemize}
-\item 如果新区间的末尾小于当前区间的开头，则跳出循环
-\item 如果新区间的开头大于当前区间的末尾，不作处理
-\item 如果新区间和当前区间有重叠，则更新新区间的开头为两者最小值，新区间的末尾为两者最大值，重叠数加一
-\item 指针移向下一个区间
-\end{itemize}
-\item 如果重叠数大于0，则删除掉所有的重叠区间
-\item 插入新区间到对应的位置
-\end{itemize}
-\end{CJK}
+用了两个指针分别指向a和b的末尾，然后每次取出一个字符，转为数字，
+若无法取出字符则按0处理，然后定义进位carry，初始化为0，将三者加起来，
+对2取余即为当前位的数字，对2取商即为当前进位的值，记得最后还要判断下carry，
+如果为1的话，要在结果最前面加上一个1
 \begin{lstlisting}
 vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
 	vector<Interval> res = intervals;
@@ -482,78 +371,92 @@ vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
 	return res;
 }
 \end{lstlisting}
+
+
+\subsection{68}
+\begin{CJK}{UTF8}{gbsn}
+由于返回的结果是多行的，所以我们在处理的时候也要一行一行的来处理，
+\par
+首先要做的就是确定每一行能放下的单词数，这个不难，就是比较n个单词的长度和加上n -1个空格的长度跟给定的长度L来比较即可，
+找到了一行能放下的单词个数，然后计算出这一行存在的空格的个数，是用给定的长度L减去这一行所有单词的长度和。
+得到了空格的个数之后，就要在每个单词后面插入这些空格，这里有两种情况，比如某一行有两个单词 to 和 a，给定长度L为6，如果这行不是最后一行，那么应该输出``to   a''，如果是最后一行，则应该输出 ``to a  ''，所以这里需要分情况讨论，最后一行的处理方法和其他行之间略有不同。最后一个难点就是，
+如果一行有三个单词，这时候中间有两个空，如果空格数不是2的倍数，那么左边的空间里要比右边的空间里多加入一个空格，
+那么我们只需要用总的空格数除以空间个数，能除尽最好，说明能平均分配，
+除不尽的话就多加个空格放在左边的空间里，以此类推，
+\end{CJK}
+\begin{lstlisting}
+vector<string> fullJustify( vector<string> &words, int L ) {
+	vector<string> res;
+	int i = 0;
+	while ( i < words.size() ) {
+		int j = i, len = 0;
+		while ( j < words.size() && len + words[j].size() + j - i <= L ) {
+			len += words[j++].size();
+		}
+		string out;
+		int space = L - len;
+		for ( int k = i; k < j; ++k ) {
+			out += words[k];
+			if ( space > 0 ) {
+				int tmp;
+				if ( j == words.size() ) {
+					if ( j - k == 1 ) tmp = space;
+					else tmp = 1;
+				}
+				else {
+					if ( j - k - 1 > 0 ) {
+						if ( space % (j - k - 1) == 0 ) tmp = space / (j - k - 1);
+						else tmp = space / (j - k - 1) + 1;
+					}
+					else tmp = space;
+				}
+				out.append( tmp, ' ' );
+				space -= tmp;
+			}
+		}
+		res.push_back( out );
+		i = j;
+	}
+	return res;
+}
+\end{lstlisting}
+
+\subsection{69}
+\begin{enumerate}
 \item
 \begin{CJK}{UTF8}{gbsn}
-对Iterator Pattern比较熟悉的也可应用Iterator来求解，本质还是一样的，只是写法略有不同
+这道题要求我们求平方根，我们能想到的方法就是算一个候选值的平方，然后和x比较大小，
+为了缩短查找时间，我们采用二分搜索法来找平方根，由于求平方的结果会很大，可能会超过int的取值范围，
+所以我们都用long long来定义变量，这样就不会越界
 \end{CJK}
 \begin{lstlisting}
-vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
-	vector<Interval> res = intervals;
-	vector<Interval>::iterator it = res.begin();
-	int overlap = 0;
-	while ( it != res.end() ) {
-		if ( newInterval.end < it->start ) break;
-		else if ( newInterval.start > it->end ) {}
-		else {
-			newInterval.start = min( newInterval.start, it->start );
-			newInterval.end = max( newInterval.end, it->end );
-			++overlap;
-		}
-		++it;
+int sqrt( int x ) {
+	long long left = 0, right = (x / 2) + 1;
+	while ( left <= right ) {
+		long long mid = (left + right) / 2;
+		long long sq = mid * mid;
+		if ( sq == x ) return mid;
+		else if ( sq < x ) left = mid + 1;
+		else right = mid - 1;
 	}
-
-	if ( overlap != 0 ) it = res.erase( it - overlap, it );
-	res.insert( it, newInterval );
-	return res;
+	return right;
 }
 \end{lstlisting}
-\end{enumerate}
-
-\subsection{58}
+\item
 \begin{CJK}{UTF8}{gbsn}
-这道题难度不是很大。先对输入字符串做预处理，
-去掉开头和结尾的空格，然后用一个计数器来累计非空格的字符串的长度，遇到空格则将计数器清零
+另一种解法，是利用牛顿迭代法: \href{http://www.cnblogs.com/AnnieKim/archive/2013/04/18/3028607.html}{Newton}
 \end{CJK}
 \begin{lstlisting}
-int lengthOfLastWord( const char *s ) {
-	int len = strlen( s );
-	int left = 0;
-	int right = len - 1;
-	int count = 0;
-	while ( s[left] == ' ' ) ++left;
-	while ( s[right] == ' ' ) --right;
-	for ( int i = left; i <= right; ++i ) {
-		if ( s[i] == ' ' ) count = 0;
-		else ++count;
+int sqrt( int x ) {
+	if ( x == 0 ) return 0;
+	double last = 0;
+	double res = 1;
+	while ( res != last )
+	{
+		last = res;
+		res = (res + x / res) / 2;
 	}
-	return count;
-}
-\end{lstlisting}
-
-\subsection{59}
-\begin{CJK}{UTF8}{gbsn}
-此题跟之前那道 Spiral Matrix 螺旋矩阵 本质上没什么区别，
-就相当于个类似逆运算的过程，这道题是要按螺旋的顺序来填数，
-由于给定矩形是个正方形，我们计算环数时用n / 2来计算，
-若n为奇数时，此时最中间的那个点没有被算在环数里，所以最后需要单独赋值，
-还是下标转换问题是难点，参考之前 Spiral Matrix 螺旋矩阵 的讲解来转换下标吧，
-\end{CJK}
-\begin{lstlisting}
-vector<vector<int> > generateMatrix( int n ) {
-	vector<vector<int> > res( n, vector<int>( n, 1 ) );
-	int val = 1, p = n;
-	for ( int i = 0; i < n / 2; ++i, p -= 2 ) {
-		for ( int col = i; col < i + p; ++col )
-			res[i][col] = val++;
-		for ( int row = i + 1; row < i + p; ++row )
-			res[row][i + p - 1] = val++;
-		for ( int col = i + p - 2; col >= i; --col )
-			res[i + p - 1][col] = val++;
-		for ( int row = i + p - 2; row > i; --row )
-			res[row][i] = val++;
-	}
-	if ( n % 2 != 0 ) res[n / 2][n / 2] = val;
-	return res;
+	return int( res );
 }
 \end{lstlisting}
 \end{document}

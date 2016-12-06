@@ -103,4 +103,10 @@ Chapter 7:
 	--> The mutex is locked-unlocked just to copy the predicate value to the local flag my_flag.
 	--> Then, the value of my_flag is tested to decide if another iteration is required.
 	--> Since the mutex is unlocked at each iteration, other threads have a chance of acquiring it.
-5. 
+
+Chapter 8:
+--> Mutual exclusion is a pessimistic approach, planning for the worst. In acting on the data set, the programmer strategy is: a race condition could possibly happen here, so we make sure that it never happens.
+
+--> Lock-free algorithms implement an optimistic approach, planning for the best. In acting on the data set, the programmer strategy is we go ahead, and if a race occurs we start all over again. Of course, the whole point is having the right tool to detect that a race condition has indeed occurred.
+
+--> The fundamental tool for detecting race conditions is the compare_and_exchange member function, usually called CAS, for Compare and Swap. This is the basic tool enabling the implementation of lock-free algorithms
