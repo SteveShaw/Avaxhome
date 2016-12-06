@@ -89,169 +89,16 @@
 \lstset{escapechar=@,style=customc}
 
 \begin{document}
-\section{HOW TO}
+\section{Solution}
 \subsection{50}
+\begin{enumerate}
+\item
 \begin{CJK}{UTF8}{gbsn}
 这道题让我们求x的n次方，如果我们只是简单的用个for循环让x乘以自己n次的话，未免也把LeetCode上的想的太简单了，
 我们可以用递归来折半计算，每次把n缩小一半，这样n最终会缩小到0，任何数的0次方都为1，这时候我们再往回乘，
 如果此时n是偶数，直接把上次递归得到的值算个平方返回即可，如果是奇数，则还需要乘上个x的值。
-还有一点需要引起我们的注意的是n有可能为负数，对于n是负数的情况，我们可以先用其绝对值计算出一个结果再取其倒数即可，代码如下：
+还有一点需要引起我们的注意的是n有可能为负数，对于n是负数的情况，我们可以先用其绝对值计算出一个结果再取其倒数即可
 \end{CJK}
-\subsection{41}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题让我们找缺失的首个正数，由于限定了O(n)的时间，
-所以一般的排序方法都不能用，最开始我没有看到还限制了空间复杂度，
-所以想到了用哈希表来解，这个思路很简单，第一遍遍历数组把所有的数都存入哈希表中，
-并且找出数组的最大值，下次循环从1开始递增找数字，
-哪个数字找不到就返回哪个数字，如果一直找到了最大的数字，则返回最大值+1，
-\item
-但是上面的解法不是O(1)的时间复杂度，所以我们需要另想一种解法，
-既然不能建立新的数组，那么我们只能覆盖原有数组，
-我们的思路是把1放在数组第一个位置A[0]，2放在第二个位置A[1]，
-即需要把A[i]放在A[A[i] - 1]上，
-那么我们遍历整个数组，
-如果A[i] != i + 1, 而A[i]为整数且不大于n，另外A[i]不等于A[A[i] - 1]的话，
-我们将两者位置调换，如果不满足上述条件直接跳过，
-最后我们再遍历一遍数组，如果对应位置上的数不正确则返回正确的数
-\end{CJK}
-\end{enumerate}
-
-\subsection{42}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道收集雨水的题跟之前的那道 Largest Rectangle in Histogram 直方图中最大的矩形 
-有些类似，但是又不太一样，我最先想到的方法有些复杂，
-但是也能通过OJ，想法是遍历数组，找到局部最小值，
-方法是如果当前值大于或等于前一个值，或者当前值大于后一个值则跳过，
-找到了局部最小值后，然后我们首先向左找到左边的最大值，再找右边的最大值，
-找右边最大值时要注意当其大于左边最大时时就停止寻找了，
-然后算出从左边最大值到右边最大值之间能装的水量，
-之后从右边最大值的位置开始继续找局部最小值，以此类推直到遍历完整个数组
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这种方法是基于动态规划Dynamic Programming的，我们维护一个一维的dp数组，
-这个DP算法需要遍历两遍数组，第一遍遍历dp[i]中存入i位置左边的最大值，
-然后开始第二遍遍历数组，第二次遍历时找右边最大值，然后和左边最大值比较取其中的较小值，
-然后跟当前值A[i]相比，如果大于当前值，则将差值存入结果
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-最后我们来看一种只需要遍历一次即可的解法，这个算法需要left和right两个指针分别指向数组的首尾位置，
-从两边向中间扫描，在当前两指针确定的范围内，先比较两头找出较小值，如果较小值是left指向的值，则从左向右扫描，如果较小值是right指向的值，
-则从右向左扫描，若遇到的值比当较小值小，则将差值存入结果，如遇到的值大，则重新确定新的窗口范围，
-以此类推直至left和right指针重合
-\end{CJK}
-\end{enumerate}
-
-\subsection{43}
-\begin{CJK}{UTF8}{gbsn}
-首先我们把每一位相乘，得到一个没有进位的临时结果，
-如图中中间的一行红色数字就是临时结果，
-然后把临时结果从低位起依次进位。
-对于一个m位整数乘以n位整数的结果，最多只有m+n位
-\end{CJK}
-\begin{center}
-\includegraphics[width=0.8\linewidth]{0043.png}
-\end{center}
-\subsection{44}
-\begin{CJK}{UTF8}{gbsn}
-外卡匹配和正则匹配最大的区别就是在星号的使用规则上，对于正则匹配来说，星号不能单独存在，前面必须要有一个字符，而星号存在的意义就是表明前面这个字符的个数可以是任意个，包括0个，那么就是说即使前面这个字符并没有在s中出现过也无所谓，只要后面的能匹配上就可以了。而外卡匹配就不是这样的，外卡匹配中的星号跟前面的字符没有半毛钱关系，如果前面的字符没有匹配上，那么直接返回false了，根本不用管星号。而星号存在的作用是可以表示任意的字符串，
-当然只是当匹配字符串缺少一些字符的时候起作用，当匹配字符串包含目标字符串没有的字符时，将无法成功匹配。
-\end{CJK}
-\subsection{45}
-\begin{CJK}{UTF8}{gbsn}
-这题是之前那道Jump Game 跳跃游戏 的延伸，那题是问能不能到达最后一个数字，而此题只让我们求到达最后一个位置的最少跳跃数，
-貌似是默认一定能到达最后位置的? 此题的核心方法还是利用动态规划Dynamic Programming的思想来解，
-我们需要两个变量cur和pre分别来保存当前的能到达的最远位置和之前能到达的最远位置，
-只要cur未达到最后一个位置则循环继续，pre记录cur的值，如果当前位置i小于等于pre，则更新cur然后i自增1。
-更新cur的方法是比较当前的cur和i + A[i]之中的较大值，等i循环到pre的值时，
-跳跃的步数加一，如果题目中未说明是否能到达末尾，我们还可以判断此时pre和cur是否相等，
-如果相等说明cur没有更新，即无法到达末尾位置，返回$-1$，
-\end{CJK}
-
-\subsection{46}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题是求全排列问题，给的输入数组没有重复项，这跟之前的那道 Combinations 组合项 和类似，解法基本相同，
-但是不同点在于那道不同的数字顺序只算一种，是一道典型的组合题，而此题是求全排列问题，
-还是用递归DFS来求解。这里我们需要用到一个visited数组来标记某个数字是否访问过，
-然后在DFS递归函数从的循环应从头开始，而不是从level开始，
-这是和 Combinations 组合项 不同的地方，其余思路大体相同
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-递归的写法更简单一些，每次交换num里面的两个数字，经过递归可以生成所有的排列情况
-\end{CJK}
-\end{enumerate}
-
-\subsection{47}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题是之前那道 Permutations 全排列的延伸，由于输入数组有可能出现重复数字，如果按照之前的算法运算，会有重复排列产生，我们要避免重复的产生，
-在递归函数中要判断前面一个数和当前的数是否相等，如果相等，前面的数必须已经使用了，
-即对应的visited中的值为1，当前的数字才能使用，否则需要跳过，这样就不会产生重复排列了，
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-还有一种比较简便的方法，在Permutations的基础上稍加修改，
-我们用set来保存结果，利用其不会有重复项的特点，然后我们再递归函数中的swap的地方，
-判断如果i和start不相同，但是nums[i]和nums[start]相同的情况下跳过，继续下一个循环
-\end{CJK}
-\end{enumerate}
-
-\subsection{48}
-\begin{CJK}{UTF8}{gbsn}
-首先对原数组取其转置矩阵，然后把每行的数字翻转可得到结果
-\end{CJK}
-\[
-  \begin{bmatrix}
-    1 & 2 & 3  \\
-    4 & 5 & 6  \\
-	7 & 8 & 9  \\
-  \end{bmatrix}
-  \rightarrow
-  \begin{bmatrix}
-    1 & 4 & 7  \\
-    2 & 5 & 8  \\
-	3 & 6 & 9  \\
-  \end{bmatrix}
-  \rightarrow
-  \begin{bmatrix}
-    7 & 4 & 1  \\
-    8 & 5 & 2  \\
-	9 & 6 & 3  \\
-  \end{bmatrix}
-\]
-
-\subsection{49}
-\begin{CJK}{UTF8}{gbsn}
-这道题让我们找出给定字符串集中所有的错位词，所谓的错位词就是两个字符串中字母出现的次数都一样，
-只是位置不同，比如abc，bac, cba等它们就互为错位词，
-那么我们如何判断两者是否是错位词呢，我们发现如果把错位词的字符顺序重新排列，
-那么会得到相同的结果，所以重新排序是判断是否互为错位词的方法，
-由于我们还要把所有的错位词都存到一个新的向量中，
-所以我们还得知道错位词在原数组中的下标，那么我们可以利用哈希表来把字符和其下标记录起来，那么我们的具体算法为：
-\par
-用map$<$string, int$>$记录排序后的字符串以及首次出现的位置。
-\begin{enumerate}
-\item 从strs的第一个元素开始遍历，首先对元素进行排序得到s；
-\item 在map里查找s；
-\item 若不存在，将s以及该元素的下标存入map；
-\item 若存在，首先将第一次出现s时的原始字符串存入结果res，即strs[map[s]]，并将map[s]设置为$-1$（防止下次再存），再将该字符串本身存入结果res；
-\item 重复以上1--4步，直到遍历结束。
-\end{enumerate}
-\end{CJK}
-
-\section{SOLUTION}
-\subsection{50}
-\begin{enumerate}
-\item Method 1:
 \begin{lstlisting}
 class Solution {
 public:
@@ -267,7 +114,10 @@ public:
 	}
 };
 \end{lstlisting}
-\item Method 2:
+\item
+\begin{CJK}{UTF8}{gbsn}
+还有一种写法可以只用一个函数即可，在每次递归中就检查n的正负，然后做相应的变换即可
+\end{CJK}
 \begin{lstlisting}
 double myPow( double x, int n ) {
 	if ( n == 0 ) return 1;
@@ -277,7 +127,11 @@ double myPow( double x, int n ) {
 	else return half * half / x;
 }
 \end{lstlisting}
-\item Method 3:
+\item
+\begin{CJK}{UTF8}{gbsn}
+这道题还有迭代的解法，我们让i初始化为n，然后看i是否是2的倍数，是的话x乘以自己，否则res乘以x，
+i每次循环缩小一半，直到为0停止循环。最后看n的正负，如果为负，返回其倒数，
+\end{CJK}
 \begin{lstlisting}
 double myPow( double x, int n ) {
 	double res = 1.0;
@@ -289,285 +143,427 @@ double myPow( double x, int n ) {
 }
 \end{lstlisting}
 \end{enumerate}
-\subsection{41}
-\subsection{42}
-\begin{enumerate}
-\item
-Method 1:
+
+
+\subsection{51}
+\begin{CJK}{UTF8}{gbsn}经典的N皇后问题，基本所有的算法书中都会包含的问题，
+经典解法为回溯递归，一层一层的向下扫描，
+需要用到一个pos数组，其中pos[i]表示第i行皇后的位置，
+初始化为$-1$，然后从第0开始递归，
+每一行都一次遍历各列，
+判断如果在该位置放置皇后会不会有冲突，以此类推，
+当到最后一行的皇后放好后，一种解法就生成了，将其存入结果res中，然后再还会继续完成搜索所有的情况
+\par
+判断对角线是否冲突：
+\par
+如果两个皇后在同一对角线，
+那么$|$row1$-$row2$|$ = $|$column1$-$column2$|$，（row1，column1），（row2，column2）分别为冲突的两个皇后的位置
+\end{CJK}
 \begin{lstlisting}
-int trap( int A[], int n ) {
-	int res = 0, left = 0, right = 0, level = 0;
-	for ( int i = 1; i < n - 1; ++i ) {
-		if ( A[i] >= A[i - 1] || A[i] > A[i + 1] ) continue;
-		for ( left = i - 1; left > 0; --left ) {
-			if ( A[left] >= A[left - 1] ) break;
-		}
-		right = i + 1;
-		for ( int j = i + 1; j < n; ++j ) {
-			if ( A[j] >= A[right] ) {
-				right = j;
-				if ( A[right] >= A[left] ) break;
+class Solution {
+public:
+	vector<vector<string> > solveNQueens( int n ) {
+		vector<vector<string> > res;
+		vector<int> pos( n, -1 );
+		solveNQueensDFS( pos, 0, res );
+		return res;
+	}
+	void solveNQueensDFS( vector<int> &pos, int row, vector<vector<string> > &res ) {
+		int n = pos.size();
+		if ( row == n ) {
+			vector<string> out( n, string( n, '.' ) );
+			for ( int i = 0; i < n; ++i ) {
+				out[i][pos[i]] = 'Q';
 			}
-		}
-		level = min( A[left], A[right] );
-		for ( int j = left + 1; j < right; ++j ) {
-			if ( level - A[j] > 0 ) res += (level - A[j]);
-		}
-		i = right;
-	}
-	return res;
-}
-\end{lstlisting}
-\item
-Method 2:
-\begin{lstlisting}
-int trap( int A[], int n ) {
-	int res = 0, mx = 0;
-	vector<int> dp( n, 0 );
-	for ( int i = 0; i < n; ++i ) {
-		dp[i] = mx;
-		mx = max( mx, A[i] );
-	}
-	mx = 0;
-	for ( int i = n - 1; i >= 0; --i ) {
-		dp[i] = min( dp[i], mx );
-		mx = max( mx, A[i] );
-		if ( dp[i] - A[i] > 0 ) res += (dp[i] - A[i]);
-	}
-	return res;
-}
-\end{lstlisting}
-\item
-Method 3:
-\begin{lstlisting}
-int trap( int A[], int n ) {
-	int res = 0, left = 0, right = n - 1;
-	while ( left < right ) {
-		int mn = min( A[left], A[right] );
-		if ( A[left] == mn ) {
-			++left;
-			while ( left < right && A[left] < mn ) {
-				res += (mn - A[left]);
-				++left;
-			}
+			res.push_back( out );
 		}
 		else {
-			--right;
-			while ( left < right && A[right] < mn ) {
-				res += (mn - A[right]);
-				--right;
+			for ( int col = 0; col < n; ++col ) {
+				if ( isValid( pos, row, col ) ) {
+					pos[row] = col;
+					solveNQueensDFS( pos, row + 1, res );
+					pos[row] = -1;
+				}
 			}
 		}
 	}
+	bool isValid( vector<int> &pos, int row, int col ) {
+		for ( int i = 0; i < row; ++i ) {
+			if ( col == pos[i] || abs( row - i ) == abs( col - pos[i] ) ) {
+				return false;
+			}
+		}
+		return true;
+	}
+};
+\end{lstlisting}
+
+
+\subsection{52}
+\begin{CJK}{UTF8}{gbsn}
+这道题是之前那道 N-Queens N皇后问题 的延伸，说是延伸其实我觉得两者顺序应该颠倒一样，
+上一道题比这道题还要稍稍复杂一些，两者本质上没有啥区别，
+都是要用回溯法Backtracking来解，
+如果理解了之前那道题的思路，此题只要做很小的改动即可，
+不再需要求出具体的皇后的摆法，只需要每次生成一种解法时，计数器加一即可
+\end{CJK}
+\begin{lstlisting}
+class Solution {
+public:
+	int totalNQueens( int n ) {
+		int res = 0;
+		vector<int> pos( n, -1 );
+		totalNQueensDFS( pos, 0, res );
+		return res;
+	}
+	void totalNQueensDFS( vector<int> &pos, int row, int &res ) {
+		int n = pos.size();
+		if ( row == n ) ++res;
+		else {
+			for ( int col = 0; col < n; ++col ) {
+				if ( isValid( pos, row, col ) ) {
+					pos[row] = col;
+					totalNQueensDFS( pos, row + 1, res );
+					pos[row] = -1;
+				}
+			}
+		}
+	}
+	bool isValid( vector<int> &pos, int row, int col ) {
+		for ( int i = 0; i < row; ++i ) {
+			if ( col == pos[i] || abs( row - i ) == abs( col - pos[i] ) ) {
+				return false;
+			}
+		}
+		return true;
+	}
+};
+\end{lstlisting}
+
+\subsection{53}
+\begin{enumerate}
+\item
+\begin{CJK}{UTF8}{gbsn}
+先来看$O(n)$的解法，定义两个变量res和tmp，其中res保存最终要返回的结果，即最大的子数组之和，
+tmp是个临时变量，初始值为数组的第一个数，每遍历一个数字A[i]，比较tmp + A[i]和A[i]中的较大值存入tmp，
+然后再把res和tmp中的较大值存入res，以此类推直到遍历完整个数组，可得到最大子数组的值存在res中
+\end{CJK}
+\begin{lstlisting}
+int maxSubArray( vector<int>& nums ) {
+	int res = nums[0], tmp = res;
+	for ( int i = 1; i < nums.size(); ++i ) {
+		tmp = max( tmp + nums[i], nums[i] );
+		res = max( res, tmp );
+	}
 	return res;
+}
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+题目还要求我们用分治法Divide and Conquer Approach来解，这个分治法的思想就类似于二分搜索法，
+我们需要把数组一分为二，分别找出左边和右边的最大子数组之和，然后还要从中间开始向左右分别扫描，
+求出的最大值分别和左右两边得出的最大值相比较取最大的那一个
+\end{CJK}
+\begin{lstlisting}
+// Divide and conquer approach
+class Solution {
+public:
+	int maxSubArray( int A[], int n ) {
+		return getMaxSubArray( A, 0, n - 1 );
+	}
+	int getMaxSubArray( int A[], int left, int right ) {
+		if ( left >= right ) return A[left];
+		int mid = (left + right) / 2;
+		int lmax = getMaxSubArray( A, left, mid - 1 );
+		int rmax = getMaxSubArray( A, mid + 1, right );
+		int mmax = A[mid], tmp = A[mid];
+		for ( int i = mid - 1; i >= left; --i ) {
+			tmp += A[i];
+			mmax = max( mmax, tmp );
+		}
+		tmp = mmax;
+		for ( int i = mid + 1; i <= right; ++i ) {
+			tmp += A[i];
+			mmax = max( mmax, tmp );
+		}
+		return max( mmax, max( lmax, rmax ) );
+	}
+};
+\end{lstlisting}
+\end{enumerate}
+
+\subsection{54}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们将一个矩阵按照螺旋顺序打印出来，我们只能一条边一条边的打印，
+首先我们要从给定的$m \times n$的矩阵中算出按螺旋顺序有几个环，注意最终间的环可以是一个数字，
+也可以是一行或者一列。环数的计算公式是 min(m, n) / 2，知道了环数，
+我们可以对每个环的边按顺序打印，比如对于题目中给的那个例子，
+个边生成的顺序是(用颜色标记了数字) Red $\rightarrow$ Green $\rightarrow$ Blue $\rightarrow$ Yellow $\rightarrow$ Black
+\end{CJK}
+\[
+\begin{bmatrix}
+	\textcolor{red}{1} & \textcolor{red}{2} & \textcolor{red}{3} \\
+	\textcolor{yellow}{4} & 5 & \textcolor{green}{6} \\
+	\textcolor{blue}{7} & \textcolor{blue}{8} & \textcolor{green}{9}
+\end{bmatrix}
+\]
+\begin{CJK}{UTF8}{gbsn}
+我们定义p，q为当前环的高度和宽度，当p或者q为1时，
+表示最后一个环只有一行或者一列，可以跳出循环。
+此题的难点在于下标的转换，如何正确的转换下标是解此题的关键，
+我们可以对照着上面的$3\times3$的例子来完成下标的填写，
+\end{CJK}
+\begin{lstlisting}
+vector<int> spiralOrder( vector<vector<int> > &matrix ) {
+	vector<int> res;
+	if ( matrix.empty() || matrix[0].empty() ) return res;
+	int m = matrix.size(), n = matrix[0].size();
+	int c = m > n ? (n + 1) / 2 : (m + 1) / 2;
+	int p = m, q = n;
+	for ( int i = 0; i < c; ++i, p -= 2, q -= 2 ) {
+		for ( int col = i; col < i + q; ++col )
+			res.push_back( matrix[i][col] );
+		for ( int row = i + 1; row < i + p; ++row )
+			res.push_back( matrix[row][i + q - 1] );
+		if ( p == 1 || q == 1 ) break;
+		for ( int col = i + q - 2; col >= i; --col )
+			res.push_back( matrix[i + p - 1][col] );
+		for ( int row = i + p - 2; row > i; --row )
+			res.push_back( matrix[row][i] );
+	}
+	return res;
+}
+\end{lstlisting}
+
+\subsection{55}
+\begin{enumerate}
+\item
+\begin{CJK}{UTF8}{gbsn}
+这道题说的是有一个非负整数的数组，每个数字表示在当前位置的基础上最多可以走的步数，
+求判断能不能到达最后一个位置，开始我以为是必须刚好到达最后一个位置，
+超过了不算，其实是理解题意有误，因为每个位置上的数字表示的是最多可以走的步数
+而不是像玩大富翁一样摇骰子摇出几一定要走几步。
+那么我们可以用动态规划Dynamic Programming来解，我们维护一个一位数组dp，
+其中dp[i]表示走道i位置时剩余的最大步数，那么递推公式为：dp[i] = max(dp[i - 1], A[i - 1]) - 1，
+如果当某一个时刻dp数组的值为负了，说明无法抵达当前位置，则直接返回false，
+最后我们判断dp数组最后一位是否为非负数即可知道是否能抵达该位置，
+\end{CJK}
+\begin{lstlisting}
+bool canJump( int A[], int n ) {
+	vector<int> dp( n, 0 );
+	for ( int i = 1; i < n; ++i ) {
+		dp[i] = max( dp[i - 1], A[i - 1] ) - 1;
+		if ( dp[i] < 0 ) return false;
+	}
+	return dp[n - 1] >= 0;
+}
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+还有一种省空间的DP方法，维护一个常量maxIdx，表示最远能到达的位置，
+遍历数组中每一个数字，如果当前坐标大于maxIdx或者maxIdx已经抵达最后一个位置则跳出循环，
+否则就更新maxIdx的值为其和i + A[i]中的较大值，其中i + A[i]表示当前位置能到达的最大位置
+\end{CJK}
+\begin{lstlisting}
+bool canJump( int A[], int n ) {
+	int maxIdx = 0;
+	for ( int i = 0; i < n; ++i ) {
+		if ( i > maxIdx || maxIdx >= n - 1 ) break;
+		maxIdx = max( maxIdx, i + A[i] );
+	}
+	return maxIdx >= n - 1;
 }
 \end{lstlisting}
 \end{enumerate}
 
-\subsection{43}
+\subsection{56}
+\begin{enumerate}
+\item
+\begin{CJK}{UTF8}{gbsn}
+这道和之前那道 Insert Interval 插入区间 很类似，这次题目要求我们合并区间，
+之前那题明确了输入区间集是有序的，而这题没有，
+所有我们首先要做的就是给区间集排序，由于我们要排序的是个结构体，
+所以我们要定义自己的comparator，才能用sort来排序，
+我们以start的值从小到大来排序，排完序我们就可以开始合并了，
+首先把第一个区间存入结果中，然后从第二个开始遍历区间集，
+如果结果中最后一个区间和遍历的当前区间无重叠，直接将当前区间存入结果中，
+如果有重叠，将结果中最后一个区间的end值更新为结果中最后一个区间的end和当前end值之中的较大值，
+然后继续遍历区间集，以此类推可以得到最终结果
+\end{CJK}
 \begin{lstlisting}
-string multiply( string num1, string num2 ) {
-	string res;
-	int n1 = num1.size(), n2 = num2.size();
-	int k = n1 + n2 - 2, carry = 0;
-	vector<int> v( n1 + n2, 0 );
-	for ( int i = 0; i < n1; ++i ) {
-		for ( int j = 0; j < n2; ++j ) {
-			//add without carry
-			v[k - i - j] += (num1[i] - '0') * (num2[j] - '0');
-		}
+class Solution {
+public:
+	static bool comp( const Interval &a, const Interval &b ) {
+		return (a.start < b.start);
 	}
-	for ( int i = 0; i < n1 + n2; ++i ) {
-		v[i] += carry;
-		carry = v[i] / 10;
-		v[i] %= 10;
-	}
-	int i = n1 + n2 - 1;
-	while ( v[i] == 0 ) --i; //remove "0" as prefix
-	if ( i < 0 ) return "0"; //remove zero
-	while ( i >= 0 ) res.push_back( v[i--] + '0' );
-	return res;
-}
-\end{lstlisting}
-\subsection{44}
-\begin{lstlisting}
-bool isMatch( string s, string p ) {
-	int m = s.size(), n = p.size();
-	vector<vector<bool>> dp( m + 1, vector<bool>( n + 1, false ) );
-	dp[0][0] = true;
-	for ( int i = 1; i <= n; ++i ) {
-		if ( p[i - 1] == '*' ) dp[0][i] = dp[0][i - 1];
-	}
-	for ( int i = 1; i <= m; ++i ) {
-		for ( int j = 1; j <= n; ++j ) {
-			if ( p[j - 1] == '*' ) {
-				dp[i][j] = dp[i - 1][j] || dp[i][j - 1];
+	vector<Interval> merge( vector<Interval> &intervals ) {
+		vector<Interval> res;
+		if ( intervals.empty() ) return res;
+		sort( intervals.begin(), intervals.end(), comp );
+		res.push_back( intervals[0] );
+		for ( int i = 1; i < intervals.size(); ++i ) {
+			if ( res.back().end >= intervals[i].start ) {
+				res.back().end = max( res.back().end, intervals[i].end );
 			}
 			else {
-				dp[i][j] = (s[i - 1] == p[j - 1] || p[j - 1] == '?') && dp[i - 1][j - 1];
+				res.push_back( intervals[i] );
 			}
 		}
-	}
-	return dp[m][n];
-}
-\end{lstlisting}
-\subsection{45}
-\begin{lstlisting}
-int jump( int A[], int n ) {
-	int res = 0, i = 0, cur = 0;
-	while ( cur < n - 1 ) {
-		int pre = cur;
-		while ( i <= pre ) {
-			cur = max( cur, i + A[i] );
-			++i;
-		}
-		++res;
-		if ( pre == cur ) return -1; // May not need this
-	}
-	return res;
-}
-\end{lstlisting}
-\subsection{46}
-\begin{enumerate}
-\item
-Method 1:
-\begin{lstlisting}
-class Solution {
-public:
-	vector<vector<int> > permute( vector<int> &num ) {
-		vector<vector<int> > res;
-		vector<int> out;
-		vector<int> visited( num.size(), 0 );
-		permuteDFS( num, 0, visited, out, res );
 		return res;
-	}
-	void permuteDFS( vector<int> &num, int level, vector<int> &visited, vector<int> &out, vector<vector<int> > &res ) {
-		if ( level == num.size() ) res.push_back( out );
-		else {
-			for ( int i = 0; i < num.size(); ++i ) {
-				if ( visited[i] == 0 ) {
-					visited[i] = 1;
-					out.push_back( num[i] );
-					permuteDFS( num, level + 1, visited, out, res );
-					out.pop_back();
-					visited[i] = 0;
-				}
-			}
-		}
 	}
 };
 \end{lstlisting}
 \item
-Method 2:
+\begin{CJK}{UTF8}{gbsn}
+这道题还有另一种解法，这个解法直接调用了之前那道题 Insert Interval 插入区间 的函数，
+由于插入的过程中也有合并的操作，所以我们可以建立一个空的集合，
+然后把区间集的每一个区间当做一个新的区间插入结果中，也可以得到合并后的结果
+\end{CJK}
 \begin{lstlisting}
+// Using insert method
 class Solution {
 public:
-	vector<vector<int> > permute( vector<int> &num ) {
-		vector<vector<int> > res;
-		permuteDFS( num, 0, res );
+	vector<Interval> merge( vector<Interval> &intervals ) {
+		vector<Interval> res;
+		for ( int i = 0; i < intervals.size(); ++i ) {
+			res = insert( res, intervals[i] );
+		}
 		return res;
 	}
-	void permuteDFS( vector<int> &num, int start, vector<vector<int> > &res ) {
-		if ( start >= num.size() ) res.push_back( num );
-		for ( int i = start; i < num.size(); ++i ) {
-			swap( num[start], num[i] );
-			permuteDFS( num, start + 1, res );
-			swap( num[start], num[i] );
+	vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
+		vector<Interval> res = intervals;
+		vector<Interval>::iterator it = res.begin();
+		int overlap = 0;
+		while ( it != res.end() ) {
+			if ( newInterval.end < it->start ) break;
+			else if ( newInterval.start > it->end ) {}
+			else {
+				newInterval.start = min( newInterval.start, it->start );
+				newInterval.end = max( newInterval.end, it->end );
+				++overlap;
+			}
+			++it;
 		}
+		if ( overlap != 0 ) it = res.erase( it - overlap, it );
+		res.insert( it, newInterval );
+		return res;
 	}
 };
 \end{lstlisting}
 \end{enumerate}
 
-\subsection{47}
+\subsection{57}
 \begin{enumerate}
 \item
-Method 1:
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们在一系列非重叠的区间中插入一个新的区间，可能还需要和原有的区间合并，
+那么我们需要对给区间集一个一个的遍历比较，那么会有两种情况，重叠或是不重叠，
+不重叠的情况最好，直接将新区间插入到对应的位置即可，重叠的情况比较复杂，
+有时候会有多个重叠，我们需要更新新区间的范围以便包含所有重叠，
+而且最后处理的时候还需要删除原区间集中所有和新区间重叠的区间，然后插入新区间即可。具体思路如下：
+\begin{itemize}
+\item 对区间集中每个区间进行遍历
+\begin{itemize}
+\item 如果新区间的末尾小于当前区间的开头，则跳出循环
+\item 如果新区间的开头大于当前区间的末尾，不作处理
+\item 如果新区间和当前区间有重叠，则更新新区间的开头为两者最小值，新区间的末尾为两者最大值，重叠数加一
+\item 指针移向下一个区间
+\end{itemize}
+\item 如果重叠数大于0，则删除掉所有的重叠区间
+\item 插入新区间到对应的位置
+\end{itemize}
+\end{CJK}
 \begin{lstlisting}
-class Solution {
-public:
-	vector<vector<int> > permuteUnique( vector<int> &num ) {
-		vector<vector<int> > res;
-		vector<int> out;
-		vector<int> visited( num.size(), 0 );
-		sort( num.begin(), num.end() );
-		permuteUniqueDFS( num, 0, visited, out, res );
-		return res;
-	}
-	void permuteUniqueDFS( vector<int> &num, int level, vector<int> &visited, vector<int> &out, vector<vector<int> > &res ) {
-		if ( level >= num.size() ) res.push_back( out );
+vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
+	vector<Interval> res = intervals;
+	int i = 0, overlap = 0, n = res.size();
+	while ( i < n ) {
+		if ( newInterval.end < res[i].start ) break;
+		else if ( newInterval.start > res[i].end ) {}
 		else {
-			for ( int i = 0; i < num.size(); ++i ) {
-				if ( visited[i] == 0 ) {
-					if ( i > 0 && num[i] == num[i - 1] && visited[i - 1] == 0 ) continue;
-					visited[i] = 1;
-					out.push_back( num[i] );
-					permuteUniqueDFS( num, level + 1, visited, out, res );
-					out.pop_back();
-					visited[i] = 0;
-				}
-			}
+			newInterval.start = min( newInterval.start, res[i].start );
+			newInterval.end = max( newInterval.end, res[i].end );
+			++overlap;
 		}
+		++i;
 	}
-};
-\end{lstlisting}
-\item
-Method 2:
-\begin{lstlisting}
-class Solution {
-public:
-	vector<vector<int>> permuteUnique( vector<int>& nums ) {
-		set<vector<int>> res;
-		permute( nums, 0, res );
-		return vector<vector<int>>( res.begin(), res.end() );
-	}
-	void permute( vector<int> &nums, int start, set<vector<int>> &res ) {
-		if ( start >= nums.size() ) res.insert( nums );
-		for ( int i = start; i < nums.size(); ++i ) {
-			if ( i != start && nums[i] == nums[start] ) continue;
-			swap( nums[i], nums[start] );
-			permute( nums, start + 1, res );
-			swap( nums[i], nums[start] );
-		}
-	}
-};
-\end{lstlisting}
-\end{enumerate}
-
-\subsection{48}
-\begin{lstlisting}
-void rotate( vector<vector<int> > &matrix ) {
-	int n = matrix.size();
-	for ( int i = 0; i < n; ++i ) {
-		for ( int j = i + 1; j < n; ++j ) {
-			swap( matrix[i][j], matrix[j][i] );
-		}
-		reverse( matrix[i].begin(), matrix[i].end() );
-	}
-}
-\end{lstlisting}
-
-\subsection{49}
-\begin{lstlisting}
-vector<string> anagrams( vector<string> &strs ) {
-	vector<string> res;
-	unordered_map<string, int> m;
-	for ( int i = 0; i < strs.size(); ++i ) {
-		string s = strs[i];
-		sort( s.begin(), s.end() );
-		if ( m.find( s ) == m.end() ) {
-			m[s] = i;
-		}
-		else {
-			if ( m[s] >= 0 ) {
-				res.push_back( strs[m[s]] );
-				m[s] = -1;
-			}
-			res.push_back( strs[i] );
-		}
-	}
+	if ( overlap > 0 ) res.erase( res.begin() + i - overlap, res.begin() + i );
+	res.insert( res.begin() + i - overlap, newInterval );
 	return res;
 }
 \end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+对Iterator Pattern比较熟悉的也可应用Iterator来求解，本质还是一样的，只是写法略有不同
+\end{CJK}
+\begin{lstlisting}
+vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
+	vector<Interval> res = intervals;
+	vector<Interval>::iterator it = res.begin();
+	int overlap = 0;
+	while ( it != res.end() ) {
+		if ( newInterval.end < it->start ) break;
+		else if ( newInterval.start > it->end ) {}
+		else {
+			newInterval.start = min( newInterval.start, it->start );
+			newInterval.end = max( newInterval.end, it->end );
+			++overlap;
+		}
+		++it;
+	}
 
+	if ( overlap != 0 ) it = res.erase( it - overlap, it );
+	res.insert( it, newInterval );
+	return res;
+}
+\end{lstlisting}
+\end{enumerate}
+
+\subsection{58}
+\begin{CJK}{UTF8}{gbsn}
+这道题难度不是很大。先对输入字符串做预处理，
+去掉开头和结尾的空格，然后用一个计数器来累计非空格的字符串的长度，遇到空格则将计数器清零
+\end{CJK}
+\begin{lstlisting}
+int lengthOfLastWord( const char *s ) {
+	int len = strlen( s );
+	int left = 0;
+	int right = len - 1;
+	int count = 0;
+	while ( s[left] == ' ' ) ++left;
+	while ( s[right] == ' ' ) --right;
+	for ( int i = left; i <= right; ++i ) {
+		if ( s[i] == ' ' ) count = 0;
+		else ++count;
+	}
+	return count;
+}
+\end{lstlisting}
+
+\subsection{59}
+\begin{CJK}{UTF8}{gbsn}
+此题跟之前那道 Spiral Matrix 螺旋矩阵 本质上没什么区别，
+就相当于个类似逆运算的过程，这道题是要按螺旋的顺序来填数，
+由于给定矩形是个正方形，我们计算环数时用n / 2来计算，
+若n为奇数时，此时最中间的那个点没有被算在环数里，所以最后需要单独赋值，
+还是下标转换问题是难点，参考之前 Spiral Matrix 螺旋矩阵 的讲解来转换下标吧，
+\end{CJK}
+\begin{lstlisting}
+vector<vector<int> > generateMatrix( int n ) {
+	vector<vector<int> > res( n, vector<int>( n, 1 ) );
+	int val = 1, p = n;
+	for ( int i = 0; i < n / 2; ++i, p -= 2 ) {
+		for ( int col = i; col < i + p; ++col )
+			res[i][col] = val++;
+		for ( int row = i + 1; row < i + p; ++row )
+			res[row][i + p - 1] = val++;
+		for ( int col = i + p - 2; col >= i; --col )
+			res[i + p - 1][col] = val++;
+		for ( int row = i + p - 2; row > i; --row )
+			res[row][i] = val++;
+	}
+	if ( n % 2 != 0 ) res[n / 2][n / 2] = val;
+	return res;
+}
+\end{lstlisting}
 \end{document}

@@ -92,3 +92,10 @@ Chapter 3
 		std::thread thr([this](){ mem_fn(); });
 		
 	
+Chapter 7:
+--> Acquire operations: The memory order constraint is that succeeding operations are not reordered before the fence instruction, but no constraint is imposed on preceding memory operations.
+--> Release operations: The memory order constraint is that preceding operations are not reordered beyond the fence instruction, but no constraint is imposed on succeeding memory operations.
+
+1. Mutex locking is an acquired memory operation. Memory operations testing the mutex state will never be moved up on top of the acquire fence.
+2. Mutex unlocking is an release operation. Memory operations updating the mutex protected variable will never be moved down below the release fence.
+3. Mutex locking is not just about mutual exclusion. Mutex locking is also needed to guarantee memory visibility when accessing shared variables.
