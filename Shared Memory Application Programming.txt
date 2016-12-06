@@ -99,3 +99,8 @@ Chapter 7:
 1. Mutex locking is an acquired memory operation. Memory operations testing the mutex state will never be moved up on top of the acquire fence.
 2. Mutex unlocking is an release operation. Memory operations updating the mutex protected variable will never be moved down below the release fence.
 3. Mutex locking is not just about mutual exclusion. Mutex locking is also needed to guarantee memory visibility when accessing shared variables.
+4. The correct way of programming the spin wait is given above. The thread function declares a local flag (called my_flag in the code). Then, the waiting thread enters a do loop in which:
+	--> The mutex is locked-unlocked just to copy the predicate value to the local flag my_flag.
+	--> Then, the value of my_flag is tested to decide if another iteration is required.
+	--> Since the mutex is unlocked at each iteration, other threads have a chance of acquiring it.
+5. 
