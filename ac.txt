@@ -150,6 +150,18 @@ private:
 	priority_queue<long> small, large;
 };
 
+1. 讲一个project, why challenging 这个一定要提前准备好 
+2. stack与heap的区别 
+3. 算法题 median of datastream 
+follow up 1: 如果数字都在1~100（这两个follow up在其他帖子没见到过） follow up 
+2: 如果大部分数字在1~100，小部分在此范围之外 
+每道题解释算法和复杂度 3. malloc与new的区别 
+
+4. mutex是什么，如何设计mutex, 有两个thread同时申请mutex怎么办 
+
+链接: https://instant.1point3acres.com/thread/201454
+来源: 一亩三分地
+
 SF:
 
 Interview Questions

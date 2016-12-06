@@ -90,14 +90,12 @@
 
 \begin{document}
 \section{HOW TO}
-\subsection{40}
+\subsection{50}
 \begin{CJK}{UTF8}{gbsn}
-这道题跟之前那道 Combination Sum 组合之和 本质没有区别，只需要改动一点点即可，
-之前那道题给定数组中的数字可以重复使用，
-而这道题不能重复使用，只需要在之前的基础上修改两个地方即可，
-首先在递归的for循环里加上if (i $>$ start \&\& num[i] == num[i - 1]) continue; 
-这样可以防止res中出现重复项，
-然后就在递归调用combinationSum2DFS里面的参数换成i+1，这样就不会重复使用数组中的数字了
+这道题让我们求x的n次方，如果我们只是简单的用个for循环让x乘以自己n次的话，未免也把LeetCode上的想的太简单了，
+我们可以用递归来折半计算，每次把n缩小一半，这样n最终会缩小到0，任何数的0次方都为1，这时候我们再往回乘，
+如果此时n是偶数，直接把上次递归得到的值算个平方返回即可，如果是奇数，则还需要乘上个x的值。
+还有一点需要引起我们的注意的是n有可能为负数，对于n是负数的情况，我们可以先用其绝对值计算出一个结果再取其倒数即可，代码如下：
 \end{CJK}
 \subsection{41}
 \begin{enumerate}
@@ -124,7 +122,18 @@
 \begin{enumerate}
 \item
 \begin{CJK}{UTF8}{gbsn}
-基于动态规划Dynamic Programming的，我们维护一个一维的dp数组，
+这道收集雨水的题跟之前的那道 Largest Rectangle in Histogram 直方图中最大的矩形 
+有些类似，但是又不太一样，我最先想到的方法有些复杂，
+但是也能通过OJ，想法是遍历数组，找到局部最小值，
+方法是如果当前值大于或等于前一个值，或者当前值大于后一个值则跳过，
+找到了局部最小值后，然后我们首先向左找到左边的最大值，再找右边的最大值，
+找右边最大值时要注意当其大于左边最大时时就停止寻找了，
+然后算出从左边最大值到右边最大值之间能装的水量，
+之后从右边最大值的位置开始继续找局部最小值，以此类推直到遍历完整个数组
+\end{CJK}
+\item
+\begin{CJK}{UTF8}{gbsn}
+这种方法是基于动态规划Dynamic Programming的，我们维护一个一维的dp数组，
 这个DP算法需要遍历两遍数组，第一遍遍历dp[i]中存入i位置左边的最大值，
 然后开始第二遍遍历数组，第二次遍历时找右边最大值，然后和左边最大值比较取其中的较小值，
 然后跟当前值A[i]相比，如果大于当前值，则将差值存入结果
@@ -240,72 +249,47 @@
 \end{CJK}
 
 \section{SOLUTION}
-\subsection{40}
-\begin{lstlisting}
-class Solution {
-public:
-	vector<vector<int> > combinationSum2( vector<int> &num, int target ) {
-		vector<vector<int> > res;
-		vector<int> out;
-		sort( num.begin(), num.end() );
-		combinationSum2DFS( num, target, 0, out, res );
-		return res;
-	}
-	void combinationSum2DFS( vector<int> &num, int target, int start, vector<int> &out, vector<vector<int> > &res ) {
-		if ( target < 0 ) return;
-		else if ( target == 0 ) res.push_back( out );
-		else {
-			for ( int i = start; i < num.size(); ++i ) {
-				if ( i > start && num[i] == num[i - 1] ) continue;
-				out.push_back( num[i] );
-				combinationSum2DFS( num, target - num[i], i + 1, out, res );
-				out.pop_back();
-			}
-		}
-	}
-};
-\end{lstlisting}
-
-\subsection{41}
+\subsection{50}
 \begin{enumerate}
 \item Method 1:
 \begin{lstlisting}
-int firstMissingPositive( int A[], int n ) {
-	if ( n <= 0 ) return 1;
-	unordered_map<int, int> m;
-	int mx = A[0];
-	for ( int i = 0; i < n; ++i ) {
-		if ( A[i] > 0 ) {
-			m[A[i]] = 1;
-			mx = max( mx, A[i] );
-		}
+class Solution {
+public:
+	double myPow( double x, int n ) {
+		if ( n < 0 ) return 1 / power( x, -n );
+		return power( x, n );
 	}
-	for ( int i = 1; i <= mx; ++i ) {
-		if ( m.find( i ) == m.end() ) return i;
+	double power( double x, int n ) {
+		if ( n == 0 ) return 1;
+		double half = power( x, n / 2 );
+		if ( n % 2 == 0 ) return half * half;
+		return x * half * half;
 	}
-	return mx + 1;
-}
+};
 \end{lstlisting}
 \item Method 2:
 \begin{lstlisting}
-int firstMissingPositive( int A[], int n ) {
-	int i = 0;
-	while ( i < n ) {
-		if ( A[i] != i + 1 && A[i] > 0 && A[i] <= n && A[i] != A[A[i] - 1] ) {
-			swap( A[i], A[A[i] - 1] );
-		}
-		else {
-			++i;
-		}
+double myPow( double x, int n ) {
+	if ( n == 0 ) return 1;
+	double half = myPow( x, n / 2 );
+	if ( n % 2 == 0 ) return half * half;
+	else if ( n > 0 ) return half * half * x;
+	else return half * half / x;
+}
+\end{lstlisting}
+\item Method 3:
+\begin{lstlisting}
+double myPow( double x, int n ) {
+	double res = 1.0;
+	for ( int i = n; i != 0; i /= 2 ) {
+		if ( i % 2 != 0 ) res *= x;
+		x *= x;
 	}
-	for ( i = 0; i < n; ++i ) {
-		if ( A[i] != i + 1 ) return i + 1;
-	}
-	return n + 1;
+	return n < 0 ? 1 / res : res;
 }
 \end{lstlisting}
 \end{enumerate}
-
+\subsection{41}
 \subsection{42}
 \begin{enumerate}
 \item
