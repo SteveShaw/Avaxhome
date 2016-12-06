@@ -209,10 +209,46 @@
 
 \subsection{48}
 \begin{CJK}{UTF8}{gbsn}
-
+首先对原数组取其转置矩阵，然后把每行的数字翻转可得到结果
 \end{CJK}
+\[
+  \begin{bmatrix}
+    1 & 2 & 3  \\
+    4 & 5 & 6  \\
+	7 & 8 & 9  \\
+  \end{bmatrix}
+  \rightarrow
+  \begin{bmatrix}
+    1 & 4 & 7  \\
+    2 & 5 & 8  \\
+	3 & 6 & 9  \\
+  \end{bmatrix}
+  \rightarrow
+  \begin{bmatrix}
+    7 & 4 & 1  \\
+    8 & 5 & 2  \\
+	9 & 6 & 3  \\
+  \end{bmatrix}
+\]
 
 \subsection{49}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们找出给定字符串集中所有的错位词，所谓的错位词就是两个字符串中字母出现的次数都一样，
+只是位置不同，比如abc，bac, cba等它们就互为错位词，
+那么我们如何判断两者是否是错位词呢，我们发现如果把错位词的字符顺序重新排列，
+那么会得到相同的结果，所以重新排序是判断是否互为错位词的方法，
+由于我们还要把所有的错位词都存到一个新的向量中，
+所以我们还得知道错位词在原数组中的下标，那么我们可以利用哈希表来把字符和其下标记录起来，那么我们的具体算法为：
+\par
+用map$<$string, int$>$记录排序后的字符串以及首次出现的位置。
+\begin{enumerate}
+\item 从strs的第一个元素开始遍历，首先对元素进行排序得到s；
+\item 在map里查找s；
+\item 若不存在，将s以及该元素的下标存入map；
+\item 若存在，首先将第一次出现s时的原始字符串存入结果res，即strs[map[s]]，并将map[s]设置为$-1$（防止下次再存），再将该字符串本身存入结果res；
+\item 重复以上1--4步，直到遍历结束。
+\end{enumerate}
+\end{CJK}
 
 \section{SOLUTION}
 \subsection{40}
@@ -463,10 +499,38 @@ public:
 
 \subsection{48}
 \begin{lstlisting}
+void rotate( vector<vector<int> > &matrix ) {
+	int n = matrix.size();
+	for ( int i = 0; i < n; ++i ) {
+		for ( int j = i + 1; j < n; ++j ) {
+			swap( matrix[i][j], matrix[j][i] );
+		}
+		reverse( matrix[i].begin(), matrix[i].end() );
+	}
+}
 \end{lstlisting}
 
 \subsection{49}
 \begin{lstlisting}
+vector<string> anagrams( vector<string> &strs ) {
+	vector<string> res;
+	unordered_map<string, int> m;
+	for ( int i = 0; i < strs.size(); ++i ) {
+		string s = strs[i];
+		sort( s.begin(), s.end() );
+		if ( m.find( s ) == m.end() ) {
+			m[s] = i;
+		}
+		else {
+			if ( m[s] >= 0 ) {
+				res.push_back( strs[m[s]] );
+				m[s] = -1;
+			}
+			res.push_back( strs[i] );
+		}
+	}
+	return res;
+}
 \end{lstlisting}
 
 \end{document}
