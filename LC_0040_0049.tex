@@ -89,8 +89,7 @@
 \lstset{escapechar=@,style=customc}
 
 \begin{document}
-\section{HOW TO}
-\subsection{40}
+\section{40}
 \begin{CJK}{UTF8}{gbsn}
 这道题跟之前那道 Combination Sum 组合之和 本质没有区别，只需要改动一点点即可，
 之前那道题给定数组中的数字可以重复使用，
@@ -99,150 +98,6 @@
 这样可以防止res中出现重复项，
 然后就在递归调用combinationSum2DFS里面的参数换成i+1，这样就不会重复使用数组中的数字了
 \end{CJK}
-\subsection{41}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题让我们找缺失的首个正数，由于限定了O(n)的时间，
-所以一般的排序方法都不能用，最开始我没有看到还限制了空间复杂度，
-所以想到了用哈希表来解，这个思路很简单，第一遍遍历数组把所有的数都存入哈希表中，
-并且找出数组的最大值，下次循环从1开始递增找数字，
-哪个数字找不到就返回哪个数字，如果一直找到了最大的数字，则返回最大值+1，
-最后我们再遍历一遍数组，如果对应位置上的数不正确则返回正确的数
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-但是上面的解法不是O(1)的时间复杂度，所以我们需要另想一种解法，
-既然不能建立新的数组，那么我们只能覆盖原有数组，
-我们的思路是把1放在数组第一个位置A[0]，2放在第二个位置A[1]，
-即需要把A[i]放在A[A[i] - 1]上，
-那么我们遍历整个数组，
-如果A[i] != i + 1, 而A[i]为整数且不大于n，另外A[i]不等于A[A[i] - 1]的话，
-我们将两者位置调换，如果不满足上述条件直接跳过，
-\end{CJK}
-\end{enumerate}
-
-\subsection{42}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-基于动态规划Dynamic Programming的，我们维护一个一维的dp数组，
-这个DP算法需要遍历两遍数组，第一遍遍历dp[i]中存入i位置左边的最大值，
-然后开始第二遍遍历数组，第二次遍历时找右边最大值，然后和左边最大值比较取其中的较小值，
-然后跟当前值A[i]相比，如果大于当前值，则将差值存入结果
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-最后我们来看一种只需要遍历一次即可的解法，这个算法需要left和right两个指针分别指向数组的首尾位置，
-从两边向中间扫描，在当前两指针确定的范围内，先比较两头找出较小值，如果较小值是left指向的值，则从左向右扫描，如果较小值是right指向的值，
-则从右向左扫描，若遇到的值比当较小值小，则将差值存入结果，如遇到的值大，则重新确定新的窗口范围，
-以此类推直至left和right指针重合
-\end{CJK}
-\end{enumerate}
-
-\subsection{43}
-\begin{CJK}{UTF8}{gbsn}
-首先我们把每一位相乘，得到一个没有进位的临时结果，
-如图中中间的一行红色数字就是临时结果，
-然后把临时结果从低位起依次进位。
-对于一个m位整数乘以n位整数的结果，最多只有m+n位
-\end{CJK}
-\begin{center}
-\includegraphics[width=0.8\linewidth]{0043.png}
-\end{center}
-\subsection{44}
-\begin{CJK}{UTF8}{gbsn}
-外卡匹配和正则匹配最大的区别就是在星号的使用规则上，对于正则匹配来说，星号不能单独存在，前面必须要有一个字符，而星号存在的意义就是表明前面这个字符的个数可以是任意个，包括0个，那么就是说即使前面这个字符并没有在s中出现过也无所谓，只要后面的能匹配上就可以了。而外卡匹配就不是这样的，外卡匹配中的星号跟前面的字符没有半毛钱关系，如果前面的字符没有匹配上，那么直接返回false了，根本不用管星号。而星号存在的作用是可以表示任意的字符串，
-当然只是当匹配字符串缺少一些字符的时候起作用，当匹配字符串包含目标字符串没有的字符时，将无法成功匹配。
-\end{CJK}
-\subsection{45}
-\begin{CJK}{UTF8}{gbsn}
-这题是之前那道Jump Game 跳跃游戏 的延伸，那题是问能不能到达最后一个数字，而此题只让我们求到达最后一个位置的最少跳跃数，
-貌似是默认一定能到达最后位置的? 此题的核心方法还是利用动态规划Dynamic Programming的思想来解，
-我们需要两个变量cur和pre分别来保存当前的能到达的最远位置和之前能到达的最远位置，
-只要cur未达到最后一个位置则循环继续，pre记录cur的值，如果当前位置i小于等于pre，则更新cur然后i自增1。
-更新cur的方法是比较当前的cur和i + A[i]之中的较大值，等i循环到pre的值时，
-跳跃的步数加一，如果题目中未说明是否能到达末尾，我们还可以判断此时pre和cur是否相等，
-如果相等说明cur没有更新，即无法到达末尾位置，返回$-1$，
-\end{CJK}
-
-\subsection{46}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题是求全排列问题，给的输入数组没有重复项，这跟之前的那道 Combinations 组合项 和类似，解法基本相同，
-但是不同点在于那道不同的数字顺序只算一种，是一道典型的组合题，而此题是求全排列问题，
-还是用递归DFS来求解。这里我们需要用到一个visited数组来标记某个数字是否访问过，
-然后在DFS递归函数从的循环应从头开始，而不是从level开始，
-这是和 Combinations 组合项 不同的地方，其余思路大体相同
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-递归的写法更简单一些，每次交换num里面的两个数字，经过递归可以生成所有的排列情况
-\end{CJK}
-\end{enumerate}
-
-\subsection{47}
-\begin{enumerate}
-\item
-\begin{CJK}{UTF8}{gbsn}
-这道题是之前那道 Permutations 全排列的延伸，由于输入数组有可能出现重复数字，如果按照之前的算法运算，会有重复排列产生，我们要避免重复的产生，
-在递归函数中要判断前面一个数和当前的数是否相等，如果相等，前面的数必须已经使用了，
-即对应的visited中的值为1，当前的数字才能使用，否则需要跳过，这样就不会产生重复排列了，
-\end{CJK}
-\item
-\begin{CJK}{UTF8}{gbsn}
-还有一种比较简便的方法，在Permutations的基础上稍加修改，
-我们用set来保存结果，利用其不会有重复项的特点，然后我们再递归函数中的swap的地方，
-判断如果i和start不相同，但是nums[i]和nums[start]相同的情况下跳过，继续下一个循环
-\end{CJK}
-\end{enumerate}
-
-\subsection{48}
-\begin{CJK}{UTF8}{gbsn}
-首先对原数组取其转置矩阵，然后把每行的数字翻转可得到结果
-\end{CJK}
-\[
-  \begin{bmatrix}
-    1 & 2 & 3  \\
-    4 & 5 & 6  \\
-	7 & 8 & 9  \\
-  \end{bmatrix}
-  \rightarrow
-  \begin{bmatrix}
-    1 & 4 & 7  \\
-    2 & 5 & 8  \\
-	3 & 6 & 9  \\
-  \end{bmatrix}
-  \rightarrow
-  \begin{bmatrix}
-    7 & 4 & 1  \\
-    8 & 5 & 2  \\
-	9 & 6 & 3  \\
-  \end{bmatrix}
-\]
-
-\subsection{49}
-\begin{CJK}{UTF8}{gbsn}
-这道题让我们找出给定字符串集中所有的错位词，所谓的错位词就是两个字符串中字母出现的次数都一样，
-只是位置不同，比如abc，bac, cba等它们就互为错位词，
-那么我们如何判断两者是否是错位词呢，我们发现如果把错位词的字符顺序重新排列，
-那么会得到相同的结果，所以重新排序是判断是否互为错位词的方法，
-由于我们还要把所有的错位词都存到一个新的向量中，
-所以我们还得知道错位词在原数组中的下标，那么我们可以利用哈希表来把字符和其下标记录起来，那么我们的具体算法为：
-\par
-用map$<$string, int$>$记录排序后的字符串以及首次出现的位置。
-\begin{enumerate}
-\item 从strs的第一个元素开始遍历，首先对元素进行排序得到s；
-\item 在map里查找s；
-\item 若不存在，将s以及该元素的下标存入map；
-\item 若存在，首先将第一次出现s时的原始字符串存入结果res，即strs[map[s]]，并将map[s]设置为$-1$（防止下次再存），再将该字符串本身存入结果res；
-\item 重复以上1--4步，直到遍历结束。
-\end{enumerate}
-\end{CJK}
-
-\section{SOLUTION}
-\subsection{40}
 \begin{lstlisting}
 class Solution {
 public:
@@ -268,9 +123,17 @@ public:
 };
 \end{lstlisting}
 
-\subsection{41}
+\section{41}
 \begin{enumerate}
-\item Method 1:
+\item
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们找缺失的首个正数，由于限定了O(n)的时间，
+所以一般的排序方法都不能用，最开始我没有看到还限制了空间复杂度，
+所以想到了用哈希表来解，这个思路很简单，第一遍遍历数组把所有的数都存入哈希表中，
+并且找出数组的最大值，下次循环从1开始递增找数字，
+哪个数字找不到就返回哪个数字，如果一直找到了最大的数字，则返回最大值+1，
+最后我们再遍历一遍数组，如果对应位置上的数不正确则返回正确的数
+\end{CJK}
 \begin{lstlisting}
 int firstMissingPositive( int A[], int n ) {
 	if ( n <= 0 ) return 1;
@@ -288,7 +151,16 @@ int firstMissingPositive( int A[], int n ) {
 	return mx + 1;
 }
 \end{lstlisting}
-\item Method 2:
+\item
+\begin{CJK}{UTF8}{gbsn}
+但是上面的解法不是O(1)的时间复杂度，所以我们需要另想一种解法，
+既然不能建立新的数组，那么我们只能覆盖原有数组，
+我们的思路是把1放在数组第一个位置A[0]，2放在第二个位置A[1]，
+即需要把A[i]放在A[A[i] - 1]上，
+那么我们遍历整个数组，
+如果A[i] != i + 1, 而A[i]为整数且不大于n，另外A[i]不等于A[A[i] - 1]的话，
+我们将两者位置调换，如果不满足上述条件直接跳过，
+\end{CJK}
 \begin{lstlisting}
 int firstMissingPositive( int A[], int n ) {
 	int i = 0;
@@ -308,36 +180,15 @@ int firstMissingPositive( int A[], int n ) {
 \end{lstlisting}
 \end{enumerate}
 
-\subsection{42}
+\section{42}
 \begin{enumerate}
 \item
-Method 1:
-\begin{lstlisting}
-int trap( int A[], int n ) {
-	int res = 0, left = 0, right = 0, level = 0;
-	for ( int i = 1; i < n - 1; ++i ) {
-		if ( A[i] >= A[i - 1] || A[i] > A[i + 1] ) continue;
-		for ( left = i - 1; left > 0; --left ) {
-			if ( A[left] >= A[left - 1] ) break;
-		}
-		right = i + 1;
-		for ( int j = i + 1; j < n; ++j ) {
-			if ( A[j] >= A[right] ) {
-				right = j;
-				if ( A[right] >= A[left] ) break;
-			}
-		}
-		level = min( A[left], A[right] );
-		for ( int j = left + 1; j < right; ++j ) {
-			if ( level - A[j] > 0 ) res += (level - A[j]);
-		}
-		i = right;
-	}
-	return res;
-}
-\end{lstlisting}
-\item
-Method 2:
+\begin{CJK}{UTF8}{gbsn}
+基于动态规划Dynamic Programming的，我们维护一个一维的dp数组，
+这个DP算法需要遍历两遍数组，第一遍遍历dp[i]中存入i位置左边的最大值，
+然后开始第二遍遍历数组，第二次遍历时找右边最大值，然后和左边最大值比较取其中的较小值，
+然后跟当前值A[i]相比，如果大于当前值，则将差值存入结果
+\end{CJK}
 \begin{lstlisting}
 int trap( int A[], int n ) {
 	int res = 0, mx = 0;
@@ -356,7 +207,12 @@ int trap( int A[], int n ) {
 }
 \end{lstlisting}
 \item
-Method 3:
+\begin{CJK}{UTF8}{gbsn}
+最后我们来看一种只需要遍历一次即可的解法，这个算法需要left和right两个指针分别指向数组的首尾位置，
+从两边向中间扫描，在当前两指针确定的范围内，先比较两头找出较小值，如果较小值是left指向的值，则从左向右扫描，如果较小值是right指向的值，
+则从右向左扫描，若遇到的值比当较小值小，则将差值存入结果，如遇到的值大，则重新确定新的窗口范围，
+以此类推直至left和right指针重合
+\end{CJK}
 \begin{lstlisting}
 int trap( int A[], int n ) {
 	int res = 0, left = 0, right = n - 1;
@@ -382,7 +238,16 @@ int trap( int A[], int n ) {
 \end{lstlisting}
 \end{enumerate}
 
-\subsection{43}
+\section{43}
+\begin{CJK}{UTF8}{gbsn}
+首先我们把每一位相乘，得到一个没有进位的临时结果，
+如图中中间的一行红色数字就是临时结果，
+然后把临时结果从低位起依次进位。
+对于一个m位整数乘以n位整数的结果，最多只有m+n位
+\end{CJK}
+\begin{center}
+\includegraphics{0043.png}
+\end{center}
 \begin{lstlisting}
 string multiply( string num1, string num2 ) {
 	string res;
@@ -407,7 +272,12 @@ string multiply( string num1, string num2 ) {
 	return res;
 }
 \end{lstlisting}
-\subsection{44}
+
+\section{44}
+\begin{CJK}{UTF8}{gbsn}
+外卡匹配和正则匹配最大的区别就是在星号的使用规则上，对于正则匹配来说，星号不能单独存在，前面必须要有一个字符，而星号存在的意义就是表明前面这个字符的个数可以是任意个，包括0个，那么就是说即使前面这个字符并没有在s中出现过也无所谓，只要后面的能匹配上就可以了。而外卡匹配就不是这样的，外卡匹配中的星号跟前面的字符没有半毛钱关系，如果前面的字符没有匹配上，那么直接返回false了，根本不用管星号。而星号存在的作用是可以表示任意的字符串，
+当然只是当匹配字符串缺少一些字符的时候起作用，当匹配字符串包含目标字符串没有的字符时，将无法成功匹配。
+\end{CJK}
 \begin{lstlisting}
 bool isMatch( string s, string p ) {
 	int m = s.size(), n = p.size();
@@ -429,7 +299,17 @@ bool isMatch( string s, string p ) {
 	return dp[m][n];
 }
 \end{lstlisting}
-\subsection{45}
+
+\section{45}
+\begin{CJK}{UTF8}{gbsn}
+这题是之前那道Jump Game 跳跃游戏 的延伸，那题是问能不能到达最后一个数字，而此题只让我们求到达最后一个位置的最少跳跃数，
+貌似是默认一定能到达最后位置的? 此题的核心方法还是利用动态规划Dynamic Programming的思想来解，
+我们需要两个变量cur和pre分别来保存当前的能到达的最远位置和之前能到达的最远位置，
+只要cur未达到最后一个位置则循环继续，pre记录cur的值，如果当前位置i小于等于pre，则更新cur然后i自增1。
+更新cur的方法是比较当前的cur和i + A[i]之中的较大值，等i循环到pre的值时，
+跳跃的步数加一，如果题目中未说明是否能到达末尾，我们还可以判断此时pre和cur是否相等，
+如果相等说明cur没有更新，即无法到达末尾位置，返回$-1$，
+\end{CJK}
 \begin{lstlisting}
 int jump( int A[], int n ) {
 	int res = 0, i = 0, cur = 0;
@@ -445,10 +325,17 @@ int jump( int A[], int n ) {
 	return res;
 }
 \end{lstlisting}
-\subsection{46}
+
+\section{46}
 \begin{enumerate}
 \item
-Method 1:
+\begin{CJK}{UTF8}{gbsn}
+这道题是求全排列问题，给的输入数组没有重复项，这跟之前的那道 Combinations 组合项 和类似，解法基本相同，
+但是不同点在于那道不同的数字顺序只算一种，是一道典型的组合题，而此题是求全排列问题，
+还是用递归DFS来求解。这里我们需要用到一个visited数组来标记某个数字是否访问过，
+然后在DFS递归函数从的循环应从头开始，而不是从level开始，
+这是和 Combinations 组合项 不同的地方，其余思路大体相同
+\end{CJK}
 \begin{lstlisting}
 class Solution {
 public:
@@ -476,7 +363,9 @@ public:
 };
 \end{lstlisting}
 \item
-Method 2:
+\begin{CJK}{UTF8}{gbsn}
+递归的写法更简单一些，每次交换num里面的两个数字，经过递归可以生成所有的排列情况
+\end{CJK}
 \begin{lstlisting}
 class Solution {
 public:
@@ -497,10 +386,14 @@ public:
 \end{lstlisting}
 \end{enumerate}
 
-\subsection{47}
+\section{47}
 \begin{enumerate}
 \item
-Method 1:
+\begin{CJK}{UTF8}{gbsn}
+这道题是之前那道 Permutations 全排列的延伸，由于输入数组有可能出现重复数字，如果按照之前的算法运算，会有重复排列产生，我们要避免重复的产生，
+在递归函数中要判断前面一个数和当前的数是否相等，如果相等，前面的数必须已经使用了，
+即对应的visited中的值为1，当前的数字才能使用，否则需要跳过，这样就不会产生重复排列了，
+\end{CJK}
 \begin{lstlisting}
 class Solution {
 public:
@@ -530,7 +423,11 @@ public:
 };
 \end{lstlisting}
 \item
-Method 2:
+\begin{CJK}{UTF8}{gbsn}
+还有一种比较简便的方法，在Permutations的基础上稍加修改，
+我们用set来保存结果，利用其不会有重复项的特点，然后我们再递归函数中的swap的地方，
+判断如果i和start不相同，但是nums[i]和nums[start]相同的情况下跳过，继续下一个循环
+\end{CJK}
 \begin{lstlisting}
 class Solution {
 public:
@@ -552,7 +449,29 @@ public:
 \end{lstlisting}
 \end{enumerate}
 
-\subsection{48}
+\section{48}
+\begin{CJK}{UTF8}{gbsn}
+首先对原数组取其转置矩阵，然后把每行的数字翻转可得到结果
+\end{CJK}
+\[
+  \begin{bmatrix}
+    1 & 2 & 3  \\
+    4 & 5 & 6  \\
+	7 & 8 & 9  \\
+  \end{bmatrix}
+  \rightarrow
+  \begin{bmatrix}
+    1 & 4 & 7  \\
+    2 & 5 & 8  \\
+	3 & 6 & 9  \\
+  \end{bmatrix}
+  \rightarrow
+  \begin{bmatrix}
+    7 & 4 & 1  \\
+    8 & 5 & 2  \\
+	9 & 6 & 3  \\
+  \end{bmatrix}
+\]
 \begin{lstlisting}
 void rotate( vector<vector<int> > &matrix ) {
 	int n = matrix.size();
@@ -565,7 +484,24 @@ void rotate( vector<vector<int> > &matrix ) {
 }
 \end{lstlisting}
 
-\subsection{49}
+\section{49}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们找出给定字符串集中所有的错位词，所谓的错位词就是两个字符串中字母出现的次数都一样，
+只是位置不同，比如abc，bac, cba等它们就互为错位词，
+那么我们如何判断两者是否是错位词呢，我们发现如果把错位词的字符顺序重新排列，
+那么会得到相同的结果，所以重新排序是判断是否互为错位词的方法，
+由于我们还要把所有的错位词都存到一个新的向量中，
+所以我们还得知道错位词在原数组中的下标，那么我们可以利用哈希表来把字符和其下标记录起来，那么我们的具体算法为：
+\par
+用map$<$string, int$>$记录排序后的字符串以及首次出现的位置。
+\begin{enumerate}
+\item 从strs的第一个元素开始遍历，首先对元素进行排序得到s；
+\item 在map里查找s；
+\item 若不存在，将s以及该元素的下标存入map；
+\item 若存在，首先将第一次出现s时的原始字符串存入结果res，即strs[map[s]]，并将map[s]设置为$-1$（防止下次再存），再将该字符串本身存入结果res；
+\item 重复以上1--4步，直到遍历结束。
+\end{enumerate}
+\end{CJK}
 \begin{lstlisting}
 vector<string> anagrams( vector<string> &strs ) {
 	vector<string> res;
