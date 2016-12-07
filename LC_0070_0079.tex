@@ -1,0 +1,260 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{charter}
+%\usepackage[latin1]{inputenc}
+\usepackage[left=1.50cm, right=1.50cm, top=1.20cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\usepackage{float}
+\usepackage{CJKutf8}
+\usepackage{textcomp}
+\usepackage{hyperref}
+%\lstset{
+%	backgroundcolor=\color{lbcolor},
+%	tabsize=4,    
+%	%   rulecolor=,
+%	language=[GNU]C++,
+%	basicstyle=\scriptsize,
+%	upquote=true,
+%	aboveskip={1.5\baselineskip},
+%	columns=fixed,
+%	showstringspaces=false,
+%	extendedchars=false,
+%	breaklines=true,
+%	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+%	frame=single,
+%	numbers=left,
+%	showtabs=false,
+%	showspaces=false,
+%	showstringspaces=false,
+%	identifierstyle=\ttfamily,
+%	keywordstyle=\color[rgb]{0,0,1},
+%	commentstyle=\color[rgb]{0.026,0.112,0.095},
+%	stringstyle=\color[rgb]{0.627,0.126,0.941},
+%	numberstyle=\color[rgb]{0.205, 0.142, 0.73},
+%	%        \lstdefinestyle{C++}{language=C++,style=numbers}?.
+%}
+%\lstset{
+%	backgroundcolor=\color{lbcolor},
+%	tabsize=4,
+%	language=C++,
+%	captionpos=b,
+%	tabsize=3,
+%	frame=lines,
+%	numbers=left,
+%	numberstyle=\tiny,
+%	numbersep=5pt,
+%	breaklines=true,
+%	showstringspaces=false,
+%	basicstyle=\footnotesize,
+%	%  identifierstyle=\color{magenta},
+%	keywordstyle=\color[rgb]{0,0,1},
+%	commentstyle=\color{Darkgreen},
+%	stringstyle=\color{red}
+%}
+
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	aboveskip={1.2\baselineskip},
+	breaklines=true,
+	frame=lines,
+	numbers=left,
+	xleftmargin=\parindent,
+	language=C++,
+	showstringspaces=false,
+	basicstyle=\sffamily,%,\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+	breaklines=true,
+	postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+
+\lstdefinestyle{customasm}{
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=[x86masm]Assembler,
+	basicstyle=\footnotesize\ttfamily,
+	commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+\begin{document}
+\section{70}
+Too easy. Skip
+
+\section{71}
+\begin{CJK}{UTF8}{gbsn}
+这道题让简化给定的路径，光根据题目中给的那一个例子还真不太好总结出规律，应该再加上两个例子 path = ``/a/./b/../c/'', $\Rightarrow$ ``/a/c''和 path = ``/a/./b/c/'', $\Rightarrow$ ``/a/b/c''， 这样我们就可以知道中间是``.''的情况直接去掉，是``..''时删掉它上面挨着的一个路径，而下面的边界条件给的一些情况中可以得知，如果是空的话返回``/''，如果有多个``/''只保留一个。那么我们可以把路径看做是由一个或多个``/''分割开的众多子字符串，把它们分别提取出来一一处理即可
+\end{CJK}
+\begin{lstlisting}
+string simplifyPath( string path ) {
+	string res, t;
+	stringstream ss( path );
+	vector<string> v;
+	while ( getline( ss, t, '/' ) ) {
+		if ( t == "" || t == "." ) continue;
+		if ( t == ".." && !v.empty() ) v.pop_back();
+		else if ( t != ".." ) v.push_back( t );
+	}
+	for ( string s : v ) res += "/" + s;
+	return res.empty() ? "/" : res;
+}
+\end{lstlisting}
+
+
+\section{72}
+\begin{CJK}{UTF8}{gbsn}
+这道题让求从一个字符串转变到另一个字符串需要的变换步骤，共有三种变换方式，插入一个字符，删除一个字符，和替换一个字符。根据以往的经验，对于字符串相关的题目十有八九都是用动态规划Dynamic Programming来解，这道题也不例外。这道题我们需要维护一个二维的数组dp，其中dp[i][j]表示从word1的前i个字符转换到word2的前j个字符所需要的步骤。那我们可以先给这个二维数组dp的第一行第一列赋值，这个很简单，因为第一行和第一列对应的总有一个字符串是空串，于是转换步骤完全是另一个字符串的长度。跟以往的DP题目类似，难点还是在于找出递推式，我们可以得到dp数组如下：
+\end{CJK}
+\par
+dp[i][j] = dp[i-1][j-1] if word1[i-1] == word2[j-1]
+\par
+dp[i][j] = min( dp[i-1][j-1], dp[i][j-1], dp[i-1][j]) + 1 if word1[i-1] != word2[j-1]
+\begin{lstlisting}
+int minDistance( string word1, string word2 ) {
+	int n1 = word1.size(), n2 = word2.size();
+	int dp[n1 + 1][n2 + 1];
+	for ( int i = 0; i <= n1; ++i ) dp[i][0] = i;
+	for ( int i = 0; i <= n2; ++i ) dp[0][i] = i;
+	for ( int i = 1; i <= n1; ++i ) {
+		for ( int j = 1; j <= n2; ++j ) {
+			if ( word1[i - 1] == word2[j - 1] ) {
+				dp[i][j] = dp[i - 1][j - 1];
+			}
+			else {
+				dp[i][j] = min( dp[i - 1][j - 1], min( dp[i - 1][j], dp[i][j - 1] ) ) + 1;
+			}
+		}
+	}
+	return dp[n1][n2];
+}
+\end{lstlisting}
+
+\section{73}
+\begin{CJK}{UTF8}{gbsn}
+这道题中说的空间复杂度为$O(mn)$的解法自不用多说，直接新建一个和matrix等大小的矩阵，然后一行一行的扫，只要有0，就将新建的矩阵的对应行全赋0，行扫完再扫列，然后把更新完的矩阵赋给matrix即可，这个算法的空间复杂度太高。将其优化到$O(m+n)$的方法是，用一个长度为m的一维数组记录各行中是否有0，用一个长度为n的一维数组记录各列中是否有0，最后直接更新matrix数组即可。这道题的要求是用O(1)的空间，那么我们就不能新建数组，我们考虑就用原数组的第一行第一列来记录各行各列是否有0.
+\begin{itemize}
+\item 先扫描第一行第一列，如果有0，则将各自的flag设置为true
+\item 然后扫描非第一行第一列的整个数组，如果有0，则将对应的第一行和第一列的数字赋0
+\item 再次遍历非第一行第一列的整个数组，如果对应的第一行和第一列的数字有一个为0，则将当前值赋0
+\item 最后根据第一行第一列的flag来更新第一行第一列
+\end{itemize}
+\end{CJK}
+\begin{lstlisting}
+void setZeroes( vector<vector<int> > &matrix ) {
+	if ( matrix.empty() || matrix[0].empty() ) return;
+	int m = matrix.size(), n = matrix[0].size();
+	bool rowZero = false, colZero = false;
+	for ( int i = 0; i < m; ++i ) {
+		if ( matrix[i][0] == 0 ) colZero = true;
+	}
+	for ( int i = 0; i < n; ++i ) {
+		if ( matrix[0][i] == 0 ) rowZero = true;
+	}
+	for ( int i = 1; i < m; ++i ) {
+		for ( int j = 1; j < n; ++j ) {
+			if ( matrix[i][j] == 0 ) {
+				matrix[0][j] = 0;
+				matrix[i][0] = 0;
+			}
+		}
+	}
+	for ( int i = 1; i < m; ++i ) {
+		for ( int j = 1; j < n; ++j ) {
+			if ( matrix[0][j] == 0 || matrix[i][0] == 0 ) {
+				matrix[i][j] = 0;
+			}
+		}
+	}
+	if ( rowZero ) {
+		for ( int i = 0; i < n; ++i ) matrix[0][i] = 0;
+	}
+	if ( colZero ) {
+		for ( int i = 0; i < m; ++i ) matrix[i][0] = 0;
+	}
+}
+\end{lstlisting}
+
+\section{74}
+\begin{enumerate}
+\item
+\begin{CJK}{UTF8}{gbsn}
+这道题要求搜索一个二维矩阵，由于给的矩阵是有序的，所以很自然的想到要用二分查找法，我们可以在第一列上先用一次二分查找法找到目标值所在的行的位置，然后在该行上再用一次二分查找法来找是否存在目标值
+\end{CJK}
+\begin{lstlisting}
+bool searchMatrix( vector<vector<int> > &matrix, int target ) {
+	if ( matrix.empty() || matrix[0].empty() ) return false;
+	if ( target < matrix[0][0] || target > matrix.back().back() ) return false;
+	int left = 0, right = matrix.size() - 1;
+	while ( left <= right ) {
+		int mid = (left + right) / 2;
+		if ( matrix[mid][0] == target ) return true;
+		else if ( matrix[mid][0] < target ) left = mid + 1;
+		else right = mid - 1;
+	}
+	int tmp = right;
+	left = 0;
+	right = matrix[tmp].size() - 1;
+	while ( left <= right ) {
+		int mid = (left + right) / 2;
+		if ( matrix[tmp][mid] == target ) return true;
+		else if ( matrix[tmp][mid] < target ) left = mid + 1;
+		else right = mid - 1;
+	}
+	return false;
+}
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+当然这道题也可以使用一次二分查找法，如果我们按S型遍历该二维数组，可以得到一个有序的一维数组，那么我们只需要用一次二分查找法，而关键就在于坐标的转换，如何把二维坐标和一维坐标转换是关键点，把一个长度为n的一维数组转化为$r\times c$的二维数组( $r\times c = n$ )后，那么原一维数组中下标为i的元素将出现在二维数组中的$[i/n][i\%n]$的位置
+\end{CJK}
+\begin{lstlisting}
+bool searchMatrix( vector<vector<int> > &matrix, int target ) {
+	if ( matrix.empty() || matrix[0].empty() ) return false;
+	if ( target < matrix[0][0] || target > matrix.back().back() ) return false;
+	int m = matrix.size(), n = matrix[0].size();
+	int left = 0, right = m * n - 1;
+	while ( left <= right ) {
+		int mid = (left + right) / 2;
+		if ( matrix[mid / n][mid % n] == target ) return true;
+		else if ( matrix[mid / n][mid % n] < target ) left = mid + 1;
+		else right = mid - 1;
+	}
+	return false;
+}
+\end{lstlisting}
+\end{enumerate}
+
+\section{75}
+\begin{CJK}{UTF8}{gbsn}
+用双指针来做，分别从原数组的首尾往中心移动。
+\begin{itemize}
+\item 定义red指针指向开头位置，blue指针指向末尾位置
+\item 从头开始遍历原数组，如果遇到0，则交换该值和red指针指向的值，并将red指针后移一位。若遇到2，则交换该值和blue指针指向的值，并将blue指针前移一位。若遇到1，则继续遍历。
+\end{itemize}
+\end{CJK}
+\begin{lstlisting}
+void sortColors( int A[], int n ) {
+	int red = 0, blue = n - 1;
+	for ( int i = 0; i <= blue; ++i ) {
+		if ( A[i] == 0 ) {
+			swap( A[i], A[red++] );
+		}
+		else if ( A[i] == 2 ) {
+			swap( A[i--], A[blue--] );
+		}
+	}
+}
+\end{lstlisting}
+\end{document}
