@@ -80,372 +80,422 @@
 
 \begin{document}
 \section{20}
-\begin{CJK}{UTF8}{gbsn}
-\end{CJK}
-\begin{lstlisting}
-\end{lstlisting}
+SKIP: (too easy)
 
-\section{31}
+\section{21}
 \begin{CJK}{UTF8}{gbsn}
-这道题让我们求下一个排列顺序，有题目中给的例子可以看出来，如果给定数组是降序，则说明是全排列的最后一种情况，则下一个排列就是最初始情况，可以参见之前的博客 Permutations 全排列。我们再来看下面一个例子，有如下的一个数组
+新建一个链表，然后比较两个链表中的元素值，把较小的那个链到新链表中，由于两个输入链表的长度可能不同，所以最终会有一个链表先完成插入所有元素，则直接另一个未完成的链表直接链入新链表的末尾
 \end{CJK}
-\begin{center}
-\begin{tabular}{*{6}{c}}
-1 & 2 & 7 & 4 & 3 & 1\\
-\end{tabular}
-\end{center}
-\begin{CJK}{UTF8}{gbsn}
-下一个排列为：
-\end{CJK}
-\begin{center}
-\begin{tabular}{*{6}{c}}
-1 & 3 & 1 & 2 & 4 & 7\\
-\end{tabular}
-\end{center}
-\begin{CJK}{UTF8}{gbsn}
-那么是如何得到的呢，我们通过观察原数组可以发现，如果从末尾往前看，数字逐渐变大，到了2时才减小的，然后我们再从后往前找第一个比2大的数字，是3，那么我们交换2和3，再把此时3后面的所有数字转置一下即可，步骤如下：
-\end{CJK}
-\begin{center}
-\begin{tabular}{*{6}{c}}
-1 & [2] & 7 & 4 & 3 & 1\\
-1 & [3] & 7 & 4 & [2] & 1\\
-1 & 3 & [1] & [2] & [4] & [7]\\
-\end{tabular}
-\end{center}
-\begin{lstlisting}
-void nextPermutation( vector<int> &num ) {
-	int i, j, n = num.size();
-	for ( i = n - 2; i >= 0; --i ) {
-		if ( num[i + 1] > num[i] ) {
-			for ( j = n - 1; j >= i; --j ) {
-				if ( num[j] > num[i] ) break;
-			}
-			swap( num[i], num[j] );
-			reverse( num.begin() + i + 1, num.end() );
-			return;
+ListNode *mergeTwoLists( ListNode *l1, ListNode *l2 ) {
+	ListNode *res = new ListNode( 0 );
+	ListNode *cur = res;
+	while ( l1 && l2 ) {
+		if ( l1->val < l2->val ) {
+			cur->next = l1;
+			l1 = l1->next;
 		}
+		else {
+			cur->next = l2;
+			l2 = l2->next;
+		}
+		cur = cur->next;
 	}
-	reverse( num.begin(), num.end() );
+	if ( l1 ) cur->next = l1;
+	if ( l2 ) cur->next = l2;
+	return res->next;
 }
 \end{lstlisting}
 
 
-\section{32}
+\section{22}
+\begin{enumerate}
+\item
 \begin{CJK}{UTF8}{gbsn}
-这道求最长有效括号比之前那道 Valid Parentheses 验证括号难度要大一些，这里我们还是借助栈来求解，需要定义个start变量来记录合法括号串的起始位置，我们遍历字符串，如果遇到左括号，则将当前下标压入栈，如果遇到右括号，如果当前栈为空，则将下一个坐标位置记录到start，如果栈不为空，则将栈顶元素取出，此时若栈为空，则更新结果和i $-$ start $+$ 1中的较大值，否则更新结果和i $-$ 栈顶元素中的较大值
+在LeetCode中有关括号的题共有三道，除了这一道的另外两道是 Valid Parentheses 验证括号和 Longest Valid Parentheses 最长有效括号，这道题给定一个数字n，让生成共有n个括号的所有正确的形式，对于这种列出所有结果的题首先还是考虑用递归Recursion来解，由于字符串只有左括号和右括号两种字符，而且最终结果必定是左括号3个，右括号3个，所以我们定义两个变量left和right分别表示剩余左右括号的个数，如果在某次递归时，左括号的个数大于右括号的个数，说明此时生成的字符串中右括号的个数大于左括号的个数，即会出现`)('这样的非法串，所以这种情况直接返回，不继续处理。如果left和right都为0，则说明此时生成的字符串已有3个左括号和3个右括号，且字符串合法，则存入结果中后返回。如果以上两种情况都不满足，若此时left大于0，则调用递归函数，注意参数的更新，若right大于0，则调用递归函数，同样要更新参数
 \end{CJK}
 \begin{lstlisting}
-int longestValidParentheses( string s ) {
-	int res = 0, start = 0;
-	stack<int> m;
-	for ( int i = 0; i < s.size(); ++i ) {
-		if ( s[i] == '(' ) m.push( i );
-		else if ( s[i] == ')' ) {
-			if ( m.empty() ) start = i + 1;
+class Solution {
+public:
+	vector<string> generateParenthesis( int n ) {
+		vector<string> res;
+		generateParenthesisDFS( n, n, "", res );
+		return res;
+	}
+	void generateParenthesisDFS( int left, int right, string out, vector<string> &res ) {
+		if ( left > right ) return;
+		if ( left == 0 && right == 0 ) res.push_back( out );
+		else {
+			if ( left > 0 ) generateParenthesisDFS( left - 1, right, out + '(', res );
+			if ( right > 0 ) generateParenthesisDFS( left, right - 1, out + ')', res );
+		}
+	}
+};
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+再来看那一种方法，这种方法是CareerCup书上给的方法，感觉也是满巧妙的一种方法，这种方法的思想是找左括号，每找到一个左括号，就在其后面加一个完整的括号，最后再在开头加一个()，就形成了所有的情况，需要注意的是，有时候会出现重复的情况，所以我们用set数据结构，好处是如果遇到重复项，不会加入到结果中，最后我们再把set转为vector即可
+\end{CJK}
+\begin{lstlisting}
+vector<string> generateParenthesis( int n ) {
+	set<string> t;
+	if ( n == 0 ) t.insert( "" );
+	else {
+		vector<string> pre = generateParenthesis( n - 1 );
+		for ( auto a : pre ) {
+			for ( int i = 0; i < a.size(); ++i ) {
+				if ( a[i] == '(' ) {
+					a.insert( a.begin() + i + 1, '(' );
+					a.insert( a.begin() + i + 2, ')' );
+					t.insert( a );
+					a.erase( a.begin() + i + 1, a.begin() + i + 3 );
+				}
+			}
+			t.insert( "()" + a );
+		}
+	}
+	return vector<string>( t.begin(), t.end() );
+}
+\end{lstlisting}
+\end{enumerate}
+
+\section{23}
+\begin{enumerate}
+\item
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们合并k个有序链表，之前我们做过一道Merge Two Sorted Lists 混合插入有序链表，是混合插入两个有序链表。这道题增加了难度，变成合并k个有序链表了，但是不管合并几个，基本还是要两两合并。那么我们首先考虑的方法是能不能利用之前那道题的解法来解答此题。答案是肯定的，但是需要修改，怎么修改呢，最先想到的就是两两合并，就是前两个先合并，合并好了再跟第三个，然后第四个直到第k个。这样的思路是对的，但是效率不高，没法通过OJ，所以我们只能换一种思路，这里就需要用到分治法 Divide and Conquer Approach。简单来说就是不停的对半划分，比如k个链表先划分为合并两个$k/2$个链表的任务，再不停的往下划分，直到划分成只有一个或两个链表的任务，开始合并。举个例子来说比如合并6个链表，那么按照分治法，我们首先分别合并1和4,2和5,3和6。这样下一次只需合并3个链表，我们再合并1和3，最后和2合并就可以了
+\end{CJK}
+\begin{lstlisting}
+class Solution {
+public:
+	ListNode *mergeKLists( vector<ListNode *> &lists ) {
+		if ( lists.size() == 0 ) return NULL;
+		int n = lists.size();
+		while ( n > 1 ) {
+			int k = (n + 1) / 2;
+			for ( int i = 0; i < n / 2; ++i ) {
+				lists[i] = mergeTwoLists( lists[i], lists[i + k] );
+			}
+			n = k;
+		}
+		return lists[0];
+	}
+
+	ListNode *mergeTwoLists( ListNode *l1, ListNode *l2 ) {
+		ListNode *head = new ListNode( -1 );
+		ListNode *cur = head;
+		while ( l1 && l2 ) {
+			if ( l1->val < l2->val ) {
+				cur->next = l1;
+				l1 = l1->next;
+			}
 			else {
-				m.pop();
-				res = m.empty() ? max( res, i - start + 1 ) : max( res, i - m.top() );
+				cur->next = l2;
+				l2 = l2->next;
+			}
+			cur = cur->next;
+		}
+		if ( l1 ) cur->next = l1;
+		if ( l2 ) cur->next = l2;
+		return head->next;
+	}
+};
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+我们再来看另一种解法，这种解法利用了最小堆这种数据结构，我们首先把k个链表的首元素都加入最小堆中，它们会自动排好序。然后我们每次取出最小的那个元素加入我们最终结果的链表中，然后把取出元素的下一个元素再加入堆中，下次仍从堆中取出最小的元素做相同的操作，以此类推，直到堆中没有元素了，此时k个链表也合并为了一个链表，返回首节点即可
+\end{CJK}
+\begin{lstlisting}
+struct cmp {
+	bool operator () ( ListNode *a, ListNode *b ) {
+		return a->val > b->val;
+	}
+};
+
+class Solution {
+public:
+	ListNode *mergeKLists( vector<ListNode *> &lists ) {
+		priority_queue<ListNode*, vector<ListNode*>, cmp> q;
+		for ( int i = 0; i < lists.size(); ++i ) {
+			if ( lists[i] ) q.push( lists[i] );
+		}
+		ListNode *head = NULL, *pre = NULL, *tmp = NULL;
+		while ( !q.empty() ) {
+			tmp = q.top();
+			q.pop();
+			if ( !pre ) head = tmp;
+			else pre->next = tmp;
+			pre = tmp;
+			if ( tmp->next ) q.push( tmp->next );
+		}
+		return head;
+	}
+};
+\end{lstlisting}
+\end{enumerate}
+
+\section{24}
+\begin{enumerate}
+\begin{CJK}{UTF8}{gbsn}
+这道题不算难，是基本的链表操作题，我们可以分别用递归和迭代来实现。对于迭代实现，还是需要建立dummy节点，注意在连接节点的时候，最好画个图，以免把自己搞晕了
+\end{CJK}
+\begin{lstlisting}
+ListNode* swapPairs( ListNode* head ) {
+	ListNode *dummy = new ListNode( -1 ), *pre = dummy;
+	dummy->next = head;
+	while ( pre->next && pre->next->next ) {
+		ListNode *t = pre->next->next;
+		pre->next->next = t->next;
+		t->next = pre->next;
+		pre->next = t;
+		pre = t->next;
+	}
+	return dummy->next;
+}
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+递归的写法就更简洁了，实际上利用了回溯的思想，递归遍历到链表末尾，然后先交换末尾两个，然后依次往前交换：
+\end{CJK}
+\begin{lstlisting}
+ListNode* swapPairs( ListNode* head ) {
+	if ( !head || !head->next ) return head;
+	ListNode *t = head->next;
+	head->next = swapPairs( head->next->next );
+	t->next = head;
+	return t;
+}
+\end{lstlisting}
+\end{enumerate}
+
+\section{25}
+\begin{enumerate}
+\item
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们以每k个为一组来翻转链表，实际上是把原链表分成若干小段，然后分别对其进行翻转，那么肯定总共需要两个函数，一个是用来分段的，一个是用来翻转的，我们就以题目中给的例子来看，对于给定链表$1\rightarrow2\rightarrow3\rightarrow4\rightarrow5$，一般在处理链表问题时，我们大多时候都会在开头再加一个dummy node，因为翻转链表时头结点可能会变化，为了记录当前最新的头结点的位置而引入的dummy node，那么我们加入dummy node后的链表变为$-1\rightarrow1\rightarrow2\rightarrow3\rightarrow4\rightarrow5$，如果k为3的话，我们的目标是将1,2,3翻转一下，那么我们需要一些指针，pre和next分别指向要翻转的链表的前后的位置，然后翻转后pre的位置更新到如下新的位置：
+\end{CJK}
+\begin{lstlisting}
+-1->1->2->3->4->5
+ |           |
+pre         next
+
+-1->3->2->1->4->5
+          |  |
+         pre next
+\end{lstlisting}
+\begin{CJK}{UTF8}{gbsn}
+以此类推，只要next走过k个节点，就可以调用翻转函数来进行局部翻转了
+\end{CJK}
+\begin{lstlisting}
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	ListNode *reverseKGroup( ListNode *head, int k ) {
+		if ( !head || k == 1 ) return head;
+		ListNode *dummy = new ListNode( -1 );
+		ListNode *pre = dummy, *cur = head;
+		dummy->next = head;
+		int i = 0;
+		while ( cur ) {
+			++i;
+			if ( i % k == 0 ) {
+				pre = reverseOneGroup( pre, cur->next );
+				cur = pre->next;
+			}
+			else {
+				cur = cur->next;
 			}
 		}
+		return dummy->next;
+	}
+	ListNode *reverseOneGroup( ListNode *pre, ListNode *next ) {
+		ListNode *last = pre->next;
+		ListNode *cur = last->next;
+		while ( cur != next ) {
+			last->next = cur->next;
+			cur->next = pre->next;
+			pre->next = cur;
+			cur = last->next;
+		}
+		return last;
+	}
+};
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+我们也可以在一个函数中完成，我们首先遍历整个链表，统计出链表的长度，然后如果长度大于等于k，我们开始交换节点，当k=2时，每段我们只需要交换一次，当k=3时，每段需要交换2此，所以i从1开始循环，注意交换一段后更新pre指针，然后num自减k，直到$num<k$时循环结束，
+\end{CJK}
+\begin{lstlisting}
+ListNode* reverseKGroup( ListNode* head, int k ) {
+	ListNode *dummy = new ListNode( -1 ), *pre = dummy, *cur = pre;
+	dummy->next = head;
+	int num = 0;
+	while ( cur = cur->next ) ++num;
+	while ( num >= k ) {
+		cur = pre->next;
+		for ( int i = 1; i < k; ++i ) {
+			ListNode *t = cur->next;
+			cur->next = t->next;
+			t->next = pre->next;
+			pre->next = t;
+		}
+		pre = cur;
+		num -= k;
+	}
+	return dummy->next;
+}
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+使用递归来做，我们用head记录每段的开始位置，cur记录结束位置的下一个节点，然后我们调用reverse函数来将这段翻转，然后得到一个new\_head，原来的head就变成了末尾，这时候后面接上递归调用下一段得到的新节点，返回new\_head即可
+\end{CJK}
+\begin{lstlisting}
+class Solution {
+public:
+	ListNode* reverseKGroup( ListNode* head, int k ) {
+		ListNode *cur = head;
+		for ( int i = 0; i < k; ++i ) {
+			if ( !cur ) return head;
+			cur = cur->next;
+		}
+		ListNode *new_head = reverse( head, cur );
+		head->next = reverseKGroup( cur, k );
+		return new_head;
+	}
+	ListNode* reverse( ListNode* head, ListNode* tail ) {
+		ListNode *pre = tail;
+		while ( head != tail ) {
+			ListNode *t = head->next;
+			head->next = pre;
+			pre = head;
+			head = t;
+		}
+		return pre;
+	}
+};
+\end{lstlisting}
+\end{enumerate}
+
+\section{26}
+\begin{CJK}{UTF8}{gbsn}
+这道题要我们从有序数组中去除重复项，和之前那道 Remove Duplicates from Sorted List 移除有序链表中的重复项 的题很类似，但是要简单一些，因为毕竟数组的值可以通过下标直接访问，而链表不行。那么这道题的解题思路是，我们使用快慢指针来记录遍历的坐标，最开始时两个指针都指向第一个数字，如果两个指针指的数字相同，则快指针向前走一步，如果不同，则两个指针都向前走一步，这样当快指针走完整个数组后，慢指针当前的坐标加1就是数组中不同数组的个数
+\end{CJK}
+\begin{lstlisting}
+int removeDuplicates( int A[], int n ) {
+	if ( n <= 1 ) return n;
+	int pre = 0, cur = 0;
+	while ( cur < n ) {
+		if ( A[cur] == A[pre] ) ++cur;
+		else A[++pre] = A[cur++];
+	}
+	return pre + 1;
+}
+\end{lstlisting}
+
+\section{27}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们移除一个数组中和给定值相同的数字，并返回新的数组的长度。是一道比较容易的题，我们只需要一个变量用来计数，然后遍历原数组，如果当前的值和给定值不同，我们就把当前值覆盖计数变量的位置，并将计数变量加1
+\end{CJK}
+\begin{lstlisting}
+int removeElement( vector<int>& nums, int val ) {
+	int res = 0;
+	for ( int i = 0; i < nums.size(); ++i ) {
+		if ( nums[i] != val ) nums[res++] = nums[i];
 	}
 	return res;
 }
 \end{lstlisting}
 
-\section{33}
+\section{28}
 \begin{CJK}{UTF8}{gbsn}
-这道题让在旋转数组中搜索一个给定值，若存在返回坐标，若不存在返回$-1$。我们还是考虑二分搜索法，但是这道题的难点在于我们不知道原数组在哪旋转了，我们还是用题目中给的例子来分析，对于数组[0 1 2 4 5 6 7] 共有下列七种旋转方法：
-\end{CJK}
-\begin{center}
-\begin{tabular}{*{7}{c}}
-0 & 1 & 2 & \textcolor{red}{4} & \textcolor{red}{5} & \textcolor{red}{6} & \textcolor{red}{7} \\
-7 & 0 & 1 & \textcolor{red}{2} & \textcolor{red}{4} & \textcolor{red}{5} & \textcolor{red}{6} \\
-6 & 7 & 0 & \textcolor{red}{1} & \textcolor{red}{2} & \textcolor{red}{4} & \textcolor{red}{5} \\
-5 & 6 & 7 & \textcolor{red}{0} & \textcolor{red}{1} & \textcolor{red}{2} & \textcolor{red}{4} \\
-\textcolor{red}{4} & \textcolor{red}{5} & \textcolor{red}{6} & \textcolor{red}{7} & 0 & 1 & 2 \\
-\textcolor{red}{2} & \textcolor{red}{4} & \textcolor{red}{5} & \textcolor{red}{6} & 7 & 0 & 1 \\
-\textcolor{red}{1} & \textcolor{red}{2} & \textcolor{red}{4} & \textcolor{red}{5} & 6 & 7 & 0 \\
-\end{tabular}
-\end{center}
-\begin{CJK}{UTF8}{gbsn}
-二分搜索法的关键在于获得了中间数后，判断下面要搜索左半段还是右半段，我们观察上面红色的数字都是升序的，由此我们可以观察出规律，如果中间的数小于最右边的数，则右半段是有序的，若中间数大于最右边数，则左半段是有序的，我们只要在有序的半段里用首尾两个数组来判断目标值是否在这一区域内，这样就可以确定保留哪半边了
+这道题让我们在一个字符串中找另一个字符串第一次出现的位置，那我们首先要做一些判断，如果子字符串为空，则返回0，如果子字符串长度大于母字符串长度，则返回-1。然后我们开始遍历母字符串，我们并不需要遍历整个母字符串，而是遍历到剩下的长度和子字符串相等的位置即可，这样可以提高运算效率。然后对于每一个字符，我们都遍历一遍子字符串，一个一个字符的对应比较，如果对应位置有不等的，则跳出循环，如果一直都没有跳出循环，则说明子字符串出现了，则返回起始位置即可
 \end{CJK}
 \begin{lstlisting}
-int search( int A[], int n, int target ) {
-	if ( n == 0 ) return -1;
-	int left = 0, right = n - 1;
-	while ( left <= right ) {
-		int mid = (left + right) / 2;
-		if ( A[mid] == target ) return mid;
-		else if ( A[mid] < A[right] ) {
-			if ( A[mid] < target && A[right] >= target ) left = mid + 1;
-			else right = mid - 1;
+int strStr( string haystack, string needle ) {
+	if ( needle.empty() ) return 0;
+	int m = haystack.size(), n = needle.size();
+	if ( m < n ) return -1;
+	for ( int i = 0; i <= m - n; ++i ) {
+		int j = 0;
+		for ( j = 0; j < n; ++j ) {
+			if ( haystack[i + j] != needle[j] ) break;
 		}
-		else {
-			if ( A[left] <= target && A[mid] > target ) right = mid - 1;
-			else left = mid + 1;
-		}
+		if ( j == n ) return i;
 	}
 	return -1;
 }
 \end{lstlisting}
 
-
-\section{34}
-\begin{CJK}{UTF8}{gbsn}
-使用两次二分查找法，第一次找到左边界，第二次调用找到右边界即可
-\end{CJK}
-\begin{lstlisting}
-vector<int> searchRange( vector<int>& nums, int target ) {
-	vector<int> res( 2, -1 );
-	int left = 0, right = nums.size() - 1;
-	while ( left < right ) {
-		int mid = left + (right - left) / 2;
-		if ( nums[mid] < target ) left = mid + 1;
-		else right = mid;
-	}
-	if ( nums[right] != target ) return res;
-	res[0] = right;
-	right = nums.size();
-	while ( left < right ) {
-		int mid = left + (right - left) / 2;
-		if ( nums[mid] <= target ) left = mid + 1;
-		else right = mid;
-	}
-	res[1] = left - 1;
-	return res;
-}
-\end{lstlisting}
-
-\section{35}
+\section{29}
 \begin{enumerate}
 \item
 \begin{CJK}{UTF8}{gbsn}
-这道题基本没有什么难度，实在不理解为啥还是Medium难度的，完完全全的应该是Easy啊，三行代码搞定的题，只需要遍历一遍原数组，若当前数字大于或等于目标值，则返回当前坐标，如果遍历结束了，说明目标值比数组中任何一个数都要大，则返回数组长度n即可
+这道题让我们求两数相除，而且规定我们不能用乘法，除法和取余操作，那么我们还可以用另一神器位操作Bit Operation，思路是，如果被除数大于或等于除数，则进行如下循环，定义变量t等于除数，定义计数p，当t的两倍小于等于被除数时，进行如下循环，t扩大一倍，p扩大一倍，然后更新res和m。这道题的OJ给的一些test case非常的讨厌，因为输入的都是int型，比如被除数是$-2147483648$，在int范围内，当除数是$-1$时，结果就超出了int范围，需要返回INT\_MAX，所以对于这种情况我们就在开始用if判定，将其和除数为0的情况放一起判定，返回INT\_MAX。然后我们还要根据被除数和除数的正负来确定返回值的正负，这里我们采用长整型long来完成所有的计算，最后返回值乘以符号即可
 \end{CJK}
 \begin{lstlisting}
-int searchInsert( vector<int>& nums, int target ) {
-	for ( int i = 0; i < nums.size(); ++i ) {
-		if ( nums[i] >= target ) return i;
+int divide( int dividend, int divisor ) {
+	if ( divisor == 0 || (dividend == INT_MIN && divisor == -1) ) return INT_MAX;
+	long long m = abs( (long long)dividend ), n = abs( (long long)divisor ), res = 0;
+	int sign = ((dividend < 0) ^ (divisor < 0)) ? -1 : 1;
+	if ( n == 1 ) return sign == 1 ? m : -m;
+	while ( m >= n ) {
+		long long t = n, p = 1;
+		while ( m >= (t << 1) ) {
+			t <<= 1;
+			p <<= 1;
+		}
+		res += p;
+		m -= t;
 	}
-	return nums.size();
+	return sign == 1 ? res : -res;
 }
 \end{lstlisting}
 \item
 \begin{CJK}{UTF8}{gbsn}
-当然，我们还可以用二分搜索法来优化我们的时间复杂度，而且个人认为这种方法应该是面试官们想要考察的算法吧
+我们可以使上面的解法变得更加简洁：
 \end{CJK}
 \begin{lstlisting}
-int searchInsert( vector<int>& nums, int target ) {
-	if ( nums.back() < target ) return nums.size();
-	int left = 0, right = nums.size() - 1;
-	while ( left < right ) {
-		int mid = left + (right - left) / 2;
-		if ( nums[mid] == target ) return mid;
-		else if ( nums[mid] < target ) left = mid + 1;
-		else right = mid;
+int divide( int dividend, int divisor ) {
+	long long m = abs( (long long)dividend ), n = abs( (long long)divisor ), res = 0;
+	if ( m < n ) return 0;
+	while ( m >= n ) {
+		long long t = n, p = 1;
+		while ( m >( t << 1 ) ) {
+			t <<= 1;
+			p <<= 1;
+		}
+		res += p;
+		m -= t;
 	}
-	return right;
+	if ( (dividend < 0) ^ (divisor < 0) ) res = -res;
+	return res > INT_MAX ? INT_MAX : res;
+}
+\end{lstlisting}
+\item
+\begin{CJK}{UTF8}{gbsn}
+我们也可以通过递归的方法来解，思路都一样：
+\end{CJK}
+\begin{lstlisting}
+int divide( int dividend, int divisor ) {
+	long long res = 0;
+	long long m = abs( (long long)dividend ), n = abs( (long long)divisor );
+	if ( m < n ) return 0;
+	long long t = n, p = 1;
+	while ( m >( t << 1 ) ) {
+		t <<= 1;
+		p <<= 1;
+	}
+	res += p + divide( m - t, n );
+	if ( (dividend < 0) ^ (divisor < 0) ) res = -res;
+	return res > INT_MAX ? INT_MAX : res;
 }
 \end{lstlisting}
 \end{enumerate}
 
-\section{36}
-\begin{CJK}{UTF8}{gbsn}
-这道题让我们验证一个方阵是否为数独矩阵，判断标准是看各行各列是否有重复数字，以及每个小的$3\times3$的小方阵里面是否有重复数字，如果都无重复，则当前矩阵是数独矩阵，但不代表待数独矩阵有解，只是单纯的判断当前未填完的矩阵是否是数独矩阵。那么根据数独矩阵的定义，我们在遍历每个数字的时候，就看看包含当前位置的行和列以及$3\times3$小方阵中是否已经出现该数字，那么我们需要三个标志矩阵，分别记录各行，各列，各小方阵是否出现某个数字，其中行和列标志下标很好对应，就是小方阵的下标需要稍稍转换一下
-\end{CJK}
-\begin{lstlisting}
-bool isValidSudoku( vector<vector<char> > &board ) {
-	if ( board.empty() || board[0].empty() ) return false;
-	int m = board.size(), n = board[0].size();
-	vector<vector<bool> > rowFlag( m, vector<bool>( n, false ) );
-	vector<vector<bool> > colFlag( m, vector<bool>( n, false ) );
-	vector<vector<bool> > cellFlag( m, vector<bool>( n, false ) );
-	for ( int i = 0; i < m; ++i ) {
-		for ( int j = 0; j < n; ++j ) {
-			if ( board[i][j] >= '1' && board[i][j] <= '9' ) {
-				int c = board[i][j] - '1';
-				if ( rowFlag[i][c] || colFlag[c][j] || cellFlag[3 * (i / 3) + j / 3][c] ) return false;
-				rowFlag[i][c] = true;
-				colFlag[c][j] = true;
-				cellFlag[3 * (i / 3) + j / 3][c] = true;
-			}
-		}
-	}
-	return true;
-}
-\end{lstlisting}
-
-\section{37}
-\begin{CJK}{UTF8}{gbsn}
-这道求解数独的题是在之前那道 Valid Sudoku 验证数独的基础上的延伸，之前那道题让我们验证给定的数组是否为数独数组，这道让我们求解数独数组，跟此题类似的有 Permutations 全排列，Combinations 组合项， N-Queens N皇后问题等等，其中尤其是跟 N--Queens N皇后问题的解题思路及其相似，对于每个需要填数字的格子带入1到9，每代入一个数字都判定其是否合法，如果合法就继续下一次递归，结束时把数字设回`.'，判断新加入的数字是否合法时，只需要判定当前数字是否合法，不需要判定这个数组是否为数独数组，因为之前加进的数字都是合法的，这样可以使程序更加高效一些
-\end{CJK}
-\begin{lstlisting}
-class Solution {
-public:
-	void solveSudoku( vector<vector<char> > &board ) {
-		if ( board.empty() || board.size() != 9 || board[0].size() != 9 ) return;
-		solveSudokuDFS( board, 0, 0 );
-	}
-	bool solveSudokuDFS( vector<vector<char> > &board, int i, int j ) {
-		if ( i == 9 ) return true;
-		if ( j >= 9 ) return solveSudokuDFS( board, i + 1, 0 );
-		if ( board[i][j] == '.' ) {
-			for ( int k = 1; k <= 9; ++k ) {
-				board[i][j] = (char)(k + '0');
-				if ( isValid( board, i, j ) ) {
-					if ( solveSudokuDFS( board, i, j + 1 ) ) return true;
-				}
-				board[i][j] = '.';
-			}
-		}
-		else {
-			return solveSudokuDFS( board, i, j + 1 );
-		}
-		return false;
-	}
-	bool isValid( vector<vector<char> > &board, int i, int j ) {
-		for ( int col = 0; col < 9; ++col ) {
-			if ( col != j && board[i][j] == board[i][col] ) return false;
-		}
-		for ( int row = 0; row < 9; ++row ) {
-			if ( row != i && board[i][j] == board[row][j] ) return false;
-		}
-		for ( int row = i / 3 * 3; row < i / 3 * 3 + 3; ++row ) {
-			for ( int col = j / 3 * 3; col < j / 3 * 3 + 3; ++col ) {
-				if ( (row != i || col != j) && board[i][j] == board[row][col] ) return false;
-			}
-		}
-		return true;
-	}
-};
-\end{lstlisting}
-
-\section{38}
-\begin{CJK}{UTF8}{gbsn}
-这道计数和读法问题还是第一次遇到，看似挺复杂，其实仔细一看，算法很简单，就是对于前一个数，找出相同元素的个数，把个数和该元素存到新的string里
-\end{CJK}
-\begin{lstlisting}
-string countAndSay( int n ) {
-	if ( n <= 0 ) return NULL;
-	string res = "1";
-	for ( int i = 1; i < n; ++i ) {
-		string tmp;
-		res.push_back( '$' ); // Add extra char to deal with boundary
-		int count = 0;
-		int len = strlen( res.c_str() );
-		for ( int j = 0; j < len; ++j ) {
-			if ( j == 0 ) ++count;
-			else {
-				if ( res[j] != res[j - 1] ) {
-					tmp.push_back( count + '0' );
-					tmp.push_back( res[j - 1] );
-					count = 1;
-				}
-				else ++count;
-			}
-		}
-		res = tmp;
-	}
-	return res;
-}
-\end{lstlisting}
-
-\section{39}
-\begin{CJK}{UTF8}{gbsn}
-像这种结果要求返回所有符合要求解的题十有八九都是要利用到递归，而且解题的思路都大同小异，相类似的题目有 Path Sum II 二叉树路径之和之二，Subsets II 子集合之二，Permutations 全排列，Permutations II 全排列之二，Combinations 组合项等等，如果仔细研究这些题目发现都是一个套路，都是需要另写一个递归函数，这里我们新加入三个变量，start记录当前的递归到的下标，out为一个解，res保存所有已经得到的解，每次调用新的递归函数时，此时的target要减去当前数组的的数，具体看代码如下：
-\end{CJK}
-\begin{lstlisting}
-class Solution {
-public:
-vector<vector<int> > combinationSum( vector<int> &candidates, int target ) {
-	vector<vector<int> > res;
-	vector<int> out;
-	sort( candidates.begin(), candidates.end() );
-	combinationSumDFS( candidates, target, 0, out, res );
-	return res;
-}
-void combinationSumDFS( vector<int> &candidates, int target, int start, vector<int> &out, vector<vector<int> > &res ) {
-	if ( target < 0 ) return;
-	else if ( target == 0 ) res.push_back( out );
-	else {
-		for ( int i = start; i < candidates.size(); ++i ) {
-			out.push_back( candidates[i] );
-			combinationSumDFS( candidates, target - candidates[i], i, out, res );
-			out.pop_back();
-		}
-	}
-}
-};
-\end{lstlisting}
-
-
-	
-	
-	\section*{Solutions}
-	
-	\subsection*{39}
-	\begin{lstlisting}
-	vector<vector<int> > combinationSum(vector<int> &candidates, int target) {
-        vector<vector<int> > res;
-        vector<int> out;
-        sort(candidates.begin(), candidates.end());
-        combinationSumDFS(candidates, target, 0, out, res);
-        return res;
-    }
-    void combinationSumDFS(vector<int> &candidates, int target, int start, vector<int> &out, vector<vector<int> > &res) {
-        if (target < 0) return;
-        else if (target == 0) res.push_back(out);
-        else {
-            for (int i = start; i < candidates.size(); ++i) {
-                out.push_back(candidates[i]);
-                combinationSumDFS(candidates, target - candidates[i], i, out, res);
-                out.pop_back();
-            }
-        }
-    }
-	\end{lstlisting}
-	
-	\subsection*{38}
-	\begin{lstlisting}
-	    string countAndSay(int n) {
-        if (n <= 0) return NULL;
-        string res = "1";
-        for (int i = 1; i < n; ++i) {
-            string tmp;
-            res.push_back('$'); // Add extra char to deal with boundary
-            int count = 0;
-            int len = strlen(res.c_str());
-            for (int j = 0; j < len; ++j) {
-                if (j == 0) ++count;
-                else {
-                    if (res[j] != res[j - 1]) {
-                        tmp.push_back(count + '0');
-                        tmp.push_back(res[j - 1]);
-                        count = 1;
-                    } else ++count;
-                }
-            }
-            res = tmp;
-        }
-        return res;
-    }
-	\end{lstlisting}
-	
-	\subsection*{37}
-	\begin{lstlisting}
-	\end{lstlisting}
-	
-	\subsection*{36}
-	\begin{lstlisting}
-	\end{lstlisting}
-
-	\subsection*{35}
-	\begin{lstlisting}
-	\end{lstlisting}
-
-	\subsection*{34}
-	\begin{lstlisting}
-	\end{lstlisting}
-	
 \end{document}
