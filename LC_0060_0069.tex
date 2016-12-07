@@ -15,6 +15,7 @@
 \usepackage{float}
 \usepackage{CJKutf8}
 \usepackage{textcomp}
+\usepackage{hyperref}
 %\lstset{
 %	backgroundcolor=\color{lbcolor},
 %	tabsize=4,    
@@ -344,14 +345,17 @@ vector<int> plusOne( vector<int>& digits ) {
 	if ( carry == 1 ) digits.insert( digits.begin(), 1 );
 	return digits;
 }
+\end{lstlisting}
 \end{enumerate}
 
 \subsection{67}
 \begin{CJK}{UTF8}{gbsn}
-用了两个指针分别指向a和b的末尾，然后每次取出一个字符，转为数字，
-若无法取出字符则按0处理，然后定义进位carry，初始化为0，将三者加起来，
-对2取余即为当前位的数字，对2取商即为当前进位的值，记得最后还要判断下carry，
+用了2个指针分别指向a和b的末尾，然后each time取出一个字符，转为数字,
+若无法取出字符则按0处理，然后定义进位carry，
+初始化为0，将三者加起来
+对2取余即为当前位的数字，对2取商即为当前进位的值，记得最后要判断下carry
 如果为1的话，要在结果最前面加上一个1
+\end{CJK}
 \begin{lstlisting}
 vector<Interval> insert( vector<Interval> &intervals, Interval newInterval ) {
 	vector<Interval> res = intervals;
@@ -459,4 +463,5 @@ int sqrt( int x ) {
 	return int( res );
 }
 \end{lstlisting}
+\end{enumerate}
 \end{document}
