@@ -1,0 +1,436 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage{charter}
+%\usepackage[latin1]{inputenc}
+\usepackage[left=1.50cm, right=1.50cm, top=1.20cm]{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\usepackage{float}
+\usepackage{CJKutf8}
+%\lstset{
+%	backgroundcolor=\color{lbcolor},
+%	tabsize=4,    
+%	%   rulecolor=,
+%	language=[GNU]C++,
+%	basicstyle=\scriptsize,
+%	upquote=true,
+%	aboveskip={1.5\baselineskip},
+%	columns=fixed,
+%	showstringspaces=false,
+%	extendedchars=false,
+%	breaklines=true,
+%	prebreak = \raisebox{0ex}[0ex][0ex]{\ensuremath{\hookleftarrow}},
+%	frame=single,
+%	numbers=left,
+%	showtabs=false,
+%	showspaces=false,
+%	showstringspaces=false,
+%	identifierstyle=\ttfamily,
+%	keywordstyle=\color[rgb]{0,0,1},
+%	commentstyle=\color[rgb]{0.026,0.112,0.095},
+%	stringstyle=\color[rgb]{0.627,0.126,0.941},
+%	numberstyle=\color[rgb]{0.205, 0.142, 0.73},
+%	%        \lstdefinestyle{C++}{language=C++,style=numbers}?.
+%}
+%\lstset{
+%	backgroundcolor=\color{lbcolor},
+%	tabsize=4,
+%	language=C++,
+%	captionpos=b,
+%	tabsize=3,
+%	frame=lines,
+%	numbers=left,
+%	numberstyle=\tiny,
+%	numbersep=5pt,
+%	breaklines=true,
+%	showstringspaces=false,
+%	basicstyle=\footnotesize,
+%	%  identifierstyle=\color{magenta},
+%	keywordstyle=\color[rgb]{0,0,1},
+%	commentstyle=\color{Darkgreen},
+%	stringstyle=\color{red}
+%}
+
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	aboveskip={1.2\baselineskip},
+	breaklines=true,
+	frame=lines,
+	numbers=left,
+	xleftmargin=\parindent,
+	language=C++,
+	showstringspaces=false,
+	basicstyle=\sffamily,%,\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+
+
+\lstset{escapechar=@,style=customc}
+
+\begin{document}
+\section{1}
+\begin{CJK}{UTF8}{gbsn}
+先遍历一遍数组，建立map数据，然后再遍历一遍，开始查找，找到则记录index
+\end{CJK}
+\begin{lstlisting}
+vector<int> twoSum( vector<int>& nums, int target ) {
+	unordered_map<int, int> m;
+	vector<int> res;
+	for ( int i = 0; i < nums.size(); ++i ) {
+		m[nums[i]] = i;
+	}
+	for ( int i = 0; i < nums.size(); ++i ) {
+		int t = target - nums[i];
+		if ( m.count( t ) && m[t] != i ) {
+			res.push_back( i );
+			res.push_back( m[t] );
+			break;
+		}
+	}
+	return res;
+}
+\end{lstlisting}
+
+\section{2}
+SKIP
+
+\section{3}
+SKIP
+
+\section{4}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们求两个有序数组的中位数，而且限制了时间复杂度为$O(log (m+n))$，看到这个时间复杂度，自然而然的想到了应该使用二分查找法来求解。但是这道题被定义为Hard也是有其原因的，难就难在要在两个未合并的有序数组之间使用二分法，这里我们需要定义一个函数来找到第K个元素，由于两个数组长度之和的奇偶不确定，因此需要分情况来讨论，对于奇数的情况，直接找到最中间的数即可，偶数的话需要求最中间两个数的平均值。下面重点来看如何实现找到第K个元素，首先我们需要让数组1的长度小于或等于数组2的长度，那么我们只需判断如果数组1的长度大于数组2的长度的话，交换两个数组即可，然后我们要判断小的数组是否为空，为空的话，直接在另一个数组找第K个即可。还有一种情况是当$K = 1$时，表示我们要找第一个元素，只要比较两个数组的第一个元素，返回较小的那个即可。
+\end{CJK}
+\par
+Assume that the number of elements in A and B are both larger than $k/2$, and if we compare the $k/2$th smallest element in A(i.e. A$[k/2-1]$) and the $k/2$-th smallest element in B(i.e. B$[k/2 - 1]$), there are three results:
+\begin{itemize}
+\item $A[k/2-1] = B[k/2-1]$
+\item $A[k/2-1] > B[k/2-1]$
+\item $A[k/2-1] < B[k/2-1]$
+\end{itemize}
+if $A[k/2-1] < B[k/2-1]$, that means all the elements from $A[0]$ to $A[k/2-1]$(i.e. the $k/2$ smallest elements in A) are in the range of k smallest elements in the union of A and B. Or, in the other word, $A[k/2 - 1]$ can never be larger than the $k$th smalleset element in the union of A and B.
+\par
+Why?
+\par
+We can use a proof by contradiction. if $A[k/2 - 1]$ is larger than the $k$th smallest element in the union of A and B, then we assume it is the $(k+1)$th smallest one. Since it is smaller than $B[k/2 - 1]$, then $B[k/2 - 1]$ should be at least the $(k+2)$th smallest one. So there are $(k/2-1)$ elements smaller than $A[k/2-1]$ in A, and at most $(k/2 - 1)$ elements smaller than $A[k/2-1]$ in B.So the total number is $k/2+k/2-2$, which, no matter when k is odd or even, is surly smaller than k(we assume $A[k/2-1]$ is the $(k+1)$th smallest element), that is contradict. So $A[k/2-1]$ can never larger than the $k$th smallest element in the union of A and B if $A[k/2-1]<B[k/2-1]$;
+\par
+Since there is such an important conclusion, we can safely drop the first $k/2$ element in A, which are definitaly smaller than $k$th element in the union of A and B. This is also true for the $A[k/2-1] > B[k/2-1]$ condition, which we should drop the elements in B.
+\par
+When $A[k/2-1] = B[k/2-1]$, then we have found the $k$th smallest element, that is the equal element, we can call it $m$. There are each $(k/2-1)$ numbers smaller than $m$ in A and B, so $m$ must be the $k$th smallest number. So we can call a function recursively, when $A[k/2-1] < B[k/2-1]$, we drop the elements in A, else we drop the elements in B.
+\par
+After the $k/2$ elements are dropped, we have to modify the $k$ in the next recursion to $k-k/2$ because the number of elements are decreased.
+\begin{lstlisting}
+class Solution {
+public:
+	double findMedianSortedArrays( vector<int>& nums1, vector<int>& nums2 ) {
+		int m = nums1.size(), n = nums2.size();
+		return (findKth( nums1, nums2, (m + n + 1) / 2 ) + findKth( nums1, nums2, (m + n + 2) / 2 )) / 2.0;
+	}
+	int findKth( vector<int> nums1, vector<int> nums2, int k ) {
+		int m = nums1.size(), n = nums2.size();
+		if ( m > n ) return findKth( nums2, nums1, k );
+		if ( m == 0 ) return nums2[k - 1];
+		if ( k == 1 ) return min( nums1[0], nums2[0] );
+		int i = min( m, k / 2 ), j = min( n, k / 2 );
+		if ( nums1[i - 1] > nums2[j - 1] ) {
+			return findKth( nums1, vector<int>( nums2.begin() + j, nums2.end() ), k - j );
+		}
+		else {
+			return findKth( vector<int>( nums1.begin() + i, nums1.end() ), nums2, k - i );
+		}
+		return 0;
+	}
+};
+\end{lstlisting}
+
+
+\section{5}
+\begin{CJK}{UTF8}{gbsn}
+定义函数
+$P[i,j]$ = 字符串区间$S[i,j]$是否为palindrome.
+\end{CJK}
+\begin{center}
+\begin{tabular}{c}
+$P[i,j]$ = 1 if $j=i$\\
+$P[i,j]$ = 1 if $j=i+1$ and $S[i]=S[j]$ \\
+$P[i,j]$ = $P[i+1][j-1]$ if $j > i+1$ and $S[i]=S[j]$ \\
+\end{tabular}
+\end{center}
+\begin{lstlisting}
+string longestPalindrome( string s ) {
+	int dp[s.size()][s.size()] = { 0 }, left = 0, right = 0, len = 0;
+	for ( int i = 0; i < s.size(); ++i ) {
+		for ( int j = 0; j < i; ++j ) {
+			dp[j][i] = (s[i] == s[j] && (i - j < 2 || dp[j + 1][i - 1]));
+			if ( dp[j][i] && len < i - j + 1 ) {
+				len = i - j + 1;
+				left = j;
+				right = i;
+			}
+		}
+		dp[i][i] = 1;
+	}
+	return s.substr( left, right - left + 1 );
+}
+\end{lstlisting}
+
+\section{6}
+SKIP
+
+\section{7}
+\begin{CJK}{UTF8}{gbsn}
+int型的数值范围是 $-2147483648\to2147483647$， 那么如果我们要翻转 $1000000009$ 这个在范围内的数得到 $9000000001$，而翻转后的数就超过了范围
+\end{CJK}
+\begin{lstlisting}
+int reverse( int x ) {
+	int res = 0;
+	while ( x != 0 ) {
+		if ( abs( res ) > INT_MAX / 10 ) return 0;
+		res = res * 10 + x % 10;
+		x /= 10;
+	}
+	return res;
+}
+\end{lstlisting}
+
+\section{8}
+\begin{CJK}{UTF8}{gbsn}
+\begin{enumerate}
+\item 若字符串开头是空格，则跳过所有空格，到第一个非空格字符，如果没有，则返回0.
+\item 若第一个非空格字符是符号+/-，则标记sign的真假，这道题还有个局限性，那就是在c++里面，$+-1$和$-+1$都是认可的，都是-1，而在此题里，则会返回0.
+\item 若下一个字符不是数字，则返回0. 完全不考虑小数点和自然数的情况，不过这样也好，起码省事了不少。
+\item 如果下一个字符是数字，则转为整形存下来，若接下来再有非数字出现，则返回目前的结果。
+\item 还需要考虑边界问题，如果超过了整形数的范围，则用边界值替代当前值。
+\end{enumerate}
+\end{CJK}
+\begin{lstlisting}
+int myAtoi( string str ) {
+	if ( str.empty() ) return 0;
+	int sign = 1, base = 0, i = 0, n = str.size();
+	while ( i < n && str[i] == ' ' ) ++i;
+	if ( str[i] == '+' || str[i] == '-' ) {
+		sign = (str[i++] == '+') ? 1 : -1;
+	}
+	while ( i < n && str[i] >= '0' && str[i] <= '9' ) {
+		if ( base > INT_MAX / 10 || (base == INT_MAX / 10 && str[i] - '0' > 7) ) {
+			return (sign == 1) ? INT_MAX : INT_MIN;
+		}
+		base = 10 * base + (str[i++] - '0');
+	}
+	return base * sign;
+}
+\end{lstlisting}
+
+\section{9}
+\begin{CJK}{UTF8}{gbsn}
+这道验证回文数字的题不能使用额外空间，意味着不能把整数变成字符，然后来验证回文字符串。而是直接对整数进行操作，我们可以利用取整和取余来获得我们想要的数字，比如 1221 这个数字，如果 计算 $1221 / 1000$， 则可得首位1， 如果 $1221 \% 10$， 则可得到末尾1，进行比较，然后把中间的22取出继续比较
+\end{CJK}
+\begin{lstlisting}
+bool isPalindrome( int x ) {
+	if ( x < 0 ) return false;
+	int div = 1;
+	while ( x / div >= 10 ) div *= 10;
+	while ( x > 0 ) {
+		int left = x / div;
+		int right = x % 10;
+		if ( left != right ) return false;
+		x = (x % div) / 10;
+		div /= 100;
+	}
+	return true;
+}
+\end{lstlisting}
+
+\section{10}
+Define the state $P[i][j]$ to be true if $s[0\dots i)$ matches $p[0\dots j)$ and false otherwise. Then the state equations are:
+\begin{lstlisting}
+P[i][j] = P[i - 1][j - 1], if p[j - 1] != '*' && (s[i - 1] == p[j - 1] || p[j - 1] == '.');
+P[i][j] = P[i][j - 2], if p[j - 1] == '*' and the pattern repeats for 0 times;
+P[i][j] = P[i - 1][j] && (s[i - 1] == p[j - 2] || p[j - 2] == '.'), if p[j - 1] == '*' and the pattern repeats for at least 1 times.
+\end{lstlisting}
+Putting these together, we will have the following code.
+\begin{lstlisting}
+bool isMatch( string s, string p ) {
+	int m = s.size(), n = p.size();
+	vector<vector<bool>> dp( m + 1, vector<bool>( n + 1, false ) );
+	dp[0][0] = true;
+	for ( int i = 0; i <= m; ++i ) {
+		for ( int j = 1; j <= n; ++j ) {
+			if ( j > 1 && p[j - 1] == '*' ) 
+			{
+				dp[i][j] = dp[i][j - 2] || (i > 0 && (s[i - 1] == p[j - 2] || p[j - 2] == '.') && dp[i - 1][j]);
+			}
+			else 
+			{
+				dp[i][j] = i > 0 && dp[i - 1][j - 1] && (s[i - 1] == p[j - 1] || p[j - 1] == '.');
+			}
+		}
+	}
+	return dp[m][n];
+}
+\end{lstlisting}
+
+
+\section{11}
+\begin{CJK}{UTF8}{gbsn}
+这道求装最多水的容器的题和那道 Trapping Rain Water 收集雨水 很类似，但又有些不同，那道题让求整个能收集雨水的量，这道只是让求最大的一个的装水量，而且还有一点不同的是，那道题容器边缘不能算在里面，而这道题却可以算，相比较来说还是这道题容易一些，我们需要定义i和j两个指针分别指向数组的左右两端，然后两个指针向中间搜索，每移动一次算一个值和结果比较取较大的，容器装水量的算法是找出左右两个边缘中较小的那个乘以两边缘的距离
+\end{CJK}
+\begin{lstlisting}
+int maxArea( vector<int>& height ) {
+	int res = 0, i = 0, j = height.size() - 1;
+	while ( i < j ) {
+		res = max( res, min( height[i], height[j] ) * (j - i) );
+		height[i] < height[j] ? ++i : --j;
+	}
+	return res;
+}
+\end{lstlisting}
+
+\section{12--14}
+
+\section{15}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们求三数之和，比之前那道Two Sum 两数之和要复杂一些，我们还是要首先对原数组进行排序，然后开始遍历排序后的数组，这里注意不是遍历到最后一个停止，而是到倒数第三个就可以了，然后我们还要加上重复就跳过的处理，对于遍历到的数，我们用0减去这个数得到一个sum，我们只需要再之后找到两个数之和等于sum即可，这样一来问题又转化为了求two sum，这时候我们一次扫描，找到了等于sum的两数后，加上当前遍历到的数字，按顺序存入结果中即可，然后还要注意跳过重复数字
+\end{CJK}
+\begin{lstlisting}
+vector<vector<int>> threeSum( vector<int>& nums ) {
+	vector<vector<int>> res;
+	sort( nums.begin(), nums.end() );
+	for ( int k = 0; k < nums.size(); ++k ) {
+		if ( nums[k] > 0 ) break;
+		if ( k > 0 && nums[k] == nums[k - 1] ) continue;
+		int target = 0 - nums[k];
+		int i = k + 1, j = nums.size() - 1;
+		while ( i < j ) {
+			if ( nums[i] + nums[j] == target ) {
+				res.push_back( { nums[k], nums[i], nums[j] } );
+				while ( i < j && nums[i] == nums[i + 1] ) ++i;
+				while ( i < j && nums[j] == nums[j - 1] ) --j;
+				++i; --j;
+			}
+			else if ( nums[i] + nums[j] < target ) ++i;
+			else --j;
+		}
+	}
+	return res;
+}
+\end{lstlisting}
+
+\section{16}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们求最接近给定值的三数之和，是在之前那道 3Sum 三数之和的基础上又增加了些许难度，那么这道题让我们返回这个最接近于给定值的值，即我们要保证当前三数和跟给定值之间的差的绝对值最小，所以我们需要定义一个变量diff用来记录差的绝对值，然后我们还是要先将数组排个序，然后开始遍历数组，思路跟那道三数之和很相似，都是先确定一个数，然后用两个指针left和right来滑动寻找另外两个数，每确定两个数，我们求出此三数之和，然后算和给定值的差的绝对值存在newDiff中，然后和diff比较并更新diff和结果closest即可
+\end{CJK}
+\begin{lstlisting}
+int threeSumClosest( vector<int>& nums, int target ) {
+	int closest = nums[0] + nums[1] + nums[2];
+	int diff = abs( closest - target );
+	sort( nums.begin(), nums.end() );
+	for ( int i = 0; i < nums.size() - 2; ++i ) {
+		int left = i + 1, right = nums.size() - 1;
+		while ( left < right ) {
+			int sum = nums[i] + nums[left] + nums[right];
+			int newDiff = abs( sum - target );
+			if ( diff > newDiff ) {
+				diff = newDiff;
+				closest = sum;
+			}
+			if ( sum < target ) ++left;
+			else --right;
+		}
+	}
+	return closest;
+}
+\end{lstlisting}
+
+\section{17}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们求电话号码的字母组合，即数字2到9中每个数字可以代表若干个字母，然后给一串数字，求出所有可能的组合，相类似的题目有 Path Sum II 二叉树路径之和之二，Subsets II 子集合之二，Permutations 全排列，Permutations II 全排列之二，Combinations 组合项， Combination Sum 组合之和和 Combination Sum II 组合之和之二等等。我们用递归Recursion来解，我们需要建立一个字典，用来保存每个数字所代表的字符串，然后我们还需要一个变量level，记录当前生成的字符串的字符个数，实现套路和上述那些题十分类似
+\end{CJK}
+\begin{lstlisting}
+// Recursion
+class Solution {
+public:
+	vector<string> letterCombinations( string digits ) {
+		vector<string> res;
+		if ( digits.empty() ) return res;
+		string dict[] = { "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz" };
+		letterCombinationsDFS( digits, dict, 0, "", res );
+		return res;
+	}
+	void letterCombinationsDFS( string digits, string dict[], int level, string out, vector<string> &res ) {
+		if ( level == digits.size() ) res.push_back( out );
+		else {
+			string str = dict[digits[level] - '2'];
+			for ( int i = 0; i < str.size(); ++i ) {
+				out.push_back( str[i] );
+				letterCombinationsDFS( digits, dict, level + 1, out, res );
+				out.pop_back();
+			}
+		}
+	}
+};
+\end{lstlisting}
+
+
+\section{18}
+\begin{CJK}{UTF8}{gbsn}
+LeetCode中关于数字之和还有其他几道，分别是Two Sum 两数之和，3Sum 三数之和，3Sum Closest 最近三数之和，虽然难度在递增，但是整体的套路都是一样的，在这里为了避免重复项，我们使用了STL中的set，其特点是不能有重复，如果新加入的数在set中原本就存在的话，插入操作就会失败，这样能很好的避免的重复项的存在。此题的$O(n^3)$解法的思路跟3Sum 三数之和基本没啥区别，就是多加了一层for循环，其他的都一样
+\end{CJK}
+\begin{lstlisting}
+vector<vector<int> > fourSum( vector<int> &nums, int target ) {
+	set<vector<int> > res;
+	sort( nums.begin(), nums.end() );
+	for ( int i = 0; i < int( nums.size() - 3 ); ++i ) {
+		for ( int j = i + 1; j < int( nums.size() - 2 ); ++j ) {
+			int left = j + 1, right = nums.size() - 1;
+			while ( left < right ) {
+				int sum = nums[i] + nums[j] + nums[left] + nums[right];
+				if ( sum == target ) {
+					vector<int> out;
+					out.push_back( nums[i] );
+					out.push_back( nums[j] );
+					out.push_back( nums[left] );
+					out.push_back( nums[right] );
+					res.insert( out );
+					++left; --right;
+				}
+				else if ( sum < target ) ++left;
+				else --right;
+			}
+		}
+	}
+	return vector<vector<int> >( res.begin(), res.end() );
+}
+\end{lstlisting}
+
+\section{19}
+\begin{CJK}{UTF8}{gbsn}
+这道题让我们移除链表倒数第N个节点，限定n一定是有效的，即n不会大于链表中的元素总数。还有题目要求我们一次遍历解决问题，那么就得想些比较巧妙的方法了。比如我们首先要考虑的时，如何找到倒数第N个节点，由于只允许一次遍历，所以我们不能用一次完整的遍历来统计链表中元素的个数，而是遍历到对应位置就应该移除了。那么我们需要用两个指针来帮助我们解题，pre和cur指针。首先cur指针先向前走N步，如果此时cur指向空，说明N为链表的长度，则需要移除的为首元素，那么此时我们返回head$\rightarrow$next即可，如果cur存在，我们再继续往下走，此时pre指针也跟着走，直到cur为最后一个元素时停止，此时pre指向要移除元素的前一个元素，我们再修改指针跳过需要移除的元素即可。
+\end{CJK}
+\begin{lstlisting}
+ListNode* removeNthFromEnd( ListNode* head, int n ) {
+	if ( !head->next ) return NULL;
+	ListNode *pre = head, *cur = head;
+	for ( int i = 0; i < n; ++i ) cur = cur->next;
+	if ( !cur ) return head->next;
+	while ( cur->next ) {
+		cur = cur->next;
+		pre = pre->next;
+	}
+	pre->next = pre->next->next;
+	return head;
+}
+\end{lstlisting}
+
+\end{document}
