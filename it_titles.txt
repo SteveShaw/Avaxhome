@@ -168,16 +168,6 @@ Deep learning is a form of machine learning that enables computers to learn from
 The text offers mathematical and conceptual background, covering relevant concepts in linear algebra, probability theory and information theory, numerical computation, and machine learning. It describes deep learning techniques used by practitioners in industry, including deep feedforward networks, regularization, optimization algorithms, convolutional networks, sequence modeling, and practical methodology; and it surveys such applications as natural language processing, speech recognition, computer vision, online recommendation systems, bioinformatics, and videogames. Finally, the book offers research perspectives, covering such theoretical topics as linear factor models, autoencoders, representation learning, structured probabilistic models, Monte Carlo methods, the partition function, approximate inference, and deep generative models.
 
 95 <--> Udemy - R Programming for Simulation and Monte Carlo Methods [repost]
-http://nitroflare.com/view/9606D6FDA93901C/R_Progr_Sim_Mon_Carl_Met.part01.rar
-http://nitroflare.com/view/3AFDC70C7ED37D5/R_Progr_Sim_Mon_Carl_Met.part02.rar
-http://nitroflare.com/view/28DF05041D5DD9D/R_Progr_Sim_Mon_Carl_Met.part03.rar
-http://nitroflare.com/view/D7B3EE00691F664/R_Progr_Sim_Mon_Carl_Met.part04.rar
-http://nitroflare.com/view/FCF75FC3995053E/R_Progr_Sim_Mon_Carl_Met.part05.rar
-http://nitroflare.com/view/997B5E90B64B353/R_Progr_Sim_Mon_Carl_Met.part06.rar
-http://nitroflare.com/view/B80BFE9DDDCDE44/R_Progr_Sim_Mon_Carl_Met.part07.rar
-http://nitroflare.com/view/EBA83FB402966DB/R_Progr_Sim_Mon_Carl_Met.part08.rar
-http://nitroflare.com/view/F9001675A8A32DA/R_Progr_Sim_Mon_Carl_Met.part09.rar
-http://nitroflare.com/view/E613F788B996AB3/R_Progr_Sim_Mon_Carl_Met.part10.rar
 
 
 Udemy - R Programming for Simulation and Monte Carlo Methods
@@ -197,16 +187,6 @@ Be able to simulate parameter estimation, Monte-Carlo Integration of both contin
 
 
 101 <--> The Comprehensive Programming in R Course [repost]
-http://nitroflare.com/view/A6117174C0F4EEE/Udemy.The.Comprehensive.Programming.in.R.Course.part01.rar
-http://nitroflare.com/view/FC437D06876B521/Udemy.The.Comprehensive.Programming.in.R.Course.part02.rar
-http://nitroflare.com/view/1D5E2D576FBAB38/Udemy.The.Comprehensive.Programming.in.R.Course.part03.rar
-http://nitroflare.com/view/134BD46C944C260/Udemy.The.Comprehensive.Programming.in.R.Course.part04.rar
-http://nitroflare.com/view/27CB67CE27B1042/Udemy.The.Comprehensive.Programming.in.R.Course.part05.rar
-http://nitroflare.com/view/0AC69C6F17C00EF/Udemy.The.Comprehensive.Programming.in.R.Course.part06.rar
-http://nitroflare.com/view/36DC10F81C8F826/Udemy.The.Comprehensive.Programming.in.R.Course.part07.rar
-http://nitroflare.com/view/5493309C393107D/Udemy.The.Comprehensive.Programming.in.R.Course.part08.rar
-http://nitroflare.com/view/32EA13B6E1A398B/Udemy.The.Comprehensive.Programming.in.R.Course.part09.rar
-
 
 The Comprehensive Programming in R Course
 WEBRip | English | MP4 | 1280 x 720 | AVC ~799 kbps | 30 fps

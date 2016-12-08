@@ -257,4 +257,187 @@ void sortColors( int A[], int n ) {
 	}
 }
 \end{lstlisting}
+
+\section{76}
+\begin{CJK}{UTF8}{gbsn}
+这道题的要求是要在$O(n)$的时间度里实现找到这个最小窗口字串，那么暴力搜索Brute Force肯定是不能用的，我们可以考虑哈希表，其中key是T中的字符，value是该字符出现的次数。
+\begin{itemize}
+\item 我们最开始先扫描一遍T，把对应的字符及其出现的次数存到哈希表中。
+\item 然后开始遍历S，遇到T中的字符，就把对应的哈希表中的value减一，直到包含了T中的所有的字符，纪录一个字串并更新最小字串值。
+\item 将子窗口的左边界向右移，略掉不在T中的字符，如果某个在T中的字符出现的次数大于哈希表中的value，则也可以跳过该字符。
+\end{itemize}
+\end{CJK}
+\begin{lstlisting}
+string minWindow(string S, string T) {
+	if (T.size() > S.size()) return "";
+	string res = "";
+	int left = 0, count = 0, minLen = S.size() + 1;
+	unordered_map<char, int> m;
+	for (int i = 0; i < T.size(); ++i) {
+		if (m.find(T[i]) != m.end()) ++m[T[i]];
+		else m[T[i]] = 1;
+	}
+	for (int right = 0; right < S.size(); ++right) {
+		if (m.find(S[right]) != m.end()) {
+			--m[S[right]];
+			if (m[S[right]] >= 0) ++count;
+			while (count == T.size()) {
+				if (right - left + 1 < minLen) {
+					minLen = right - left + 1;
+					res = S.substr(left, minLen);
+				}
+				if (m.find(S[left]) != m.end()) {
+					++m[S[left]];
+					if (m[S[left]] > 0) --count;
+				}
+				++left;
+			}
+		}
+	}
+	return res;
+}
+\end{lstlisting}
+\begin{CJK}{UTF8}{gbsn}
+哈希表可以直接用个int的数组来代替，因为ASCII只有256个字符，所以用两个大小为256的int数组即可代替哈希表
+\end{CJK}
+\begin{lstlisting}
+string minWindow(string S, string T) {
+	if (T.size() > S.size()) return "";
+	string res = "";
+	int left = 0, count = 0, minLen = S.size() + 1;
+	int tm[256] = { 0 }, sm[256] = { 0 };
+	for (int i = 0; i < T.size(); ++i) ++tm[T[i]];
+	for (int right = 0; right < S.size(); ++right) {
+		if (tm[S[right]] != 0) {
+			++sm[S[right]];
+			if (sm[S[right]] <= tm[S[right]]) ++count;
+			while (count == T.size()) {
+				if (right - left + 1 < minLen) {
+					minLen = right - left + 1;
+					res = S.substr(left, minLen);
+				}
+				if (tm[S[left]] != 0) {
+					--sm[S[left]];
+					if (sm[S[left]] < tm[S[left]]) --count;
+				}
+				++left;
+			}
+		}
+	}
+	return res;
+}
+\end{lstlisting}
+
+\section{77}
+\begin{CJK}{UTF8}{gbsn}
+这道题让求1到n共n个数字里k个数的组合数的所有情况，还是要用深度优先搜索DFS来解，根据以往的经验，像这种要求出所有结果的集合，一般都是用DFS调用递归来解。那么我们建立一个保存最终结果的大集合res，还要定义一个保存每一个组合的小集合out，每次放一个数到out里，如果out里数个数到了k个，则把out保存到最终结果中，否则在下一层中继续调用递归
+\end{CJK}
+\begin{lstlisting}
+class Solution {
+public:
+	vector<vector<int> > combine(int n, int k) {
+		vector<vector<int> > res;
+		vector<int> out;
+		combineDFS(n, k, 1, out, res);
+		return res;
+	}
+	void combineDFS(int n, int k, int level, vector<int> &out, vector<vector<int> > &res) {
+		if (out.size() == k) res.push_back(out);
+		else {
+			for (int i = level; i <= n; ++i) {
+				out.push_back(i);
+				combineDFS(n, k, i + 1, out, res);
+				out.pop_back();
+			}
+		}
+	}
+};
+\end{lstlisting}
+
+\section{78}
+\begin{CJK}{UTF8}{gbsn}
+这道求子集合的问题，由于其要列出所有结果，按照以往的经验，肯定要是要用递归来做。这道题其实它的非递归解法相对来说更简单一点，下面我们先来看非递归的解法，由于题目要求子集合中数字的顺序是非降序排列的，所有我们需要预处理，先给输入数组排序，然后再进一步处理，最开始我在想的时候，是想按照子集的长度由少到多全部写出来，比如子集长度为0的就是空集，空集是任何集合的子集，满足条件，直接加入。下面长度为1的子集，直接一个循环加入所有数字，子集长度为2的话可以用两个循环，但是这种想法到后面就行不通了，因为循环的个数不能无限的增长，所以我们必须换一种思路。我们可以一位一位的网上叠加，比如对于题目中给的例子[1,2,3]来说，最开始是空集，那么我们现在要处理1，就在空集上加1，为[1]，现在我们有两个自己[]和[1]，下面我们来处理2，我们在之前的子集基础上，每个都加个2，可以分别得到[2]，[1, 2]，那么现在所有的子集合为[], [1], [2], [1, 2]，同理处理3的情况可得[3], [1, 3], [2, 3], [1, 2, 3], 再加上之前的子集就是所有的子集合了
+\end{CJK}
+\begin{lstlisting}
+vector<vector<int> > subsets(vector<int> &S) {
+	vector<vector<int> > res(1);
+	sort(S.begin(), S.end());
+	for (int i = 0; i < S.size(); ++i) {
+		int size = res.size();
+		for (int j = 0; j < size; ++j) {
+			res.push_back(res[j]);
+			res.back().push_back(S[i]);
+		}
+	}
+	return res;
+}
+\end{lstlisting}
+\begin{CJK}{UTF8}{gbsn}
+下面来看递归的解法，相当于一种深度优先搜索，由于原集合每一个数字只有两种状态，要么存在，要么不存在，那么在构造子集时就有选择和不选择两种情况，所以可以构造一棵二叉树，左子树表示选择该层处理的节点，右子树表示不选择，最终的叶节点就是所有子集合，树的结构如下：
+\end{CJK}
+\begin{lstlisting}
+[]        
+                   /          \        
+                  /            \     
+                 /              \
+              [1]                []
+           /       \           /    \
+          /         \         /      \        
+       [1 2]       [1]       [2]     []
+      /     \     /   \     /   \    / \
+  [1 2 3] [1 2] [1 3] [1] [2 3] [2] [3] []
+\end{lstlisting}
+\begin{lstlisting}
+// Recursion
+class Solution {
+public:
+	vector<vector<int> > subsets(vector<int> &S) {
+		vector<vector<int> > res;
+		vector<int> out;
+		sort(S.begin(), S.end());
+		getSubsets(S, 0, out, res);
+		return res;
+	}
+	void getSubsets(vector<int> &S, int pos, vector<int> &out, vector<vector<int> > &res) {
+		res.push_back(out);
+		for (int i = pos; i < S.size(); ++i) {
+			out.push_back(S[i]);
+			getSubsets(S, i + 1, out, res);
+			out.pop_back();
+		}
+	}
+};
+\end{lstlisting}
+
+\section{79}
+\begin{CJK}{UTF8}{gbsn}
+这道题是典型的深度优先遍历DFS的应用，原二维数组就像是一个迷宫，可以上下左右四个方向行走，我们以二维数组中每一个数都作为起点和给定字符串做匹配，我们还需要一个和原数组等大小的visited数组，是bool型的，用来记录当前位置是否已经被访问过，因为题目要求一个cell只能被访问一次。如果二维数组board的当前字符和目标字符串word对应的字符相等，则对其上下左右四个邻字符分别调用DFS的递归函数，只要有一个返回true，那么就表示可以找到对应的字符串，否则就不能找到，
+\end{CJK}
+\begin{lstlisting}
+class Solution {
+public:
+	bool exist(vector<vector<char> > &board, string word) {
+		if (word.empty()) return true;
+		if (board.empty() || board[0].empty()) return false;
+		vector<vector<bool> > visited(board.size(), vector<bool>(board[0].size(), false));
+		for (int i = 0; i < board.size(); ++i) {
+			for (int j = 0; j < board[i].size(); ++j) {
+				if (search(board, word, 0, i, j, visited)) return true;
+			}
+		}
+		return false;
+	}
+	bool search(vector<vector<char> > &board, string word, int idx, int i, int j, vector<vector<bool> > &visited) {
+		if (idx == word.size()) return true;
+		if (i < 0 || j < 0 || i >= board.size() || j >= board[0].size() || visited[i][j] || board[i][j] != word[idx]) return false;
+		visited[i][j] = true;
+		bool res = search(board, word, idx + 1, i - 1, j, visited)
+			|| search(board, word, idx + 1, i + 1, j, visited)
+			|| search(board, word, idx + 1, i, j - 1, visited)
+			|| search(board, word, idx + 1, i, j + 1, visited);
+		visited[i][j] = false;
+		return res;
+	}
+};
+\end{lstlisting}
 \end{document}
