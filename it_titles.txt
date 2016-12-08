@@ -1,3 +1,714 @@
+11:24 AM 12/8/2016 [START]
+
+0 <--> Application Testing with Capybara (Repost)
+
+
+Matthew Robbins, "Application Testing with Capybara" 
+2013 | ISBN: 1783281251 | English | 104 pages | PDF | 3 MB
+
+
+25 <--> How to Draw Collection 13-24 (Repost)
+http://nitroflare.com/view/5D31332909DFC19/B00C8TJLPQ_draw.epub
+http://ul.to/rdofd50o
+
+
+Amit Offir, "How to Draw Collection 13-24" 
+2013 | ISBN: n/a | ASIN: B00C8TJLPQ | English | 222 Pages | EPUB | 11.85 MB
+
+An Amit Offir's "how to draw collection" of 12 drawing books (13-24) over 350 pages that will teach you how to draw step by step the coolest things to draw.
+
+if you are looking for a great way to learn how to draw this drawing books collection is the best way to do that.
+
+it is a great book for parents or grandparents that want to draw with their kids or grandkids and have some quality time, drawing teachers and art teachers can use it in so many ways and of course for kids and adults that love to draw and want to improve their drawing skills
+
+it is also great drawing book for kids at all ages that love to draw and want to learn how to do that in a fun and simple way.
+
+the drawings are really easy to follow and very easy to draw!
+enjoy
+
+in this collection you will learn how to draw these books:
+how to draw food
+how to draw plants
+how to draw weapons
+how to draw treasure island
+how to draw Doug's friends
+how to draw forest fairies
+how to draw life under the sea
+how to draw gnomes & dwarves
+how to draw fruit
+how to draw vegetables
+how to draw stuff in the house
+how to draw Moses in Eygpt
+
+
+
+
+26 <--> R for Everyone: Advanced Analytics and Graphics (Repost)
+http://nitroflare.com/view/E365CE8F417314F/0321888030everyon.epub
+http://ul.to/qtggs7qd
+
+
+Jared P. Lander, "R for Everyone: Advanced Analytics and Graphics" 
+2013 | ISBN: 0321888030 | English | 464 pages | EPUB | 17.55 MB
+
+Statistical Computation for Programmers, Scientists, Quants, Excel Users, and Other Professionals
+
+Using the open source R language, you can build powerful statistical models to answer many of your most challenging questions. R has traditionally been difficult for non-statisticians to learn, and most R books assume far too much knowledge to be of help. R for Everyone is the solution.
+Drawing on his unsurpassed experience teaching new users, professional data scientist Jared P. Lander has written the perfect tutorial for anyone new to statistical programming and modeling. Organized to make learning easy and intuitive, this guide focuses on the 20 percent of R functionality you’ll need to accomplish 80 percent of modern data tasks.
+Lander’s self-contained chapters start with the absolute basics, offering extensive hands-on practice and sample code. You’ll download and install R; navigate and use the R environment; master basic program control, data import, and manipulation; and walk through several essential tests. Then, building on this foundation, you’ll construct several complete models, both linear and nonlinear, and use some data mining techniques.
+By the time you’re done, you won’t just know how to write R programs, you’ll be ready to tackle the statistical problems you care about most.
+
+COVERAGE INCLUDES
+• Exploring R, RStudio, and R packages
+• Using R for math: variable types, vectors, calling functions, and more
+• Exploiting data structures, including data.frames, matrices, and lists
+• Creating attractive, intuitive statistical graphics
+• Writing user-defined functions
+• Controlling program flow with if, ifelse, and complex checks
+• Improving program efficiency with group manipulations
+• Combining and reshaping multiple datasets
+• Manipulating strings using R’s facilities and regular expressions
+• Creating normal, binomial, and Poisson probability distributions
+• Programming basic statistics: mean, standard deviation, and t-tests
+• Building linear, generalized linear, and nonlinear models
+• Assessing the quality of models and variable selection
+• Preventing overfitting, using the Elastic Net and Bayesian methods
+• Analyzing univariate and multivariate time series data
+• Grouping data via K-means and hierarchical clustering
+• Preparing reports, slideshows, and web pages with knitr
+• Building reusable R packages with devtools and Rcpp
+• Getting involved with the R global community
+
+
+
+
+36 <--> Text Analytics with Python
+http://nitroflare.com/view/8B8B268CC59F770/5555454545454.pdf
+
+
+Text Analytics with Python: A Practical Real-World Approach to Gaining Actionable Insights from your Data
+Apress; 1st ed. edition | 29 Dec 2016 | English | ISBN: 148422387X | 385 pages | PDF | 6 Mb
+
+Derive useful insights from your data using Python. Learn the techniques related to natural language processing and text analytics, and gain the skills to know which technique is best suited to solve a particular problem.
+
+Text Analytics with Python teaches you both basic and advanced concepts, including text and language syntax, structure, semantics. You will focus on algorithms and techniques, such as text classification, clustering, topic modeling, and text summarization. 
+A structured and comprehensive approach is followed in this book so that readers with little or no experience do not find themselves overwhelmed. You will start with the basics of natural language and Python and move on to advanced analytical and machine learning concepts. You will look at each technique and algorithm with both a bird's eye view to understand how it can be used as well as with a microscopic view to understand the mathematical concepts and to implement them to solve your own problems.
+
+
+
+
+37 <--> The Computer Graphics Manual (repost)
+http://nitroflare.com/view/B389EF4101F1627/The_Computer_Graphics_Manual.pdf
+http://ul.to/t1b1ye5u
+
+
+David Salomon, "The Computer Graphics Manual (Texts in Computer Science)"
+English | 2011 | ISBN: 0857298852 | 1496 pages | PDF | 63 MB
+
+
+This book presents a broad overview of computer graphics (CG), its history, and the hardware tools it employs. Covering a substantial number of concepts and algorithms, the text describes the techniques, approaches, and algorithms at the core of this field. Emphasis is placed on practical design and implementation, highlighting how graphics software works, and explaining how current CG can generate and display realistic-looking objects. The mathematics is non-rigorous, with the necessary mathematical background introduced in the Appendixes. Features: includes numerous figures, examples and solved exercises; discusses the key 2D and 3D transformations, and the main types of projections; presents an extensive selection of methods, algorithms, and techniques; examines advanced techniques in CG, including the nature and properties of light and color, graphics standards and file formats, and fractals; explores the principles of image compression; describes the important input/output graphics devices.
+
+
+
+
+71 <--> Functional Python Programming (repost)
+http://nitroflare.com/view/D73B283FE98D62D/Packt_Publishing_Functional_Python_Programming_%282015%29.epub
+
+
+Steven Lott, "Functional Python Programming"
+English | 2015 | ISBN: 1784396990 | 360 pages | EPUB | 1.3 MB
+
+
+Key Features
+Implement common functional programming design patterns and techniques in Python
+Learn how to choose between imperative and functional approaches based on expressiveness, clarity, and performance
+Apply functional Python to common Exploratory Data Analysis (EDA) programming problems
+Book Description
+Python’s easy-to-learn and extensible abilities offer a number of functional programming features for you to bring into your workflow, especially in the realm of data science.
+
+If you’re a Python developer who wants to discover how to take the power of functional programming and bring it into your own programs then this book is essential for you, even if you know next to nothing about the paradigm. Starting with a general overview of functional concepts you’ll explore common functional features such as first-class and higher-order functions, pure functions and more, and how these are accomplished in Python to give you the core foundations you’ll build upon. After that, you’ll discover common functional optimizations for Python to help your apps reach even higher speeds. You'll also explore data preparation techniques and data exploration in depth, along with learning how the Python standard library fits the functional programming model. Finally, to top off your journey into the world of function Python you’ll at look at the PyMonad project and some larger examples to put everything into perspective.
+
+With Functional Python Programming by your side you’ll understand the core concepts of function Python, its impact on the programming workflow, and how to implement it in Python, giving you the ability to take your applications to an even higher level.
+
+What you will learn
+
+Use Python's generator functions and generator expressions to work with collections in a non-strict (or lazy) manner
+Utilize Python library modules including itertools, functools, multiprocessing, and concurrent.futures for efficient functional programs
+Use Python strings with object-oriented suffix notation and prefix notation
+Avoid stateful classes by making use of families of tuples
+Design and implement decorators to create composite functions
+Use functions like max(), min(), map(), filter(), and sorted()
+Write advanced higher-order functions
+
+
+
+88 <--> Python Data Visualization Solutions
+http://nitroflare.com/view/6077B03D60A1CB4/Pyt.Da.Vis.Sol.part1.rar
+http://nitroflare.com/view/2823C37D90B8428/Pyt.Da.Vis.Sol.part2.rar
+http://nitroflare.com/view/BDA2E0CC109DECE/Pyt.Da.Vis.Sol.part3.rar
+
+
+Python Data Visualization Solutions
+HDRips | MP4/AVC, ~461 kb/s | 1280x720 | Duration: 03:27:23 | English: AAC, 128 kb/s (2 ch) | 687 MB
+Genre: Development / Programming
+
+Create attractive visualizations using Python’s most popular libraries.
+
+-Set up an optimal Python environment for data visualization
+-Import, organize, and visualize your data with the popular open source Python libraries such as matplotlib, NumPy, plot.ly and more
+-A practical tutorial to help you determine different approaches to data visualization, and how to choose the most appropriate one for your needs
+
+Effective visualization can help you get better insights from your data, and help you make better and more informed business decisions.
+
+This video starts by showing you how to set up matplotlib and other Python libraries that are required for most parts of the course, before moving on to discuss various widely used diagrams and charts such as Gantt Charts. As you will go through the course, you will get to know about various 3D diagrams and animations. As maps are irreplaceable to display geo-spatial data, this course will show you how to build them. In the last section, we’ll take you on a thorough walkthrough of incorporating matplotlib into various environments and how to create Gantt charts using Python.
+
+With practical, precise, and reproducible videos, you will get a better understanding of the data visualization concepts, how to apply them, and how you can overcome any challenge while implementing them.
+
+
+ Other Development / Programming lessons:
+
+
+screenshot
+
+
+
+
+
+
+Welcome to the best eLearning video (English, German, French, Spanish language) and many more: LINK
+Do not forget to check my blog! Updated regularly! Add in bookmarks my blog :)
+PM me if Links not working!
+
+No mirrors pls!
+
+
+
+
+100 <--> Working with Algorithms in Python [repost]
+http://nitroflare.com/view/A58298EA17D92DC/Wor.wi.Alg.Py.part1.rar
+http://nitroflare.com/view/A55DAD8E59166EF/Wor.wi.Alg.Py.part2.rar
+http://nitroflare.com/view/5067D5D3689562A/Wor.wi.Alg.Py.part3.rar
+http://nitroflare.com/view/315321362609D58/Wor.wi.Alg.Py.part4.rar
+http://nitroflare.com/view/91DBF74C1F3A8AD/Wor.wi.Alg.Py.part5.rar
+http://nitroflare.com/view/33B07A9FBAC6052/Wor.wi.Alg.Py.part6.rar
+http://nitroflare.com/view/F2A0C583E2C31BF/Wor.wi.Alg.Py.part7.rar
+
+
+Working with Algorithms in Python
+HDRips | MP4/AVC, ~953 kb/s | 1280x720 | Duration: 08:39:00 | English: AAC, 61 kb/s (1 ch) | 4.52 GB
+Genre: Development / Programming
+
+Learn how to make your Python code more efficient by using algorithms to solve a variety of tasks or computational problems. In this video course, you’ll learn algorithm basics and then tackle a series of problems—such as determining the shortest path through a graph and the minimum edit distance between two genomic sequences—using existing algorithms.
+
+
+ Other Development / Programming lessons:
+
+
+200 <--> Evolutionary Computer Vision: The First Footprints
+http://nitroflare.com/view/2AC5D9D081BBB25/3662436922.pdf
+
+
+Gustavo Olague, "Evolutionary Computer Vision: The First Footprints" 
+English | ISBN: 3662436922 | 2016 | 411 pages | PDF | 21 MB
+
+This book explains the theory and application of evolutionary computer vision, a new paradigm where challenging vision problems can be approached using the techniques of evolutionary computing. This methodology achieves excellent results for defining fitness functions and representations for problems by merging evolutionary computation with mathematical optimization to produce automatic creation of emerging visual behaviors.
+
+In the first part of the book the author surveys the literature in concise form, defines the relevant terminology, and offers historical and philosophical motivations for the key research problems in the field. For researchers from the computer vision community, he offers a simple introduction to the evolutionary computing paradigm. The second part of the book focuses on implementing evolutionary algorithms that solve given problems using working programs in the major fields of low-, intermediate- and high-level computer vision.
+
+This book will be of value to researchers, engineers, and students in the fields of computer vision, evolutionary computing, robotics, biologically inspired mechatronics, electronics engineering, control, and artificial intelligence.
+
+228 <--> Python Machine Learning Solutions
+http://nitroflare.com/view/3C459C3E8DF3C13/Pyt.Ma.Le.Sol.part1.rar
+http://nitroflare.com/view/8291AF862E58350/Pyt.Ma.Le.Sol.part2.rar
+http://nitroflare.com/view/4C13AB34507D017/Pyt.Ma.Le.Sol.part3.rar
+http://nitroflare.com/view/A08C234D1208D17/Pyt.Ma.Le.Sol.part4.rar
+http://nitroflare.com/view/7AB1BC3068FD4CC/Pyt.Ma.Le.Sol.part5.rar
+
+
+Python Machine Learning Solutions
+HDRips | MP4/AVC, ~461 kb/s | 1280x720 | Duration: 04:27:23 | English: AAC, 128 kb/s (2 ch) | 1.05 GB
+Genre: Development / Programming
+
+100 videos that teach you how to perform various machine learning tasks in the real world.
+
+Understand which algorithms to use in a given context with the help of this exciting video-based guide
+
+Learn about perceptrons and see how they are used to build neural networks
+
+Stuck while making sense of images, text, speech, and real estate? This guide will come to your rescue, showing you how to perform machine learning for each one of these using various techniques
+
+
+Machine learning is increasingly pervasive in the modern data-driven world. It is used extensively across many fields such as search engines, robotics, self-driving cars, and more.
+
+With this course, you will learn how to perform various machine learning tasks in different environments. We’ll start by exploring a range of real-life scenarios where machine learning can be used, and look at various building blocks. Throughout the course, you’ll use a wide variety of machine learning algorithms to solve real-world problems and use Python to implement these algorithms.
+
+You’ll discover how to deal with various types of data and explore the differences between machine learning paradigms such as supervised and unsupervised learning. We also cover a range of regression techniques, classification algorithms, predictive modelling, data visualization techniques, recommendation engines, and more with the help of real-world examples.
+
+
+265 <--> Expert Programming in C# and .NET
+http://nitroflare.com/view/F1C14785121B103/Exp.Pro.in.C.Ne.part1.rar
+http://nitroflare.com/view/07D68D71DABA98A/Exp.Pro.in.C.Ne.part2.rar
+http://nitroflare.com/view/756F294AAE6A979/Exp.Pro.in.C.Ne.part3.rar
+
+
+Expert Programming in C# and .NET
+HDRips | MP4/AVC, ~375 kb/s | 1280x720 | Duration: 02:58:58 | English: AAC, 79 kb/s (2 ch) | 700 MB
+Genre: Development / Programming
+
+Get to grips with the mechanics of .NET and C# to help you write powerful applications more efficiently.
+
+-Deep dive in to C# programming to create professional applications
+-This book has been updated using modern MS development, providing all the code samples available on Github, and covering C# 6 and .NET 4.6
+-Make best use of .NET Core to run cross-platform applications
+
+.NET is one of the biggest software development platforms, and understanding its inner workings is the key to unlocking its true potential and performance. This course helps you uncover the hidden extras in .NET, enabling you to write robust and performant applications. Covering all of the latest features in C# 6 and .NET 4.6, we’ll start from the bottom with coverage of the CLR, and JIT compiler and work through advanced C# 6 programming techniques.
+
+The second part of the video explores the .NET framework including LINQ, ADO.NET, and working with databases (replacing sql server with nosql). We’ll also show you how to start working in the new Microsoft way introduce you to GitHub, and take a brief tour of your cloud deployment options.
+
+
+
+286 <--> Data Mining with Python: Implementing Classification and Regression
+http://nitroflare.com/view/3C28C9D06A1D996/Dat.Mi.wi.Pyth.part1.rar
+http://nitroflare.com/view/7713C259AE9998B/Dat.Mi.wi.Pyth.part2.rar
+
+
+Data Mining with Python: Implementing Classification and Regression
+HDRips | MP4/AVC, ~58 kb/s | 1280x720 | Duration: 02:03:25 | English: AAC, 128 kb/s (2 ch) | 297 MB
+Genre: Development / Programming
+
+A practical guide that will give you hands-on experience with the popular Python data mining algorithms.
+
+Python is a dynamic programming language used in a wide range of domains by programmers who find it simple yet powerful. In today’s world, everyone wants to gain insights from the deluge of data coming their way. Data mining provides a way of finding these insights, and Python is one of the most popular languages for data mining, providing both power and flexibility in analysis. Python has become the language of choice for data scientists for data analysis, visualization, and machine learning.
+
+In this course, you will discover the key concepts of data mining and learn how to apply different data mining techniques to find the valuable insights hidden in real-world data. You will also tackle some notorious data mining problems to get a concrete understanding of these techniques.
+
+We begin by introducing you to the important data mining concepts and the Python libraries used for data mining. You will understand the process of cleaning data and the steps involved in filtering out noise and ensuring that the data available can be used for accurate analysis. You will also build your first intelligent application that makes predictions from data. Then you will learn about the classification and regression techniques such as logistic regression, k-NN classifier, and SVM, and implement them in real-world scenarios such as predicting house prices and the number of TV show viewers.
+
+By the end of this course, you will be able to apply the concepts of classification and regression using Python and implement them in a real-world setting.
+
+
+298 <--> Optical Flow and Trajectory Estimation Methods
+http://nitroflare.com/view/3E9EC889200ABA0/3319449400.pdf
+
+
+Joel Gibson, "Optical Flow and Trajectory Estimation Methods" 
+English | ISBN: 3319449400 | 2016 | 49 pages | PDF | 1 MB
+
+This brief focuses on two main problems in the domain of optical flow and trajectory estimation: (i) The problem of finding convex optimization methods to apply sparsity to optical flow; and (ii) The problem of how to extend sparsity to improve trajectories in a computationally tractable way.
+
+Beginning with a review of optical flow fundamentals, it discusses the commonly used flow estimation strategies and the advantages or shortcomings of each. The brief also introduces the concepts associated with sparsity including dictionaries and low rank matrices. Next, it provides context for optical flow and trajectory methods including algorithms, data sets, and performance measurement. The second half of the brief covers sparse regularization of total variation optical flow and robust low rank trajectories. The authors describe a new approach that uses partially-overlapping patches to accelerate the calculation and is implemented in a coarse-to-fine strategy. Experimental results show that combining total variation and a sparse constraint from a learned dictionary is more effective than employing total variation alone.
+
+The brief is targeted at researchers and practitioners in the fields of engineering and computer science. It caters particularly to new researchers looking for cutting edge topics in optical flow as well as veterans of optical flow wishing to learn of the latest advances in multi-frame methods.
+
+
+
+332 <--> Data Wrangling with R
+http://nitroflare.com/view/43FD99250F29B2F/3319455982.pdf
+
+
+Bradley Boehmke, "Data Wrangling with R" 
+2016 | ISBN-10: 3319455982 | 238 pages | PDF | 7 MB
+
+This guide for practicing statisticians, data scientists, and R users and programmers will teach the essentials of preprocessing: data leveraging the R programming language to easily and quickly turn noisy data into usable pieces of information. Data wrangling, which is also commonly referred to as data munging, transformation, manipulation, janitor work, etc., can be a painstakingly laborious process. Roughly 80% of data analysis is spent on cleaning and preparing data; however, being a prerequisite to the rest of the data analysis workflow (visualization, analysis, reporting), it is essential that one become fluent and efficient in data wrangling techniques.
+
+This book will guide the user through the data wrangling process via a step-by-step tutorial approach and provide a solid foundation for working with data in R. The author's goal is to teach the user how to easily wrangle data in order to spend more time on understanding the content of the data. By the end of the book, the user will have learned: 
+
+How to work with different types of data such as numerics, characters, regular expressions, factors, and dates
+The difference between different data structures and how to create, add additional components to, and subset each data structure
+How to acquire and parse data from locations previously inaccessible
+How to develop functions and use loop control structures to reduce code redundancy
+How to use pipe operators to simplify code and make it more readable
+How to reshape the layout of data and manipulate, summarize, and join data sets
+
+
+
+
+346 <--> Programming for Computations - Python: A Gentle Introduction to Numerical Simulations with Python
+http://nitroflare.com/view/E0687EC1564D28D/3319324276.pdf
+
+
+Programming for Computations - Python: A Gentle Introduction to Numerical Simulations with Python (Texts in Computational Science and Engineering) by Svein Linge and Hans Petter Langtangen
+English | 2016 | ISBN: 3319324276 | 232 pages | PDF | 4 MB
+
+This book presents computer programming as a key method for solving mathematical problems. There are two versions of the book, one for MATLAB and one for Python. The book was inspired by the Springer book TCSE 6: A Primer on Scientific Programming with Python (by Langtangen), but the style is more accessible and concise, in keeping with the needs of engineering students.
+
+The book outlines the shortest possible path from no previous experience with programming to a set of skills that allows the students to write simple programs for solving common mathematical problems with numerical methods in engineering and science courses. The emphasis is on generic algorithms, clean design of programs, use of functions, and automatic tests for verification.
+357 <--> Streaming in .NET 4.5 by Mohamad Halabi
+http://nitroflare.com/view/991C004ABBB3288/Streaming.in.NET.4.5.part1.rar
+http://nitroflare.com/view/78C0C86222A55AC/Streaming.in.NET.4.5.part2.rar
+http://nitroflare.com/view/07ECDAA963BDD3D/Streaming.in.NET.4.5.part3.rar
+http://nitroflare.com/view/2B8D90775C03B93/Streaming.in.NET.4.5.part4.rar
+http://nitroflare.com/view/F944367127CB936/Streaming.in.NET.4.5.part5.rar
+
+
+Streaming in .NET 4.5
+WEBRip | English | MP4 + Project files | 1024 x 768 | AVC ~138 kbps | 15 fps
+AAC | 114 Kbps | 44.1 KHz | 2 channels | 3h 54mn | 518 MB
+Genre: eLearning Video / Development, Programming
+
+Streaming provides an efficient way to process data in chunks instead of loading bulk data into an application's memory space. It's almost inevitable that you will need to use streaming in your applications. However, what many developers miss is that there are different pieces to the .NET streaming architecture puzzle. This course will explain this architecture including backing store streams, decorator streams, and stream adapters.
+It's almost inevitable that you will need to use streaming in your applications. Yet streaming is one of the most often misunderstood topics. This misunderstanding is the result of the fact that there are multiple elements into the streaming architecture. This course we will cover many of these important elements. We start off with the overall architecture and the common features of all stream types. Then we will move into backing store streams, as well as explaining the different types of these streams. We will then cover another type of stream called decorator streams. Following that we will learn about stream adapters as the mechanism to work with high level data representation instead of bytes. Finally, we will cover how to take advantage of asynchronous operations in .NET streaming.
+
+Content:
+
+01. Introduction 00:03:32
+01. Introduction 00:15
+02. Why a Course About Streaming? 00:43
+03. Content Overview 02:33
+02. .NET Streaming Architecture 00:40:03
+04. Introduction 00:23
+05. I/O Streams 01:56
+06. What Is a Stream? 03:33
+07. .NET Streaming Architecture 04:20
+08. The System.IO.Stream Class 02:13
+09. Stream Pointer 01:12
+10. Reading From a Stream 06:30
+11. Writing Into a Stream 01:20
+12. Seeking a Stream 05:53
+13. Demo: Pointers and Seeking 04:24
+14. Disposing Streams 00:37
+15. Buffering and Flushing 02:35
+16. Multithreading via Synchronized Method 01:19
+17. Async Support 00:45
+18. Testing With no Backing Store? Stream.Null 00:56
+19. Summary 02:01
+03. Working With FileStream 00:32:52
+20. Introduction 00:29
+21. Backing Store (Base) Streams 02:11
+22. Instantiating a FileStream: Supplying the File Path 04:21
+23. FileMode and FileAccess 03:18
+24. Demo: FileMode and FileAccess 03:15
+25. FileShare 02:32
+26. Demo: FileShare 03:05
+27. Access Control 01:27
+28. Internal Buffer 01:30
+29. File Caching 03:34
+30. Optimize File Caching: Sequential and Random Access 03:26
+31. Other FileOptions 01:05
+32. Summary 02:31
+04. Restricted File Access With IsolatedStorageFileStream 00:17:22
+33. Introduction 00:22
+34. What Is Isolated Storage? 03:32
+35. Isolated Storage Types 05:35
+36. Using the IsolatedStorageFileStream 02:34
+37. Demo 03:44
+38. Summary 01:32
+05. Interprocess Communication Using PipeStream 00:21:17
+39. Introduction 00:21
+40. What Are Pipes? 01:53
+41. Named and Anonymous Pipes 01:26
+42. Named Pipe Server 01:59
+43. PipeStream 02:00
+44. Demo: Basic Byte Transmission 05:22
+45. Byte vs. Message Transmission 01:50
+46. Demo: Message Transmission 04:16
+47. Summary 02:05
+06. MemoryStream and Memory-Mapped Files 00:24:01
+48. Introduction 00:27
+49. MemoryStream 03:07
+50. Demo: MemoryStream 05:14
+51. Memory-Mapped Files 01:56
+52. Memory-Mapped Files for File Access 02:22
+53. Demo: Memory-Mapped Files and File Access 04:27
+54. Demo: Random Access With Memory-Mapped Files vs. FileStream 01:57
+55. Memory-Mapped Files for Processes Memory Sharing 03:13
+56. Summary 01:15
+07. Web and Network Streams 00:24:29
+57. Introduction 00:54
+58. Web Streams 04:06
+59. Stream Support in WebRequest/WebResponse 01:08
+60. Demo: WebRequest/WebResponse 04:13
+61. Stream Support in WebClient 01:03
+62. Demo: WebClient 03:43
+63. Stream Support in HttpClient 00:28
+64. Network Stream 03:05
+65. Demo: NetworkStream 04:42
+66. Summary 01:02
+08. Decorator Streams 00:18:56
+67. Introduction 00:39
+68. Decorator Streams 02:23
+69. BufferedStream 02:24
+70. Demo: BufferedStream With NetworkStream 02:43
+71. Compression Streams (DeflateStream and GZipStream) 02:14
+72. Demo: Compression Streams 03:15
+73. CryptoStream 02:24
+74. Chaining and Disposing Decorator Streams 01:34
+75. Summary 01:15
+09. Stream Adapters 00:34:14
+76. Introduction 00:37
+77. Stream Adapters 01:41
+78. Text Adapters: StreamReader/StreamWriter 05:47
+79. Text Adapters and Encoding 02:56
+80. Demo: StreamReader Buffer and Position 02:26
+81. Demo: StreamWriter Buffer and Position 01:56
+82. Binary Adapters: BinaryReader/BinaryWriter 04:14
+83. Understanding Write(String) and ReadString 01:58
+84. Demo: Understanding Read/Write With Binary Adapters 03:57
+85. XML Adapters: XmlReader/XmlWriter 01:16
+86. Demo: XmlReader 03:13
+87. Demo: XmlWriter 01:57
+88. Closing Stream Adapters 00:43
+89. Summary 01:29
+10. Asynchronous Support 00:17:18
+90. Introduction 00:38
+91. What Is This Module About? 00:43
+92. Computer Bound and I/O Bound Operations Sync and Async 03:59
+93. How Does This Relate to Streaming? 02:04
+94. So When Should We Use the Asynchronous Model? 02:06
+95. Asynchronous Operations in .NET 4.5 01:17
+96. Demo: HTTPClient 03:46
+97. More of the Same 01:15
+98. Summary 01:26
+
+363 <--> A Primer on Scientific Programming with Python (5th edition)
+http://nitroflare.com/view/F3526B9AB7DA186/3662498863.pdf
+
+
+Hans Petter Langtangen, "A Primer on Scientific Programming with Python (5th edition)" 
+2016 | ISBN-10: 3662498863 | 922 pages | PDF | 9 MB
+
+The book serves as a first introduction to computer programming of scientific applications, using the high-level Python language. The exposition is example and problem-oriented, where the applications are taken from mathematics, numerical calculus, statistics, physics, biology and finance. The book teaches "Matlab-style" and procedural programming as well as object-oriented programming. High school mathematics is a required background and it is advantageous to study classical and numerical one-variable calculus in parallel with reading this book. Besides learning how to program computers, the reader will also learn how to solve mathematical problems, arising in various branches of science and engineering, with the aid of numerical methods and programming. By blending programming, mathematics and scientific applications, the book lays a solid foundation for practicing computational science.
+
+From the reviews: Langtangen … does an excellent job of introducing programming as a set of skills in problem solving. He guides the reader into thinking properly about producing program logic and data structures for modeling real-world problems using objects and functions and embracing the object-oriented paradigm. … Summing Up: Highly recommended. 
+
+F. H. Wild III, Choice, Vol. 47 (8), April 2010
+
+Those of us who have learned scientific programming in Python ‘on the streets’ could be a little jealous of students who have the opportunity to take a course out of Langtangen’s Primer.” 
+John D. Cook, The Mathematical Association of America, September 2011
+
+This book goes through Python in particular, and programming in general, via tasks that scientists will likely perform. It contains valuable information for students new to scientific computing and would be the perfect bridge between an introduction to programming and an advanced course on numerical methods or computational science.
+Alex Small, IEEE, CiSE Vol. 14 (2), March /April 2012 
+
+“This fourth edition is a wonderful, inclusive textbook that covers pretty much everything one needs to know to go from zero to fairly sophisticated scientific programming in Python…” 
+Joan Horvath, Computing Reviews, March 2015
+
+
+376 <--> Genetic Algorithms with Python
+http://nitroflare.com/view/EE9238590B8EECB/Genetic_Algorithms_with_Python_-_Clinton_Sheppard.rar
+
+
+Genetic Algorithms with Python by Clinton Sheppard
+English | 29 Apr. 2016 | ISBN: 1540324001 | 282 Pages | MOBI/EPUB/PDF | 4.49 MB
+
+Get a hands-on introduction to machine learning with genetic algorithms using Python. Step-by-step tutorials build your skills from Hello World! to optimizing one genetic algorithm with another, and finally genetic programming; thus preparing you to apply genetic algorithms to problems in your own field of expertise.
+
+Genetic algorithms are one of the tools you can use to apply machine learning to finding good, sometimes even optimal, solutions to problems that have billions of potential solutions. This book gives you experience making genetic algorithms work for you, using easy-to-follow example projects that you can fall back upon when learning to use other machine learning tools and techniques. Each chapter is a step-by-step tutorial that helps to build your skills at using genetic algorithms to solve problems using Python.
+
+Python is a high-level, low ceremony and powerful language whose code can be easily understood even by entry-level programmers. If you have experience with another programming language then you should have no difficulty learning Python by induction.
+
+ Contents:
+
+My Blog with Updates!
+
+
+
+
+408 <--> Fractal Geometry in Python (2016)
+http://nitroflare.com/view/1CDEA1BA39FC2A6/Fractal_Geometry_in_Python.part1.rar
+http://nitroflare.com/view/BDC8BD4B29D23FD/Fractal_Geometry_in_Python.part2.rar
+http://nitroflare.com/view/A36EE5609C793F1/Fractal_Geometry_in_Python.part3.rar
+http://nitroflare.com/view/4453764CF70CD78/Fractal_Geometry_in_Python.part4.rar
+http://nitroflare.com/view/CB593AEB2504520/Fractal_Geometry_in_Python.part5.rar
+http://nitroflare.com/view/68CE57A6FFEC93D/Fractal_Geometry_in_Python.part6.rar
+
+
+Fractal Geometry in Python
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4.5 Hours | Lec: 28 | 767 MB
+Genre: eLearning | Language: English
+
+Intermediate Concepts in Fractal Geometry Programmed in Python
+
+This is an introduction to both graphical programming in Python and fractal geometry at an intermediate level.
+
+We learn through coding examples in which you type along with me as we go through examples of fractals created with iteration, recursion, cellular automata, and chaos.
+
+These concepts are implemented in Python using it's built-in Tkinter and turtle graphics libraries, so no special packages have to be brought in by the user, in fact by the time we are done you could write graphical packages on your own!
+
+By the end of these lectures you will
+
+Have the tools to create any graphical object in Python you want
+Understand and create classical fractals such as the Koch curve, Seirpinski triangle, and Dragon curve
+Be able to use recursion and iteration in Python functions
+Use the concept of cellular automata to animate objects in Python by playing Conway's Game of Life
+Create islands and coastlines by playing Majority Rule
+Explore the work of Feigenbaum and learn about deterministic chaos
+
+
+
+
+
+460 <--> An Introduction to Data Analysis using Aggregation Functions in R
+http://nitroflare.com/view/BAF2D6900217F1D/10.1007%40978-3-319-46762-7.pdf
+
+
+An Introduction to Data Analysis using Aggregation Functions in R
+Springer | Artificial Intelligence | December 5, 2016 | ISBN-10: 3319467611 | 199 pages | pdf | 4.56 mb
+
+Authors: James, Simon
+Provides an overview of aggregation functions
+Includes hands-on tutorials on how to program the functions covered in R without needing extensive programming courses
+Does not assume a mathematics background
+
+This textbook helps future data analysts comprehend aggregation function theory and methods in an accessible way, focusing on a fundamental understanding of the data and summarization tools. Offering a broad overview of recent trends in aggregation research, it complements any study in statistical or machine learning techniques. Readers will learn how to program key functions in R without obtaining an extensive programming background.
+Sections of the textbook cover background information and context, aggregating data with averaging functions, power means, and weighted averages including the Borda count. It explains how to transform data using normalization or scaling and standardization, as well as log, polynomial, and rank transforms. The section on averaging with interaction introduces OWS functions and the Choquet integral, simple functions that allow the handling of non-independent inputs. The final chapters examine software analysis with an emphasis on parameter identification rather than technical aspects.
+This textbook is designed for students studying computer science or business who are interested in tools for summarizing and interpreting data, without requiring a strong mathematical background. It is also suitable for those working on sophisticated data science techniques who seek a better conception of fundamental data aggregation. Solutions to the practice questions are included in the textbook.
+
+Number of Pages
+X, 199
+Number of Illustrations and Tables
+9 b/w illustrations, 20 illustrations in colour
+Topics
+Computing Methodologies
+Statistics for Engineering, Physics, Computer Science, Chemistry and Earth Sciences
+Applications of Mathematics
+Mathematics of Computing
+
+
+487 <--> Introduction to Functional Programming
+http://nitroflare.com/view/B51AA35D07661C6/Or-Intr.to.F.Pro.part1.rar
+http://nitroflare.com/view/7F7515ABA43C6F6/Or-Intr.to.F.Pro.part2.rar
+http://nitroflare.com/view/5494BCDB89AA03F/Or-Intr.to.F.Pro.part3.rar
+http://nitroflare.com/view/8AE184BF5CB47B4/Or-Intr.to.F.Pro.part4.rar
+
+
+Introduction to Functional Programming
+HDRips | MP4/AVC, ~2000 kb/s | 1920x1080 | Duration: 04:21:06 | English: AAC, 128 kb/s (2 ch) | 2,2 GB
+Genre: Development / Programming
+
+Functional programming has become an integral part of every professional developer's toolkit. Designed for the basic user of C++, Java, C#, JavaScript, Python, VB, or Ruby, this course explains the principles and methods underlying the functional approach. By the end of the course, you'll be able to think about problems from a functional point of view, making it possible for you to program with pure functions and transform procedural solutions to problems into functional solutions.
+
+
+
+500 <--> Python: Real World Machine Learning
+http://nitroflare.com/view/C2D105A7F253E95/Python_Real_World_Machine_Learning_-_Prateek_Joshi_983.rar
+
+
+Python: Real World Machine Learning by Prateek Joshi
+English | 14 Nov. 2016 | ASIN: B01N74UY6B | ISBN-13: 9781787123212 | 983 Pages | MOBI/EPUB/PDF | 53.2 MB
+
+Learn to solve challenging data science problems by building powerful machine learning models using Python.
+
+About This Book
+
+Understand which algorithms to use in a given context with the help of this exciting recipe-based guide
+This practical tutorial tackles real-world computing problems through a rigorous and effective approach
+Build state-of-the-art models and develop personalized recommendations to perform machine learning at scale
+Who This Book Is For
+
+This Learning Path is for Python programmers who are looking to use machine learning algorithms to create real-world applications. It is ideal for Python professionals who want to work with large and complex datasets and Python developers and analysts or data scientists who are looking to add to their existing skills by accessing some of the most powerful recent trends in data science. Experience with Python, Jupyter Notebooks, and command-line execution together with a good level of mathematical knowledge to understand the concepts is expected. Machine learning basic knowledge is also expected.
+
+What You Will Learn
+
+Use predictive modeling and apply it to real-world problems
+Understand how to perform market segmentation using unsupervised learning
+Apply your new-found skills to solve real problems, through clearly-explained code for every technique and test
+Compete with top data scientists by gaining a practical and theoretical understanding of cutting-edge deep learning algorithms
+Increase predictive accuracy with deep learning and scalable data-handling techniques
+Work with modern state-of-the-art large-scale machine learning techniques
+Learn to use Python code to implement a range of machine learning algorithms and techniques
+
+In Detail
+
+Machine learning is increasingly spreading in the modern data-driven world. It is used extensively across many fields such as search engines, robotics, self-driving cars, and more. Machine learning is transforming the way we understand and interact with the world around us.
+
+In the first module, Python Machine Learning Cookbook, you will learn how to perform various machine learning tasks using a wide variety of machine learning algorithms to solve real-world problems and use Python to implement these algorithms.
+
+The second module, Advanced Machine Learning with Python, is designed to take you on a guided tour of the most relevant and powerful machine learning techniques and you'll acquire a broad set of powerful skills in the area of feature selection and feature engineering.
+
+The third module in this learning path, Large Scale Machine Learning with Python, dives into scalable machine learning and the three forms of scalability. It covers the most effective machine learning techniques on a map reduce framework in Hadoop and Spark in Python.
+
+This Learning Path will teach you Python machine learning for the real world. The machine learning techniques covered in this Learning Path are at the forefront of commercial practice.
+
+This Learning Path combines some of the best that Packt has to offer in one complete, curated package. It includes content from the following Packt products:
+
+Python Machine Learning Cookbook by Prateek Joshi
+Advanced Machine Learning with Python by John Hearty
+Large Scale Machine Learning with Python by Bastiaan Sjardin, Alberto Boschetti, Luca Massaron
+Style and approach
+
+This course is a smooth learning path that will teach you how to get started with Python machine learning for the real world, and develop solutions to real-world problems. Through this comprehensive course, you'll learn to create the most effective machine learning techniques from scratch and more!
+
+
+
+
+531 <--> Getting Started with Natural Language Processing with Python (2016)
+http://nitroflare.com/view/45E659F5D138C3C/Getting_Started_with_Natural_Language_Processing_with_Python.part1.rar
+http://nitroflare.com/view/B11FBE9197971AB/Getting_Started_with_Natural_Language_Processing_with_Python.part2.rar
+http://nitroflare.com/view/48A23C3DB43B5B7/Getting_Started_with_Natural_Language_Processing_with_Python.part3.rar
+
+
+Getting Started with Natural Language Processing with Python
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours 43M | 240 MB
+Genre: eLearning | Language: English
+
+This course is all about taking raw text data and deriving insights and value from it–processing text data using standard techniques in Natural Language Processing and Machine Learning.
+
+Text data is available in abundance on the Internet, whether it be reviews, tweets, surveys, web pages or emails. Natural language processing is a powerful skill that helps you derive immense value from that data. In this course, Getting Started with Natural Language Processing with Python, you'll first learn about using the Natural Language Toolkit to pre-process raw text. Next, you'll learn how to scrape websites for texting using BeautifulSoup, as well as how to auto-summarize text using machine learning. You'll wrap up the course by exploring how to classify text using machine learning. By the end of this course you'll be able to confidently process raw text data and apply machine learning algorithms to it.
+
+
+
+
+
+533 <--> Getting Started with FPGA Programming with VHDL (2016)
+http://nitroflare.com/view/6365F36F1768877/Getting_Started_with_FPGA_Programming_with_VHDL.part1.rar
+http://nitroflare.com/view/BFC32542A115F06/Getting_Started_with_FPGA_Programming_with_VHDL.part2.rar
+http://nitroflare.com/view/49528B1E742BAD2/Getting_Started_with_FPGA_Programming_with_VHDL.part3.rar
+http://nitroflare.com/view/350D84BE41BD5FC/Getting_Started_with_FPGA_Programming_with_VHDL.part4.rar
+http://nitroflare.com/view/6E251523A784C8A/Getting_Started_with_FPGA_Programming_with_VHDL.part5.rar
+
+
+Getting Started with FPGA Programming with VHDL
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | 511 MB
+Genre: eLearning | Language: English
+
+Field Programmable Gate Arrays are a technology that sits between general-purpose microprocessors and fixed-structure Application Specific Integrated Circuits, and you can build almost anything with them. This course will teach you how.
+
+Field Programmable Gate Array (FPGA)s provide both the ability to effectively design your own processor to perform a specific task yet, at the same time, allow for later reprogramming the processor in the field. FPGAs are used across many industries, from home automation to financial engineering, aerospace and many others. While this all sounds deadly serious, it's important to understand that working with FPGAs can also be quite fun. You can think of them as the world's fastest set of Lego blocks. What you can build with an FPGA is mostly limited only by your imagination. In this course, Getting Started with FPGA Programming with VHDL, you'll first learn an overview of FPGA architecture. Next, you'll learn the fundamentals of VHDL programming language. Finally, you'll wrap up the course by learning about debugging and analysis. You'll look at how to create configurations, define signals and triggers to monitor, configure signals, and recompile to embed the logic analyzer in the design. By the end of this course, you'll have a strong foundation of FPGA programming with the VHDL language to use in your own work.
+
+
+
+542 <--> Mastering Python - Second Edition
+http://nitroflare.com/view/C2A3092853A94E8/Mast.Py.Sec.Ed.part1.rar
+http://nitroflare.com/view/29B1418D0691382/Mast.Py.Sec.Ed.part2.rar
+http://nitroflare.com/view/25AE13FA7A57782/Mast.Py.Sec.Ed.part3.rar
+
+
+Mastering Python - Second Edition
+HDRips | MP4/AVC, ~126 kb/s | 1280x720 | Duration: 05:21:13 | English: AAC, 128 kb/s (2 ch) | 757 MB
+Genre: Development / Programming
+
+Unlock the power of Python by learning effective application development strategies.
+
+-Covers the latest and advanced concepts of Python such as parallel processing with the all new Python 3.5
+-Explore the Python language from its basic installation and setup to concepts such as reactive programming and microservices
+-Get introduced to the mechanism of rewriting code in a compiled language along with ctypes and Cython tools
+
+
+Python is one of the most powerful, flexible, and popular programming languages in the world. It comes with all new features in version 3.5. With Python, you can write code that is efficient, maintainable, and reusable.
+
+In this second edition of the course, we cover the basics of operating in a Python development environment as well as the advanced topics. We present you with real-world solutions to Python 3.5 and advanced-level concepts such as reactive programming and microservices, introduce ctypes and Cython tools.
+
+567 <--> Python Projects
+http://nitroflare.com/view/42B2B73B16E6947/Pa-Pyt.Prog.part1.rar
+http://nitroflare.com/view/3982F8774D9CB45/Pa-Pyt.Prog.part2.rar
+http://nitroflare.com/view/F420DEC7D45BF34/Pa-Pyt.Prog.part3.rar
+
+
+Python Projects
+HDRips | MP4/AVC, ~461 kb/s | 1280x720 | Duration: 02:19:17 | English: AAC, 128 kb/s (2 ch) | 571 MB
+Genre: Development / Programming
+
+Build fun, scalable and robust solutions for Python applications.
+
+Gain hands-on knowledge of the various angles of python tasks through insightful projects.
+Build production ready projects using Python's eco system.
+Enhance your Python programming skills
+
+Python is a widely used high-level, general-purpose, interpreted, dynamic programming language. It provides constructs intended to enable clear programs on both a small and large scale.
+
+The video course will teach you how to create a well-designed architecture and increase performance of the current applications. You will learn how to build enterprise ready applications with the Python language. It will also demonstrate how to manage large user bases and ensure that the application is scaled easily. The projects will have an overall focus ranging from web development, statistics, etc. These ready-to-use solutions will appeal to a wide range of audience and will teach important programming concepts of Python along the way. By the end of the course, you will be able to build 4 real world production ready applications. And you can go forward very far from this very strong foundation.
+
+11:24 AM 12/8/2016 [END]
 11/14/2016 [START]
 
 0 <--> Options and Derivatives Programming in C++ (repost)
