@@ -1,10 +1,249 @@
-11:24 AM 12/8/2016 [START]
+2016/12/08 [START]
 
-0 <--> Application Testing with Capybara (Repost)
+0 <--> The New Web Typography: Create a Visual Hierarchy with Responsive Web Design
+http://nitroflare.com/view/1EF5CE798BBAEFD/1138781398.epub
 
 
-Matthew Robbins, "Application Testing with Capybara" 
-2013 | ISBN: 1783281251 | English | 104 pages | PDF | 3 MB
+The New Web Typography: Create a Visual Hierarchy with Responsive Web Design by Stephen Boss and Jason Cranford Teague
+English | 2016 | ISBN: 1138781398 | 252 pages | EPUB | 3,4 MB
+
+
+
+18 <--> Machine Learning: Algorithms and Applications
+http://nitroflare.com/view/4B23F65358076E9/1498705383.epub
+https://filejoker.net/71e84l8o4n8m
+
+
+Mohssen Mohammed, Muhammad Badruddin Khan, "Machine Learning: Algorithms and Applications" 
+2016 | ISBN-10: 1498705383 | 226 pages | EPUB | 6 MB
+
+Machine learning, one of the top emerging sciences, has an extremely broad range of applications. However, many books on the subject provide only a theoretical approach, making it difficult for a newcomer to grasp the subject material. This book provides a more practical approach by explaining the concepts of machine learning algorithms and describing the areas of application for each algorithm, using simple practical examples to demonstrate each algorithm and showing how different issues related to these algorithms are applied.
+
+
+
+
+21 <--> Python Descriptors
+http://nitroflare.com/view/5F148EBA2BCD0C7/3A978-1-4842-2505-9.pdf
+
+
+Python Descriptors by Jacob Zimmerman
+English | 14 Jan. 2017 | ISBN: 148422504X | 64 Pages | PDF | 1.25 MB
+
+This short book on Python descriptors is a collection of knowledge and ideas from many sources on dealing with and creating descriptors. And, after going through the things all descriptors have in common, the author explores ideas that have multiple ways of being implemented as well as completely new ideas never seen elsewhere before.
+There aren't many good resources out there for writing Python descriptors, and extremely few books. This is a sad state of affairs, as it makes it difficult for Python developers to get a really good understanding of how descriptors work and the techniques to avoid the big gotchas associated with working with them.
+This truly is a comprehensive guide to creating Python descriptors. As a BONUS: A pip install-able library, descriptor_tools, was written alongside this book and is an open source library on GitHub.
+What you'll learn:
+What is a descriptor protocol
+What is attribute access and how they apply to descriptors
+How to make descriptors and why
+Which Methods are needed
+How to store attributes
+How to do Read-Only Descriptors and Writing _delete()
+How to explore the descriptor classes
+How to apply the other uses of descriptors and more
+Who is this book for:
+This book is for experienced Python coders, programmers and developers.
+
+
+
+
+22 <--> Foundations of Physically Based Modeling and Animation
+http://nitroflare.com/view/90337AB40C80CCC/1482234602.pdf
+
+
+Foundations of Physically Based Modeling and Animation by Donald H. House
+English | 3 Jan. 2017 | ISBN: 1482234602 | 408 Pages | PDF | 28.39 MB
+
+Physics forms the basis for many of the motions and behaviors seen in both the real world and in the virtual worlds of animated films, visual effects, and computer games. By describing the underlying physical principles and then creating simulations based on these principles, these computer-generated worlds are brought to life. Physically Based Modeling and Animation goes behind the scenes of computer animation and details the mathematical and algorithmic foundations that are used to determine the behavior underlying the movement of virtual objects and materials. Dr. Donald House and Dr. John Keyser offer an approachable, hands-on view of the equations and programming that form the foundations of this field. They guide readers from the beginnings of modeling and simulation to more advanced techniques, enabling them to master what they need to know in order to understand and create their own animations
+
+
+
+59 <--> R Data Structures and Algorithms
+http://nitroflare.com/view/88DA8CC64E4DC39/R_Data_Structures_and_Algorithms_-_Dr._PKS_Prakash.rar
+
+
+R Data Structures and Algorithms by Dr. PKS Prakash
+English | 21 Nov. 2016 | ISBN: 1786465159 | 276 Pages | AZW3/MOBI/EPUB/PDF (conv) | 39.49 MB
+
+Increase speed and performance of your applications with efficient data structures and algorithms
+
+About This Book
+See how to use data structures such as arrays, stacks, trees, lists, and graphs through real-world examples
+Find out about important and advanced data structures such as searching and sorting algorithms
+Understand important concepts such as big-o notation, dynamic programming, and functional data structured
+
+Who This Book Is For
+This book is for R developers who want to use data structures efficiently. Basic knowledge of R is expected.
+
+What You Will Learn
+Understand the rationality behind data structures and algorithms
+Understand computation evaluation of a program featuring asymptotic and empirical algorithm analysis
+Get to know the fundamentals of arrays and linked-based data structures
+Analyze types of sorting algorithms
+Search algorithms along with hashing
+Understand linear and tree-based indexing
+Be able to implement a graph including topological sort, shortest path problem, and Prim's algorithm
+Understand dynamic programming (Knapsack) and randomized algorithms
+
+In Detail
+In this book, we cover not only classical data structures, but also functional data structures.
+
+We begin by answering the fundamental question: why data structures? We then move on to cover the relationship between data structures and algorithms, followed by an analysis and evaluation of algorithms. We introduce the fundamentals of data structures, such as lists, stacks, queues, and dictionaries, using real-world examples. We also cover topics such as indexing, sorting, and searching in depth.
+
+Later on, you will be exposed to advanced topics such as graph data structures, dynamic programming, and randomized algorithms. You will come to appreciate the intricacies of high performance and scalable programming using R. We also cover special R data structures such as vectors, data frames, and atomic vectors.
+
+With this easy-to-read book, you will be able to understand the power of linked lists, double linked lists, and circular linked lists. We will also explore the application of binary search and will go in depth into sorting algorithms such as bubble sort, selection sort, insertion sort, and merge sort.
+
+Style and approach
+This easy-to-read book with its fast-paced nature will improve the productivity of an R programmer and improve the performance of R applications. It is packed with real-world examples.
+
+
+66 <--> Modern Python Cookbook
+http://nitroflare.com/view/F9433D9D5012475/1786469251.epub
+http://nitroflare.com/view/675C4893C6D2AD6/1786469251.mobi
+
+
+Steven F. Lott, "Modern Python Cookbook"
+English | ISBN: 1786469251 | 2016 | EPUB/MOBI | 583 pages | 1 MB/5 MB
+
+Key Features
+Develop succinct, expressive programs in Python
+Learn the best practices and common idioms through carefully explained and structured recipes
+Discover new ways to apply Python for the new age of development
+Book Description
+Python is the preferred choice of developers, engineers, data scientists, and hobbyists everywhere. It is a great scripting language that can power your applications and provide great speed, safety, and scalability. By exposing Python as a series of simple recipes, you can gain insight into specific language features in a particular context. Having a tangible context helps make the language or standard library feature easier to understand.
+
+This book comes with over 100 recipes on the latest version of Python. The recipes will benefit everyone ranging from beginner to an expert. The book is broken down into 13 chapters that build from simple language concepts to more complex applications of the language.
+
+The recipes will touch upon all the necessary Python concepts related to data structures, OOP, functional programming, as well as statistical programming. You will get acquainted with the nuances of Python syntax and how to effectively use the advantages that it offers. You will end the book equipped with the knowledge of testing, web services, and configuration and application integration tips and tricks.
+
+The recipes take a problem-solution approach to resolve issues commonly faced by Python programmers across the globe. You will be armed with the knowledge of creating applications with flexible logging, powerful configuration, and command-line options, automated unit tests, and good documentation.
+
+What you will learn
+See the intricate details of the Python syntax and how to use it to your advantage
+Improve your code readability through functions in Python
+Manipulate data effectively using built-in data structures
+Get acquainted with advanced programming techniques in Python
+Equip yourself with functional and statistical programming features
+Write proper tests to be sure a program works as advertised
+Integrate application software using Python
+
+
+
+98 <--> Artificial Neural Networks: A Practical Course
+http://nitroflare.com/view/E77004F11E20564/3319431617.pdf
+https://filejoker.net/s98hs3sjpu7l
+
+
+Ivan Nunes da Silva, Danilo Hernane Spatti, "Artificial Neural Networks: A Practical Course" 
+2016 | ISBN-10: 3319431617 | 307 pages | PDF | 16 MB
+
+This book provides comprehensive coverage of neural networks, their evolution, their structure, the problems they can solve, and their applications. The first half of the book looks at theoretical investigations on artificial neural networks and addresses the key architectures that are capable of implementation in various application scenarios. The second half is designed specifically for the production of solutions using artificial neural networks to solve practical problems arising from different areas of knowledge. It also describes the various implementation details that were taken into account to achieve the reported results. These aspects contribute to the maturation and improvement of experimental techniques to specify the neural network architecture that is most appropriate for a particular application scope. The book is appropriate for students in graduate and upper undergraduate courses in addition to researchers and professionals.
+
+
+
+144 <--> High-Performance Computing and Concurrency
+http://nitroflare.com/view/A2DAF0F67C1FF6A/Hi.Per.Co.a.Co.part1.rar
+http://nitroflare.com/view/0A05AE1923B3C6D/Hi.Per.Co.a.Co.part2.rar
+http://nitroflare.com/view/8F90B0F63C521A8/Hi.Per.Co.a.Co.part3.rar
+http://nitroflare.com/view/CC1728B9C98AB46/Hi.Per.Co.a.Co.part4.rar
+http://nitroflare.com/view/CB5011F3E1134D1/Hi.Per.Co.a.Co.part5.rar
+
+
+High-Performance Computing and Concurrency
+HDRips | MP4/AVC, ~1388 kb/s | 1280x720 | Duration: 11:08:21 | English: AAC, 128 kb/s (2 ch) | 3,28 GB
+Genre: Development / Programming
+
+It's deja vu all over again. In the old days (35 plus years ago), developers wanting to write half-decent programs had to know their hardware. Those days are back. Clock frequencies have peaked and hardware can no longer be abstracted behind high-level languages.
+
+Designed for developers with high performance requirements (games, finance analysis, scientific computation, etc.), this course teaches you what really happens when programs are executed and the subtle details that make a program go slow or fast.
+
+With a focus on concurrency, specifically local concurrency (multi-threading), the course is all about writing efficient programs that make the best use of the computing resources available to you. While the sample code is written in C++, the course is not C++ specific. If you can read C++ code, but don’t use it in your work, you will still learn from this class.
+
+Learn how programs execute in hardware and the subtle details that affect program speed
+Practice writing efficient programs that get the most out of today’s CPUs, caches, and memory
+Discover how single and multi-core CPUs interact with memory and how to avoid memory slowness
+Explore memory models, concurrent data structures, lock-free concurrency, and lock-based concurrency
+Acquire the tools needed to measure the performance of programs and their components
+
+
+162 <--> Data Pipelines with Python
+http://nitroflare.com/view/6D45D3C509DD845/Da.Pi.with.Py.part1.rar
+http://nitroflare.com/view/38DEA7DB4790608/Da.Pi.with.Py.part2.rar
+http://nitroflare.com/view/8BCFC0DB66B26DD/Da.Pi.with.Py.part3.rar
+http://nitroflare.com/view/BD4DCFF567A0082/Da.Pi.with.Py.part4.rar
+http://nitroflare.com/view/E8528D3788A3255/Da.Pi.with.Py.part5.rar
+
+
+Data Pipelines with Python
+HDRips | MP4/AVC, ~595 kb/s | 1280x720 | Duration: 03:40:59 | English: AAC, 128 kb/s (2 ch) | 1,04 GB
+Genre: Development / Programming
+
+This course shows you how to build data pipelines and automate workflows using Python 3. From simple task-based messaging queues to complex frameworks like Luigi and Airflow, the course delivers the essential knowledge you need to develop your own automation solutions. You'll learn the architecture basics, and receive an introduction to a wide variety of the most popular frameworks and tools.
+
+Designed for the working data professional who is new to the world of data pipelines and distributed solutions, the course requires intermediate level Python experience and the ability to manage your own system set-ups.
+
+Acquire a practical understanding of how to approach data pipelining using Python toolsets
+Master the ability to determine when a Python framework is appropriate for a project
+Understand workflow concepts like directed acyclic graphs, producers, and consumers
+Learn to integrate data flows into pipelines, workflows, and task-based automation solutions
+Understand how to parallelize data analysis, both locally and in a distributed cluster
+Practice writing simple data tests using property-based testing
+
+
+
+
+
+
+
+188 <--> Advanced Network Programming - Principles and Techniques: Network Application Programming with Java (Repost)
+http://nitroflare.com/view/4D4B9C3BE38096B/1447152913.pdf
+http://turbobit.net/666kro5c7sps/1447152913.pdf.html
+
+
+Advanced Network Programming - Principles and Techniques: Network Application Programming with Java by Bogdan Ciubotaru, Gabriel-Miro Muntean
+Publisher: Springer | 2013 | ISBN: 1447152913 | 250 pages | PDF | 6 MB
+
+Answering the need for an accessible overview of the field, this text/reference presents a manageable introduction to both the theoretical and practical aspects of computer networks and network programming. 
+Clearly structured and easy to follow, the book describes cutting-edge developments in network architectures, communication protocols, and programming techniques and models, supported by code examples for hands-on practice with creating network-based applications. Features: presents detailed coverage of network architectures; gently introduces the reader to the basic ideas underpinning computer networking, before gradually building up to more advanced concepts; provides numerous step-by-step descriptions of practical examples; examines a range of network programming techniques; reviews network-based data storage and multimedia transfer; includes an extensive set of practical code examples, together with detailed comments and explanations.
+
+
+
+
+189 <--> Design and Develop Advanced Computer Games using Stencyl
+http://nitroflare.com/view/AF9D770388F3261/DesignStecyl_by_1_file.rar
+http://nitroflare.com/view/D62E27F745E9EBB/DesignStecyl.part1.rar
+http://nitroflare.com/view/514624AA28BAC16/DesignStecyl.part2.rar
+http://nitroflare.com/view/3E52B6587CF513A/DesignStecyl.part3.rar
+http://nitroflare.com/view/9A18303F81DBDA3/DesignStecyl.part4.rar
+http://nitroflare.com/view/2050F6A1B5285C9/DesignStecyl.part5.rar
+http://nitroflare.com/view/A57E528330A55D2/DesignStecyl.part6.rar
+
+
+Design and Develop Advanced Computer Games using Stencyl
+English | 2016 | mp4 | H264 1280x720 | AAC 2 ch | 11 hrs | 2.98 GB 
+eLearning
+
+Become a professional indie game developer
+
+This course has been especially designed to take your complete beginner or intermediate level skills in Stencyl and build them up to the level required of a professional indie game developer. Where as the foundation course (Create your First Computer Game with Stencyl), teaches you many important skills, concepts, and techniques necessary to implement core gameplay, utilise sound, and implement some basic AI, this course will teach you how to Create a complete, professional grade computer game which can be published on all the most popular platforms – Google Play, IOS, Windows, Linux, Mac, Flash etc. 
+
+From start to finish, you will develop a complete, playable game including all the advanced features and polish you would expect, such as: 
+- start menu
+- social link buttons
+- multiple, playable levels
+- level selection screens
+- saving and loading
+- in-game currency 
+- in-app purchases and ads (for revenue generation)
+- beautiful, unique art and animations
+- parallax scrolling
+- sophisticated, physics based gameplay
+
+We also cover less technical – but none the less essential – subjects such as marketing, design theory, game monetisation paradigms and various other business and design tips and tricks for game development . After the core game has been developed, the course leads into sections on what it takes to publish it to the various Stencyl supported platforms (Desura, Steam, Google Play, Samsung Apps, IndieCity etc), including platform specific details such as certificates, marketplace restrictions, monetisation methodologies etc. 
+
+In short, when you've finished this course, there will be nothing stopping you from beginning your professional game development career. So let's get started!
+
 
 
 25 <--> How to Draw Collection 13-24 (Repost)
