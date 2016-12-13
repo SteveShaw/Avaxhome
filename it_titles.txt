@@ -1,3 +1,346 @@
+12/13/2016 [START]
+
+0 <--> Introduction to Programming
+
+15 <--> Beginning Python Visualization: Crafting Visual Transformation Scripts
+http://nitroflare.com/view/D4C797C953C4998/bok%253A978-1-4842-0052-0.epub
+
+
+Beginning Python Visualization: Crafting Visual Transformation Scripts by Shai Vaingast
+English | 16 Aug. 2014 | ISBN: 1484200535 | 416 Pages | EPUB | 3.74 MB
+
+We are visual animals. But before we can see the world in its true splendor, our brains, just like our computers, have to sort and organize raw data, and then transform that data to produce new images of the world. Beginning Python Visualization: Crafting Visual Transformation Scripts, Second Edition discusses turning many types of data sources, big and small, into useful visual data. And, you will learn Python as part of the bargain.
+In this second edition you’ll learn about Spyder, which is a Python IDE with MATLAB® -like features. Here and throughout the book, you’ll get detailed exposure to the growing IPython project for interactive visualization. In addition, you'll learn about the changes in NumPy and Scipy that have occurred since the first edition. Along the way, you'll get many pointers and a few visual examples.
+As part of this update, you’ll learn about matplotlib in detail; this includes creating 3D graphs and using the basemap package that allows you to render geographical maps. Finally, you'll learn about image processing, annotating, and filtering, as well as how to make movies using Python. This includes learning how to edit/open video files and how to create your own movie, all with Python scripts.
+Today's big data and computational scientists, financial analysts/engineers and web developers – like you - will find this updated book very relevant.
+
+
+
+
+19 <--> Text Analytics with Python: A Practical Real-World Approach to Gaining Actionable Insights from your Data
+http://nitroflare.com/view/18700A20A910601/bok%253A978-1-4842-2388-8.epub
+
+
+Text Analytics with Python: A Practical Real-World Approach to Gaining Actionable Insights from your Data by Dipanjan Sarkar
+English | 18 Dec. 2016 | ISBN: 148422387X | 412 Pages | EPUB | 1.74 MB
+
+Derive useful insights from your data using Python. Learn the techniques related to natural language processing and text analytics, and gain the skills to know which technique is best suited to solve a particular problem.
+Text Analytics with Python teaches you both basic and advanced concepts, including text and language syntax, structure, semantics. You will focus on algorithms and techniques, such as text classification, clustering, topic modeling, and text summarization. 
+A structured and comprehensive approach is followed in this book so that readers with little or no experience do not find themselves overwhelmed. You will start with the basics of natural language and Python and move on to advanced analytical and machine learning concepts. You will look at each technique and algorithm with both a bird's eye view to understand how it can be used as well as with a microscopic view to understand the mathematical concepts and to implement them to solve your own problems.
+This book:
+Provides complete coverage of the major concepts and techniques of natural language processing (NLP) and text analytics
+Includes practical real-world examples of techniques for implementation, such as building a text classification system to categorize news articles, analyzing app or game reviews using topic modeling and text summarization, and clustering popular movie synopses and analyzing the sentiment of movie reviews
+Shows implementations based on Python and several popular open source libraries in NLP and text analytics, such as the natural language toolkit (nltk), gensim, scikit-learn, spaCy and Pattern
+What you will learn: 
+• Natural Language concepts
+• Analyzing Text syntax and structure
+• Text Classification
+• Text Clustering and Similarity analysis
+• Text Summarization 
+• Semantic and Sentiment analysis
+Readership :
+IT professionals, analysts, developers, linguistic experts, data scientists, and anyone with a keen interest in linguistics, analytics, and generating insights from textual data.
+
+
+
+34 <--> BASH Programming Course Master the Linux Command Line
+http://nitroflare.com/view/CFA7E4C2E28F4DE/BASH_Programming_Course_Master_the_Linux_Command_Line.part1.rar
+http://nitroflare.com/view/CCAEB398B471A2D/BASH_Programming_Course_Master_the_Linux_Command_Line.part2.rar
+http://nitroflare.com/view/86D44D439769C1B/BASH_Programming_Course_Master_the_Linux_Command_Line.part3.rar
+http://nitroflare.com/view/1B89EE91916056D/BASH_Programming_Course_Master_the_Linux_Command_Line.part4.rar
+http://nitroflare.com/view/23B161BF5D878B7/BASH_Programming_Course_Master_the_Linux_Command_Line.part5.rar
+http://nitroflare.com/view/38A098DA47795E1/BASH_Programming_Course_Master_the_Linux_Command_Line.part6.rar
+http://nitroflare.com/view/AA1D8E600FB6C05/BASH_Programming_Course_Master_the_Linux_Command_Line.part7.rar
+
+
+BASH Programming Course Master the Linux Command Line
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 10.5 Hours | Lec: 51 | 1.94 GB
+Genre: eLearning | Language: English
+
+Go from beginner to advanced with the Linux command line in this BASH programming course!
+
+Welcome! Here you can learn you how to master Linux command line ( BASH ). What do I mean by this? Ever seen a system admin in a movie or some devious hacker using a terminal? Do you want the same knowledge? Well you are in the right place!
+
+This course is designed to take you from beginner to advanced in the Linux command line using bash (Bourne-again shell), a Unix shell and command language. You get 10+ hours of HD videos full of useful tutorials founded on motivation and excitement for learning bash programming! You can count on an answer to every question you ask in the course from a linux command line expert which gives you peace of mind that you can get help with every challenge you have as you learn!
+
+
+46 <--> Learning Data Mining with R (repost)
+http://nitroflare.com/view/22F9388E5EDEEA3/1783982101R.epub
+
+
+Bater Makhabel, "Learning Data Mining with R"
+ISBN: 1783982101 | 2015 | EPUB | 380 pages | 15 MB
+
+Being able to deal with the array of problems that you may encounter during complex statistical projects can be difficult. If you have only a basic knowledge of R, this book will provide you with the skills and knowledge to successfully create and customize the most popular data mining algorithms to overcome these difficulties.
+
+You will learn how to manipulate data with R using code snippets and be introduced to mining frequent patterns, association, and correlations while working with R programs. Discover how to write code for various predication models, stream data, and time-series data. You will also be introduced to solutions written in R based on RHadoop projects. You will finish this book feeling confident in your ability to know which data mining algorithm to apply in any situation.
+
+
+
+50 <--> MySQL Cookbook: Solutions for Database Developers and Administrators, 3 edition (repost)
+http://nitroflare.com/view/F3AB902ABCFC27A/1449374026.pdf
+
+
+MySQL Cookbook: Solutions for Database Developers and Administrators, 3 edition by Paul DuBois
+English | 2014 | ISBN: 1449374026 | ISBN-13: 9781449374020 | 866 pages | PDF | 4 MB
+
+MySQL’s popularity has brought a flood of questions about how to solve specific problems, and that’s where this cookbook is essential. When you need quick solutions or techniques, this handy resource provides scores of short, focused pieces of code, hundreds of worked-out examples, and clear, concise explanations for programmers who don’t have the time (or expertise) to solve MySQL problems from scratch.
+Ideal for beginners and professional database and web developers, this updated third edition covers powerful features in MySQL 5.6 (and some in 5.7). The book focuses on programming APIs in Python, PHP, Java, Perl, and Ruby. With more than 200+ recipes, you’ll learn how to:
+•	Use the mysql client and write MySQL-based programs
+•	Create, populate, and select data from tables
+•	Store, retrieve, and manipulate strings
+•	Work with dates and times
+•	Sort query results and generate summaries
+•	Use stored routines, triggers, and scheduled events
+•	Import, export, validate, and reformat data
+•	Perform transactions and work with statistics
+•	Process web input, and generate web content from query results
+•	Use MySQL-based web session management
+•	Provide security and server administration
+
+Welcome to my AH blog | RSS
+
+
+
+
+
+51 <--> Data Structures and Algorithms with Python (repost)
+
+
+Kent D. Lee, Steve Hubbard, "Data Structures and Algorithms with Python"
+ISBN: 3319130714 | 2015 | True EPUB | 363 pages | 12 MB
+
+This textbook explains the concepts and techniques required to write programs that can handle large amounts of data efficiently. Project-oriented and classroom-tested, the book presents a number of important algorithms supported by examples that bring meaning to the problems faced by computer programmers. The idea of computational complexity is also introduced, demonstrating what can and cannot be computed efficiently so that the programmer can make informed judgements about the algorithms they use. Features: includes both introductory and advanced data structures and algorithms topics, with suggested chapter sequences for those respective courses provided in the preface; provides learning goals, review questions and programming exercises in each chapter, as well as numerous illustrative examples; offers downloadable programs and supplementary files at an associated website, with instructor materials available from the author; presents a primer on Python for those from a different language background.
+
+
+64 <--> Linux Shell Scripting Solutions
+http://nitroflare.com/view/B86AE7C6379A641/Linux_Shell_Scripting_Solutions.part1.rar
+http://nitroflare.com/view/B09FBD5D4DD396E/Linux_Shell_Scripting_Solutions.part2.rar
+http://nitroflare.com/view/A31D01E36DBFC08/Linux_Shell_Scripting_Solutions.part3.rar
+http://nitroflare.com/view/3DF8B097A862096/Linux_Shell_Scripting_Solutions.part4.rar
+http://nitroflare.com/view/178595DADF77989/Linux_Shell_Scripting_Solutions.part5.rar
+http://nitroflare.com/view/A184DCD59E956A6/Linux_Shell_Scripting_Solutions.part6.rar
+http://nitroflare.com/view/87C95D196B3FBD8/Linux_Shell_Scripting_Solutions.part7.rar
+
+
+Linux Shell Scripting Solutions 
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 8.5 Hours | 3.10 GB
+Genre: eLearning | Language: English
+
+The shell remains one of the most powerful tools on a computer system yet a large number of users are unaware of how much can be accomplished with it. Using a combination of simple commands, you will see how to solve complex problems in day-to-day computer usage.
+
+This video will take you through useful real-world examples to make your daily life easy when working with the shell. It shows you how to effectively use the shell to accomplish complex tasks with ease. Starting with the basics of the shell, you will learn simple commands and their usages, allowing you to perform operations on different kinds of files. We then explain text processing and web interaction, and conclude with backups, monitoring, and other sysadmin tasks.
+
+This is an an excellent guide on solving day-to-day problems using the shell and a few powerful commands together to create solutions.
+
+
+
+65 <--> Data Structure and Algorithmic Thinking with Python: Data Structure and Algorithmic Puzzles
+
+
+Narasimha Karumanchi, "Data Structure and Algorithmic Thinking with Python: Data Structure and Algorithmic Puzzles"
+English | 2015 | ISBN: 8192107590 | 476 pages | PDF | 70 MB
+
+
+The sample chapter should give you a very good idea of the quality and style of our book. In particular, be sure you are comfortable with the level and with our Python coding style. This book focuses on giving solutions for complex problems in data structures and algorithm. It even provides multiple solutions for a single problem, thus familiarizing readers with different possible approaches to the same problem. 
+
+"Data Structure and Algorithmic Thinking with Python" is designed to give a jump-start to programmers, job hunters and those who are appearing for exams. All the code in this book are written in Python. It contains many programming puzzles that not only encourage analytical thinking, but also prepares readers for interviews. This book, with its focused and practical approach, can help readers quickly pick up the concepts and techniques for developing efficient and effective solutions to problems.
+
+Topics Covered:
+Organization of chapters
+Introduction
+Recursion and Backtracking
+Linked Lists
+Stacks
+Queues
+Trees
+Priority Queue and Heaps
+Disjoint Sets ADT
+Graph Algorithms
+Sorting 
+Searching 
+Selection Algorithms [Medians] 
+Symbol Tables 
+Hashing 
+String Algorithms 
+Algorithms Design Techniques 
+Greedy Algorithms 
+Divide and Conquer Algorithms 
+Dynamic Programming 
+Complexity Classes 
+Miscellaneous Concepts 
+
+
+
+
+83 <--> Bayesian Analysis with Python
+http://nitroflare.com/view/50CA75CA140B9DF/Bayesian_Analysis_with_Python.rar
+
+
+Bayesian Analysis with Python by Osvaldo Martin
+English | 25 Nov. 2016 | ISBN: 1785883801 | 282 Pages | AZW3/MOBI/EPUB/PDF (conv) | 36.2 MB
+
+Key Features
+
+Simplify the Bayes process for solving complex statistical problems using Python;
+Tutorial guide that will take the you through the journey of Bayesian analysis with the help of sample problems and practice exercises;
+Learn how and when to use Bayesian analysis in your applications with this guide.
+
+Book Description
+
+The purpose of this book is to teach the main concepts of Bayesian data analysis. We will learn how to effectively use PyMC3, a Python library for probabilistic programming, to perform Bayesian parameter estimation, to check models and validate them. This book begins presenting the key concepts of the Bayesian framework and the main advantages of this approach from a practical point of view. Moving on, we will explore the power and flexibility of generalized linear models and how to adapt them to a wide array of problems, including regression and classification. We will also look into mixture models and clustering data, and we will finish with advanced topics like non-parametrics models and Gaussian processes. With the help of Python and PyMC3 you will learn to implement, check and expand Bayesian models to solve data analysis problems.
+
+What you will learn
+
+Understand the essentials Bayesian concepts from a practical point of view
+Learn how to build probabilistic models using the Python library PyMC3
+Acquire the skills to sanity-check your models and modify them if necessary
+Add structure to your models and get the advantages of hierarchical models
+Find out how different models can be used to answer different data analysis questions
+When in doubt, learn to choose between alternative models.
+Predict continuous target outcomes using regression analysis or assign classes using logistic and softmax regression.
+Learn how to think probabilistically and unleash the power and flexibility of the Bayesian framework
+
+About the Author
+
+Osvaldo Martin is a researcher at The National Scientific and Technical Research Council (CONICET), the main organization in charge of the promotion of science and technology in Argentina. He has worked on structural bioinformatics and computational biology problems, especially on how to validate structural protein models. He has experience in using Markov Chain Monte Carlo methods to simulate molecules and loves to use Python to solve data analysis problems. He has taught courses about structural bioinformatics, Python programming, and, more recently, Bayesian data analysis. Python and Bayesian statistics have transformed the way he looks at science and thinks about problems in general. Osvaldo was really motivated to write this book to help others in developing probabilistic models with Python, regardless of their mathematical background. He is an active member of the PyMOL community (a C/Python-based molecular viewer), and recently he has been making small contributions to the probabilistic programming library PyMC3.
+
+Table of Contents
+
+Thinking Probabilistically - A Bayesian Inference Primer
+Programming Probabilistically – A PyMC3 Primer
+Juggling with Multi-Parametric and Hierarchical Models
+Understanding and Predicting Data with Linear Regression Models
+Classifying Outcomes with Logistic Regression
+Model Comparison
+Mixture Models
+Gaussian Processes
+
+
+86 <--> Stack Frames: A Look From Inside
+
+Giuseppe Di Cataldo, "Stack Frames: A Look From Inside" 
+English | ISBN: 148422180X | 2016 | 192 pages | PDF, EPUB | 12 MB
+
+Teaches you exactly how program memory content and organization is vital for computer security, especially Unix-like operating systems. You will learn how it is manipulated to take control of a computer system, as well as the countermeasures that system designers set up to avoid this. Neither a guide for hackers nor an all-out theory book, this book is ideal for anyone studying computer security who wants to learn by doing.
+
+Using a practical approach, you will understand how stack frames relate to hardware and software theory and the various GNU/Linux distributions, before moving on to Base 2, 8 and 16 notations, executables and libraries. Lastly you will go in-depth to understand the intricacies of stack frames. A vital resource for all computer security students and enthusiasts, add Stack Frames: A Look Inside to your library today.
+
+
+
+What You Will Learn
+
+In-depth knowledge on activation records of functions, and how this information can be used.
+A better understanding on how conventions used by compilers work.
+Clarify some concepts on libraries and their relationship with executable programs.
+Get, or recall, technical skills using compilers, debuggers, and other tools.
+
+
+
+90 <--> R Machine Learning solutions
+http://nitroflare.com/view/5E99228CC90B97A/R_Machine_Learning_solutions.part1.rar
+http://nitroflare.com/view/1D0EB1BA512E6B8/R_Machine_Learning_solutions.part2.rar
+http://nitroflare.com/view/53B7DA6C18D3662/R_Machine_Learning_solutions.part3.rar
+http://nitroflare.com/view/B4DEB0BEC2BA713/R_Machine_Learning_solutions.part4.rar
+http://nitroflare.com/view/FA7A321CEF34288/R_Machine_Learning_solutions.part5.rar
+http://nitroflare.com/view/65E2CE8A4707E24/R_Machine_Learning_solutions.part6.rar
+http://nitroflare.com/view/DDDB8E9C747A3EB/R_Machine_Learning_solutions.part7.rar
+
+
+R Machine Learning solutions 
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 8.5 Hours | 1.81 GB
+Genre: eLearning | Language: English
+
+R is a statistical programming language that provides impressive tools to analyze data and create high-level graphics. This video course will take you from very basics of R to creating insightful machine learning models with R. You will start with setting up the environment and then perform data ETL in R.
+
+Data exploration examples are provided that demonstrate how powerful data visualization and machine learning is in discovering hidden relationship. You will then dive into important machine learning topics, including data classification, regression, clustering, association rule mining, and dimensionality reduction.
+
+Style and Approach
+This easy-to-follow guide is full of hands-on examples of data analysis with R. Each topic is fully explained beginning with the core concepts, followed by step-by-step, practical examples and concluding with detailed explanations of each concept used
+
+
+
+
+
+100 <--> Practical Machine Learning with H2O: Powerful, Scalable Techniques for Deep Learning and AI
+http://nitroflare.com/view/DF3C922E6B9724D/Practical_Machine_Learning_with_H2O_Powerful%2C_Scalable_Techniques_for_Deep_Learning_and_AI.rar
+
+
+Practical Machine Learning with H20: Powerful, Scalable Techniques for Deep Learning and AI by Darren Cook
+English | 31 Dec. 2016 | ISBN: 149196460X | 300 Pages | AZW3/MOBI/EPUB/PDF (conv) | 17.61 MB
+
+In Practical Machine Learning with H2O, author Darren Cook introduces readers to H2O, an open-source machine learning package that is gaining popularity in the data science community. This concise book will first teach readers how to install H2O, import and export data, and distinguish H2O algorithms. Readers will then explore various modern machine learning techniques such as deep learning, random forests, unsupervised learning, and ensemble learning. Throughout the chapters, machine learning models are introduced and tried on the same 3 data sets, guiding readers through the process of finding the right parameters for a given data set.
+
+My Blog with Updates!
+
+
+
+
+106 <--> Building Machine Learning Projects with TensorFlow
+
+Building Machine Learning Projects with TensorFlow by Rodolfo Bonnin
+English | 24 Nov. 2016 | ISBN: 1786466589 | 282 Pages | AZW3/MOBI/EPUB/PDF (conv) | 34.32 MB
+
+Key Features
+
+Bored of too much theory on TensorFlow? This book is what you need! Thirteen solid projects and four examples teach you how to implement TensorFlow in production.
+This example-rich guide teaches you how to perform highly accurate and efficient numerical computing with TensorFlow
+It is a practical and methodically explained guide that allows you to apply Tensorflow's features from the very beginning.
+
+Book Description
+This book of projects highlights how TensorFlow can be used in different scenarios - this includes projects for training models, machine learning, deep learning, and working with various neural networks. Each project provides exciting and insightful exercises that will teach you how to use TensorFlow and show you how layers of data can be explored by working with Tensors. Simply pick a project that is in line with your environment and get stacks of information on how to implement TensorFlow in production.
+
+What you will learn
+Load, interact, dissect, process, and save complex datasets
+Solve classification and regression problems using state of the art techniques
+Predict the outcome of a simple time series using Linear Regression modeling
+Use a Logistic Regression scheme to predict the future result of a time series
+Classify images using deep neural network schemes
+Tag a set of images and detect features using a deep neural network, including a Convolutional Neural Network (CNN) layer
+Resolve character recognition problems using the Recurrent Neural Network (RNN) model
+About the Author
+Rodolfo Bonnin is a systems engineer and PhD student at Universidad Tecnologica Nacional, Argentina. He also pursued parallel programming and image understanding postgraduate courses at Uni Stuttgart, Germany.
+
+He has done research on high performance computing since 2005 and began studying and implementing convolutional neural networks in 2008,writing a CPU and GPU - supporting neural network feed forward stage. More recently he's been working in the field of fraud pattern detection with Neural Networks, and is currently working on signal classification using ML techniques.
+
+Table of Contents
+Exploring and Transforming Data
+Clustering
+Linear Regression
+Logistic Regression
+Simple FeedForward Neural Networks
+Convolutional Neural Networks
+Recurrent Neural Networks and LSTM
+Deep Neural Networks
+Running Models at Scale – GPU and Serving
+Library Installation and Additional Tips
+
+
+
+157 <--> 3D Game Textures: Create Professional Game Art Using Photoshop
+http://nitroflare.com/view/0278548CC2938E1/1138920061.pdf
+
+
+3D Game Textures: Create Professional Game Art Using Photoshop by Luke Ahearn
+English | 2016 | ISBN: 1138920061 | 412 pages | PDF | 70,4 MB
+
+The new edition of 3D Game Textures: Create Professional Game Art Using Photoshop features the most up-to-date techniques that allow you to create your own unique textures, shaders, and materials. Revised to take new technology into account, it is an ideal hands-on resource for creating online worlds, simulations, web-based applications, and architectural visualization projects.
+
+Continuing the practical, no-nonsense approach of its predecessors, the fourth edition shows you how to advance your digital art skills with textures and shaders by exploring their interactions in single objects or entire scenes. It contains expanded coverage of shader nodes, and the companion website―www.lukeahearn.com/textures―has been updated to include video tutorials as well as updated sample textures, shaders, materials, actions, brushes, and all of the art from the book.
+
+Written with the beginner and the professional in mind, this book provides an excellent stepping stone for artists of any level. It shows aspiring artists how to create their own game textures. It also shows technically oriented professionals who struggle with artistic aspects of graphic design how to create textures in a way that they can relate to, while teaching technically challenged artists how to create their art in a fashion that allows them to set up their work with an eye toward the important technical aspects of game development.
+
+159 <--> Simulation for Applied Graph Theory Using Visual C++
+
+Simulation for Applied Graph Theory Using Visual C++ by Shaharuddin Salleh and Zuraida Abal Abas
+English | 2016 | ISBN: 149872101X | 353 pages | EPUB | 12,9 MB
+
+The tool for visualization is Microsoft Visual C++. This popular software has the standard C++ combined with the Microsoft Foundation Classes (MFC) libraries for Windows visualization. This book explains how to create a graph interactively, solve problems in graph theory with minimum number of C++ codes, and provide friendly interfaces that makes learning the topics an interesting one. Each topic in the book comes with working Visual C++ codes which can easily be adapted as solutions to various problems in science and engineering.
+
+
+
+12/13/2016 [END]
+
 2016/12/08 [START]
 
 0 <--> The New Web Typography: Create a Visual Hierarchy with Responsive Web Design
