@@ -260,10 +260,7 @@ This easy-to-follow guide is full of hands-on examples of data analysis with R. 
 
 
 
-
-
 100 <--> Practical Machine Learning with H2O: Powerful, Scalable Techniques for Deep Learning and AI
-http://nitroflare.com/view/DF3C922E6B9724D/Practical_Machine_Learning_with_H2O_Powerful%2C_Scalable_Techniques_for_Deep_Learning_and_AI.rar
 
 
 Practical Machine Learning with H20: Powerful, Scalable Techniques for Deep Learning and AI by Darren Cook
@@ -343,14 +340,6 @@ The tool for visualization is Microsoft Visual C++. This popular software has th
 
 2016/12/08 [START]
 
-0 <--> The New Web Typography: Create a Visual Hierarchy with Responsive Web Design
-http://nitroflare.com/view/1EF5CE798BBAEFD/1138781398.epub
-
-
-The New Web Typography: Create a Visual Hierarchy with Responsive Web Design by Stephen Boss and Jason Cranford Teague
-English | 2016 | ISBN: 1138781398 | 252 pages | EPUB | 3,4 MB
-
-
 
 18 <--> Machine Learning: Algorithms and Applications
 http://nitroflare.com/view/4B23F65358076E9/1498705383.epub
@@ -391,8 +380,6 @@ This book is for experienced Python coders, programmers and developers.
 
 
 22 <--> Foundations of Physically Based Modeling and Animation
-http://nitroflare.com/view/90337AB40C80CCC/1482234602.pdf
-
 
 Foundations of Physically Based Modeling and Animation by Donald H. House
 English | 3 Jan. 2017 | ISBN: 1482234602 | 408 Pages | PDF | 28.39 MB
@@ -590,9 +577,6 @@ In short, when you've finished this course, there will be nothing stopping you f
 
 
 25 <--> How to Draw Collection 13-24 (Repost)
-http://nitroflare.com/view/5D31332909DFC19/B00C8TJLPQ_draw.epub
-http://ul.to/rdofd50o
-
 
 Amit Offir, "How to Draw Collection 13-24" 
 2013 | ISBN: n/a | ASIN: B00C8TJLPQ | English | 222 Pages | EPUB | 11.85 MB
@@ -747,24 +731,6 @@ This video starts by showing you how to set up matplotlib and other Python libra
 With practical, precise, and reproducible videos, you will get a better understanding of the data visualization concepts, how to apply them, and how you can overcome any challenge while implementing them.
 
 
- Other Development / Programming lessons:
-
-
-screenshot
-
-
-
-
-
-
-Welcome to the best eLearning video (English, German, French, Spanish language) and many more: LINK
-Do not forget to check my blog! Updated regularly! Add in bookmarks my blog :)
-PM me if Links not working!
-
-No mirrors pls!
-
-
-
 
 100 <--> Working with Algorithms in Python [repost]
 http://nitroflare.com/view/A58298EA17D92DC/Wor.wi.Alg.Py.part1.rar
@@ -906,8 +872,6 @@ How to reshape the layout of data and manipulate, summarize, and join data sets
 
 
 346 <--> Programming for Computations - Python: A Gentle Introduction to Numerical Simulations with Python
-http://nitroflare.com/view/E0687EC1564D28D/3319324276.pdf
-
 
 Programming for Computations - Python: A Gentle Introduction to Numerical Simulations with Python (Texts in Computational Science and Engineering) by Svein Linge and Hans Petter Langtangen
 English | 2016 | ISBN: 3319324276 | 232 pages | PDF | 4 MB
@@ -915,6 +879,8 @@ English | 2016 | ISBN: 3319324276 | 232 pages | PDF | 4 MB
 This book presents computer programming as a key method for solving mathematical problems. There are two versions of the book, one for MATLAB and one for Python. The book was inspired by the Springer book TCSE 6: A Primer on Scientific Programming with Python (by Langtangen), but the style is more accessible and concise, in keeping with the needs of engineering students.
 
 The book outlines the shortest possible path from no previous experience with programming to a set of skills that allows the students to write simple programs for solving common mathematical problems with numerical methods in engineering and science courses. The emphasis is on generic algorithms, clean design of programs, use of functions, and automatic tests for verification.
+
+
 357 <--> Streaming in .NET 4.5 by Mohamad Halabi
 http://nitroflare.com/view/991C004ABBB3288/Streaming.in.NET.4.5.part1.rar
 http://nitroflare.com/view/78C0C86222A55AC/Streaming.in.NET.4.5.part2.rar
