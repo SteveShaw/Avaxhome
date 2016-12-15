@@ -44,14 +44,6 @@ IT professionals, analysts, developers, linguistic experts, data scientists, and
 
 
 34 <--> BASH Programming Course Master the Linux Command Line
-http://nitroflare.com/view/CFA7E4C2E28F4DE/BASH_Programming_Course_Master_the_Linux_Command_Line.part1.rar
-http://nitroflare.com/view/CCAEB398B471A2D/BASH_Programming_Course_Master_the_Linux_Command_Line.part2.rar
-http://nitroflare.com/view/86D44D439769C1B/BASH_Programming_Course_Master_the_Linux_Command_Line.part3.rar
-http://nitroflare.com/view/1B89EE91916056D/BASH_Programming_Course_Master_the_Linux_Command_Line.part4.rar
-http://nitroflare.com/view/23B161BF5D878B7/BASH_Programming_Course_Master_the_Linux_Command_Line.part5.rar
-http://nitroflare.com/view/38A098DA47795E1/BASH_Programming_Course_Master_the_Linux_Command_Line.part6.rar
-http://nitroflare.com/view/AA1D8E600FB6C05/BASH_Programming_Course_Master_the_Linux_Command_Line.part7.rar
-
 
 BASH Programming Course Master the Linux Command Line
 MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 10.5 Hours | Lec: 51 | 1.94 GB
@@ -114,13 +106,7 @@ This textbook explains the concepts and techniques required to write programs th
 
 
 64 <--> Linux Shell Scripting Solutions
-http://nitroflare.com/view/B86AE7C6379A641/Linux_Shell_Scripting_Solutions.part1.rar
-http://nitroflare.com/view/B09FBD5D4DD396E/Linux_Shell_Scripting_Solutions.part2.rar
-http://nitroflare.com/view/A31D01E36DBFC08/Linux_Shell_Scripting_Solutions.part3.rar
-http://nitroflare.com/view/3DF8B097A862096/Linux_Shell_Scripting_Solutions.part4.rar
-http://nitroflare.com/view/178595DADF77989/Linux_Shell_Scripting_Solutions.part5.rar
-http://nitroflare.com/view/A184DCD59E956A6/Linux_Shell_Scripting_Solutions.part6.rar
-http://nitroflare.com/view/87C95D196B3FBD8/Linux_Shell_Scripting_Solutions.part7.rar
+
 
 
 Linux Shell Scripting Solutions 
@@ -238,14 +224,6 @@ Get, or recall, technical skills using compilers, debuggers, and other tools.
 
 
 90 <--> R Machine Learning solutions
-http://nitroflare.com/view/5E99228CC90B97A/R_Machine_Learning_solutions.part1.rar
-http://nitroflare.com/view/1D0EB1BA512E6B8/R_Machine_Learning_solutions.part2.rar
-http://nitroflare.com/view/53B7DA6C18D3662/R_Machine_Learning_solutions.part3.rar
-http://nitroflare.com/view/B4DEB0BEC2BA713/R_Machine_Learning_solutions.part4.rar
-http://nitroflare.com/view/FA7A321CEF34288/R_Machine_Learning_solutions.part5.rar
-http://nitroflare.com/view/65E2CE8A4707E24/R_Machine_Learning_solutions.part6.rar
-http://nitroflare.com/view/DDDB8E9C747A3EB/R_Machine_Learning_solutions.part7.rar
-
 
 R Machine Learning solutions 
 MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 8.5 Hours | 1.81 GB
@@ -461,9 +439,6 @@ Integrate application software using Python
 
 
 98 <--> Artificial Neural Networks: A Practical Course
-http://nitroflare.com/view/E77004F11E20564/3319431617.pdf
-https://filejoker.net/s98hs3sjpu7l
-
 
 Ivan Nunes da Silva, Danilo Hernane Spatti, "Artificial Neural Networks: A Practical Course" 
 2016 | ISBN-10: 3319431617 | 307 pages | PDF | 16 MB
@@ -473,12 +448,6 @@ This book provides comprehensive coverage of neural networks, their evolution, t
 
 
 144 <--> High-Performance Computing and Concurrency
-http://nitroflare.com/view/A2DAF0F67C1FF6A/Hi.Per.Co.a.Co.part1.rar
-http://nitroflare.com/view/0A05AE1923B3C6D/Hi.Per.Co.a.Co.part2.rar
-http://nitroflare.com/view/8F90B0F63C521A8/Hi.Per.Co.a.Co.part3.rar
-http://nitroflare.com/view/CC1728B9C98AB46/Hi.Per.Co.a.Co.part4.rar
-http://nitroflare.com/view/CB5011F3E1134D1/Hi.Per.Co.a.Co.part5.rar
-
 
 High-Performance Computing and Concurrency
 HDRips | MP4/AVC, ~1388 kb/s | 1280x720 | Duration: 11:08:21 | English: AAC, 128 kb/s (2 ch) | 3,28 GB
@@ -664,9 +633,6 @@ A structured and comprehensive approach is followed in this book so that readers
 
 
 37 <--> The Computer Graphics Manual (repost)
-http://nitroflare.com/view/B389EF4101F1627/The_Computer_Graphics_Manual.pdf
-http://ul.to/t1b1ye5u
-
 
 David Salomon, "The Computer Graphics Manual (Texts in Computer Science)"
 English | 2011 | ISBN: 0857298852 | 1496 pages | PDF | 63 MB
@@ -733,14 +699,6 @@ With practical, precise, and reproducible videos, you will get a better understa
 
 
 100 <--> Working with Algorithms in Python [repost]
-http://nitroflare.com/view/A58298EA17D92DC/Wor.wi.Alg.Py.part1.rar
-http://nitroflare.com/view/A55DAD8E59166EF/Wor.wi.Alg.Py.part2.rar
-http://nitroflare.com/view/5067D5D3689562A/Wor.wi.Alg.Py.part3.rar
-http://nitroflare.com/view/315321362609D58/Wor.wi.Alg.Py.part4.rar
-http://nitroflare.com/view/91DBF74C1F3A8AD/Wor.wi.Alg.Py.part5.rar
-http://nitroflare.com/view/33B07A9FBAC6052/Wor.wi.Alg.Py.part6.rar
-http://nitroflare.com/view/F2A0C583E2C31BF/Wor.wi.Alg.Py.part7.rar
-
 
 Working with Algorithms in Python
 HDRips | MP4/AVC, ~953 kb/s | 1280x720 | Duration: 08:39:00 | English: AAC, 61 kb/s (1 ch) | 4.52 GB
@@ -766,11 +724,7 @@ In the first part of the book the author surveys the literature in concise form,
 This book will be of value to researchers, engineers, and students in the fields of computer vision, evolutionary computing, robotics, biologically inspired mechatronics, electronics engineering, control, and artificial intelligence.
 
 228 <--> Python Machine Learning Solutions
-http://nitroflare.com/view/3C459C3E8DF3C13/Pyt.Ma.Le.Sol.part1.rar
-http://nitroflare.com/view/8291AF862E58350/Pyt.Ma.Le.Sol.part2.rar
-http://nitroflare.com/view/4C13AB34507D017/Pyt.Ma.Le.Sol.part3.rar
-http://nitroflare.com/view/A08C234D1208D17/Pyt.Ma.Le.Sol.part4.rar
-http://nitroflare.com/view/7AB1BC3068FD4CC/Pyt.Ma.Le.Sol.part5.rar
+
 
 
 Python Machine Learning Solutions
@@ -816,8 +770,6 @@ The second part of the video explores the .NET framework including LINQ, ADO.NET
 
 
 286 <--> Data Mining with Python: Implementing Classification and Regression
-http://nitroflare.com/view/3C28C9D06A1D996/Dat.Mi.wi.Pyth.part1.rar
-http://nitroflare.com/view/7713C259AE9998B/Dat.Mi.wi.Pyth.part2.rar
 
 
 Data Mining with Python: Implementing Classification and Regression
@@ -836,7 +788,6 @@ By the end of this course, you will be able to apply the concepts of classificat
 
 
 298 <--> Optical Flow and Trajectory Estimation Methods
-http://nitroflare.com/view/3E9EC889200ABA0/3319449400.pdf
 
 
 Joel Gibson, "Optical Flow and Trajectory Estimation Methods" 
@@ -1113,10 +1064,6 @@ Mathematics of Computing
 
 
 487 <--> Introduction to Functional Programming
-http://nitroflare.com/view/B51AA35D07661C6/Or-Intr.to.F.Pro.part1.rar
-http://nitroflare.com/view/7F7515ABA43C6F6/Or-Intr.to.F.Pro.part2.rar
-http://nitroflare.com/view/5494BCDB89AA03F/Or-Intr.to.F.Pro.part3.rar
-http://nitroflare.com/view/8AE184BF5CB47B4/Or-Intr.to.F.Pro.part4.rar
 
 
 Introduction to Functional Programming
@@ -1198,12 +1145,6 @@ Text data is available in abundance on the Internet, whether it be reviews, twee
 
 
 533 <--> Getting Started with FPGA Programming with VHDL (2016)
-http://nitroflare.com/view/6365F36F1768877/Getting_Started_with_FPGA_Programming_with_VHDL.part1.rar
-http://nitroflare.com/view/BFC32542A115F06/Getting_Started_with_FPGA_Programming_with_VHDL.part2.rar
-http://nitroflare.com/view/49528B1E742BAD2/Getting_Started_with_FPGA_Programming_with_VHDL.part3.rar
-http://nitroflare.com/view/350D84BE41BD5FC/Getting_Started_with_FPGA_Programming_with_VHDL.part4.rar
-http://nitroflare.com/view/6E251523A784C8A/Getting_Started_with_FPGA_Programming_with_VHDL.part5.rar
-
 
 Getting Started with FPGA Programming with VHDL
 MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | 511 MB
@@ -1330,8 +1271,7 @@ TCP/IP Unleashed, Third Edition, explains the features and complexities of the T
 
 
 36 <--> Apache Log4J Logging Framework Tutorial for Beginners
-http://nitroflare.com/view/72C4EA1D193200C/Apache_Log4J_Logging_Framework_Tutorial_for_Beginners.part1.rar
-http://nitroflare.com/view/BD892397172215F/Apache_Log4J_Logging_Framework_Tutorial_for_Beginners.part2.rar
+
 
 
 Apache Log4J Logging Framework Tutorial for Beginners
@@ -1398,9 +1338,7 @@ Complexity
 
 
 76 <--> Learning Path: The Road to Tensorflow
-http://nitroflare.com/view/D6071926E2354D8/L.Pa-Ro.to.Te.part1.rar
-http://nitroflare.com/view/F52315BCEBA1FF7/L.Pa-Ro.to.Te.part2.rar
-http://nitroflare.com/view/5E11ED3EDBB4D84/L.Pa-Ro.to.Te.part3.rar
+
 
 
 Learning Path: The Road to Tensorflow
@@ -1413,8 +1351,6 @@ It can be hard to get started with machine learning, particularly as new framewo
 
 
 82 <--> Deep Learning
-http://nitroflare.com/view/94FFFCFBCA0C99E/0262035618.pdf
-
 
 Ian Goodfellow, Yoshua Bengio, "Deep Learning (draft)" 
 2016 | ISBN-10: 0262035618 | 800 pages | PDF | 23 MB
@@ -1458,13 +1394,7 @@ The Comprehensive Programming in R Course (Sections 1-8) presents an detailed, i
 
 
 115 <--> R for Data Science Solutions
-http://nitroflare.com/view/1FE1D17248088BF/R.for.D.Sc.So.part1.rar
-http://nitroflare.com/view/1FFBD4D307602C6/R.for.D.Sc.So.part2.rar
-http://nitroflare.com/view/BB98CF15CF51AA5/R.for.D.Sc.So.part3.rar
-http://nitroflare.com/view/31FCD23FE9614FD/R.for.D.Sc.So.part4.rar
-http://nitroflare.com/view/91F1AE88A93317F/R.for.D.Sc.So.part5.rar
-http://nitroflare.com/view/F18F93A37234757/R.for.D.Sc.So.part6.rar
-http://nitroflare.com/view/E96B53F1CA92CCD/R.for.D.Sc.So.part7.rar
+
 
 
 R for Data Science Solutions
@@ -1492,7 +1422,6 @@ By the end of this course, you will understand how to resolve issues and will be
 
 2016/11/10 [START]
 0 <--> 2D and 3D Image Analysis by Moments
-http://nitroflare.com/view/9C4F1F8B4E48F54/9781119039358.pdf
 
 
 2D and 3D Image Analysis by Moments
@@ -1518,14 +1447,7 @@ The accompanying website contains around 300 lecture slides, Matlab codes, compl
 
 
 38 <--> Design Patterns in the Real World, an Analysis-Based Approach [repost]
-http://nitroflare.com/view/2702D80F5C7BB4B/De.Pa.in.re.Wo.An.part1.rar
-http://nitroflare.com/view/C333961268B562C/De.Pa.in.re.Wo.An.part2.rar
-http://nitroflare.com/view/1AE50233B37D219/De.Pa.in.re.Wo.An.part3.rar
-http://nitroflare.com/view/7476CDA6BD1D14E/De.Pa.in.re.Wo.An.part4.rar
-http://nitroflare.com/view/F432D5282667205/De.Pa.in.re.Wo.An.part5.rar
-http://nitroflare.com/view/50DA9FAD9220031/De.Pa.in.re.Wo.An.part6.rar
-http://nitroflare.com/view/6BFA87951654327/De.Pa.in.re.Wo.An.part7.rar
-http://nitroflare.com/view/BA587CCD83A65F3/De.Pa.in.re.Wo.An.part8.rar
+
 
 
 Design Patterns in the Real World, an Analysis-Based Approach 
@@ -1727,14 +1649,6 @@ Visualize 3D models with meshes and surfaces using stereoscopic 3D technology
 
 
 239 <--> Designing Data Structures in Python [repost]
-http://nitroflare.com/view/D445B49F77F1B97/De.Da.Str.in.Py.part1.rar
-http://nitroflare.com/view/440AE6459D82024/De.Da.Str.in.Py.part2.rar
-http://nitroflare.com/view/FA326AD82306ED7/De.Da.Str.in.Py.part3.rar
-http://nitroflare.com/view/4FF312353CDD1CF/De.Da.Str.in.Py.part4.rar
-http://nitroflare.com/view/5FDEBA7EDFF54F6/De.Da.Str.in.Py.part5.rar
-http://nitroflare.com/view/F0B9163C51F1674/De.Da.Str.in.Py.part6.rar
-http://nitroflare.com/view/5C38180EC134996/De.Da.Str.in.Py.part7.rar
-
 
 Designing Data Structures in Python
 HDRips | MP4/AVC, ~489 kb/s | 1280x720 | Duration: 06:04:21 | English: AAC, 125 kb/s (2 ch) | 1.52 GB
@@ -1826,12 +1740,6 @@ Debug scripts
 
 
 283 <--> Data Science with R
-http://nitroflare.com/view/2DF624B3A221C0B/Data_Science_with_R.part1.rar
-http://nitroflare.com/view/4DE2086BDB59A71/Data_Science_with_R.part2.rar
-http://nitroflare.com/view/CA9F9C1FC5CAE70/Data_Science_with_R.part3.rar
-http://nitroflare.com/view/66C20AB33399C95/Data_Science_with_R.part4.rar
-http://nitroflare.com/view/35B01B09D181F1D/Data_Science_with_R.part5.rar
-
 
 Data Science with R
 MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 418 MB
@@ -1844,9 +1752,6 @@ Data science is the practice of transforming data into knowledge, and R is one o
 
 
 329 <--> C++ Unit Testing Fundamentals Using Catch (2016)
-http://nitroflare.com/view/6F112699488E629/C%2B%2B_Unit_Testing_Fundamentals_Using_Catch.part1.rar
-http://nitroflare.com/view/9EAE8FB7E0D829A/C%2B%2B_Unit_Testing_Fundamentals_Using_Catch.part2.rar
-http://nitroflare.com/view/3EB8D623921FCF9/C%2B%2B_Unit_Testing_Fundamentals_Using_Catch.part3.rar
 
 
 C++ Unit Testing Fundamentals Using Catch
@@ -2018,15 +1923,6 @@ Use modular techniques to build robust systems that can handle complexity and ch
 
 
 16 <--> Udemy – Data Analysis with Python and Pandas [repost]
-http://nitroflare.com/view/4B8DB328FCDD62C/Dat_An_Pyt_Pand.part01.rar
-http://nitroflare.com/view/B31A0D388CB09D8/Dat_An_Pyt_Pand.part02.rar
-http://nitroflare.com/view/DF9BF3686F93473/Dat_An_Pyt_Pand.part03.rar
-http://nitroflare.com/view/BF52ED561D265A3/Dat_An_Pyt_Pand.part04.rar
-http://nitroflare.com/view/37D8FDDC6126FC7/Dat_An_Pyt_Pand.part05.rar
-http://nitroflare.com/view/A5D5DDB52EC8CB1/Dat_An_Pyt_Pand.part06.rar
-http://nitroflare.com/view/DBF93E60E5CB471/Dat_An_Pyt_Pand.part07.rar
-http://nitroflare.com/view/DB08524D01B1D47/Dat_An_Pyt_Pand.part08.rar
-
 
 Udemy – Data Analysis with Python and Pandas
 MP4 | AVC 462kbps | English | 1280x720 | 30fps | 6 hours | AAC stereo 64kbps | 2.26 GB
@@ -2342,13 +2238,6 @@ Statistical methods are a key tool for all scientists working with data, but lea
 
 
 128 <--> Practice advanced SQL queries with MySQL 5.7+ (2016)
-http://nitroflare.com/view/6BDC0AED5E61885/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part1.rar
-http://nitroflare.com/view/5443D33693178F2/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part2.rar
-http://nitroflare.com/view/3FBCC378FD666BD/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part3.rar
-http://nitroflare.com/view/89ECAC21CAD0286/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part4.rar
-http://nitroflare.com/view/27CC54C399D0003/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part5.rar
-http://nitroflare.com/view/6953A011AEDE98F/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part6.rar
-http://nitroflare.com/view/C2F52A9786314A3/Practice_advanced_SQL_queries_with_MySQL_5.7%2B_%282016%29.part7.rar
 
 
 Practice advanced SQL queries with MySQL 5.7+ (2016)
@@ -2501,13 +2390,6 @@ Programmers do have conceptual understanding of OO concepts, but often fail to t
 
 
 154 <--> Big data Internship Program - Part 1 Foundation
-http://nitroflare.com/view/92A0F534879905E/Big_data_Internship_Program_-_Part_1_Foundation.part1.rar
-http://nitroflare.com/view/673A5C4C480214E/Big_data_Internship_Program_-_Part_1_Foundation.part2.rar
-http://nitroflare.com/view/23ED3EC233D44B3/Big_data_Internship_Program_-_Part_1_Foundation.part3.rar
-http://nitroflare.com/view/AA97AD3DE72C94F/Big_data_Internship_Program_-_Part_1_Foundation.part4.rar
-http://nitroflare.com/view/F09B0C1FF05FED7/Big_data_Internship_Program_-_Part_1_Foundation.part5.rar
-http://nitroflare.com/view/FBCE6D71843687D/Big_data_Internship_Program_-_Part_1_Foundation.part6.rar
-http://nitroflare.com/view/46AE751AC7AA6B1/Big_data_Internship_Program_-_Part_1_Foundation.part7.rar
 
 
 Big data Internship Program - Part 1 Foundation
@@ -2695,8 +2577,6 @@ R provides a wide range of statistical tools (models linear and non-linear , sta
 
 
 30 <--> Data Visualization in R With ggplot2 Training Video
-http://nitroflare.com/view/1112A486F903B40/Da.Vi.in.R.w.G.part1.rar
-http://nitroflare.com/view/5E6702237188A64/Da.Vi.in.R.w.G.part2.rar
 
 
 Data Visualization in R With ggplot2 Training Video
@@ -2755,25 +2635,6 @@ Data Structures: Abstraction and Design Using Java, 3rd Edition, combines a stro
 
 
 37 <--> Machine Learning Engineer Nanodegree
-http://nitroflare.com/view/16AAD8480ECAC9D/Ud-Ma.Le.En.Na.part01.rar
-http://nitroflare.com/view/26339EB8AA4BA4F/Ud-Ma.Le.En.Na.part02.rar
-http://nitroflare.com/view/A1F236568EEA8E8/Ud-Ma.Le.En.Na.part03.rar
-http://nitroflare.com/view/578339C6E44C662/Ud-Ma.Le.En.Na.part04.rar
-http://nitroflare.com/view/E7F786D2A326243/Ud-Ma.Le.En.Na.part05.rar
-http://nitroflare.com/view/2F43B8D4A64B566/Ud-Ma.Le.En.Na.part06.rar
-http://nitroflare.com/view/13D303F728D40B8/Ud-Ma.Le.En.Na.part07.rar
-http://nitroflare.com/view/C04414521B97B78/Ud-Ma.Le.En.Na.part08.rar
-http://nitroflare.com/view/8B8F14F0074CFD4/Ud-Ma.Le.En.Na.part09.rar
-http://nitroflare.com/view/478E38ADFA37783/Ud-Ma.Le.En.Na.part10.rar
-http://nitroflare.com/view/47D5A9026C552E1/Ud-Ma.Le.En.Na.part11.rar
-http://nitroflare.com/view/2C1E76A7828E70F/Ud-Ma.Le.En.Na.part12.rar
-http://nitroflare.com/view/E05AAA2535C7750/Ud-Ma.Le.En.Na.part13.rar
-http://nitroflare.com/view/3907E9014EA1120/Ud-Ma.Le.En.Na.part14.rar
-http://nitroflare.com/view/A0298BFDCA5B88A/Ud-Ma.Le.En.Na.part15.rar
-http://nitroflare.com/view/F6A15D5367B08E6/Ud-Ma.Le.En.Na.part16.rar
-http://nitroflare.com/view/862A2E93DA9AF8B/Ud-Ma.Le.En.Na.part17.rar
-http://nitroflare.com/view/423CDE08DF6E0C6/Ud-Ma.Le.En.Na.part18.rar
-http://nitroflare.com/view/AA94A26733E5FDB/Ud-Ma.Le.En.Na.part19.rar
 
 
 Machine Learning Engineer Nanodegree
@@ -3242,11 +3103,6 @@ The goal of this book is to get you up to speed on what drives the artificial in
 
 
 25 <--> Design Patterns Through C++
-http://nitroflare.com/view/A56F696DE372082/C%2B%2B_Design_Patterns.part1.rar
-http://nitroflare.com/view/24659583CE6F202/C%2B%2B_Design_Patterns.part2.rar
-http://nitroflare.com/view/DC29A753383C4F6/C%2B%2B_Design_Patterns.part3.rar
-http://nitroflare.com/view/465F459783DA201/C%2B%2B_Design_Patterns.part4.rar
-http://nitroflare.com/view/427FDE61683F1FD/C%2B%2B_Design_Patterns.part5.rar
 
 
 Design Patterns Through C++
@@ -3419,10 +3275,6 @@ Written with Hahn's clear, comfortable, and engaging style, Harley Hahn's Emacs 
 
 
 39 <--> Learn GREP and SED on Linux for Beginners - Lite (2016)
-http://nitroflare.com/view/05FD39B2E86FD51/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part1.rar
-http://nitroflare.com/view/F3FC4A4E4582FFE/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part2.rar
-http://nitroflare.com/view/4AE1D26CA2A2DE5/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part3.rar
-http://nitroflare.com/view/76884E82C106DFA/Learn_GREP_and_SED_on_Linux_for_Beginners_-_Lite.part4.rar
 
 
 Learn GREP and SED on Linux for Beginners - Lite
@@ -3604,27 +3456,6 @@ Consoles can provide a faster way to code and execute site functionality. In thi
 
 Console applications - like those used in video games such as "Quake" or "The Elder Scrolls" - can save a lot of time for developers, allowing you to code and test site functionality in a fraction of the time it would take otherwise. In this course, you'll learn to build a reusable console that can be integrated into new or existing applications. You'll learn how to design a console control, process commands, integrate with a Node or ASP.NET server, and set up help and command history. By the end of this course, you'll have a working console application that you can add to any web application.
 
-14 <--> Pluralsight - Data Visualization for Developers
-http://nitroflare.com/view/4B0EC943846E3E4/Dat_Visual_Devel.part1.rar
-http://nitroflare.com/view/173CAD5BAB7BEEC/Dat_Visual_Devel.part2.rar
-http://nitroflare.com/view/E6EA411AB132629/Dat_Visual_Devel.part3.rar
-http://nitroflare.com/view/2DB38ECFBF9132D/Dat_Visual_Devel.part4.rar
-http://nitroflare.com/view/AB394505185814C/Dat_Visual_Devel.part5.rar
-
-
-Pluralsight - Data Visualization for Developers
-MP4 | AVC 694kbps | English | 1024x768 | 30fps | 1h 55mins | AAC stereo 128kbps | 535 MB
-Genre: Video Training
-
-This course covers the fundamentals of data visualization that every developer needs to know regardless of architecture, platform, tools, or language. At some point in your software development career, you may be called upon to produce a graph or a chart. Delivering on even a simple request can be remarkably complex. How much data is there and where does it live? What kind of chart should you use? Should the chart be rendered on a server or on the client? What kind of clients should you support, and what are the consequences of that choice? This course introduces every aspect of visualization, from story, to numbers, to architecture, to code.
-
-Table of contents:
-Introduction8m 51s
-Charting - 1A34m 15s
-Business Intelligence11m 16s
-Visualization Architecture17m 9s
-Hands-On Visualization43m 29s
-
 30 <--> Simplified .NET Background Tasks with Hangfire (2016)
 http://nitroflare.com/view/0E269F1438A5655/Simplified_.NET_Background_Tasks_with_Hangfire.part1.rar
 http://nitroflare.com/view/F60932CD3CBC92D/Simplified_.NET_Background_Tasks_with_Hangfire.part2.rar
@@ -3793,12 +3624,6 @@ Genre: eLearning | Language: English
 The hallmark of any popular RPG game is combat. Building on the lessons in the rest of the Unity 5 2D series, these tutorials show how to build simple turn-based combat like you would experience in classic RPGs. In the Movement in an RPG Game course, you learned how to move a player in a 2D tile-based map. Here you'll program, trigger, and manage random battles on the map. Author Jesse Freeman shows how to create pop-up battle windows, add monsters, and create player and monster attack actions—including evasive maneuvers. When the battle is over, you'll learn to reward the player and clean up for future moves.
 
 34 <--> Data Mining with R: Go from Beginner to Advanced! [repost]
-http://nitroflare.com/view/CAE147C6EEAE16A/U-Da.M.wi.R.part1.rar
-http://nitroflare.com/view/4837AE435F9375C/U-Da.M.wi.R.part2.rar
-http://nitroflare.com/view/6C92D47D25F7E8E/U-Da.M.wi.R.part3.rar
-http://nitroflare.com/view/E8E5950C8A6F235/U-Da.M.wi.R.part4.rar
-http://nitroflare.com/view/1749C8234590B53/U-Da.M.wi.R.part5.rar
-http://nitroflare.com/view/6DE735134502E11/U-Da.M.wi.R.part6.rar
 
 
 Data Mining with R: Go from Beginner to Advanced!
@@ -3845,11 +3670,6 @@ Aaron Stump, "Verified Functional Programming in Agda"
 Agda is an advanced programming language based on Type Theory. Agda's type system is expressive enough to support full functional verification of programs, in two styles. In external verification, we write pure functional programs and then write proofs of properties about them. The proofs are separate external artifacts, typically using structural induction. In internal verification, we specify properties of programs through rich types for the programs themselves. This often necessitates including proofs inside code, to show the type checker that the specified properties hold. The power to prove properties of programs in these two styles is a profound addition to the practice of programming, giving programmers the power to guarantee the absence of bugs, and thus improve the quality of software more than previously possible. Verified Functional Programming in Agda is the first book to provide a systematic exposition of external and internal verification in Agda, suitable for undergraduate students of Computer Science. No familiarity with functional programming or computer-checked proofs is presupposed. The book begins with an introduction to functional programming through familiar examples like booleans, natural numbers, and lists, and techniques for external verification. Internal verification is considered through the examples of vectors, binary search trees, and Braun trees. More advanced material on type-level computation, explicit reasoning about termination, and normalization by evaluation is also included. The book also includes a medium-sized case study on Huffman encoding and decoding. Exercises are provided at the end of each chapter.
 
 63 <--> Design Patterns in C++: Behavioral - Chain of Responsibility to Memento (2016)
-http://nitroflare.com/view/9B58EA382C832AC/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part1.rar
-http://nitroflare.com/view/5AF1940E6083560/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part2.rar
-http://nitroflare.com/view/6ACC9B28E550636/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part3.rar
-http://nitroflare.com/view/CEFCE5B2CB27E55/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part4.rar
-http://nitroflare.com/view/7D0A1F082EC0846/Design_Patterns_in_C%2B%2B_Behavioral_-_Chain_of_Responsibility_to_Memento.part5.rar
 
 
 Design Patterns in C++: Behavioral - Chain of Responsibility to Memento
@@ -4130,10 +3950,6 @@ A key to learning a clustering algorithm is to implement and experiment the clus
 2016-08-02
 ******
 0 <--> Byte-Sized-Chunks: Bit Manipulation Problems
-http://nitroflare.com/view/1289576420524ED/Byte-Sized-Chunks_Bit_Manipulation_Problems.part1.rar
-http://nitroflare.com/view/19D97435427C438/Byte-Sized-Chunks_Bit_Manipulation_Problems.part2.rar
-http://nitroflare.com/view/CD37155D118B493/Byte-Sized-Chunks_Bit_Manipulation_Problems.part3.rar
-http://nitroflare.com/view/384541E020571D2/Byte-Sized-Chunks_Bit_Manipulation_Problems.part4.rar
 
 
 Byte-Sized-Chunks: Bit Manipulation Problems
@@ -4163,14 +3979,6 @@ Click Here to get more tutorials in my Blog
 ******
 ******
 1 <--> Byte-Sized-Chunks: C++ Templates and the STL
-http://nitroflare.com/view/71BF7BAAB9761BE/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part1.rar
-http://nitroflare.com/view/A470D7F218E4296/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part2.rar
-http://nitroflare.com/view/0F55E00B34EFFAB/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part3.rar
-http://nitroflare.com/view/5DD2D4B3B472E7A/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part4.rar
-http://nitroflare.com/view/CBCD347B736DEA4/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part5.rar
-http://nitroflare.com/view/030284F5A76D573/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part6.rar
-http://nitroflare.com/view/13440939677CFD2/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part7.rar
-
 
 Byte-Sized-Chunks: C++ Templates and the STL
 MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | 768 MB
@@ -4198,13 +4006,6 @@ Click Here to get more tutorials in my Blog
 ******
 ******
 2 <--> Byte-Sized-Chunks: Operator Overloading in C++
-http://nitroflare.com/view/71BF7BAAB9761BE/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part1.rar
-http://nitroflare.com/view/A470D7F218E4296/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part2.rar
-http://nitroflare.com/view/0F55E00B34EFFAB/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part3.rar
-http://nitroflare.com/view/5DD2D4B3B472E7A/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part4.rar
-http://nitroflare.com/view/CBCD347B736DEA4/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part5.rar
-http://nitroflare.com/view/030284F5A76D573/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part6.rar
-http://nitroflare.com/view/13440939677CFD2/Byte-Sized-Chunks_Operator_Overloading_in_C%2B%2B.part7.rar
 
 
 Byte-Sized-Chunks: Operator Overloading in C++
@@ -4229,13 +4030,6 @@ Click Here to get more tutorials in my Blog
 ******
 ******
 3 <--> Byte-Sized-Chunks: Stacks, Queues, Binary Trees, Heaps
-http://nitroflare.com/view/DD698CAC9F25408/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part1.rar
-http://nitroflare.com/view/47356FF06BEB2EE/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part2.rar
-http://nitroflare.com/view/BFB66099FD8C3FE/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part3.rar
-http://nitroflare.com/view/D54553AF3DCF7D6/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part4.rar
-http://nitroflare.com/view/8B343680AF41765/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part5.rar
-http://nitroflare.com/view/568BC0A14908BC2/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part6.rar
-http://nitroflare.com/view/B5D28A83D4D4328/Byte-Sized-Chunks_Stacks%2C_Queues%2C_Binary_Trees%2C_Heaps.part7.rar
 
 
 Byte-Sized-Chunks: Stacks, Queues, Binary Trees, Heaps
@@ -4865,11 +4659,7 @@ Content:
 ******
 ******
 148 <--> Multivariate Data Visualization with R (2016)
-http://nitroflare.com/view/C045CD978E8149C/Multivariate_Data_Visualization_with_R.part1.rar
-http://nitroflare.com/view/26E186F89BD6818/Multivariate_Data_Visualization_with_R.part2.rar
-http://nitroflare.com/view/3651DD75EE82E20/Multivariate_Data_Visualization_with_R.part3.rar
-http://nitroflare.com/view/DBFC749502871A8/Multivariate_Data_Visualization_with_R.part4.rar
-http://nitroflare.com/view/85BCCB1DD965F3E/Multivariate_Data_Visualization_with_R.part5.rar
+
 
 
 Multivariate Data Visualization with R
@@ -5158,8 +4948,6 @@ Click Here to get more tutorials in my Blog
 ******
 ******
 36 <--> Soft Skills: The Software Developer's Life Manual
-http://nitroflare.com/view/3CD26EDB2AFB429/So.Sk.SO.De.Ma.part1.rar
-http://nitroflare.com/view/5FD00DAF4D72312/So.Sk.SO.De.Ma.part2.rar
 
 
 Soft Skills: The Software Developer's Life Manual
@@ -5242,11 +5030,7 @@ Reactive Programming (RP) is central to many concurrent systems. It endeavors to
 ******
 ******
 54 <--> Python for Trading & Investing
-http://nitroflare.com/view/A1F281F38A95C5F/Python_for_Trading_%26_Investing.part1.rar
-http://nitroflare.com/view/E24958404B170B5/Python_for_Trading_%26_Investing.part2.rar
-http://nitroflare.com/view/F287D2156B6FCE1/Python_for_Trading_%26_Investing.part3.rar
-http://nitroflare.com/view/DF62E3F9A9F4C2C/Python_for_Trading_%26_Investing.part4.rar
-http://nitroflare.com/view/83D01867AB65B81/Python_for_Trading_%26_Investing.part5.rar
+
 
 
 Python for Trading & Investing
@@ -5591,10 +5375,6 @@ Beginning Haskell: A Project-Based Approach By Alejandro Serrano Mena
 Beginning Haskell provides a broad-based introduction to the Haskell language, its libraries and environment, and to the functional programming paradigm that is fast growing in importance in the software industry. The book takes a project-based approach to learning the language that is unified around the building of a web-based storefront. Excellent coverage is given to the Haskell ecosystem and supporting tools. These include the Cabal build tool for managing projects and modules, the QuickCheck tool for software testing, web frameworks such as Yesud and Snap, and the Persistent and Esqueleto database access libraries. Functional programming is gathering momentum, allowing programmers to express themselves in a more concise way, reducing boilerplate and increasing the safety of code. Indeed, mainstream languages such as C# and Java are adopting features from functional programming, and from languages implementing that paradigm. Haskell is an elegant and noise-free pure functional language with a long history, having a huge number of library contributors and an active community. This makes Haskell the best tool for both learning and applying functional programming, and Beginning Haskell the perfect book to show off the language and what it can do. Beginning Haskell is for programmers new to functional programming, who want to learn this new paradigm and how it can improve the quality of their code. Beginning Haskell is also a great choice for functional programmers wanting to get a taste of the Haskell ecosystem and its unique features, or who wish to learn about advanced functional design patterns.
 
 426 <--> Intelligent Numerical Methods II
-http://www.springer.com/gp/book/9783319336053
-https://www.nitroflare.com/payment?webmaster=10405
-http://www.avaxhm.com/blogs/Underaglassmoon
-http://nitroflare.com/view/C038F29A4216EB2/10.1007%40978-3-319-33606-0.pdf
 
 
 Intelligent Numerical Methods II: Applications to Multivariate Fractional Calculus
@@ -5615,10 +5395,7 @@ Complexity
 
 
 429 <--> Linux Academy - SQL Primer
-http://nitroflare.com/view/2F014FE22E3B6E4/SQLP_by_1_file.rar
-http://nitroflare.com/view/EC3B1B1642BBB19/SQLP.part1.rar
-http://nitroflare.com/view/B6E9C17120F2447/SQLP.part2.rar
-http://nitroflare.com/view/B70D6116C1370CE/SQLP.part3.rar
+
 
 
 Linux Academy - SQL Primer
@@ -5628,7 +5405,6 @@ eLearning
 The Structured Query Language (or SQL) is how we both define and manipulate data within a traditional Relational Database Management System (or RDBMS). In this course, we are going to learn how to structure SQL statements that do just that. Learn how to create databases, manage access, create tables, insert and update data, create indexes and more. We will demonstrate SQL functions and talk about how they differ from the more traditional SQL statements. All of this will be accomplished at a SQL command line within MySQL, but will apply equally to SQL compliant RDBMS systems in general.
 
 430 <--> SQL Wall Street CHEAT SHEET, to get HIRED FAST! 2016
-http://nitroflare.com/view/8F1E879303E4143/SQLFast.rar
 
 
 SQL Wall Street CHEAT SHEET, to get HIRED FAST! 2016
@@ -5735,12 +5511,7 @@ Command and Option reference organized by concept
 
 
 440 <--> Beautiful C++: STL Algorithms
-http://nitroflare.com/view/2E4A855EDECBB84/Beautiful_C%2B%2B_STL_Algorithms.part1.rar
-http://nitroflare.com/view/FD164FA4B532F08/Beautiful_C%2B%2B_STL_Algorithms.part2.rar
-http://nitroflare.com/view/925FA89345DE784/Beautiful_C%2B%2B_STL_Algorithms.part3.rar
-http://nitroflare.com/view/5AC87A0872370FF/Beautiful_C%2B%2B_STL_Algorithms.part4.rar
-http://nitroflare.com/view/DB6D0D5D3D93412/Beautiful_C%2B%2B_STL_Algorithms.part5.rar
-http://nitroflare.com/view/0CB6E2101B7B09B/Beautiful_C%2B%2B_STL_Algorithms.part6.rar
+
 
 
 Beautiful C++: STL Algorithms
@@ -5803,12 +5574,7 @@ A practical guide that takes you beyond the basics of matplotlib and gives solut
 
 
 0 <--> Algorithms in C : Concepts, Examples, Code + Time Complexity (2016)
-http://nitroflare.com/view/14329E87B0D8EC1/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part1.rar
-http://nitroflare.com/view/9DCBA37141BE6EA/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part2.rar
-http://nitroflare.com/view/BC9433AAD9D8F6B/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part3.rar
-http://nitroflare.com/view/3071379B0539CF5/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part4.rar
-http://nitroflare.com/view/4F46F4EC7A8C08B/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part5.rar
-http://nitroflare.com/view/3A50456497266C8/Algorithms.in.C.Concepts.Examples.Code.Time.Complexity.part6.rar
+
 
 
 Algorithms in C : Concepts, Examples, Code + Time Complexity (2016)
