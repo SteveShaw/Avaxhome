@@ -1,3 +1,344 @@
+2016/12/15 [START]
+
+0 <--> Java Illuminated: An Active Learning Approach (4th Edition)
+
+
+Julie Anderson, Hervé J. Franceschi , "Java Illuminated: An Active Learning Approach (4th Edition)"
+ISBN: 1284045315 | 2014 | AZW3 / ePUB / MOBI / PDF (conv) | 1240 pages | 123 MB
+
+
+12 <--> R for Data Science: Import, Tidy, Transform, Visualize, and Model Data
+http://nitroflare.com/view/1A1B2BEF7AFE3BF/R_for_Data_Science_-_Hadley_Wickham.rar
+
+
+R for Data Science by Hadley Wickham
+English | 25 July 2016 | ISBN: 1491910399 | 250 Pages | AZW3/MOBI/EPUB/PDF (conv) | 78.97 MB
+
+What exactly is data science? With this book, you’ll gain a clear understanding of this discipline for discovering natural laws in the structure of data. Along the way, you’ll learn how to use the versatile R programming language for data analysis.
+
+Whenever you measure the same thing twice, you get two results—as long as you measure precisely enough. This phenomenon creates uncertainty and opportunity. Author Garrett Grolemund, Master Instructor at RStudio, shows you how data science can help you work with the uncertainty and capture the opportunities. You’ll learn about:
+
+Data Wrangling—how to manipulate datasets to reveal new information
+Data Visualization—how to create graphs and other visualizations
+Exploratory Data Analysis—how to find evidence of relationships in your measurements
+Modelling—how to derive insights and predictions from your data
+Inference—how to avoid being fooled by data analyses that cannot provide foolproof results
+Through the course of the book, you’ll also learn about the statistical worldview, a way of seeing the world that permits understanding in the face of uncertainty, and simplicity in the face of complexity.
+
+My Blog with Updates!
+
+
+
+
+
+17 <--> Python Descriptors
+http://nitroflare.com/view/5FC27FAB82DA06D/148422504X.pdf
+
+
+Jacob Zimmerman, "Python Descriptors" 
+2017 | ISBN-10: 148422504X | 64 pages | PDF | 1 MB
+
+This short book on Python descriptors is a collection of knowledge and ideas from many sources on dealing with and creating descriptors. And, after going through the things all descriptors have in common, the author explores ideas that have multiple ways of being implemented as well as completely new ideas never seen elsewhere before.
+
+This truly is a comprehensive guide to creating Python descriptors. As a bonus: A pip install-able library, descriptor_tools, was written alongside this book and is an open source library on GitHub.
+
+There aren't many good resources out there for writing Python descriptors, and extremely few books. This is a sad state of affairs, as it makes it difficult for Python developers to get a really good understanding of how descriptors work and the techniques to avoid the big gotchas associated with working with them.
+
+What You Will Learn
+Discover descriptor protocols
+Master attribute access and how it applies to descriptors
+Make descriptors and discover why you should
+Store attributes
+Create read-only descriptors and _delete()
+Explore the descriptor classes
+Apply the other uses of descriptors and more
+
+
+43 <--> Guide to 3D Vision Computation: Geometric Analysis and Implementation (Advances in Computer Vision and Pattern Recognition)
+http://www.nitroflare.com/view/4ACD9B370DAAA36
+
+
+Guide to 3D Vision Computation: Geometric Analysis and Implementation (Advances in Computer Vision and Pattern Recognition) by Kenichi Kanatani
+English | 3 Jan. 2017 | ISBN: 3319484923 | 321 Pages | PDF | 5.18 MB
+
+This classroom-tested and easy-to-understand textbook/reference describes the state of the art in 3D reconstruction from multiple images, taking into consideration all aspects of programming and implementation. Unlike other computer vision textbooks, this guide takes a unique approach in which the initial focus is on practical application and the procedures necessary to actually build a computer vision system. The theoretical background is then briefly explained afterwards, highlighting how one can quickly and simply obtain the desired result without knowing the derivation of the mathematical detail. Features: reviews the fundamental algorithms underlying computer vision; describes the latest techniques for 3D reconstruction from multiple images; summarizes the mathematical theory behind statistical error analysis for general geometric estimation problems; presents derivations at the end of each chapter, with solutions supplied at the end of the book; provides additional material at an associated website.
+
+
+
+
+49 <--> Data Classification: Algorithms and Applications (Repost)
+
+Charu C. Aggarwal, "Data Classification: Algorithms and Applications" 
+English | ISBN: 1466586745 | 2014 | 707 pages | PDF | 7 MB
+
+Research on the problem of classification tends to be fragmented across such areas as pattern recognition, database, data mining, and machine learning. Addressing the work of these different communities in a unified way, Data Classification: Algorithms and Applications explores the underlying algorithms of classification as well as applications of classification in a variety of problem domains, including text, multimedia, social network, and biological data.
+
+
+This comprehensive book focuses on three primary aspects of data classification:
+
+Methods-The book first describes common techniques used for classification, including probabilistic methods, decision trees, rule-based methods, instance-based methods, support vector machine methods, and neural networks. 
+
+
+Domains-The book then examines specific methods used for data domains such as multimedia, text, time-series, network, discrete sequence, and uncertain data. It also covers large data sets and data streams due to the recent importance of the big data paradigm. 
+
+
+Variations-The book concludes with insight on variations of the classification process. It discusses ensembles, rare-class learning, distance function learning, active learning, visual learning, transfer learning, and semi-supervised learning as well as evaluation aspects of classifiers.
+
+
+
+53 <--> Data Clustering: Algorithms and Applications (Repost)
+http://nitroflare.com/view/3476D280C57E9A4/1466558210Data.pdf
+
+
+Charu C. Aggarwal, "Data Clustering: Algorithms and Applications" 
+English | ISBN: 1466558210 | 2014 | 652 pages | PDF | 13 MB
+
+Research on the problem of clustering tends to be fragmented across the pattern recognition, database, data mining, and machine learning communities. Addressing this problem in a unified way, Data Clustering: Algorithms and Applications provides complete coverage of the entire area of clustering, from basic methods to more refined and complex data clustering approaches. It pays special attention to recent issues in graphs, social networks, and other domains.
+
+The book focuses on three primary aspects of data clustering:
+Methods, describing key techniques commonly used for clustering, such as feature selection, agglomerative clustering, partitional clustering, density-based clustering, probabilistic clustering, grid-based clustering, spectral clustering, and nonnegative matrix factorization
+Domains, covering methods used for different domains of data, such as categorical data, text data, multimedia data, graph data, biological data, stream data, uncertain data, time series clustering, high-dimensional clustering, and big data 
+Variations and Insights, discussing important variations of the clustering process, such as semisupervised clustering, interactive clustering, multiview clustering, cluster ensembles, and cluster validation
+
+In this book, top researchers from around the world explore the characteristics of clustering problems in a variety of application areas. They also explain how to glean detailed insight from the clustering process—including how to verify the quality of the underlying clusters—through supervision, human intervention, or the automated generation of alternative clusters.
+
+
+
+
+54 <--> The Art of Linux Kernel Design: Illustrating the Operating System Design Principle and Implementation (Repost)
+http://nitroflare.com/view/694DD244E3A6655/1466518030LinuxKernel.pdf
+
+
+Lixiang Yang, "The Art of Linux Kernel Design: Illustrating the Operating System Design Principle and Implementation" 
+English | ISBN: 1466518030 | 2014 | 534 pages | PDF | 48 MB
+
+Uses the Running Operation as the Main Thread
+
+Difficulty in understanding an operating system (OS) lies not in the technical aspects, but in the complex relationships inside the operating systems. The Art of Linux Kernel Design: Illustrating the Operating System Design Principle and Implementation addresses this complexity. Written from the perspective of the designer of an operating system, this book tackles important issues and practical problems on how to understand an operating system completely and systematically. It removes the mystery, revealing operating system design guidelines, explaining the BIOS code directly related to the operating system, and simplifying the relationships and guiding ideology behind it all.
+
+Based on the Source Code of a Real Multi-Process Operating System
+
+Using the 0.11 edition source code as a representation of the Linux basic design, the book illustrates the real states of an operating system in actual operations. It provides a complete, systematic analysis of the operating system source code, as well as a direct and complete understanding of the real operating system run-time structure. The author includes run-time memory structure diagrams, and an accompanying essay to help readers grasp the dynamics behind Linux and similar software systems.
+
+Identifies through diagrams the location of the key operating system data structures that lie in the memory
+Indicates through diagrams the current operating status information which helps users understand the interrupt state, and left time slice of processes
+Examines the relationship between process and memory, memory and file, file and process, and the kernel
+Explores the essential association, preparation, and transition, which is the vital part of operating system
+
+
+Develop a System of Your Own
+
+This text offers an in-depth study on mastering the operating system, and provides an important prerequisite for designing a whole new operating system.
+
+
+
+
+60 <--> Multicore Computing: Algorithms, Architectures, and Applications (Repost)
+
+
+Sanguthevar Rajasekaran, "Multicore Computing: Algorithms, Architectures, and Applications" 
+English | ISBN: 1439854343 | 2014 | 452 pages | PDF | 12 MB
+
+Every area of science and engineering today has to process voluminous data sets. Using exact, or even approximate, algorithms to solve intractable problems in critical areas, such as computational biology, takes time that is exponential in some of the underlying parameters. Parallel computing addresses this issue and has become affordable with the advent of multicore architectures. However, programming multicore machines is much more difficult due to oddities existing in the architectures.
+
+
+Offering insights into different facets of this area, Multicore Computing: Algorithms, Architectures, and Applications focuses on the architectures, algorithms, and applications of multicore computing. It will help readers understand the intricacies of these architectures and prepare them to design efficient multicore algorithms. 
+
+
+Contributors at the forefront of the field cover the memory hierarchy for multicore and manycore processors, the caching strategy Flexible Set Balancing, the main features of the latest SPARC architecture specification, the Cilk and Cilk++ programming languages, the numerical software library Parallel Linear Algebra Software for Multicore Architectures (PLASMA), and the exact multipattern string matching algorithm of Aho-Corasick. They also describe the architecture and programming model of the NVIDIA Tesla GPU, discuss scheduling directed acyclic graphs onto multi/manycore processors, and evaluate design trade-offs among Intel and AMD multicore processors, IBM Cell Broadband Engine, and NVIDIA GPUs. In addition, the book explains how to design algorithms for the Cell Broadband Engine and how to use the backprojection algorithm for generating images from synthetic aperture radar data.
+
+
+
+
+61 <--> Making Games: With JavaScript
+http://nitroflare.com/view/04DCE7B4A7CAA0C/bok-3A978-1-4842-2493-9.pdf
+
+
+Making Games: With JavaScript by Christopher Pitt
+English | 12 Jan. 2017 | ISBN: 1484224922 | 82 Pages | PDF | 1.44 MB
+
+Develop games using the JavaScript web scripting language. This compact short book will help you learn how to use modern JavaScript to make games for web browsers. They’re effortless to use and they work everywhere. If you’ve ever wanted to make a game, join author Christopher Pitt. You’ll start with nothing and build fun games, in no time at all.
+What You'll Learn
+Make a game using JavaScript
+Master the game loop
+Handle player input, collision detection, gravity, ladders, and stairs
+Work with camera locking, mobs, and health
+Manage game inventory
+Handle mapping and more
+Who This Book Is For
+Those who are new to game development with some experience with JavaScript and web development.
+
+
+
+
+72 <--> Linear Mixed Models: A Practical Guide Using Statistical Software, Second Edition (repost)
+http://nitroflare.com/view/CB33272334FE86A/1466560991.pdf
+
+
+Linear Mixed Models: A Practical Guide Using Statistical Software, Second Edition by Brady T. West, Kathleen B. Welch, Andrzej T Galecki
+English | 2014 | ISBN: 1466560991 | 440 pages | PDF | 5 MB
+
+Highly recommended by JASA, Technometrics, and other journals, the first edition of this bestseller showed how to easily perform complex linear mixed model (LMM) analyses via a variety of software programs. Linear Mixed Models: A Practical Guide Using Statistical Software, Second Edition continues to lead readers step by step through the process of fitting LMMs. This second edition covers additional topics on the application of LMMs that are valuable for data analysts in all fields. It also updates the case studies using the latest versions of the software procedures and provides up-to-date information on the options and features of the software procedures available for fitting LMMs in SAS, SPSS, Stata, R/S-plus, and HLM.
+
+New to the Second Edition
+
+A new chapter on models with crossed random effects that uses a case study to illustrate software procedures capable of fitting these models
+Power analysis methods for longitudinal and clustered study designs, including software options for power analyses and suggested approaches to writing simulations
+Use of the lmer() function in the lme4 R package
+New sections on fitting LMMs to complex sample survey data and Bayesian approaches to making inferences based on LMMs
+Updated graphical procedures in the software packages
+Substantially revised index to enable more efficient reading and easier location of material on selected topics or software options
+More practical recommendations on using the software for analysis
+A new R package (WWGbook) that contains all of the data sets used in the examples
+
+Ideal for anyone who uses software for statistical modeling, this book eliminates the need to read multiple software-specific texts by covering the most popular software programs for fitting LMMs in one handy guide. The authors illustrate the models and methods through real-world examples that enable comparisons of model-fitting options and results across the software procedures.
+
+>>Visit my blog for more eBooks<< | And also can connect to RSS
+
+
+
+76 <--> Architectures for Computer Vision: From Algorithm to Chip with Verilog (repost)
+http://nitroflare.com/view/D0657F939897574/111865918X.pdf
+
+
+Architectures for Computer Vision: From Algorithm to Chip with Verilog by Hong Jeong
+English | 2014 | ISBN: 111865918X | 469 pages | PDF | 7 MB
+
+This book provides comprehensive coverage of 3D vision systems, from vision models and state-of-the-art algorithms to their hardware architectures for implementation on DSPs, FPGA and ASIC chips, and GPUs. It aims to fill the gaps between computer vision algorithms and real-time digital circuit implementations, especially with Verilog HDL design. The organization of this book is vision and hardware module directed, based on Verilog vision modules, 3D vision modules, parallel vision architectures, and Verilog designs for the stereo matching system with various parallel architectures. 
+•	Provides Verilog vision simulators, tailored to the design and testing of general vision chips
+•	Bridges the differences between C/C++ and HDL to encompass both software realization and chip implementation; includes numerous examples that realize vision algorithms and general vision processing in HDL
+•	Unique in providing an organized and complete overview of how a real-time 3D vision system-on-chip can be designed
+•	Focuses on the digital VLSI aspects and implementation of digital signal processing tasks on hardware platforms such as ASICs and FPGAs for 3D vision systems, which have not been comprehensively covered in one single book
+•	Provides a timely view of the pervasive use of vision systems and the challenges of fusing information from different vision modules
+•	Accompanying website includes software and HDL code packages to enhance further learning and develop advanced systems
+•	A solution set and lecture slides are provided on the book's companion website
+The book is aimed at graduate students and researchers in computer vision and embedded systems, as well as chip and FPGA designers. Senior undergraduate students specializing in VLSI design or computer vision will also find the book to be helpful in understanding advanced applications.
+
+About the Author
+Hong Jeong joined the Department of Electrical Engineering at POSTECH in January 1988, after graduating from the Department of EECS at MIT. He has worked at Bell Labs, Murray Hill, New Jersey and has visited the Department of Electrical Engineering at USC. He has taught integrated courses, such as multimedia algorithms, Verilog HDL design, and recognition engineering, in the Department of Electrical Engineering at POSTECH. He is interested in illing in the gaps between computer vision algorithms and VLSI architectures, using GPU and advanced HDL languages
+
+>>Visit my blog for more eBooks<< | And also can connect to RSS
+
+
+
+90 <--> Practical Data Mining (Repost)
+http://nitroflare.com/view/F9DAD6AAD301420/1439868360.pdf
+
+
+Monte F. Hancock Jr., "Practical Data Mining" 
+2011 | ISBN: 1439868360 | English | 304 pages | PDF | 4 MB
+
+Used by corporations, industry, and government to inform and fuel everything from focused advertising to homeland security, data mining can be a very useful tool across a wide range of applications. Unfortunately, most books on the subject are designed for the computer scientist and statistical illuminati and leave the reader largely adrift in technical waters.
+
+Revealing the lessons known to the seasoned expert, yet rarely written down for the uninitiated, Practical Data Mining explains the ins-and-outs of the detection, characterization, and exploitation of actionable patterns in data. This working field manual outlines the what, when, why, and how of data mining and offers an easy-to-follow, six-step spiral process. Catering to IT consultants, professional data analysts, and sophisticated data owners, this systematic, yet informal treatment will help readers answer questions, such as:
+
+What process model should I use to plan and execute a data mining project?
+How is a quantitative business case developed and assessed?
+What are the skills needed for different data mining projects?
+How do I track and evaluate data mining projects?
+How do I choose the best data mining techniques?
+Helping you avoid common mistakes, the book describes specific genres of data mining practice. Most chapters contain one or more case studies with detailed projects descriptions, methods used, challenges encountered, and results obtained. The book includes working checklists for each phase of the data mining process. Your passport to successful technical and planning discussions with management, senior scientists, and customers, these checklists lay out the right questions to ask and the right points to make from an insider’s point of view.
+
+
+
+
+91 <--> GPU Pro 5: Advanced Rendering Techniques (Repost)
+http://nitroflare.com/view/27B827C3B05CF1A/1482208636TechniquesC.pdf
+
+
+Wolfgang Engel , "GPU Pro 5: Advanced Rendering Techniques" 
+2014 | ISBN: 1482208636 | English | 522 pages | PDF | 88 MB
+
+In GPU Pro5: Advanced Rendering Techniques, section editors Wolfgang Engel, Christopher Oat, Carsten Dachsbacher, Michal Valient, Wessam Bahnassi, and Marius Bjorge have once again assembled a high-quality collection of cutting-edge techniques for advanced graphics processing unit (GPU) programming.
+
+Divided into six sections, the book covers rendering, lighting, effects in image space, mobile devices, 3D engine design, and compute. It explores rasterization of liquids, ray tracing of art assets that would otherwise be used in a rasterized engine, physically based area lights, volumetric light effects, screen-space grass, the usage of quaternions, and a quadtree implementation on the GPU. It also addresses the latest developments in deferred lighting on mobile devices, OpenCL optimizations for mobile devices, morph targets, and tiled deferred blending methods.
+
+In color throughout, GPU Pro5 is the only book that incorporates contributions from more than 50 experts who cover the latest developments in graphics programming for games and movies. It presents ready-to-use ideas and procedures that can help solve many of your daily graphics programming challenges. Example programs with source code are provided on the book’s CRC Press web page.
+
+
+
+
+
+95 <--> Image Statistics in Visual Computing (Repost)
+http://nitroflare.com/view/D81C1911B54A63D/1568817258.part1.rar
+http://nitroflare.com/view/76FC5BB1BD0A6E2/1568817258.part2.rar
+http://nitroflare.com/view/14273696C2388BE/1568817258.part3.rar
+
+
+Tania Pouli, Erik Reinhard, Douglas W. Cunningham, "Image Statistics in Visual Computing" 
+English | 2013 | ISBN: 1568817258 | 372 pages | PDF | 294 MB
+
+To achieve the complex task of interpreting what we see, our brains rely on statistical regularities and patterns in visual data. Knowledge of these regularities can also be considerably useful in visual computing disciplines, such as computer vision, computer graphics, and image processing. The field of natural image statistics studies the regularities to exploit their potential and better understand human vision. With numerous color figures throughout, Image Statistics in Visual Computing covers all aspects of natural image statistics, from data collection to analysis to applications in computer graphics, computational photography, image processing, and art.
+
+The authors keep the material accessible, providing mathematical definitions where appropriate to help readers understand the transforms that highlight statistical regularities present in images. The book also describes patterns that arise once the images are transformed and gives examples of applications that have successfully used statistical regularities. Numerous references enable readers to easily look up more information about a specific concept or application. A supporting website also offers additional information, including descriptions of various image databases suitable for statistics.
+
+Collecting state-of-the-art, interdisciplinary knowledge in one source, this book explores the relation of natural image statistics to human vision and shows how natural image statistics can be applied to visual computing. It encourages readers in both academic and industrial settings to develop novel insights and applications in all disciplines that relate to visual computing.
+
+
+
+
+102 <--> Outlier Analysis
+http://www.nitroflare.com/view/D4E1A03E90038CD
+
+
+Outlier Analysis by Charu C. Aggarwal
+English | 30 Dec. 2016 | ISBN: 3319475770 | 488 Pages | PDF | 7.17 MB
+
+This book provides comprehensive coverage of the field of outlier analysis from a computer science point of view. It integrates methods from data mining, machine learning, and statistics within the computational framework and is therefore likely to appeal to multiple communities. The chapters of this book can be organized into three categories:
+Basic algorithms: Chapters 1 through 7 discuss the fundamental algorithms for outlier analysis, including probabilistic and statistical methods, linear methods, proximity-based methods, high-dimensional (subspace) methods, ensemble methods, and supervised methods.
+Domain-specific methods: Chapters 8 through 12 discuss outlier detection algorithms for various domains of data, such as text, categorical data, time-series data, discrete sequence data, spatial data, and network data.
+Applications: Chapter 13 is devoted to various applications of outlier analysis. Some guidance is also provided for the practitioner.
+New in this edition:
+The second edition of this book is more detailed and appeals to both researchers and practitioners. Significant new material has been added on topics such as kernel methods, one-class support-vector machines, matrix factorization, neural networks, outlier ensembles, time-series methods, and subspace methods. It is written as a textbook and can be used for classroom teaching. A solution manual is available for the numerous exercises at the end of the book.
+
+
+
+
+
+106 <--> Build an Advanced Keylogger using C++ for Ethical Hacking
+http://nitroflare.com/view/63E1A8AAEFF25A4/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part1.rar
+http://nitroflare.com/view/7061AE104F3CCBB/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part2.rar
+http://nitroflare.com/view/61D5C27307ED1C3/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part3.rar
+http://nitroflare.com/view/E91404A09E8623C/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part4.rar
+http://nitroflare.com/view/4C724BA7B6D82F6/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part5.rar
+http://nitroflare.com/view/6766A8E7616C7D8/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part6.rar
+http://nitroflare.com/view/F46FFEE2988D608/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part7.rar
+
+
+Build an Advanced Keylogger using C++ for Ethical Hacking
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 7.5 Hours | Lec: 35 | 2.90 GB
+Genre: eLearning | Language: English
+
+Take this course to learn how to code a fully functional keylogger in C++ for use in Windows!
+
+If you want to learn to code at an advanced level in C++ or build your own fully functional advanced keylogger from scratch for learning ethical hacking, I think you might love this course! In this course you will see exactly how to create an advanced keylogger starting from nothing by literally following the steps I take as I make it!
+
+This keylogger is capable of recording all the keyboard and mouse input! It can even record independent of the language settings because it logs the physical keys on the keyboard first. Next, by using an arbitrary keymap with human friendly names, it translates the machine keys to something that we can understand. It also possesses mail sending capabilities so you can just schedule the logfile to be sent via mail, lets say every 12 hours. In addition to this, it will also keep the logfile encrypted. Therefore, we will create another program which will be able to decrypt the logfile on your end.
+
+For learning C++, this is an ideal course because it is completely hands on learning that provides a functional end product! Some future features that will be added to the keylogger course as I develop them will include but are not limited to taking screenshots, capturing clipboard content (copy-paste), recording website URLs, and so on! Take this course now to get immediate access to the videos and to get answers to every single question you ask in the course!
+
+As an information technology professional myself, I realize what the final product of this course is capable of. I trust in creating this that you will use it for good and for learning. If you choose to use this keylogger for any illegal or immoral purposes, you risk losing a lot. This is only for educational purposes. The keylogger that you are going to see will be able to cause some serious damage, so please use it in a legal and responsible way.
+
+Thank you very much for reading this and I hope to see you in the course soon! If you have any suggestions in regard to the functionalities of the keylogger, feel free to send me a message or post your requests here.
+
+
+
+
+Click Here to get more tutorials in my Blog
+
+
+
+
+
+107 <--> Handbook of Digital Image Synthesis: Scientific Foundations of Rendering
+http://nitroflare.com/view/C683A68A50AE167/1498774245.pdf
+
+
+English | 7 Dec. 2016 | ISBN: 1498774245 | 882 Pages | PDF | 52.41 MB
+The Handbook of Digital Image Synthesis constitutes a comprehensive reference guide in the rapidly-developing field of computer graphics, whose applications span not only the movie and gaming industries, but also digital marketing, industrial and architectural design, virtual-environment simulators, and medical imaging. This resource provides an extensive, yet concise, treatment of the elementary principles and advanced concepts underpinning digital image synthesis, while covering a broad range of scientific topics such as pure and applied mathematics, geometric surfaces and data structures, the physics of light interaction and propagation, analytical and numerical simulation schemes, and optical perception and imaging. With its foundations laid from the ground up, the content includes a compilation of the theoretical formulas relevant for practical implementation in an actual rendering system, along with their step-by-step derivation, which provides field practitioners with a thorough understanding of their underlying assumptions and limitations, as well as with the methodologies necessary to adapt the results to new problems. Throughout, the presentation of the material is substantiated by numerous figures and computer-generated images illustrating the core ideas, several tables synthesizing results and industry standards, and platform-independent pseudo-code highlighting the core algorithms, in addition to a large collection of bibliographic references to the literature and an index of the standard scientific terms defined therein, thereby allowing the reader to rapidly harness fundamental notions and experimental trends.
+
+
+2016/12/15 [END]
 12/13/2016 [START]
 
 0 <--> Introduction to Programming
