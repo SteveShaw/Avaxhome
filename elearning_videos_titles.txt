@@ -1,3 +1,164 @@
+12/14/2016 [START]
+
+0 <--> Angular 2 Fundamentals for Web Developers
+
+
+Angular 2 Fundamentals for Web Developers
+HDRips | MP4/AVC, ~272 kb/s | 1920x1080 | Duration: 05:50:44 | English: AAC, 128 kb/s (2 ch) | 1.02 GB
+Genre: Development / Programming
+
+
+39 <--> Build an Advanced Keylogger using C++ for Ethical Hacking
+http://nitroflare.com/view/63E1A8AAEFF25A4/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part1.rar
+http://nitroflare.com/view/7061AE104F3CCBB/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part2.rar
+http://nitroflare.com/view/61D5C27307ED1C3/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part3.rar
+http://nitroflare.com/view/E91404A09E8623C/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part4.rar
+http://nitroflare.com/view/4C724BA7B6D82F6/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part5.rar
+http://nitroflare.com/view/6766A8E7616C7D8/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part6.rar
+http://nitroflare.com/view/F46FFEE2988D608/Build_an_Advanced_Keylogger_using_C%2B%2B_for_Ethical_Hacking.part7.rar
+
+
+Build an Advanced Keylogger using C++ for Ethical Hacking
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 7.5 Hours | Lec: 35 | 2.90 GB
+Genre: eLearning | Language: English
+
+Take this course to learn how to code a fully functional keylogger in C++ for use in Windows!
+
+If you want to learn to code at an advanced level in C++ or build your own fully functional advanced keylogger from scratch for learning ethical hacking, I think you might love this course! In this course you will see exactly how to create an advanced keylogger starting from nothing by literally following the steps I take as I make it!
+
+This keylogger is capable of recording all the keyboard and mouse input! It can even record independent of the language settings because it logs the physical keys on the keyboard first. Next, by using an arbitrary keymap with human friendly names, it translates the machine keys to something that we can understand. It also possesses mail sending capabilities so you can just schedule the logfile to be sent via mail, lets say every 12 hours. In addition to this, it will also keep the logfile encrypted. Therefore, we will create another program which will be able to decrypt the logfile on your end.
+
+For learning C++, this is an ideal course because it is completely hands on learning that provides a functional end product! Some future features that will be added to the keylogger course as I develop them will include but are not limited to taking screenshots, capturing clipboard content (copy-paste), recording website URLs, and so on! Take this course now to get immediate access to the videos and to get answers to every single question you ask in the course!
+
+As an information technology professional myself, I realize what the final product of this course is capable of. I trust in creating this that you will use it for good and for learning. If you choose to use this keylogger for any illegal or immoral purposes, you risk losing a lot. This is only for educational purposes. The keylogger that you are going to see will be able to cause some serious damage, so please use it in a legal and responsible way.
+
+
+
+63 <--> Mind-Bending Math: Riddles and Paradoxes [repost]
+http://nitroflare.com/view/3E6954F84988010/Mi.Be.Ma-Ri.Pa.part1.rar
+http://nitroflare.com/view/95B67B6F6A8F5C5/Mi.Be.Ma-Ri.Pa.part2.rar
+http://nitroflare.com/view/F01B51C5D89448C/Mi.Be.Ma-Ri.Pa.part3.rar
+http://nitroflare.com/view/103C4A85A6E0F8B/Mi.Be.Ma-Ri.Pa.part4.rar
+http://nitroflare.com/view/BED60F2C3A082C3/Mi.Be.Ma-Ri.Pa.part5.rar
+http://nitroflare.com/view/0B73B9238B71937/Mi.Be.Ma-Ri.Pa.part6.rar
+http://nitroflare.com/view/593706D4410C9ED/Mi.Be.Ma-Ri.Pa.part7.rar
+
+
+Mind-Bending Math: Riddles and Paradoxes
+24xHDRip | MP4/AVC, ~724 kb/s | 1024x576 | Duration: 12:19:42 | English: AAC, 128 kb/s (2 ch) | + PDF Book
+Size: 4.38 GB | Genre: Math
+
+Great math riddles and paradoxes have a long and illustrious history, serving as both tests and games for intellectual thinkers across the globe. Passed through the halls of academia and examined in-depth by scholars, students, and amateurs alike, these riddles and paradoxes have brought frustration and joy to those seeking intellectual challenges.
+
+In addition, it’s well known that brain exercises are as fundamental to staying sharp as body exercises are to staying fit. Stretching your mind to try to solve a good puzzle, even when the answer eludes you, can help improve your ability to focus.
+
+Now, in the 24 lectures of Mind-Bending Math: Riddles and Paradoxes, you’ll explore the ageless riddles that have plagued even our greatest thinkers in history—confounding the philosophical, mathematical, and scientific minds grappling to solve them. You’ll learn how to break down, examine, and solve these famous quandaries.
+
+From Ancient Greek philosophers to noodling through an unusual enigma involving spaghetti, you’ll cover a wide range of amazing—and in some cases history-changing—conundrums, such as:
+
+Zeno’s astonishing argument that motion itself is impossible
+The compelling conundrum of infinity, which didn’t garner a resolution until the 1900s
+Gödel’s strange loop, ascertaining no axiom system would work to prove mathematical theorems
+The Banach–Tarski paradox, proving that one can cut up a ball and reassemble the pieces into two balls, each the same size as the original
+More mind-bending math games that have endured through time, including the Liar’s Paradox, the Prisoner’s Problem, and the Monty Hall Problem
+
+When it comes to delving into topics such as bending space and time, and topological universes, you need a knowledgeable and captivating instructor, which you get in abundance with Professor of Mathematics David Kung. He infuses each lesson with fun tangents, stories, and real-life riddles, making this one of the most intriguing and entertaining math courses available.
+
+This mesmerizing course will have you contemplating everything from the enthralling paradox of paradoxes to the potential pitfalls when it comes to buying apples—using basic logic and math principles as the fundamental connector to solve exciting, mind-bending mysteries.
+
+Lecures:
+
+01–Everything in This Lecture Is False
+02–Elementary Math Isn't Elementary
+03–Probability Paradoxes
+04–Strangeness in Statistics
+05–Zeno's Paradoxes of Motion
+06–Infinity Is Not a Number
+07–More Than One Infinity
+08–Cantor's Infinity of Infinities
+09–Impossible Sets
+10–Gödel Proves the Unprovable
+11–Voting Paradoxes
+12–Why No Distribution Is Fully Fair
+13–Games with Strange Loops
+14–Losing to Win, Strategizing to Survive
+15–Enigmas of Everyday Objects
+16–Surprises of the Small and Speedy
+17–Bending Space and Time
+18–Filling the Gap between Dimensions
+19–Crazy Kinds of Connectedness
+20–Twisted Topological Universes
+21–More with Less, Something for Nothing
+22–When Measurement Is Impossible
+23–Banach-Tarski's 1 = 1 + 1
+24–Paradox of Paradoxes
+
+
+69 <--> BASH Programming Course Master the Linux Command Line
+http://nitroflare.com/view/CFA7E4C2E28F4DE/BASH_Programming_Course_Master_the_Linux_Command_Line.part1.rar
+http://nitroflare.com/view/CCAEB398B471A2D/BASH_Programming_Course_Master_the_Linux_Command_Line.part2.rar
+http://nitroflare.com/view/86D44D439769C1B/BASH_Programming_Course_Master_the_Linux_Command_Line.part3.rar
+http://nitroflare.com/view/1B89EE91916056D/BASH_Programming_Course_Master_the_Linux_Command_Line.part4.rar
+http://nitroflare.com/view/23B161BF5D878B7/BASH_Programming_Course_Master_the_Linux_Command_Line.part5.rar
+http://nitroflare.com/view/38A098DA47795E1/BASH_Programming_Course_Master_the_Linux_Command_Line.part6.rar
+http://nitroflare.com/view/AA1D8E600FB6C05/BASH_Programming_Course_Master_the_Linux_Command_Line.part7.rar
+
+
+BASH Programming Course Master the Linux Command Line
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 10.5 Hours | Lec: 51 | 1.94 GB
+Genre: eLearning | Language: English
+
+Go from beginner to advanced with the Linux command line in this BASH programming course!
+
+Welcome! Here you can learn you how to master Linux command line ( BASH ). What do I mean by this? Ever seen a system admin in a movie or some devious hacker using a terminal? Do you want the same knowledge? Well you are in the right place!
+
+This course is designed to take you from beginner to advanced in the Linux command line using bash (Bourne-again shell), a Unix shell and command language. You get 10+ hours of HD videos full of useful tutorials founded on motivation and excitement for learning bash programming! You can count on an answer to every question you ask in the course from a linux command line expert which gives you peace of mind that you can get help with every challenge you have as you learn!
+
+
+
+101 <--> Linux Shell Scripting Solutions
+http://nitroflare.com/view/B86AE7C6379A641/Linux_Shell_Scripting_Solutions.part1.rar
+http://nitroflare.com/view/B09FBD5D4DD396E/Linux_Shell_Scripting_Solutions.part2.rar
+http://nitroflare.com/view/A31D01E36DBFC08/Linux_Shell_Scripting_Solutions.part3.rar
+http://nitroflare.com/view/3DF8B097A862096/Linux_Shell_Scripting_Solutions.part4.rar
+http://nitroflare.com/view/178595DADF77989/Linux_Shell_Scripting_Solutions.part5.rar
+http://nitroflare.com/view/A184DCD59E956A6/Linux_Shell_Scripting_Solutions.part6.rar
+http://nitroflare.com/view/87C95D196B3FBD8/Linux_Shell_Scripting_Solutions.part7.rar
+
+
+Linux Shell Scripting Solutions 
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 8.5 Hours | 3.10 GB
+Genre: eLearning | Language: English
+
+The shell remains one of the most powerful tools on a computer system yet a large number of users are unaware of how much can be accomplished with it. Using a combination of simple commands, you will see how to solve complex problems in day-to-day computer usage.
+
+This video will take you through useful real-world examples to make your daily life easy when working with the shell. It shows you how to effectively use the shell to accomplish complex tasks with ease. Starting with the basics of the shell, you will learn simple commands and their usages, allowing you to perform operations on different kinds of files. We then explain text processing and web interaction, and conclude with backups, monitoring, and other sysadmin tasks.
+
+This is an an excellent guide on solving day-to-day problems using the shell and a few powerful commands together to create solutions.
+
+132 <--> R Machine Learning solutions
+http://nitroflare.com/view/5E99228CC90B97A/R_Machine_Learning_solutions.part1.rar
+http://nitroflare.com/view/1D0EB1BA512E6B8/R_Machine_Learning_solutions.part2.rar
+http://nitroflare.com/view/53B7DA6C18D3662/R_Machine_Learning_solutions.part3.rar
+http://nitroflare.com/view/B4DEB0BEC2BA713/R_Machine_Learning_solutions.part4.rar
+http://nitroflare.com/view/FA7A321CEF34288/R_Machine_Learning_solutions.part5.rar
+http://nitroflare.com/view/65E2CE8A4707E24/R_Machine_Learning_solutions.part6.rar
+http://nitroflare.com/view/DDDB8E9C747A3EB/R_Machine_Learning_solutions.part7.rar
+
+
+R Machine Learning solutions 
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 8.5 Hours | 1.81 GB
+Genre: eLearning | Language: English
+
+R is a statistical programming language that provides impressive tools to analyze data and create high-level graphics. This video course will take you from very basics of R to creating insightful machine learning models with R. You will start with setting up the environment and then perform data ETL in R.
+
+Data exploration examples are provided that demonstrate how powerful data visualization and machine learning is in discovering hidden relationship. You will then dive into important machine learning topics, including data classification, regression, clustering, association rule mining, and dimensionality reduction.
+
+Style and Approach
+This easy-to-follow guide is full of hands-on examples of data analysis with R. Each topic is fully explained beginning with the core concepts, followed by step-by-step, practical examples and concluding with detailed explanations of each concept used
+
+
+12/14/2016 [END]
 2016-12-08 [START]
 0 <--> Coursera - Dino 101: Dinosaur Paleobiology
 
