@@ -1,3 +1,91 @@
+12/19/2016 [START]
+0 <--> Lynda - Developing Microsoft SQL Server 2016 Databases
+
+2 <--> Lynda - Statistics Fundamentals - Part 3: Advanced
+http://nitroflare.com/view/6C4B4870A8E9388/LcStatisticsFunP3Adv.part1.rar
+http://nitroflare.com/view/9A68B8B9DD78B3F/LcStatisticsFunP3Adv.part2.rar
+http://nitroflare.com/view/A7B0A23B082F442/LcStatisticsFunP3Adv.part3.rar
+http://nitroflare.com/view/9900279848A9E47/LcStatisticsFunP3Adv.part4.rar
+
+
+Lynda - Statistics Fundamentals - Part 3: Advanced
+Size: 436 MB | Duration: 1h 42m | Video: AVC (.mp4) 1280x720 30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Advanced | Language: English
+
+Statistics are everywhere, in every industry, but they're a must for anyone working in data science, business, or business analytics. If you're in one of these specialized fields, chances are you need an advanced understanding of statistics. Complete your mastery in this course, part 3 of our Statistics Fundamentals series. Eddie Davila covers concepts such as small sample sizes, t-distribution, degrees of freedom, chi-square testing, and more. This advanced skills training moves learners into the practical study and application of experimental design, analysis of variance, population comparison, and regression analysis. Use these lessons to go beyond the basics and dive deeper into the specific factors that influence your own calculations and results.
+
+
+
+40 <--> Lynda - Windows Performance Tools: DeadLock Analysis with Intel VTune Amplifier
+http://nitroflare.com/view/82B9421F6E667A1/LcWinPrfTlsDdLckVTuneAmp.part1.rar
+http://nitroflare.com/view/D859018A19DA8BF/LcWinPrfTlsDdLckVTuneAmp.part2.rar
+http://nitroflare.com/view/666B81FB9A20A85/LcWinPrfTlsDdLckVTuneAmp.part3.rar
+http://nitroflare.com/view/F2A4C8E12D42AC9/LcWinPrfTlsDdLckVTuneAmp.part4.rar
+
+
+Lynda - Windows Performance Tools: DeadLock Analysis with Intel VTune Amplifier
+Size: 471 MB | Duration: 0h 45m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Are your Windows apps underperforming? Application threads often wait too long on synchronization objects (locks), which results in processor cores being underutilized. Discover how to use the Locks and Waits analysis in Intel's VTune Amplifier to identify and remove deadlocks: one of the most common reasons for inefficient parallel execution within a Windows application. Follow along with instructor Thomas Pantels as he demos the analysis tool and shows where to locate and enhance source code to remove deadlocks. By the end of this course you will know how to use the Locks and Waits analysis on your own application and improve the efficiency of parallel task execution on Windows.
+
+
+
+46 <--> Lynda - Windows Performance Tools: Memory Leak Analysis with Intel Inspector
+http://nitroflare.com/view/6B88F42791EC28A/LcWinPrfTlsMemLeakInspctr.part1.rar
+http://nitroflare.com/view/B6E69B01534609E/LcWinPrfTlsMemLeakInspctr.part2.rar
+http://nitroflare.com/view/8BFCD52F7B3840F/LcWinPrfTlsMemLeakInspctr.part3.rar
+http://nitroflare.com/view/D600B0491049B7D/LcWinPrfTlsMemLeakInspctr.part4.rar
+http://nitroflare.com/view/272819A3DD5D6D5/LcWinPrfTlsMemLeakInspctr.part5.rar
+http://nitroflare.com/view/2AA5FB549985723/LcWinPrfTlsMemLeakInspctr.part6.rar
+http://nitroflare.com/view/C83EA9E3D117B0C/LcWinPrfTlsMemLeakInspctr.part7.rar
+
+
+Lynda - Windows Performance Tools: Memory Leak Analysis with Intel Inspector
+Size: 3.88 GB | Duration: 0h 42m | Video: AVC (.mp4) 1280x720 30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Memory leaks are a common cause of unexpected crashes in Windows applications. It's important to detect them before your apps go live. Luckily, there is a tool to help. Intel Inspector XE is a memory and threading debugger that can be used to detect memory leaks in C, C++, and Fortran applications running on Windows. Learn to use the Intel Inspector to easily find and repair memory leaks in any of your own Windows applications, with this installment of Windows Performance Tools. Thomas Pantels shows how to profile a C++ application, detect memory issues with Inspector XE, and pinpoint memory leaks in an OpenCV demo app. By the end of this course, you will be able to use the Intel Inspector to easily find memory-related issues like memory leaks in any of your own applications.
+
+
+47 <--> Lynda - Windows Performance Tools: Thread Analysis with Intel VTune Amplifier
+http://nitroflare.com/view/B9D975FACD1A970/LcWinPrfTlsThAnlsVTuneAmp.part1.rar
+http://nitroflare.com/view/CD16E70E1B75AAF/LcWinPrfTlsThAnlsVTuneAmp.part2.rar
+http://nitroflare.com/view/948274EAFBB78DD/LcWinPrfTlsThAnlsVTuneAmp.part3.rar
+http://nitroflare.com/view/1CED64D17A1215F/LcWinPrfTlsThAnlsVTuneAmp.part4.rar
+
+
+Lynda - Windows Performance Tools: Thread Analysis with Intel VTune Amplifier
+Size: 878 MB | Duration: 1h 3m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Multithreaded apps can perform better than single-threaded apps, but the performance improvements come with increased code complexity and overhead. By comparing and analyzing different versions of your apps with VTune Amplifier, you can decide whether this trade-off is worth it. In this course, Thomas Pantels shows how to visualize and analyze two versions of a demo C++ application that simulates house-building tasks. The first version is single threaded; the second is multithreaded. By the end of this course, you will know how to install and configure Intel's VTune Amplifier. You will walk away knowing how to use the tool to analyze and compare both single-threaded and multithreaded Windows applications and understand the results.
+
+
+
+52 <--> Lynda - Linux: Desktops and Remote Access
+https://training/
+http://nitroflare.com/view/777D23EBC0FB9FC/LcLinuxDsktpsRmtAccess.part1.rar
+http://nitroflare.com/view/112A28B3A4B830C/LcLinuxDsktpsRmtAccess.part2.rar
+http://nitroflare.com/view/BF0BE17325A2E72/LcLinuxDsktpsRmtAccess.part3.rar
+
+
+Lynda - Linux: Desktops and Remote Access
+Size: 279 MB | Duration: 1h 45m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+Find the most productive way to work in Linux. Linux: Desktops and Remote Access covers the most popular desktop environments, terminal emulators, and shells used to access and administer Linux systems, both locally and remotely. Instructor Grant McWilliams reviews GUI options such as KDE, GNOME, MATE, Cinnamon, and Xfce, as well as remote access tools like VNC, RDP, and X2Go. Then explore the advantages and disadvantages of command-line access and the productivity features in Bash, and learn how to create secure remote connections to the Linux CLI on Windows, macOS, iOS, and Android devices. All the tools and techniques are demonstrated using CentOS 7, but the lessons apply to any Linux distribution. Note: The topics below map to elements of the Essential Commands section of the Linux Foundation Certified System Administrator exam. Learn more about LFCS certification at https://training. linuxfoundation. org/certification/lfcs.
+
+ Topics include:
+
+
+
+
+No mirrors below please.
+
+
+
+12/19/2016 [END]
 12/14/2016 [START]
 
 0 <--> Angular 2 Fundamentals for Web Developers

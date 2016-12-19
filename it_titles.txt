@@ -1,3 +1,211 @@
+12/19/2016 [START]
+
+0 <--> Learning React
+
+
+Learning React: A Hands-on Guide to Building Maintainable, High-Performing Web Application User Interfaces Using the React JavaScript by Kirupa Chinnathambi
+English | 15 Nov. 2016 | ISBN: 0134546318 | 240 Pages | AZW3/MOBI/EPUB/PDF (conv) | 47.52 MB
+
+
+
+39 <--> Text Analytics with Python: A Practical Real-World Approach to Gaining Actionable Insights from your Data
+
+Text Analytics with Python: A Practical Real-World Approach to Gaining Actionable Insights from your Data by Dipanjan Sarkar
+English | 18 Dec. 2016 | ISBN: 148422387X | 412 Pages | EPUB | 1.74 MB
+
+Derive useful insights from your data using Python. Learn the techniques related to natural language processing and text analytics, and gain the skills to know which technique is best suited to solve a particular problem.
+Text Analytics with Python teaches you both basic and advanced concepts, including text and language syntax, structure, semantics. You will focus on algorithms and techniques, such as text classification, clustering, topic modeling, and text summarization. 
+A structured and comprehensive approach is followed in this book so that readers with little or no experience do not find themselves overwhelmed. You will start with the basics of natural language and Python and move on to advanced analytical and machine learning concepts. You will look at each technique and algorithm with both a bird's eye view to understand how it can be used as well as with a microscopic view to understand the mathematical concepts and to implement them to solve your own problems.
+This book:
+Provides complete coverage of the major concepts and techniques of natural language processing (NLP) and text analytics
+Includes practical real-world examples of techniques for implementation, such as building a text classification system to categorize news articles, analyzing app or game reviews using topic modeling and text summarization, and clustering popular movie synopses and analyzing the sentiment of movie reviews
+Shows implementations based on Python and several popular open source libraries in NLP and text analytics, such as the natural language toolkit (nltk), gensim, scikit-learn, spaCy and Pattern
+What you will learn: 
+• Natural Language concepts
+• Analyzing Text syntax and structure
+• Text Classification
+• Text Clustering and Similarity analysis
+• Text Summarization 
+• Semantic and Sentiment analysis
+Readership :
+IT professionals, analysts, developers, linguistic experts, data scientists, and anyone with a keen interest in linguistics, analytics, and generating insights from textual data.
+
+
+
+
+40 <--> Advanced R: Data Programming and the Cloud
+http://nitroflare.com/view/E0E7974B56BE13F/bok%253A978-1-4842-2077-1.epub
+
+
+Advanced R: Data Programming and the Cloud by Matt Wiley
+English | 19 Nov. 2016 | ISBN: 1484220765 | 304 Pages | EPUB | 1.92 MB
+
+Program for data analysis using R and learn practical skills to make your work more efficient. This book covers how to automate running code and the creation of reports to share your results, as well as writing functions and packages. Advanced R is not designed to teach advanced R programming nor to teach the theory behind statistical procedures. Rather, it is designed to be a practical guide moving beyond merely using R to programming in R to automate tasks.
+This book will show you how to manipulate data in modern R structures and includes connecting R to data bases such as SQLite, PostgeSQL, and MongoDB. The book closes with a hands-on section to get R running in the cloud. Each chapter also includes a detailed bibliography with references to research articles and other resources that cover relevant conceptual and theoretical topics.
+What You Will Learn
+Write and document R functions
+Make an R package and share it via GitHub or privately
+Add tests to R code to insure it works as intended
+Build packages automatically with GitHub
+Use R to talk directly to databases and do complex data management
+Run R in the Amazon cloud
+Generate presentation-ready tables and reports using R
+Who This Book Is For
+Working professionals, researchers, or students who are familiar with R and basic statistical techniques such as linear regression and who want to learn how to take their R coding and programming to the next level.
+
+
+
+
+
+42 <--> Software Reading Techniques: Twenty Techniques for More Effective Software Review and Inspection
+http://nitroflare.com/view/3F6C8DE88D4C0A3/bok%253A978-1-4842-2346-8.epub
+
+
+Software Reading Techniques: Twenty Techniques for More Effective Software Review and Inspection by Yang-Ming Zhu
+English | 6 Dec. 2016 | ISBN: 1484223454 | 148 Pages | EPUB | 668.38 KB
+
+This concise book teaches software professionals and software engineering students the full set of twenty software reading techniques to enhance their effectiveness in reviewing and inspecting software artifacts such as requirements specifications, designs, code files, and usability. 
+Software review and inspection is the best practice in software development whose purpose is to detect and fix problems early. Software professionals are trained to write software but not read and analyze software written by peers. As a result, individual reading skills vary widely. Because the effectiveness of software review and inspection is highly dependent on individual reading skills, differential outcomes among software readers vary by a factor of ten. Software Reading Techniques is designed to close that gap.
+Dr Yang‐Ming Zhu’s depth of experience as a software architect, team leader, and scientist make him singularly well-equipped to bring software readers up to speed on all the techniques and tips for optimizing the effectiveness and efficiency of their software review and inspection skills.
+What You'll Learn
+Software review and inspection procedures and reading skills
+Traditional and modern advanced reading techniques applicable to almost all software artifacts
+Specific reading techniques for software requirements specification, software design, and code
+Who This Book Is For
+All software professionals and software engineering students and researchers.
+
+
+
+51 <--> Notes on Microservices Design and Architecture
+http://nitroflare.com/view/7411287F47F36D7/Notes_on_Microservices_Design_and_Architecture_-_Subhash_Chandran.rar
+
+
+Notes on Microservices Design and Architecture by Subhash Chandran
+English | 13 Dec. 2016 | ASIN: B01N4E0MRF | 34 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.75 MB
+
+Introductory text on microservices. Book covers:
+
+1. Microservices architecture defined. Compared with monolithic architecture. Pros and cons.
+2. Guidelines on partitioning to microservices.
+3. Designing for failure.
+4. Circuit Breaker.
+5. Bulkheads.
+6. API Gateway pattern.
+7. Hosting.
+8. API design.
+9. Managing complexity introduced by microservices.
+
+
+
+52 <--> Mastering Qt 5
+
+Mastering Qt 5 by Guillaume Lazar
+English | 6 Feb. 2017 | ISBN: 1786467127 | 575 Pages | AZW3/MOBI/EPUB/PDF (conv) | 25.28 MB
+
+Key Features
+
+Unleash the power of Qt 5 with C++14
+Integrate useful third-party libraries such as OpenCV
+Package and deploy your application on multiple platforms
+
+Book Description
+
+Qt 5.6 is an application development framework that provides a great user experience and develops full-capability applications with OpenGl/ OpenGL ES graphics acceleration.
+
+This book will address challenges in successfully developing cross-platform applications with the Qt framework. Cross-platform development needs a well organized project. Using this book, you will have a better understanding of the Qt framework and the tools to resolve serious issues such as linking, debugging, and multithreading. Your journey will start with the new Qt 5 features. Then you will explore different platforms and learn to tame them. Every chapter along the way is a logical step that you must take to master Qt. The journey will end in an application that has been tested and is ready to be shipped.
+
+What you will learn
+
+Create stunning UIs with Qt Widget and Qt Quick
+Develop powerful, cross-platform applications with the Qt framework
+Design GUIs with the Qt Designer and build a library in it for UI preview
+Handle user interaction with the Qt signal/slot mechanism in C++
+Prepare a cross-platform project to host a third-party library
+Develop a Qt application using the OpenCV API
+Use the Qt Animation framework to display stunning effects
+Deploy mobile apps with Qt and embedded platforms
+
+
+57 <--> Building Trading Bots Using Java
+http://www.nitroflare.com/view/6BDEA186A7415C6
+
+
+Building Trading Bots Using Java by Shekhar Varshney
+English | 6 Jan. 2017 | ISBN: 1484225198 | 300 Pages | PDF | 6.22 MB
+
+Build an automated currency trading bot from scratch with java. In this book, you will learn about the nitty-gritty of automated trading and have a closer look at Java, the Spring Framework, event-driven programming, and other open source APIs, notably Google's Guava API. And of course, development will all be test-driven with unit testing coverage.
+The central theme of Building Trading Bots Using Java is to create a framework that can facilitate automated trading on most of the brokerage platforms, with minimum changes. At the end of the journey, you will have a working trading bot, with a sample implementation using the OANDA REST API, which is free to use.
+What You'll Learn
+Find out about trading bots
+Discover the details of tradeable instruments and apply bots to them
+Track and use market data events
+Place orders and trades
+Work with trade/order and account events
+Who This Book Is For
+Experienced programmers new to bots and other algorithmic trading and finance techniques.
+
+
+
+66 <--> Python for Microcontrollers: Getting Started with MicroPython
+http://nitroflare.com/view/793BFD7FA230FFF/1259644537.epub
+
+
+Python for Microcontrollers: Getting Started with MicroPython by Donald Norris
+English | 2016 | ISBN: 1259644537 | 288 pages | EPUB | 26 MB
+
+Program Your Own MicroPython projects with ease―no prior programming experience necessary! 
+
+This DIY guide provides a practical introduction to microcontroller programming with MicroPython. Written by an experienced electronics hobbyist, Python for Microcontrollers: Getting Started with MicroPython features eight start-to-finish projects that clearly demonstrate each technique. You will learn how to use sensors, store data, control motors and other devices, and work with expansion boards. From there, you’ll discover how to design, build, and program all kinds of entertaining and practical projects of your own.
+
+• Learn MicroPython and object-oriented programming basics
+• Explore the powerful features of the Pyboard, ESP8266, and WiPy 
+• Interface with a PC and load files, programs, and modules 
+• Work with the LEDs, timers, and converters
+• Control external devices using serial interfaces and PWM
+• Build and program a let ball detector using the 3-axis accelerometer
+• Install and program LCD and touchsensor expansion boards
+• Record and play sounds using the AMP audio board
+
+
+74 <--> Using R for Statistics
+http://nitroflare.com/view/0F002CDA05487F0/bok%253A978-1-4842-0139-8.epub
+
+
+Using R for Statistics by Sarah Stowell
+English | 21 Jun. 2014 | ISBN: 148420140X | 244 Pages | EPUB | 4.62 MB
+
+Using R for Statistics will get you the answers to most of the problems you are likely to encounter when using a variety of statistics. This book is a problem-solution primer for using R to set up your data, pose your problems and get answers using a wide array of statistical tests. The book walks you through R basics and how to use R to accomplish a wide variety statistical operations.
+You'll be able to navigate the R system, enter and import data, manipulate datasets, calculate summary statistics, create statistical plots and customize their appearance, perform hypothesis tests such as the t-tests and analyses of variance, and build regression models. Examples are built around actual datasets to simulate real-world solutions, and programming basics are explained to assist those who do not have a development background.
+After reading and using this guide, you'll be comfortable using and applying R to your specific statistical analyses or hypothesis tests. No prior knowledge of R or of programming is assumed, though you should have some experience with statistics.
+
+
+
+77 <--> Solutions Manual to Accompany Nonlinear Programming: Theory and Algorithms, 3 edition (repost)
+http://nitroflare.com/view/7D85221FBDDDCEC/1118762371.pdf
+
+
+Solutions Manual to Accompany Nonlinear Programming: Theory and Algorithms, 3 edition by Mokhtar S. Bazaraa, Hanif D. Sherali and C. M. Shetty
+English | 2013 | ISBN: 1118762371 | 174 pages | PDF | 1 MB
+
+As the Solutions Manual, this book is meant to accompany the main title, Nonlinear Programming: Theory and Algorithms, Third Edition. This book presents recent developments of key topics in nonlinear programming (NLP) using a logical and self-contained format. 
+
+The volume is divided into three sections: convex analysis, optimality conditions, and dual computational techniques. Precise statements of algortihms are given along with convergence analysis. Each chapter contains detailed numerical examples, graphical illustrations, and numerous exercises to aid readers in understanding the concepts and methods discussed.
+
+
+
+
+
+
+89 <--> Nonlinear Programming: Theory and Algorithms, 3rd Edition (Repost)
+http://nitroflare.com/view/BEF97DB7966BA92/0471486000nonlin.pdf
+
+
+Mokhtar S. Bazaraa, "Nonlinear Programming: Theory and Algorithms, 3rd Edition" 
+English | ISBN: 0471486000 | 2006 | 872 pages | PDF | 36 MB
+
+COMPREHENSIVE COVERAGE OF NONLINEAR PROGRAMMING THEORY AND ALGORITHMS, THOROUGHLY REVISED AND EXPANDED Nonlinear Programming: Theory and Algorithms —now in an extensively updated Third Edition—addresses the problem of optimizing an objective function in the presence of equality and inequality constraints. Many realistic problems cannot be adequately represented as a linear program owing to the nature of the nonlinearity of the objective function and/or the nonlinearity of any constraints. The Third Edition begins with a general introduction to nonlinear programming with illustrative examples and guidelines for model construction. Concentration on the three major parts of nonlinear programming is provided: Convex analysis with discussion of topological properties of convex sets, separation and support of convex sets, polyhedral sets, extreme points and extreme directions of polyhedral sets, and linear programming Optimality conditions and duality with coverage of the nature, interpretation, and value of the classical Fritz John (FJ) and the Karush–Kuhn–Tucker (KKT) optimality conditions; the interrelationships between various proposed constraint qualifications; and Lagrangian duality and saddle point optimality conditions Algorithms and their convergence, with a presentation of algorithms for solving both unconstrained and constrained nonlinear programming problems Important features of the Third Edition include: New topics such as second interior point methods, nonconvex optimization, nondifferentiable optimization, and more Updated discussion and new applications in each chapter Detailed numerical examples and graphical illustrations Essential coverage of modeling and formulating nonlinear programs Simple numerical problems Advanced theoretical exercises The book is a solid reference for professionals as well as a useful text for students in the fields of operations research, management science, industrial engineering, applied mathematics, and also in engineering disciplines that deal with analytical optimization techniques. The logical and self–contained format uniquely covers nonlinear programming techniques with a great depth of information and an abundance of valuable examples and illustrations that showcase the most current advances in nonlinear problems.
+
+12/19/2016 [END]
 2016/12/15 [START]
 
 0 <--> Java Illuminated: An Active Learning Approach (4th Edition)
@@ -106,7 +314,6 @@ In this book, top researchers from around the world explore the characteristics 
 
 
 54 <--> The Art of Linux Kernel Design: Illustrating the Operating System Design Principle and Implementation (Repost)
-http://nitroflare.com/view/694DD244E3A6655/1466518030LinuxKernel.pdf
 
 
 Lixiang Yang, "The Art of Linux Kernel Design: Illustrating the Operating System Design Principle and Implementation" 
