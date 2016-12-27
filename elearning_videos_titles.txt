@@ -1,3 +1,366 @@
+12/27/2016 [START]
+
+0 <--> Nathan Chan - Instagram Domination 3.0 (2016)
+
+
+Nathan Chan - Instagram Domination 3.0
+WEBRip | English | MP4 + PDF Guides | 1280 x 720 | AVC ~467 kbps | 23.976 fps
+AAC | 128 Kbps | 44.1 KHz | 2 channels | 11:42:00 | 2.93 GB
+
+
+16 <--> GIMP for Beginners Complete Project Based Training Series
+http://nitroflare.com/view/421F3A013134383/GIMP_for_Beginners_Complete_Project_Based_Training_Series.part1.rar
+http://nitroflare.com/view/71AF0FC88F9DEBA/GIMP_for_Beginners_Complete_Project_Based_Training_Series.part2.rar
+http://nitroflare.com/view/2AC1C7097B31DD6/GIMP_for_Beginners_Complete_Project_Based_Training_Series.part3.rar
+http://nitroflare.com/view/8D9125357F73BC6/GIMP_for_Beginners_Complete_Project_Based_Training_Series.part4.rar
+http://nitroflare.com/view/7500ACBF99A8981/GIMP_for_Beginners_Complete_Project_Based_Training_Series.part5.rar
+http://nitroflare.com/view/BBD5DAD8AAE4C15/GIMP_for_Beginners_Complete_Project_Based_Training_Series.part6.rar
+
+
+GIMP for Beginners Complete Project Based Training Series
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 7 Hours | Lec: 115 | 1.19 GB
+Genre: eLearning | Language: English
+
+Learn to use the GNU Image Manipulation Program (GIMP) from this complete project based video training series
+
+Well then, why isn't everyone using it?
+
+Even with access to GNU tutorials and Youtube videos the GIMP is still a hard program to learn.
+
+Until now…
+
+Welcome to the most comprehensive single GIMP course available on Udemy:
+
+GIMP for Beginners: Complete Project Based Training Series
+
+In this course, which is close to 7 hours in length, I'll take you all the way from installing the GIMP and configuring it to run on Windows to producing banners, book covers and memes that you'll display using Facebook and other social media, Wordpress and HTML. I'll even show you photo touch up. In fact, I'll show you everything I know in the natural order in which you should learn it.
+
+So, what makes this GIMP course special?
+
+I'll tell you what…
+
+This course is composed of 13 sections, each addressing a different topic and each averaging 30 minutes in length.
+
+Each section presents one or more small projects that should be completed to demonstrate your proficiency with the material just covered before moving on.
+
+And these aren't bogus projects either. They actually produce usable results.
+
+I ask you, can you afford just 30 minutes a day for under 2 weeks to learn the fundamentals of the most powerful free graphics program in the world? (Sorry, I got carried away – I don't actually know if that's true ;-).
+
+If you do, then enroll in this course and let's get started.
+
+If not…
+
+Watch me create an incredible looking 3D pool table and balls then take the reins and do it yourself.
+
+Produce professional looking book covers with ease.
+
+Distribute memes and other social media graphics on Facebook and 7 other social media sites.
+
+Learn to use HTML from within Wordpress to produce graphics effects attainable only through HTML and CSS.
+
+Learn photo touch up using the GIMP.
+
+All this knowledge and much more is at your finger tips.
+
+And the course is still growing. Soon I hope to add a new section entitled:
+
+Digital Drawing and Painting with a Wacom Tablet
+
+So, what do you say?
+
+This course was originally released as a series of 13 short classes on another online video learning platform. There is some redundancy in the course which should be skipped during viewing.
+
+This course was guided by the contents of my previous 4 Udemy GIMP courses. Both learning routes remain viable but I personally prefer this newer, segmented and project focused approach to learning the GIMP.
+
+Installing and configuring the GIMP on Windows is the only Windows specific lecture, all the rest should apply to all platforms (thoughI do demonstrate using the GIMP on Windows 10).
+
+P.S. Don't forget that Udemy provides a 100% money back guaranty if you return a course within 30 days.
+
+Now, here's what I'd recommend…
+
+You can preview all the lectures in the first and second sections for free. Watch the first and second sections and if you like it enroll in the course. If you don't like it then thank you for you time and I wish you the best.
+
+
+26 <--> Data Science and Machine Learning with Python - Hands On
+http://nitroflare.com/view/1F0E782B643AD9B/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part01.rar
+http://nitroflare.com/view/6529DABFB5ABDDA/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part02.rar
+http://nitroflare.com/view/AF12F89FE33624B/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part03.rar
+http://nitroflare.com/view/4F66C84FB901946/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part04.rar
+http://nitroflare.com/view/A7F2B04DEBF4178/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part05.rar
+http://nitroflare.com/view/D9DB315A2EAC913/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part06.rar
+http://nitroflare.com/view/A69061AF48B89BA/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part07.rar
+http://nitroflare.com/view/BE67B60F29F1F31/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part08.rar
+http://nitroflare.com/view/40256CF2B80A388/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part09.rar
+http://nitroflare.com/view/539C9C14FB73139/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part10.rar
+
+
+Data Science and Machine Learning with Python - Hands On
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 8 Hours 50M | 8.97 GB
+Genre: eLearning | Language: English
+
+The job of a data scientist is one of the most lucrative jobs out there today – it involves analyzing large amounts of data, and gathering actionable business insights from it using a variety of tools. This course will help you take your first steps in the world of data science, and empower you to conduct data analysis and perform efficient machine learning using Python. Gain value from your data using the various data mining and data analysis techniques in Python, and develop efficient predictive models to predict future results. You will also learn how to perform large-scale machine learning on Big Data using Apache Spark. You don’t have to be an expert coder in Python to get the most out of this course – just a basic programming knowledge of Python is sufficient.
+
+
+
+28 <--> What no one tells you about Pointer, String, Structure-Union
+http://nitroflare.com/view/74511F1484EDEE5/What_no_one_tells_you_about_Pointer%2C_String%2C_Structure-Union.part1.rar
+http://nitroflare.com/view/E7729973E2B008A/What_no_one_tells_you_about_Pointer%2C_String%2C_Structure-Union.part2.rar
+http://nitroflare.com/view/89C72E4495501C9/What_no_one_tells_you_about_Pointer%2C_String%2C_Structure-Union.part3.rar
+
+
+What no one tells you about Pointer, String, Structure-Union
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | Lec: 19 | 238 MB
+Genre: eLearning | Language: English
+
+C language: Learn the intermediate C programming with topics like Pointers, Strings, Structures and Unions.
+
+Hello, friends! Welcome to the course of intermediate training of C language. As we know, C is the primary language to start a career in programming. Through this course, you can learn each and every aspect of programming. This course will cover the intermediate topic in C, so you must know the basics of C language to start with the course.
+
+Please have a look at the curriculum below to know what topics are covered in this training. Major topics like pointers, strings, structures and unions are discussed in this course.
+
+As already stated, basics of the language are not covered so you must know how to write a basic program in C language and rest of the things I will teach you in the course.
+
+All the topics are covered in its depth, and I tried my best to explain everything clearly using simple English words. So, if English is not your native language then still you can learn easily.
+
+
+
+48 <--> Unreal Engine 4.x Projects
+http://nitroflare.com/view/72DA3CE2430BA1A/Unr.En.4x.Pr.part1.rar
+http://nitroflare.com/view/3349B04D3C86FAC/Unr.En.4x.Pr.part2.rar
+http://nitroflare.com/view/39A5CC1AC03626D/Unr.En.4x.Pr.part3.rar
+http://nitroflare.com/view/823D5AA1D6CCF57/Unr.En.4x.Pr.part4.rar
+
+
+Unreal Engine 4.x Projects
+HDRips | MP4/AVC, ~461 kb/s | 1280x720 | Duration: 08:52:50 | English: AAC, 128 kb/s (2 ch) | 2.25 GB
+Genre: Development / Programming
+
+Explore the world of professional game development with Unreal Engine 4 in this project-based video.
+
+Create Two games with increasing difficulty level on your own
+Dive into Unreal Engine 4’s impressive and ever-evolving toolset
+Become a pro game developer by creating pro-level games from scratch
+
+If you want to do more with Unreal Engine 4 and dive deep into the amazing capabilities that it has to offer, then this video is the right choice for you. In this video, you will learn how to create 2 different Unreal Engine 4 games.
+
+The design complexity of each game increases gradually to give you a complete overview of Unreal Engine 4 and its amazing features. You will learn to implement advanced shading techniques, create stunning graphics, leverage the rendering power of Unreal Engine to get the best out of it.
+
+The experience of creating a variety of games from scratch will help you get a clear grip on Unreal Engine 4 and enable you to become a pro game developer with Unreal Engine 4.
+
+
+
+53 <--> German grammar - the future tenses
+http://nitroflare.com/view/F11058CF55C88D2/German_grammar_-_the_future_tenses.part1.rar
+http://nitroflare.com/view/8BCAE11D766F6D4/German_grammar_-_the_future_tenses.part2.rar
+
+
+German grammar - the future tenses
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | Lec: 18 | 121 MB
+Genre: eLearning | Language: English
+
+Learn how to use the German future tense and find other ways of talking about the future in German
+
+This course has been updated in November 2016.
+
+Are you a German learner and not sure how to use the future tense in German?
+
+Do you get the future tense mixed up with the past tense? Do you wish you had several ways to talk about future intentions?
+
+Then this course is going to help you!
+
+In this course we will only look at ways for talking about the future and we'll cover:
+
+the present tense with time phrases
+the 'proper' future tense
+some modal verbs
+verbs governing the infinitive
+the conditional
+and finally the future perfect.
+
+If you are a beginner then this course isn't for you yet. This course assumes that you already have a sound knowledge of the present tense, so make sure you know how to conjugate verbs in the present tense before buying this course.
+
+If you are an advanced student, you probably know everything in this course but it might be a welcome refresher.
+
+If you are an intermediate student, then you might not have learned the future tense yet or you might have just started, in which case this course is perfect for you! 
+
+It doesn't matter how quickly you complete the course - it isn't a race - the important bit is that you can use the future tense!
+
+At the end of the course you will have some good understanding of the German future tense which will make life a lot easier when you want to be able to tell people in German about your future plans..
+
+
+
+
+114 <--> Learning Haskell Programming
+http://nitroflare.com/view/3A50F12211718C6/Learning_Haskell_Programming.part1.rar
+http://nitroflare.com/view/CE423ECA09BDC5F/Learning_Haskell_Programming.part2.rar
+http://nitroflare.com/view/3959A82134C3407/Learning_Haskell_Programming.part3.rar
+http://nitroflare.com/view/664353BDDDC2DBA/Learning_Haskell_Programming.part4.rar
+http://nitroflare.com/view/B2A29C086C7CFCC/Learning_Haskell_Programming.part5.rar
+http://nitroflare.com/view/8D6369BDABBAC31/Learning_Haskell_Programming.part6.rar
+
+
+Learning Haskell Programming
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4 Hours 10M | 1.16 GB
+Genre: eLearning | Language: English
+
+Haskell is a powerful and well-designed functional programming language designed to work with complex data. Its emphasis on "purity" makes it easier to create rock-solid applications which stay maintainable and error-free even as they grow in scale.
+
+This video would begin with the fundamentals and building blocks of Haskell programming language with special emphasis on functional programming. It will be covering how Haskell variables, syntax work alongwith Haskell datatypes and functions.
+
+You will learn how to solve programming problems while creating an application with hands-on experience. You will then move on to learning writing expressions and high-order functions.
+
+At the end of the video, you will be able to build a complete application with Haskell alongwith learning the important functionalities.
+
+123 <--> Introduction to Linear Algebra with Sports Examples
+http://nitroflare.com/view/8B3E5A1222749A1/Introduction_to_Linear_Algebra_with_Sports_Examples.part1.rar
+http://nitroflare.com/view/6872DB17EC5FF52/Introduction_to_Linear_Algebra_with_Sports_Examples.part2.rar
+http://nitroflare.com/view/F7C77DCFC33555A/Introduction_to_Linear_Algebra_with_Sports_Examples.part3.rar
+
+
+Introduction to Linear Algebra with Sports Examples
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | Lec: 17 | 217 MB
+Genre: eLearning | Language: English
+
+Learn the basics of Linear Algebra while seeing how it can be applied to data from sports
+
+Frustrated with mathematics and how it is taught? Wondering why you would ever need to learn it and the use of it? If so, you've come to the right course. This course is aimed for those who need to learn linear algebra but haven't seen why it is useful, total beginners to linear algebra, working professionals who need a refresher on the basics of linear algebra, or those who just want to see how it can be applied to sports.
+
+
+
+
+125 <--> German grammar - the past tenses
+http://nitroflare.com/view/C740BCDB48B43BC/German_grammar_-_the_past_tenses.part1.rar
+http://nitroflare.com/view/29764343B36061F/German_grammar_-_the_past_tenses.part2.rar
+
+
+German grammar - the past tenses
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1.5 Hours | Lec: 30 | 174 MB
+Genre: eLearning | Language: English
+
+Learn how to conjugate the German perfect, imperfect & pluperfect tenses, and when to use them.
+
+This course has been updated in November 2016.
+
+Are you a German learner and struggling to conjugate German verbs in the past tense?
+
+Do you keep on forgetting how the verbs change from the present tense to the past tense? Do you often wonder if it's a regular or irregular verb or if you need to use HABEN or SEIN?
+
+Is this really annoying you?
+
+Then this course is going to help you!
+
+In this course we will only look at German verbs in the past tense and we'll cover the following:
+
+the perfect tense with haben
+the perfect tense with sein
+regular verbs
+irregular verbs
+separable verbs
+inseparable verbs
+the imperfect tense
+the pluperfect tense
+This course is not necessarily designed for you to work your way through.
+
+If you are a beginner then this course isn't for you yet. This course assumes that you already have a sound knowledge of the present tense, so make sure you know how to conjugate verbs in the present tense before buying this course.
+
+If you are an advanced student, you probably know everything in this course but it might be a welcome refresher.
+
+If you are an intermediate student, then either watch all the videos to revise what you have already learned, or pick those chapter that you are struggling with.
+
+It doesn't matter how quickly you complete the course - it isn't a race - the important bit is that you can conjugate verbs in the past tense!
+
+At the end of the course you will have a better understanding of German verbs in the past tense which will make life a lot easier when you want to be able to tell people in German about things you have done.
+
+
+
+158 <--> Forecasting/Time Series Using R
+http://nitroflare.com/view/4CE81D9629BB426/ForecastingTime_Series_Using_R.part1.rar
+http://nitroflare.com/view/CCA516D02D9C730/ForecastingTime_Series_Using_R.part2.rar
+http://nitroflare.com/view/54A124AEA9F0787/ForecastingTime_Series_Using_R.part3.rar
+http://nitroflare.com/view/A0209BEC9BC3A53/ForecastingTime_Series_Using_R.part4.rar
+
+
+Forecasting/Time Series Using R
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2 Hours | Lec: 9 | 314 MB
+Genre: eLearning | Language: English
+
+Learn about Forecasting / Time Series using R using various techniques which aptly suits basic to advanced forecasting
+
+Learn about forecasting/time series starting right from the basics of forecasting until the advanced forecasting methodologies. Learn about the process steps involving defining goal, collecting data, exploring data series, forecasting using various techniques by splitting the data into training & validation data sets, evaluating the model and finally deploying the model. Also learn about the following steps in details:
+
+Learn about what & why do we need forecasting & who does forecasting
+Learn about the 8 steps of forecasting strategy which will help successful project implementation
+Learn about the 6 measures of errors which will help in deciding on the best forecasting technique
+Learn about Autoregressive, Exponential smoothing, Moving average, ARMA, ARIMA and various other techniques in forecasting
+
+
+
+189 <--> SQL Made Simple SQL Server Queries for Non-Programmers
+http://nitroflare.com/view/DF500D27299399D/SQL_Made_Simple_SQL_Server_Queries_for_Non-Programmers.part1.rar
+http://nitroflare.com/view/AFDEA370DB3CC3A/SQL_Made_Simple_SQL_Server_Queries_for_Non-Programmers.part2.rar
+http://nitroflare.com/view/66CAF6739227552/SQL_Made_Simple_SQL_Server_Queries_for_Non-Programmers.part3.rar
+http://nitroflare.com/view/EF54DACBD7C69AF/SQL_Made_Simple_SQL_Server_Queries_for_Non-Programmers.part4.rar
+
+
+SQL Made Simple SQL Server Queries for Non-Programmers
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3.5 Hours | Lec: 119 | 361 MB
+Genre: eLearning | Language: English
+
+98 of the Fortune 100 trust SQL Server for their data. Now is your time to learn the language top applications run on.
+
+Learn SQL
+By the end of this course you will be able to BUILD QUERIES, CREATE TABLES, and PERFORM AGGREGATE CALCULATIONS. You will learn how to JOIN TABLES together for more robust reporting, and how to CREATE VIEWS, and STORED PROCEDURES that let you save and reuse your queries.
+
+So whether you are brand new to SQL, or need a refresher, this is SQL Made Simple, you will find this course highly useful, and easy to learn.
+
+
+
+
+201 <--> Blender Animation Series - Volume One
+http://nitroflare.com/view/2B143CE7E5FD456/Blender_Animation_Series_-_Volume_One.part1.rar
+http://nitroflare.com/view/F744FA22FFBC9FC/Blender_Animation_Series_-_Volume_One.part2.rar
+http://nitroflare.com/view/2C918E91F72359B/Blender_Animation_Series_-_Volume_One.part3.rar
+http://nitroflare.com/view/22E8AA6BF18DEB0/Blender_Animation_Series_-_Volume_One.part4.rar
+http://nitroflare.com/view/C6FCD2B516F683D/Blender_Animation_Series_-_Volume_One.part5.rar
+
+
+Blender Animation Series - Volume One
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | Lec: 21 | 544 MB
+Genre: eLearning | Language: English
+
+How to create basic animations with the blender timeline
+
+Welcome to volume one of the blender animation series. This series is focused on the animations aspects of blender 3D where we will learn how to use all of the tools at blenders disposal to create fantastic 3D animations for whatever purpose we want.
+
+In volume one, we introduce the fundamentals of animation including how to operate the timeline, creating keyframes to provide the structure for our animations as well as how to optimize blender for when we render our animations. Blender series courses are normally short and focused on specific topics and can easily be completed in a day per course while offering valuable knowledge in how to use blender.
+
+The course finishes with two challenges and a quiz as a means of testing your knowledge and how you can apply that knowledge to your own projects.
+
+WHAT IS BLENDER?
+
+The big question you might be asking is "what is blender", you may be viewing this course because you want to know more about it. Blender is a free 3D software platform that allow the user to perform multiple computer based applications such as 3D modelling, sculpting, animation, movie editing, image editing and game design. The best part being is that it is open source, meaning that you can use blender as much as you like and never have to worry about spending a penny.
+
+
+
+
+
+
+209 <--> Lynda - Develop Financial Applications in F#
+http://nitroflare.com/view/1A506B05E0C83A2/LcDevelopFinAppsFSharp.part1.rar
+http://nitroflare.com/view/1051E4B8F5561F5/LcDevelopFinAppsFSharp.part2.rar
+http://nitroflare.com/view/B00EC5F43CBC086/LcDevelopFinAppsFSharp.part3.rar
+http://nitroflare.com/view/2525443C3AE3234/LcDevelopFinAppsFSharp.part4.rar
+
+
+Lynda - Develop Financial Applications in F#
+Size: 512 MB | Duration: 2h 51m | Video: AVC (.mp4) 1280x720 15&30fps | Audio: AAC 48KHz 2ch
+Genre: eLearning | Level: Intermediate | Language: English
+
+F# is a functional-first programming language developed by Microsoft and used extensively in financial analysis and financial applications. F# expert developer Kit Eason steps you through the process of developing a simple F# financial application: a Twitter bot that charts stock price changes and respond to tweets with some simple descriptors of the stock performance, including gain/loss and highs/lows. Along the way, you'll learn the basics of F# syntax, including values, arrays, functions, and expressions, and how to test your code, analyze and chart third-party data. The lessons also provide a primer to concepts like test-driven development and railway-oriented programming—best practices for any F# development workflow.
+
+
+12/27/2016 [END]
 12/19/2016 [START]
 0 <--> Lynda - Developing Microsoft SQL Server 2016 Databases
 
