@@ -1,3 +1,247 @@
+12/27/2016 [START]
+
+0 <--> Design Patterns in PHP and Laravel
+
+
+Kelt Dockins, "Design Patterns in PHP and Laravel" 
+English | ISBN: 1484224507 | 2016 | 238 pages | PDF | 7 MB
+
+
+
+11 <--> Algorithms for Data Science
+http://www.nitroflare.com/view/687F27634B98C61
+
+
+Algorithms for Data Science by Brian Steele
+English | 18 Jan. 2017 | ISBN: 3319457950 | 448 Pages | PDF | 8.35 MB
+
+This textbook on practical data analytics unites fundamental principles, algorithms, and data. Algorithms are the keystone of data analytics and the focal point of this textbook. Clear and intuitive explanations of the mathematical and statistical foundations make the algorithms transparent. But practical data analytics requires more than just the foundations. Problems and data are enormously variable and only the most elementary of algorithms can be used without modification. Programming fluency and experience with real and challenging data is indispensable and so the reader is immersed in Python and R and real data analysis. By the end of the book, the reader will have gained the ability to adapt algorithms to new problems and carry out innovative analyses.
+This book has three parts:
+(a) Data Reduction: Begins with the concepts of data reduction, data maps, and information extraction. The second chapter introduces associative statistics, the mathematical foundation of scalable algorithms and distributed computing. Practical aspects of distributed computing is the subject of the Hadoop and MapReduce chapter.
+(b) Extracting Information from Data: Linear regression and data visualization are the principal topics of Part II. The authors dedicate a chapter to the critical domain of Healthcare Analytics for an extended example of practical data analytics. The algorithms and analytics will be of much interest to practitioners interested in utilizing the large and unwieldly data sets of the Centers for Disease Control and Prevention's Behavioral Risk Factor Surveillance System.
+© Predictive Analytics Two foundational and widely used algorithms, k-nearest neighbors and naive Bayes, are developed in detail. A chapter is dedicated to forecasting. The last chapter focuses on streaming data and uses publicly accessible data streams originating from the Twitter API and the NASDAQ stock market in the tutorials.
+This book is intended for a one- or two-semester course in data analytics for upper-division undergraduate and graduate students in mathematics, statistics, and computer science. The prerequisites are kept low, and students with one or two courses in probability or statistics, an exposure to vectors and matrices, and a programming course will have no difficulty. The core material of every chapter is accessible to all with these prerequisites. The chapters often expand at the close with innovations of interest to practitioners of data science. Each chapter includes exercises of varying levels of difficulty. The text is eminently suitable for self-study and an exceptional resource for practitioners.
+
+
+
+
+22 <--> Essential Algorithms: A Practical Approach to Computer Algorithms (repost)
+http://nitroflare.com/view/6DBEFDA4162806D/1118612108.epub
+
+
+Rod Stephens, "Essential Algorithms: A Practical Approach to Computer Algorithms"
+ISBN: 1118612108 | 2013 | EPUB | 624 pages | 11 MB
+
+Computer algorithms are the basic recipes for programming. Professional programmers need to know how to use algorithms to solve difficult programming problems. Written in simple, intuitive English, this book describes how and when to use the most practical classic algorithms, and even how to create new algorithms to meet future needs. The book also includes a collection of questions that can help readers prepare for a programming job interview.
+
+Reveals methods for manipulating common data structures such as arrays, linked lists, trees, and networks
+Addresses advanced data structures such as heaps, 2-3 trees, B-trees
+Addresses general problem-solving techniques such as branch and bound, divide and conquer, recursion, backtracking, heuristics, and more
+Reviews sorting and searching, network algorithms, and numerical algorithms
+Includes general problem-solving techniques such as brute force and exhaustive search, divide and conquer, backtracking, recursion, branch and bound, and more
+
+In addition, Essential Algorithms features a companion website that includes full instructor materials to support training or higher ed adoptions.
+
+
+31 <--> Data Science, Classification, and Related Methods
+http://nitroflare.com/view/1E3457B2ADC12A5/Data_Science%2C_Classification%2C_and_Related_Methods_Proceedin.pdf
+
+
+Chikio Hayashi, Keiji Yajima, Hans H. Bock, "Data Science, Classification, and Related Methods" 
+1998 | pages: 786 | ISBN: 4431702083 | PDF | 34,9 mb
+
+This volume contains selected papers covering a wide range of topics, including theoretical and methodological advances relating to data gathering, classification and clustering, exploratory and multivariate data analysis, and knowledge seeking and discovery. The result is a broad view of the state of the art, making this an essential work not only for data analysts, mathematicians, and statisticians, but also for researchers involved in data processing at all stages from data gathering to decision making.
+
+
+38 <--> Data Science and Machine Learning with Python - Hands On
+http://nitroflare.com/view/1F0E782B643AD9B/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part01.rar
+http://nitroflare.com/view/6529DABFB5ABDDA/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part02.rar
+http://nitroflare.com/view/AF12F89FE33624B/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part03.rar
+http://nitroflare.com/view/4F66C84FB901946/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part04.rar
+http://nitroflare.com/view/A7F2B04DEBF4178/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part05.rar
+http://nitroflare.com/view/D9DB315A2EAC913/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part06.rar
+http://nitroflare.com/view/A69061AF48B89BA/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part07.rar
+http://nitroflare.com/view/BE67B60F29F1F31/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part08.rar
+http://nitroflare.com/view/40256CF2B80A388/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part09.rar
+http://nitroflare.com/view/539C9C14FB73139/Data_Science_and_Machine_Learning_with_Python_-_Hands_On.part10.rar
+
+
+Data Science and Machine Learning with Python - Hands On
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 8 Hours 50M | 8.97 GB
+Genre: eLearning | Language: English
+
+The job of a data scientist is one of the most lucrative jobs out there today – it involves analyzing large amounts of data, and gathering actionable business insights from it using a variety of tools. This course will help you take your first steps in the world of data science, and empower you to conduct data analysis and perform efficient machine learning using Python. Gain value from your data using the various data mining and data analysis techniques in Python, and develop efficient predictive models to predict future results. You will also learn how to perform large-scale machine learning on Big Data using Apache Spark. You don’t have to be an expert coder in Python to get the most out of this course – just a basic programming knowledge of Python is sufficient.
+
+
+
+71 <--> Algorithms for Image Processing and Computer Vision, 2nd Edition (repost)
+http://nitroflare.com/view/46EEECDBB719AA0/0470643854.epub
+
+
+Algorithms for Image Processing and Computer Vision, 2nd Edition by J. R. Parker
+English | ISBN: 0470643854 | 2010 | EPUB | 504 pages | 20 MB
+
+A cookbook of algorithms for common image processing applications
+
+Thanks to advances in computer hardware and software, algorithms have been developed that support sophisticated image processing without requiring an extensive background in mathematics. This bestselling book has been fully updated with the newest of these, including 2D vision methods in content-based searches and the use of graphics cards as image processing computational aids. It’s an ideal reference for software engineers and developers, advanced programmers, graphics programmers, scientists, and other specialists who require highly specialized image processing.
+
+Algorithms now exist for a wide variety of sophisticated image processing applications required by software engineers and developers, advanced programmers, graphics programmers, scientists, and related specialists
+This bestselling book has been completely updated to include the latest algorithms, including 2D vision methods in content-based searches, details on modern classifier methods, and graphics cards used as image processing computational aids
+Saves hours of mathematical calculating by using distributed processing and GPU programming, and gives non-mathematicians the shortcuts needed to program relatively sophisticated applications.
+
+Algorithms for Image Processing and Computer Vision, 2nd Edition provides the tools to speed development of image processing applications.
+
+
+96 <--> Machine Learning Using R
+http://www.nitroflare.com/view/9D5019DD0ACFD69
+
+
+Machine Learning Using R by Karthik Ramasubramanian
+English | 12 Jan. 2017 | ISBN: 1484223330 | 568 Pages | PDF | 11.47 MB
+
+This book is inspired by the Machine Learning Model Building Process Flow, which provides the reader the ability to understand a ML algorithm and apply the entire process of building a ML model from the raw data.
+This new paradigm of teaching Machine Learning will bring about a radical change in perception for many of those who think this subject is difficult to learn. Though theory sometimes looks difficult, especially when there is heavy mathematics involved, the seamless flow from the theoretical aspects to example-driven learning provided in Blockchain and Capitalism makes it easy for someone to connect the dots.
+For every Machine Learning algorithm covered in this book, a 3-D approach of theory, case-study and practice will be given. And where appropriate, the mathematics will be explained through visualization in R.
+All practical demonstrations will be explored in R, a powerful programming language and software environment for statistical computing and graphics. The various packages and methods available in R will be used to explain the topics. In the end, readers will learn some of the latest technological advancements in building a scalable machine learning model with Big Data.
+Who This Book is For:
+Data scientists, data science professionals and researchers in academia who want to understand the nuances of Machine learning approaches/algorithms along with ways to see them in practice using R. The book will also benefit the readers who want to understand the technology behind implementing a scalable machine learning model using Apache Hadoop, Hive, Pig and Spark.
+What you will learn: 
+1. ML model building process flow
+2. Theoretical aspects of Machine Learning
+3. Industry based Case-Study
+4. Example based understanding of ML algorithm using R
+5. Building ML models using Apache Hadoop and Spark
+
+
+
+
+113 <--> Beginning Python Visualization: Crafting Visual Transformation Scripts, 2nd Edition (Repost)
+http://nitroflare.com/view/4FB43431C12381F/Beginning_Python_Visualization.pdf
+http://rockfile.eu/0ekurgjluohb.html
+https://filejoker.net/re8jd6cm0ipf
+http://www.duckupload.com/f58def78f226df0d8f3bd93ef4c5c982/Beginning_Python_Visualization.pdf
+
+
+Beginning Python Visualization: Crafting Visual Transformation Scripts by Shai Vaingast
+English | PDF | 405 Pages | 2014 | ISBN : 1484200535 | 6.98 MB
+
+We are visual animals. But before we can see the world in its true splendor, our brains, just like our computers, have to sort and organize raw data, and then transform that data to produce new images of the world. Beginning Python Visualization: Crafting Visual Transformation Scripts, Second Edition discusses turning many types of data sources, big and small, into useful visual data. And, you will learn Python as part of the bargain.
+In this second edition you’ll learn about Spyder, which is a Python IDE with MATLAB® -like features. Here and throughout the book, you’ll get detailed exposure to the growing IPython project for interactive visualization. In addition, you'll learn about the changes in NumPy and Scipy that have occurred since the first edition. Along the way, you'll get many pointers and a few visual examples.
+As part of this update, you’ll learn about matplotlib in detail; this includes creating 3D graphs and using the basemap package that allows you to render geographical maps. Finally, you'll learn about image processing, annotating, and filtering, as well as how to make movies using Python. This includes learning how to edit/open video files and how to create your own movie, all with Python scripts.
+Today's big data and computational scientists, financial analysts/engineers and web developers – like you - will find this updated book very relevant.
+
+
+
+
+114 <--> MATLAB Recipes: A Problem-Solution Approach
+http://nitroflare.com/view/3C50D3341996487/MATLAB_Recipes%3A_A_Problem-Solution_Approach.epub
+https://filejoker.net/17c463bn3sm3
+http://www.duckupload.com/869ad23e3080043004f5606925554dda/MATLAB_Recipes:_A_Problem-Solution_Approach.epub
+
+
+MATLAB Recipes: A Problem-Solution Approach by Michael Paluszek, Stephanie Thomas
+English | EPUB | 2015 | ISBN: 148420560X | 316 pages | 4.19 MB
+
+This book is a practical reference for industry engineers using MATLAB to solve everyday problems: learn from state-of-the-art examples in robotics, motors, detection filters, chemical processes, aircraft, and spacecraft. With this book you will review contemporary MATLAB coding including the latest language features and use MATLAB as a software development environment including code organization, GUI development, and algorithm design and testing.
+This book provides practical guidance for using MATLAB to build a body of code you can turn to time and again for solving technical problems in your line of work. Develop algorithms, test them, visualize the results, and pass the code along to others to create a functional code base for your firm.
+
+
+
+
+116 <--> MATLAB Differential and Integral Calculus
+http://nitroflare.com/view/756E5A41AD6D758/bok%253A978-1-4842-0304-0.epub
+
+
+MATLAB Differential and Integral Calculus by Cesar Perez Lopez
+English | 24 Sept. 2014 | ISBN: 1484203054 | 228 Pages | EPUB | 2.91 MB
+
+MATLAB is a high-level language and environment for numerical computation, visualization, and programming. Using MATLAB, you can analyze data, develop algorithms, and create models and applications. The language, tools, and built-in math functions enable you to explore multiple approaches and reach a solution faster than with spreadsheets or traditional programming languages, such as C/C++ or Java.
+MATLAB Differential and Integral Calculus introduces you to the MATLAB language with practical hands-on instructions and results, allowing you to quickly achieve your goals. In addition to giving a short introduction to the MATLAB environment and MATLAB programming, this book provides all the material needed to work with ease in differential and integral calculus in one and several variables. Among other core topics of calculus, you will use MATLAB to investigate convergence, find limits of sequences and series and, for the purpose of exploring continuity, limits of functions. Various kinds of local approximations of functions are introduced, including Taylor and Laurent series. Symbolic and numerical techniques of differentiation and integration are covered with numerous examples, including applications to finding maxima and minima, areas, arc lengths, surface areas and volumes. You will also see how MATLAB can be used to solve problems in vector calculus and how to solve differential and difference equations.
+
+
+
+120 <--> Algorithms and Programming: Problems and Solutions, 2nd Edition (Repost)
+http://nitroflare.com/view/FF2E38993C0D454/1441917470.pdf
+
+
+Algorithms and Programming: Problems and Solutions, 2nd Edition by Alexander Shen
+Publisher: Springer | 2009 | ISBN: 1441917470 | 272 pages | PDF | 1,4 MB
+
+This text is structured in a problem-solution format that requires the student to think through the programming process. New to the second edition are additional chapters on suffix trees, games and strategies, and Huffman coding as well as an Appendix illustrating the ease of conversion from Pascal to C.
+
+
+
+171 <--> MATLAB Matrix Algebra (Matlab Solutions)
+http://nitroflare.com/view/254988EAB2EDAEF/bok%253A978-1-4842-0307-1.epub
+
+
+MATLAB Matrix Algebra (Matlab Solutions) by Cesar Lopez
+English | 14 Nov. 2014 | ISBN: 1484203089 | 240 Pages | EPUB | 1.08 MB
+
+MATLAB is a high-level language and environment for numerical computation, visualization, and programming. Using MATLAB, you can analyze data, develop algorithms, and create models and applications. The language, tools, and built-in math functions enable you to explore multiple approaches and reach a solution faster than with spreadsheets or traditional programming languages, such as C/C++ or Java.
+MATLAB Matrix Algebra introduces you to the MATLAB language with practical hands-on instructions and results, allowing you to quickly achieve your goals. Starting with a look at symbolic and numeric variables, with an emphasis on vector and matrix variables, you will go on to examine functions and operations that support vectors and matrices as arguments, including those based on analytic parent functions. Computational methods for finding eigenvalues and eigenvectors of matrices are detailed, leading to various matrix decompositions. Applications such as change of bases, the classification of quadratic forms and how to solve systems of linear equations are described, with numerous examples. A section is dedicated to sparse matrices and other types of special matrices. In addition to its treatment of matrices, you will also learn how MATLAB can be used to work with arrays, lists, tables, sequences and sets.
+
+
+
+
+172 <--> MATLAB Symbolic Algebra and Calculus Tools
+http://nitroflare.com/view/2B369D860C96B50/bok%253A978-1-4842-0343-9.epub
+
+
+MATLAB Symbolic Algebra and Calculus Tools by Cesar PÃ©rez Lopez
+English | 10 Dec. 2014 | ISBN: 1484203445 | 260 Pages | EPUB | 1.78 MB
+
+MATLAB is a high-level language and environment for numerical computation, visualization, and programming. Using MATLAB, you can analyze data, develop algorithms, and create models and applications. The language, tools, and built-in math functions enable you to explore multiple approaches and reach a solution faster than with spreadsheets or traditional programming languages, such as C/C++ or Java.
+MATLAB Symbolic Algebra and Calculus Tools introduces you to the MATLAB language with practical hands-on instructions and results, allowing you to quickly achieve your goals. Starting with a look at symbolic variables and functions, you will learn how to solve equations in MATLAB, both symbolically and numerically, and how to simplify the results. Extensive coverage of polynomial solutions, inequalities and systems of equations are covered in detail. You will see how MATLAB incorporates vector, matrix and character variables, and functions thereof. MATLAB is a powerful symbolic manipulator which enables you to factorize, expand and simplify complex algebraic expressions over all common fields (including over finite fields and algebraic field extensions of the rational numbers). With MATLAB you can also work with ease in matrix algebra, making use of commands which allow you to find eigenvalues, eigenvectors, determinants, norms and various matrix decompositions, among many other features. Lastly, you will see how you can use MATLAB to explore mathematical analysis, finding limits of sequences and functions, sums of series, integrals, derivatives and solving differential equation.
+
+
+
+
+173 <--> MATLAB Numerical Calculations
+http://nitroflare.com/view/44B26307EA43BA4/bok%253A978-1-4842-0346-0.epub
+
+
+MATLAB Numerical Calculations by Cesar Lopez
+English | 24 Dec. 2014 | ISBN: 148420347X | 336 Pages | EPUB | 4.71 MB
+
+MATLAB is a high-level language and environment for numerical computation, visualization, and programming. Using MATLAB, you can analyze data, develop algorithms, and create models and applications. The language, tools, and built-in math functions enable you to explore multiple approaches and reach a solution faster than with spreadsheets or traditional programming languages, such as C/C++ or Java. This book is designed for use as a scientific/business calculator so that you can get numerical solutions to problems involving a wide array of mathematics using MATLAB. Just look up the function you want in the book and you are ready to use it in MATLAB or use the book to learn about the enormous range of options that MATLAB offers.
+MATLAB Numerical Calculations focuses on MATLAB capabilities to give you numerical solutions to problems you are likely to encounter in your professional or scholastic life. It introduces you to the MATLAB language with practical hands-on instructions and results, allowing you to quickly achieve your goals. Starting with a look at basic MATLAB functionality with integers, rational numbers and real and complex numbers, and MATLAB's relationship with Maple, you will learn how to solve equations in MATLAB, and how to simplify the results. You will see how MATLAB incorporates vector, matrix and character variables, and functions thereof. MATLAB is a powerful tool used to defined, manipulate and simplify complex algebraic expressions. With MATLAB you can also work with ease in matrix algebra, making use of commands which allow you to find eigenvalues, eigenvectors, determinants, norms and various matrix decompositions, among many other features. Lastly, you will see how you can write scripts and use MATLAB to explore numerical analysis, finding approximations of integrals, derivatives and numerical solutions of differential equations.
+
+
+
+227 <--> High Performance Python: Practical Performant Programming for Humans (repost)
+http://nitroflare.com/view/7E6E843CEFA072B/1449361595.pdf
+
+
+High Performance Python: Practical Performant Programming for Humans by Micha Gorelick and Ian Ozsvald
+English | 2014 | ISBN: 1449361595 | ISBN-13: 9781449361594 | 370 pages | PDF | 7,6 MB
+
+Your Python code may run correctly, but you need it to run faster. By exploring the fundamental theory behind design choices, this practical guide helps you gain a deeper understanding of Python’s implementation. You’ll learn how to locate performance bottlenecks and significantly speed up your code in high-data-volume programs.
+How can you take advantage of multi-core architectures or clusters? Or build a system that can scale up and down without losing reliability? Experienced Python programmers will learn concrete solutions to these and other issues, along with war stories from companies that use high performance Python for social media analytics, productionized machine learning, and other situations.
+•	Get a better grasp of numpy, Cython, and profilers
+•	Learn how Python abstracts the underlying computer architecture
+•	Use profiling to find bottlenecks in CPU time and memory usage
+•	Write efficient programs by choosing appropriate data structures
+•	Speed up matrix and vector computations
+•	Use tools to compile Python down to machine code
+•	Manage multiple I/O and computational operations concurrently
+•	Convert multiprocessing code to run on a local or remote cluster
+•	Solve large problems while using less RAM
+
+
+
+
+251 <--> Python for Probability, Statistics, and Machine Learning
+http://nitroflare.com/view/8CB764A02B4DE2C/bok%253A978-3-319-30717-6.epub
+
+
+Python for Probability, Statistics, and Machine Learning by José Unpingco
+English | 28 Mar. 2016 | ISBN: 3319307150 | 294 Pages | EPUB | 4.91 MB
+
+This book covers the key ideas that link probability, statistics, and machine learning illustrated using Python modules in these areas. The entire text, including all the figures and numerical results, is reproducible using the Python codes and their associated Jupyter/IPython notebooks, which are provided as supplementary downloads. The author develops key intuitions in machine learning by working meaningful examples using multiple analytical methods and Python codes, thereby connecting theoretical concepts to concrete implementations. Modern Python modules like Pandas, Sympy, and Scikit-learn are applied to simulate and visualize important machine learning concepts like the bias/variance trade-off, cross-validation, and regularization. Many abstract mathematical ideas, such as convergence in probability theory, are developed and illustrated with numerical examples. This book is suitable for anyone with an undergraduate-level exposure to probability, statistics, or machine learning and with rudimentary knowledge of Python programming.
+
+
+12/27/2016 [END]
 12/19/2016 [START]
 
 0 <--> Learning React
