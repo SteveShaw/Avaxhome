@@ -26,7 +26,6 @@ This book is intended for a one- or two-semester course in data analytics for up
 
 
 22 <--> Essential Algorithms: A Practical Approach to Computer Algorithms (repost)
-http://nitroflare.com/view/6DBEFDA4162806D/1118612108.epub
 
 
 Rod Stephens, "Essential Algorithms: A Practical Approach to Computer Algorithms"
@@ -117,9 +116,6 @@ What you will learn:
 
 113 <--> Beginning Python Visualization: Crafting Visual Transformation Scripts, 2nd Edition (Repost)
 http://nitroflare.com/view/4FB43431C12381F/Beginning_Python_Visualization.pdf
-http://rockfile.eu/0ekurgjluohb.html
-https://filejoker.net/re8jd6cm0ipf
-http://www.duckupload.com/f58def78f226df0d8f3bd93ef4c5c982/Beginning_Python_Visualization.pdf
 
 
 Beginning Python Visualization: Crafting Visual Transformation Scripts by Shai Vaingast
@@ -135,8 +131,6 @@ Today's big data and computational scientists, financial analysts/engineers and 
 
 114 <--> MATLAB Recipes: A Problem-Solution Approach
 http://nitroflare.com/view/3C50D3341996487/MATLAB_Recipes%3A_A_Problem-Solution_Approach.epub
-https://filejoker.net/17c463bn3sm3
-http://www.duckupload.com/869ad23e3080043004f5606925554dda/MATLAB_Recipes:_A_Problem-Solution_Approach.epub
 
 
 MATLAB Recipes: A Problem-Solution Approach by Michael Paluszek, Stephanie Thomas
@@ -371,7 +365,6 @@ Deploy mobile apps with Qt and embedded platforms
 
 
 57 <--> Building Trading Bots Using Java
-http://www.nitroflare.com/view/6BDEA186A7415C6
 
 
 Building Trading Bots Using Java by Shekhar Varshney

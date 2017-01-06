@@ -1,0 +1,192 @@
+\documentclass[12pt,a4paper]{report}
+%\usepackage{charter}
+\usepackage[latin1]{inputenc}
+\usepackage[left=1.50cm, right=1.50cm, top=1.20cm]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{listings}
+\usepackage{xcolor}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\usepackage{float}
+\usepackage{textcomp}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	aboveskip={1.2\baselineskip},
+	breaklines=true,
+	frame=lines,
+	numbers=left,
+	xleftmargin=\parindent,
+	language=C++,
+	showstringspaces=false,
+	basicstyle=\sffamily,%,\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+	breaklines=true,
+	postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+
+\lstdefinestyle{customasm}{
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=[x86masm]Assembler,
+	basicstyle=\footnotesize\ttfamily,
+	commentstyle=\itshape\color{purple!40!black},
+}
+\lstset{escapechar=@,style=customc}
+
+% Title Page
+\title{Reading Notes: Multicore Application Programming: Windows, Linux and Oracle Solaris}
+
+
+\begin{document}
+\maketitle
+
+\section*{Chapter 8}
+\subsection*{Atomic Operations}
+On x86 processors, the xadd instruction can be combined with the lock prefix to produce an atomic add, or the inc instruction can be combined with the lock prefix to produce an atomic increment.
+\begin{lstlisting}
+int atomic_add_int( volatile int *address, int value )
+{
+	asm volatile( "lock xadd %0,%1":
+					"+r"(value):
+					"+m"(*address):
+					"memory" 
+				);
+	return value;
+}
+int atomic_inc_int( int *address )
+{
+	asm volatile ( "lock inc %0": :
+					"+m"(*address):
+					"memory" 
+				);
+	return (*address);
+}
+\end{lstlisting}
+\begin{itemize}
+	\item The keyword \textbf{asm} identifies the following text as an assembly language statement that will be inlined directly into the code. 
+	\item he keyword \textbf{volatile} tells the compiler not to move the statement from where it has been placed, because such movement could cause a difference to the statement's semantics.
+	\item The assembly language code is enclosed in the parentheses. There are multiple parts to the code. The first item in the parentheses, surrounded by quotes, is the instruction. The instruction uses virtual registers \%0 and \%1 as parameters. The compiler will allocate real registers later and will be responsible for populating these registers with the appropriate values.
+	\item After the assembly language instruction, there are up to three colon-delimited lists. 
+	\begin{itemize}
+		\item The first list is of output variables and whether these are accesses to registers or memory. In the example, the expression ``+r''(value) means that the output parameter is a register that should be used to update the variable value. The plus sign means that the register will be both read and written by the instruction.
+		\item 	The second list contains the input values and where these are located. Both routines take the pointer address as an input value, and the expression ``+m''(*address) indicates that this pointer is used as a memory access. The plus sign indicates that the instruction will both read and write the location in memory.
+		\item The third list is the ``clobber'' list indicating what the instruction will modify. In both instances, the instruction will modify memory.
+	\end{itemize}
+	\item The virtual registers are numbered from the input registers, so register \%0 is assigned the value of the variable address. The output registers are the next set of virtual registers, so the variable value gets assigned to register \%1.
+\end{itemize}
+\subsubsection*{CAS Operation}
+The CAS instruction can also be used in situations where atomic modification of an unusual variable type is required.
+\begin{lstlisting}
+void atomic_add_float( volatile float * variable, float increment )
+{
+	union
+	{
+		int asint;
+		float asfp;
+	} oldvalue, newvalue;
+	
+	do
+	{
+		oldvalue.asfp = *variable;                  // Line 11
+		newvalue.asfp = oldvalue.asfp + increment;  // Line 12
+	}
+	while ( CAS( variable, oldvalue.asint, newvalue.asint ) != oldvalue.asint );
+}
+\end{lstlisting}
+\begin{itemize}
+	\item The code reads the value of the \textit{variable} to be modified and then prepares the modified version of this variable. 
+	\item The \textit{variable} is read only once, at line 11, and then held in the local variable \textit{oldvalue}. This is to avoid a \textbf{data race} where the value changes between the first read of the variable and its use as one operand in the addition, at line 12. The race is subtle.
+	\begin{itemize}
+		\item Suppose that the first time the \textit{variable} is read, at line 11, it has the value 20; this is recorded as the original value of the variable. At this point, another thread changes the value of the variable, so the second time it is read, at line 12, it has the value 21. The value 21 is incremented to 22, and this will become the new value of the variable if the operation is successful.
+		\item Suppose now that the other thread has returned the value of the variable to 20 by the time the CAS operation is tried. Since the variable contains 20 and this is the expected value, the CAS operation will store the value 22 into the variable, rather than the correct value of 21.
+	\end{itemize} 
+\end{itemize}
+We can explore this problem of reloading values with another example.
+\begin{lstlisting}
+void addelement( element_t ** head, int value )
+{
+	element_t * element = (element_t*)malloc(sizeof(element_t));
+	element->value = value;
+	while (element!=0)
+	{
+		element->next = *head;
+		if ( CAS( head, element->next, element ) == element->next)
+	{
+		element = 0;
+	}
+}
+\end{lstlisting}
+The code creates a new \textit{element} and stores the appropriate value in this. 
+\begin{itemize}
+	\item The loop keeps attempting to add this new element to the front of the list until it succeeds. 
+	\item Each iteration of the loop sets the next field of the new element to be the next element in the list and then attempts to atomically compare and swap the head of the list with a pointer to the new element. 
+	\item If the compare and swap succeeded, the return value will be the pointer to the element that used to be the top of the list. If this happens, the code has succeeded, and the loop can exit.
+\end{itemize}
+The problem with this code is that the \textbf{CAS()} function call causes the compiler to reload the value of \textbf{element\textrightarrow next}. 
+\begin{itemize}
+	\item There is a short window of opportunity for another thread to take the top element from the list between the \textbf{CAS()} function call and the load of \textbf{element\textrightarrow next}. 
+	\item If this other thread takes the element off the list and modifies the value of \textbf{element\textrightarrow next}, then the compare and swap will not match with the new value of \textbf{element\textrightarrow next}, and the loop will assume that it failed to add the element to the queue, even though it actually succeeded. So, the code will attempt to add the element a second time, causing an error.
+\end{itemize}
+The solution is to hold the original value of *head in a local variable and use this in the comparison to determine whether the compare and swap was successful. 
+\par
+\textbf{Notice:}
+cppreference.com give the following example:
+\begin{lstlisting}
+#include <atomic>
+template<typename T>
+struct node
+{
+	T data;
+	node* next;
+	node(const T& data) : data(data), next(nullptr) {}
+};
+
+template<typename T>
+class stack
+{
+	std::atomic<node<T>*> head;
+public:
+void push(const T& data)
+{
+	node<T>* new_node = new node<T>(data);
+
+	// put the current value of head into new_node->next
+	new_node->next = head.load(std::memory_order_relaxed);
+
+	// now make new_node the new head, but if the head
+	// is no longer what's stored in new_node->next
+	// (some other thread must have inserted a node just now)
+	// then put that new head into new_node->next and try again
+	while(!head.compare_exchange_weak(new_node->next, new_node,
+	std::memory_order_release,
+	std::memory_order_relaxed))
+	; // the body of the loop is empty
+
+// Note: the above use is not thread-safe in at least 
+// GCC prior to 4.8.3 (bug 60272), clang prior to 2014-05-05 (bug 18899)
+// MSVC prior to 2014-03-17 (bug 819819). The following is a workaround:
+//      node<T>* old_head = head.load(std::memory_order_relaxed);
+//      do {
+//          new_node->next = old_head;
+//       } while(!head.compare_exchange_weak(old_head, new_node,
+//                               std::memory_order_release,
+//                               std::memory_order_relaxed));
+}
+};
+int main()
+{
+	stack<int> s;
+	s.push(1);
+	s.push(2);
+	s.push(3);
+}
+\end{lstlisting}
+\subsubsection*{Memory Order}
+When a thread running on a multithread system performs a memory operation, that operation may or may not become visible to the rest of the system in the order in which it occurred.
+\par
+For example, an application might perform two store operations. On some processors, the second store operation could become visible to other processors before the first store operation becomes visible. This is called \textbf{weak memory ordering}.
+\end{document}          
