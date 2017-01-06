@@ -1,4 +1,239 @@
-12/27/2016 [START]
+1/6/2017 [START]
+
+0 <--> Python Programming: Absolute Beginners Tutorial
+
+
+
+Python Programming: Absolute Beginners Tutorial by Jon James Bond
+English | 31 Dec. 2016 | ISBN: 1520257015 | 88 Pages | AZW3/MOBI/EPUB/PDF (conv) | 1.89 MB
+
+50 <--> Python NumPy
+
+
+
+Python NumPy
+HDRips | MP4/AVC, ~828 kb/s | 1280x720 | Duration: 01:05:16 | English: AAC, 128 kb/s (2 ch) | 362 MB
+Genre: Development / Programming
+
+At the end of this course, you will have a thorough understanding of Numpy' s features and when to use them. Numpy is mainly used in matrix computing. We'll do a number of examples specific to matrix computing, which will allow you to see the various scenarios in which Numpy is helpful. There are a few computational computing libraries available for Python. It's important to know when to choose one over the other. Through rigorous exercises, you'll experience where Numpy is powerful and develop and understanding of the scenarios in which Numpy is most useful. You'll also know how to install Numpy.
+
+
+
+52 <--> Deep Dive into Python Machine Learning (2016)
+
+
+
+Deep Dive into Python Machine Learning (2016)
+MP4 | AVC 116kbps | English | 1280x720 | 25fps | 1h 45mins | AAC stereo 141kbps | 2.64 GB
+Genre: Video Training
+
+Deep learning is currently one of the best providers of solutions regarding problems in image recognition, speech recognition, object recognition, and natural language with its increasing number of libraries that are available in Python. The aim of deep learning is to develop deep neural networks by increasing and improving the number of training layers for each network, so that a machine learns more about the data until it’s as accurate as possible. Developers can avail the techniques provided by deep learning to accomplish complex machine learning tasks, and train AI networks to develop deep levels of perceptual recognition.
+
+Deep learning is the next step to machine learning with a more advanced implementation. Currently, it’s not established as an industry standard, but is heading in that direction and brings a strong promise of being a game changer when dealing with raw unstructured data. Deep learning is currently one of the best providers of solutions regarding problems in image recognition, speech recognition, object recognition, and natural language processing. Developers can avail the benefits of building AI programs that, instead of using hand coded rules, learn from examples how to solve complicated tasks. With deep learning being used by many data scientists, deeper neural networks are evaluated for accurate results.
+
+This course takes you from basic calculus knowledge to understanding backpropagation and its application for training in neural networks for deep learning and understand automatic differentiation. Through the course, we will cover thorough training in convolutional, recurrent neural networks and build up the theory that focuses on supervised learning and integrate into your product offerings such as search, image recognition, and object processing. Also, we will examine the performance of the sentimental analysis model and will conclude with the introduction of Tensorflow.
+
+By the end of this course, you can start working with deep learning right away. This course will make you confident about its implementation in your current work as well as further research.
+
+Style and Approach
+An easy-to-follow and structured video tutorial with practical examples and coding with IPython notebooks to help you get to grips with each and every aspect of deep learning.
+
+
+
+106 <--> Python Parallel Programming Solutions
+
+
+
+Python Parallel Programming Solutions
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4 Hours | 2.12 GB
+Genre: eLearning | Language: English
+
+This course will teach you parallel programming techniques using examples in Python and help you explore the many ways in which you can write code that allows more than one process to happen at once.
+
+Starting with introducing you to the world of parallel computing, we move on to cover the fundamentals in Python. This is followed by exploring the thread-based parallelism model using the Python threading module by synchronizing threads and using locks, mutex, semaphores queues, GIL, and the thread pool. Next you will be taught about process-based parallelism, where you will synchronize processes using message passing and will learn about the performance of MPI Python Modules.
+
+Moving on, you’ll get to grips with the asynchronous parallel programming model using the Python asyncio module, and will see how to handle exceptions. You will discover distributed computing with Python, and learn how to install a broker, use Celery Python Module, and create a worker. You will understand anche Pycsp, the Scoop framework, and disk modules in Python. Further on, you will get hands-on in GPU programming with Python using the PyCUDA module and will evaluate performance limitations.
+
+
+
+
+
+117 <--> Beginning Ethical Hacking with Python (Repost)
+
+
+
+Sanjib Sinha, "Beginning Ethical Hacking with Python" 
+English | 11 Feb. 2017 | ISBN: 1484225406 | 189 Pages | PDF | 4 MB
+
+Learn the basics of ethical hacking and gain insights into the logic, algorithms, and syntax of Python. This book will set you up with a foundation that will help you understand the advanced concepts of hacking in the future. Learn Ethical Hacking with Python 3 touches the core issues of cyber security: in the modern world of interconnected computers and the Internet, security is increasingly becoming one of the most important features of programming.
+Ethical hacking is closely related to Python. For this reason this book is organized in three parts. The first part deals with the basics of ethical hacking; the second part deals with Python 3; and the third part deals with more advanced features of ethical hacking.
+What You Will Learn
+Discover the legal constraints of ethical hacking
+Work with virtual machines and virtualization
+Develop skills in Python 3
+See the importance of networking in ethical hacking
+Gain knowledge of the dark web, hidden Wikipedia, proxy chains, virtual private networks, MAC addresses, and more
+Who This Book Is For
+Beginners wanting to learn ethical hacking alongside a modular object oriented programming language.
+
+
+
+122 <--> Python Descriptors
+
+
+
+Python Descriptors by Jacob Zimmerman
+2017 | ISBN-10: 148422504X | 64 pages | EPUB | 1 MB
+
+This short book on Python descriptors is a collection of knowledge and ideas from many sources on dealing with and creating descriptors. And, after goingthrough the things all descriptors have in common, the author explores ideas that have multiple ways of being implemented as well as completely new ideas never seen elsewhere before.
+
+This truly is a comprehensive guide to creating Python descriptors. As a bonus: A pip install-able library, descriptor_tools, was written alongside this book and is an open source library on GitHub.
+
+There aren't many good resources out there for writing Python descriptors, and extremely few books. This is a sad state of affairs, as it makes it difficult for Python developers to get a really good understanding of how descriptors work and the techniques to avoid the big gotchas associated with working with them.
+
+What You Will Learn
+Discover descriptor protocols
+Master attribute access and how it applies to descriptors
+Make descriptors and discover why you should
+Store attributes
+Create read-only descriptors and _delete()
+Explore the descriptor classes
+Apply the other uses of descriptors and moreWho This Book Is For
+
+Experienced Python coders, programmers and developers.
+
+
+
+132 <--> Approximate Iterative Algorithms [Repost]
+
+
+
+Anthony Louis Almudevar - Approximate Iterative Algorithms
+Published: 2014-02-10 | ISBN: 0415621542 | PDF | 372 pages | 2.31 MB
+
+
+Iterative algorithms often rely on approximate evaluation techniques, which may include statistical estimation, computer simulation or functional approximation. This volume presents methods for the study of approximate iterative algorithms, providing tools for the derivation of error bounds and convergence rates, and for the optimal design of such algorithms. Techniques of functional analysis are used to derive analytical relationships between approximation methods and convergence properties for general classes of algorithms. This work provides the necessary background in functional analysis and probability theory. Extensive applications to Markov decision processes are presented. This volume is intended for mathematicians, engineers and computer scientists, who work on learning processes in numerical analysis and are involved with optimization, optimal control, decision analysis and machine learning.
+
+144 <--> Unity 5 Scripting and Gameplay Mechanics
+
+
+
+Unity 5 Scripting and Gameplay Mechanics
+HDRips | MP4/AVC, ~461 kb/s | 1280x720 | Duration: 03:25:02 | English: AAC, 128 kb/s (2 ch) | 830 MB
+Genre: Development / Programming
+
+Enhance your knowledge of scripting and master gameplay mechanics in Unity 5
+
+Leverage the complete Unity 5.5 2D toolkit, along with its latest new additions and practical examples, and build games from scratch
+This assortment of Gameplay Mechanics will take you on a fun-filled journey of becoming an intermediate Unity game developer
+Unleash the power of C# coding in Unity and the state of the art Unity rendering engine
+
+Develop your Unity skills further by exploring scripting and gameplay mechanics. In this course, Alan Thorn helps you understand the fundamentals of using C# scripts in Unity to build valuable gameplay elements, such as timers and moving objects. Then, you’ll move onto building a solid foundation for engineering more complex behaviors. By the end of this course, you’ll have established a firm intermediate knowledge of Unity.
+
+This course will get you familiarized with the best practices for Unity 5.x and component based designs. You’ll also be able to improve your 3D modeling and animation skills. Testing and Debugging using different functionalities and techniques will also be incorporated in this course.
+
+
+
+145 <--> Introduction to Video and Image Processing: Building Real Systems and Applications [Repost]
+
+
+
+Thomas B. Moeslund - Introduction to Video and Image Processing: Building Real Systems and Applications
+Published: 2012-01-31 | ISBN: 1447125029 | PDF | 227 pages | 12.95 MB
+
+
+This textbook presents the fundamental concepts and methods for understanding and working with images and video in an unique, easy-to-read style which ensures the material is accessible to a wide audience. Exploring more than just the basics of image processing, the text provides a specific focus on the practical design and implementation of real systems for processing video data. Features: includes more than 100 exercises, as well as C-code snippets of the key algorithms; covers topics on image acquisition, color images, point processing, neighborhood processing, morphology, BLOB analysis, segmentation in video, tracking, geometric transformation, and visual effects; requires only a minimal understanding of mathematics; presents two chapters dedicated to applications; provides a guide to defining suitable values for parameters in video and image processing systems, and to conversion between the RGB color representation and the HIS, HSV and YUV/YC<sub>b</sub>C<sub>r</sub> color representations.
+
+
+
+188 <--> MATLAB Machine Learning
+http://nitroflare.com/view/12883B843465C85/1484222490.epub
+
+
+MATLAB Machine Learning By Stephanie Thomas, Michael Paluszek
+English | EPUB | 326 Pages | 2017 | ISBN : 1484222490 | 5.17 MB
+
+This book is a comprehensive guide to machine learning with worked examples in MATLAB. It starts with an overview of the history of Artificial Intelligence and automatic control and how the field of machine learning grew from these. It provides descriptions of all major areas in machine learning
+The book reviews commercially available packages for machine learning and shows how they fit into the field. The book then shows how MATLAB can be used to solve machine learning problems and how MATLAB graphics can enhance the programmer’s understanding of the results and help users of their software grasp the results.
+Machine Learning can be very mathematical. The mathematics for each area is introduced in a clear and concise form so that even casual readers can understand the math. Readers from all areas of engineering will see connections to what they know and will learn new technology.
+The book then provides complete solutions in MATLAB for several important problems in machine learning including face identification, autonomous driving, and data classification. Full source code is provided for all of the examples and applications in the book.
+ What you'll learn:
+
+
+200 <--> Mastering Text Mining with R
+http://nitroflare.com/view/5913E7D5EB5A195/Mastering_Text_Mining_with_R_-_Ashish_Kumar.rar
+
+
+Mastering Text Mining with R by Ashish Kumar
+English | 5 Jan. 2017 | ISBN: 178355181X | 258 Pages | AZW3/MOBI/EPUB/PDF (conv) | 24.8 MB
+
+Key Features
+
+Develop all the relevant skills for building text-mining apps with R with this easy-to-follow guide
+Gain in-depth understanding of the text mining process with lucid implementation in the R language
+Example-rich guide that lets you gain high-quality information from text data
+Book Description
+
+Text Mining (or text data mining or text analytics) is the process of extracting useful and high-quality information from text by devising patterns and trends. R provides an extensive ecosystem to mine text through its many frameworks and packages.
+
+Starting with basic information about the statistics concepts used in text mining, this book will teach you how to access, cleanse, and process text using the R language and will equip you with the tools and the associated knowledge about different tagging, chunking, and entailment approaches and their usage in natural language processing. Moving on, this book will teach you different dimensionality reduction techniques and their implementation in R. Next, we will cover pattern recognition in text data utilizing classification mechanisms, perform entity recognition, and develop an ontology learning framework.
+
+By the end of the book, you will develop a practical application from the concepts learned, and will understand how text mining can be leveraged to analyze the massively available data on social media.
+
+What you will learn
+
+Get acquainted with some of the highly efficient R packages such as OpenNLP and RWeka to perform various steps in the text mining process
+Access and manipulate data from different sources such as JSON and HTTP
+Process text using regular expressions
+Get to know the different approaches of tagging texts, such as POS tagging, to get started with text analysis
+Explore different dimensionality reduction techniques, such as Principal Component Analysis (PCA), and understand its implementation in R
+Discover the underlying themes or topics that are present in an unstructured collection of documents, using common topic models such as Latent Dirichlet Allocation (LDA)
+Build a baseline sentence completing application
+Perform entity extraction and named entity recognition using R
+
+About the Author
+
+Ashish Kumar is an IIM alumnus and an engineer at heart. He has extensive experience in data science, machine learning, and natural language processing having worked at organizations, such as McAfee-Intel, an ambitious data science startup Volt consulting), and presently associated to the software and research lab of a leading MNC. Apart from work, Ashish also participates in data science competitions at Kaggle in his spare time.
+
+Avinash Paul is a programming language enthusiast, loves exploring open sources technologies and programmer by choice. He has over nine years of programming experience. He has worked in Sabre Holdings , McAfee , Mindtree and has experience in data-driven product development, He was intrigued by data science and data mining while developing niche product in education space for a ambitious data science start-up. He believes data science can solve lot of societal challenges. In his spare time he loves to read technical books and teach underprivileged children back home.
+
+Table of Contents
+
+Statistical Linguistics with R
+Processing Text
+Categorizing and Tagging Text
+Dimensionality Reduction
+Text Summarization and Clustering
+Text Classification
+Entity Recognition
+
+My Blog with Updates!
+
+
+
+
+
+201 <--> Introduction to Stochastic Processes with R
+http://nitroflare.com/view/8173A013FF40DC6/1118740653.pdf
+
+
+Introduction to Stochastic Processes with R by Robert P. Dobrow
+2016 | ISBN: 1118740653 | English | 504 pages | PDF | 10 MB
+
+An introduction to stochastic processes through the use of R
+
+Introduction to Stochastic Processes with R is an accessible and well-balanced presentation of the theory of stochastic processes, with an emphasis on real-world applications of probability theory in the natural and social sciences. The use of simulation, by means of the popular statistical software R, makes theoretical results come alive with practical, hands-on demonstrations.
+
+Written by a highly-qualified expert in the field, the author presents numerous examples from a wide array of disciplines, which are used to illustrate concepts and highlight computational and theoretical results. Developing readers’ problem-solving skills and mathematical maturity, Introduction to Stochastic Processes with R features:
+
+More than 200 examples and 600 end-of-chapter exercises
+A tutorial for getting started with R, and appendices that contain review material in probability and matrix algebra
+Discussions of many timely and stimulating topics including Markov chain Monte Carlo, random walk on graphs, card shuffling, Black–Scholes options pricing, applications in biology and genetics, cryptography, martingales, and stochastic calculus
+Introductions to mathematics as needed in order to suit readers at many mathematical levels
+A companion web site that includes relevant data files as well as all R code and scripts used throughout the book
+Introduction to Stochastic Processes with R is an ideal textbook for an introductory course in stochastic processes. The book is aimed at undergraduate and beginning graduate-level students in the science, technology, engineering, and mathematics disciplines. The book is also an excellent reference for applied mathematicians and statisticians who are interested in a review of the topic.
+
+1/6/2017 [END]12/27/2016 [START]
 
 0 <--> Design Patterns in PHP and Laravel
 

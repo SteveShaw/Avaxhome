@@ -843,7 +843,143 @@ It is critical to realize that although instructions will execute in the expecte
 \\
 However, a thread may be \textbf{context switched off} the virtual CPU between the two instructions, and this would cause a gap of thousands of cycles to occur between the two operations.
 \\
+Consider the situation shown in following figure where multiple producer and consumer threads exist.
 \begin{center}
-	\includegraphics{0043.png}
+	\includegraphics{multicore_getfile.jpg}
 \end{center}
+\begin{itemize}
+\item  At \textbf{step A}, two producer threads are attempting to add an item into the circular buffer. They both reach the \textbf{CAS} instruction at nearly the same time, but one of the threads gets context switched off the CPU at that very moment.
+\item At \textbf{step B}, the other thread successfully enters its value into the circular list and is just about to move the \textbf{addhere} pointer onto the next element when it too is context switched off the virtual CPU.
+\item At\textbf{ step C}, while the first thread is off-processor, one of the consumer threads come along and removes the recently inserted element. At that point, the first thread is switched back onto the CPU, and it sees that the slot it was planning to use is now empty. It atomically inserts its item of data into the circular buffer and then increments the pointer to the next place to insert an element.
+\item This is rapidly followed by the second producer thread being brought back onto a virtual CPU. It completes the operation it was performing when it was context switched off the virtual CPU, and it too increments the addhere pointer to the next place to insert an element. This causes the addhere pointer to skip a location, but the removehere pointer, which indicates where to remove elements from, is now pointing at the skipped location, as shown in step D.
+\end{itemize}
+The skipped location is empty, so the consumer threads are left waiting for an element to be inserted there. This cannot happen until the producer threads have filled up the entire circular buffer.
+\par
+However, before the producer threads can fill the entire buffer, they hit a filled element in the buffer and cannot make progress until this element has been removed, which will never happen because of the stalled consumer threads. (as shown in \textbf{step E})
+\par
+Consequently, the application deadlocks with both the producer and consumer threads unable to make forward progress.
+\paragraph*{ABA Problem}
+This example is an instance of a general problem called the \textbf{ABA problem}. The ABA problem is the situation where a thread is context \textbf{switched off} the virtual CPU when the program is in \textbf{state A}. While it is off--CPU, the system changes into a second\textbf{ state, B}, before returning to \textbf{state A}. This state is different from the original state but \textbf{looks identical} to the thread that is now switched back onto a virtual CPU. When the first thread returns to the CPU, it continues to \textbf{act as if the program state had not changed}, and this causes an error.
+\par
+In the circular buffer problem, the first thread is taken off the virtual CPU while believing it has a pointer to a free slot. When it returns to CPU, it has a pointer to what it believes is the free slot, but it has no indication that the state of the rest of the system has changed.
+\par
+A general solution to the ABA problem is to encode a \textbf{version number} with any stored data. In this example of the circular buffer, the data would be accompanied by this version number, and the version number would be \textbf{incremented} every time the circular buffer was \textbf{traversed}. With this \textbf{version number}, the thread that was taken off--CPU would have to match \textbf{both the version number and the data} for it to successfully add or remove an element from the buffer.
+\par
+Adding the version number has \textbf{reduced but not eliminated} the possibility that a thread might return to the CPU to find a match of both version number and data. However, the probability can be made so small as to be practically impossible.
+\par
+We could modify the circular buffer to include a version number for each element of the buffer, for example, a structure of two integers to hold the value to be stored and the version number. 
+\begin{lstlisting}
+union ABAvalue
+{
+	long long llvalue;
+	
+	struct element
+	{
+		int version;
+		int value;
+	} nested;
+};
+
+union ABAvalue buffer[16];
+
+int counter = 0;
+
+void clearbuffer()
+{
+	addhere = 0;
+	removehere = 0;
+	for ( int i=0; i<16;i++ )
+	{
+		buffer[i].llvalue = 0;
+	}
+}
+
+
+int next( int current )
+{
+	return ( current + 1 ) & 15;
+}
+
+int nextupdate( int current )
+{
+	if ( current == 15 ) { counter++; }
+	return ( current + 1 ) & 15 ;
+}
+\end{lstlisting}
+ The compare and swap operation needs to work on 8-byte values; hence, the assembly for the compare and swap needs to be modified, and the x86 code will work only when compiled to use 64--bit instruction set extensions.
+\begin{lstlisting}
+#ifdef __sparc
+long long CAS( volatile long long* addr, long long ov, long long nv)
+{
+	asm volatile( 
+		"casx %1, %2, %0":
+		"=r"(nv):
+		"m"(*addr),"r"(ov),"0"(nv):
+		"memory" 
+	);
+
+	return nv;
+}
+#else
+long long CAS( volatile long long * addr, long long ov, long long nv )
+{
+	asm volatile( 
+		"lock; cmpxchg %2, %1":
+		"=a"(ov):
+		"m"(*addr),"r"(nv),"a"(ov):
+		"memory"
+	);
+	return ov;
+}
+#endif
+
+void addtobuffer( int value )
+{
+	int success = 0;
+	union ABAvalue current;
+	while ( !success )
+	{
+		current = buffer[ next(addhere) ];
+		if ( current.nested.value == 0 )
+		{
+			union ABAvalue nextvalue;
+			nextvalue.nested.version = counter;
+			nextvalue.nested.value = value;
+			if ( CAS( &buffer[ next(addhere) ].llvalue,
+					current.llvalue,
+					nextvalue.llvalue )	== current.llvalue )
+			{
+				addhere = nextupdate(addhere);
+				success = 1;
+			}
+		}
+	}
+}
+
+int removefrombuffer()
+{
+	union ABAvalue current;
+	int success = 0;
+	int value;
+	while ( !success )
+	{
+		current = buffer[ next(removehere) ];
+		if ( current.nested.value != 0 )
+		{
+			value = current.nested.value;
+			union ABAvalue nextvalue;
+			nextvalue.nested.version = counter;
+			nextvalue.nested.value = 0;
+			if ( CAS( &buffer[ next(removehere)].llvalue,
+						current.llvalue,
+						nextvalue.llvalue )	== current.llvalue )
+			{
+				removehere = next(removehere);
+				success = 1;
+			}
+		}
+	}
+	return value;
+}
+\end{lstlisting}
 \end{document}          
