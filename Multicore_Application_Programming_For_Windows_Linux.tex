@@ -45,8 +45,48 @@
 \begin{document}
 \maketitle
 
-\section*{Chapter 8}
-\subsection*{Atomic Operations}
+\chapter{Hardware, Processes and Threads}
+\section{Cache}
+ When the data is fetched from memory, it is fetched together with the surrounding bytes as a cache line, as shown in below. 
+ \begin{center}
+ 	\includegraphics{multicore_cache_line_from_memory.jpg}
+ \end{center}
+ Depending on the processor in a system, a cache line might be as small as 16 bytes, or it could be as large as 128 (or more) bytes. A typical value for cache line size is 64 bytes.
+ \par
+ Cache lines are always aligned, so a 64-byte cache line will start at an address that is a multiple of 64. This design decision simplifies the system because it enables the system to be optimized to pass around aligned data of this size; the alternative is a more complex memory interface that would have to handle chunks of memory of different sizes and differently aligned start addresses.
+ \par
+ When a line of data is fetched from memory, it is stored in a cache. Caches improve performance because the processor is very likely to either reuse the data or access data stored on the same cache line. There are usually caches for \textbf{instructions} and caches for \textbf{data}. There may also be multiple levels of cache.
+ \par
+ The reason for having multiple levels of cache is that the \textbf{larger} the size of the cache, the \textbf{longer} it takes to determine whether an item of data is held in that cache.
+ \par
+ A processor might have a small first-level cache that it can access within a few clock cycles and then a second-level cache that is much larger but takes tens of cycles to access. Both of these are significantly faster than memory, which might take hundreds of cycles to access. The time it takes to fetch an item of data from memory or from a level of cache is referred to as its \textbf{latency}.
+ \par
+ Caches have two very obvious characteristics: the \textbf{size} of the \textbf{cache lines} and the \textbf{size} of the \textbf{cache}. The number of lines in a cache can be calculated by \textbf{dividing} one by the other. For example, a 4KB cache that has a cache line size of 64 bytes will hold 64 lines.
+ \par
+ Caches have one characteristic that is the associativity. In a simple cache, each cache line in memory would map to exactly one position in the cache; this is called a \textbf{direct mapped cache}. If we take the simple 4KB cache outlined earlier, then the cache line located at every 4KB interval in memory would map to the same line in the cache.
+\par
+Obviously, a program that accessed memory in 4KB strides would end up just using a single entry in the cache and could suffer from poor performance if it needed to simultaneously use multiple cache lines.
+\par
+The way around this problem is to increase the \textbf{associativity} of the cache---that is, make it possible for a single cache line to map into more positions in the cache and therefore reduce the possibility of there being a conflict in the cache.
+\par
+In a 2--way associative cache, each cache line can map into one of two locations. The location is chosen according to some \textbf{replacement policy} that could be random replacement, or it could depend on which of the two locations contains the oldest data (least recently used replacement).
+\par
+Doubling the number of potential locations for each cache line means that the interval between lines in memory that map onto the same cache line is halved, but overall this change will result in more effective utilization of the cache and a reduction in the number of cache misses.
+\begin{center}
+	\includegraphics{multicore_2_way_cache_line.jpg}
+\end{center}
+\section{Virtual Memory}
+The critical step in using virtual memory is the translation of a virtual address, as used by an application, into a physical address, as used by the processor, to fetch the data from memory. This step is achieved using a part of the processor called the translation look--aside buffer (\textbf{TLB}). Typically, there will be one \textbf{TLB} for translating the address of \textbf{instructions} (the instruction TLB or \textbf{ITLB}) and a second TLB for translating the address of \textbf{data} (the data TLB, or \textbf{DTLB}).
+\par
+Each \textbf{TLB} is a list of the virtual address range and corresponding physical address range of each page in memory. So when a processor needs to translate a virtual address to a physical address, it first splits the address into a virtual page (the high--order bits) and an offset from the start of that page (the low--order bits). It then looks up the address of this virtual page in the list of translations held in the TLB. It gets the physical address of the page and adds the offset to this to get the address of the data in physical memory. It can then use this to fetch the data.
+\begin{center}
+	\includegraphics{multicore_TLB.jpg}
+\end{center}
+A \textbf{TLB} can hold only a limited set of translations. So, sometimes a processor will need to find a physical address, but the translation does not reside in the TLB. In these cases, the translation is fetched from an in--memory data structure called a \textbf{page table}, and this structure can hold many more virtual to physical mappings. 
+\par
+When a translation does not reside in the \textbf{TLB}, it is referred to as a \textbf{TLB miss}, and TLB misses have an impact on performance. The magnitude of the performance impact depends on whether the hardware fetches the TLB entry from the page table or whether this task is managed by software; most current processors handle this in hardware. It is also possible to have a\textbf{ page table miss}, although this event is very rare for most applications. The page table is managed by software, so this typically is an expensive or slow event.
+\chapter{Synchronization and Sharing}
+\section{Atomic Operations}
 On x86 processors, the xadd instruction can be combined with the lock prefix to produce an atomic add, or the inc instruction can be combined with the lock prefix to produce an atomic increment.
 \begin{lstlisting}
 int atomic_add_int( volatile int *address, int value )
@@ -186,7 +226,7 @@ int main()
 	s.push(3);
 }
 \end{lstlisting}
-\subsubsection*{Memory Order}
+\subsection{Memory Order}
 When a thread running on a multithread system performs a memory operation, that operation may or may not become visible to the rest of the system in the order in which it occurred.
 \par
 For example, an application might perform two store operations. On some processors, the second store operation could become visible to other processors before the first store operation becomes visible. This is called \textbf{weak memory ordering}.
@@ -197,7 +237,7 @@ The kinds of memory barriers available are defined by the architecture. The x86 
 	\item \textbf{sfence}. Ensures that all previous stores are visible to the system before any future stores become visible.
 	\item \textbf{lfence}. Ensures that all previous loads are visible to the system before any future loads become visible
 \end{itemize}
-\paragraph*{Reordering by Compiler}
+\subsection{Reordering by Compiler}
 It is often thought that the \textbf{volatile} keyword provides a safety net that stops the compiler from optimizing code. Unfortunately, this is not true.
 \par
 The \textbf{volatile} keyword determines that the compiler needs to reload data from memory when it needs to use it and should store it back to memory as soon as it is modified. It does not stop the compiler from performing optimizations around the data nor does it form any kind of protection against data races.
@@ -332,7 +372,7 @@ To correct this situation, we need to modify the code so that the compiler is un
 \end{itemize}
 However, both of these approaches will add some unnecessary instructions into the code, and both approaches run the risk that a ``smart'' compiler might identify the instructions as unnecessary and remove them.
 \par
-The good slution is to use a \textbf{gcc asm("":::"memory")} construct that cause the compiler to correctly order the loops. This statement stops the loops from merging and adds no additional instructions into the code.
+The good slution is to use a \textbf{gcc asm(:::memory)} construct that cause the compiler to correctly order the loops. This statement stops the loops from merging and adds no additional instructions into the code.
 \begin{lstlisting}
 
 int main()
@@ -380,7 +420,7 @@ void waitforstart()
 
 \end{lstlisting}
 This case avoid having to declare the variable \textit{start} as \textbf{volatile} and instead uses a \textbf{compiler barrier} to ensure that the value is reloaded from memory.
-\subsection*{Lock--Free Algorithms}
+\section{Lock--Free Algorithms}
 \begin{lstlisting}
 volatile int priority = 0;
 volatile int counter = 0;
@@ -406,7 +446,7 @@ void increment( int id )
 	waiting[id] = 0;
 }
 \end{lstlisting}
-\subsubsection*{Dekker's Algorithm}
+\subsection{Dekker's Algorithm}
 The algorithm works because each thread signals that it is waiting to get into the critical section. If the other thread has not signaled that it is waiting for or has already entered the critical section, then the current thread can enter it. If both threads are waiting, then one of the threads gets priority, and the other thread waits until it gets \textit{priority}.
 \\
 The problem with the code is one of memory ordering.
@@ -461,7 +501,7 @@ void increment( int i )
 	waiting[i] = 0;
 }
 \end{lstlisting}
-\subsubsection*{Producer--Consumer with a Circular Buffer}
+\subsection{Producer--Consumer with a Circular Buffer}
 Consider the case where there is a producer-consumer pair of threads that communicate through a circular buffer. It is possible to write code that does not require locks or atomic operations to handle this situation.
 \begin{lstlisting}
 #include <stdio.h>
@@ -517,7 +557,7 @@ Several characteristics of the algorithm enable it to work correctly.
 	\item As long as the \textbf{reading thread} sees the updates to memory in the correct order and each variable is updated \textbf{atomically}, the thread will continue to wait until the data is ready and only then read that data.
 	\item The updates of the pointers into the array are carried out by a \textbf{function call}. The function call acts as a \textbf{compiler memory barrier} and forces the compiler to store variables back to memory. Otherwise, there would be the risk that the compiler might reorder the store operations.
 \end{itemize}
-\subsubsection*{Scaling the Producer-Consumer to Multiple Threads}
+\subsection{Scaling the Producer-Consumer to Multiple Threads}
 The simplest way to share the circular buffer between threads would be to use some kind of mutual exclusion that would ensure that only a single thread at a time could modify the structure. 
 \begin{lstlisting}
 #include <stdio.h>
@@ -800,7 +840,7 @@ int removefrombuffer()
 \end{lstlisting}
 In each iteration, the loop tests whether the lock is available. If the lock is available, the code attempts to acquire the lock atomically. If successful, the code \textbf{exits} the loop having acquired the spinlock. If unsuccessful, the loop continues to spin.
 
-\subsubsection*{Modifying the Producer-Consumer Code to Use Atomics}
+\subsection{Modifying the Producer-Consumer Code to Use Atomics}
 \begin{lstlisting}
 void addtobuffer( int value )
 {
@@ -858,7 +898,7 @@ The skipped location is empty, so the consumer threads are left waiting for an e
 However, before the producer threads can fill the entire buffer, they hit a filled element in the buffer and cannot make progress until this element has been removed, which will never happen because of the stalled consumer threads. (as shown in \textbf{step E})
 \par
 Consequently, the application deadlocks with both the producer and consumer threads unable to make forward progress.
-\paragraph*{ABA Problem}
+\subsection{ABA Problem}
 This example is an instance of a general problem called the \textbf{ABA problem}. The ABA problem is the situation where a thread is context \textbf{switched off} the virtual CPU when the program is in \textbf{state A}. While it is off--CPU, the system changes into a second\textbf{ state, B}, before returning to \textbf{state A}. This state is different from the original state but \textbf{looks identical} to the thread that is now switched back onto a virtual CPU. When the first thread returns to the CPU, it continues to \textbf{act as if the program state had not changed}, and this causes an error.
 \par
 In the circular buffer problem, the first thread is taken off the virtual CPU while believing it has a pointer to a free slot. When it returns to CPU, it has a pointer to what it believes is the free slot, but it has no indication that the state of the rest of the system has changed.
