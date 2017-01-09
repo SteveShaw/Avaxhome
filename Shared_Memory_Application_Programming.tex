@@ -1,0 +1,78 @@
+\documentclass[12pt,a4paper]{article}
+%\usepackage{charter}
+\usepackage[latin1]{inputenc}
+\usepackage[left=1.50cm, right=1.50cm, top=1.20cm]{geometry}
+\renewcommand{\baselinestretch}{1.5}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\definecolor{listinggray}{gray}{0.9}
+\definecolor{lbcolor}{rgb}{0.9,0.9,0.9}
+\usepackage{float}
+\usepackage{textcomp}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	aboveskip={1.2\baselineskip},
+	breaklines=true,
+	frame=lines,
+	numbers=left,
+	xleftmargin=\parindent,
+	language=C++,
+	showstringspaces=false,
+	basicstyle=\sffamily,%,\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+	breaklines=true,
+	postbreak=\raisebox{0ex}[0ex][0ex]{\ensuremath{\color{red}\hookrightarrow\space}}
+}
+
+\lstdefinestyle{customasm}{
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=[x86masm]Assembler,
+	basicstyle=\footnotesize\ttfamily,
+	commentstyle=\itshape\color{purple!40!black},
+}
+\lstset{escapechar=@,style=customc}
+
+% Title Page
+\title{Reading Notes: Shared Memory Application Programming}
+
+
+\begin{document}
+\maketitle
+
+
+\section{Time Durations}
+The \textbf{std::chrono::duration} class is defined as follows:
+\begin{lstlisting}
+template<typename Rep, typename Period>
+std::chrono::duration<Rep, Period> const& time_duration;
+\end{lstlisting}
+\begin{itemize}
+	\item  The second template parameter is a type that defines the \textbf{time period} between \textbf{successive ticks}, expressed as a \textbf{fraction} of a \textbf{second}. This is achieved by an instance of the std::ration$<$N, D$>$ class that defines the rational number N/D
+	\begin{itemize}
+		\item std::ratio$<1,50> =$ 1/50th of a second
+		\item std::ratio$<1,1000>=$ one millisecond
+		\item std::ratio$<60,1>=$ one minute
+	\end{itemize}
+\item The first template parameter is the integer type of the data item that stores the number of ticks (\textbf{time\_duration} above): \textit{short}, \textit{int}, \textit{long}, \textit{long long}.
+\begin{itemize}
+	\item \textbf{std::chrono::duration}$<$short, std::ratio$<$1, 50$>>$ count stores in a short the number of \textbf{one fiftieths of a second}.
+	\item \textbf{std::chrono::duration}$<$long, std::ratio$<$60, 1$>>$ stores in a \textbf{long} the number of \textbf{minutes}.
+\end{itemize}
+\end{itemize}
+
+\section{How can Several Threads Call the Same Function}
+Several threads can call the same function. It is useful to take a close look at the way this happens.
+\\
+The figure shown as below is displaying two threads, \textbf{T1} and \textbf{T2}, calling the same function, e.g., a function of the standard C or C++ libraries. These two calls are asynchronous, and they may or may not overlap in time. When called from \textbf{T1} (or \textbf{T2}), the function will be operating on argument values and local variables that are in the \textbf{T1} (or \textbf{T2}) stack. These are two independent data sets. However, there is only one piece of code for the function, sitting somewhere in memory. Now the question is, how can a unique suite of instructions operate simultaneously on two different data sets, and yet provide the correct results?
+\begin{center}
+	\includegraphics{sm_two_threads_same_function.jpg}
+\end{center}
+It is at this point that the stack properties play a role. The function body constructed by the compiler references all local addresses inside the function with the offset to an unknown stack pointer \textbf{SP}. Let \textbf{SP1} and \textbf{SP2} be the stack pointers of threads \textbf{T}1 and \textbf{T2}. The core running the thread \textbf{T1} (or \textbf{T2}) has a stack pointer register \textbf{SP} holding the value \textbf{SP1} (or \textbf{SP2}). When using a stack to manage local variables, switching the SP values switches a complete data set. The stack strategy to address local variables allows different threads to execute simultaneously the same function acting on different data sets.
+
+\end{document}          
