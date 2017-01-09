@@ -1,3 +1,230 @@
+
+2017/1/9 [START]
+
+0 <--> Udemy - Projects in Android [repost]
+
+
+
+Udemy - Projects in Android
+MP4 | AVC 552kbps | English | 1280x720 | 30fps | 11 hours | AAC stereo 65kbps | 2.29 GB
+Genre: Video Training
+
+
+
+5 <--> TCP/IP Socket Programming in C# .Net For Coders & Students [repost]
+
+
+
+TCP/IP Socket Programming in C# .Net For Coders & Students
+Duration: 1.5h | Video: AVC (.MP4) 1280x720 30fps | Audio: AAC 44.1KHz 2ch | 146MB
+Genre: eLearning | Language: English
+
+Learn network programming quickly, go from novice to expert in little over one hour
+
+What are the requirements?
+
+C# .Net programming language, basic skills
+Visual Studio 2010 or above will be needed to write code shown in this course
+A PC which is connected to a network, be it your home WiFi
+
+What am I going to get from this course?
+
+Over 25 lectures and 1.5 hours of content!
+Create enterprise grade TCP/IP socket communication software
+Develop a sound understanding of how networking applications communicate
+
+What is the target audience?
+
+Take this course if you have tiniest C# or Java programming experience
+Network communications is a very interesting topic, if you're looking to study something off-beat go for this course
+Don't take this course if you have never written code
+
+
+
+15 <--> Pluralsight - The Python Developer's Toolkit [repost]
+
+
+
+Pluralsight - The Python Developer's Toolkit
+MP4 | AVC 459kbps | English | 1024x768 | 15fps | 2h 19mins | AAC stereo 128kbps | 419 MB
+Genre: Video Training
+
+Becoming a professional Python developer means knowing more than just the language. Once you make the transition from simple scripts to larger projects, it becomes important to know the tools of the trade and how to use them. This course introduces you to a set of standard tools. We'll see how to install and manage your project's dependencies and how to set up your development environment. Then we'll go into code quality, debugging and documentation. Finally, we'll see how to package and distribute the final product.
+
+Table of contents:
+Introduction3m 46s
+Managing Python Packages22m 37s
+Isolated Development Environments With Virtualenv21m 35s
+Checking Your Code Quality With Pylint18m 55s
+The Python Debugger19m 59s
+Documenting Your Code With Sphinx30m 56s
+Packaging and Distributing Your Project21m 43s
+
+
+
+79 <--> Deep Learning with TensorFlow
+
+
+
+Deep Learning with TensorFlow
+HDRips | MP4/AVC, ~536 kb/s | 1280x720 | Duration: 02:00:28 | English: AAC, 128 kb/s (2 ch) | 543 MB
+Genre: Development / Programming
+
+Channel the power of deep learning with Google's TensorFlow!
+
+Explore various possibilities with deep learning and gain amazing insights from data using Google’s brainchild—TensorFlow
+Want to learn what more can be done with deep learning? Explore various neural networks with the help of this comprehensive guide!
+Rich in concepts, this is an advanced guide on deep learning that will give you the background to innovate in your environment
+
+Deep learning is the intersection of statistics, artificial intelligence, and data to build accurate models and TensorFlow is one of the newest and most comprehensive libraries for implementing deep learning. With deep learning going mainstream, making sense of data and getting accurate results using deep networks is possible. This course is your guide to exploring the possibilities with deep learning; it will enable you to understand data like never before. With the efficiency and simplicity of TensorFlow, you will be able to process your data and gain insights that will change how you look at data.
+
+With this video course, you will dig your teeth deeper into the hidden layers of abstraction using raw data. This course will offer you various complex algorithms for deep learning and various examples that use these deep neural networks. You will also learn how to train your machine to craft new features to make sense of deeper layers of data. During the video course, you will come across topics such as logistic regression, convolutional neural networks, recurrent neural networks, training deep networks, high level interfaces, and more.
+
+With the help of novel practical examples, you will become an ace at advanced multilayer networks, image recognition, and beyond.
+
+
+
+97 <--> An introduction to algorithms in Python
+
+
+
+An introduction to algorithms in Python
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 43M | 728 MB
+Genre: eLearning | Language: English
+
+This introduction to algorithms course is a comprehensive kick-start into the beautiful world of computer science. This course will prepare you for a great job in a technical field and is an essential stepping stone for delving deeper into data-structures and algorithms, and programming in general.
+
+In this course we will take a look at what computational complexity is, and the importance thereof, followed by 4 of the basic sorting algorithms (bubble sort, insertion sort, merge sort and quick sort) by visualisation and demonstration in Python.
+
+All the course content is simple to understand and relevant to real world application.
+
+
+
+156 <--> Building Sentiment Analysis Systems in Python
+
+
+
+Building Sentiment Analysis Systems in Python
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 2.5 Hours | 237 MB
+Genre: eLearning | Language: English
+
+Sentiment Analysis has become increasingly important as more opinions are expressed online, in unstructured form. This course covers rule-based and ML-based approaches to extracting sentiment from opinions, including VADER, Sentiwordnet, and more.
+
+Online opinions are becoming ubiquitous - more people are expressing their views online than ever before. As a result, extracting sentiment information from these opinions is becoming very important. In this course, Building Sentiment Analysis Systems in Python, you will learn the fundamentals of building a system to do so in Python. First, you will learn the differences between ML- and rule-based approaches, and how to use VADER, Sentiwordnet, and Naive Bayes classifiers. Next, you will build three sentiment analyzers, and use them to classify a corpus of movie reviews made available by Cornell. Finally, you will gain a conceptual understanding of Support Vector Machines, and why Naive Bayes is usually a better choice. When you're finished with this course, you will have a clear understanding of how to extract sentiment from a body of opinions, and of the design choices and trade-offs involved.
+
+
+
+233 <--> Python NumPy
+
+
+
+Python NumPy
+HDRips | MP4/AVC, ~828 kb/s | 1280x720 | Duration: 01:05:16 | English: AAC, 128 kb/s (2 ch) | 362 MB
+Genre: Development / Programming
+
+At the end of this course, you will have a thorough understanding of Numpy' s features and when to use them. Numpy is mainly used in matrix computing. We'll do a number of examples specific to matrix computing, which will allow you to see the various scenarios in which Numpy is helpful. There are a few computational computing libraries available for Python. It's important to know when to choose one over the other. Through rigorous exercises, you'll experience where Numpy is powerful and develop and understanding of the scenarios in which Numpy is most useful. You'll also know how to install Numpy.
+
+236 <--> Deep Dive into Python Machine Learning (2016)
+
+
+
+Deep Dive into Python Machine Learning (2016)
+MP4 | AVC 116kbps | English | 1280x720 | 25fps | 1h 45mins | AAC stereo 141kbps | 2.64 GB
+Genre: Video Training
+
+Deep learning is currently one of the best providers of solutions regarding problems in image recognition, speech recognition, object recognition, and natural language with its increasing number of libraries that are available in Python. The aim of deep learning is to develop deep neural networks by increasing and improving the number of training layers for each network, so that a machine learns more about the data until it’s as accurate as possible. Developers can avail the techniques provided by deep learning to accomplish complex machine learning tasks, and train AI networks to develop deep levels of perceptual recognition.
+
+Deep learning is the next step to machine learning with a more advanced implementation. Currently, it’s not established as an industry standard, but is heading in that direction and brings a strong promise of being a game changer when dealing with raw unstructured data. Deep learning is currently one of the best providers of solutions regarding problems in image recognition, speech recognition, object recognition, and natural language processing. Developers can avail the benefits of building AI programs that, instead of using hand coded rules, learn from examples how to solve complicated tasks. With deep learning being used by many data scientists, deeper neural networks are evaluated for accurate results.
+
+This course takes you from basic calculus knowledge to understanding backpropagation and its application for training in neural networks for deep learning and understand automatic differentiation. Through the course, we will cover thorough training in convolutional, recurrent neural networks and build up the theory that focuses on supervised learning and integrate into your product offerings such as search, image recognition, and object processing. Also, we will examine the performance of the sentimental analysis model and will conclude with the introduction of Tensorflow.
+
+By the end of this course, you can start working with deep learning right away. This course will make you confident about its implementation in your current work as well as further research.
+
+Style and Approach
+An easy-to-follow and structured video tutorial with practical examples and coding with IPython notebooks to help you get to grips with each and every aspect of deep learning.
+
+
+
+
+261 <--> Beginning C++ Game Programming - Part 1
+
+
+
+Beginning C++ Game Programming - Part 1
+HDRips | MP4/AVC, ~461 kb/s | 1280x720 | Duration: 06:06:13 | English: AAC, 128 kb/s (2 ch) | 1,3 GB
+Genre: Development / Programming
+
+Learn C++ from scratch and get started building your very own games.
+
+This course offers a fun way to learn modern C++ programming while building exciting 2D games
+A beginner-friendly guide offering a fast-paced but engaging approach to game development
+Immerse yourself in building a wide variety of desktop games that gradually increase in complexity
+
+
+This video course is all about offering you a fun introduction to the world of game programming, C++, and the OpenGL-powered SFML using three fun, fully-playable games. These games are an addictive frantic two-button tapper, a multi-level zombie survival shooter, and a split-screen multiplayer puzzle-platformer.
+
+We will start with the very basics of programming, such as variables, loops, and conditions, and you will become more skillful with each game as you move through the key C++ topics, such as OOP (Object-Orientated Programming), C++ pointers, and an introduction to the Standard Template Library. While building these games, you will also learn exciting game programming concepts such as particle effects, directional sound (spatialization), OpenGL programmable Shaders, spawning thousands of objects, and more.
+
+
+
+265 <--> Python Parallel Programming Solutions
+
+
+
+Python Parallel Programming Solutions
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 4 Hours | 2.12 GB
+Genre: eLearning | Language: English
+
+This course will teach you parallel programming techniques using examples in Python and help you explore the many ways in which you can write code that allows more than one process to happen at once.
+
+Starting with introducing you to the world of parallel computing, we move on to cover the fundamentals in Python. This is followed by exploring the thread-based parallelism model using the Python threading module by synchronizing threads and using locks, mutex, semaphores queues, GIL, and the thread pool. Next you will be taught about process-based parallelism, where you will synchronize processes using message passing and will learn about the performance of MPI Python Modules.
+
+Moving on, you’ll get to grips with the asynchronous parallel programming model using the Python asyncio module, and will see how to handle exceptions. You will discover distributed computing with Python, and learn how to install a broker, use Celery Python Module, and create a worker. You will understand anche Pycsp, the Scoop framework, and disk modules in Python. Further on, you will get hands-on in GPU programming with Python using the PyCUDA module and will evaluate performance limitations.
+
+
+
+
+371 <--> Advanced Data Analysis with Haskell
+http://nitroflare.com/view/430740DE494CE51/Adv.D.An.w.Ha.part1.rar
+http://nitroflare.com/view/5618118DAB05F39/Adv.D.An.w.Ha.part2.rar
+http://nitroflare.com/view/59B2345ED455C7C/Adv.D.An.w.Ha.part3.rar
+
+
+Advanced Data Analysis with Haskell
+HDRips | MP4/AVC, ~211 kb/s | 1280x720 | Duration: 04:04:39 | English: AAC, 128 kb/s (2 ch) | 643 MB
+Genre: Development / Programming
+
+Learn advanced data analysis techniques to gain insights into real-world data sets using Haskell.
+
+-Visualize and harvest information from data
+-Understand Regression analysis, perform multivariate regression, and untangle different varieties of clusters
+-Explore the power of non-strict semantics, strong static typing, and control constructs and make data analysis simpler
+
+Every business and organization that collects data is capable of tapping into its own data to gain insights on how to improve. Haskell is a purely functional and lazy programming language that is well suited to handling large data analysis problems. This video picks up where Beginning Haskell Data Analysis takes off. This video series will take you through the more difficult problems of data analysis in a conversational style.
+
+You will be guided on how to find correlations in data, as well as multiple dependent variables. You will be given a theoretical overview of the types of regression and we’ll show you how to install the LAPACK and HMatrix libraries. By the end of the first part, you’ll be familiar with the application of N-grams and TF-IDF.
+
+Once you’ve learned how to analyze data, the next step is organizing that data with the help of machine learning algorithms. You will be briefed on the mathematics and statistical theorems such as Baye’s law and its application, as well as eigenvalues and eigenvectors using HMatrix.
+
+By the end of this course, you’ll have an understanding of data analysis, different ways to analyze data, and the various clustering algorithms available. You’ll also understand Haskell and will be ready to write code with it.
+
+
+
+384 <--> Python Machine Learning Projects
+http://nitroflare.com/view/E7684BA4739C476/Python_Machine_Learning_Projects.part1.rar
+http://nitroflare.com/view/016686409213760/Python_Machine_Learning_Projects.part2.rar
+http://nitroflare.com/view/78B6C70F7BC3584/Python_Machine_Learning_Projects.part3.rar
+http://nitroflare.com/view/33C8D4C8FC5363B/Python_Machine_Learning_Projects.part4.rar
+http://nitroflare.com/view/6FEBF68664A273E/Python_Machine_Learning_Projects.part5.rar
+
+
+Python Machine Learning Projects
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 3 Hours | 599 MB
+Genre: eLearning | Language: English
+
+Machine learning gives you unimaginably powerful insights into data. Today, implementations of machine learning have been adopted throughout Industry and its concepts are numerous. This video is a unique blend of projects that teach you what Machine Learning is all about and how you can implement machine learning concepts in practice. Six different independent projects will help you master machine learning in Python. The video will cover concepts such as classification, regression, clustering, and more, all the while working with different kinds of databases. By the end of the course, you will have learned to apply various machine learning algorithms and will have mastered Python's packages and libraries to facilitate computation. You will be able to implement your own machine learning models after taking this course.
+
+2017/1/9 [END]
 12/27/2016 [START]
 
 0 <--> Nathan Chan - Instagram Domination 3.0 (2016)

@@ -1022,4 +1022,391 @@ int removefrombuffer()
 	return value;
 }
 \end{lstlisting}
+\section{Priority Inversion}
+priority inversion: where one thread is waiting for the resources held by another thread. If the thread holding the resources is of lower priority, then the priority is said to be inverted.
+\\
+A potential issue in this situation is when a low-priority thread holds a mutex. A thread with a higher priority wakes up and causes the low-priority thread to be descheduled from the CPU. The thread waiting for the mutex could be of an even higher priority, but it will now have to wait for both the lower-priority threads to complete before it can acquire the mutex.
+\\
+A common solution for this problem is for the thread holding the resources to temporarily acquire the max priority of the waiting threads, ideally reducing the time that it holds the resources. Once the thread releases the resources, it resumes its original lower priority, and the higher-priority thread continues execution with its original higher priority.
+\\
+An alternative solution is to boost the priority of any thread that acquires a particular resource so that the thread is unlikely to be preempted while it is holding the resource.
+
+\section{False Sharing}
+\textbf{False sharing} is the situation where multiple threads are accessing items of data held on a \textbf{single cache line}. Although the threads are all using separate items of data, the cache line itself is shared between them so \textbf{only} a single thread can write to it at any one time. This is purely a performance issue because there is no correctness issue. It would be a correctness issue if it were a single variable on the cache line being shared between the threads.
+\par
+The performance impact comes from the fact that each thread requires the cache line to be present and writable in the cache of the processor where the thread is executing. If another thread recently wrote to the cache line, then the modified data needs to be written back to memory and then sent to the next processor that wants to write to it. This can cause accesses to the cache line to take a similar length of time as a \textbf{miss} to memory. In the case of false sharing, the line is constantly being bounced between processors, so most accesses to it end up requiring another processor to write the line back to memory--so the line does not ever get the benefit of being cache resident.
+\par
+The following code demonstrate the cost of false sharing.
+\begin{itemize}
+	\item Each thread is assigned a \textbf{volatile} variable to use as a counter. The fact that the variable is volatile ensures that the code must store and reload it with every iteration. It also ensures that the compiler cannot eliminate the loop, even though the work it performs is redundant. 
+	\item The code creates multiple threads and then times how long it takes the first thread to complete the same amount of work as the other threads.
+\end{itemize}
+\begin{lstlisting}
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <sys/time.h>
+
+double now()
+{
+	struct timeval time;
+	gettimeofday( &time, 0 );
+	return (double)time.tv_sec + (double)time.tv_usec / 1000000.0;
+}
+
+#define COUNT 100000000
+volatile int go = 0;
+volatile int counters[20];
+
+void *spin( void *id )
+{
+	int myid = (int)id + 1;
+	while( !go ) {}
+	counters[myid] = 0;
+	while ( counters[myid]++ < COUNT ) {}
+}
+
+int main( int argc, char* argv[] )
+{
+	pthread_t threads[256];
+	int nthreads = 1;
+	if ( argc > 1 ) { nthreads = atoi( argv[1] ); }
+	for( int i=1; i<nthreads; i++ )
+	{
+		pthread_create( &threads[i], 0, spin, (void*)i );
+	}
+	double start = now();
+	go = 1;
+	spin( 0 );
+	double end = now();
+	printf("Time %f ns\n", ( end ? start ) );
+	
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_join( threads[i], 0 );
+	}
+	return 0;
+}
+\end{lstlisting}
+It is very easy to solve false sharing by \textbf{padding} the accessed structures so that the variable used by each thread resides on a \textbf{separate} cache line. The cache line can then reside in the cache of the processor where the thread is running, and consequently, all accesses to that cache line are low cost, and the code runs much faster.
+\par
+The following gives the modified code where access tho the counter structure have been padded so that each counter is located at \textbf{64--byte} intervals. This will ensure that the variables are located on separate cache lines on machines with cache line sizes of 64 bytes or less.
+\begin{lstlisting}
+#include <stdio.h>
+#include <stdlib.h>
+#include <pthread.h>
+#include <sys/time.h>
+
+double now()
+{
+	struct timeval time;
+	gettimeofday( &time, 0 );
+	return (double)time.tv_sec + (double)time.tv_usec / 1000000.0;
+}
+
+#define COUNT 100000000
+volatile int go = 0;
+volatile int counters[320];
+
+void *spin( void *id )
+{
+
+	int myid = ( (int)id + 1) * 16;
+	while( !go ) {}
+	counters[myid] = 0;
+	while ( counters[myid]++ < COUNT ) {}
+}
+
+int main( int argc, char* argv[] )
+{
+	pthread_t threads[256];
+	int nthreads = 1;
+	if ( argc > 1 ) { nthreads = atoi( argv[1] ); }
+	nthreads--;
+	for( int i=1; i<nthreads+1; i++ )
+	{
+		pthread_create( &threads[i], 0, spin, (void*)i );
+	}
+	
+	double start = now();
+	go=1;
+	spin( 0 );
+	double end = now();
+	printf( "Time %f s\n", ( end ? start ) );
+	
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_join( threads[i], 0 );
+	}
+	return 0;
+}
+
+\end{lstlisting}
+Although fixing false sharing is easy to do in most cases, detecting performance loss from it is much harder.
+\begin{itemize}
+	\item In general, false sharing will turn up as an elevated number of cache misses on a particular memory operation, and it is hard to distinguish this from the normal cache misses that occur in all applications.
+	\item However, the important thing to realize from the previous description is that when significant time is lost to false sharing, there will be significant numbers of cache misses, indicating the points at which the false sharing occurs.
+	\item Hence, tracking down false sharing can be as simple as locating the places in the code where there are unexpectedly high numbers of cache misses on variables that should be local to one thread.
+\end{itemize}
+One important thing to note is that false sharing is a \textbf{significant issue} for \textbf{multiprocessor} systems but is \textbf{not} nearly as critical for \textbf{multicore} systems. The data is shared through the on-chip caches, and this sharing has \textbf{little} impact on performance. This is a useful feature of multicore processors.
+\section{Cache Conflict and Capacity}
+One of the notable features of multicore processors is that threads will share a single cache at some level. There are two issues that can occur with shared caches: \textbf{capacity misses} and \textbf{conflict misses}.
+\subsection{Conflict Miss}
+\textbf{A conflict cache mis}s is where one thread has caused data needed by another thread to be evicted from the cache. The worst example of this is \textbf{thrashing} where multiple threads each require an item of data and that item of data maps to the same cache line for all the threads. Shared caches usually have sufficient associativity to avoid this being a significant issue. However, there are certain attributes of computer systems that tend to make this likely to occur.
+\par
+Data structures such as stacks tend to be aligned on cache line boundaries, which increases the likelihood that structures from different processes will map onto the same address. Consider the code shown as below. This code creates a number of threads. Each thread prints the address of the first item on its stack and then waits at a barrier for all the threads to complete before exiting.
+\begin{lstlisting}
+#include <pthread.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+pthread_barrier_t barrier;
+
+void* threadcode( void* param )
+{
+	int stack;
+	printf("Stack base address = %x for thread %i\n", &stack, (int)param);
+	pthread_barrier_wait( &barrier );
+}
+
+
+int main( int argc, char*argv[] )
+{
+	pthread_t threads[20];
+	int nthreads = 8;
+	if ( argc > 1 ) { nthreads = atoi( argv[1] ); }
+	pthread_barrier_init( &barrier, 0, nthreads );
+	
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_create( &threads[i], 0, threadcode, (void*)i );
+	}
+	
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_join( threads[i], 0 );
+	}
+	
+	pthread_barrier_destroy( &barrier );
+	
+	return 0;
+}
+\end{lstlisting}
+The expected output when this code is run on 32-bit Solaris indicates that threads are created with a 1MB offset between the start of each stack. For a processor with a cache size that is a power of two and \textbf{smaller} than 1MB, a stride of 1MB would ensure the base of the stack for all threads is in the \textbf{same set} of cache lines.
+\par
+The \textbf{associativity} of the cache will \textbf{reduce} the chance that this would be a problem. A cache with an associativity \textbf{greater} than the \textbf{number of threads} sharing is less likely to have a problem with conflict misses.
+\par
+Suppose an application has multiple threads, and they all execute common code, spending the majority of the time performing calculations in the same routine. 
+\begin{itemize}
+	\item If that routine performs a lot of stack accesses, there is a good chance that the threads will conflict, causing thrashing and poor application performance.
+	\item  This is because all stacks start at some multiple of the stack size. The same variable, under the same call stack, will appear at the same offset from the base of the stack for all threads.
+	\item It is quite possible that the cache line will be mapped onto the same cache line set for all threads. If all threads make heavy use of this stack location, it will cause thrashing within the set of cache lines.
+	\item It is for this reason that processors usually implement some kind of \textbf{hashing} in hardware, which will cause addresses with a strided access pattern to map onto different sets of cache lines. 
+\end{itemize}
+\subsection{Capacity Miss}
+Capacity misses is the situation where the data set that a single thread uses fits into the cache, but adding a second thread causes the total data footprint to exceed the capacity of the cache.
+\par
+In the code as below, each thread allocates an \textbf{8KB} array of integers.
+\begin{itemize}
+	\item When the code is run with a single thread on a core with at least 8KB of cache, the data the thread uses becomes cache resident, and the code runs quickly.
+	\item If a second thread is started on the same core, the two threads would require a total 16KB of cache for the data required by both threads to remain resident in cache.
+\end{itemize}
+\begin{lstlisting}
+#include <pthread.h>
+#include <stdio.h>
+#include <sys/time.h>
+#include <stdlib.h>
+#include <sys/types.h>
+#include <sys/processor.h>
+#include <sys/procset.h>
+
+void * threadcode( void*id )
+{
+	int *stack = calloc( sizeof(int), 2048 );
+	processor_bind( P_LWPID, P_MYID, ((int)id*4) & 63, 0 );
+	for( int i=0; i<1000; i++ )
+	{
+		hrtime_t start = gethrtime();
+		double total = 0.0;
+		for( int h=0; h<100; h++ )
+		for( int k=0; k<256*1024; k++ )
+		total += stack[ ( (h*k) ^ 20393 ) & 2047 ]
+		*stack[ ( (h*k) ^ 12834 ) & 2047 ];
+		hrtime_t end = gethrtime();
+		if ( total == 0 ){ printf( "" ); }
+		printf( "Time %f ns %i\n", (double)end ? (double)start, (int)id );
+	}
+}
+
+
+int main( int argc, char*argv[] )
+{
+	pthread_t threads[20];
+	int nthreads = 8;
+	if ( argc > 1 ) { nthreads = atoi( argv[1] ); }
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_create( &threads[i], 0, threadcode, (void*)i );
+	}
+	for( int i=0; i<nthreads; i++) { pthread_join( threads[i], 0 ); }
+	return 0;
+}
+\end{lstlisting}
+Running this code on an UltraSPARC T2 processor with one thread reports a time of about 0.7 seconds per iteration of the outermost loop. The 8KB data structure fits into the 8KB cache. When run with two threads, this time nearly doubles to 1.2 seconds per iteration, as might be expected, because the required data exceeds the size of the first-level cache and needs to be fetched from the \textbf{shared second--level cache}.
+\par
+There are 2 ways to determine whether this was the problem.
+\begin{enumerate}
+	\item The 1st way is to perform the experiment where the size of the data used by each thread is reduced so that the \textbf{combined footprint} is much less than the size of the \textbf{cache}. If this is done and there is no impact performance from adding a second thread, it indicates that the problem is a cache capacity issue and not because of the two threads sharing instruction issue width.
+	\item An alternative way to identify the same issue is to look at \textbf{cache miss rates} using the \textbf{hardware performance counters} available on most processors.
+\end{enumerate}
+One tool to access the hardware performance counters on Solaris is cputrack. This tool reports the number of hardware performance counter events triggered by a single process. 
+\par
+It is important to minimize the memory footprint of the codes running on the system. Most \textbf{memory footprint optimizations} will tend to appear to be common good programming practice and are often automatically implemented by the compiler. For example, if there are unused local variables within a function, then the compiler will not allocate stack space to hold them.
+\par
+Consider an application that manages its own memory. It would be better for this application to return recently deallocated memory to the thread that deallocated it rather than return memory that had not been used in a while. The reason is that the recently deallocated memory might still be cache resident. Reusing the same memory avoids the cache misses that would occur if the memory manager returned an address that had not been recently used and the thread had to fetch the cache line from memory.
+\section{Pipeline Resource Starvation}
+If a single thread is running on a core, its performance is limited by the rate at which the core can issue instructions and the number of stalls that the thread encounters. For example, a core might be able to sustain only a single load every cycle, so a code that contained only load instructions could at most issue a single instruction per cycle. Similarly, a code that consisted of a stream of dependent load instructions would only be able to issue the next instruction once the previous load had completed, and the time the load would take would represent the latency of the memory system.
+\par
+When multiple threads share a core, the rate at which the threads can issue instructions is limited by two constraints.
+\begin{enumerate}
+	\item The 1st constraint is the\textbf{ maximum rate at which the hardware can issue instructions}. For example, if there is only one load pipeline, then only one load instruction can be issued per cycle.
+	\item The 2nd constraint is that \textbf{all the threads have to share the available hardware resources}. If there is one load pipeline and two threads, then only one thread can issue a load instruction at a time.
+\end{enumerate}
+It is instructive to think of this in terms of cache misses. When one thread is stalled waiting for data to be returned from memory, then all the other threads on that core can take instruction issue slots from the stalled thread. If all threads are stalled waiting for data from memory, then the issue width of the processor is not the dominating constraint on performance. This is the ideal situation for a CMT processor. If the threads are stalled waiting for memory, then it is more effective to have a large number of these threads all making forward process. Although individual threads might run slowly, the aggregate throughput of the system is impressive because of the number of threads.
+\par
+When threads are not stalled on memory, such as when the data is cache resident or the code is compute intensive, the threads can become limited on instruction issue width. A single core supporting multiple threads relies on gaps where each thread is stalled to find cycles where an instruction from a different thread can be executed. If there are too many compute-intensive threads running on the core, then instruction issue width becomes a limiting factor in performance.
+\par
+Consider the code shown as below, which runs a number of threads, and each thread is performing a simple set of integer operations on an item of data. Integer operations are typically single-cycle instructions, so one thread will desire to execute a single instruction every cycle. This is achievable when there is a single thread running on the core, but it can be limited on some processors when multiple threads are assigned to the same core.
+\begin{lstlisting}
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <pthread.h>
+
+#include <sys/types.h>
+#include <sys/processor.h>
+#include <sys/procset.h>
+
+int nthreads = 8;
+
+void *experiment( void *id )
+{
+	unsigned int seed = 0;
+	
+	processor_bind( P_LWPID, P_MYID, ((int)id*2), 0 );
+	int count = 100000000;
+	for( int i=0; i<count; i++ )
+	{
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+	}
+	if ( seed == 1 ) { printf( "" ); }
+}
+
+int main( int argc, char* argv[] )
+{
+	pthread_t threads[64];
+	if ( argc > 1 ) { nthreads = atoi( argv[1] ); }
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_create( &threads[i], 0, experiment, (void*)i );
+	}
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_join( threads[i], 0 );
+	}
+	return 0;
+}
+
+\end{lstlisting}
+The code uses the Solaris \textbf{processor\_bind} call to \textbf{bind} threads to particular \textbf{virtual} CPUs. This is necessary because the operating system will typically try to locate threads so that each thread gets the maximal resources. In this instance, we do not want that to happen because we want to investigate what happens when threads are scheduled on the same core. Doing this correctly requires knowledge of how the virtual CPU number maps to cores. This mapping often falls into one of two types.
+\begin{itemize}
+	\item The one common mapping is that \textbf{virtual CPU numbers are assigned to cores in groups}. If a core supports \textbf{four} threads, then virtual CPUs \textbf{0} to \textbf{3} would correspond to the four threads on the the \textbf{first} core.
+	\item 	The other common mapping scheme is to \textbf{interleave} cores. In this case, if there were \textbf{two} cores, then all the \textbf{odd}-numbered virtual CPUs would map to one core and all the \textbf{even}-numbered virtual CPUs would map to the other core.
+\end{itemize}
+The code as shown is for a machine where the virtual CPUs are \textbf{interleaved}. The machine had two hyperthreading--enabled cores, making a total of four virtual CPUs. Virtual CPUs \textbf{0} and \textbf{2} are located on core \textbf{0}, and virtual CPUs \textbf{1} and \textbf{3} are located on core \textbf{1}.
+\par
+When the bit manipulation code is run with one thread, it takes about two seconds. When run with two threads on the same core, it runs in two and a half seconds. If the runtime had remained the same, then twice as much work would have been achieved in the same time. However, this was not the case---twice as much work was achieved in 25\% more time. To put it another way, this represents a 60\% gain in throughput.
+\par
+The same code was also run on an UltraSPARC T2 machine, with the binding suitably modified. The topology of this machine is interesting because each core can support eight threads, and these threads are arranged into two groups of four. Each group of four can issue one integer operation per cycle, but the two groups share a single load/store pipeline and a single floating--point pipeline. When run on this machine, using a single thread, the code took four seconds. When two threads were assigned to the same group on the same core, the threads completed in seven seconds, achieving only slightly more work per unit time than a single thread. When the two threads are assigned to different groups on the same core, the threads complete their work in four seconds. With this distribution of threads, the amount of work achieved per unit time is doubled.
+\par
+As more threads become active, the scaling of a processor depends on the architecture of the core. The more available capacity, the more the throughput of the core will increase as the number of threads increases. An alternative view is that cores that work very hard to extract every bit of performance from a single--threaded code will end up with fewer spare cycles for a second thread to use. Once a core becomes fully utilized, additional threads will steal cycles from those that are already running and will cause all the active threads to run slightly slower.
+\par
+If all the threads are busy performing useful work, then to a large extent it does not matter how well the processor scales--as long as it is completing more work than it was when running with a single thread.
+\par
+Where performance is potentially lost is when one of the threads is spinning, waiting for some signal. The spinning thread will be taking instruction issue opportunities from the other threads running on the core. The code in the following demonstrates how a spinning thread can detract from the performance of the worker thread. This code creates multiple spinning threads and then attempts to complete a predefined amount of work.
+\begin{lstlisting}
+#include <stdio.h>
+#include <stdlib.h>
+#include <strings.h>
+#include <pthread.h>
+
+#include <sys/types.h>
+#include <sys/processor.h>
+#include <sys/procset.h>
+
+int nthreads = 8;
+volatile int busy = 1;
+
+void * spin( void *id )
+{
+	processor_bind( P_LWPID, P_MYID, (int)id, 0 );
+	while ( busy ) {}
+}
+
+void experiment( int id )
+{
+	unsigned int seed = 0;
+	processor_bind( P_LWPID, P_MYID, id, 0 );
+	int count = 100000000;
+	for( int i=0; i<count; i++ )
+	{
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+		seed += (seed<<2) ^ (seed|33556);
+	}
+	if ( seed == 1 ) { printf( "" ); }
+}
+
+int main( int argc, char* argv[] )
+{
+	pthread_t threads[64];
+	if ( argc > 1 ) { nthreads = atoi( argv[1] ); }
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_create( &threads[i], 0, spin, (void*)(i+1) );
+	}
+	experiment( 0 );
+	busy = 0;
+	for( int i=0; i<nthreads; i++ )
+	{
+		pthread_join( threads[i], 0 );
+	}
+	return 0;
+}
+\end{lstlisting}
+On a test machine, the code takes \textbf{4} seconds to complete when there are no other threads scheduled to the same core. With \textbf{one spinning thread} scheduled to the same core, the code takes \textbf{5.5} seconds to complete. With \textbf{2} threads it takes \textbf{8} seconds, and with \textbf{3} spinning threads it takes \textbf{12} seconds.
+\par
+The 1st spinning thread slows the original thread by only about 25\% because the spinning thread mainly performs load and branch instructions, both of which have a latency of a few cycles before the thread is again ready to execute a new instruction. The net result is that the first spinning thread wants to issue an instruction every 4 cycles, which leaves three cycles for the original thread to execute instructions.
+\par
+The 2nd spinning thread follows the same pattern, so now there are two threads that want to issue an instruction every four cycles. This leaves the original thread able to issue an instruction every other cycle, so it runs twice as slowly.
+\par
+When the 3rd spinning thread is added, the core is already fully occupied by running the original thread and the two spinning threads, so adding an additional thread takes the situation from one where the \textbf{3} threads are getting to issue about one instruction every three cycles to a situation where they get to issue an instruction every four cycles. This is a 33\% slowdown, which takes the runtime from 8 to 12 seconds.
+\par
+One way of reducing the impact of spinning threads is to cause the thread to pause and consume no instruction issue resources. Most processors have a long latency instruction that can be used for this purpose even if they do not have an explicit instruction for delaying.
 \end{document}          
