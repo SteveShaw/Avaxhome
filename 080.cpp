@@ -3199,8 +3199,64 @@ could be produced using 1 cut.
 */
 class Solution {
 public:
-    int minCut(string s) {
-        
+    int minCut(string s)
+    {
+    		if ( s.empty() )
+			{
+				return 0;
+			}
+
+			int len = s.size();
+
+			vector<vector<int>> p( len, vector<int>( len, 0 ) );
+
+			for ( int i = 0; i < len; ++i )
+			{
+				p[i][i] = 1;
+			}
+
+			for ( int i = 0; i < len - 1; ++i )
+			{
+				p[i][i + 1] = ( s[i] == s[i + 1] ) ? 1 : 0;
+			}
+
+			for ( int l = 3; l <= len; ++l )  //key: length=1,2 already visited. start with 3
+			{
+				for ( int i = 0; i < len - l + 1; ++i )
+				{
+					int j = i + l - 1;
+
+					if ( s[i] == s[j] )
+					{
+						p[i][j] = p[i + 1][j - 1];
+					}
+				}
+			}
+
+
+			vector<int> c( len, 0 );
+
+			for ( int i = 1; i < len; ++i )
+			{
+				if ( p[0][i] == 1 )
+				{
+					c[i] = 0;
+				}
+				else
+				{
+					c[i] = len;
+
+					for ( int j = 0; j < i; ++j )
+					{
+						if ( p[j + 1][i] == 1 )
+						{
+							c[i] = min( c[i], 1 + c[j] );
+						}
+					}
+				}
+			}
+
+			return c[len - 1];    
     }
 };
 
@@ -3268,6 +3324,382 @@ public:
     }
 };
 
+//<--> 135. Candy
+/*
+There are N children standing in a line. Each child is assigned a rating value.
+
+You are giving candies to these children subjected to the following requirements:
+
+Each child must have at least one candy.
+Children with a higher rating get more candies than their neighbors.
+What is the minimum candies you must give?
+*/
+class Solution {
+public:
+    int candy(vector<int>& ratings)
+    {      
+    }
+};
+
+//<--> 136. Single Number
+/*
+Given an array of integers, every element appears twice except for one. Find that single one.
+
+Note:
+Your algorithm should have a linear runtime complexity.
+Could you implement it without using extra memory?
+*/
+class Solution {
+public:
+    int singleNumber(vector<int>& nums)
+    {    
+    }
+};
+
+//<--> 137. Single Number II
+/*
+Given an array of integers, every element appears three times except for one,
+which appears exactly once. Find that single one.
+
+Note:
+Your algorithm should have a linear runtime complexity.
+Could you implement it without using extra memory?
+*/
+class Solution {
+public:
+    int singleNumber(vector<int>& nums)
+    {    
+    }
+};
+
+//<--> 138. Copy List with Random Pointer
+/*
+A linked list is given such that
+
+each node contains an additional random pointer
+
+which could point to any node in the list or null.
+
+Return a deep copy of the list.
+*/
+/**
+ * Definition for singly-linked list with a random pointer.
+ * struct RandomListNode {
+ *     int label;
+ *     RandomListNode *next, *random;
+ *     RandomListNode(int x) : label(x), next(NULL), random(NULL) {}
+ * };
+ */
+class Solution {
+public:
+	//method 1: using map 
+    RandomListNode *copyRandomList(RandomListNode *head)
+    {
+		if(!head)
+		{
+			return nullptr;
+		}
+		
+		RandomListNode* clone_head = new RandomListNode(head->label);
+		auto cur = head->next;
+		auto clone = clone_head;
+		
+		unordered_map<RandomListNode*, RandomListNode*> m;
+		m[head] = clone_head;
+		
+		
+		while(cur)
+		{
+			auto tmp = new RandomListNode(cur->label);
+			clone->next = tmp;
+			m[cur] = tmp;
+			
+			cur = cur->next;
+			clone = clone->next;
+		}
+		
+		cur = head;
+		clone = clone_head;
+		
+		while(cur)
+		{
+			clone->random = m[cur->random];
+			cur = cur->next;
+			clone = clone->next;
+		}
+		
+		
+		return clone_head;
+	}
+	
+	//method 2: add the clone next to current
+	RandomListNode *copyRandomList(RandomListNode *head)
+	{
+		if(!head)
+		{
+			return nullptr;
+		}
+		
+		auto cur = head;
+		
+		while(cur)
+		{
+			auto tmp = new RandomListNode(cur->label);
+			tmp->next = cur->next;
+			cur->next = tmp;
+			
+			cur = tmp->next;
+		}
+		
+		cur = head;
+		
+		while(cur)
+		{
+			if(cur->random)
+			{
+				cur->next->random = cur->random->next;
+			}
+			
+			cur = cur->next->next;
+		}
+		
+		cur = head;
+		auto new_head = cur->next;
+		auto clone = new_head;
+		
+		while(clone)
+		{
+			auto tmp = cur->next;
+			cur->next = tmp->next;
+			if(tmp->next)
+			{
+				tmp->next = tmp->next->next;
+			}
+			cur = cur->next;
+		}
+		
+		return new_head;
+	}
+};
+
+//<--> 139. Word Break
+/*
+Given a non-empty string s and a dictionary
+
+wordDict containing a list of non-empty words,
+
+determine if s can be segmented into a space-separated sequence of one or more dictionary words.
+
+You may assume the dictionary does not contain duplicate words.
+
+For example, given
+s = "leetcode",
+dict = ["leet", "code"].
+
+Return true because "leetcode" can be segmented as "leet code".
+*/
+class Solution {
+public:
+    bool wordBreak(string s, vector<string>& wordDict)
+    {
+		if ( s.empty() )
+		{
+			return false;
+		}
+
+		int len = s.size();
+
+		unordered_set<string> word_s( wordDict.begin(), end( wordDict ) );
+
+		vector<int> dp( len + 1, 0 );
+		dp[0] = 1;
+
+		for ( int i = 1; i <= len; ++i )
+		{
+			for ( int j = 0; j < i; ++j )
+			{
+				if ( dp[j] == 1 )
+				{
+					if ( word_s.find( s.substr( j, i - j ) ) != word_s.end() )
+					{
+						dp[i] = 1;
+						break;
+					}
+				}
+			}
+		}
+
+		return dp.back() == 1;
+    }
+};
+
+//<--> 140. Word Break II
+/*
+Given a non-empty string s and a dictionary wordDict 
+containing a list of non-empty words, 
+add spaces in s to construct a sentence 
+where each word is a valid dictionary word. 
+You may assume the dictionary does not contain duplicate words.
+
+Return all such possible sentences.
+
+For example, given
+s = "catsanddog",
+dict = ["cat", "cats", "and", "sand", "dog"].
+
+A solution is ["cats and dog", "cat sand dog"].
+*/
+class Solution {
+public:
+    vector<string> wordBreak(string s, vector<string>& wordDict) 
+	{
+		vector<string> res;
+		string out;
+		
+		vector<int> possible(s.size()+1, 1);
+		
+		unordered_set<string> ws(wordDict.begin(), wordDict.end());
+		
+		dfs(s,ws,possible,out,res,0);
+		
+		return res;
+	}
+	
+	void dfs(const string &s, const unordered_set<string>& ws, vector<int>& possible, string& out, vector<string>& res, int start)
+	{
+		if(start == s.size())
+		{
+			res.emplace_back(out.substr(0, out.size()-1).c_str()); //key: remove the final blank from out.
+			return;
+		}
+		
+		for(int i = start; i<s.size(); ++i)
+		{
+			auto word = s.substr(start, i-start+1);
+			if( ( ws.find(word)!=ws.end() ) && ( possible[i+1] == 1 ) )
+			{
+				out += word;
+				out += " ";
+				
+				int old_size = res.size();
+				
+				dfs(s,ws,possible,out,res,i+1);
+				
+				if(old_size == res.size())
+				{
+					possible[i+1] = 0;
+				}
+				
+				out.resize(out.size() - word.size() - 1);
+			}			
+		}
+	}
+};
+
+//<--> 141. Linked List Cycle
+/*
+Given a linked list, determine if it has a cycle in it.
+https://codesays.com/2014/solution-to-fish-by-codility/
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+ 
+class Solution {
+public:
+    bool hasCycle(ListNode *head) {
+        
+    }
+};
+
+//<--> 142. Linked List Cycle II
+/*
+Given a linked list, return the node where the cycle begins. 
+
+If there is no cycle, return null.
+
+Note: Do not modify the linked list.
+
+Follow up:
+Can you solve it without using extra space?
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode *detectCycle(ListNode *head) 
+	{
+		if(!head || !head->next)
+		{
+			return nullptr;
+		}
+		
+		auto slow = head;
+		auto fast = head;
+		
+		while( fast && fast->next )
+		{
+			slow = slow->next;
+			fast = fast->next->next;
+			
+			if(slow==fast)
+			{
+				break;
+			}
+		}
+		
+		if(!fast || !fast->next)
+		{
+			return nullptr;
+		}
+		
+		start = head;
+		
+		while(slow!=fast)
+		{
+			slow = slow->next;
+			fast = fast->next;
+		}
+		
+		return fast;
+    }
+};
+
+//<--> 143. Reorder List
+/*
+Given a singly linked list L: L_0→L_1→…→L_{n-1}→L_n,
+reorder it to: L_0→L_n→L_1→L_{n-1}→L_2→L_{n-2}→…
+
+You must do this in-place without altering the nodes' values.
+
+For example,
+Given {1,2,3,4}, reorder it to {1,4,2,3}.
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    void reorderList(ListNode* head) {
+        
+    }
+};
 
 //<--> 151. Reverse Words in a String
 /*
