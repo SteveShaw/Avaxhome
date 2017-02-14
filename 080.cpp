@@ -6263,7 +6263,150 @@ is at most t and the absolute difference between i and j is at most k.
 
 class Solution {
 public:
+/*
+平衡树的方法。复杂度O(nlogk)
+
+题意有：-t <= x- nums[i] <= t
+
+左边有 nums[i]  – t <= x 因此把符合条件的数构建成一颗平衡树，然后查找一个最小的x使得x>= nums[i] – t
+
+如果该x还满足 x – nums[i] <= t就是我们要的答案啦
+*/
     bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t)
-    {     
+    {
+		map<long long,int> m;
+        
+        int N = nums.size();
+        int j = 0;
+        
+		long long lt = static_cast<long long>(t);
+        
+        for(int i = 0; i<N; ++i)
+        {
+            long long n = static_cast<long long>(nums[j]);
+            
+            if( ( i -j > k ) && ( m.find(n)!=m.end() ) )
+            {
+                m.erase(n);
+                ++j;
+            }
+            
+            n = static_cast<long long>(nums[i]);
+            
+            auto it = m.lower_bound(n - t);
+            
+            if( it!=m.end() && (it->first - n) <= t ) //key: using long long to avoid overflow.
+            {
+                return true;
+            }
+            
+            m[n] = i;
+        }
+        
+        return false;
+    }
+};
+
+//<--> 221. Maximal Square
+/*
+Given a 2D binary matrix filled with 0's and 1's, 
+find the largest square containing only 1's and return its area.
+
+For example, given the following matrix:
+
+1 0 1 0 0
+1 0 1 1 1
+1 1 1 1 1
+1 0 0 1 0
+Return 4.
+*/
+
+/*
+当我们判断以某个点为正方形右下角时最大的正方形时，
+那它的上方，左方和左上方三个点也一定是某个正方形的右下角，
+否则该点为右下角的正方形最大就是它自己了。这是定性的判断，
+那具体的最大正方形边长呢？我们知道，该点为右下角的正方形的最大边长，
+最多比它的上方，左方和左上方为右下角的正方形的边长多1，
+最好的情况是是它的上方，左方和左上方为右下角的正方形的大小都一样的，
+这样加上该点就可以构成一个更大的正方形。但如果它的上方，左方和左上方为右下角的正方形的大小不一样，
+合起来就会缺了某个角落，这时候只能取那三个正方形中最小的正方形的边长加1了。
+假设dp[i][j]表示以i,j为右下角的正方形的最大边长，则有
+
+dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
+当然，如果这个点在原矩阵中本身就是0的话，那dpi肯定就是0了。
+*/
+
+class Solution {
+public:
+    int maximalSquare(vector<vector<char>>& matrix) 
+	{
+		if(!matrix.empty() || !matrix[0].empty())
+		{
+			return 0;
+		}
+		
+		auto & M = matrix;
+		
+		int rows = M.size();
+		int cols = M[0].size();
+		
+		vector<vector<int>> dp(rows, vector<int>(cols, 0));
+		
+		int max_sq = 0;
+		
+		for(int i = 0; i< rows; ++i)
+		{
+			dp[i][0] = M[i][0] - '0';
+			max_sq = max(max_sq, dp[i][0]);
+		}
+		
+		for(int j = 0; j< cols; ++j)
+		{
+			dp[0][j] = M[0][j] - '0';
+			max_sq = max(max_sq, dp[0][j]);
+		}
+		
+		for(int i = 1; i<rows; ++i)
+		{
+			for(int j = 1; j<cols; ++j)
+			{
+				if(M[i][j] == '1')
+				{
+					dp[i][j] = min( dp[i-1][j-1], min( dp[i][j-1], dp[i-1][j] ) ) + 1;  
+				}
+				
+				max_sq = max( dp[i][j], max_sq );
+			}
+		}
+		
+		return max_sq * max_sq; //key: max_sq is the side
+    }
+};
+
+//<--> 222. Count Complete Tree Nodes
+/*
+Given a complete binary tree, count the number of nodes.
+
+In a complete binary tree every level, 
+
+except possibly the last, is completely filled, 
+
+and all nodes in the last level are as far left as possible.
+
+ It can have between 1 and 2h nodes inclusive at the last level h.
+*/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    int countNodes(TreeNode* root) 
+	{
     }
 };
