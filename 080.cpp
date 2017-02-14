@@ -3696,11 +3696,307 @@ Given {1,2,3,4}, reorder it to {1,4,2,3}.
  */
 class Solution {
 public:
-    void reorderList(ListNode* head) {
-        
+    void reorderList(ListNode* head) 
+	{    
     }
 };
 
+//<--> 144. Binary Tree Preorder Traversal
+/*
+Given a binary tree, return the preorder traversal of its nodes' values.
+
+For example:
+Given binary tree {1,#,2,3},
+   1
+    \
+     2
+    /
+   3
+return [1,2,3].
+
+Note: Recursive solution is trivial, could you do it iteratively?
+*/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> preorderTraversal(TreeNode* root) 
+	{    
+    }
+};
+
+//<--> 145. Binary Tree Postorder Traversal
+/*
+Given a binary tree, return the postorder traversal of its nodes' values.
+
+For example:
+Given binary tree {1,#,2,3},
+   1
+    \
+     2
+    /
+   3
+return [3,2,1].
+
+Note: Recursive solution is trivial, could you do it iteratively?
+*/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> postorderTraversal(TreeNode* root) 
+	{
+		vector<int> res;
+		post_order(root,res);
+    }
+	
+	void post_order(TreeNode* root, vector<int>& out)
+	{
+		if(!root)
+		{
+			return;
+		}
+		
+		stack<TreeNode*> s;
+		s.push(root);
+		
+		while(!s.empty())
+		{
+			auto t = s.top();
+			s.pop();
+			
+			out.insert(out.begin(), t->val);
+			
+			if(t->left)
+			{
+				s.push(t->left);
+			}
+			
+			if(t->right)
+			{
+				s.push(t->right);
+			}
+		}
+	}
+};
+
+//<--> 146. LRU Cache
+/*
+Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+
+get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
+put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
+
+Follow up:
+Could you do both operations in O(1) time complexity?
+
+Example:
+
+LRUCache cache = new LRUCache( 2 //  );
+
+cache.put(1, 1);
+cache.put(2, 2);
+cache.get(1);       // returns 1
+cache.put(3, 3);    // evicts key 2
+cache.get(2);       // returns -1 (not found)
+cache.put(4, 4);    // evicts key 1
+cache.get(1);       // returns -1 (not found)
+cache.get(3);       // returns 3
+cache.get(4);       // returns 4
+*/
+class LRUCache {
+public:
+    LRUCache(int capacity) {
+        
+		max_c = capacity;
+    }
+    
+    int get(int key) 
+	{
+		auto it = m.find(key);
+		
+		if(it==m.end())
+		{
+			return -1;
+		}
+		
+		cache.splice(cache.begin(), cache, it->second); //move the current iterator into the beginning of the list.
+		return it->second->second; //key: it->second return the iterator in the list, and it->second->second returns the pair's second
+    }
+    
+    void put(int key, int value) 
+	{
+		auto it = m.find(key);
+		if(it!=m.end())
+		{
+			cache.erase(it); //key: no need to remove from map since we will update m[key] later
+		}
+		
+		cache.emplace_front(key,value);
+		
+		m[key] = cache.begin(); //key: we need to put new element into the first positon of the list;
+		
+		if(m.size()>max_c)
+		{
+			int remove_key = cache.back().first;
+			m.erase(remove_key);
+			cache.pop_back();
+		}
+    }
+	
+	private:
+		
+		int max_c;
+		
+		list<pair<int,int>> cache;
+		
+		unordered_map<int, list<pair<int,int>>::iterator> m;
+};
+
+/**
+ * Your LRUCache object will be instantiated and called as such:
+ * LRUCache obj = new LRUCache(capacity);
+ * int param_1 = obj.get(key);
+ * obj.put(key,value);
+ */
+
+//<--> 147. Insertion Sort List
+/*
+Sort a linked list using insertion sort.
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* insertionSortList(ListNode* head) 
+	{
+		auto dummy = new ListNode(-1);
+		
+		auto cur = head;
+		
+		while(cur)
+		{
+			auto next = cur->next;
+			auto new_cur = dummy;
+			
+			while(new_cur->next && new_cur->next->val < cur->val)
+			{
+				new_cur = new_cur->next;
+			}
+			
+			cur->next = new_cur->next;
+			new_cur->next = cur;
+			cur = next;
+		}
+		
+		return dummy->next;
+    }
+};
+
+//<--> 148. Sort List
+/*
+Sort a linked list in O(n log n) time using constant space complexity.
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* sortList(ListNode* head) {
+        
+		if(!head || !head->next)
+		{
+			return head;
+		}
+		
+		auto slow = head, fast = head;
+		ListNode* pre = nullptr;
+		
+		while(fast && fast->next)
+		{
+			pre = slow;
+			slow = slow->next;
+			fast = fast->next->next;
+		}
+		
+		pre->next = nullptr;
+		
+		return merge(sortList(head), sortList(slow));
+		
+    }
+	
+	ListNode* merge(ListNode* l1, ListNode* l2)
+	{
+		auto dummy = new ListNode(-1);
+		auto cur = dummy;
+		
+		while(l1&&l2)
+		{
+			if(l1->val < l2->val)
+			{
+				cur->next = l1;
+				l1 = l1->next;
+			}
+			else
+			{
+				cur->next = l2;
+				l2 = l2->next;
+			}
+			
+			cur = cur->next;
+		}
+		
+		if(l1) cur->next = l1;
+		if(l2) cur->next = l2;
+		
+		return dummy->next;
+	}
+	
+	//recursive merge
+	ListNode* merge(ListNode* l1, ListNode* l2)
+	{
+		if(!l1) return l2;
+		if(!l2) return l2;
+		
+		if(l1->val < l2->val)
+		{
+			l1->next = merge(l1->next, l2);
+			return l1;
+		}
+		else
+		{
+			l2->next = merge(l1, l2->next);
+			return l2;
+		}
+		
+	}
+};
+ 
 //<--> 151. Reverse Words in a String
 /*
 Given an input string, reverse the string word by word.
