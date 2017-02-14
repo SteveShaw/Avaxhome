@@ -5068,3 +5068,1202 @@ class TwoSum
     private:
         unordered_map<int, int> m;
 }
+
+
+//<--> 172. Factorial Trailing Zeroes
+/*
+Given an integer n, return the number of trailing zeroes in n!.
+
+Note: Your solution should be in logarithmic time complexity.
+*/
+class Solution {
+public:
+    int trailingZeroes(int n)
+    {
+        int res = 0;
+        while(n!=0)
+        {
+            res += n/5;
+            n /= 5;
+        }
+        
+        return res;
+    }
+};
+
+
+//<--> 173. Binary Search Tree Iterator
+/*
+Implement an iterator over a binary search tree (BST).
+
+Your iterator will be initialized with the root node of a BST.
+
+Calling next() will return the next smallest number in the BST.
+
+Note: next() and hasNext() should run in average O(1) time and uses O(h) memory,
+
+where h is the height of the tree.
+*/
+
+/**
+ * Definition for binary tree
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class BSTIterator {
+public:
+    BSTIterator(TreeNode *root)
+    {
+        while(root)
+        {
+            s.push(root);
+            root = root->left;
+        }
+    }
+
+    /** @return whether we have a next smallest number */
+    bool hasNext()
+    {
+        return !s.empty();
+    }
+
+    /** @return the next smallest number */
+    int next()
+    {
+        auto p = s.top();
+        s.pop();
+        
+        int res = p->val;
+        
+        if(p->right)
+        {
+            p = p->right;
+            while(p)
+            {
+                s.push(p);
+                p = p->left;
+            }
+        }
+        
+        return res;
+    }
+    
+    private:
+        stack<TreeNode*> s;
+};
+
+/**
+ * Your BSTIterator will be called like this:
+ * BSTIterator i = BSTIterator(root);
+ * while (i.hasNext()) cout << i.next();
+ */
+
+//<--> 174. Dungeon Game
+/*
+The demons had captured the princess (P) and imprisoned her
+in the bottom-right corner of a dungeon.
+
+The dungeon consists of M x N rooms laid out in a 2D grid.
+
+Our valiant knight (K) was initially positioned in the top-left room
+and must fight his way through the dungeon to rescue the princess.
+
+The knight has an initial health point represented by a positive integer.
+If at any point his health point drops to 0 or below, he dies immediately.
+
+Some of the rooms are guarded by demons, so the knight loses health
+(negative integers) upon entering these rooms;
+other rooms are either empty (0's)
+or contain magic orbs that increase the knight's health (positive integers).
+
+In order to reach the princess as quickly as possible,
+the knight decides to move only rightward or downward in each step.
+
+
+Write a function to determine the knight's minimum initial health
+so that he is able to rescue the princess.
+
+Notes:
+
+The knight's health has no upper bound.
+
+Any room can contain threats or power-ups,
+even the first room the knight enters and the bottom-right room
+where the princess is imprisoned.
+*/
+class Solution {
+public:
+    int calculateMinimumHP(vector<vector<int>>& dungeon)
+    {
+        auto& d = dungeon;
+        int rows = d.size();
+        int cols = d[0].size();
+        
+        vector<vector<int>> dp(rows, vector<int>(cols, 0));
+        
+        dp[rows-1][cols-1] = max(1, 1 - d[rows-1][cols-1]);
+        
+        for(int i = rows-2; i>=0; --i)
+        {
+            dp[i][cols-1] = max(1, dp[i+1][cols-1] - d[i][cols-1]);
+        }
+        
+        for(int j=cols - 2; j>=0; --j)
+        {
+            dp[rows-1][j] = max(1, dp[rows-1][j+1] - d[rows-1][j]);
+        }
+        
+        for(int i = rows-2; i>=0; --i)
+        {
+            for(int j = cols-2; j>=0; --j)
+            {
+                dp[i][j] = max(1, min(dp[i][j+1], dp[i+1][j]) - d[i][j] );
+            }
+        }
+        
+        return dp[0][0];
+    }
+};
+
+//<--> 179. Largest Number
+/*
+Given a list of non negative integers,
+
+arrange them such that they form the largest number.
+
+For example, given [3, 30, 34, 5, 9], t
+Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
+The input string does not contain leading or trailing spaces and the words are always separated by a single space.
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+Could you do it in-place without allocating extra space?
+he largest formed number is 9534330.
+
+Note: The result may be very large,
+
+so you need to return a string instead of an integer.
+*/
+class Solution {
+public:
+    string largestNumber(vector<int>& nums)
+    {
+        if(nums.empty())
+        {
+            return "";
+        }
+        
+        sort(nums.begin(), nums.end(), [](int a, int b){
+           
+           return to_string(a) + to_string(b) > to_string(b) + to_string(a);
+            
+        });
+        
+        string res;
+        
+        for( int d : nums )
+        {
+            res += to_string(d);
+        }
+        
+        return res[0] == '0' ? 0 : res;
+    }
+};
+
+//<--> 186. Reverse Words in a String II
+/*
+Given an input string, reverse the string word by word.
+A word is defined as a sequence of non-space characters.
+The input string does not contain leading or trailing spaces
+and the words are always separated by a single space.
+
+For example,
+Given s = "the sky is blue",
+return "blue is sky the".
+Could you do it in-place without allocating extra space?
+*/
+class Solution {
+public:
+    void reverseWords(string &s)
+    {
+        if(s.empty())
+        {
+            return;
+        }
+        
+        reverse(s.begin(), s.end());
+        
+        int store_pos = 0;
+        int len = s.size();
+        
+        for(int i = 0; i<len; ++i)
+        {
+            if(s[i] == ' ')
+            {
+                if(store_pos > 0)
+                {
+                    s[store_pos++] = ' ';
+                }
+            }
+            else
+            {
+                int j = i;
+                while(j<len && s[j] != ' ')
+                {
+                    s[store_pos++] = s[j++];
+                }
+                
+                reverse(s.begin()+store_pos - (j-i), s.begin() + store_pos);
+                
+                i = j;
+            }
+        }
+        
+        s.resize(store_pos);
+    }
+};
+
+//<--> 187. Repeated DNA Sequences
+/*
+All DNA is composed of a series of nucleotides abbreviated
+
+as A, C, G, and T, for example: "ACGAATTCCG".
+
+When studying DNA,
+
+it is sometimes useful to identify repeated sequences within the DNA.
+
+Write a function to find all the 10-letter-long sequences
+
+(substrings) that occur more than once in a DNA molecule.
+
+For example,
+
+Given s = "AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT",
+
+Return:
+["AAAAACCCCC", "CCCCCAAAAA"].
+*/
+
+class Solution {
+public:
+    vector<string> findRepeatedDnaSequences(string s)
+    {
+        string res;
+        if(s.size()<=10)
+        {
+            return {};
+        }
+        
+        int cur = 0;
+        int i = 0;
+        
+        int mask = 0x7ffffff;
+        
+        while(i<9)
+        {
+            cur = (cur <<  3) | (s[i++] & 7);
+        }
+        
+        int len = s.size();
+        
+        unordered_set m<int, int> m;
+        
+        while( i < len )
+        {
+            cur = ((cur & mask) << 3) | (s[i++] & 7);
+            
+            if(m.find[cur]!=m.end())
+            {
+                if(m[cur] == 1)
+                {
+                    res.push_back(s.substr(i-10, 10));
+                }
+                
+                ++m[cur];
+            }
+            else
+            {
+                m[cur] = 1;
+            }
+        }
+        
+        return res;
+    }
+};
+
+//<--> 188. Best Time to Buy and Sell Stock IV
+/*
+Say you have an array for which the ith element
+
+is the price of a given stock on day i.
+
+Design an algorithm to find the maximum profit.
+
+You may complete at most k transactions.
+
+Note:
+You may not engage in multiple transactions at the same time
+
+(ie, you must sell the stock before you buy again).
+*/
+
+/*
+ *In this post,
+ *we are only allowed to make at max k transactions.
+ *The problem can be solve by using dynamic programming.
+
+Let profit[t][i] represent maximum profit using at most t transactions up to day i
+(including day i). Then the relation is:
+
+profit[t][i] = max(profit[t][i-1], max(price[i] – price[j] + profit[t-1][j]))
+          for all j in range [0, i-1]
+
+profit[t][i] will be maximum of –
+
+1. profit[t][i-1] which represents not doing any transaction on the ith day.
+2. Maximum profit gained by selling on ith day.
+In order to sell shares on ith day,
+we need to purchase it on any one of [0, i – 1] days.
+If we buy shares on jth day and sell it on ith day,
+max profit will be price[i] – price[j] + profit[t-1][j]
+where j varies from 0 to i-1.
+Here profit[t-1][j] is best
+we could have done with one less transaction till jth day.
+ */
+
+class Solution {
+public:
+    int maxProfit(int k, vector<int>& prices)
+    {
+     
+        
+        if(k == 0||prices.empty())
+        {
+            return 0;
+        }
+        
+        int len = prices.size();
+           
+        vector<vector<int>> dp(k+1, vector<int>(len , 0));
+        
+        if( k > price.size() )
+        {
+            //since k is large than the prices length, we can sell as long as
+            //the price is higher than last day
+            
+            int result = 0;
+            
+            for(int i = 0; i< len; ++i)
+            {
+                if( prices[i] > prices[i-1] )
+                {
+                    result += prices[i] - prices[i-1];
+                }
+            }
+            
+            return result;
+        }
+        
+        for(int i = 1; i<=k; ++i)
+        {
+            for(int j = 1; j<len; ++j)
+            {
+                int max_so_far = INT_MIN;
+                
+                for(int m = 0; m< j; ++m)
+                {
+                    max_so_far = max(
+                                     max_so_far,
+                                     prices[j] - prices[m] + dp[i-1][m]
+                    );
+                }
+                
+                dp[i][j] = max(dp[i][j-1], max_so_far);
+            }
+        }
+        
+        return dp.back().back();
+    }
+    
+    // more efficient
+    int maxProfit(int k, vector<int>& prices)
+    {
+        if(k == 0||prices.empty())
+        {
+            return 0;
+        }
+        
+        int len = prices.size();
+           
+        vector<vector<int>> dp(k+1, vector<int>(len , 0));
+        
+        if( k > price.size() )
+        {
+            //since k is large than the prices length, we can sell as long as
+            //the price is higher than last day
+            
+            int result = 0;
+            
+            for(int i = 0; i< len; ++i)
+            {
+                if( prices[i] > prices[i-1] )
+                {
+                    result += prices[i] - prices[i-1];
+                }
+            }
+            
+            return result;
+        }
+        
+        for(int i = 1; i<=k; ++i)
+        {
+            int prev_diff = INT_MIN;
+            
+            for(int j = 1; j<len; ++j)
+            {
+                prev_diff = max(prev_diff, dp[i-1][j-1] - prices[j-1]);               
+                dp[i][j] = max(dp[i][j-1], prev_diff + prices[j]);
+            }
+        }
+        
+        return dp.back().back();
+    }    
+};
+
+//<--> 189. Rotate Array
+/*
+Rotate an array of n elements to the right by k steps.
+
+For example, with n = 7 and k = 3,
+the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].
+
+Note:
+Try to come up as many solutions as you can,
+there are at least 3 different ways to solve this problem.
+*/
+class Solution {
+public:
+    void rotate(vector<int>& nums, int k)
+    {
+        
+    }
+};
+
+//<--> 190. Reverse Bits
+/*
+Reverse bits of a given 32 bits unsigned integer.
+
+For example, given input 43261596
+(represented in binary as 00000010100101000001111010011100),
+return 964176192 (represented in binary as 00111001011110000010100101000000).
+
+Follow up:
+If this function is called many times, how would you optimize it?
+*/
+
+class Solution {
+public:
+    uint32_t reverseBits(uint32_t n)
+    {
+        uint32_t res = 0;
+        
+        for(int i = 0; i< 32; ++i)
+        {
+            res |= ( (n>>1) & 1 ) << (31 - i);
+        }
+    }
+};
+
+
+//<--> 198. House Robber
+/*
+You are a professional robber planning to rob houses along a street.
+
+Each house has a certain amount of money stashed,
+
+the only constraint stopping you from robbing each of them is that
+
+adjacent houses have security system connected
+
+and it will automatically contact the police
+
+if two adjacent houses were broken into on the same night.
+
+Given a list of non-negative integers representing
+the amount of money of each house,
+determine the maximum amount of money you can rob tonight
+without alerting the police.
+*/
+class Solution {
+public:
+    int rob(vector<int>& nums)
+    {
+    }
+};
+
+//<--> 199. Binary Tree Right Side View
+/*
+Given a binary tree,
+
+imagine yourself standing on the right side of it,
+
+return the values of the nodes you can see ordered from top to bottom.
+
+For example:
+Given the following binary tree,
+   1            <---
+ /   \
+2     3         <---
+ \     \
+  5     4       <---
+You should return [1, 3, 4].
+*/
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    vector<int> rightSideView(TreeNode* root)
+    {
+        
+    }
+};
+
+//<--> 200. Number of Islands
+/*
+Given a 2d grid map of '1's (land) and '0's (water),
+
+count the number of islands.
+
+An island is surrounded by water
+
+and is formed by connecting adjacent lands horizontally or vertically.
+
+You may assume all four edges of the grid are all surrounded by water.
+
+Example 1:
+
+11110
+11010
+11000
+00000
+Answer: 1
+
+Example 2:
+
+11000
+11000
+00100
+00011
+Answer: 3
+*/
+class Solution {
+public:
+    int numIslands(vector<vector<char>>& grid)
+    {    
+    }
+};
+
+//<--> 201. Bitwise AND of Numbers Range
+/*
+Given a range [m, n] where 0 <= m <= n <= 2147483647,
+
+return the bitwise AND of all numbers in this range, inclusive.
+
+For example, given the range [5, 7], you should return 4.
+*/
+class Solution {
+public:
+    int rangeBitwiseAnd(int m, int n)
+    {  
+    }
+};
+
+//<--> 202. Happy Number
+/*
+Write an algorithm to determine if a number is "happy".
+
+A happy number is a number
+defined by the following process:
+Starting with any positive integer,
+replace the number by the sum of the squares of its digits,
+and repeat the process
+until the number equals 1 (where it will stay),
+or it loops endlessly in a cycle which does not include 1.
+Those numbers for which this process ends in 1 are happy numbers.
+
+Example: 19 is a happy number
+
+1^2 + 9^2 = 82
+8^2 + 2^2 = 68
+6^2 + 8^2 = 100
+1^2 + 0^2 + 0^2 = 1
+*/
+class Solution {
+public:
+    bool isHappy(int n)
+    {    
+    }
+};
+
+//<--> 203. Remove Linked List Elements
+/*
+Remove all elements from a linked list of integers that have value val.
+
+Example
+Given: 1 --> 2 --> 6 --> 3 --> 4 --> 5 --> 6, val = 6
+Return: 1 --> 2 --> 3 --> 4 --> 5
+*/
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* removeElements(ListNode* head, int val)
+    {
+        
+    }
+};
+
+//<--> 204. Count Primes
+/*
+Count the number of prime numbers
+less than a non-negative number, n.
+*/
+class Solution {
+public:
+    int countPrimes(int n)
+    {
+        
+    }
+};
+
+//<--> 205. Isomorphic Strings
+/*
+Given two strings s and t, determine if they are isomorphic.
+
+Two strings are isomorphic if the characters in s can be replaced to get t.
+
+All occurrences of a character
+
+must be replaced with another character
+
+while preserving the order of characters.
+No two characters may map to the same character
+but a character may map to itself.
+
+For example,
+Given "egg", "add", return true.
+
+Given "foo", "bar", return false.
+
+Given "paper", "title", return true.
+
+Note:
+You may assume both s and t have the same length.
+*/
+class Solution {
+public:
+    bool isIsomorphic(string s, string t) {
+    }
+};
+
+
+//<--> 206. Reverse Linked List
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* reverseList(ListNode* head)
+    {
+        
+    }
+};
+
+//<--> 207. Course Schedule
+/*
+There are a total of n courses you have to take, labeled from 0 to n - 1.
+
+Some courses may have prerequisites,
+
+for example to take course 0 you have to first take course 1,
+
+which is expressed as a pair: [0,1]
+
+Given the total number of courses and a list of prerequisite pairs,
+
+is it possible for you to finish all courses?
+
+For example:
+
+2, [[1,0]]
+
+There are a total of 2 courses to take.
+
+To take course 1 you should have finished course 0. So it is possible.
+
+
+2, [[1,0],[0,1]]
+There are a total of 2 courses to take.
+
+To take course 1 you should have finished course 0,
+
+and to take course 0 you should also have finished course 1.
+
+So it is impossible.
+
+Note:
+The input prerequisites is a graph represented by a list of edges,
+not adjacency matrices. Read more about how a graph is represented.
+
+You may assume that there are no duplicate edges in the input prerequisites.
+
+Hints:
+1. This problem is equivalent to finding
+if a cycle exists in a directed graph.
+If a cycle exists, no topological ordering exists
+and therefore it will be impossible to take all courses.
+2. Topological Sort via DFS - A great video tutorial (21 minutes) on Coursera
+explaining the basic concepts of Topological Sort.
+3. Topological sort could also be done via BFS.
+*/
+class Solution {
+public:
+    bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites)
+    {
+        
+    }
+};
+
+//<--> 208. Implement Trie (Prefix Tree)
+/*
+Implement a trie with insert, search, and startsWith methods.
+
+Note:
+You may assume that all inputs are consist of lowercase letters a-z.
+*/
+class Trie {
+public:
+    /** Initialize your data structure here. */
+    Trie() {
+        
+    }
+    
+    /** Inserts a word into the trie. */
+    void insert(string word) {
+        
+    }
+    
+    /** Returns if the word is in the trie. */
+    bool search(string word) {
+        
+    }
+    
+    /** Returns if there is any word in the trie that starts with the given prefix. */
+    bool startsWith(string prefix) {
+        
+    }
+};
+
+/**
+ * Your Trie object will be instantiated and called as such:
+ * Trie obj = new Trie();
+ * obj.insert(word);
+ * bool param_2 = obj.search(word);
+ * bool param_3 = obj.startsWith(prefix);
+ */
+
+//<--> 209. Minimum Size Subarray Sum
+/*
+Given an array of n positive integers
+
+and a positive integer s, find the minimal length
+of a contiguous subarray of which the sum >= s.
+
+If there isn't one, return 0 instead.
+
+For example, given the array [2,3,1,2,4,3] and s = 7,
+the subarray [4,3] has the minimal length under the problem constraint.
+
+More practice:
+If you have figured out the O(n) solution,
+
+try coding another solution of which the time complexity is O(n log n).
+*/
+
+class Solution {
+public:
+    int minSubArrayLen(int s, vector<int>& nums)
+    {
+        
+    }
+};
+
+//<--> 210. Course Schedule II
+/*
+There are a total of n courses you have to take, labeled from 0 to n - 1.
+
+Some courses may have prerequisites,
+for example to take course 0 you have to first take course 1,
+\which is expressed as a pair: [0,1]
+
+Given the total number of courses
+and a list of prerequisite pairs, return the ordering of courses you should take to finish all courses.
+
+There may be multiple correct orders, you just need to return one of them. If it is impossible to finish all courses, return an empty array.
+
+For example:
+
+2, [[1,0]]
+There are a total of 2 courses to take. To take course 1 you should have finished course 0. So the correct course order is [0,1]
+
+4, [[1,0],[2,0],[3,1],[3,2]]
+There are a total of 4 courses to take. To take course 3 you should have finished both courses 1 and 2. Both courses 1 and 2 should be taken after you finished course 0. So one correct course order is [0,1,2,3]. Another correct ordering is[0,2,1,3].
+
+Note:
+The input prerequisites is a graph represented by a list of edges, not adjacency matrices. Read more about how a graph is represented.
+You may assume that there are no duplicate edges in the input prerequisites.
+*/
+
+//<--> 211. Add and Search Word - Data structure design
+/*
+Design a data structure that supports the following two operations:
+
+void addWord(word)
+bool search(word)
+
+search(word) can search a literal word or a regular expression string containing only letters a-z or .. A
+
+. means it can represent any one letter.
+
+For example:
+
+addWord("bad")
+addWord("dad")
+addWord("mad")
+search("pad") -> false
+search("bad") -> true
+search(".ad") -> true
+search("b..") -> true
+Note:
+You may assume that all words are consist of lowercase letters a-z.
+*/
+
+class WordDictionary {
+public:
+    /** Initialize your data structure here. */
+    WordDictionary() {
+        
+    }
+    
+    /** Adds a word into the data structure. */
+    void addWord(string word) {
+        
+    }
+    
+    /** Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter. */
+    bool search(string word) {
+        
+    }
+};
+
+/**
+ * Your WordDictionary object will be instantiated and called as such:
+ * WordDictionary obj = new WordDictionary();
+ * obj.addWord(word);
+ * bool param_2 = obj.search(word);
+ */
+
+//<--> 212. Word Search II
+/*
+Given a 2D board and a list of words from the dictionary, find all words in the board.
+
+Each word must be constructed from letters of sequentially adjacent cell,
+where "adjacent" cells are those horizontally or vertically neighboring.
+The same letter cell may not be used more than once in a word.
+
+For example,
+Given words = ["oath","pea","eat","rain"] and board =
+
+[
+  ['o','a','a','n'],
+  ['e','t','a','e'],
+  ['i','h','k','r'],
+  ['i','f','l','v']
+]
+
+Return ["eat","oath"].
+Note:
+You may assume that all inputs are consist of lowercase letters a-z.
+
+You would need to optimize your backtracking to pass the larger test.
+
+Could you stop backtracking earlier?
+
+If the current candidate does not exist in all words' prefix,
+
+you could stop backtracking immediately.
+
+What kind of data structure could answer such query efficiently?
+
+Does a hash table work? Why or why not? How about a Trie?
+
+If you would like to learn how to implement a basic trie,
+
+please work on this problem: Implement Trie (Prefix Tree) first.
+*/
+
+class Solution {
+public:
+    vector<string> findWords(vector<vector<char>>& board, vector<string>& words)
+    {    
+    }
+};
+
+//<--> 213. House Robber II (Too easy) 
+/*
+After robbing those houses on that street,
+
+the thief has found himself a new place for his thievery
+
+so that he will not get too much attention.
+
+This time, all houses at this place are arranged in a circle.
+
+That means the first house is the neighbor of the last one.
+
+Meanwhile, the security system for these houses remain
+
+the same as for those in the previous street.
+
+Given a list of non-negative integers representing
+
+the amount of money of each house,
+
+determine the maximum amount of money
+
+you can rob tonight without alerting the police.
+*/
+class Solution {
+public:
+    int rob(vector<int>& nums)
+    {
+    }
+};
+
+//<--> 214. Shortest Palindrome
+/*
+Given a string S, you are allowed to convert it to
+
+a palindrome by adding characters in front of it.
+
+Find and return the shortest palindrome you can find by performing this transformation.
+
+For example:
+
+Given "aacecaaa", return "aaacecaaa".
+
+Given "abcd", return "dcbabcd".
+*/
+
+class Solution {
+public:
+    string shortestPalindrome(string s)
+    {    
+    }
+};
+
+//<--> 215. Kth Largest Element in an Array
+/*
+Find the kth largest element in an unsorted array.
+
+Note that it is the kth largest element in the sorted order, not the kth distinct element.
+
+For example,
+Given [3,2,1,5,6,4] and k = 2, return 5.
+
+Note: 
+You may assume k is always valid, 1 <=  k <= array's length.
+*/
+
+class Solution {
+public:
+    int findKthLargest(vector<int>& nums, int k)
+    {    
+    }
+};
+
+
+//<--> 216. Combination Sum III
+/*
+Find all possible combinations of k numbers
+that add up to a number n,
+given that only numbers from 1 to 9 can be used and
+each combination should be a unique set of numbers.
+
+Example 1:
+
+Input: k = 3, n = 7
+
+Output:
+
+[[1,2,4]]
+
+Example 2:
+
+Input: k = 3, n = 9
+
+Output:
+
+[[1,2,6], [1,3,5], [2,3,4]]
+*/
+class Solution {
+public:
+    vector<vector<int>> combinationSum3(int k, int n)
+    {    
+    }
+};
+
+
+//<--> 217. Contains Duplicate <-->
+/*
+Given an array of integers,
+find if the array contains any duplicates.
+Your function should return true
+if any value appears at least twice in the array,
+and it should return false if every element is distinct.
+*/
+
+class Solution {
+public:
+    bool containsDuplicate(vector<int>& nums)
+    {    
+    }
+};
+
+//<--> 218. The Skyline Problem
+/*
+A city's skyline is the outer contour of the silhouette
+formed by all the buildings in that city when viewed from a distance. Now suppose you are given the locations and height of all the buildings as shown on a cityscape photo (Figure A),
+write a program to output the skyline formed
+by these buildings collectively
+
+The geometric information of each building
+
+is represented by a triplet of integers [Li, Ri, Hi],
+
+where Li and Ri are the x coordinates of
+
+the left and right edge of the ith building, respectively,
+
+and Hi is its height.
+
+It is guaranteed that 0 <= Li, Ri <= INT_MAX, 0 < Hi <= INT_MAX,
+and Ri - Li > 0. You may assume all buildings are perfect rectangles
+grounded on an absolutely flat surface at height 0.
+
+For instance, the dimensions of all buildings in Figure A
+
+are recorded as: [ [2 9 10], [3 7 15], [5 12 12], [15 20 10], [19 24 8] ] .
+
+The output is a list of "key points" (red dots in Figure B)
+
+in the format of [ [x1,y1], [x2, y2], [x3, y3], ... ]
+
+that uniquely defines a skyline.
+
+A key point is the left endpoint of a horizontal line segment.
+
+Note that the last key point,
+
+where the rightmost building ends,
+
+is merely used to mark the termination of the skyline,
+
+and always has zero height.
+
+Also, the ground in between any two adjacent buildings
+
+should be considered part of the skyline contour.
+
+For instance, the skyline in Figure B should be represented as:
+
+[ [2 10], [3 15], [7 12], [12 0], [15 10], [20 8], [24, 0] ]
+
+Notes:
+
+1. The number of buildings in any input list
+is guaranteed to be in the range [0, 10000].
+2. The input list is already sorted in ascending order
+by the left x position Li.
+3. The output list must be sorted by the x position.
+4. There must be no consecutive horizontal lines
+of equal height in the output skyline.
+For instance, [...[2 3], [4 5], [7 5], [11 5], [12 7]...]
+is not acceptable; the three lines of height 5 should be merged
+into one in the final output as such: [...[2 3], [4 5], [12 7], ...]
+*/
+
+class Solution {
+public:
+    vector<pair<int, int>> getSkyline(vector<vector<int>>& buildings)
+    {    
+    }
+};
+
+//<--> 219. Contains Duplicate II
+/*
+Given an array of integers and an integer k,
+
+find out whether there are two distinct indices i and j
+
+in the array such that nums[i] = nums[j]
+
+and the absolute difference between i and j is at most k.
+*/
+class Solution {
+public:
+    bool containsNearbyDuplicate(vector<int>& nums, int k)
+    {
+        
+    }
+};
+
+//<--> 220. Contains Duplicate III
+/*
+Given an array of integers,
+find out whether there are two distinct indices i and j in the array
+such that the absolute difference between nums[i] and nums[j]
+is at most t and the absolute difference between i and j is at most k.
+*/
+
+class Solution {
+public:
+    bool containsNearbyAlmostDuplicate(vector<int>& nums, int k, int t)
+    {     
+    }
+};
