@@ -6406,7 +6406,479 @@ and all nodes in the last level are as far left as possible.
  */
 class Solution {
 public:
-    int countNodes(TreeNode* root) 
-	{
+    int countNodes(TreeNode* root)
+    {
+        auto l = root;
+        auto r = root;
+
+        int l_height = 0;
+
+        while(l)
+        {
+            ++l_height;   // key: compute the height of left tree
+            l = l->left;
+        }
+
+        int r_height = 0;
+
+        while(r)
+        {
+            ++r_height;   // key: compute the height of right tree.
+            r = r->right;
+        }
+
+        if(l_height == r_height)
+        {
+            return 1<<l_height - 1;
+        }
+
+        return countNodes(root->left) + countNodes(root->right) + 1;
+    }
+};
+
+//<--> 223. Rectangle Area
+/*
+Find the total area covered by two rectilinear rectangles in a 2D plane.
+
+Each rectangle is defined by its bottom left corner and top right corner
+
+Assume that the total area is never beyond the maximum possible value of int.
+*/
+
+/*
+ *先找出所有的不相交的情况，只有四种，一个矩形在另一个的上下左右四个位置不重叠，
+ *这四种情况下返回两个矩形面积之和。其他所有情况下两个矩形是有交集的，
+ *这时候我们只要算出长和宽，即可求出交集区域的大小，
+ *然后从两个巨型面积之和中减去交集面积就是最终答案。
+ *求交集区域的长和宽也不难，由于交集都是在中间，
+ *所以横边的左端点是两个矩形左顶点横坐标的较大值，右端点是两个矩形右顶点的较小值，
+ *同理，竖边的下端点是两个矩形下顶点纵坐标的较大值，上端点是两个矩形上顶点纵坐标的较小值
+ */
+
+class Solution {
+public:
+    int computeArea(int A, int B, int C, int D, int E, int F, int G, int H)
+    {
+        int sum = (C-A)*(D-B) + (G-E)*(H-F);
+        
+        if(A>=G||B>=H||E>=C||F>=D) // key: non-overlap: min > max (A is the min left, G is the max left of another rectangle)
+        {
+            return sum;
+        }
+        
+        return sum - (min(G,C) - max(A,E))*(min(H,D) - max(B,F)); // min(max, max) - max (min, min);
+    }
+};
+
+//<--> 224. Basic Calculator
+/*
+Implement a basic calculator to evaluate a simple expression string.
+
+The expression string may contain open ( and closing parentheses ),
+
+the plus + or minus sign -, non-negative integers and empty spaces .
+
+You may assume that the given expression is always valid.
+
+Some examples:
+"1 + 1" = 2
+" 2-1 + 2 " = 3
+"(1+(4+5+2)-3)+(6+8)" = 23
+*/
+class Solution {
+public:
+    int calculate(string s)
+    {
+        int sum = 0;
+        
+        vector<int> sign(2,1); // key: this is a vector for '+' and '-': reason for 2 is that add a additional one to make the arry is not empty
+        
+        int len = s.size();
+        
+        for(int i = 0; i<len; ++i)
+        {
+            auto c = s[i];
+            
+            if(c>='0')
+            {
+                int num = 0;
+                
+                while(i<len && s[i] >= '0')
+                {
+                    num = 10*num + s[i] - '0';
+                    ++i;
+                }
+                
+                sum += sign.back()*num;
+                sign.pop_back();
+                
+                --i; // without --i, we will skip a item since the loop will take ++i after this block.
+            }
+            else if(c==')')
+            {
+                //this means the block with parenthesis is completed
+                sign.pop_back();
+            }
+            else if(c!=' ')
+            {
+                sign.push_back(sign.back() * (c=='-'?=1:1));
+            }
+        }
+        
+        return sum;
+    }
+};
+
+//<--> 225. Implement Stack using Queues
+/*
+Implement the following operations of a stack using queues.
+
+push(x) -- Push element x onto stack.
+pop() -- Removes the element on top of the stack.
+top() -- Get the top element.
+empty() -- Return whether the stack is empty.
+Notes:
+You must use only standard operations of a queue --
+which means only push to back, peek/pop from front, size, and is empty operations are valid.
+Depending on your language, queue may not be supported natively.
+You may simulate a queue by using a list or deque (double-ended queue),
+as long as you use only standard operations of a queue.
+You may assume that all operations are valid
+(for example, no pop or top operations will be called on an empty stack).*
+*/
+//总共需要两个队列，其中一个队列用来放最后加进来的数，
+//模拟栈顶元素。剩下所有的数都按顺序放入另一个队列中。
+//当push操作时，将新数字先加入模拟栈顶元素的队列中，
+//如果此时队列中有数字，则将原本有的数字放入另一个队中，让
+//新数字在这队中，用来模拟栈顶元素。
+//当top操作时，如果模拟栈顶的队中有数字则直接返回，
+//如果没有则到另一个队列中通过平移数字取出最后一个数字加入模拟栈顶的队列中。
+//当pop操作时，先执行下top()操作，保证模拟栈顶的队列中有数字，
+//然后再将该数字移除即可。当empty操作时，当两个队列都为空时，栈为空。
+
+//这道题还有另一种解法，可比较好记，只要实现对了push函数，
+//后面三个直接调用队列的函数即可。
+//这种方法的原理就是每次把新加入的数插到前头，
+//这样队列保存的顺序和栈的顺序是相反的，
+//它们的取出方式也是反的，那么反反得正，就是我们需要的顺序了。
+//我们需要一个辅助队列tmp，把s的元素也逆着顺序存入tmp中，此
+//时加入新元素x，再把tmp中的元素存回来，这样就是我们要的顺序了，
+//其他三个操作也就直接调用队列的操作即可
+
+class MyStack {
+public:
+    /** Initialize your data structure here. */
+    MyStack() {
+        
+    }
+    
+    /** Push element x onto stack. */
+    void push(int x) {
+        
+    }
+    
+    /** Removes the element on top of the stack and returns that element. */
+    int pop() {
+        
+    }
+    
+    /** Get the top element. */
+    int top() {
+        
+    }
+    
+    /** Returns whether the stack is empty. */
+    bool empty() {
+        
+    }
+};
+
+/**
+ * Your MyStack object will be instantiated and called as such:
+ * MyStack obj = new MyStack();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.top();
+ * bool param_4 = obj.empty();
+ */
+
+// <--> 226. Invert Binary Tree
+
+/*
+ Invert a binary tree.
+
+     4
+   /   \
+  2     7
+ / \   / \
+1   3 6   9
+
+to
+     4
+   /   \
+  7     2
+ / \   / \
+9   6 3   1
+
+*/
+
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* invertTree(TreeNode* root)
+    {
+        if(!root)
+        {
+            return root;
+        }
+        
+        swap(root->left, root->right);
+        
+        invertTree(root->left);
+        invertTree(root->right);
+        
+        return root;
+    }
+};
+
+//<--> 227. Basic Calculator II
+/*
+Implement a basic calculator to evaluate a simple expression string.
+
+The expression string contains only non-negative integers,
+
++, -, *, / operators and empty spaces . The integer division should truncate toward zero.
+
+You may assume that the given expression is always valid.
+
+Some examples:
+"3+2*2" = 7
+" 3/2 " = 1
+" 3+5 / 2 " = 5
+*/
+class Solution {
+public:
+    int calculate(string s)
+    {    
+    }
+};
+
+//<--> 228. Summary Ranges
+/*
+Given a sorted integer array without duplicates,
+
+return the summary of its ranges.
+
+For example, given [0,1,2,4,5,7], return ["0->2","4->5","7"].
+*/
+
+class Solution {
+public:
+    vector<string> summaryRanges(vector<int>& nums)
+    {
+        int i = 0;
+        int n = nums.size();
+        
+        vector<string> res;
+        
+        while(i<n)
+        {
+            int j = 1;
+            
+            while(i+j<n && nums[i+j] - nums[i] == j)
+            {
+                ++j;
+            }
+            
+            if(j == 1)
+            {
+                res.push_back(to_string(nums[i]));
+            }
+            else
+            {
+                res.push_back(to_string(nums[i]) + "->" + to_string(nums[i+j-1]));
+            }
+            
+            i += j;
+        }
+        
+        return res;
+    }
+};
+
+//<--> 229. Majority Element II
+/*
+Given an integer array of size n,
+
+find all elements that appear more than ⌊ n/3 ⌋ times.
+
+The algorithm should run in linear time and in O(1) space.
+*/
+
+//任意一个数组出现次数大于n/3的众数最多有两个，
+//那么有了这个信息，我们使用投票法的核心是找出两个候选众数进行投票，
+//需要两遍遍历，第一遍历找出两个候选众数，
+//第二遍遍历重新投票验证这两个候选众数是否为众数即可，
+//这道题却没有这种限定，即满足要求的众数可能不存在，所以要有验证
+
+class Solution {
+public:
+    vector<int> majorityElement(vector<int>& nums)
+    {
+        vector<int> res;
+        
+        int m1 = 0, m2 = 0, count_m1 = 0, count_m2 = 0;
+        
+        for( auto n : nums )
+        {
+            if(n == m1)
+            {
+                ++count_m1;
+            }
+            else if(n == m2)
+            {
+                ++count_m2;
+            }
+            else if(count_m1==0)
+            {
+                m1 = n;
+                count_m1 = 1;
+            }
+            else if(count_m2==0)
+            {
+                m2 = n;
+                count_m2 = 1;
+            }
+            else
+            {
+                --count_m1;
+                --count_m2;
+            }
+        }
+        
+        count_m1 = 0;
+        count_m2 = 0;
+        
+        for(auto n : nums)
+        {
+            if(n==m1)
+            {
+                ++count_m1;
+            }
+            else if(n==m2)
+            {
+                ++count_m2;
+            }
+        }
+        
+        int len = nums.size();
+        
+        if(count_m1 > len / 3)
+        {
+            res.push_back(m1);
+        }
+        
+        if( count_m2 > len / 3 )
+        {
+            res.push_back(m2);
+        }
+        
+        return res;
+    }
+};
+
+//<--> 230. Kth Smallest Element in a BST
+/*
+Given a binary search tree, write a function kthSmallest to find the kth smallest element in it.
+
+Note: 
+You may assume k is always valid, 1 ≤ k ≤ BST's total elements.
+
+Follow up:
+What if the BST is modified (insert/delete operations)
+often and you need to find the kth smallest frequently? How would you optimize the kthSmallest routine?
+*/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    
+    // non recursive: inorder traverse will give the sorted result
+    int kthSmallest(TreeNode* root, int k)
+    {
+        stack<TreeNode*> s;
+        auto p = root;
+        
+        int count = 0;
+        
+        while(p || s.empty())
+        {
+            while(p)
+            {
+                s.push(p);
+                p = p->left;
+            }
+            
+            p = s.top();
+            s.pop();
+            
+            ++count;
+            
+            if(count == k)
+            {
+                return p->val;
+            }
+            
+            p = p->right;
+        }
+    }
+    
+    //recursive
+    
+    int kthSmallest(TreeNode* root, int k)
+    {
+        int count = 0;
+        return inorder(root, k, count);
+    }
+    
+    int inorder(TreeNode* root, int k, int& count)
+    {
+        if(!root)
+        {
+            return -1;
+        }
+        
+       
+        int val = inorder(root->left, k, count );
+        
+        if(k == count) // key: this could happened in left tree.
+        {
+            return val;
+        }
+        
+        ++count; //visit root 
+        
+        if(count == k)
+        {
+            return root->val;
+        }
+
+        return inorder(root->right, k, count);
+        
     }
 };
