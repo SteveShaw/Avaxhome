@@ -658,7 +658,7 @@ public:
         for(int i = 0; i<n; ++i)
         {
             int cur_sz = res.size();
-            for(int j = cur_sz; j>=0; --j) //key: this is mirror: from end to start
+            for(int j = cur_sz - 1; j>=0; --j) //key: this is mirror: from end to start
             {
                 res.push_back(res[j] | (1<<i));
             }
@@ -1159,7 +1159,7 @@ public:
                 {
                     TreeNode* tn = new TreeNode(i);
                     tn->left = left[j]; //important: 对产生的left子树集合的每一个sub tree，接到节点的 left
-                    tn->right = right[j]; //important: 对产生的right子树集合的每一个sub tree，接到节点的 right
+                    tn->right = right[k]; //important: 对产生的right子树集合的每一个sub tree，接到节点的 right
                     
                     out.push_back(tn);
                 }
