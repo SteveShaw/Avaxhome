@@ -6884,6 +6884,437 @@ public:
 };
 
 
+//<--> 231. Power of Two
+/*
+Given an integer, write a function to determine if it is a power of two.
+*/
+
+class Solution {
+public:
+    bool isPowerOfTwo(int n) {
+        
+        return (n > 0 ) && ( (n & ( n - 1 ) ) == 0 ); //key: n& (n-1) will remove a bit 1 from n;
+         
+    }
+};
+
+//<--> 232. Implement Queue using Stacks
+/*
+Implement the following operations of a queue using stacks.
+
+push(x) -- Push element x to the back of queue.
+pop() -- Removes the element from in front of queue.
+peek() -- Get the front element.
+empty() -- Return whether the queue is empty.
+
+Notes:
+1. You must use only standard operations of a stack --
+which means only push to top, peek/pop from top, size, and is empty operations are valid.
+2. Depending on your language, stack may not be supported natively.
+You may simulate a stack by using a list or deque (double-ended queue),
+as long as you use only standard operations of a stack.
+3. You may assume that all operations are valid
+(for example, no pop or peek operations will be called on an empty queue).
+
+// Method 1 (By making push operation costly)
+
+class MyQueue {
+public:
+    /** Initialize your data structure here. */
+    MyQueue() {
+        
+        
+    }
+    
+    /** Push element x to the back of queue. */
+    void push(int x) {
+        
+        stack<int> tmp;
+        while(!s.empty())
+        {
+            tmp.push(s.top());
+            s.pop();
+        }
+        
+        s.push(x);
+        while(!tmp.empty())
+        {
+            s.push(tmp.top());
+            tmp.pop();
+        }
+    }
+    
+    /** Removes the element from in front of queue and returns that element. */
+    int pop() {
+        
+        s.pop();
+    }
+    
+    /** Get the front element. */
+    int peek() {
+        
+        return s.top();
+    }
+    
+    /** Returns whether the queue is empty. */
+    bool empty() {
+        
+        return !s.empty();
+    }
+    
+    private:
+        stack<int> s;
+};
+
+/**
+ * Your MyQueue object will be instantiated and called as such:
+ * MyQueue obj = new MyQueue();
+ * obj.push(x);
+ * int param_2 = obj.pop();
+ * int param_3 = obj.peek();
+ * bool param_4 = obj.empty();
+ */
+
+
+// <--> 233. Number of Digit One
+/*
+Given an integer n, count the total number of digit 1 appearing
+
+in all non-negative integers less than or equal to n.
+
+For example:
+Given n = 13,
+Return 6, because digit 1 occurred in the following numbers: 1, 10, 11, 12, 13.
+*/
+class Solution {
+public:
+    int countDigitOne(int n) {
+        int res = 0;
+        int a = 1;
+        int b = 1;
+        
+        while(n > 0)
+        {
+            int q = n / 10;
+            int r = n - q * 10;
+            
+            res += (n+8)/10;
+            res += (r==1) ? b : 0;
+            
+            b += (r) * a;
+            a *= 10;
+            
+            n = q;
+        }
+    }
+};
+
+//<--> 234. Palindrome Linked List
+/*
+Given a singly linked list, determine if it is a palindrome.
+
+Follow up:
+Could you do it in O(n) time and O(1) space?
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+//using fast->next && fast->next->next, the slow will be at the position = length/2
+//using fast && fast->next, the slow will be at the position = (length+1)/2
+class Solution {
+public:
+    bool isPalindrome(ListNode* head)
+    {
+        if(!head || !head->next)
+        {
+            return true;
+        }
+        
+        auto slow = head;
+        auto fast = head;
+        
+        while(fast->next && fast->next->next)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+        }
+        
+        //key: reverse from slow->next to end;
+        auto last = slow->next;
+        while(last->next)
+        {
+            auto tmp = last->next;
+            last->next = tmp->next;
+            tmp->next = slow->next;
+            slow->next = tmp;
+        }
+        
+        auto pre = head;
+        while(slow->next)
+        {
+            slow = slow->next;
+            if(head->val != slow->val)
+            {
+                return false;
+            }
+            
+            pre = pre->next;
+        }
+        
+    }
+};
+
+//<--> 235. Lowest Common Ancestor of a Binary Search Tree
+/*
+Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+
+According to the definition of LCA on Wikipedia:
+
+“The lowest common ancestor is defined between two nodes v and w
+as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
+
+        _______6______
+       /              \
+    ___2__          ___8__
+   /      \        /      \
+   0      _4       7       9
+         /  \
+         3   5
+For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6.
+Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.
+*/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
+    {
+        if(!root)
+        {
+            return root;
+        }
+        
+        if(root->val > max(p->val, q->val))
+        {
+            return lowestCommonAncestor(root->left, p, q);
+        }
+        
+        if(root->val < min(p->val, q->val))
+        {
+            return lowestCommonAncestor(root->right, p, q);
+        }
+        
+        return root;
+};
+
+//<--> 236. Lowest Common Ancestor of a Binary Tree
+/*
+Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.
+
+According to the definition of LCA on Wikipedia:
+
+“The lowest common ancestor is defined between
+
+two nodes v and w as the lowest node in T that has both v and w as descendants
+
+(where we allow a node to be a descendant of itself).”
+
+        _______3______
+       /              \
+    ___5__          ___1__
+   /      \        /      \
+   6      _2       0       8
+         /  \
+         7   4
+For example, the lowest common ancestor (LCA) of nodes 5 and 1 is 3.
+
+Another example is LCA of nodes 5 and 4 is 5, since a node can be a descendant of itself according to the LCA definition.
+*/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    TreeNode* lowestCommonAncestor(TreeNode* root, TreeNode* p, TreeNode* q)
+    {
+        if( !root ||  root == p | root== q )
+        {
+            return root;
+        }
+        
+        auto left = lowestCommonAncestor(root->left, p, q);
+        if(left && ( left != p && left != q ))
+        {
+            return left;
+        }
+        
+        auto right = lowestCommonAncestor(root->right, p, q);
+        if(right && ( right != p && right != q ))
+        {
+            return right;
+        }
+        
+        if(left && right)
+        {
+            return root;
+        }
+        
+        return left ? left : right;
+    }
+};
+
+//<--> 237. Delete Node in a Linked List
+/*
+Write a function to delete a node (except the tail)
+in a singly linked list, given only access to that node.
+
+Supposed the linked list is 1 -> 2 -> 3 -> 4 and
+you are given the third node with value 3, the linked list should become 1 -> 2 -> 4 after calling your function.
+*/
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    void deleteNode(ListNode* node)
+    {
+        auto next = node->next;
+        
+        if(next)
+        {
+            node->val = next->val;
+        }
+        
+        node->next = next->next;
+        next->next = nullptr;
+        
+        delete next;
+    }
+};
+
+//<--> 238. Product of Array Except Self
+/*
+Given an array of n integers where n > 1, nums,
+
+return an array output such that output[i] is equal to the product of all the elements of nums except nums[i].
+
+Solve it without division and in O(n).
+
+For example, given [1,2,3,4], return [24,12,8,6].
+
+Follow up:
+Could you solve it with constant space complexity?
+
+(Note: The output array does not count as extra space for the purpose of space complexity analysis.)
+*/
+class Solution {
+public:
+    vector<int> productExceptSelf(vector<int>& nums)
+    {
+        int len = nums.size();
+        
+        vector<int> result( len , 1 );
+        
+        auto& A = nums;
+        
+        for(int i = 1; i < len; ++i)
+        {
+            result[i] = A[i-1] * result[i-1];
+        }
+        
+        int right_product = 1;
+        for(int i = len - 2; i>=0; --i)
+        {
+            right_product *= A[i+1];
+            result[i] *= right_product;
+        }
+        
+        return result;
+    }
+};
+
+//<--> 239. Sliding Window Maximum
+/*
+Given an array nums, there is a sliding window of size k
+which is moving from the very left of the array to the very right.
+You can only see the k numbers in the window. Each time the sliding window moves right by one position.
+
+For example,
+Given nums = [1,3,-1,-3,5,3,6,7], and k = 3.
+
+Window position                Max
+---------------               -----
+[1  3  -1] -3  5  3  6  7       3
+ 1 [3  -1  -3] 5  3  6  7       3
+ 1  3 [-1  -3  5] 3  6  7       5
+ 1  3  -1 [-3  5  3] 6  7       5
+ 1  3  -1  -3 [5  3  6] 7       6
+ 1  3  -1  -3  5 [3  6  7]      7
+Therefore, return the max sliding window as [3,3,5,5,6,7].
+
+Note: 
+You may assume k is always valid, ie: 1 ≤ k ≤ input array's size for non-empty array.
+
+Follow up:
+Could you solve it in linear time?
+
+Hint:
+
+1. How about using a data structure such as deque (double-ended queue)?
+2. The queue size need not be the same as the window’s size.
+3. Remove redundant elements and the queue should store only elements that need to be considered.
+*/
+class Solution {
+public:
+    vector<int> maxSlidingWindow(vector<int>& nums, int k)
+    {
+        deque<int> q;
+        
+        vector<int> res;
+        
+        int len = nums.size();
+        
+        for(int i = 0; i < len; ++i)
+        {
+            if(!q.empty() && q.front() == i - k )
+            {
+                q.pop_front();
+            }
+            
+            while(!q.empty() && nums[q.back()] < nums[i])
+            {
+                q.pop_back();
+            }
+            
+            q.push(i);
+            
+            res.push_back(nums[q.front]);
+        }
+    }
+};
 /////////////////////////////////////////
 //https://github.com/ryancoleman/lotsofcoresbook2code/tree/master/Pearls2_Chapter07
 
