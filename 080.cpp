@@ -7296,23 +7296,715 @@ public:
         vector<int> res;
         
         int len = nums.size();
+        int i = 0;
+        
+        for(i = 0; i< k; ++i)
+        {
+            q.push_back(i);
+        }
+        
+        while( i< len )
+        {
+            if(!q.empty() && nums[q.back()] < nums[i])
+            {
+                
+            }
+        }
         
         for(int i = 0; i < len; ++i)
         {
-            if(!q.empty() && q.front() == i - k )
-            {
-                q.pop_front();
-            }
-            
-            while(!q.empty() && nums[q.back()] < nums[i])
-            {
-                q.pop_back();
-            }
-            
-            q.push(i);
-            
-            res.push_back(nums[q.front]);
+            if(!q.empty() && )
         }
+    }
+};
+
+//<--> 240. Search a 2D Matrix II
+/*
+Write an efficient algorithm that searches for a value in an m x n matrix.
+
+This matrix has the following properties:
+
+Integers in each row are sorted in ascending from left to right.
+Integers in each column are sorted in ascending from top to bottom.
+For example,
+
+Consider the following matrix:
+
+[
+  [1,   4,  7, 11, 15],
+  [2,   5,  8, 12, 19],
+  [3,   6,  9, 16, 22],
+  [10, 13, 14, 17, 24],
+  [18, 21, 23, 26, 30]
+]
+Given target = 5, return true.
+
+Given target = 20, return false.
+*/
+/*
+ *如果我们观察题目中给的那个例子，
+ *我们可以发现有两个位置的数字很有特点，
+ *左下角和右上角的数。左下角的18，
+ *往上所有的数变小，往右所有数增加，
+ *那么我们就可以和目标数相比较，
+ *如果目标数大，就往右搜，
+ *如果目标数小，就往top搜。
+ *这样就可以判断目标数是否存在。
+ *当然我们也可以把起始数放在右上角，
+ *往左和下搜，停止条件设置正确就行。
+ */
+class Solution {
+public:
+    bool searchMatrix(vector<vector<int>>& matrix, int target)
+    {
+        int rows = matrix.size();
+        int cols = matrix[0].size();
+        
+        if(target < matrix[0][0] || target > matrix.back().back())
+        {
+            return false;
+        }
+        
+        int x = rows - 1;
+        int y = 0;
+        
+        while(x >= 0 && y <= cols-1)
+        {
+            if(matrix[x][y] == target)
+            {
+                return true;
+            }
+            
+            if(matrix[x][y] > target)
+            {
+                --x;
+            }
+            else if(matrix[x][y]<target)
+            {
+                ++y;
+            }
+        }
+        
+        return false;
+    }
+};
+
+//<--> 241. Different Ways to Add Parentheses
+/*
+Given a string of numbers and operators,
+
+return all possible results from computing all the different possible ways
+
+to group numbers and operators. The valid operators are +, - and *.
+
+
+Example 1
+Input: "2-1-1".
+
+((2-1)-1) = 0
+(2-(1-1)) = 2
+Output: [0, 2]
+
+
+Example 2
+Input: "2*3-4*5"
+
+(2*(3-(4*5))) = -34
+((2*3)-(4*5)) = -14
+((2*(3-4))*5) = -10
+(2*((3-4)*5)) = -10
+(((2*3)-4)*5) = 10
+Output: [-34, -14, -10, -10, 10]
+*/
+class Solution {
+public:
+    vector<int> diffWaysToCompute(string input)
+    {
+        vector<int> res;
+        dfs(input, res);
+    }
+    
+    void dfs(string&& input, vector<int>& out)
+    {
+        for(size_t i = 0; i < input.size(); ++i)
+        {
+            if( ( input[i]! = '+' ) && ( input[i] != '-' ) && ( input[i] != '*') )
+            {
+                continue;
+            }
+            
+            vector<int> left;
+            vector<int> right;
+            
+            dfs(input.substr(0,i), left);
+            dfs(input.substr(i+1), right);
+            
+            for(size_t l = 0; l<left.size(); ++l)
+            {
+                for(size_t r = 0; r < right.size(); ++r)
+                {
+                    switch(input[i])
+                    {
+                        case '+':
+                            out.push_back(left[l] + right[r]);
+                            break;
+                        case '-':
+                            out.push_back(left[l] - right[r]);
+                            break;
+                        case '*':
+                            out.push_back(left[l] * right[r]);
+                            break;
+                    } 
+                } //end for(r)
+            }//end for(l)
+        } // end for(i)
+        
+        if(out.empty())
+        {
+            out.push_back(stoi(input));
+        }
+    }
+};
+
+//<--> 242. Valid Anagram
+/*
+Given two strings s and t, write a function
+to determine if t is an anagram of s.
+
+For example,
+s = "anagram", t = "nagaram", return true.
+s = "rat", t = "car", return false.
+
+Note:
+You may assume the string contains only lowercase alphabets.
+
+Follow up:
+What if the inputs contain unicode characters?
+How would you adapt your solution to such case?
+*/
+class Solution {
+public:
+    bool isAnagram(string s, string t)
+    {
+    }
+};
+
+//<--> 243. Shortest Word Distance
+/*
+Given a list of words and two words word1 and word2,
+
+return the shortest distance between these two words in the list.
+
+For example,
+Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+Given word1 = “coding”, word2 = “practice”, return 3.
+Given word1 = "makes", word2 = "coding", return 1.
+
+Note:
+You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
+*/
+class Solution {
+public:
+    int shortestDistance(vector<string>& words, string word1, string word2)
+    {
+        int len = words.size();
+        int last_pos = -1;
+        int res = len;
+        
+        for(int i = 0; i < len; ++i)
+        {
+            auto &w = words[i];
+            
+            if(w==word1 || w==word2)
+            {
+                if( ( pos != -1 ) && ( words[pos] != words[i] ) )
+                {
+                    res = min( res, abs( i - last_pos ) );
+                }
+                
+                last_pos = i;
+            }
+        }
+        
+        return res;
+    }
+};
+
+//<--> 244. Shortest Word Distance II
+/*
+This is a follow up of Shortest Word Distance.
+
+The only difference is now you are given the list of words
+
+and your method will be called repeatedly
+many times with different parameters. How would you optimize it?
+
+Design a class which receives a list of words in the constructor,
+
+and implements a method that takes two words word1 and word2 and
+
+return the shortest distance between these two words in the list.
+
+For example,
+Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+Given word1 = “coding”, word2 = “practice”, return 3.
+Given word1 = "makes", word2 = "coding", return 1.
+
+Note:
+You may assume that word1 does not equal to word2, and word1 and word2 are both in the list.
+*/
+class WordDistance {
+public:
+    WordDistance(vector<string>& words)
+    {
+        int i = 0;
+        
+        for(auto& w : words)
+        {
+            if(m.find(w)==m.end())
+            {
+                m.emplace(w, vector<int>());
+            }
+            
+            m[w].push_back(i);
+        }
+    }
+    
+    int shortest(string word1, string word2)
+    {
+        int i = 0;
+        int j = 0;
+        
+        int len1 = word1.size();
+        int len2 = word2.size();
+        
+        int min_dist = INT_MAX;
+        
+        while( ( i < len1 ) && ( j < len2 ) )
+        {
+            int pos1 = m[word1][i];
+            int pos2 = m[word2][j];
+            
+            min_dist = min(min_dist, abs(pos1-pos2));
+            pos1 > pos2 ? ++i : ++j;
+        }
+        
+        return min_dist;
+    }
+    
+    private:
+        
+        unordered_map<string, vector<int>> m;
+};
+
+//<--> 245. Shortest Word Distance III
+/*
+This is a follow up of Shortest Word Distance.
+
+The only difference is now word1 could be the same as word2.
+
+Given a list of words and two words word1 and word2,
+
+return the shortest distance between these two words in the list.
+
+word1 and word2 may be the same and they represent two individual words in the list.
+
+For example,
+Assume that words = ["practice", "makes", "perfect", "coding", "makes"].
+
+Given word1 = “makes”, word2 = “coding”, return 1.
+Given word1 = "makes", word2 = "makes", return 3.
+
+Note:
+You may assume word1 and word2 are both in the list.
+*/
+class Solution {
+public:
+    int shortestWordDistance(vector<string>& words, string word1, string word2)
+    {
+    }
+};
+
+//<--> 246. Strobogrammatic Number
+/*
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+
+Write a function to determine if a number is strobogrammatic. The number is represented as a string.
+
+For example, the numbers "69", "88", and "818" are all strobogrammatic.
+*/
+class Solution {
+public:
+    bool isStrobogrammatic(string num)
+    {
+    }
+};
+
+// <--> 247. Strobogrammatic Number II
+/*
+A strobogrammatic number is a number that
+
+looks the same when rotated 180 degrees (looked at upside down).
+
+Find all strobogrammatic numbers that are of length = n.
+
+For example,
+Given n = 2, return ["11","69","88","96"].
+
+Hint:
+
+Try to use recursion and notice that it should recurse with n - 2 instead of n - 1.
+*/
+class Solution {
+public:
+    vector<string> findStrobogrammatic(int n)
+    {
+        vector<string> last;
+        vector<string> res;
+        
+        dfs(n-2, last); //key: since we add two numbers at begin and end of previous one, the length must be 2 less
+        
+        for(const auto& s : last)
+        {
+            //key: the final one should not have zero at begin.
+            out.emplace_back("1"+elem+"1");
+            out.emplace_back("8"+elem+"8");
+            out.emplace_back("6"+elem+"9");
+            out.emplace_back("9"+elem+"9");
+        }
+    }
+    
+    void dfs(int m, vector<string>& out)
+    {
+        if(m==0)
+        {
+            out.push_back("");
+            return;
+        }
+        
+        if(m==1)
+        {
+            out.emplace_back("0");
+            out.emplace_back("1");
+            out.emplace_back("8");
+            return;
+        }
+        
+        auto last_level = dfs(m-2);
+        
+        vector<string> out;
+        
+        for(const auto& elem : last_level)
+        {
+            out.emplace_back("0"+elem+"0");
+            out.emplace_back("1"+elem+"1");
+            out.emplace_back("8"+elem+"8");
+            out.emplace_back("6"+elem+"9");
+            out.emplace_back("9"+elem+"6");
+        }
+    }
+};
+
+//<--> 248. Strobogrammatic Number III
+/*
+A strobogrammatic number is a number that looks the same when rotated 180 degrees (looked at upside down).
+
+Write a function to count the total strobogrammatic numbers that exist
+
+in the range of low <= num <= high.
+
+For example,
+Given low = "50", high = "100", return 3. Because 69, 88, and 96 are three strobogrammatic numbers.
+
+Note:
+Because the range might be a large number, the low and high numbers are represented as string
+*/
+class Solution {
+public:
+    int strobogrammaticInRange(string low, string high)
+    {
+        int res = 0;
+        
+        dfs(low, high, std::move(""), res);
+        dfs(low, high, std::move("0"), res);
+        dfs(low, high, std::move("1"), res);
+        dfs(low, high, std::move("8"), res);
+        
+        return res;
+    }
+    
+    void dfs(const string& low, const string& high, string&& out, int& count)
+    {
+        if(out.size()>=low.size() && out.size()<=high.size())
+        {
+            // key: since this is string comparison, it makes sense when the two strings have same size.
+            if( ( out.size()==low.size() && out < low) ) || ( out.size() == high.size() && out > high ) )
+            {
+                return;
+            }
+            
+            //key: ignore the number with zero at beginning.
+            if( out.size() > 1 && out[0] == '0' )
+            {
+                return;
+            }
+            
+            ++count;
+        }
+        
+        if(out.size()+2 > high.size())
+        {
+            //since we will add two more characters, check if the added string size is larger than the high.
+            return;
+        }
+        
+        dfs(low, high, std::move("1"+out+"1"));
+        dfs(low, high, std::move("8"+out+"8"));
+        dfs(low, high, std::move("6"+out+"9"));
+        dfs(low, high, std::move("9"+out+"6"));
+    }
+};
+
+//<--> 249. Group Shifted String
+/*
+Given a string, we can "shift" each of its letter to its successive letter,
+
+for example: "abc" -> "bcd". We can keep "shifting" which forms the sequence:
+
+"abc" -> "bcd" -> ... -> "xyz"
+Given a list of strings which contains only lowercase alphabets,
+
+group all strings that belong to the same shifting sequence.
+
+For example, given: ["abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"], 
+Return:
+
+[
+  ["abc","bcd","xyz"],
+  ["az","ba"],
+  ["acef"],
+  ["a","z"]
+]
+
+Note: For the return value, each inner list's elements must follow the lexicographic order.
+*/
+class Solution {
+public:
+    vector<vector<string>> groupStrings(vector<string>& strings)
+    {
+    }
+};
+
+//<--> 250. Count Univalue Subtrees
+/*
+Given a binary tree, count the number of uni-value subtrees.
+
+A Uni-value subtree means all nodes of the subtree have the same value.
+
+For example:
+Given binary tree,
+
+              5
+             / \
+            1   5
+           / \   \
+          5   5   5
+ 
+
+return 4.
+*/
+class Solution {
+public:
+    
+    //recursive method
+    int countUnivalSubtrees(TreeNode* root)
+    {
+        int res = 0;
+        
+        //key: since val in function dfs is the value of the parent of root, so at start,
+        //this value can be a arbitrary value.
+        dfs(root->val, -1, res); 
+        
+        return res;
+    }
+    
+    bool dfs(TreeNode* root, int val, int& count)
+    {
+        if(!root)
+        {
+            return true;
+        }
+        
+        if( ( !dfs(root->left, root->val, count) ) || ( !dfs(root->right, root->val, count) ) )
+        {
+            return false;
+        }
+        
+        ++count; //key: this is a univalue tree with root = root;
+        
+        return root->val == val;
+    }
+    
+    //using postorder
+    int countUnivalSubtrees(TreeNode* root)
+    {
+        if(!root)
+        {
+            return 0;
+        }
+        
+        set<TreeNode*> trees;
+        stack<TreeNode*> s;
+        
+        s.push(root);
+        auto head = root;
+        
+        while(!s.empty())
+        {
+            auto t = s.top();
+            
+            if( ( !t->left && !t->right ) || ( t->left == head ) || ( t->right == head ) )
+            {
+                //BEGIN: the parts do counting
+                helper(t, trees);
+                //END: the parts do counting
+                s.pop();
+                head = t;
+            }
+            else
+            {
+                if(t->right)
+                {
+                    s.push(t->right);
+                }
+                
+                if(t->left)
+                {
+                    s.push(t->left);
+                }
+            }
+        }
+    }
+    
+    void helper( TreeNode* t, set<TreeNode*>& s )
+    {
+        if(!t->left && !t->right)
+        {
+            s.insert(t);
+            return;
+        }
+        
+        if(!t->left && s.count(t->right) == 1 && t->right->val == t->val)
+        {
+            s.insert(t);
+            return;
+        }
+        
+        if(!t->right && s.count(t->left) == 1 && t->left->val == t->val)
+        {
+            s.insert(t);
+            return;
+        }
+        
+        if(t->left && t->right)
+        {
+            if(s.count(t->left) == 1 && s.count(t->right) == 1)
+            {
+                if(t->left->val == t->val && t->right->val == val)
+                {
+                    s.insert(t);
+                }
+            }
+        }
+    }
+    
+};
+
+//<--> 251. Flatten 2D Vector
+/*
+Implement an iterator to flatten a 2d vector.
+
+For example,
+Given 2d vector =
+
+[
+  [1,2],
+  [3],
+  [4,5,6]
+]
+ 
+
+By calling next repeatedly until hasNext returns false,
+the order of elements returned by next should be: [1,2,3,4,5,6].
+
+Hint:
+
+1. How many variables do you need to keep track?
+2. Two variables is all you need. Try with x and y.
+3. Beware of empty rows. It could be the first few rows.
+4. To write correct code, think about the invariant to maintain. What is it?
+The invariant is x and y must always point to a valid point in the 2d vector.
+Should you maintain your invariant ahead of time or right when you need it?
+Not sure? Think about how you would implement hasNext(). Which is more complex?
+5. Common logic in two different places should be refactored into a common method.
+Follow up:
+As an added challenge, try to code it using only iterators in C++ or iterators in Java.
+*/
+class Vector2D {
+public:
+    Vector2D(vector<vector<int>>& vec2d)
+    {
+    }
+    
+    int next()
+    {
+        
+    }
+    
+    bool hasNext()
+    {
+        
+    }
+    
+    private:
+        
+};
+
+//<-> 251. Meeting Rooms
+/*
+Given an array of meeting time intervals
+consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei),
+determine if a person could attend all meetings.
+For example,
+Given [[0, 30],[5, 10],[15, 20]],
+return false.
+*/
+class Solution {
+public:
+    bool canAttendMeetings(vector<Interval>& intervals)
+    {
+    }
+};
+
+//<-> 251. Meeting Rooms II
+/*
+Given an array of meeting time intervals
+
+consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei),
+
+find the minimum number of conference rooms required.
+
+For example,
+Given [[0, 30],[5, 10],[15, 20]],
+return 2.
+*/
+
+class Solution {
+public:
+    int minMeetingRooms(vector<Interval>& intervals)
+    {
     }
 };
 /////////////////////////////////////////
