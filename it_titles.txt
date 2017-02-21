@@ -1,4 +1,577 @@
-1/6/2017 [START]
+2017/1/20 [START]
+
+
+0 <--> Turing's Imitation Game: Conversations with the Unknown
+
+
+
+Turing's Imitation Game: Conversations with the Unknown
+Cambridge | English | November 2016 | ISBN-10: 1107056381 | 202 pages | PDF | 2.05 mb
+
+by Kevin Warwick (Author) Coventry University, Huma Shah (Author) Coventry University
+
+Description
+Can you tell the difference between talking to a human and talking to a machine? Or, is it possible to create a machine which is able to converse like a human? In fact, what is it that even makes us human? Turing's Imitation Game, commonly known as the Turing Test, is fundamental to the science of artificial intelligence. Involving an interrogator conversing with hidden identities, both human and machine, the test strikes at the heart of any questions about the capacity of machines to behave as humans. While this subject area has shifted dramatically in the last few years, this book offers an up-to-date assessment of Turing's Imitation Game, its history, context and implications, all illustrated with practical Turing tests. The contemporary relevance of this topic and the strong emphasis on example transcripts makes this book an ideal companion for undergraduate courses in artificial intelligence, engineering or computer science.
+
+Contains numerous transcripts of 'conversations' between people and the programs designed to emulate them
+Readers have the chance to try it for themselves - can you tell which is human and which is machine?
+Includes a brief introduction to the field of artificial intelligence, with no mathematical background required
+
+
+
+42 <--> Learn and Understand C# Delegates by coding
+
+
+
+Learn and Understand C# Delegates by coding
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 1 Hours | 188 MB
+Genre: eLearning | Language: English
+
+Understand the purpose of using delegates, and see how powerful they can be, through examples.
+
+Delegates are very useful in C#, but the concept behind delegates might be hard to fully understand, therefore can be confusing for a lot of C# developers.
+
+I will be your guide through your delegate learning path, and make it simple for you to understand through my logically built examples.
+
+If you like my course, please feel free to leave a comment, and tell me what you would like to learn next!
+
+
+
+
+67 <--> Supervised Sequence Labelling with Recurrent Neural Networks (repost)
+
+
+
+Supervised Sequence Labelling with Recurrent Neural Networks (Studies in Computational Intelligence) by Alex Graves
+English | ISBN: 3642247962 | 2012 | 160 pages | PDF | 2 MB
+
+Supervised sequence labelling is a vital area of machine learning, encompassing tasks such as speech, handwriting and gesture recognition, protein secondary structure prediction and part-of-speech tagging. Recurrent neural networks are powerful sequence learning tools—robust to input noise and distortion, able to exploit long-range contextual information—that would seem ideally suited to such problems. 
+
+However their role in large-scale sequence labelling systems has so far been auxiliary. The goal of this book is a complete framework for classifying and transcribing sequential data with recurrent neural networks only. Three main innovations are introduced in order to realise this goal. Firstly, the connectionist temporal classification output layer allows the framework to be trained with unsegmented target sequences, such as phoneme-level speech transcriptions; this is in contrast to previous connectionist approaches, which were dependent on error-prone prior segmentation. 
+
+Secondly, multidimensional recurrent neural networks extend the framework in a natural way to data with more than one spatio-temporal dimension, such as images and videos. Thirdly, the use of hierarchical subsampling makes it feasible to apply the framework to very large or high resolution sequences, such as raw audio or video. Experimental validation is provided by state-of-the-art results in speech and handwriting recognition.
+
+>>Visit my blog for more eBooks<< | And also can connect to RSS
+
+
+
+
+
+92 <--> Principles of Data Mining, 3rd edition (Repost)
+
+
+
+Max Bramer, "Principles of Data Mining, 3rd edition" 
+English | ISBN: 1447173066 | 2016 | 544 pages | PDF | 4 MB
+
+This book explains the principal techniques of data mining, for classification, association rule mining and clustering. Each topic is clearly explained and illustrated by detailed examples, with a focus on algorithms rather than mathematical formalism.
+
+
+
+
+95 <--> Advanced C Programming Books Collection
+http://www.nitroflare.com/view/63490FED93EF879/ReLibIn3.3.exe
+http://www.nitroflare.com/view/2C5C01A6E54AF87/Mo.Rea.D6.2.msi
+
+
+Advanced C Programming Books Collection
+8 PDF and 2 DJVU Books | English | 111 MB
+
+This is a collection of C programming books intended for advanced users.
+ List of Books
+
+
+Download free fresh books every day!
+PDF - for your PC!
+EPUB - for your SonyReader, IPHONE, IPAD (also you can download ReaderLibrary and read on your PC: Download )!
+MOBI - for your Kindle (also you can download mobireader and read on your PC: Download)!
+New books every day here: My Books !
+
+
+
+
+
+96 <--> Modern Python Cookbook
+
+
+
+Steven F. Lott, "Modern Python Cookbook"
+ISBN: 1786469251 | 2016 | PDF | 583 pages | 9 MB
+
+Key Features
+Develop succinct, expressive programs in Python
+Learn the best practices and common idioms through carefully explained and structured recipes
+Discover new ways to apply Python for the new age of development
+Book Description
+Python is the preferred choice of developers, engineers, data scientists, and hobbyists everywhere. It is a great scripting language that can power your applications and provide great speed, safety, and scalability. By exposing Python as a series of simple recipes, you can gain insight into specific language features in a particular context. Having a tangible context helps make the language or standard library feature easier to understand.
+
+This book comes with over 100 recipes on the latest version of Python. The recipes will benefit everyone ranging from beginner to an expert. The book is broken down into 13 chapters that build from simple language concepts to more complex applications of the language.
+
+The recipes will touch upon all the necessary Python concepts related to data structures, OOP, functional programming, as well as statistical programming. You will get acquainted with the nuances of Python syntax and how to effectively use the advantages that it offers. You will end the book equipped with the knowledge of testing, web services, and configuration and application integration tips and tricks.
+
+The recipes take a problem-solution approach to resolve issues commonly faced by Python programmers across the globe. You will be armed with the knowledge of creating applications with flexible logging, powerful configuration, and command-line options, automated unit tests, and good documentation.
+
+What you will learn
+See the intricate details of the Python syntax and how to use it to your advantage
+Improve your code readability through functions in Python
+Manipulate data effectively using built-in data structures
+Get acquainted with advanced programming techniques in Python
+Equip yourself with functional and statistical programming features
+Write proper tests to be sure a program works as advertised
+Integrate application software using Python
+
+
+
+102 <--> Algorithm Engineering: Selected Results and Surveys (Lecture Notes in Computer Science)
+
+
+
+Algorithm Engineering: Selected Results and Surveys (Lecture Notes in Computer Science) by Lasse Kliemann
+English | 11 Nov. 2016 | ISBN: 3319494864 | 432 Pages | EPUB | 4.46 MB
+
+Algorithm Engineering is a methodology for algorithmic research that combines theory with implementation and experimentation in order to obtain better algorithms with high practical impact. Traditionally, the study of algorithms was dominated by mathematical (worst-case) analysis. In Algorithm Engineering, algorithms are also implemented and experiments conducted in a systematic way, sometimes resembling the experimentation processes known from fields such as biology, chemistry, or physics. This helps in counteracting an otherwise growing gap between theory and practice.
+
+
+
+
+119 <--> Principal Component Analysis Networks and Algorithms
+
+
+
+Principal Component Analysis Networks and Algorithms by Xiangyu Kong
+English | 1 Feb. 2017 | ISBN: 981102913X | 323 Pages | PDF | 6.69 MB
+
+This book not only provides a comprehensive introduction to neural-based PCA methods in control science, but also presents many novel PCA algorithms and their extensions and generalizations, e.g., dual purpose, coupled PCA, GED, neural based SVD algorithms, etc. It also discusses in detail various analysis methods for the convergence, stabilizing, self-stabilizing property of algorithms, and introduces the deterministic discrete-time systems method to analyze the convergence of PCA/MCA algorithms. Readers should be familiar with numerical analysis and the fundamentals of statistics, such as the basics of least squares and stochastic algorithms. Although it focuses on neural networks, the book only presents their learning law, which is simply an iterative algorithm. Therefore, no a priori knowledge of neural networks is required. This book will be of interest and serve as a reference source to researchers and students in applied mathematics, statistics, engineering, and other related fields.
+
+
+
+136 <--> Optimization Techniques in Computer Vision: Ill-Posed Problems and Regularization
+
+
+
+Optimization Techniques in Computer Vision: Ill-Posed Problems and Regularization (Advances in Computer Vision and Pattern Recognition) by Mongi A. Abidi, Andrei V. Gribok, Joonki Paik
+2016 | ISBN: 3319463632 | English | 293 pages | PDF | 7 MB
+
+This book presents practical optimization techniques used in image processing and computer vision problems. Ill-posed problems are introduced and used as examples to show how each type of problem is related to typical image processing and computer vision problems. Unconstrained optimization gives the best solution based on numerical minimization of a single, scalar-valued objective function or cost function. Unconstrained optimization problems have been intensively studied, and many algorithms and tools have been developed to solve them. Most practical optimization problems, however, arise with a set of constraints. Typical examples of constraints include: (i) pre-specified pixel intensity range, (ii) smoothness or correlation with neighboring information, (iii) existence on a certain contour of lines or curves, and (iv) given statistical or spectral characteristics of the solution. Regularized optimization is a special method used to solve a class of constrained optimization problems. The term regularization refers to the transformation of an objective function with constraints into a different objective function, automatically reflecting constraints in the unconstrained minimization process. Because of its simplicity and efficiency, regularized optimization has many application areas, such as image restoration, image reconstruction, optical flow estimation, etc.
+
+Optimization plays a major role in a wide variety of theories for image processing and computer vision. Various optimization techniques are used at different levels for these problems, and this volume summarizes and explains these techniques as applied to image processing and computer vision.
+
+
+183 <--> A Primer on Scientific Programming with Python (5th edition) (repost)
+
+
+
+Hans Petter Langtangen, "A Primer on Scientific Programming with Python (5th edition)" 
+2016 | ISBN-10: 3662498863 | 922 pages | PDF | 9 MB
+
+The book serves as a first introduction to computer programming of scientific applications, using the high-level Python language. The exposition is example and problem-oriented, where the applications are taken from mathematics, numerical calculus, statistics, physics, biology and finance. The book teaches "Matlab-style" and procedural programming as well as object-oriented programming. High school mathematics is a required background and it is advantageous to study classical and numerical one-variable calculus in parallel with reading this book. Besides learning how to program computers, the reader will also learn how to solve mathematical problems, arising in various branches of science and engineering, with the aid of numerical methods and programming. By blending programming, mathematics and scientific applications, the book lays a solid foundation for practicing computational science.
+
+From the reviews: Langtangen … does an excellent job of introducing programming as a set of skills in problem solving. He guides the reader into thinking properly about producing program logic and data structures for modeling real-world problems using objects and functions and embracing the object-oriented paradigm. … Summing Up: Highly recommended. 
+
+F. H. Wild III, Choice, Vol. 47 (8), April 2010
+
+Those of us who have learned scientific programming in Python ‘on the streets’ could be a little jealous of students who have the opportunity to take a course out of Langtangen’s Primer.” 
+John D. Cook, The Mathematical Association of America, September 2011
+
+This book goes through Python in particular, and programming in general, via tasks that scientists will likely perform. It contains valuable information for students new to scientific computing and would be the perfect bridge between an introduction to programming and an advanced course on numerical methods or computational science.
+Alex Small, IEEE, CiSE Vol. 14 (2), March /April 2012 
+
+“This fourth edition is a wonderful, inclusive textbook that covers pretty much everything one needs to know to go from zero to fairly sophisticated scientific programming in Python…” 
+Joan Horvath, Computing Reviews, March 2015
+
+
+185 <--> Pluralsight - The Python Developer's Toolkit [repost]
+
+
+
+Pluralsight - The Python Developer's Toolkit
+MP4 | AVC 459kbps | English | 1024x768 | 15fps | 2h 19mins | AAC stereo 128kbps | 419 MB
+Genre: Video Training
+
+Becoming a professional Python developer means knowing more than just the language. Once you make the transition from simple scripts to larger projects, it becomes important to know the tools of the trade and how to use them. This course introduces you to a set of standard tools. We'll see how to install and manage your project's dependencies and how to set up your development environment. Then we'll go into code quality, debugging and documentation. Finally, we'll see how to package and distribute the final product.
+
+Table of contents:
+Introduction3m 46s
+Managing Python Packages22m 37s
+Isolated Development Environments With Virtualenv21m 35s
+Checking Your Code Quality With Pylint18m 55s
+The Python Debugger19m 59s
+Documenting Your Code With Sphinx30m 56s
+Packaging and Distributing Your Project21m 43s
+
+191 <--> A First Course in Statistical Programming with R, Second Edition
+
+
+
+A First Course in Statistical Programming with R, Second Edition
+Cambridge | English | July 2016 | ISBN-10: 1107576466 | 230 pages | PDF | 4.61 mb
+
+By W. John Braun, University of British Columbia, Okanagan , Duncan J. Murdoch, University of Western Ontario
+
+Book description
+This new color edition of Braun and Murdoch's bestselling textbook integrates use of the RStudio platform and adds discussion of newer graphics systems, extensive exploration of Markov chain Monte Carlo, expert advice on common error messages, motivating applications of matrix decompositions, and numerous new examples and exercises. This is the only introduction needed to start programming in R, the computing standard for analyzing data. Co-written by an R core team member and an established R author, this book comes with real R code that complies with the standards of the language. Unlike other introductory books on the R system, this book emphasizes programming, including the principles that apply to most computing languages, and techniques used to develop more complex projects. Solutions, datasets, and any errata are available from the book's website. The many examples, all from real applications, make it particularly useful for anyone working in practical data analysis.
+
+Reviews
+‘For what has come to be called data analytics, R is a remarkable tour de force. Strong skills with R programming are needed to allow really effective use. Mastering the content of this carefully staged text is an excellent starting point for gaining those skills.’
+John Maindonald - Australian National University, Canberra
+
+‘This book should be especially useful for those without any prior programming background. The core programming material, such as loops and functions, is postponed to Chapter 4, allowing the student to first become comfortable with R in a broader manner. The placement of Chapter 3, on graphical methods, is particularly helpful in this regard, and is very motivating. The book is written by two recognized experts in the R language, so the reader attains the benefit of being taught by the ‘insiders’.’
+Norm Matloff - University of California, Davis
+
+‘This book is an excellent introduction to programming in R. It gently takes the reader from first principles in programming through to more advanced topics such as simulation and plotting. We recommend this book to our graduate students in computational biology as a concise guide to learning R.’
+Stephen Eglen - University of Cambridge
+
+
+240 <--> Understanding Control Flow: Concurrent Programming Using μC++ (repost)
+
+
+
+Understanding Control Flow: Concurrent Programming Using μC++ by Peter A. Buhr
+English | 2016 | ISBN: 3319257013 | 741 pages | PDF | 6,6 MB
+
+The control-flow issues presented in this textbook are extremely relevant in modern computer languages and programming styles. In addition to the basic control-flow mechanisms, virtually all new computer languages provide some form of exceptional control flow to support robust programming introduced in this textbook. Also, concurrency capabilities are appearing with increasing frequency in both new and old programming languages, and are covered in this book.
+
+Understanding Control Flow: With Concurrent Programming Using μC++ starts with looping, and works through each of the basic control-flow concepts, examining why each is fundamental and where it is useful. Time is spent on each concept according to its level of difficulty. Examples and exercises are also provided in this textbook.
+
+New programming methodologies are requiring new forms of control flow, and new programming languages are supporting these methodologies with new control structures, such as the concurrency constructs discussed in this textbook. Most computers now contain multi-threading and multi-cores, while multiple processors and distributed systems are ubiquitous ― all of which require advanced programming methodologies to take full advantage of the available parallelism summarized in this textbook. Advance forms of control flow are becoming basic programming skills needed by all programmers, not just graduate students working in the operating systems or database disciplines.
+
+This textbook is designed for advanced-level students studying computer science and engineering. Professionals and researchers working in this field, specifically programming and software engineering, will find this book useful as a reference.
+
+
+242 <--> Combining Pattern Classifiers: Methods and Algorithms, 2nd Edition (Repost)
+
+
+
+Ludmila I. Kuncheva, "Combining Pattern Classifiers: Methods and Algorithms, 2nd Edition" 
+English | ISBN: 1118315235 | 2014 | 384 pages | PDF | 7 MB
+
+Combined classifiers, which are central to the ubiquitous performance of pattern recognition and machine learning, are generally considered more accurate than single classifiers. In a didactic, detailed assessment, Combining Pattern Classifiers examines the basic theories and tactics of classifier combination while presenting the most recent research in the field. Among the pattern recognition tasks that this book explores are mail sorting, face recognition, signature verification, decoding brain fMRI images, identifying emotions, analyzing gene microarray data, and spotting patterns in consumer preference. This updated second edition is equipped with the latest knowledge for academics, students, and practitioners involved in pattern recognition fields.
+
+
+
+
+248 <--> Intermediate C Programming Books Collection
+http://www.nitroflare.com/view/63490FED93EF879/ReLibIn3.3.exe
+http://www.nitroflare.com/view/2C5C01A6E54AF87/Mo.Rea.D6.2.msi
+
+
+Intermediate C Programming Books Collection
+7 PDF Books | English | 81 MB
+
+This is a collection of C programming books intended for intermediate users.
+
+ List of Books
+
+
+Download free fresh books every day!
+PDF - for your PC!
+EPUB - for your SonyReader, IPHONE, IPAD (also you can download ReaderLibrary and read on your PC: Download )!
+MOBI - for your Kindle (also you can download mobireader and read on your PC: Download)!
+New books every day here: My Books !
+
+
+
+
+
+
+252 <--> Computational Physics: Problem Solving with Python, 3 edition (repost)
+
+
+
+Computational Physics: Problem Solving with Python, 3 edition by Rubin H. Landau and Manuel J P?ez
+English | 2015 | ISBN: 3527413154 | 644 pages | PDF | 18,2 MB
+
+The use of computation and simulation has become an essential part of the scientific process. Being able to transform a theory into an algorithm requires significant theoretical insight, detailed physical and mathematical understanding, and a working level of competency in programming.
+
+This upper-division text provides an unusually broad survey of the topics of modern computational physics from a multidisciplinary, computational science point of view. Its philosophy is rooted in learning by doing (assisted by many model programs), with new scientific materials as well as with the Python programming language. Python has become very popular, particularly for physics education and large scientific projects. It is probably the easiest programming language to learn for beginners, yet is also used for mainstream scientific computing, and has packages for excellent graphics and even symbolic manipulations.
+
+The text is designed for an upper-level undergraduate or beginning graduate course and provides the reader with the essential knowledge to understand computational tools and mathematical methods well enough to be successful. As part of the teaching of using computers to solve scientific problems, the reader is encouraged to work through a sample problem stated at the beginning of each chapter or unit, which involves studying the text, writing, debugging and running programs, visualizing the results, and the expressing in words what has been done and what can be concluded. Then there are exercises and problems at the end of each chapter for the reader to work on their own (with model programs given for that purpose).
+
+
+
+311 <--> Computational Botany: Methods for Automated Species Identification
+
+
+
+Computational Botany: Methods for Automated Species Identification by Paolo Remagnino
+English | 18 Dec. 2016 | ISBN: 3662537435 | 124 Pages | PDF | 3 MB
+
+This book discusses innovative methods for mining information from images of plants, especially leaves, and highlights the diagnostic features that can be implemented in fully automatic systems for identifying plant species. Adopting a multidisciplinary approach, it explores the problem of plant species identification, covering both the concepts of taxonomy and morphology. It then provides an overview of morphometrics, including the historical background and the main steps in the morphometric analysis of leaves together with a number of applications. The core of the book focuses on novel diagnostic methods for plant species identification developed from a computer scientist’s perspective. It then concludes with a chapter on the characterization of botanists' visions, which highlights important cognitive aspects that can be implemented in a computer system to more accurately replicate the human expert’s fixation process. The book not only represents an authoritative guide to advanced computational tools for plant identification, but provides experts in botany, computer science and pattern recognition with new ideas and challenges. As such it is expected to foster both closer collaborations and further technological developments in the emerging field of automatic plant identification.
+
+
+
+
+337 <--> Hacking Freedom series by Isaac D. Cody
+
+
+
+Hacking Freedom and Data Driven series by Isaac D. Cody (Book #1~4)
+English | 500 pages | ASIN: N/A | ePUB | 3.7 MB
+
+
+1 Hacking University: Freshman Edition: By reading this book you will learn the following:
+The rich history behind hacking
+Modern security and its place in the business world
+Common terminology and technical jargon in security
+How to program a fork bomb
+How to crack a Wi-Fi password
+Methods for protecting and concealing yourself as a hacker
+How to prevent counter-hacks and deter government surveillance
+The different types of malware and what they do
+Various types of hacking attacks and how perform or protect yourself from them
+And much more!
+
+2 Hacking University: Sophomore Edition: The following topics are discussed in this book:
+The history and security flaws of mobile hacking
+Unlocking your device from your carrier and various methods of securing mobile and tablet devices
+Modding, Jailbreaking, and Rooting
+How to unlock android and I-phone devices
+Modding video game consoles such as Xbox and Playstation
+What to do with a Bricked device
+PC Emulators
+And much more!
+
+3 Hacking University: Sophomore Edition: The following topics are discussed in this book:
+The history of Python Language
+The benefits of learning Python and the job market outlook when learning Python
+Setting Up a Development Environment
+Variables, Variable Types, Inputs, String Formatting, Decision Structures, Conditional Operators, Loops
+Several Programming Examples to make sure you practice what you learn
+String Formatting and Programming Concepts
+Classes, Special Methods, and Inheritance
+Key Modules, and Common Errors
+And a WHOLE lot more!
+
+4 Hacking University Senior Edition: The following topics you will learn are:
+What is Linux
+History and Benefits of Linux
+Ubuntu Basics and Installing Linux
+Managing Software and Hardware
+The Command Line Terminal
+Useful Applications
+Security Protocols
+Scripting, I/O Redirection, Managing Directories
+And a WHOLE lot more!
+
+
+
+
+342 <--> An introduction to algorithms in Python
+
+
+
+An introduction to algorithms in Python
+MP4 | Video: AVC 1280x720 | Audio: AAC 44KHz 2ch | Duration: 43M | 728 MB
+Genre: eLearning | Language: English
+
+This introduction to algorithms course is a comprehensive kick-start into the beautiful world of computer science. This course will prepare you for a great job in a technical field and is an essential stepping stone for delving deeper into data-structures and algorithms, and programming in general.
+
+In this course we will take a look at what computational complexity is, and the importance thereof, followed by 4 of the basic sorting algorithms (bubble sort, insertion sort, merge sort and quick sort) by visualisation and demonstration in Python.
+
+All the course content is simple to understand and relevant to real world application.
+
+
+
+344 <--> Make a 2D Arcade Game in a Weekend: With Unity
+
+
+
+Make a 2D Arcade Game in a Weekend: With Unity By Jodessiah Sumpter
+English | EPUB | 2015 | 159 Pages | ISBN : 1484214951 | 2.70 MB
+
+Create and complete your first 2D arcade game in Unity. In this book you will learn to create an arcade classic brick breaker game from beginning to end. You will plan the game flow, add the graphics and create the game logic using the C# language, then build the UX to complete your game. By the time you have finished Make a 2D Arcade Game in a Weekend with Unity, you will have enough knowledge to tweak the game to create more levels or your own variant game rules, and you will have the confidence to go on and create your own 2D arcade games. You will also learn how to publish the game into mobile app stores. 
+Unity is a powerful cross platform software tool that allows users to create 2D and 3D apps and games. Learning how to create an arcade classic game is a great way to learn the foundations of game design. While you do need to have a basic understanding of Unity to complete this project, advanced game building or advanced Unity experience is not required. 
+Takes you through building a classic Atari style brick breaker game 
+Provides you the basic knowledge for building games 
+Teaches you how to script and design UI elements of the game
+For More Ebooks And Magazines Daily Posts Just Visit My Profile From Here
+If You Want To Support Me Kindly Buy Premium Account From Any Of My Links
+
+
+
+
+
+353 <--> Guide to 3D Vision Computation: Geometric Analysis and Implementation
+
+
+
+Guide to 3D Vision Computation: Geometric Analysis and Implementation (Advances in Computer Vision and Pattern Recognition) by Kenichi Kanatani, Yasuyuki Sugaya, Yasushi Kanazawa
+2016 | ISBN: 3319484923 | English | 321 pages | PDF | 5 MB
+
+This classroom-tested and easy-to-understand textbook/reference describes the state of the art in 3D reconstruction from multiple images, taking into consideration all aspects of programming and implementation. Unlike other computer vision textbooks, this guide takes a unique approach in which the initial focus is on practical application and the procedures necessary to actually build a computer vision system. The theoretical background is then briefly explained afterwards, highlighting how one can quickly and simply obtain the desired result without knowing the derivation of the mathematical detail. Features: reviews the fundamental algorithms underlying computer vision; describes the latest techniques for 3D reconstruction from multiple images; summarizes the mathematical theory behind statistical error analysis for general geometric estimation problems; presents derivations at the end of each chapter, with solutions supplied at the end of the book; provides additional material at an associated website.
+
+
+
+
+364 <--> Beginning Python Visualization: Crafting Visual Transformation Scripts, 2nd edition (repost)
+
+
+
+Beginning Python Visualization: Crafting Visual Transformation Scripts, 2nd edition by Shai Vaingast
+English | ISBN: 1484200535 | 2014 | 416 pages | PDF | 7 MB
+
+We are visual animals. But before we can see the world in its true splendor, our brains, just like our computers, have to sort and organize raw data, and then transform that data to produce new images of the world. Beginning Python Visualization: Crafting Visual Transformation Scripts, Second Edition discusses turning many types of data sources, big and small, into useful visual data. And, you will learn Python as part of the bargain.
+
+In this second edition you’ll learn about Spyder, which is a Python IDE with MATLAB® -like features. Here and throughout the book, you’ll get detailed exposure to the growing IPython project for interactive visualization. In addition, you'll learn about the changes in NumPy and Scipy that have occurred since the first edition. Along the way, you'll get many pointers and a few visual examples.
+
+As part of this update, you’ll learn about matplotlib in detail; this includes creating 3D graphs and using the basemap package that allows you to render geographical maps. Finally, you'll learn about image processing, annotating, and filtering, as well as how to make movies using Python. This includes learning how to edit/open video files and how to create your own movie, all with Python scripts.
+
+
+Today's big data and computational scientists, financial analysts/engineers and web developers – like you - will find this updated book very relevant.
+
+What you’ll learn
+How to present visual information instead of data soup
+How to set up an open source environment ready for data visualization
+How to do numerical and textual processing
+How to draw graphs and plots based on textual and numerical data using NumPy, Spyder and more
+How to explore and use new visual libraries including matplotlib's 3D graphs and basemap package
+How to build and use interactive visualization using IPython
+
+Who this book is for
+IT personnel, programmers, engineers, and hobbyists interested in acquiring and displaying data from the Web, sensors, economic trends, and even astronomical sources.
+
+>>Visit my blog for more eBooks<< | And also can connect to RSS
+
+
+
+
+
+377 <--> Outlier Analysis, 2nd edition
+
+
+
+Charu C. Aggarwal, "Outlier Analysis, 2nd edition" 
+English | ISBN: 3319475770 | 2017 | 488 pages | PDF | 7 MB
+
+This book provides comprehensive coverage of the field of outlier analysis from a computer science point of view. It integrates methods from data mining, machine learning, and statistics within the computational framework and therefore appeals to multiple communities. The chapters of this book can be organized into three categories:
+Basic algorithms: Chapters 1 through 7 discuss the fundamental algorithms for outlier analysis, including probabilistic and statistical methods, linear methods, proximity-based methods, high-dimensional (subspace) methods, ensemble methods, and supervised methods.
+Domain-specific methods: Chapters 8 through 12 discuss outlier detection algorithms for various domains of data, such as text, categorical data, time-series data, discrete sequence data, spatial data, and network data.
+Applications: Chapter 13 is devoted to various applications of outlier analysis. Some guidance is also provided for the practitioner.
+The second edition of this book is more detailed and is written to appeal to both researchers and practitioners. Significant new material has been added on topics such as kernel methods, one-class support-vector machines, matrix factorization, neural networks, outlier ensembles, time-series methods, and subspace methods. It is written as a textbook and can be used for classroom teaching.
+
+
+
+
+384 <--> Building Trading Bots Using Java
+
+
+
+Building Trading Bots Using Java by Shekhar Varshney
+English | EPUB | 2017 | 281 Pages | ISBN : 1484225198 | 2.09 MB
+
+Build an automated currency trading bot from scratch with java. In this book, you will learn about the nitty-gritty of automated trading and have a closer look at Java, the Spring Framework, event-driven programming, and other open source APIs, notably Google's Guava API. And of course, development will all be test-driven with unit testing coverage.
+The central theme of Building Trading Bots Using Java is to create a framework that can facilitate automated trading on most of the brokerage platforms, with minimum changes. At the end of the journey, you will have a working trading bot, with a sample implementation using the OANDA REST API, which is free to use.
+ What You'll Learn
+
+
+
+385 <--> Large-Scale Graph Processing Using Apache Giraph
+
+
+
+Large-Scale Graph Processing Using Apache Giraph by Sherif Sakr
+English | 1 Jan. 2017 | ISBN: 3319474308 | 197 Pages | PDF | 8.77 MB
+
+This book takes its reader on a journey through Apache Giraph, a popular distributed graph processing platform designed to bring the power of big data processing to graph data. Designed as a step-by-step self-study guide for everyone interested in large-scale graph processing, it describes the fundamental abstractions of the system, its programming models and various techniques for using the system to process graph data at scale, including the implementation of several popular and advanced graph analytics algorithms.
+The book is organized as follows: Chapter 1 starts by providing a general background of the big data phenomenon and a general introduction to the Apache Giraph system, its abstraction, programming model and design architecture. Next, chapter 2 focuses on Giraph as a platform and how to use it. Based on a sample job, even more advanced topics like monitoring the Giraph application lifecycle and different methods for monitoring Giraph jobs are explained. Chapter 3 then provides an introduction to Giraph programming, introduces the basic Giraph graph model and explains how to write Giraph programs. In turn, Chapter 4 discusses in detail the implementation of some popular graph algorithms including PageRank, connected components, shortest paths and triangle closing. Chapter 5 focuses on advanced Giraph programming, discussing common Giraph algorithmic optimizations, tunable Giraph configurations that determine the system’s utilization of the underlying resources, and how to write a custom graph input and output format. Lastly, chapter 6 highlights two systems that have been introduced to tackle the challenge of large scale graph processing, GraphX and GraphLab, and explains the main commonalities and differences between these systems and Apache Giraph.
+This book serves as an essential reference guide for students, researchers and practitioners in the domain of large scale graph processing. It offers step-by-step guidance, with several code examples and the complete source code available in the related github repository. Students will find a comprehensive introduction to and hands-on practice with tackling large scale graph processing problems using the Apache Giraph system, while researchers will discover thorough coverage of the emerging and ongoing advancements in big graph processing systems.
+
+
+
+
+386 <--> High-Performance Scientific Computing: Algorithms and Applications (Repost)
+
+
+
+Michael W. Berry, Kyle A. Gallivan, Efstratios Gallopoulos, Ananth Grama, Bernard Philippe, Yousef Saad, Faisal Saied, "High-Performance Scientific Computing: Algorithms and Applications" 
+English | ISBN: 1447124367 | 2012 | PDF | 359 pages | 7 MB
+
+This book presents the state of the art in parallel numerical algorithms, applications, architectures, and system software. The book examines various solutions for issues of concurrency, scale, energy efficiency, and programmability, which are discussed in the context of a diverse range of applications. Features: includes contributions from an international selection of world-class authorities; examines parallel algorithm-architecture interaction through issues of computational capacity-based codesign and automatic restructuring of programs using compilation techniques; reviews emerging applications of numerical methods in information retrieval and data mining; discusses the latest issues in dense and sparse matrix computations for modern high-performance systems, multicores, manycores and GPUs, and several perspectives on the Spike family of algorithms for solving linear systems; presents outstanding challenges and developing technologies, and puts these in their historical context.
+
+
+
+
+428 <--> Python Recipes Handbook: A Problem-Solution Approach (Repost)
+
+
+
+Python Recipes Handbook: A Problem-Solution Approach By Joey Bernard
+English | EPUB | 160 Pages | 2016 | ISBN : 1484202422 | 258.94 KB
+
+Learn the code to write algorithms, numerical computations, data analysis and much more using the Python language: look up and re-use the recipes for your own Python coding. This book is your handy code cookbook reference. Whether you're a maker, game developer, cloud computing programmer and more, this is a must-have reference for your library.
+Python Recipes Handbook gives you the most common and contemporary code snippets, using pandas (Python Data Analysis Library), NumPy, and other numerical Python packages.
+ What You'll Learn
+
+ Who This Book Is For
+
+For More Ebooks And Magazines Daily Posts Just Visit My Profile From Here
+If You Want To Support Me Kindly Buy Premium Account From Any Of My Links
+
+
+
+
+433 <--> Machine Learning Using R
+
+
+
+Machine Learning Using R by Karthik Ramasubramanian
+English | 10 Jan. 2017 | ISBN: 1484223330 | 592 Pages | PDF | 11.47 MB
+
+This book is inspired by the Machine Learning Model Building Process Flow, which provides the reader the ability to understand a ML algorithm and apply the entire process of building a ML model from the raw data.
+This new paradigm of teaching Machine Learning will bring about a radical change in perception for many of those who think this subject is difficult to learn. Though theory sometimes looks difficult, especially when there is heavy mathematics involved, the seamless flow from the theoretical aspects to example-driven learning provided in Blockchain and Capitalism makes it easy for someone to connect the dots.
+For every Machine Learning algorithm covered in this book, a 3-D approach of theory, case-study and practice will be given. And where appropriate, the mathematics will be explained through visualization in R.
+All practical demonstrations will be explored in R, a powerful programming language and software environment for statistical computing and graphics. The various packages and methods available in R will be used to explain the topics. In the end, readers will learn some of the latest technological advancements in building a scalable machine learning model with Big Data.
+Who This Book is For:
+Data scientists, data science professionals and researchers in academia who want to understand the nuances of Machine learning approaches/algorithms along with ways to see them in practice using R. The book will also benefit the readers who want to understand the technology behind implementing a scalable machine learning model using Apache Hadoop, Hive, Pig and Spark.
+What you will learn: 
+1. ML model building process flow
+2. Theoretical aspects of Machine Learning
+3. Industry based Case-Study
+4. Example based understanding of ML algorithm using R
+5. Building ML models using Apache Hadoop and Spark
+
+
+
+448 <--> Graphical Simulation of Deformable Models
+
+
+
+Graphical Simulation of Deformable Models by Jianping Cai, Feng Lin, Hock Soon Seah
+2016 | ISBN: 3319510304 | English | 107 pages | PDF | 4 MB
+
+This book covers dynamic simulation of deformable objects, which is one of the most challenging tasks in computer graphics and visualization. It focuses on the simulation of deformable models with anisotropic materials, one of the less common approaches in the existing research. Both physically-based and geometrically-based approaches are examined. 
+
+The authors start with transversely isotropic materials for the simulation of deformable objects with fibrous structures. Next, they introduce a fiber-field incorporated corotational finite element model (CLFEM) that works directly with a constitutive model of transversely isotropic material. A smooth fiber-field is used to establish the local frames for each element. 
+
+To introduce deformation simulation for orthotropic materials, an orthotropic deformation controlling frame-field is conceptualized and a frame construction tool is developed for users to define the desired material properties. The orthotropic frame-field is coupled with the CLFEM model to complete an orthotropic deformable model.
+
+Finally, the authors present an integrated real-time system for animation of skeletal characters with anisotropic tissues. To solve the problems of volume distortion and high computational costs, a strain-based PBD framework for skeletal animation is explained; natural secondary motion of soft tissues is another benefit. 
+
+The book is written for those researchers who would like to develop their own algorithms. The key mathematical and computational concepts are presented together with illustrations and working examples. It can also be used as a reference book for graduate students and senior undergraduates in the areas of computer graphics, computer animation, and virtual reality. Academics, researchers, and professionals will find this to be an exceptional resource.
+
+
+
+463 <--> MATLAB Machine Learning
+
+
+
+MATLAB Machine Learning by Michael Paluszek
+English | 31 Jan. 2017 | ISBN: 1484222490 | 348 Pages | PDF | 9.87 MB
+
+This book is a comprehensive guide to machine learning with worked examples in MATLAB. It starts with an overview of the history of Artificial Intelligence and automatic control and how the field of machine learning grew from these. It provides descriptions of all major areas in machine learning.
+The book reviews commercially available packages for machine learning and shows how they fit into the field. The book then shows how MATLAB can be used to solve machine learning problems and how MATLAB graphics can enhance the programmer’s understanding of the results and help users of their software grasp the results.
+Machine Learning can be very mathematical. The mathematics for each area is introduced in a clear and concise form so that even casual readers can understand the math. Readers from all areas of engineering will see connections to what they know and will learn new technology.
+The book then provides complete solutions in MATLAB for several important problems in machine learning including face identification, autonomous driving, and data classification. Full source code is provided for all of the examples and applications in the book.
+What you'll learn:
+An overview of the field of machine learning
+Commercial and open source packages in MATLAB
+How to use MATLAB for programming and building machine learning applications
+MATLAB graphics for machine learning
+Practical real world examples in MATLAB for major applications of machine learning in big data
+Who is this book for:
+The primary audiences are engineers and engineering students wanting a comprehensive and practical introduction to machine learning.
+
+2017/1/20 [END]1/6/2017 [START]
 
 0 <--> Python Programming: Absolute Beginners Tutorial
 
