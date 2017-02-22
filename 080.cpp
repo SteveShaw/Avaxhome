@@ -7972,7 +7972,7 @@ public:
         
 };
 
-//<-> 251. Meeting Rooms
+//<-> 252. Meeting Rooms
 /*
 Given an array of meeting time intervals
 consisting of start and end times [[s1,e1],[s2,e2],...] (si < ei),
@@ -7988,7 +7988,7 @@ public:
     }
 };
 
-//<-> 251. Meeting Rooms II
+//<-> 253. Meeting Rooms II
 /*
 Given an array of meeting time intervals
 
@@ -8003,9 +8003,335 @@ return 2.
 
 class Solution {
 public:
+	//using map.
     int minMeetingRooms(vector<Interval>& intervals)
     {
+		map<int,int> m;
+		
+		for( const auto& itv : intervals )
+		{
+			if(m.find(itv.start)!=m.end())
+			{
+				m.emplace(itv.start, 1);
+			}
+			else
+			{
+				++m[itv.start];
+			}
+			
+			if(m.find(itv.end()!=m.end())
+			{
+				m.emplace(itv.end, -1);
+			}
+			else
+			{
+				--m[itv.end];
+			}
+		}
+		
+		int count = 0;
+		
+		int rooms = 0;
+		
+		for(const auto& p : m)
+		{
+			rooms += p.second;
+			count = max(count, rooms);
+		}
+		
+		return count;
+    }
+	
+	//using min heap
+	int minMeetingRooms(vector<Interval>& intervals)
+	{
+		priority_queue<int, vector<int>, greater<int>> pq;
+				
+		for( const auto& itv : intervals )
+		{
+			// key: if the top of pq (which is the minimum end time of previous intervals ) is no larger than current start,
+			// these two intervals will using same meeting room because they are not overlapped.
+			if( !pq.empty() && pq.top() <= itv.start )
+			{
+				pq.pop();
+			}
+			
+			pq.push(itv.end);
+		}
+		
+		return pq.size();
+	}
+};
+
+//<--> 254. Factor Combinations
+/*
+Numbers can be regarded as product of its factors. For example,
+
+8 = 2 x 2 x 2;
+  = 2 x 4.
+  
+Write a function that takes an integer n and return all possible combinations of its factors.
+
+Note: 
+
+Each combination's factors must be sorted ascending, 
+
+for example: The factors of 2 and 6 is [2, 6], not [6, 2].
+
+You may assume that n is always positive.
+
+Factors should be greater than 1 and less than n.
+ 
+
+Examples: 
+input: 1
+output: 
+
+[]
+input: 37
+output: 
+
+[]
+input: 12
+output:
+
+[
+  [2, 6],
+  [2, 2, 3],
+  [3, 4]
+]
+
+input: 32
+output:
+
+[
+  [2, 16],
+  [2, 2, 8],
+  [2, 2, 2, 4],
+  [2, 2, 2, 2, 2],
+  [2, 4, 4],
+  [4, 8]
+]
+*/
+class Solution {
+public:
+
+	//method 1: may produce different orders
+    vector<vector<int>> getFactors(int n)
+	{
+		vector<vector<int>> res;
+		vector<int> v;
+		
+		dfs(n, 2, res, v);
+		
+		return res;
+	}
+	
+	void dfs(int m, int start, vector<vector<int>>& res, vector<int>& out)
+	{
+		for(int i = start; i*i<=m; ++i)
+		{
+			if(m%i == 0)
+			{
+				out.push_back(i);
+				dfs(m/i, i, res, out);
+				
+				res.emplace_back(out);
+				res.back().push_back(m/i);
+				
+				out.pop_back();
+				
+			}
+		}
+	}
+	
+	//method 2: Produce same result as the given in the problem
+	vector<vector<int>> getFactors(int n)
+	{
+		vector<vector<int>> res;
+		
+		for(int i = 2; i*i<=n; ++i)
+		{
+			if(n%i==0)
+			{
+				auto factors = getFactors(n/i);
+				
+				res.emplace_back(vector<int>{i, n/i}); //key: create a vector contains i and n/i and added to the result.
+				
+				for( auto& vf : factors )
+				{
+					if(i <= vf[0])
+					{
+						vf.insert(begin(vf),i); //key: put i at the beginning.
+						res.emplace_back(vf);
+					}
+				}
+			}
+		}
+		
+		return res;
+	}
+};
+
+//<-->255. Verify Preorder Sequence in Binary Search Tree
+/*
+Given an array of numbers, 
+
+verify whether it is the correct preorder traversal sequence of a binary search tree.
+
+You may assume each number in the sequence is unique.
+
+Follow up:
+Could you do it using only constant space complexity?
+*/
+class Solution {
+public:
+	//method 1: using stack
+    bool verifyPreorder(vector<int>& preorder)
+	{
+		stack<int> s;
+		
+		int low = INT_MIN;
+		
+		for(auto n : preorder)
+		{
+			if(n<low)
+			{
+				return false;
+			}
+			
+			while( !s.empty() && s.top() < n )
+			{
+				low = s.top();
+				s.pop();
+			}
+			
+			s.push(n);
+		}
+		
+		return true;
+	}
+	
+	//method 2: O(1) memory space
+	bool verifyPreorder(vector<int>& preorder)
+	{
+		int low = INT_MIN;
+		
+		int i = -1;
+		
+		for(auto n : preorder)
+		{
+			if(n<low)
+			{
+				return false;
+			}
+			
+			while( i>=0 && n > preorder[i] )
+			{
+				low = preorder[i--];
+			}
+			
+			preorder[++i] = n;
+		}
+		
+		return true;
+	}
+};
+
+//<-->256. Paint House
+/*
+There are a row of n houses, each house can be painted with one of the three colors:
+
+red, blue or green. The cost of painting each house with a certain color is different.
+
+You have to paint all the houses such that no two adjacent houses have the same color.
+
+The cost of painting each house with a certain color is represented by a n x 3 cost matrix.
+
+For example, costs[0][0] is the cost of painting house 0 with color red;
+
+costs[1][2] is the cost of painting house 1 with color green,
+
+and so on... Find the minimum cost to paint all houses.
+
+Note:
+All costs are positive integers.
+*/
+class Solution {
+public:
+    int minCost(vector<vector<int>>& costs)
+    {
+        if( costs.empty()||costs[0].empty() )
+        {
+            return 0;
+        }
+        
+        auto dp = costs;
+        
+        for(size_t i = 1; i < dp.size(); ++i)
+        {
+            dp[i][0] += min(dp[i-1][1], dp[i-1][2]);
+            dp[i][1] += min(dp[i-1][0], dp[i-1][2]);
+            dp[i][2] += min(dp[i-1][0], dp[i-1][1]);
+        }
+        
+        return min( min(dp.back()[0], dp.back()[1]), dp.back()[2] );
+    }
+};
+
+//<-->257. Binary Tree Paths
+/*
+Given a binary tree, return all root-to-leaf paths.
+
+For example, given the following binary tree:
+
+   1
+ /   \
+2     3
+ \
+  5
+All root-to-leaf paths are:
+
+["1->2->5", "1->3"]
+*/
+/**
+ * Definition for a binary tree node.
+ * struct TreeNode {
+ *     int val;
+ *     TreeNode *left;
+ *     TreeNode *right;
+ *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    vector<string> binaryTreePaths(TreeNode* root)
+    {
+        
     }
 };
 
 
+//<-->259. 3Sum Smaller
+/*
+Given an array of n integers nums and a target,
+
+find the number of index triplets i, j, k with 0 <= i < j < k < n
+
+that satisfy the condition nums[i] + nums[j] + nums[k] < target.
+
+For example, given nums = [-2, 0, 1, 3], and target = 2.
+
+Return 2. Because there are two triplets which sums are less than 2:
+
+[-2, 0, 1]
+[-2, 0, 3]
+Follow up:
+Could you solve it in O(n^2) runtime?
+*/
+class Solution {
+public:
+    int threeSumSmaller(vector<int>& nums, int target)
+    {
+    }
+};
