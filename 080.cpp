@@ -8305,9 +8305,38 @@ All root-to-leaf paths are:
  */
 class Solution {
 public:
+    //recursive method 1: using a standalone method
     vector<string> binaryTreePaths(TreeNode* root)
     {
+        vector<string> res;
         
+        if(root)
+        {
+            dfs(root, "", res);
+        }
+        
+        return res;
+    }
+    
+    void dfs(TreeNode* root, string out, vector<string>& res)
+    {
+        out += to_string(root->val);
+        if(!root->left && !root->right)
+        {
+            res.emplace_back(out.c_str());
+        }
+        else
+        {
+            if(root->left)
+            {
+                dfs(root->left, out+"->", res);
+            }
+            
+            if(root->right)
+            {
+                 dfs(root->right, out+"->", res);
+            }
+        }
     }
 };
 
@@ -8333,5 +8362,163 @@ class Solution {
 public:
     int threeSumSmaller(vector<int>& nums, int target)
     {
+        if(nums.size()<3)
+        {
+            return 0;
+        }
+        
+        int res = 0;
+        
+        sort(begin(nums), end(nums));
+        
+        for(size_t i = 0; i<nums.size()-2; ++i)
+        {
+            size_t left = i+1, right = nums.size() - 1;
+            
+            while(left<right)
+            {
+                if(nums[i]+nums[left]+nums[right]<target)
+                {
+                    res += (right - left); // key: the elements between left and right are all satisfied.
+                    ++left;
+                }
+                else
+                {
+                    --right;
+                }
+            }
+        }
+        
+        return res;
+    }
+};
+
+//<-->260. Single Number III
+/*
+Given an array of numbers nums,
+in which exactly two elements appear only once and
+all the other elements appear exactly twice.
+Find the two elements that appear only once.
+
+For example:
+
+Given nums = [1, 2, 1, 3, 2, 5], return [3, 5].
+
+Note:
+1. The order of the result is not important.
+So in the above example, [5, 3] is also correct.
+2. Your algorithm should run in linear runtime complexity.
+Could you implement it using only constant space complexity?
+*/
+class Solution {
+public:
+    vector<int> singleNumber(vector<int>& nums)
+    {
+        int diff = accumulate(begin(nums), end(nums), bit_xor<int>());
+        diff &= -diff;
+        
+        vector<int> res(2,0);
+        
+        for(auto& a : num)
+        {
+            if(a& diff)
+            {
+                res[0] ^= a;
+            }
+            else
+            {
+                res[1] ^= a;
+            }
+        }
+        
+        return res;
+    }
+};
+
+//<-->261. [LeetCode] Graph Valid Tree
+/*
+
+Given n nodes labeled from 0 to n - 1 and
+
+a list of undirected edges (each edge is a pair of nodes),
+
+write a function to check whether these edges make up a valid tree.
+
+For example:
+
+Given n = 5 and edges = [[0, 1], [0, 2], [0, 3], [1, 4]], return true.
+
+Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [1, 3], [1, 4]], return false.
+
+Hint:
+
+Given n = 5 and edges = [[0, 1], [1, 2], [3, 4]],
+what should your return? Is this case a valid tree?
+According to the definition of tree on Wikipedia:
+“a tree is an undirected graph in which any two vertices are connected
+by exactly one path. In other words,
+any connected graph without simple cycles is a tree.”
+
+Note: you can assume that no duplicate edges will appear in edges.
+Since all edges are undirected,
+[0, 1] is the same as [1, 0] and
+thus will not appear together in edges.
+*/
+class Solution {
+public:
+    
+    //method 1: dfs
+    bool validTree(int n, vector<pair<int, int>>& edges)
+    {
+        vector<vector<int>> g(n, vector<int>());
+        vector<int> v(n, 0);
+        
+        for(auto& edge : edges)
+        {
+            g[edge.first].push_back(edge.second);
+            g[edge.second].push_back(edge.first);
+        }
+        
+        if(!dfs(g,v,0,-1))
+        {
+            return false;
+        }
+        
+        for(auto a : v)
+        {
+            if( a == 0 )
+            {
+                return false;
+            }
+        }
+    }
+    
+    bool dfs(vector<vector<int>>& g, vector<int>& v, int cur, int pre)
+    {
+        if(v[cur] == 1) //key: this node is visited
+        {
+            return false;
+        }
+        
+        v[cur] = 1;
+        
+        for( auto& node : g[cur] )
+        {
+            if( node != pre )
+            {
+                if( !dfs( g, v, node, cur ) )
+                {
+                    return false;
+                }
+            }
+        }
+        
+        return true;
+    }
+    
+    //method 1: bfs
+    bool validTree(int n, vector<pair<int, int>>& edges)
+    {
+        
     }
 };
