@@ -8516,9 +8516,62 @@ public:
         return true;
     }
     
-    //method 1: bfs
+    //method 2: bfs
     bool validTree(int n, vector<pair<int, int>>& edges)
     {
+        vector<unordered_set<int>> g(n, unordered_set<int>());
+        unordered_set<int> v(n, 0);
         
+        for( auto e : edges )
+        {
+            g[e.first].insert(e.second);
+            g[e.second].insert(e.first);
+        }
+        
+        queue<int> q;
+        
+        q.push(0);
+        
+        v.insert(0);
+        
+        while(!q.empty())
+        {
+            auto f = q.front();
+            q.pop();
+            
+            for(auto n : g[f])
+            {
+                if( v.find(n) != v.end() )
+                {
+                    return false;
+                }
+                
+                v.insert(n);
+                q.push(n);
+                
+                g[n].erase(f);
+            }
+        }
+        
+        return v.size() == n;
+    }
+    
+    //method 3: union find
+    bool validTree(int n, vector<pair<int, int>>& edges)
+    {
+        vector<int> roots(n , -1);
+        for(auto e : edges)
+        {
+            int x = find(roots, a.first);
+            int y = find(roots, a.second);
+            if(x==y)
+            {
+                return false;
+            }
+            
+            roots[x] = y;
+        }
+        
+        return edges.size()
     }
 };
