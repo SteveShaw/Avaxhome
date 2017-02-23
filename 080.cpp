@@ -8572,6 +8572,564 @@ public:
             roots[x] = y;
         }
         
-        return edges.size()
+        return edges.size() == n - 1;
+    }
+    
+    int find(vector<int>& roots, int i)
+    {
+        while(roots[i] != -1)
+        {
+            i = roots[i];
+        }
+        
+        return i;
     }
 };
+
+//<-->263. Ugly Number
+/*
+Write a program to check whether a given number is an ugly number.
+
+Ugly numbers are positive numbers whose prime factors only include 2, 3, 5.
+
+For example, 6, 8 are ugly while 14 is not ugly since it includes another prime factor 7.
+
+Note that 1 is typically treated as an ugly number.
+*/
+class Solution {
+public:
+    bool isUgly(int num)
+    {
+        if(num < = 0)
+        {
+            return false;
+        }
+        
+        while(n%2==0)
+        {
+            n /= 2;
+        }
+        
+        while(n%3==0)
+        {
+            n /= 3;
+        }
+        
+        while(n%5 == 0)
+        {
+            n /= 5;
+        }
+        
+        return n == 1;
+    }
+};
+
+//<--> 264. Ugly Number II
+/*
+Write a program to find the n-th ugly number.
+
+Ugly numbers are positive numbers whose prime factors only
+
+include 2, 3, 5. For example, 1, 2, 3, 4, 5, 6, 8, 9, 10, 12
+
+is the sequence of the first 10 ugly numbers.
+
+Note that 1 is typically treated as an ugly number,
+
+and n does not exceed 1690.
+*/
+class Solution {
+public:
+    // dynamic programming
+    int nthUglyNumber(int n)
+    {
+        vector<int> dp(n,0);
+        
+        int u2 = 2, u3 = 3, u5 = 5;
+        int i2 = 0, i3 = 0, i5 = 0;
+        
+        int next_u = 1;
+        
+        dp[0] = 1;
+        
+        for(int i = 1; i< n; ++i)
+        {
+            next_u = min(u2, min(u3,u5));
+            
+            if(next_u == u2)
+            {
+                ++i2;
+                u2 = v[i2]*2;
+            }
+            
+            if(next_u == u3) //key: cannot use else if here, because if u2==u3, we will miss to increase i3
+            {
+                ++i3;
+                u3 = v[i3]*3;
+            }
+            
+            if(next_u == u5)
+            {
+                ++i5;
+                u5 = v[i5]*5;
+            }
+        }
+        
+        return next_u;
+    }
+};
+
+//<-->265. Paint House II
+ /*
+There are a row of n houses,
+
+each house can be painted with one of the k colors.
+
+The cost of painting each house with a certain color is different.
+
+You have to paint all the houses such that no two adjacent houses have the same color.
+
+The cost of painting each house with a certain color is represented by a n x k cost matrix.
+
+For example, costs[0][0] is the cost of painting house 0 with color 0;
+
+costs[1][2]is the cost of painting house 1 with color 2, and so on... Find the minimum cost to paint all houses.
+
+Note:
+All costs are positive integers.
+
+Follow up:
+Could you solve it in O(nk) runtime?
+*/
+ class Solution {
+public:
+    // using O(nk) memory space
+    int minCostII(vector<vector<int>>& costs)
+    {
+        if(costs.empty() || costs[0].empty())
+        {
+            return 0;
+        }
+        
+        vector<vector<int>> dp = costs;
+        
+        int min1=-1, min2=-1;
+        
+        int last1=-1,last2=-1;
+        
+        for(size_t i = 0; i<costs.size(); ++i)
+        {
+            last1 = min1;
+            last2 = min2;
+            min1 = -1;
+            min2 = -1;
+            
+            //iterate over all colors
+            for(size_t j = 0; j<costs[i].size(); ++j)
+            {
+                if(j!=last1)
+                {
+                    dp[i][j] += last1 <0 ? 0 : dp[i-1][last1];
+                }
+                else
+                {
+                    dp[i][j] += last2 <0 ? 0 : dp[i-1][last2]; //key: add second to minimum 
+                }
+                
+                if(min1 < 0 || dp[i][j] < dp[i][min1]) // update min1: the color to get miniumum cost
+                {
+                    min2 = min1;
+                    min1 = j;
+                }
+                else if(min2 < 0 || dp[i][j] < dp[i][min2])
+                {
+                    min2 = j;
+                }
+            }
+        }
+        
+        return dp.back()[min1];
+    }
+    
+    // using O(1) memory space
+    int minCostII(vector<vector<int>>& costs)
+    {
+        if(costs.empty() || costs[0].empty())
+        {
+            return 0;
+        }
+        
+        int min1_so_far = -1;
+        int min2_so_far = -1;
+        int min1_color = -1;
+        
+        for( size_t i = 0; i < costs.size(); ++i )
+        {
+            int cur_min1 = INT_MAX;
+            int cur_min2 = cur_min1;
+            int cur_min1_color = -1;
+            
+            for( size_t j = 0; j < costs[i].size(); ++j )
+            {
+                int cost = costs[i][j] + (j == min1_color) ? min2_so_far : min1_so_far;
+                
+                if(cost < cur_min1) //update mininum
+                {
+                    cur_min2 = cur_min1;
+                    cur_min1 = cost;
+                    cur_min1_color = j;
+                }
+                else
+                {
+                    cur_min2 = cost; // update second minimum.
+                }
+            }
+            
+            //update min1_so_far, min2_so_far and min1_color
+            min1_so_far = cur_min1;
+            min2_so_far = cur_min2;
+            min1_color = cur_min1_color;
+        }
+        
+        return min1_so_far;
+    }
+ };
+ 
+//<-->266. Palindrome Permutation
+/*
+Given a string, determine if a permutation of
+
+the string could form a palindrome.
+
+For example,
+"code" -> False, "aab" -> True, "carerac" -> True.
+
+Hint:
+
+1. Consider the palindromes of odd vs even length. What difference do you notice?
+2. Count the frequency of each character.
+3. If each character occurs even number of times,
+then it must be a palindrome. How about character which occurs odd number of times?
+*/
+class Solution {
+public:
+    //method 1: using map;
+    bool canPermutePalindrome(string s)
+    {
+        unordered_map<char, int> m;
+        
+        for( auto c : s )
+        {
+            if(m.find(c) == m.end())
+            {
+                m[c] = 0;
+            }
+            
+            ++m[c];
+        }
+        
+        int odd_count = 0;
+        
+        for( auto& p : m )
+        {
+            if(p.second % 2 == 1)
+            {
+                ++odd_count;
+            }
+        }
+        
+        return odd_count == 0 || ( ( s.size() & 1 == 1 ) && ( odd_count == 1 ) );
+    }
+    
+    //method 2: using set
+    bool canPermutePalindrome(string s)
+    {
+        unordered_set<char> char_set;
+        
+        for( auto c : s )
+        {
+            if( char_set.find(c) == s.end() )
+            {
+                char_set.insert(c);
+            }
+            else
+            {
+                char_set.erase(c);
+            }
+        }
+        
+        return ( char_set.empty() ) || ( char_set.size() == 1 )
+    }
+    
+    //method 3: using bitset
+    bool canPermutePalindrome(string s)
+    {
+        bitset<256> bs;
+        
+        for( auto c : s )
+        {
+            b.flip( c );
+        }
+        
+        return b.count() < 2;
+    }
+};
+
+//<-->267. Palindrome Permutation II
+/*
+Given a string s, return all the palindromic permutations
+
+(without duplicates) of it. Return an empty list if no palindromic permutation could be form.
+
+For example:
+
+Given s = "aabb", return ["abba", "baab"].
+
+Given s = "abc", return [].
+
+Hint:
+
+1. If a palindromic permutation exists, we just need to generate the first half of the string.
+2. To generate all distinct permutations of a (half of) string,
+use a similar approach from: Permutations II or Next Permutation.
+*/
+class Solution {
+public:
+    
+    //Method 1: using swap to generate permutation
+    vector<string> generatePalindromes(string s)
+    {
+        if(s.empty())
+        {
+            return {};
+        }
+        
+        unordered_map<char, int> m;
+        
+        for( auto c : s )
+        {
+            if(m.find(c)==m.end())
+            {
+                m[c] = 0;
+            }
+            
+            ++m[c];
+        }
+        
+        string mid;
+        string fr;
+        
+        for( auto& p : m )
+        {
+            if( ( p.second & 1 ) == 1 ) //odd number
+            {
+                mid.push_back(p.first);
+                
+                if(mid.size() > 1) //key: if more than one character appears odd times, it cannot be a palindrome.
+                {
+                    return {};
+                }
+            }
+            
+            //generate first half
+            int count = p.second >> 1;
+                
+            for(int i = 0; i < count; ++i)
+            {
+                fr.push_back(p.first);
+            }
+        }
+        
+        vector<string> res;
+        
+        permute(mid, fr, 0, res);
+        
+        return res;
+    }
+    
+    void permute( const string& mid, string& fr, int start, vector<string>& res )
+    {
+        if(start==fr.size())
+        {
+            res.emplace_back( fr + mid + string( fr.rbegin(), fr.rend() ) );
+            return;
+        }
+        
+        for(int i = start; i< fr.size(); ++i)
+        {
+            if(i!=start && fr[i]==fr[start])
+            {
+                continue;
+            }
+            
+            swap(fr[start], fr[i]);
+            permute(mid, fr, start+1, res);
+            swap(fr[start], fr[i]);
+        }
+    }
+    
+    //Method 2: using different characters to generate permutation
+    vector<string> generatePalindromes(string s)
+    {
+        if(s.empty())
+        {
+            return {};
+        }
+        
+        unordered_map<char, int> m;
+        
+        for( auto c : s )
+        {
+            if(m.find(c)==m.end())
+            {
+                m[c] = 0;
+            }
+            
+            ++m[c];
+        }
+        
+        string mid;
+        string fr;
+        
+        for( auto& p : m )
+        {
+            if( ( p.second & 1 ) == 1 ) //odd number
+            {
+                mid.push_back(p.first);
+                
+                if(mid.size() > 1) //key: if more than one character appears odd times, it cannot be a palindrome.
+                {
+                    return {};
+                }
+            }
+            
+            //generate first half
+            //notice the different from method 1:
+            //the count of the character is halved directly. This is very important since the generation
+            //is different
+            p.second >>= 1;
+                
+            for(int i = 0; i < p.second; ++i)
+            {
+                fr.push_back(p.first);
+            }
+        }
+        
+        vector<string> res;
+        
+        permute(mid, fr, m, "", res);
+        
+        return res;
+    }
+    
+    void permute( const string& mid, const string& fr, unordered_map<char, int>& m, string out, vector<string>& res )
+    {
+        if( out.size() == fr.size() )
+        {
+            res.emplace_back( out + mid + string( out.rbegin(), out.rend() ) );
+            return;
+        }
+        
+        for( auto& p : m )
+        {
+            if(p.second > 0)
+            {
+                --p.second;
+                permute(mid, fr, m, out+p.first, res);
+                ++p.second; //key: need to increase back to restore the count.
+            }
+        }
+    }
+
+};
+
+//<-->268. Missing Number
+/*
+Given an array containing n distinct numbers
+
+taken from 0, 1, 2, ..., n, find the one that is missing from the array.
+
+For example,
+Given nums = [0, 1, 3] return 2.
+*/
+class Solution {
+public:
+    //method 1: using sum;
+    int missingNumber(vector<int>& nums)
+    {
+        auto sum = accumulate(begin(nums), end(nums), 0);
+        
+        int total = n * ( n - 1 );
+        total >>= 1;
+        
+        return total - sum;
+    }
+    
+    //method 2: using XOR
+    int missingNumber(vector<int>& nums)
+    {
+        int len = nums.size();
+        int res = 0;
+        for( int i = 0; i < len; ++i )
+        {
+            res ^= ( ( i+1 ) ^ nums[i] );
+        }
+        
+        return res;
+    }
+    
+    //method 3: using binary search
+    int missingNumber(vector<int>& nums)
+    {
+        sort(begin(nums), end(nums));
+        
+        int left = 0;
+        int right = nums.size(); // key: right must be the nums.size()
+        
+        while(left<right)
+        {
+            int mid = left + (right-left)/2;
+            //key: only compare with mid,
+            //if it larger than mid, means we need to search in first half
+            if(nums[mid] > mid) 
+            {
+                right = mid;
+            }
+            else
+            {
+                left = mid + 1;
+            }
+        }
+        
+        return right;
+    }
+};
+
+//<-->269. Alien Dictionary
+/*
+There is a new alien language which uses the latin alphabet.
+However, the order among letters are unknown to you.
+You receive a list of words from the dictionary,
+where words are sorted lexicographically
+by the rules of this new language. Derive the order of letters in this language.
+
+For example,
+Given the following words in dictionary,
+
+[
+  "wrt",
+  "wrf",
+  "er",
+  "ett",
+  "rftt"
+]
+ 
+
+The correct order is: "wertf".
+
+Note:
+
+You may assume all letters are in lowercase.
+If the order is invalid, return an empty string.
+There may be multiple valid order of letters, return any one of them is fine.
+*/
