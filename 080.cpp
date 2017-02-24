@@ -9300,5 +9300,391 @@ public:
         g[idx][idx] = 0; // key: we already have visited
         res += char(idx + '0');
     }
+};
 
+//<-->270. Closest Binary Search Tree Value
+/* 
+Given a non-empty binary search tree and a target value,
+find the value in the BST that is closest to the target.
+
+Note:
+
+Given target value is a floating point.
+You are guaranteed to have only one unique
+value in the BST that is closest to the target.
+*/
+class Solution {
+public:
+    int closestValue(TreeNode* root, double target)
+    {
+        
+        while(root)
+        {
+            
+        }
+    }
+}
+
+//<--> 271. Encode and Decode Strings
+/*
+Design an algorithm to encode a list of strings to a string. 
+The encoded string is then sent over the network 
+and is decoded back to the original list of strings.
+
+Machine 1 (sender) has the function:
+
+string encode(vector<string> strs) {
+  // ... your code
+  return encoded_string;
+}
+Machine 2 (receiver) has the function:
+
+vector<string> decode(string s) {
+  //... your code
+  return strs;
+}
+ 
+
+So Machine 1 does:
+
+string encoded_string = encode(strs);
+ 
+
+and Machine 2 does:
+
+vector<string> strs2 = decode(encoded_string);
+ 
+
+strs2 in Machine 2 should be the same as strs in Machine 1.
+
+Implement the encode and decode methods.
+
+Note:
+
+1.The string may contain any possible characters out of 256 valid ascii characters. 
+Your algorithm should be generalized enough to work on any possible characters.
+2. Do not use class member/global/static variables to store states. Your encode and decode algorithms should be stateless.
+3. Do not rely on any library method such as eval or serialize methods. 
+You should implement your own encode/decode algorithm.
+/*
+
+
+
+//<--> 272. Closest Binary Search Tree Value II
+/*
+Given a non-empty binary search tree and a target value, 
+find k values in the BST that are closest to the target.
+
+Note:
+
+Given target value is a floating point.
+You may assume k is always valid, that is: k ≤ total nodes.
+You are guaranteed to have only one unique set of k values in the BST that are closest to the target.
+ 
+
+Follow up:
+Assume that the BST is balanced, could you solve it in less than O(n) runtime (where n = total nodes)?
+
+Hint:
+
+1. Consider implement these two helper functions:
+　　i. getPredecessor(N), which returns the next smaller node to N.
+　　ii. getSuccessor(N), which returns the next larger node to N.
+2. Try to assume that each node has a parent pointer, it makes the problem much easier.
+3. Without parent pointer we just need to keep track of the path from the root to the current node using a stack.
+4. You would need two stacks to track the path in finding predecessor and successor node separately.
+*/
+class Solution {
+public:
+	//method 1: using inorder
+    vector<int> closestKValues(TreeNode* root, double target, int k)
+	{
+		vector<int> res;
+		inorder(root, target, k, res);
+		return res;
+	}
+	
+	void inorder(TreeNode* root, double target, int k, vector<int>& res)
+	{
+		if(root)
+		{
+			inorder(root->left, target, k, res);
+			
+			if(res.size() < k)
+			{
+				res.push_back(root->val);
+			}
+			else if( abs( res[0] - target ) > abs( root->val - target ) )
+			{
+				res.erase(res.begin());
+				res.push_back(root->val);
+			}
+			else
+			{
+				return;
+			}
+			
+			inorder(root->right, target, k, res);
+		}
+	}
+	
+	//method 2: using iterative inorder
+    vector<int> closestKValues(TreeNode* root, double target, int k)
+	{
+		stack<TreeNode*> s;
+		
+		auto p = root;
+		
+		while(p || !s.empty())
+		{
+			while(p)
+			{
+				s.push(p);
+				p = p->left;
+			}
+			
+			p = s.top();
+			s.pop();
+			
+			if(res.size() < k)
+			{
+				res.push_back(p->val);
+			}
+			else if( abs( res[0] - target ) > abs( p->val - target ) )
+			{
+				res.erase(res.begin());
+				res.push_back(p->val);
+			}
+			else
+			{
+				break;
+			}
+			
+			p = p->right;
+		}
+		
+		return res;
+	}
+	
+	//method 3: using two stacks
+	vector<int> closestKValues(TreeNode* root, double target, int k)
+	{
+		stack<TreeNode*> pre_s;
+		stack<TreeNode*> next_s;
+		
+		while(root)
+		{
+			if(root->val <= target)
+			{
+				pre_s.push(root);
+				root = root->right;
+			}
+			else
+			{
+				next_s.push(root);
+				root = root->left;
+			}
+		}
+		
+		for(int i = 0; i<k; ++i)
+		{
+			if( next_s.empty() || ( !pre_s.empty() && ( next_s.top() - target ) ) )
+			{
+				res.push_back(pre_s.top()->val);
+				getPredecessor(pre_s);
+			}
+			else
+			{
+				res.push_back(next_s.top()->val);
+				getSuccessor(next_s);				
+			}
+		}
+	}
+	
+	void getPredecessor(stack<TreeNode*>& pre)
+	{
+		auto t = pre.top();
+		pre.pop();
+		
+		if(t->left)
+		{
+			pre.push(t->left);
+			while(pre.top()->right)
+			{
+				pre.push(pre.top()->right);
+			}
+		}
+	}
+	
+	void getSuccessor(stack<TreeNode*>& next)
+	{
+		auto t = next.top();
+		next.pop();
+		
+		if(t->right)
+		{
+			pre.push(t->right);
+			while(pre.top()->left)
+			{
+				pre.push(pre.top()->left);
+			}
+		}
+	}
+};
+
+//<--> 273. Integer to English Words
+/*
+Convert a non-negative integer to its english words representation. 
+Given input is guaranteed to be less than 2^31 - 1.
+
+For example,
+123 -> "One Hundred Twenty Three"
+12345 -> "Twelve Thousand Three Hundred Forty Five"
+1234567 -> "One Million Two Hundred Thirty Four 
+Thousand Five Hundred Sixty Seven"
+*/
+
+//"One", "Two", "Three", 
+//"Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", 
+//"Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", 
+// "Sixteen", "Seventeen", "Eighteen", "Nineteen"
+// "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"
+// "Thousand", "Million", "Billion"
+class Solution {
+public:
+    string numberToWords(int num)
+	{
+		vector<string> v = 
+		{
+			"Thousand",
+			"Million",
+			"Billion"
+		}
+		vector<string> v1 = 
+		{
+			"",
+			"One", "Two", "Three",
+			"Four", "Five", "Six", 
+			"Seven", "Eight", "Nine", 
+			"Ten", "Eleven", "Twelve", 
+			"Thirteen", "Fourteen", "Fifteen",
+			"Sixteen", "Seventeen", "Eighteen", 
+			"Nineteen"
+		};
+		
+		vector<string> v2 = 
+		{
+			"", "",
+			"Twenty", "Thirty", "Forty", 
+			"Fifty", "Sixty", 
+			"Seventy", "Eighty", 
+			"Ninety"
+		}
+		
+		int r = num % 100;
+		auto res = convert_hundred(r, v1, v2);
+		
+		for(int i = 0; i<3; ++i)
+		{
+			num /= 1000;
+			
+			if(num == 0)
+			{
+				break;
+			}
+			
+			r = num % 1000;
+			
+			res = (r!=0) ? covert_hundred(r, v1, v2) + " " + v[i] + " " + res : res;
+		}
+		
+		while(res.back()==' ')
+		{
+			res.pop_back();
+		}
+		
+		return res.empty() ? "Zero" : res;
+		
+	}
+	
+	string convert_hundred(int n, const vector<string>& v1, const vector<string>& v2)
+	{
+		int a = n / 100;
+		int b = n - a * 100;
+		int c = n % 10;
+		
+		string res = b < 20 ? ( v1[b] ): ( v2[b/10] + ( c!=0 ? " "+v1[c] : "" ) );
+		if( a > 0 )
+		{
+			res =  ( v1[a] + " Hundred" ) + ( b != 0 ? " " + res : "" );
+		}
+		
+	}
+};
+
+//<--> 274. H-Index
+/*
+Given an array of citations (each citation is a non-negative integer) 
+of a researcher, write a function to compute the researcher's h-index.
+
+According to the definition of h-index on Wikipedia: 
+"A scientist has index h if h of his/her N papers have at least h citations each, 
+and the other N − h papers have no more than h citations each."
+
+For example, given citations = [3, 0, 6, 1, 5], which means the researcher 
+has 5 papers in total and each of them had received 3, 0, 6, 1, 5 citations respectively. 
+Since the researcher has 3 papers with at least 3 citations each and 
+the remaining two with no more than 3 citations each, his h-index is 3.
+
+Note: If there are several possible values for h, the maximum one is taken as the h-index.
+
+*/
+class Solution {
+public:
+	//method 1: sort
+    int hIndex(vector<int>& citations) 
+	{
+		sort(begin(citations), end(citations),greater<int>);
+		int len = citations.size();
+		for(int i = 0; i<len; ++i)
+		{
+			if(i >= citations[i])
+			{
+				return i;
+			}
+		}
+		
+		return citations.size();
+    }
+	
+	//method 2: O(n) memory space
+	int hIndex(vector<int>& citations)
+	{
+		vector<int> stats(citations.size()+1, 0);
+		int len = citations.size();
+		
+		for(int i = 0; i<len; ++i)
+		{
+			if( citation[i] < len )
+			{
+				stats[citation[i]] += 1;
+			}
+			else
+			{
+				stats[len] += 1;
+			}
+		}
+		
+		int sum = 0;
+		for(int i = len; i>0; --i)
+		{
+			sum += stats[i];
+			if(sum >= i)
+			{
+				return i;
+			}
+		}
+		
+		return 0;
+	}
 };
