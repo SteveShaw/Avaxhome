@@ -9133,3 +9133,172 @@ You may assume all letters are in lowercase.
 If the order is invalid, return an empty string.
 There may be multiple valid order of letters, return any one of them is fine.
 */
+
+class Solution {
+public:
+    //method 1: bfs (using set and in-count)
+    string alienOrder(vector<string>& words)
+    {
+        unordered_set<char> char_set;
+           
+        for(auto & word : words)
+        {
+            char_set.insert(word.begin(), word.end());
+        }
+        
+        set<pair<char,char>> table;
+        
+        for(size_t i = 0; i < words.size() - 1; ++i)
+        {
+            auto& cur = words[i];
+            auto& nxt = words[i+1];
+            
+            bool bValid = false;
+            auto min_sz = min(cur.size(), nxt.size());
+            
+            for(size_t j = 0; j< min_sz; ++j)
+            {
+                if(cur[j]!=nxt[j])
+                {
+                    table.emplace( cur[j], nxt[j] );
+                    bValid = true;
+                    break;
+                }
+            }
+            
+            if( ( !bValid ) || ( cur.size() > nxt.size() ) )
+            {
+                return ""
+            }
+        }
+        
+        vector<int> in_cnt(26, 0);
+        for( auto& p : table )
+        {
+            ++in_cnt[p.second];
+        }
+        
+        queue<char> q;
+        
+        for( auto& c : char_set )
+        {
+            if(in_cnt[c-'a'] == 0)
+            {
+                q.push(c);
+            }
+        }
+        
+        while(!q.empty())
+        {
+            auto t = q.top();
+            q.pop();
+            
+            for(auto & p : table)
+            {
+                if(p.first == t)
+                {
+                    --in_cnt[p.second-'a'];
+                    if(in_cnt[p.second-'a'] == 0)
+                    {
+                        q.push(p.second);
+                        res += p.second;
+                    }
+                }
+            }
+        }
+        
+        return res.size() == char_set.size() ? res : "";
+    }
+    
+    //method 2: dfs (recursion)
+    string alienOrder(vector<string>& words)
+    {
+        vector<vector<int>> g(26, vector<int>(26, 0));
+        
+        for(auto& word : words)
+        {
+            for( auto& c : word)
+            {
+                g[c-'a'][c-'a'] = 1;
+            }
+        }
+        
+        vector<int> path(26, 0);
+        
+        for(size_t i = 0; i < words.size() - 1; ++i)
+        {
+            auto min_sz = min(words[i].size(), words[i+1].size());
+            
+            bool bValid = false;
+            
+            for(size_t j = 0; j < min_sz; ++j)
+            {
+                auto prev = words[i][j];
+                auto next = words[i+1][j];
+                if(prev != next)
+                {
+                    bValid = true;
+                    g[prev - 'a'][next - 'a'] = 1;
+                }
+            }
+            
+            if( !bValid && ( words[i].size() > words[i+1].size() ) )
+            {
+                return "";
+            }
+        }
+        
+        string res = "";
+        
+        for(int i = 0; i<26; ++i)
+        {
+            if(!dfs(g, path, i, res))
+            {
+                return "";
+            }
+        }
+        
+        for(int i = 0; i<26; ++i)
+        {
+            if(g[i][i] == 1)  // this are the standalone characters appears in the first word but does not appear in any other word
+            {
+                res += (char)( i + 'a' );
+            }
+        }
+        
+        return string(res.rbegin(), res.rend());
+    }
+    
+    bool dfs(vector<vector<int>>& g, vector<int>& path, int idex, string& res)
+    {
+        if(g[idx][idx] == 0)
+        {
+            return true;
+        }
+        
+        path[idx] = 1;
+        
+        for(int i = 0; i<26; ++i)
+        {
+            if( ( i == idx ) || ( g[idx][i] == 0 ) )
+            {
+                continue;
+            }
+            
+            if(path[i] == 1)
+            {
+                return false;
+            }
+            
+            if(!dfs(g,path,i,res))
+            {
+                return false;
+            }
+        }
+        
+        path[idx] = 0;
+        g[idx][idx] = 0; // key: we already have visited
+        res += char(idx + '0');
+    }
+
+};
