@@ -6144,8 +6144,34 @@ Output:
 class Solution {
 public:
     vector<vector<int>> combinationSum3(int k, int n)
-    {    
+    {
+			vector<vector<int>> res;
+			vector<int> out;
+			
+			dfs(k, n, 1, out, res);
+			
+			return res;
     }
+		
+		void dfs(int k, int sum, int start, vector<int>& out, vector<vector<int>>& res)
+		{
+			if(sum==0 && out.size() == k)
+			{
+				res.push_back(out);
+				return;
+			}
+			
+			//error: for(int i = start; i<=sum; ++i) since sum can be larger than 9
+			for(int i = start; i<=9; ++i) 
+			{
+				if(i<=sum) // we only apply number that less than current sum
+				{
+					out.push_back(i);
+					dfs(k,sum-i,i+1,out,res);
+					out.pop_back();
+				}
+			}
+		}
 };
 
 
@@ -9687,4 +9713,1019 @@ public:
 		
 		return 0;
 	}
+};
+
+//<--> 275. H-Index II
+/*
+Follow up for H-Index: What if the citations array is sorted in ascending order? 
+
+Could you optimize your algorithm?
+
+Hint:
+
+Expected runtime complexity is in O(log n) and the input is sorted
+*/
+class Solution {
+public:
+    int hIndex(vector<int>& citations)
+		{
+			int len = citations.size();
+			
+			int left = 0, right = citations.size() - 1;
+			
+			while(left <= right)
+			{
+				int mid = left + (right - left)/2;
+				if(citations[mid] == len - mid)
+				{
+					return len - mid;
+				}
+				
+				if(citations[mid] > len - mid)
+				{
+					right  = mid - 1;
+				}
+				else
+				{
+					left = mid + 1;
+				}
+			}
+			
+			return len - left;
+		}
+};
+
+//<--> 276. Paint Fence
+/*
+There is a fence with n posts, each post can be painted with one of the k colors.
+
+You have to paint all the posts 
+such that no more than two adjacent fence posts have the same color.
+
+Return the total number of ways you can paint the fence.
+
+Note:
+n and k are non-negative integers.
+*/
+// induction:
+// For the last 2 posts:
+// 1) if the last 2 posts have same color, the last 3rd post cannot have the same color as these 2 posts.
+// therefore, the ways to paint is diff[n-2] * (k-1)
+// 2) if the last 2 posts have different color, then the ways to paint is diff[n-1]* (k-1);
+
+class Solutions
+{
+	public:
+	     int numWays(int n, int k) 
+			 {
+				 int dp2 = 0;
+				 int dp1 = k;
+				 
+				 for(int i = 2; i<=n; ++i)
+				 {
+					 int t = (dp1 + dp2) * (k-1);
+					 dp2 = dp1;
+					 dp1 = t;
+				 }
+				 
+				 return dp1+dp2;
+			 }
+			 
+			 return dp1 + dp2;
+}
+
+//<-->277. Find the Celebrity
+/*
+Suppose you are at a party with n people (labeled from 0 to n - 1) 
+and among them, there may exist one celebrity. 
+The definition of a celebrity is that all the other n - 1 people know him/her
+but he/she does not know any of them.
+
+Now you want to find out who the celebrity is or verify 
+that there is not one. The only thing you are allowed 
+to do is to ask questions like: "Hi, A. Do you know B?" 
+to get information of whether A knows B. 
+You need to find out the celebrity (or verify there is not one) 
+by asking as few questions as possible (in the asymptotic sense).
+
+You are given a helper function bool knows(a, b) which tells you whether A knows B. 
+Implement a function int findCelebrity(n), your function should minimize the number of calls to knows.
+
+Note: There will be exactly one celebrity if he/she is in the party. 
+Return the celebrity's label if there is a celebrity in the party. 
+If there is no celebrity, return -1.
+*/
+class Solution {
+public:
+    int findCelebrity(int n)
+		{
+			int res = 0;
+			
+			for(int i = 0; i< n; ++i)
+			{
+				if(knows(res,i))
+				{
+					res = i;
+				}
+			}
+			
+			for(int i = 0; i<n; ++i)
+			{
+				if( res != i && ( knows( res, i ) || !knows( i, res ) ) )
+				{
+					return -1;
+				}
+			}
+			
+			return res;
+		}
+};
+
+//<--> 278. First Bad Version
+/*
+You are a product manager and currently 
+leading a team to develop a new product. 
+Unfortunately, the latest version of your product fails the quality check. 
+Since each version is developed based on the previous version, 
+all the versions after a bad version are also bad.
+
+Suppose you have n versions [1, 2, ..., n] and 
+you want to find out the first bad one, which causes all the following ones to be bad.
+
+You are given an API bool isBadVersion(version) 
+which will return whether version is bad. 
+Implement a function to find the first bad version. 
+You should minimize the number of calls to the API.
+*/
+// Forward declaration of isBadVersion API.
+bool isBadVersion(int version);
+
+class Solution {
+public:
+    int firstBadVersion(int n)
+		{
+			int left = 1;
+			int right = n;
+			
+			while(left < right)
+			{
+				int mid = left + (right - left) / 2;
+				if( isBadVersion( mid ) )
+				{
+					right = mid;
+				}
+				else
+				{
+					left  = mid + 1;
+				}
+			}
+			
+			return mid;
+    }
+};
+
+//<--> 279. Perfect Squares
+/*
+Given a positive integer n, 
+find the least number of perfect square numbers 
+(for example, 1, 4, 9, 16, ...) which sum to n.
+
+For example, given n = 12, return 3 
+because 12 = 4 + 4 + 4; 
+given n = 13, return 2 because 13 = 4 + 9.
+*/
+class Solution {
+public:
+		//method 1: most efficient way
+		//任意一个正整数均可表示为4个整数的平方和，
+		//其实是可以表示为4个以内的平方数之和，
+		// 那么就是说返回结果只有1,2,3或4其中的一个，
+		// 首先我们将数字化简一下，由于一个数如果含有因子4，
+		// 那么我们可以把4都去掉，并不影响结果，比如2和8,3和12等等，返回的结果都相同，
+		// 还有一个可以化简的地方就是，如果一个数除以8余7的话，那么肯定是由4个完全平方数组成
+    int numSquares(int n) 
+		{  
+			while(n % 4 == 0)
+			{
+				n /= 4;
+			}
+			
+			if(n%8=7)
+			{
+				return 4;
+			}
+			
+			for(int a = 0; a<=n*n; ++a)
+			{
+				int b = static_cast<int>( sqrt(n - a*a) );
+				if( a*a + b*b == n )
+				{
+					if(a!=0 && b!=0)
+					{
+						return 2;
+					}
+					
+					return 1;
+				}
+			}
+			
+			return 3;
+    }
+		
+		//method 2: DP
+		int numSquares(int n) 
+		{
+			vector<int> dp(n, 0);
+			dp[0] = 1; // n= 1, only 1;
+			dp[1] = 2; // n= 2, only 1 + 1;
+			
+			for( int i = 3; i<=n; ++i )
+			{
+				dp[i-1] = INT_MAX;
+				
+				for(int j = 0; j*j <=i; ++j)
+				{
+					dp[i-1] = min(dp[i-1], dp[i-j*j-1] + 1);
+				}
+			}
+			
+			return dp.back();
+		}
+};
+
+//<--> 280. Wiggle Sort
+/*
+Given an unsorted array nums, 
+
+reorder it in-place such that nums[0] <= nums[1] >= nums[2] <= nums[3]....
+
+For example, given nums = [3, 5, 2, 1, 6, 4], 
+
+one possible answer is [1, 6, 2, 5, 3, 4].
+*/
+class Solution {
+public:
+    void wiggleSort(vector<int> &nums)
+		{
+			auto len = nums.size();
+			
+			for(size_t i = 0; i<len; ++i)
+			{
+				if( i & 1 ) //odd position.
+				{
+					if(nums[i] < nums[i-1])
+					{
+						swap(nums[i], nums[i-1]);
+					}
+				}
+				else		//even position.
+				{
+					if(nums[i] > nums[i-1])
+					{
+						swap(nums[i], nums[i-1]);
+					}
+				}
+			}
+		}
+};
+
+//<--> 281. Zigzag Iterator 
+/*
+Given two 1d vectors, implement an iterator to return their elements alternately.
+
+For example, given two 1d vectors:
+
+v1 = [1, 2]
+v2 = [3, 4, 5, 6]
+By calling next repeatedly until hasNext returns false, 
+the order of elements returned by next should be: [1, 3, 2, 4, 5, 6].
+
+Follow up: What if you are given k 1d vectors? How well can your code be extended to such cases?
+
+Clarification for the follow up question - Update (2015-09-18):
+The "Zigzag" order is not clearly defined and is ambiguous for k > 2 cases. 
+If "Zigzag" does not look right to you, replace "Zigzag" with "Cyclic". For example, given the following input:
+
+[1,2,3]
+[4,5,6,7]
+[8,9]
+It should return [1,4,8,2,5,9,3,6,7].
+*/
+class ZigzagIterator
+{
+	public:
+	 ZigzagIterator(vector<int>& v1, vector<int>& v2)
+	 {
+			if(!v1.empty())
+			{
+				q.emplace(v1.begin(), v1.end());
+			}
+			
+			if(!v2.empty())
+			{
+				q.emplace(v2.begin(), v2.end());
+			}
+	 }
+	 
+	 int next() 
+	 {
+		 auto p = q.front();
+		 auto it = p.first;
+		 int val = *it;
+		 
+		 if( (++it) != p.second)
+		 {
+			 q.push(it, p.second);
+		 }
+	 }
+	 
+	 bool hasNext()
+	 {
+		 return !q.empty();
+	 }
+	 
+	 private:
+	 
+		queue<pair<vector<int>::iterator, vector<int>::iterator>>> q;
+}
+
+//<--> 282. Expression Add Operators
+/*
+Given a string that contains only digits 0-9 and a target value, 
+return all possibilities to add binary operators (not unary) +, -, or * 
+between the digits so they evaluate to the target value.
+
+Examples: 
+"123", 6 -> ["1+2+3", "1*2*3"] 
+"232", 8 -> ["2*3+2", "2+3*2"]
+"105", 5 -> ["1*0+5","10-5"]
+"00", 0 -> ["0+0", "0-0", "0*0"]
+"3456237490", 9191 -> []
+*/
+class Solution {
+public:
+    vector<string> addOperators(string num, int target) 
+		{
+			vector<string> result;
+			dfs(num, "", target, 0, 0, res);
+			return result;
+    }
+		
+		void dfs(string num, string expr, long long target, long long last, long long cur_expr_result, vector<string>& res)
+		{
+			if(expr.empty() && ( target == (int)cur_expr_result ) )
+			{
+				res.emplace_back(expr);
+				return;
+			}
+			//key: we must let i until equal to num.size()
+			//so that substr(0,i) finally can return whole string, and substr(i) return empty
+			for(size_t i = 1; i<=num.size(); ++i) 
+			{
+				auto left = num.substr(0,i);
+				if(left.size()>1 && left[0] == '0') //ignore leading zeros
+				{
+					return;
+				}
+				
+				auto right = num.substr(i);
+				
+				auto L = stoll(left);
+				
+				if( expr.empty() )
+				{
+					dfs(right, left, target, L, L, res);
+				}
+				else
+				{
+					//add: the last one that brought to next level will be L 
+					dfs(right, expr+"+"+left, target, L, cur_expr_result + L, res);
+					//sub: the last one that brought to next level will be -L 
+					dfs(right, expr+"-"+left, target, -L, cur_expr_result - L, res);
+					
+					//multiply: the last one that brought to next level will be last*L
+					// and cur_expr_result will be (cur_expr_result - last)+( last * L )
+					// For example: 2+3*2, when dfs run to last = 3, now, num=2, cur_expr_result = 5
+					// we must remove 3 from cur_expr_result, and then add the multiply result of 3 and 2
+					dfs(right, expr+"*"+left, target, L, cur_expr_result - last + ( last * L ), res);
+				}
+			}
+		}
+};
+
+//<--> 283. Move Zeroes
+/*
+Given an array nums, write a function to 
+
+move all 0's to the end of it while maintaining the relative order of the non-zero elements.
+
+For example, given nums = [0, 1, 0, 3, 12], after calling your function, nums should be [1, 3, 12, 0, 0].
+
+Note:
+You must do this in-place without making a copy of the array.
+Minimize the total number of operations.
+*/
+class Solution {
+public:
+    void moveZeroes(vector<int>& nums) 
+		{
+        size_t left = 0;
+        
+        for(size_t i = 0; i< nums.size(); ++i)
+        {
+            if(nums[i] != 0)
+            {
+                swap(nums[left++], nums[i]);
+            }
+        }
+    }
+};
+
+//<-->284. Peeking Iterator
+/*
+Given an Iterator class interface with methods: next() and hasNext(), 
+
+design and implement a PeekingIterator that support the peek() operation -- 
+
+it essentially peek() at the element that will be returned by the next call to next().
+
+Here is an example. Assume that the iterator is initialized to the beginning of the list: [1, 2, 3].
+
+Call next() gets you 1, the first element in the list.
+
+Now you call peek() and it returns 2, the next element. Calling next() after that still return 2.
+
+You call next() the final time and it returns 3, the last element. 
+
+Calling hasNext() after that should return false.
+*/
+
+// Below is the interface for Iterator, which is already defined for you.
+// **DO NOT** modify the interface for Iterator.
+class Iterator {
+    struct Data;
+	Data* data;
+public:
+	Iterator(const vector<int>& nums);
+	Iterator(const Iterator& iter);
+	virtual ~Iterator();
+	// Returns the next element in the iteration.
+	int next();
+	// Returns true if the iteration has more elements.
+	bool hasNext() const;
+};
+
+
+class PeekingIterator : public Iterator {
+public:
+	PeekingIterator(const vector<int>& nums) : Iterator(nums) {
+	    // Initialize any member here.
+	    // **DO NOT** save a copy of nums and manipulate it directly.
+	    // You should only use the Iterator interface methods.
+	    _use_peek = false;
+	}
+
+    // Returns the next element in the iteration without advancing the iterator.
+	int peek() {
+		if(!_use_peek)
+		{
+			val = Iterator::next();
+			_use_peek = true;
+		}
+		
+		return val;
+	}
+
+	// hasNext() and next() should behave the same as in the Iterator interface.
+	// Override them if needed.
+	int next() {
+		if(!_use_peek)
+		{
+			return Iterator::next();
+		}
+		
+		_use_peek = false;
+		return val;
+		
+	}
+
+	bool hasNext() const {
+		if(!_use_peek)
+		{
+			return true;
+		}
+		
+		return Iterator::hasNext();
+	}
+	
+	private:
+	
+	  bool _use_peek;
+		int val;
+};
+
+//<--> 285. Inorder Successor in BST   
+/*
+Given a binary search tree and a node in it, 
+
+find the in-order successor of that node in the BST.
+
+Note: If the given node has no in-order successor in the tree, return null.
+*/
+class Solution {
+public:
+		//method 1: iterative
+    TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) 
+		{
+			auto cur = root;
+			stack<TreeNode*> s;
+			
+			bool bFound = false;
+			
+			while(cur || !s.empty())
+			{
+				while(cur)
+				{
+					s.push(cur);
+					cur = cur->left;
+				}
+				
+				cur = s.top();
+				s.pop();
+				if(!bFound && ( cur == p ) ) 
+				{
+					bFound = true;
+				}
+				else if(bFound)
+				{
+					return cur;
+				}
+				
+				cur = cur->right;
+			}
+			return nullptr;
+		}
+		
+		//method 2: recursive inorder
+		TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p) 
+		{
+			TreeNode* pre = nullptr;
+			TreeNode* suc = nullptr;
+			
+			inorder(root, p, pre, suc);
+			return suc;
+		}
+		
+		void inorder(TreeNode* root, TreeNode* p, TreeNode*& pre, TreeNode*& suc)
+		{
+			if(root)
+			{
+				inorder(root->left, p, pre, suc);
+				if(pre==p)
+				{
+					suc = root;
+				}
+				pre = root;
+				inorder(root->right, p, pre, suc);
+			}
+		}
+		
+		//method 3: iterative using BST properties
+		TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p)
+		{
+			TreeNode* res = nullptr;
+			
+			while(root)
+			{
+				if(root->val > p->val)
+				{
+					//p is in the left subtree of root, 
+					//so, root could be the successor since this is inorder
+					res = root;
+					root = root->left;
+				}
+				else
+				{
+					root = root->right;
+				}
+			}
+			
+			return res;
+		}
+		
+		//method 4: recursive using BST properties
+		TreeNode* inorderSuccessor(TreeNode* root, TreeNode* p)
+		{
+			if(!root)
+			{
+				return nullptr;
+			}
+			
+			if(root->val <= p->val)
+			{
+				return inorderSuccessor(root->right, p);
+			}
+			else
+			{
+				auto left = inorderSuccessor(root->left, p);
+				return left ? left : root;
+			}
+		}
+}
+
+//<--> 286. Walls and Gates
+/*
+You are given a m x n 2D grid initialized with these three possible values.
+
+-1 - A wall or an obstacle.
+0 - A gate.
+INF - Infinity means an empty room. We use the value 2^31 - 1 = 2147483647 
+to represent INF as you may assume that the distance to a gate is less than 2147483647.
+
+Fill each empty room with the distance to its nearest gate. 
+If it is impossible to reach a gate, it should be filled with INF.
+
+For example, given the 2D grid:
+INF  -1  0  INF
+INF INF INF  -1
+INF  -1 INF  -1
+  0  -1 INF INF
+After running your function, the 2D grid should be:
+  3  -1   0   1
+  2   2   1  -1
+  1  -1   2  -1
+  0  -1   3   4
+*/
+class Solution {
+public:
+		//dfs
+    void wallsAndGates(vector<vector<int>>& rooms)
+		{
+			
+		}
+};
+
+//<--> 287. Find the Duplicate Number
+/*
+Given an array nums containing n + 1 integers 
+
+where each integer is between 1 and n (inclusive), 
+
+prove that at least one duplicate number must exist. 
+
+Assume that there is only one duplicate number, find the duplicate one.
+
+Note:
+1. You must not modify the array (assume the array is read only).
+2. You must use only constant, O(1) extra space.
+2. Your runtime complexity should be less than O(n^2).
+There is only one duplicate number in the array, 
+but it could be repeated more than once.
+*/
+class Solution {
+public:
+    int findDuplicate(vector<int>& nums) 
+		{
+    
+    }
+};
+
+//<--> 288. Unique Word Abbreviation
+/*
+An abbreviation of a word follows the form 
+<first letter><number><last letter>. 
+Below are some examples of word abbreviations:
+
+a) it                      --> it    (no abbreviation)
+
+     1
+b) d|o|g                   --> d1g
+
+              1    1  1
+     1---5----0----5--8
+c) i|nternationalizatio|n  --> i18n
+
+              1
+     1---5----0
+d) l|ocalizatio|n          --> l10n
+Assume you have a dictionary and given a word, 
+find whether its abbreviation is unique in the dictionary. 
+A word's abbreviation is unique if no other word from the dictionary has the same abbreviation.
+
+Example: 
+
+Given dictionary = [ "deer", "door", "cake", "card" ]
+
+isUnique("dear") -> false
+isUnique("cart") -> true
+isUnique("cane") -> false
+isUnique("make") -> true
+*/
+class ValidWordAbbr
+{
+	public:
+    ValidWordAbbr(vector<string> &dictionary)
+		{
+		}
+}
+
+//<--> 289. Game of Life
+/*
+According to the Wikipedia's article: "The Game of Life, also known simply as Life, 
+
+is a cellular automaton devised by the British mathematician John Horton Conway in 1970."
+
+Given a board with m by n cells, each cell has an initial state live (1) or dead (0).
+Each cell interacts with its eight neighbors (horizontal, vertical, diagonal) 
+using the following four rules (taken from the above Wikipedia article):
+
+1. Any live cell with fewer than two live neighbors dies, as if caused by under-population.
+2. Any live cell with two or three live neighbors lives on to the next generation.
+3. Any live cell with more than three live neighbors dies, as if by over-population..
+4. Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.
+
+Write a function to compute the next state (after one update) of the board given its current state.
+
+Follow up: 
+1. Could you solve it in-place? 
+Remember that the board needs to be updated at the same time: 
+You cannot update some cells first and then use their updated values to update other cells.
+2. In this question, we represent the board using a 2D array. 
+In principle, the board is infinite, 
+which would cause problems when the active area encroaches the border of the array. 
+How would you address these problems?
+*/
+// 0 : 上一轮是0，这一轮过后还是0
+// 1 : 上一轮是1，这一轮过后还是1
+// 2 : 上一轮是1，这一轮过后变为0
+// 3 : 上一轮是0，这一轮过后变为1
+class Solution {
+public:
+    void gameOfLife(vector<vector<int>>& board) 
+		{    
+    }
+};
+
+//<--> 290. Word Pattern
+/*
+Given a pattern and a string str, find if str follows the same pattern.
+
+Here follow means a full match, 
+
+such that there is a bijection between a letter in pattern and a non-empty word in str.
+
+Examples:
+pattern = "abba", str = "dog cat cat dog" should return true.
+pattern = "abba", str = "dog cat cat fish" should return false.
+pattern = "aaaa", str = "dog cat cat dog" should return false.
+pattern = "abba", str = "dog dog dog dog" should return false.
+Notes:
+You may assume pattern contains only lowercase letters, and str 
+contains lowercase letters separated by a single space.
+*/
+class Solution {
+public:
+    bool wordPattern(string pattern, string str) {
+        
+        unordered_map<char,string> m;
+        unordered_set<string> s;
+        
+        istringstream iss(str);
+        
+        string cur_s;
+        size_t i = 0;
+        
+        while(getline(iss, cur_s, ' '))
+        {
+            if(i == pattern.size())
+            {
+                return false;
+            }
+            
+            auto c = pattern[i];
+            
+            if( m.find(c)!=m.end() )
+            {
+                if(m[c] != cur_s )
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                if(s.find(cur_s)!=s.end())
+                {
+                    return false;
+                }
+                m.emplace(c, cur_s);
+                s.emplace(cur_s);
+            }
+            
+            ++i;
+        }
+        
+        
+        return i == pattern.size();
+        
+
+    }
+};
+
+//<--> 291. Word Pattern II
+/*
+Given a pattern and a string str, find if str follows the same pattern.
+
+Here follow means a full match, 
+such that there is a bijection between a letter in pattern 
+and a non-empty substring in str.
+
+Examples:
+
+pattern = "abab", str = "redblueredblue" should return true.
+pattern = "aaaa", str = "asdasdasdasd" should return true.
+pattern = "aabb", str = "xyzabcxzyabc" should return false.
+ 
+
+Notes:
+You may assume both pattern and str contains only lowercase letters.
+*/
+class Solution {
+public:
+    bool wordPatternMatch(string pattern, string str)
+		{
+			unordered_map<char,string> m;
+			
+			for(auto& c : pattern)
+			{
+				if(m.find(c)==m.end())
+				{
+					m.emplace(c, "");
+				}
+			}
+			
+			return dfs(str, 0, pattern, 0, m);
+		}
+		
+		bool dfs(string s, size_t si, string p, size_t pi, unordered_map<char, string>& m)
+		{
+			if( pi == p.size() && si == s.size() )
+			{
+				return true;
+			}
+			
+			if(pi == p.size() || si == s.size())
+			{
+				return false;
+			}
+			
+			char c = pattern[pi];
+			
+			for(size_t i = si; i< s.size(); ++i)
+			{
+				auto sub = s.substr(si, i-si+1);
+				
+				if(m[c]==sub)
+				{
+					if(dfs(s, i+1, p, pi+1, m))
+					{
+						return true;
+					}
+				}
+				
+				if(m[c].empty())
+				{
+					auto iter = find_if(begin(m), end(m), [&sub](const pair<char,string>& p){return p.second==sub});
+					
+					if(iter == m.end())
+					{
+						m[c] = sub;
+						if(dfs(s, i+1, p, pi+1, m))
+						{
+							return true;
+						}
+					}
+				}
+			} //end for
+			
+			return false;
+		}
+};
+
+//<--> 292. Nim Game
+/*
+You are playing the following Nim Game with your friend: 
+
+There is a heap of stones on the table, each time one of you take turns to remove 1 to 3 stones. 
+
+The one who removes the last stone will be the winner. You will take the first turn to remove the stones.
+
+Both of you are very clever and have optimal strategies for the game. 
+
+Write a function to determine whether you can win the game 
+
+given the number of stones in the heap.
+
+For example, if there are 4 stones in the heap,
+
+then you will never win the game: no matter 1, 2, or 3 stones you remove, 
+
+the last stone will always be removed by your friend.
+*/
+
+//只要是4的倍数个，我们一定会输，所以对4取余即可
+class Solution {
+public:
+		bool canWinNim(int n)
+		{
+			return n%4 != 0;
+    }
+};
+
+//<--> 293. Flip Game
+/*
+You are playing the following Flip Game with your friend: 
+
+Given a string that contains only these two characters: + and -, 
+
+you and your friend take turns to flip twoconsecutive "++" into "--". 
+
+The game ends when a person can no longer make a move and therefore the other person will be the winner.
+
+Write a function to compute all possible states of the string after one valid move.
+
+For example, given s = "++++", after one move, it may become one of the following states:
+
+[
+  "--++",
+  "+--+",
+  "++--"
+]
+ 
+If there is no valid move, return an empty list [].
+*/
+
+class Solution {
+public:
+    vector<string> generatePossibleNextMoves(string s)
+		{
+			vector<string> v;
+			
+			for(size_t i = 0; i<s.size()-1; ++i)
+			{
+				if(s[i] == '+' && s[i+1] == '+')
+				{
+					v.push_back(s);
+					v[v.size()-1][i] = '-';
+					v[v.size()-1][i+1] = '-';
+				}
+			}
+			
+			return v;
+		}
+		
+		
+};
+
+//<--> 293. Flip Game II
+/*
+You are playing the following Flip Game with your friend: 
+
+Given a string that contains only these two characters: + and -, 
+
+you and your friend take turns to flip twoconsecutive "++" into "--". 
+
+The game ends when a person can no longer make a move 
+
+and therefore the other person will be the winner.
+
+Write a function to determine if the starting player can guarantee a win.
+
+For example, given s = "++++", return true. 
+
+The starting player can guarantee a win by flipping the middle "++" to become "+--+".
+
+Follow up:
+Derive your algorithm's runtime complexity.
+*/
+class Solution {
+public:
+    bool canWin(string s)
+		{
+			for(size_t i = 0; i<s.size()-1; ++i)
+			{
+				if(s[i]=='+' && s[i+1]=='+')
+				{
+					auto tmp = s;
+					tmp[i] = '-';
+					tmp[i+1] = '-';
+					
+					if(!canWin(tmp))
+					{
+						return true;
+					}
+				}
+			}
+			
+			return false;
+		}
 };
