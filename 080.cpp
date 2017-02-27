@@ -12890,7 +12890,24 @@ public:
 				}
 			}
 			
+			sort(begin(home_rows), end(home_rows));
+			sort(begin(home_cols), end(home_cols));
 			
+			int i = 0;
+			int j = home_rows.size() -1 ;
+			
+			int min_dist = 0;
+			
+			while(i < j)
+			{
+				min_dist += ( home_rows[j] - home_rows[i] );
+				min_dist += ( home_cols[j] - home_cols[i] );
+				
+				--j;
+				++i;
+			}
+			
+			return min_dist;
 		}
 };
 
@@ -12982,8 +12999,104 @@ Longest consecutive sequence path is 2-3, not 3-2-1, so return 2.
 */
 class Solution {
 public:
+	//method 1: recursive.
     int longestConsecutive(TreeNode* root)
 	{
+		if(!root)
+		{
+			return 0;
+		}
+		
+		int res = 0;
+		dfs(root, 1, res);
+		
+		return res;
+	}
+	
+	void dfs(TreeNode* root, int len, int &res)
+	{
+		res = max(len, res);
+		
+		
+		if( root->left )
+		{
+			if( root->left->val == ( root->val + 1) )
+			{
+				dfs(root->left, len+1, res);
+			}
+			else
+			{
+				dfs(root->left, 1, res);
+			}
+		}
+		
+		if( root->right )
+		{
+			if( root->right->val == ( root->val + 1) )
+			{
+				dfs(root->right, len+1, res);
+			}
+			else
+			{
+				dfs(root->right, 1, res);
+			}
+		}
+	}
+	
+	//method 2: iterative.
+    int longestConsecutive(TreeNode* root)
+	{
+		if(!root)
+		{
+			return 0;
+		}
+		
+		int res = 0;
+		
+		queue<TreeNode*> q;
+		q.push(root);
+		
+		while(!q.empty())
+		{
+			auto t = q.front();
+			q.pop();
+			
+			while( (t->left && t->left->val == t->val + 1) || (t->right && t->right->val == t->val + 1) )
+			{
+				if(t->left && t->left->val == t->val + 1)
+				{
+					if(t->right)
+					{
+						q.push(t->right);
+					}
+					t = t->left;
+				}
+				else if(t->right && t->right->val == t->val + 1)
+				{
+					if(t->left)
+					{
+						q.push(t->left);
+					}
+					t = t->right;
+				}
+				
+				++len;
+			} //end inner while
+			
+			res = max(len, res);
+			
+			if(t->left)
+			{
+				q.push(t->left);
+			}
+			
+			if(t->right)
+			{
+				q.push(t->right);
+			}
+		}
+		
+		return res;
 	}
 };
 
