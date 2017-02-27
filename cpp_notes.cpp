@@ -1,3 +1,104 @@
+// 2017-01-30
+/////////////////////////////////////////
+
+
+/*
+Variables:
+
+It simply means that once the variable has been initialized, it remains in memory until the end of the program.
+
+static variables exist for the "lifetime" of the translation unit that it's defined in, and:
+
+If it's in a namespace scope (i.e. outside of functions and classes), then it can't be accessed from any other translation unit. 
+This is known as "internal linkage". (Dont' do this in headers, it's just a terrible idea)
+
+If it's a variable in a function, it can't be accessed from outside of the function, just like any other local variable. (this is the local they mentioned)
+
+class members have no restricted scope due to static, but can be addressed from the class as well as an instance (like std::string::npos). 
+[Note: you can declare static members in a class, but they should usually still be defined in 
+a translation unit (cpp file), and as such, there's only one per class]
+
+Before any function in a translation unit is executed (possibly after main began execution), 
+the variables with static storage duration in that translation unit will be "constant initialized" 
+(to constexpr where possible, or zero otherwise), 
+and then non-locals are "dynamically initialized" properly in the order they are defined in the translation unit 
+(for things like std::string="HI"; that aren't constexpr). 
+Finally, function-local statics are initialized the first time execution "reaches" the line where they are declared. 
+They are all destroyed in the reverse order of initialization.
+
+The easiest way to get all this right is to make all static variables that are not constexpr initialized into function static locals, which makes sure all of your statics/globals are initialized properly when you try to use them no matter what, thus preventing the static initialization order fiasco.
+
+T& get_global() {
+    static T global = initial_value();
+    return global;
+}
+Be careful, because when the spec says namespace-scope variables have "static storage duration" by default, they mean the "lifetime of the translation unit" bit, but that does not mean it can't be accessed outside of the file.
+
+Functions
+
+Significantly more straightforward, static is often used as a class member function, and only very rarely used for a free-standing function.
+
+A static member function differs from a regular member function in that it can be called without an instance of a class, and since it has no instance, it cannot access non-static members of the class. Static variables are useful when you want to have a function for a class that definitely absolutely does not refer to any instance members, or for managing static member variables.
+
+struct A {
+    A() {++A_count;}
+    A(const A&) {++A_count;}
+    A(A&&) {++A_count;}
+    ~A() {--A_count;}
+
+    static int get_count() {return A_count;}
+private:
+    static int A_count;
+}
+
+int main() {
+    A var;
+
+    int c0 = var.get_count(); //some compilers give a warning, but it's ok.
+    int c1 = A::get_count(); //normal way
+}
+A static free-function means that the function will not be referred to by any other translation unit, and thus the linker can ignore it entirely. This has a small number of purposes:
+
+Can be used in a cpp file to guarantee that the function is never used from any other file.
+Can be put in a header and every file will have it's own copy of the function. Not useful, since inline does pretty much the same thing.
+Speeds up link time by reducing work
+Can put a function with the same name in each TU, and they can all do different things. For instance, you could put a static void log(const char*) {} in each cpp file, and they could each all log in a different way.
+*/
+
+
+/*
+static_cast is the first cast you should attempt to use. 
+It does things like implicit conversions between types (such as int to float, or pointer to void*), 
+and it can also call explicit conversion functions (or implicit ones). In many cases, explicitly stating static_cast isn't necessary, 
+but it's important to note that the T(something) syntax is equivalent to (T)something and should be avoided (more on that later). 
+A T(something, something_else) is safe, however, and guaranteed to call the constructor.
+
+static_cast can also cast through inheritance hierarchies. It is unnecessary when casting upwards (towards a base class), 
+but when casting downwards it can be used as long as it doesn't cast through  virtual inheritance. 
+It does not do checking, however, and it is undefined behavior to static_cast down a hierarchy to a type that isn't actually the type of the object.
+*/
+
+/*
+dynamic_cast is almost exclusively used for handling polymorphism. 
+You can cast a pointer or reference to any polymorphic type to any other class type (a polymorphic type has at least one virtual function, declared or inherited). You can use it for more than just casting downwards -- 
+you can cast sideways or even up another chain. 
+The dynamic_cast will seek out the desired object and return it if possible. If it can't, it will return nullptr in the case of a pointer, or throw std::bad_cast in the case of a reference.
+
+dynamic_cast has some limitations, though. 
+It doesn't work if there are multiple objects of the same type in the inheritance hierarchy (the so-called 'dreaded diamond') 
+and you aren't using virtual inheritance. 
+It also can only go through public inheritance - it will always fail to travel through protected or private inheritance.
+This is rarely an issue, however, as such forms of inheritance are rare.
+
+reinterpret_cast is the most dangerous cast, and should be used very sparingly. 
+It turns one type directly into another - such as casting the value from one pointer to another, 
+or storing a pointer in an int, or all sorts of other nasty things. 
+Largely, the only guarantee you get with reinterpret_cast is that normally if you cast the result back to the original type, 
+you will get the exact same value (but not if the intermediate type is smaller than the original type). 
+There are a number of conversions that reinterpret_cast cannot do, too. 
+It's used primarily for particularly weird conversions and bit manipulations, like turning a raw data stream into actual data, or storing data in the low bits of an aligned pointer.
+*/
+
 // 2017-02-21
 /////////////////////////////////////////
 //https://github.com/ryancoleman/lotsofcoresbook2code/tree/master/Pearls2_Chapter07
