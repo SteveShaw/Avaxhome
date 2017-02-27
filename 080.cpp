@@ -1,3 +1,609 @@
+//28. Implement strStr() 
+/*
+Implement strStr().
+Returns the index of the first occurrence of needle in haystack, 
+or -1 if needle is not part of haystack. 
+*/
+
+class Solution {
+public:
+    int strStr(string haystack, string needle) 
+	{
+		if(needle.empty()||haystack.empty()) return -1;
+		auto m = haystack.size();
+		auto n = needle.size();
+		
+		if( m< n )
+		{
+			return -1;
+		}
+		
+		for( size_t i = 0; i<=m-n; ++i )
+		{
+			size_t j = 0;
+			for( j = 0; j<n; ++j )
+			{
+				if( haystack[i+j] != needle[j] )
+				{
+					break;
+				}
+			}
+			
+			if(j==n) return i;
+		}
+		
+		return -1;
+		
+    }
+};
+
+//38. Count and Say
+/*
+The count-and-say sequence is the sequence of integers beginning as follows:
+1, 11, 21, 1211, 111221, ...
+
+1 is read off as "one 1" or 11.
+11 is read off as "two 1s" or 21.
+21 is read off as "one 2, then one 1" or 1211.
+
+Given an integer n, generate the nth sequence.
+
+Note: The sequence of integers will be represented as a string. 
+*/
+
+class Solution {
+public:
+    string countAndSay(int n) 
+	{
+		string res = "1";
+		for(int i = 1; i<n; ++i)
+		{
+			string tmp;
+			res.push_back('$');
+			
+			int count = 1;
+			
+			for(size_t j = 1; j < res.size(); ++j )
+			{
+				if(res[j-1]==res[j])
+				{
+					++count;
+				}
+				else
+				{
+					tmp.push_back(count+'0');
+					tmp.push_back(res[j-1]);
+					count = 1;
+				}
+			}
+			
+			res = tmp;
+		}
+		
+		return res;
+    }
+};
+//39. Combination Sum
+/*
+ Given a set of candidate numbers (C) (without duplicates) and a target number (T), 
+ find all unique combinations in C where the candidate numbers sums to T.
+
+The same repeated number may be chosen from C unlimited number of times.
+
+Note:
+
+    All numbers (including target) will be positive integers.
+    The solution set must not contain duplicate combinations.
+
+For example, given candidate set [2, 3, 6, 7] and target 7,
+A solution set is:
+
+[
+  [7],
+  [2, 2, 3]
+]
+*/
+class Solution {
+public:
+    vector<vector<int>> combinationSum(vector<int>& candidates, int target) 
+	{
+    }
+	
+	void dfs( vector<int>& nums, vector<int>& out, vector<vector<int>> &res, int target, int start )
+	{
+		if(target < 0) 
+		{
+			return;
+		}
+		if(target == 0)
+		{
+			res.push_back(out);
+			return;
+		}
+		
+		for(int i = start; i<nums.size();++i)
+		{
+			out.push_back(nums[i]);
+			dfs(nums,out,res,target-nums[i], i); //start is set to i not i+1 because "The same repeated number may be chosen"
+			out.pop_back();
+		}
+	}
+};
+//40. Combination Sum II
+/*
+Given a collection of candidate numbers (C) and a target number (T), 
+find all unique combinations in C where the candidate numbers sums to T.
+
+Each number in C may only be used once in the combination.
+
+Note:
+All numbers (including target) will be positive integers.
+The solution set must not contain duplicate combinations.
+For example, given candidate set [10, 1, 2, 7, 6, 1, 5] and target 8, 
+A solution set is: 
+[
+  [1, 7],
+  [1, 2, 5],
+  [2, 6],
+  [1, 1, 6]
+]
+*/
+
+class Solution {
+public:
+    vector<vector<int>> combinationSum2(vector<int>& candidates, int target) 
+	{
+		
+	}
+	
+	void dfs( vector<int>& nums, vector<int>& out, vector<vector<int>> &res, int target, int start )
+	{
+		if(target < 0) 
+		{
+			return;
+		}
+		if(target == 0)
+		{
+			res.push_back(out);
+			return;
+		}
+		
+		for(int i = start; i<nums.size();++i)
+		{
+			if(i>start && nums[i]==nums[i-1]) continue;
+			out.push_back(nums[i]);
+			dfs(nums,out,res,target-nums[i], i+1);
+			out.pop_back();
+		}
+	}
+};
+
+//41. First Missing Positive
+/*
+Given an unsorted integer array, find the first missing positive integer.
+
+For example,
+Given [1,2,0] return 3,
+and [3,4,-1,1] return 2.
+
+Your algorithm should run in O(n) time and uses constant space.
+*/
+class Solution {
+public:
+    int firstMissingPositive(vector<int>& nums) 
+	{
+		size_t i = 0;
+		
+		auto n = nums.size();
+		
+		while( i < n )
+		{
+			if(nums[i]!=i+1&&nums[i]>0&&nums[i]<=n&&nums[i]!=nums[nums[i]-1])
+			{
+				swap(nums[i],nums[nums[i]-1]);
+			}
+			else
+			{
+				++i;
+			}
+		}
+		
+		for( i = 0; i<n;++i)
+		{
+			if(nums[i]!=i+1) return i+1;
+		}
+		
+		return n+1;
+	}
+};
+
+//<--> 42. Trapping rain water
+//Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. 
+//Given [0,1,0,2,1,0, 1, 3, 2, 1, 2, 1], return 6
+
+class Solution {
+public:
+    int trap(vector<int>& height) 
+	{
+		auto n = height.size();
+		
+		vector<int> dp(n, 0);
+		
+		int max_so_far = 0;
+		
+		for( size_t i = 0; i < n; ++i )
+		{
+			dp[i] = max_so_far;
+			max_so_far = max(max_so_far, height[i]);
+		}
+		
+		max_so_far = 0;
+		
+		int res = 0;
+		
+		for( size_t i = 0; i<n; ++i )
+		{
+			auto idx = n-1-i;
+			dp[idx] = min(max_so_far, dp[idx]);
+			max_so_far = max(max_so_far, height[idx]);
+			if(dp[idx] > height[idx])
+			{
+				res += (dp[idx]-height[idx]);
+			}
+		}
+		
+		return res;
+	}
+	
+		//second solution
+		// int trap(vector<int>& height) 
+		// {
+			// size_t l = 0, r = height.size() - 1;
+			
+			// int res = 0;
+			
+			// while(l<r)
+			// {
+				// auto min_h = min(height[l],height[r]);
+				// if(height[l]==min_h)
+				// {
+					// ++l;
+					// while(l<r && height[l]<min_h)
+					// {
+						// res += min_h - height[l];
+						// ++l;
+					// }
+				// }
+				// else
+				// {
+					// --r;
+					// while(l<r && height[r]<min_h)
+					// {
+						// res += min_h - height[r];
+						// --r;
+					// }
+				// }
+			// }
+		// }
+};
+
+//<--> 43. Multiply Strings
+/*
+Given two non-negative integers num1 and num2 represented as strings, return the product of num1 and num2.
+
+Note:
+
+    The length of both num1 and num2 is less than 110.
+    Both num1 and num2 contains only digits 0-9.
+    Both num1 and num2 does not contain any leading zero.
+    You must not use any built-in BigInteger library or convert the inputs to integer directly.
+
+*/
+class Solution {
+public:
+    string multiply(string num1, string num2) 
+	{
+		auto n1 = num1.size();
+		auto n2 = num2.size();
+		
+		auto k = n1+n2-2;
+		
+		vector<int> v(n1+n2,0);
+		
+		for( size_t i = 0; i< n1; ++i )
+		{
+			for( size_t j = 0; j<n2; ++j)
+			{
+				v[k-i-j] += (num1[i]-'0')*(num2[i]-'0');
+			}
+		}
+		
+		int carry = 0;
+		
+		for(size_t i = 0; i<n1+n2; --i)
+		{
+			v[i] += carry;
+			carry = v[i]/10;
+			v[i] -= carry * 10;
+		}
+		
+		size_t i = n1+n2-1;
+		
+		while(v[i]==0) --i;
+		
+		if(i<0) return "0";
+		
+		string res;
+		
+		while(i>=0)
+		{
+			res.push_back(v[i]+'0');
+			--i;
+		}
+		
+		return res;
+    }
+};
+
+//44. Wildcard Matching 
+/*
+Implement wildcard pattern matching with support for '?' and '*'.
+
+'?' Matches any single character.
+'*' Matches any sequence of characters (including the empty sequence).
+
+The matching should cover the entire input string (not partial).
+
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "*") → true
+isMatch("aa", "a*") → true
+isMatch("ab", "?*") → true
+isMatch("aab", "c*a*b") → false
+
+
+
+*/
+
+class Solution {
+public:
+    bool isMatch(string s, string p) 
+	{
+        
+    }
+};
+
+
+//45. Jump Game II
+/*
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Your goal is to reach the last index in the minimum number of jumps.
+
+For example:
+Given array A = [2,3,1,1,4]
+
+The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.) 
+*/
+
+class Solution {
+public:
+    int jump(vector<int>& nums) 
+	{
+		auto n = nums.size();
+		
+		size_t cur = 0;
+		size_t i = 0;
+		
+		int res = 0;
+		
+		while( cur < n-1 )
+		{
+			size_t pre = cur;
+			
+			while( i <= pre )
+			{
+				cur = max(cur, i + nums[i]);
+				++i;
+			}
+			++res;
+			
+			if(pre==cur) return -1;
+		}
+		
+		return res;
+    }
+};
+
+//46. Permutations
+/*
+ Given a collection of distinct numbers, return all possible permutations.
+
+For example,
+[1,2,3] have the following permutations:
+
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+]
+
+*/
+
+class Solution {
+public:
+    vector<vector<int>> permute(vector<int>& nums) 
+	{
+		vector<vector<int>> res;
+		
+		return res;
+    }
+	
+	void dfs( vector<int>& nums, vector<vector<int>>& res, size_t start  )
+	{
+		if( start==nums.size() )
+		{
+			res.push_back(nums);
+		}
+		else
+		{
+			for( size_t i = start; i< nums.size(); ++i )
+			{
+				swap(nums[start],nums[i]);
+				dfs(nums, res, start+1);
+				swap(nums[start],nums[i]);
+			}
+		}
+	}
+	
+};
+
+//47. Permutations II 
+/*
+ Given a collection of numbers that might contain duplicates, return all possible unique permutations.
+
+For example,
+[1,1,2] have the following unique permutations:
+
+[
+  [1,1,2],
+  [1,2,1],
+  [2,1,1]
+]
+
+*/
+
+class Solution {
+public:
+    vector<vector<int>> permuteUnique(vector<int>& nums) 
+	{
+    }
+	
+};
+
+//48. Rotate Image
+/*
+You are given an n x n 2D matrix representing an image.
+
+Rotate the image by 90 degrees (clockwise).
+
+Follow up:
+Could you do this in-place?
+*/
+class Solution {
+public:
+    void rotate(vector<vector<int>>& matrix) 
+	{
+		auto n = matrix.size();
+		
+		for( size_t i = 0; i<n; ++i )
+		{
+			for( size_t j = i+1; j<n; ++j )
+			{
+				swap(matrix[i][j], matrix[j][i]);
+			}
+			
+			reverse(matrix[i].begin(), matrix[i].end());
+		}
+	}
+};
+
+
+//49. Group Anagrams
+/*
+Given an array of strings, group anagrams together.
+
+For example, given: ["eat", "tea", "tan", "ate", "nat", "bat"],
+Return:
+
+[
+  ["ate", "eat","tea"],
+  ["nat","tan"],
+  ["bat"]
+]
+*/
+class Solution {
+public:
+    vector<vector<string>> groupAnagrams(vector<string>& strs)
+	{
+    }
+};
+
+//50. Pow(x, n) 
+class Solution {
+public:
+    double myPow(double x, int n)
+	{
+		double res = 1.0;
+		for(int i = n; i!=0; i/=2 )
+		{
+			if( i&1 != 0 ) res *= x;
+			x* = x;
+		}
+	}
+	
+	//recursion
+	double myPow(double x, int n)
+	{
+		if( n<0 ) return 1.0 / Pow( x, -n );
+		return Pow(x,n);
+	}
+	
+	double Pow(double x, int n)
+	{
+		if(n==0) return 1;
+		auto half = Pow(x, n/2);
+		if(n%1 == 0) return half*half;
+	}
+	
+};
+
+
+//////////////////////////////////
+
+// DP Initialization:
+
+// // both text and pattern are null
+// T[0][0] = true; 
+
+// // pattern is null
+// T[i][0] = false; 
+
+// // text is null
+// T[0][j] = T[0][j - 1] if pattern[j – 1] is '*'  
+
+// // If current characters match, result is same as 
+// // result for lengths minus one. Characters match
+// // in two cases:
+// // a) If pattern character is '?' then it matches  
+// //    with any character of text. 
+// // b) If current characters in both match
+// if ( pattern[j – 1] == ‘?’) || 
+     // (pattern[j – 1] == text[i - 1])
+    // T[i][j] = T[i-1][j-1]   
+ 
+// If we encounter ‘*’, two choices are possible-
+// a) We ignore ‘*’ character and move to next 
+//    character in the pattern, i.e., ‘*’ 
+//    indicates an empty sequence.
+// b) '*' character matches with ith character in
+//     input 
+// else if (pattern[j – 1] == ‘*’)
+    // T[i][j] = T[i][j-1] || T[i-1][j]  
+
+// else // if (pattern[j – 1] != text[i - 1])
+    // T[i][j]  = false 
+
 //53. Maximum Subarray
 /*
 Find the contiguous subarray within an array
@@ -208,7 +814,7 @@ public:
     }
 };
 
-//57. Insert Interval
+//<--> 57. Insert Interval
 /*
 Given a set of non-overlapping intervals,
 insert a new interval into the intervals (merge if necessary).
@@ -238,15 +844,38 @@ class Solution {
 public:
     vector<Interval> insert(vector<Interval>& intervals, Interval newInterval)
     {
-        
+        auto iter = intervals.begin();
+		
+		int overlap = 0; // number of intervals that can be merged with newInterval
+		while(iter != intervals.end())
+		{
+			if(newInterval.start > iter->end)
+			{
+				++iter;
+				continue;
+			}
+			
+			if(newInterval.end < iter->start) // key: found the first interval that is right of newInterval
+			{
+				break;
+			}
+			
+			newInterval.start = min(newInterval.start, iter->start);
+			newInterval.end = max(newInterval.end, iter->end);
+			++overlap;
+			++iter;
+		}
+		
+		auto pos = intervals.erase(iter - overlap, iter); //important: remove intervals that overlapped with newInterval, and return the insert position.
+		intervals.insert(pos, newInterval);
+		
+		return intervals;
     }
 };
 
 //58. Length of Last Word
 /*
-Given a string s consists of upper/lower-case alphabets and empty space characters ' ', 
-
-return the length of last word in the string.
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
 
 If the last word does not exist, return 0.
 
@@ -287,31 +916,30 @@ public:
     vector<vector<int>> generateMatrix(int n)
     {
         vector<vector<int>> m(n, vector<int>(n,0));
-        int p = n, q = n;
+        int p = n;
         int c = n /2;
         
         int col = 0, row = 0;
         int num = 1;
-        for(int i = 0; i<c; ++i, p-=2, q-=2)
+        for(int i = 0; i<c; ++i, p-=2)
         {
-            for(col = i; col < i+q; ++col)
+            for(col = i; col < i+p; ++col)
             {
                 m[i][col] = num++;
             }
             
-            for(row=i+1; row< i+p; ++row)
+            for(row = i + 1; row< i+p; ++row)
             {
-                m[row][i+q-1] = num++;
+                m[row][i+p-1] = num++;
             }
             
-            if(p==1||q==1) break;
             
-            for(col=i+q-2;col>=i;--col)
+            for(col=i+p-2; col >= i; --col)
             {
-                m[i+q-1][col] = num++;
+                m[i+p-1][col] = num++;
             }
             
-            for(row=i+p-2;i>i;--row)
+            for(row=i+p-2; row > i;--row)
             {
                 m[row][i] = num++;
             }
@@ -326,7 +954,7 @@ public:
     }
 };
 
-//60. Permutation Sequence
+//<--> 60. Permutation Sequence
 /*
 The set [1,2,3,…,n] contains a total of n! unique permutations.
 
@@ -371,6 +999,416 @@ public:
         return res;
     }
 };
+
+// 61. Rotate List 
+/*
+Given a list, rotate the list to the right by k places, where k is non-negative.
+
+For example:
+Given 1->2->3->4->5->NULL and k = 2,
+return 4->5->1->2->3->NULL.
+*/
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+class Solution {
+public:
+    ListNode* rotateRight(ListNode* head, int k) 
+	{
+		if(!head) return nullptr;
+		
+		int n = 1;
+		auto cur = head;
+		while(cur->next)
+		{
+			++n;
+			cur = cur->next;
+		}
+		
+		cur->next = head;
+		int m = n - k%n;
+		
+		for(int i = 0; i<m; ++i)
+		{
+			cur = cur->next;
+		}
+		
+		auto new_head = cur->next;
+		cur->next = nullptr;
+		
+		return new_head;
+    }
+};
+
+//62. Unique Paths 
+/*
+A robot is located at the top-left corner of a m x n grid 
+(marked 'Start' in the diagram below).
+
+The robot can only move either down or right at any point in time. 
+The robot is trying to reach the bottom-right corner of the grid (marked 'Finish' in the diagram below).
+
+How many possible unique paths are there?
+*/
+class Solution {
+public:
+    int uniquePaths(int m, int n) 
+	{
+		vector<vector<int>> dp( m,  vector<int>(n, 1) );
+		for(int i = 1; i< m; ++i)
+		{
+			for( int j = 1; j<n; ++j)
+			{
+				dp[i][j] = dp[i-1][j] + dp[i][j-1];
+			}
+		}
+		
+		return dp[m-1][n-1];
+    }
+};
+
+//63. Unique Paths II
+/*
+Follow up for "Unique Paths":
+
+Now consider if some obstacles are added to the grids. How many unique paths would there be?
+
+An obstacle and empty space is marked as 1 and 0 respectively in the grid.
+
+For example,
+
+There is one obstacle in the middle of a 3x3 grid as illustrated below.
+
+[
+  [0,0,0],
+  [0,1,0],
+  [0,0,0]
+]
+
+The total number of unique paths is 2.
+
+Note: m and n will be at most 100.
+*/
+class Solution {
+public:
+    int uniquePathsWithObstacles(vector<vector<int>>& obstacleGrid) 
+	{
+		    if ( obstacleGrid.empty() || obstacleGrid[0].empty() || obstacleGrid[0][0] == 1 )
+			{
+				return 0;
+			}
+
+			auto m = obstacleGrid.size();
+			auto n = obstacleGrid[0].size();
+
+			vector<vector<int>> dp( m, vector<int>( n, 0 ) );
+			dp[0][0] = 1;
+
+			for ( size_t i = 1; i < m; ++i )
+			{
+				if ( obstacleGrid[i][0] == 0 )
+				{
+					dp[i][0] = dp[i - 1][0];
+				}
+			}
+
+			for ( size_t i = 1; i < n; ++i )
+			{
+				if ( obstacleGrid[0][i] == 0 )
+				{
+					dp[0][i] = dp[0][i-1];
+				}
+			}
+
+			for ( size_t i = 1; i < m; ++i )
+			{
+				for ( size_t j = 1; j < n; ++j )
+				{
+					if ( obstacleGrid[i][j] == 1 )
+					{
+						dp[i][j] = 0;
+					}
+					else
+					{
+						dp[i][j] = dp[i][j - 1] + dp[i - 1][j];
+					}
+				}
+			}
+
+			return dp.back().back();
+    }
+};
+
+//<--> 64. Minimum Path Sum
+/*
+Given a m x n grid filled with non-negative numbers, 
+find a path from top left to bottom right which minimizes the sum of all numbers along its path.
+*/
+
+class Solution {
+public:
+    int minPathSum(vector<vector<int>>& grid) 
+	{
+    }
+};
+
+//65. Valid Number
+/*
+Validate if a given string is numeric.
+
+Some examples:
+"0" => true
+" 0.1 " => true
+"abc" => false
+"1 a" => false
+"2e10" => true
+Note: It is intended for the problem statement to be ambiguous.
+ You should gather all requirements up front before implementing one.
+*/
+class Solution {
+public:
+    bool isNumber(string s) 
+	{
+		
+    }
+};
+
+//66. Plus One
+/*
+Given a non-negative integer represented as a non-empty array of digits, 
+plus one to the integer.
+
+You may assume the integer do not contain any leading zero, 
+except the number 0 itself.
+
+The digits are stored such that the most significant digit is at the head of the list.
+*/
+class Solution {
+public:
+    vector<int> plusOne(vector<int>& digits) 
+	{
+		auto n = digits.size();
+		for( size_t i = n-1; i>=1; --i)
+		{
+			if( digits[i] == 9 ) digits[i] = 0;
+			else
+			{
+				digits[i] += 1;
+				return digits;
+			}
+		}
+		
+		if(digits.front() == 0)
+		{
+			digits.insert(digits.begin(),1);
+		}
+		
+		return digits;
+    }
+};
+
+//67. Add Binary
+/*
+Given two binary strings, return their sum (also a binary string).
+
+For example,
+a = "11"
+b = "1"
+Return "100".
+*/
+class Solution {
+public:
+    string addBinary(string a, string b)
+	{
+		string res = "";
+		if(a.empty()||b.empty())
+		{
+			return res;
+		}
+		
+		int m = a.size()-1;
+		int n = b.size()-1;
+		int carry = 0;
+		int sum = 0;
+		
+		while(m>=0 || n>=0)
+		{
+			auto p = m>=0 ? a[m--] - '0' : 0;
+			auto q = n>=0 ? b[n--] - '0' : 0;
+			
+			sum = p+q+carry;
+			
+			carry = sum>>1; //  sum / 2;
+			sum -= ( carry<<1 ); //carry * 2
+			
+			res.push_back(sum+'0');
+		}
+		
+		if(carry==1)
+		{
+			res.push_back('1');
+		}
+		
+		reverse(res.begin(), res.end());
+		
+		return res;
+    }
+};
+
+//appendix:
+
+int number_of_ones(unsigned int x) {
+  int total_ones = 0;
+  while (x != 0) {
+    x = x & (x-1);
+    total_ones++;
+  }
+  return total_ones;
+}
+
+int isPowerOfTwo (unsigned int x)
+{
+  return ((x != 0) && !(x & (x - 1)));
+}
+
+//68. Text Justification
+/*
+Given an array of words and a length L, 
+format the text such that each line has exactly L characters and is fully (left and right) justified.
+
+You should pack your words in a greedy approach; 
+that is, pack as many words as you can in each line. 
+Pad extra spaces ' ' when necessary so that each line has exactly L characters.
+
+Extra spaces between words should be distributed as evenly as possible. 
+If the number of spaces on a line do not divide evenly between words, 
+the empty slots on the left will be assigned more spaces than the slots on the right.
+
+For the last line of text, it should be left justified and no extra space is inserted between words.
+
+For example,
+words: ["This", "is", "an", "example", "of", "text", "justification."]
+L: 16.
+
+Return the formatted lines as:
+[
+   "This    is    an",
+   "example  of text",
+   "justification.  "
+]
+Note: Each word is guaranteed not to exceed L in length.
+*/
+
+/*
+
+比较麻烦的字符串细节实现题。需要解决以下几个问题：
+
+1. 首先要能判断多少个word组成一行：
+这里统计读入的所有words的总长curLen，并需要计算空格的长度。
+假如已经读入words[0:i]。当curLen + i <=L 且加curLen + 1 + word[i+1].size() > L时，一行结束。
+
+2. 知道一行的所有n个words，以及总长curLen之后要决定空格分配：
+平均空格数：k = (L - curLen) / (n-1)
+前m组每组有空格数k+1：m = (L - curLen) % (n-1)
+
+例子：L = 21，curLen = 14，n = 4
+k = (21 - 14) / (4-1) = 2
+m = (21 - 14) % (4-1)  = 1
+A---B--C--D
+
+3. 特殊情况：
+(a) 最后一行：当读入到第i = words.size()-1 个word时为最后一行。该行k = 1，m = 0
+(b) 一行只有一个word：此时n-1 = 0，计算(L - curLen)/(n-1)会出错。该行k = L-curLen, m = 0
+(c) 当word[i].size() == L时。
+
+*/
+class Solution {
+public:
+    vector<string> fullJustify(vector<string>& words, int maxWidth) 
+    {
+        vector<string> res;
+		
+		if(words.empty() || maxWidth == 0)
+		{
+		    res.push_back("");
+		    return res;
+		}
+		
+		
+        int num_words = static_cast<int>(words.size());
+		int start = 0, end = -1, total_word_len = 0;
+		
+		int i = 0; 
+
+		
+		while(i<num_words)
+		{
+		    int cur_word_len = words[i].size();
+		    if(cur_word_len > maxWidth) return res;
+		    int new_len = total_word_len + (end-start+1) + cur_word_len;
+		    if(new_len <= maxWidth)
+		    {
+		        total_word_len += cur_word_len;
+		        end = i;
+		        ++i;
+		    }
+		    else
+		    {
+		        create_line(words,res,start,end,total_word_len,maxWidth,false);
+		        start=i;
+		        end = i-1;
+		        total_word_len = 0;
+		    }
+		}
+		
+		create_line(words,res,start,end,total_word_len,maxWidth,true);
+		return res;
+
+    }
+    
+    void create_line( vector<string>& words, vector<string>& res, int start, int end, int word_len, int W, bool bLast )
+	{
+	    int n = words.size();
+	    if(start<0||end>=n||start>end) return;
+	    
+	    n = end - start + 1;
+	    string line = words[start];
+	    
+	    if(n==1||bLast)
+	    {
+	        for(int i = start+1; i<=end; ++i)
+	        {
+	            line += " ";
+	            line += words[i];
+	        }
+	        
+	        int nspace = W - word_len - (n-1);
+	        line.append(nspace, ' ');
+	        res.push_back(line);
+	        return;
+	    }
+	    
+	    int k = (W-word_len)/(n-1);
+	    int m = (W-word_len) - k*(n-1);
+	    
+	    for(int i = start+1; i<=end; ++i)
+	    {
+	        int nspace = i-start<=m ? k+1:k;
+	        line.append(nspace, ' ');
+	        line.append(words[i]);
+	     
+	    }
+	    
+	    res.push_back(line);
+	}
+};
+
 
 //<--> 69. Sqrt(x)
 /*Implement int sqrt(int x).*/
@@ -11837,7 +12875,22 @@ public:
 			int rows = grid.size();
 			int cols = grid[0].size();
 			
-			for(int )
+			vector<int> home_rows;
+			vector<int> home_cols;
+			
+			for(int i = 0; i<rows; ++i)
+			{
+				for(int j = 0; j<cols; ++j)
+				{
+					if(grid[i][j]==1)
+					{
+						home_rows.push_back(i);
+						home_cols.push_back(j);
+					}
+				}
+			}
+			
+			
 		}
 };
 
@@ -11898,3 +12951,105 @@ public:
 // Your Codec object will be instantiated and called as such:
 // Codec codec;
 // codec.deserialize(codec.serialize(root));
+
+//<--> 298. Binary Tree Longest Consecutive Sequence
+/*
+Given a binary tree, find the length of the longest consecutive sequence path.
+
+The path refers to any sequence of nodes from some starting node 
+to any node in the tree along the parent-child connections. 
+The longest consecutive path need to be from parent to child (cannot be the reverse).
+
+For example,
+
+   1
+    \
+     3
+    / \
+   2   4
+        \
+         5
+Longest consecutive sequence path is 3-4-5, so return 3.
+
+   2
+    \
+     3
+    / 
+   2    
+  / 
+ 1
+Longest consecutive sequence path is 2-3, not 3-2-1, so return 2.
+*/
+class Solution {
+public:
+    int longestConsecutive(TreeNode* root)
+	{
+	}
+};
+
+//<--> 299. Bulls and Cows
+/*
+You are playing the following Bulls and Cows game with your friend: 
+
+You write down a number and ask your friend to guess what the number is. 
+
+Each time your friend makes a guess, you provide a hint that indicates 
+
+how many digits in said guess match your secret number exactly in both digit and position 
+
+(called "bulls") and how many digits match the secret number but locate in the wrong position (called "cows"). 
+
+Your friend will use successive guesses and hints to eventually derive the secret number.
+
+For example:
+
+Secret number:  "1807"
+Friend's guess: "7810"
+Hint: 1 bull and 3 cows. (The bull is 8, the cows are 0, 1 and 7.)
+Write a function to return a hint according to the secret number and friend's guess, 
+
+use A to indicate the bulls and B to indicate the cows. 
+
+In the above example, your function should return "1A3B".
+
+Please note that both secret number and friend's guess may contain duplicate digits, for example:
+
+Secret number:  "1123"
+Friend's guess: "0111"
+In this case, the 1st 1 in friend's guess is a bull, the 2nd or 3rd 1 is a cow, 
+and your function should return "1A1B".
+You may assume that the secret number and your friend's guess only contain digits, 
+and their lengths are always equal.
+*/
+class Solution {
+public:
+    string getHint(string secret, string guess) 
+	{    
+    }
+};
+
+//<--> 300. Longest Increasing Subsequence
+/*
+iven an unsorted array of integers, 
+
+find the length of longest increasing subsequence.
+
+For example,
+Given [10, 9, 2, 5, 3, 7, 101, 18],
+The longest increasing subsequence is [2, 3, 7, 101], 
+
+therefore the length is 4. Note that there may be more than one LIS combination, 
+
+it is only necessary for you to return the length.
+
+Your algorithm should run in O(n2) complexity.
+
+Follow up: Could you improve it to O(n log n) time complexity?
+*/
+class Solution {
+public:
+    int lengthOfLIS(vector<int>& nums) 
+	{
+		
+    }
+};
