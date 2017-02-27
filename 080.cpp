@@ -1,3 +1,1018 @@
+//53. Maximum Subarray
+/*
+Find the contiguous subarray within an array
+(containing at least one number) which has the largest sum.
+
+For example, given the array [-2,1,-3,4,-1,2,1,-5,4],
+the contiguous subarray [4,-1,2,1] has the largest sum = 6.
+*/
+
+class Solution {
+public:
+    int maxSubArray(vector<int>& nums)
+    {
+        int res = nums[0];
+        int tmp = res;
+        
+        for(size_t i = 1 ;i<nums.size(); ++i)
+        {
+            tmp = max(nums[i]+tmp, nums[i]);
+            res = max(tmp, res);
+        }
+        
+        return res;
+    }
+    
+    //using divide and conquer
+    
+    int getMaxSubArray(vector<int>& nums, int left, int right)
+    {
+        if(left>=right) return nums[left];
+        
+        int mid = left+(right-left)/2;
+        int lmax = getMaxSubArray(nums, left, mid-1);
+        int rmax = getMaxSubArray(nums, mid+1, right);
+        
+        int cur_max = nums[mid], tmp = nums[mid];
+        
+        for(int i = mid-1; i>=left; --i)
+        {
+            tmp += nums[i];
+            cur_max = max(tmp, cur_max);
+        }
+        
+        tmp = cur_max;
+        
+        for(int i = mid+1; i<=right; ++i)
+        {
+            tmp += nums[i];
+            cur_max = max(tmp, cur_max);
+        }
+        
+        return max(cur_max, max(lmax, rmax));
+    }
+};
+
+//54. Spiral Matrix
+/*
+Given a matrix of m x n elements (m rows, n columns),
+return all elements of the matrix in spiral order.
+
+For example,
+Given the following matrix:
+
+[
+ [ 1, 2, 3 ],
+ [ 4, 5, 6 ],
+ [ 7, 8, 9 ]
+]
+You should return [1,2,3,6,9,8,7,4,5].
+*/
+
+class Solution {
+public:
+    vector<int> spiralOrder(vector<vector<int>>& matrix)
+    {
+        vector<int> res;
+        if(matrix.size()==0||matrix[0].size()==0) return res;
+        auto m = matrix.size(), n = matrix[0].size();
+        
+        auto c = min(m,n)+1;
+        c /= 2;
+        
+        size_t col = 0, row = 0;
+        
+        auto p = m, q = n;
+        
+        for( size_t i = 0; i<c; ++i, p-=2, q-=2 )
+        {
+            for( col = i; col < i+p; ++col )
+            {
+                res.push_back(matrix[i][col]);
+            }
+            
+            for( row = i+1; row<i+q; ++row )
+            {
+                res.push_back(matrix[row][i+q-1]);
+            }
+            
+            if( p == 1 ||  q == 1 ) break;
+            
+            for( col = i+q -2; col >= i; --col )
+            {
+                res.push_back(matrix[i+p-1][col]);
+            }
+            
+            for( row = i+p-2; row > i; --row )
+            {
+                res.push_back(matrix[row][i]);
+            }
+        }
+        return res;
+    }
+};
+
+//55. Jump Game
+/*
+Given an array of non-negative integers,
+
+you are initially positioned at the first index of the array.
+
+Each element in the array represents your maximum jump length at that position.
+
+Determine if you are able to reach the last index.
+
+For example:
+A = [2,3,1,1,4], return true.
+
+A = [3,2,1,0,4], return false.
+*/
+
+class Solution {
+public:
+    bool canJump(vector<int>& nums)
+    {
+        int max_so_far = 0;
+        
+        for( int i = 0; i<nums.size(); ++i )
+        {
+            if(i>max_so_far||max_so_far >= nums.size()-1) break;
+            max_so_far = max(max_so_far, i+nums[i]);
+        }
+        
+        return max_so_far >= nums.size()-1;
+    }
+};
+
+//56. Merge Intervals
+/*
+Given a collection of intervals,
+merge all overlapping intervals.
+
+For example,
+Given [1,3],[2,6],[8,10],[15,18],
+return [1,6],[8,10],[15,18].
+*/
+/**
+ * Definition for an interval.
+ * struct Interval {
+ *     int start;
+ *     int end;
+ *     Interval() : start(0), end(0) {}
+ *     Interval(int s, int e) : start(s), end(e) {}
+ * };
+ */
+class Solution
+{
+public:
+    vector<Interval> merge(vector<Interval>& intervals)
+    {
+        vector<Interval> res;
+        for(size_t i = 0;i<intervals.size();++i)
+        {
+            insert(res, intervals[i]);
+        }
+        
+        return res;
+    }
+    
+    void insert(vector<interval>& res, interval& newInterval)
+    {
+        auto iter = res.begin();
+        int overlap = 0;
+        
+        while(iter!=res.end())
+        {
+            if(newInterval.start>iter->end)
+            {
+                ++iter;
+                continue;
+            }
+            
+            if(newInterval.end < iter->start)
+            {
+                break;
+            }
+            
+            newInterval.start = min(newInterval.start, iter->start);
+            newInterval.end = max(newInterval.end, iter->end);
+            ++overlap;
+        }
+        
+        if(overlap!=0)
+        {
+            iter = res.erase(iter - overlap, iter);
+        }
+        
+        res.insert(iter, newInterval);
+    }
+};
+
+//57. Insert Interval
+/*
+Given a set of non-overlapping intervals,
+insert a new interval into the intervals (merge if necessary).
+
+You may assume that the intervals were initially sorted according to their start times.
+
+Example 1:
+Given intervals [1,3],[6,9], insert and merge [2,5] in as [1,5],[6,9].
+
+Example 2:
+Given [1,2],[3,5],[6,7],[8,10],[12,16],
+
+insert and merge [4,9] in as [1,2],[3,10],[12,16].
+
+This is because the new interval [4,9] overlaps with [3,5],[6,7],[8,10].
+*/
+/**
+ * Definition for an interval.
+ * struct Interval {
+ *     int start;
+ *     int end;
+ *     Interval() : start(0), end(0) {}
+ *     Interval(int s, int e) : start(s), end(e) {}
+ * };
+ */
+class Solution {
+public:
+    vector<Interval> insert(vector<Interval>& intervals, Interval newInterval)
+    {
+        
+    }
+};
+
+//58. Length of Last Word
+/*
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
+
+If the last word does not exist, return 0.
+
+Note: A word is defined as a character sequence consists of non-space characters only.
+
+For example, 
+Given s = "Hello World",
+return 5.
+*/
+
+class Solution {
+public:
+    int lengthOfLastWord(string s)
+    {
+        
+    }
+};
+
+//59. Spiral Matrix II
+/*
+Given an integer n,
+'generate a square matrix filled
+with elements from 1 to n^2 in spiral order.
+
+For example,
+Given n = 3,
+
+You should return the following matrix:
+[
+ [ 1, 2, 3 ],
+ [ 8, 9, 4 ],
+ [ 7, 6, 5 ]
+]
+*/
+
+class Solution {
+public:
+    vector<vector<int>> generateMatrix(int n)
+    {
+        vector<vector<int>> m(n, vector<int>(n,0));
+        int p = n, q = n;
+        int c = n /2;
+        
+        int col = 0, row = 0;
+        int num = 1;
+        for(int i = 0; i<c; ++i, p-=2, q-=2)
+        {
+            for(col = i; col < i+q; ++col)
+            {
+                m[i][col] = num++;
+            }
+            
+            for(row=i+1; row< i+p; ++row)
+            {
+                m[row][i+q-1] = num++;
+            }
+            
+            if(p==1||q==1) break;
+            
+            for(col=i+q-2;col>=i;--col)
+            {
+                m[i+q-1][col] = num++;
+            }
+            
+            for(row=i+p-2;i>i;--row)
+            {
+                m[row][i] = num++;
+            }
+        }
+        
+        if( n & 1 )
+        {
+            m[n/2][n/2] = num;
+        }
+        
+        return m;
+    }
+};
+
+//60. Permutation Sequence
+/*
+The set [1,2,3,…,n] contains a total of n! unique permutations.
+
+By listing and labeling all of the permutations in order,
+We get the following sequence (ie, for n = 3):
+
+"123"
+"132"
+"213"
+"231"
+"312"
+"321"
+Given n and k, return the kth permutation sequence.
+
+Note: Given n will be between 1 and 9 inclusive.
+*/
+class Solution {
+public:
+    string getPermutation(int n, int k)
+    {
+        string res;
+        string num = "123456789";
+        
+        vector<int> f(n,1);
+        
+        for(int i = 1;i<n;++i)
+        {
+            f[i] = i*f[i-1];
+        }
+        
+        --k;
+        
+        for(int i = n; i>=1; --i)
+        {
+            int j = k/f[i-1];
+            k -= j*f[i-1];
+            
+            res.push_back(num[j]);
+            num.erase(j,1);
+        }
+        
+        return res;
+    }
+};
+
+//<--> 69. Sqrt(x)
+/*Implement int sqrt(int x).*/
+class Solution {
+public:
+    int mySqrt(int x) 
+	{
+		
+    }
+};
+
+//<--> 71. Simplify Path
+/*
+Given an absolute path for a file (Unix-style), 
+simplify it.
+
+For example,
+path = "/home/", => "/home"
+path = "/a/./b/../../c/", => "/c"
+*/
+
+class Solution {
+public:
+    string simplifyPath(string path)
+	{
+		string t;
+		stringstream ss(path);
+		vector<string> v;
+		while(getline(path, t, '/'))
+		{
+			if( t.empty() || t == "." )
+			{
+				continue;
+			}
+			
+			if(t==".."&&!v.empty())
+			{
+				v.pop_back();
+			}
+			else if( t != ".." )
+			{
+				v.push_back(t);
+			}
+		}
+		
+		string result;
+		for( const auto& s : v )
+		{
+			result += "/";
+			result += s;
+		}
+		
+		return result.empty() ? "/" : result;
+    }
+};
+
+//<--> 72. Edit Distance
+/*
+ Given two words word1 and word2, 
+ find the minimum number of steps required to convert word1 to word2. 
+ (each operation is counted as 1 step.)
+
+You have the following 3 operations permitted on a word:
+
+a) Insert a character
+b) Delete a character
+c) Replace a character
+*/
+class Solution {
+public:
+    int minDistance(string word1, string word2) 
+	{
+		auto n1 = word1.size();
+		auto n2 = word2.size();
+		
+		vector<vector<int>> dp( n1+1, vector<int>(n2+1,0) );
+		for(size_t i = 0; i<=n2; ++i)
+		{
+			dp[0][i] = i;
+		}
+		for(size_t i = 0; i<=n1; ++i)
+		{
+			dp[i][0] = i;
+		}
+		
+		for(size_t i = 1; i<=n1; ++i)
+		{
+			for(size_t j = 1;j<=n2; ++j)
+			{
+				if(words1[i-1]==words2[j-1])
+				{
+					dp[i][j] = dp[i-1][j-1];
+				}
+				else
+				{
+					dp[i][j] = min(dp[i][j-1], dp[i-1][j]);
+					dp[i][j] = min(dp[i][j],dp[i-1][j-1]);
+					dp[i][j] += 1;
+				}
+			}
+		}
+		
+		return dp[n1][n2];
+    }
+};
+
+//<--> 73. Set Matrix Zeroes
+/*
+Given a m x n matrix, if an element is 0, 
+set its entire row and column to 0. Do it in place.
+
+Follow up:
+
+Did you use extra space?
+A straight forward solution using O(mn) space is probably a bad idea.
+A simple improvement uses O(m + n) space, but still not the best solution.
+Could you devise a constant space solution?
+*/
+
+class Solution {
+public:
+    void setZeroes(vector<vector<int>>& matrix)
+	{
+		if(matrix.empty() || matrix[0].empty())
+		{
+			return;
+		}
+		
+		int r = matrix.size();
+		int c = matrix[0].size();
+		
+		bool row_zero = false;
+		bool col_zero = false;
+		
+		for( int i = 0; i< r; ++i )
+		{
+			if( matrix[i][0] == 0 )
+			{
+				col_zero = true;
+				break;
+			}
+		}
+		
+		for( int j = 0; j < c; ++j)
+		{
+			if(matrix[0][j] == 0)
+			{
+				row_zero = true;
+				break;
+			}
+		}
+		
+		for( int i = 1; i< r; ++i )
+		{
+			for(int j = 1; j<c; ++j)
+			{
+				if( matrix[i][j] == 0 )
+				{
+					matrix[0][j] = 0;
+					matrix[i][0] = 0;
+				}
+			}
+		}
+		
+		for( int i = 1; i< r; ++i )
+		{
+			for(int j = 1; j<c; ++j)
+			{
+				if(matrix[0][j] == 0 || matrix[i][0] == 0)
+				{
+					matrix[i][j] = 0;
+				}
+			}
+		}
+		
+		if(row_zero)
+		{
+			for(int i = 0; i<c; ++i)
+			{
+				matrix[0][i] = 0;
+			}
+		}
+		
+		if(col_zero)
+		{
+			for(int j = 0; j<r; ++j)
+			{
+				matrix[j][0] = 0;
+			}
+		}
+    }
+};
+
+//<--> 74. Search a 2D Matrix 
+/*
+Write an efficient algorithm that searches for a value in an m x n matrix. 
+This matrix has the following properties:
+
+    Integers in each row are sorted from left to right.
+    The first integer of each row is greater than the last integer of the previous row.
+
+For example,
+
+Consider the following matrix:
+
+[
+  [1,   3,  5,  7],
+  [10, 11, 16, 20],
+  [23, 30, 34, 50]
+]
+
+Given target = 3, return true.
+*/
+
+class Solution {
+public:
+	//using two binary search
+    bool searchMatrix(vector<vector<int>>& matrix, int target)
+	{
+		if(matrix.empty()||matrix[0].empty())
+		{
+			return false;
+		}
+		
+		if(target > matrix.back().back() || target < matrix[0] ) return false;
+		
+		int m = matrix.size();
+		int n = matrix[0].size();
+		int left = 0, right = m-1;
+		while(left<=right)
+		{
+			int mid = (left+right)/2;
+			if(matrix[mid][0]==target)
+			{
+				return true;
+			}
+			
+			if(matrix[mid][0]<target)
+			{
+				left = mid + 1;
+			}
+			else
+			{
+				right = mid-1;
+			}
+		}
+		
+		int row = right;
+		left = 0;
+		right = n-1;
+		
+		while(left<=right)
+		{
+			int mid = (left+right)/2;
+			if(matrix[row][mid]==target)
+			{
+				return true;
+			}
+			
+			if(matrix[row][mid]<target)
+			{
+				left = mid + 1;
+			}
+			else
+			{
+				right = mid-1;
+			}
+		}
+		
+		return false;
+    }
+	
+	//using one binary search
+	bool searchMatrix(vector<vector<int>>& matrix, int target)
+	{
+		if(matrix.empty()||matrix[0].empty())
+		{
+			return false;
+		}
+		
+		if(target > matrix.back().back() || target < matrix[0] ) return false;
+		
+		int m = matrix.size();
+		int n = matrix[0].size();
+		
+		int left = 0, right = m*n-1;
+		while(left<=right)
+		{
+			int mid = (left+right)/2;
+			if(matrix[mid/n][mid%n] == target) return true;
+			else if(matrix[mid/n][mid%n]<target) left = mid + 1;
+			else if(matrix[mid/n][mid%n]>target) right = mid - 1;
+		}
+		
+		return false;
+    }
+};
+
+//<-->75. Sort Colors
+/*
+Given an array with n objects colored red, white or blue, 
+sort them so that objects of the same color are adjacent, 
+with the colors in the order red, white and blue.
+
+Here, we will use the integers 0, 1, and 2 to represent 
+the color red, white, and blue respectively.
+
+Note:
+You are not suppose to use the library's sort function for this problem
+
+Follow up:
+A rather straight forward solution is a two-pass algorithm using counting sort.
+First, iterate the array counting number of 0's, 1's, and 2's, 
+then overwrite array with total number of 0's, then 1's and followed by 2's.
+
+Could you come up with an one-pass algorithm using only constant space?
+*/
+class Solution {
+public:
+    void sortColors(vector<int>& nums) 
+	{
+		if(nums.empty()) return;
+		
+		int red = 0;
+		int blue = nums.size() - 1;
+		
+		for( int i = 0; i<=blue;++i)
+		{
+			if(nums[i]==0)
+			{
+				swap(A[i], A[red++]);
+			}
+			else if(nums[i]==2)
+			{
+				swap(A[i--], A[blue--]);
+			}
+		}
+    }
+	
+	// another way:
+	/*
+	 假设已经完成到如下所示的状态：
+
+0......0   1......1  x1 x2 .... xm   2.....2
+          |           |         |
+          left        cur     right
+
+(1) A[cur] = 1：已经就位，cur++即可
+(2) A[cur] = 0：交换A[cur]和A[left]。由于A[left]=1或left=cur，所以交换以后A[cur]已经就位，cur++，left++
+(3) A[cur] = 2：交换A[cur]和A[right]，right--。由于xm的值未知，cur不能增加，继续判断xm。
+cur > right扫描结束。
+	*/
+	void sortColors(vector<int>& nums) 
+	{
+		int left = 0, right = nums.size()-1;
+		int cur = 0;
+		while(cur<=right)
+		{
+			if(nums[cur]==0)
+			{
+				swap(nums[cur++], nums[left++]);
+			}
+			else if(nums[cur]==1)
+			{
+				++cur;
+			}
+			else if(nums[cur]==2)
+			{
+				swap(nums[cur],nums[right--]);
+			}
+		}
+	}
+	
+};
+
+//<-->76. Minimum Window Substring
+/*
+Given a string S and a string T, 
+find the minimum window in S which will contain all the characters in T in complexity O(n).
+
+For example,
+S = "ADOBECODEBANC"
+T = "ABC"
+
+Minimum window is "BANC".
+
+Note:
+If there is no such window in S that covers all characters in T, return the empty string "".
+
+If there are multiple such windows, you are guaranteed that there will always be only 
+one unique minimum window in S. 
+*/
+
+/*
+1. 如果S[i:j]是min window，那么S[i], S[j]必然也在T中。
+2. 对于任意S[i]要检查是否也在T中，需要将T的所有字符建立一个hash table。T中可能有重复字符，所以key = T[i], val = freq of (T[i])。
+3. 先找到第一个window包含T
+4. 扫描S[i]
+若S[i]不在T中，跳过。
+若S[i]在T中，freq of (S[i]) - 1，并且match的长度+1
+
+*/
+class Solution {
+public:
+    string minWindow(string s, string t)
+	{
+      if(s.empty()||t.empty()) return "";
+        
+        int ss = s.size();
+        int ts = t.size();
+        
+        if(ss<ts) return "";
+        
+        vector<int> m(256, 0);
+        vector<int> n(256, 0);
+        
+        for(int i = 0;i<ts; ++i)
+        {
+            ++m[t[i]];
+            n[t[i]] = 1;
+        }
+        
+        int left = 0, right = 0, count = 0, min_len = ss+1;
+        string res;
+        for(;right<ss;++right)
+        {
+            if(n[s[right]] == 1)
+            {
+                --m[s[right]];
+                if(m[s[right]] >= 0)
+                {
+                    ++count;
+                }
+                
+                while(count==ts)
+                {
+                    int cur_len = right-left+1;
+                    if(cur_len<min_len)
+                    {
+                        min_len = cur_len;
+                        res = s.substr(left,min_len);
+                    }
+                    
+                    if(n[s[left]]==1)
+                    {
+                        ++m[s[left]];
+                        if(m[s[left]]>0)
+                        {
+                            --count;
+                        }
+                    }
+                    
+                    ++left;
+                }
+            }
+        }
+        
+        return res;
+	}
+};
+
+//<--> 77. Combinations
+/*
+ Given two integers n and k, 
+ return all possible combinations of k numbers out of 1 ... n.
+
+For example,
+If n = 4 and k = 2, a solution is:
+
+[
+  [2,4],
+  [3,4],
+  [2,3],
+  [1,2],
+  [1,3],
+  [1,4],
+]
+*/
+class Solution {
+public:
+    vector<vector<int>> combine(int n, int k) 
+	{
+		vector<vector<int>> res;
+		vector<int> out;
+		dfs(res,out,n,k,0,0);
+		return res;
+    }
+	
+	void dfs(vector<vector<int>>& res, vector<int>& out, int n, int k, int start, int count)
+	{
+		if(count==k)
+		{
+			res.push_back(out);
+			return;
+		}
+		
+		for(int i = start; i<=n; ++i)
+		{
+			out.push_back(i);
+			dfs(res,out,n,k,i+1,count+1);
+			out.pop_bacK();
+		}
+	}
+};
+
+//<--> 78. Subsets
+/*
+ Given a set of distinct integers, nums, return all possible subsets.
+
+Note: The solution set must not contain duplicate subsets.
+
+For example,
+If nums = [1,2,3], a solution is:
+
+[
+  [3],
+  [1],
+  [2],
+  [1,2,3],
+  [1,3],
+  [2,3],
+  [1,2],
+  []
+]
+*/
+class Solution {
+public:
+	//first method: iterative
+    vector<vector<int>> subsets(vector<int>& nums) 
+	{
+		vector<vector<int>> res(1);
+		if(nums.empty()) return res;
+		
+		int n = nums.size();
+		
+		for( int i = 0; i<n; ++i )
+		{
+			int s = res.size();
+			for(int j = 0;j<s;++j)
+			{
+				res.push_back(res[j]);
+				res.back().push_back(nums[i]);
+			}
+		}
+		
+		return res;
+    }
+	
+	//second method: recursive
+	vector<vector<int>> subsets(vector<int>& nums)
+	{
+		vector<vector<int>> res;
+		vector<int> out;
+		dfs(nums, out, res, 0);
+		return res;
+	}
+	
+	void dfs(vector<int>& nums, vector<int>& out, vector<vector<int>> &res, int start)
+	{
+		res.push_back(out);
+		int n = nums.size();
+		for(int i = start; i<n;++i)
+		{
+			out.push_back(i);
+			dfs(nums,out, res,i+1);
+			out.pop_back();
+		}
+	}
+};
+//<--> 79. Word Search
+/*
+Given a 2D board and a word, find if the word exists in the grid.
+
+The word can be constructed from letters of sequentially adjacent cell,
+where "adjacent" cells are those horizontally or vertically neighboring.
+The same letter cell may not be used more than once.
+
+For example,
+Given board =
+
+[
+  ['A','B','C','E'],
+  ['S','F','C','S'],
+  ['A','D','E','E']
+]
+word = "ABCCED", -> returns true,
+word = "SEE", -> returns true,
+word = "ABCB", -> returns false.
+*/
+class Solution {
+public:
+    bool exist(vector<vector<char>>& board, string word) {
+        
+        if(board.empty()||board[0].empty())
+        {
+            return false;
+        }
+        
+        int r = board.size(), c = board[0].size();
+        
+        vector<vector<int>> visited(r, vector<int>(c,0));
+        
+        for(int i = 0; i<r; ++i)
+        {
+            for(int j = 0;j <c; ++j)
+            {
+                if(board[i][j] == word[0])
+                {
+                    if(search(board,visited,word,0,i,j))
+                    {
+                        return true;
+                    }
+                }
+            }
+        }
+        
+        return false;
+    }
+    
+    bool search(vector<vector<char>>& b, vector<vector<int>>& v, string& word, int start, int i, int j)
+    {
+        if(start==word.size())
+        {
+            return true;
+        }
+        
+        int r = b.size(), c = b[0].size();
+        
+        if(i<0||i>=r||j<0||j>=c||v[i][j]==1||b[i][j]!=word[start])
+        {
+            return false;
+        }
+        
+        v[i][j] = 1;
+        if(search(b,v,word,start+1, i-1, j)) return true;
+        if(search(b,v,word,start+1, i+1, j)) return true;
+        if(search(b,v,word,start+1, i, j-1)) return true;
+        if(search(b,v,word,start+1, i, j+1)) return true;
+        
+        v[i][j] = 0;
+        return false;
+    }
+};
+
 //<--> 80. Remove Duplicates from Sorted Array II
 /*
 Follow up for "Remove Duplicates":
@@ -10727,5 +11742,95 @@ public:
 			}
 			
 			return false;
+		}
+};
+
+//<--> 295. Find Median from Data Stream
+/*
+Median is the middle value in an ordered integer list. 
+
+If the size of the list is even, there is no middle value. 
+
+So the median is the mean of the two middle value.
+
+Examples: 
+[2,3,4] , the median is 3
+
+[2,3], the median is (2 + 3) / 2 = 2.5
+
+Design a data structure that supports the following two operations:
+
+void addNum(int num) - Add a integer number from the data stream to the data structure.
+double findMedian() - Return the median of all elements so far.
+For example:
+
+addNum(1)
+addNum(2)
+findMedian() -> 1.5
+addNum(3) 
+findMedian() -> 2
+*/
+
+class MedianFinder {
+public:
+    /** initialize your data structure here. */
+    MedianFinder() 
+		{
+    }
+    
+    void addNum(int num)
+		{
+    }
+    
+    double findMedian()
+		{
+			
+    }
+		
+		private:
+		
+		
+};
+
+/**
+ * Your MedianFinder object will be instantiated and called as such:
+ * MedianFinder obj = new MedianFinder();
+ * obj.addNum(num);
+ * double param_2 = obj.findMedian();
+ */
+ 
+ //<--> 296. Best Meeting Point
+/*
+ A group of two or more people wants to meet and 
+ 
+ minimize the total travel distance. 
+ 
+ You are given a 2D grid of values 0 or 1, 
+ 
+ where each 1 marks the home of someone in the group. 
+ 
+ The distance is calculated using Manhattan Distance, where distance(p1, p2) = |p2.x - p1.x| + |p2.y - p1.y|.
+
+For example, given three people living at (0,0), (0,4), and (2,2):
+
+1 - 0 - 0 - 0 - 1
+|   |   |   |   |
+0 - 0 - 0 - 0 - 0
+|   |   |   |   |
+0 - 0 - 1 - 0 - 0
+
+The point (0,2) is an ideal meeting point, as the total travel distance of 2+2+2=6 is minimal. 
+
+So return 6.
+
+Hint:
+
+Try to solve it in one dimension first. How can this solution apply to the two dimension case?
+*/
+
+class Solution {
+public:
+    int minTotalDistance(vector<vector<int>>& grid)
+		{
 		}
 };
