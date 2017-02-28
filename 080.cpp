@@ -13733,3 +13733,169 @@ public:
 		return id;
 	}
 };
+
+//<--> 306. Additive Number
+/*
+Additive number is a string whose digits can form additive sequence.
+
+A valid additive sequence should contain at least three numbers. 
+Except for the first two numbers, each subsequent number in the sequence must be the sum of the preceding two.
+
+For example:
+"112358" is an additive number because the digits can form an additive sequence: 1, 1, 2, 3, 5, 8.
+
+1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8
+
+"199100199" is also an additive number, the additive sequence is: 1, 99, 100, 199.
+
+1 + 99 = 100, 99 + 100 = 199
+
+Note: Numbers in the additive sequence cannot have leading zeros, so sequence 1, 2, 03 or 1, 02, 3 is invalid.
+
+Given a string containing only digits '0'-'9', write a function to determine if it's an additive number.
+
+Follow up:
+How would you handle overflow for very large input integers?
+*/
+class Solution {
+public:
+	//this is done by myself
+	bool isAdditiveNumber( string num ) 
+	{
+	}
+
+
+	bool dfs( const string& n, size_t start, string s1, string s2 )
+	{
+		if ( !s1.empty() && !s2.empty() )
+		{
+			auto sum = get_sum( s1, s2 );
+
+			if ( start + sum.size() <= n.size() )
+			{
+				if ( n.substr( start, sum.size() ) == sum )
+				{
+					//if start+sum.size() is less than total size, there still have more string
+					if ( start + sum.size() < n.size() )
+					{
+						//s1 will be replaced with s2, and s2 will be replaced with sum.
+						return dfs( n, start + sum.size(), s2, sum );
+					}
+					else
+					{
+						return true;
+					}
+
+				}
+			}
+
+			return false;
+		}
+
+		for ( size_t i = start; i < n.size(); ++i )
+		{
+			if ( !s1.empty() )
+			{
+				s1 = n.substr( start, i - start + 1 );
+
+				//remove the case s1 has leading zeros
+				if ( s1.size()> 1 && s1[0] == '0' )
+				{
+					return false;
+				}
+
+				if ( dfs( n, i + 1, s1, s2 ) )
+				{
+					return true;
+				}
+
+				s1 = ""; //key: we have to set s1 to empty if last dfs return false so that next loop will set s1 to a new string.
+			}
+			else if ( !s2.empty() )
+			{
+				s2 = n.substr( start, i - start + 1 );
+
+				//remove the case s2 has leading zeros
+				if ( s2.size()> 1 && s2[0] == '0' )
+				{
+					return false;
+				}
+
+				if ( dfs( n, i + 1, s1, s2 ) )
+				{
+					return true;
+				}
+
+				s2 = ""; //key: we have to set s2 to empty if last dfs return false so that next loop will set s1 to a new string.
+			}
+		}
+
+		return false;
+	}
+
+	string get_sum( const string& s1, const string& s2 )
+	{
+		int len1 = s1.size() - 1;
+		int len2 = s2.size() - 1;
+
+		int sum = 0, carry = 0;
+
+		while ( len1 >= 0 && len2 >= 0 )
+		{
+			sum = (len1 >= 0 ? s1[len1--] - '0' : 0) + (len2 >= 0 ? s2[len2--] - '0' : 0) + carry;
+			carry = sum / 10;
+			sum -= carry * 10;
+
+			res.push_back( sum + '0' );
+		}
+
+		if ( carry != 0 )
+		{
+			res.push_back( carry + '0' );
+		}
+
+		return string( res.rbegin(), res.rend() );
+	}
+};
+
+//<--> 307. Range Sum Query - Mutable
+/*
+Given an integer array nums, 
+find the sum of the elements between indices i and j (i ≤ j), inclusive.
+
+The update(i, val) function modifies nums 
+by updating the element at index i to val.
+Example:
+Given nums = [1, 3, 5]
+
+sumRange(0, 2) -> 9
+update(1, 2)
+sumRange(0, 2) -> 8
+Note:
+The array is only modifiable by the update function.
+You may assume the number of calls to update and sumRange function is distributed evenly.
+*/
+
+/**
+* Your NumArray object will be instantiated and called as such:
+* NumArray obj = new NumArray(nums);
+* obj.update(i,val);
+* int param_2 = obj.sumRange(i,j);
+*/
+
+class NumArray {
+public:
+	NumArray( vector<int> nums ) 
+	{
+	}
+
+	void update( int i, int val )
+	{
+	}
+
+	int sumRange( int i, int j )
+	{
+	}
+};
+
+
