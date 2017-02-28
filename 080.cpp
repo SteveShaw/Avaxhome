@@ -1,3 +1,15 @@
+#include <vector>
+#include <list>
+#include <algorithm>
+#include <queue>
+#include <string>
+#include <unordered_map>
+#include <unordered_set>
+#include <set>
+#include <functional>
+#include <array>
+using namespace std;
+
 //28. Implement strStr() 
 /*
 Implement strStr().
@@ -13136,9 +13148,80 @@ and their lengths are always equal.
 */
 class Solution {
 public:
-    string getHint(string secret, string guess) 
-	{    
-    }
+	// two passes
+	string getHint(string secret, string guess)
+	{
+		int len = secret.size();
+
+		int m[10] = { 0 };
+
+		int cows = 0;
+		int bulls = 0;
+
+		for (int i = 0; i < len; ++i)
+		{
+			if (secret[i] == guess[i])
+			{
+				++bulls;
+			}
+			else
+			{
+				++m[secret[i]];
+			}
+		}
+
+		for (int i = 0; i < len; ++i)
+		{
+			if ((secret[i] != guess[i]) && (m[guess[i]] != 0))
+			{
+				++cows;
+				--m[guess[i]];
+			}
+		}
+
+		return to_string(bulls) + "A" + to_string(cows) + "B";
+	}
+
+	// one passes
+	// 在处理不是bulls的位置时，
+	// 我们看如果secret当前位置数字的映射值小于0，
+	// 则表示其在guess中出现过，cows自增1，然后映射值加1，
+	// 如果guess当前位置的数字的映射值大于0，则表示其在secret中出现过，cows自增1，然后映射值减1
+	string getHint(string secret, string guess)
+	{
+		int len = secret.size();
+
+		int m[10] = { 0 };
+
+		int cows = 0;
+		int bulls = 0;
+
+		for (int i = 0; i < len; ++i)
+		{
+			if (secret[i] == guess[i])
+			{
+				++bulls;
+			}
+			else
+			{
+				if (m[secret[i]-'0'] < 0)
+				{
+					++cows;
+				}
+
+				++m[secret[i] - '0'];
+				
+				if (m[guess[i] - '0'] > 0)
+				{
+					++cows;
+				}
+
+				--m[guess[i] - '0'];
+			}
+		}
+
+		return to_string(bulls) + "A" + to_string(cows) + "B";
+	}
 };
 
 //<--> 300. Longest Increasing Subsequence
@@ -13161,8 +13244,153 @@ Follow up: Could you improve it to O(n log n) time complexity?
 */
 class Solution {
 public:
-    int lengthOfLIS(vector<int>& nums) 
+	int lengthOfLIS(vector<int>& nums)
 	{
+		if (nums.empty())
+		{
+			return 0;
+		}
+
+		vector<int> dp(nums.size(), 0);
+
+		dp[0] = 1;
+
+		int res = 1;
+
+		int len = nums.size();
+
+		for (int i = 1; i < len; ++i)
+		{
+			dp[i] = 0;
+
+			for (int j = 0; j < i; ++j)
+			{
+				if (nums[j] < nums[i])
+				{
+					dp[i] = max(dp[i], dp[j] + 1);
+				}
+			}
+
+			res = max(res, dp[i]);
+		}
+
+		return res;
+	}
+
+	//O(nlogn)
+	int lengthOfLIS(vector<int>& nums)
+	{
+		vector<int> dp;
+		int len = nums.size();
 		
-    }
+		for (int i = 0; i < len; ++i)
+		{
+			int left = 0;
+			int right = dp.size();
+
+			while (left < right)
+			{
+				int mid = left + (right - left) / 2;
+				if (dp[mid] < nums[i])
+				{
+					left = mid + 1;
+				}
+				else
+				{
+					right = mid;
+				}
+			}
+
+			if (right == dp.size())
+			{
+				dp.push_back(nums[i]);
+			}
+			else
+			{
+				dp[right] = nums[i];
+			}
+		}
+
+		return dp.size();
+	}
+};
+
+//<--> 301. Remove Invalid Parentheses
+/*
+Remove the minimum number of invalid parentheses in order to make 
+
+the input string valid. Return all possible results.
+
+Note: The input string may contain letters other than the parentheses ( and ).
+
+Examples:
+"()())()" -> ["()()()", "(())()"]
+"(a)())()" -> ["(a)()()", "(a())()"]
+")(" -> [""]
+*/
+class Solution {
+public:
+	//DFS method
+	vector<string> removeInvalidParentheses(string s) 
+	{
+		if (s.empty())
+		{
+			return{""};
+		}
+
+		int min_del = INT_MAX;
+		
+		unordered_set<string> str_set;
+
+		dfs(s, 0, "", 0, 0, min_del, 0, str_set);
+
+		return vector<string>(str_set.begin(), str_set.end());
+	}
+
+	void dfs(string str, int start, string cur, int left, int right, int& min_del, int del, unordered_set<string>& str_set)
+	{
+		if (start == str.size())
+		{
+			if (left != right)
+			{
+				return;
+			}
+
+			if (del == min_del)
+			{
+				str_set.insert(cur);
+			}
+			else if (del < min_del)
+			{
+				str_set.clear();
+				str_set.insert(cur);
+			}
+
+			min_del = min(del, min_del);
+			return;
+		}
+
+		if (left < right) //key: if use left!=right, no any string will be generate. if use left > right, then invalid string will be included
+		{
+			return;
+		}
+
+		if (str[start] == '(')
+		{
+			dfs(str, start + 1, cur + "(", left + 1, right, min_del, del, str_set);
+			//not use this left parenthesis, therefore, del will be increment
+			dfs(str, start + 1, cur, left, right, min_del, del + 1, str_set);
+		}
+		else if (str[start] == ')')
+		{
+			dfs(str, start + 1, cur + ")", left, right + 1, min_del, del, str_set);
+			//not use this right parenthesis, therefore, del will be increment
+			dfs(str, start + 1, cur, left, right, min_del, del + 1, str_set);
+		}
+		else
+		{
+			dfs(str, start + 1, cur + str[start], left, right, min_del, del, str_set);
+		}
+	}
+
 };
