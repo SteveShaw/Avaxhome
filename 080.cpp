@@ -13393,4 +13393,343 @@ public:
 		}
 	}
 
+	//BFS
+	//The idea is very much: add each valid string into the queue, and remove the parentheis each time.
+	//if the string is valid, we will not remove parentheis from this string
+	bool is_valid( const string& s )
+	{
+		int count = 0;
+
+		for ( const auto& c : s )
+		{
+			if ( c == '(' )
+			{
+				++count;
+			}
+			else if ( c == ')' )
+			{
+				if ( count == 0 )
+				{
+					return false;
+				}
+
+				--count;
+			}
+		}
+
+		return true;
+	}
+
+	vector<string> removeInvalidParentheses( string s )
+	{
+		vector<string> res;
+		unordered_map<string, int> visited;
+
+		queue<string> q;
+
+		q.push( s );
+
+		bool bFound = false;
+
+		while ( !q.empty() )
+		{
+			s = q.front();
+			q.pop();
+
+			if ( is_valid( s ) )
+			{
+				res.emplace_back( s.c_str() );
+				bFound = true;
+			}
+
+			if ( bFound )
+			{
+				continue;
+			}
+
+			for ( size_t i = 0; i < s.size(); ++i )
+			{
+				if ( s[i] != '(' && s[i] != ')' )
+				{
+					continue;
+				}
+
+				string t = s.substr( 0, i ) + s.substr( i + 1 );
+
+				if ( visited.find( t ) == visited.end() )
+				{
+					res.emplace_back( t.c_str() );
+					visited.emplace( t, 1 );
+				}
+			}
+		}
+
+		return res;
+	}
+};
+
+//<--> 302. Smallest Rectangle Enclosing Black Pixels
+/*
+An image is represented by a binary matrix with 0 as a white pixel and 1 as a black pixel. 
+
+The black pixels are connected, i.e., there is only one black region. 
+
+Pixels are connected horizontally and vertically. 
+
+Given the location (x, y) of one of the black pixels, 
+
+return the area of the smallest (axis-aligned) rectangle that encloses all black pixels.
+
+For example, given the following image:
+
+[
+"0010",
+"0110",
+"0100"
+]
+and x = 0, y = 2,
+
+Return 6.
+*/
+class Solution {
+public:
+	//DFS: easy way to do
+	int minArea( vector<vector<char>>& image, int x, int y )
+	{
+	}
+};
+
+//<--> 303. Range Sum Query - Immutable
+/*
+Given an integer array nums, 
+
+find the sum of the elements between indices i and j (i ≤ j), inclusive.
+
+Example:
+Given nums = [-2, 0, 3, -5, 2, -1]
+
+sumRange(0, 2) -> 1
+sumRange(2, 5) -> -1
+sumRange(0, 5) -> -3
+Note:
+You may assume that the array does not change.
+There are many calls to sumRange function.
+*/
+class NumArray {
+public:
+	NumArray( vector<int> nums ) 
+	{
+		if ( !nums.empty() )
+		{
+			sums.push_back( nums[0] );
+			for ( size_t i = 1; i<nums.size(); ++i )
+			{
+				sums.push_back( sums.back() + nums[i] );
+			}
+		}
+	}
+
+	int sumRange( int i, int j ) {
+
+		if ( sums.empty() )
+		{
+			return 0;
+		}
+
+		if ( i == 0 )
+		{
+			return sums[j];
+		}
+		else
+		{
+			return sums[j] - sums[i - 1];
+		}
+	}
+
+private:
+
+	vector<int> sums;
+};
+
+/**
+* Your NumArray object will be instantiated and called as such:
+* NumArray obj = new NumArray(nums);
+* int param_1 = obj.sumRange(i,j);
+*/
+
+//<--> 304. Range Sum Query 2D - Immutable
+/*
+Given a 2D matrix matrix, find the sum of the elements 
+inside the rectangle defined by its upper left corner (row1, col1) 
+and lower right corner (row2, col2).
+
+Example:
+Given matrix = [
+[3, 0, 1, 4, 2],
+[5, 6, 3, 2, 1],
+[1, 2, 0, 1, 5],
+[4, 1, 0, 1, 7],
+[1, 0, 3, 0, 5]
+]
+
+sumRegion(2, 1, 4, 3) -> 8
+sumRegion(1, 1, 2, 2) -> 11
+sumRegion(1, 2, 2, 4) -> 12
+
+Note:
+1. You may assume that the matrix does not change.
+2. There are many calls to sumRegion function.
+3/ You may assume that row1 <= row2 and col1 <= col2.
+*/
+
+/**
+* Your NumMatrix object will be instantiated and called as such:
+* NumMatrix obj = new NumMatrix(matrix);
+* int param_1 = obj.sumRegion(row1,col1,row2,col2);
+*/
+
+class NumMatrix {
+public:
+	NumMatrix( vector<vector<int>> matrix ) 
+	{
+		if ( matrix.empty() || matrix[0].empty() )
+		{
+			return;
+		}
+
+		auto rows = matrix.size();
+		auto cols = matrix[0].size();
+
+		for ( size_t i = 1; i <= rows; ++i )
+		{
+			for ( size_t j = 1; j <= cols; ++j )
+			{
+				dp[i][j] = dp[i - 1][j] + dp[i][j - 1] - dp[i - 1][j - 1] + matrix[i - 1][j - 1];
+			}
+		}
+	}
+
+	int sumRegion( int row1, int col1, int row2, int col2 )
+	{
+		return dp[row2 + 1][col2 + 1] - dp[row2 + 1][col1] - dp[row1][col2 + 1] + dp[row1][col1];
+	}
+
+private:
+	vector<vector<int>> dp;
+};
+
+
+
+//<--> 305. Number of Islands II
+/*
+A 2d grid map of m rows and n columns is initially filled with water. 
+
+We may perform an addLand operation which turns the water at position (row, col) 
+
+into a land. Given a list of positions to operate, 
+
+count the number of islands after each addLand operation. 
+
+An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. 
+
+You may assume all four edges of the grid are all surrounded by water.
+
+Example:
+
+Given m = 3, n = 3, positions = [[0,0], [0,1], [1,2], [2,1]].
+Initially, the 2d grid grid is filled with water. (Assume 0 represents water and 1 represents land).
+
+0 0 0
+0 0 0
+0 0 0
+Operation #1: addLand(0, 0) turns the water at grid[0][0] into a land.
+
+1 0 0
+0 0 0   Number of islands = 1
+0 0 0
+Operation #2: addLand(0, 1) turns the water at grid[0][1] into a land.
+
+1 1 0
+0 0 0   Number of islands = 1
+0 0 0
+Operation #3: addLand(1, 2) turns the water at grid[1][2] into a land.
+
+1 1 0
+0 0 1   Number of islands = 2
+0 0 0
+Operation #4: addLand(2, 1) turns the water at grid[2][1] into a land.
+
+1 1 0
+0 0 1   Number of islands = 3
+0 1 0
+We return the result as an array: [1, 1, 2, 3]
+
+Challenge:
+
+Can you do it in time complexity O(k log mn), where k is the length of the positions?
+*/
+class Solution {
+public:
+	vector<int> numIslands2( int m, int n, vector<pair<int, int>>& positions )
+	{
+		if ( m <= 0 || n <= 0 )
+		{
+			return{};
+		}
+
+		vector<int> roots( m*n, -1 ); //key: this vector will return the same island that current point will belong to.
+
+		int count = 0;
+
+		int dx[] = { 1, -1, 0, 0 };
+		int dy[] = { 0, 0, 1, -1 };
+
+		vector<int> res;
+
+		for ( auto & p : positions )
+		{
+			int id = p.first*n + p.second;
+			roots[id] = id;
+			++count;
+
+			for ( int i = 0; i < 4; ++i )
+			{
+				int x = p.first + dx[i];
+				int y = p.second + dy[i];
+
+				int cur_id = x*n + y;
+
+				if ( x < 0 || x >= m || y < 0 || y >= n || roots[cur_id] == -1 )
+				{
+					continue;
+				}
+
+				int new_id = find_root( roots, cur_id );
+
+				//key: since its adjacent is belongs to an island already marked, 
+				//we should mark current point to this island.
+				if ( id != new_id )  
+				{
+					roots[id] = new_id;
+					id = new_id;
+					--count;
+				}
+			}
+
+			res.push_back( count );
+		}
+
+		return res;
+	}
+
+	int find_root( vector<int>& roots, int id )
+	{
+		while ( id != roots[id] )
+		{
+			roots[id] = roots[roots[id]];
+			id = roots[id];
+		}
+
+		return id;
+	}
 };
