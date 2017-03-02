@@ -10736,39 +10736,36 @@ public:
     // dynamic programming
     int nthUglyNumber(int n)
     {
-        vector<int> dp(n,0);
+        vector<int> dp(n,1);
         
-        int u2 = 2, u3 = 3, u5 = 5;
+        int u2 = 1, u3 = 1, u5 = 1;
         int i2 = 0, i3 = 0, i5 = 0;
-        
-        int next_u = 1;
-        
-        dp[0] = 1;
-        
-        for(int i = 1; i< n; ++i)
-        {
-            next_u = min(u2, min(u3,u5));
-            
-            if(next_u == u2)
-            {
-                ++i2;
-                u2 = v[i2]*2;
-            }
-            
-            if(next_u == u3) //key: cannot use else if here, because if u2==u3, we will miss to increase i3
-            {
-                ++i3;
-                u3 = v[i3]*3;
-            }
-            
-            if(next_u == u5)
-            {
-                ++i5;
-                u5 = v[i5]*5;
-            }
-        }
-        
-        return next_u;
+
+		for ( int i = 1; i < n; ++i )
+		{
+			u2 = dp[i2] * 2;
+			u3 = dp[i3] * 3;
+			u5 = dp[i5] * 5;
+
+			dp[i] = min( u2, min( u3, u5 ) );
+
+			if ( dp[i] == u2 )
+			{
+				++i2;
+			}
+
+			if ( dp[i] == u3 )
+			{
+				++i3;
+			}
+
+			if ( dp[i] == u5 )
+			{
+				++i5;
+			}
+		}
+
+		return dp.back();
     }
 };
 
@@ -10810,82 +10807,82 @@ public:
         
         int last1=-1,last2=-1;
         
-        for(size_t i = 0; i<costs.size(); ++i)
-        {
-            last1 = min1;
-            last2 = min2;
-            min1 = -1;
-            min2 = -1;
-            
-            //iterate over all colors
-            for(size_t j = 0; j<costs[i].size(); ++j)
-            {
-                if(j!=last1)
-                {
-                    dp[i][j] += last1 <0 ? 0 : dp[i-1][last1];
-                }
-                else
-                {
-                    dp[i][j] += last2 <0 ? 0 : dp[i-1][last2]; //key: add second to minimum 
-                }
-                
-                if(min1 < 0 || dp[i][j] < dp[i][min1]) // update min1: the color to get miniumum cost
-                {
-                    min2 = min1;
-                    min1 = j;
-                }
-                else if(min2 < 0 || dp[i][j] < dp[i][min2])
-                {
-                    min2 = j;
-                }
-            }
-        }
+		for ( size_t i = 0; i < costs.size(); ++i )
+		{
+			last1 = min1;
+			last2 = min2;
+			min1 = -1;
+			min2 = -1;
+
+			//iterate over all colors
+			for ( size_t j = 0; j < costs[i].size(); ++j )
+			{
+				if ( j != last1 )
+				{
+					dp[i][j] += last1 < 0 ? 0 : dp[i - 1][last1];
+				}
+				else
+				{
+					dp[i][j] += last2 < 0 ? 0 : dp[i - 1][last2]; //key: add second to minimum 
+				}
+
+				if ( min1 < 0 || dp[i][j] < dp[i][min1] ) // update min1: the color to get miniumum cost
+				{
+					min2 = min1;
+					min1 = j;
+				}
+				else if ( min2 < 0 || dp[i][j] < dp[i][min2] )
+				{
+					min2 = j;
+				}
+			}
+		}
         
         return dp.back()[min1];
     }
     
     // using O(1) memory space
-    int minCostII(vector<vector<int>>& costs)
-    {
-        if(costs.empty() || costs[0].empty())
-        {
-            return 0;
-        }
-        
-        int min1_so_far = -1;
-        int min2_so_far = -1;
-        int min1_color = -1;
-        
-        for( size_t i = 0; i < costs.size(); ++i )
-        {
-            int cur_min1 = INT_MAX;
-            int cur_min2 = cur_min1;
-            int cur_min1_color = -1;
-            
-            for( size_t j = 0; j < costs[i].size(); ++j )
-            {
-                int cost = costs[i][j] + (j == min1_color) ? min2_so_far : min1_so_far;
-                
-                if(cost < cur_min1) //update mininum
-                {
-                    cur_min2 = cur_min1;
-                    cur_min1 = cost;
-                    cur_min1_color = j;
-                }
-                else
-                {
-                    cur_min2 = cost; // update second minimum.
-                }
-            }
-            
-            //update min1_so_far, min2_so_far and min1_color
-            min1_so_far = cur_min1;
-            min2_so_far = cur_min2;
-            min1_color = cur_min1_color;
-        }
-        
-        return min1_so_far;
-    }
+	int minCostII( vector<vector<int>>& costs )
+	{
+		if ( costs.empty() || costs[0].empty() )
+		{
+			return 0;
+		}
+
+		int min1_so_far = 0;
+		int min2_so_far = 0;
+		int min1_color = -1;
+
+		for ( size_t i = 0; i < costs.size(); ++i )
+		{
+			int cur_min1 = INT_MAX;
+			int cur_min2 = cur_min1;
+			int cur_min1_color = -1;
+
+			for ( size_t j = 0; j < costs[i].size(); ++j )
+			{
+				int cost = costs[i][j] + (j == min1_color) ? min2_so_far : min1_so_far;
+
+				if ( cost < cur_min1 ) //update mininum
+				{
+					cur_min2 = cur_min1;
+					cur_min1 = cost;
+					cur_min1_color = j;
+				}
+				else if (cost < )
+				{
+					cur_min2 = cost; // update second minimum.
+				}
+			}
+
+			//update min1_so_far, min2_so_far and min1_color
+			min1_so_far = cur_min1;
+			min2_so_far = cur_min2;
+			min1_color = cur_min1_color;
+		}
+
+		return min1_so_far;
+	}
  };
  
 //<-->266. Palindrome Permutation
@@ -14213,6 +14210,54 @@ class Solution {
 public:
 	vector<int> findMinHeightTrees(int n, vector<pair<int, int>>& edges) 
 	{
+		vector<unordered_set<int>> graph( n );
+
+		for ( auto& p : edges )
+		{
+			graph[p.first].insert( p.second );
+			graph[p.second].insert( p.first );
+		}
+
+		queue<int> q;
+
+		for ( int i = 0; i < n; ++i )
+		{
+			if ( graph[i].size() == 1 )
+			{
+				q.push( i );
+			}
+		}
+
+		while ( n > 2 )
+		{
+			int cur_sz = q.size();
+
+			n -= cur_sz;
+
+			for ( int i = 0; i < cur_sz; ++i )
+			{
+				auto t = q.front();
+				q.pop();
+
+				for ( auto v : graph[t] )
+				{
+					graph[v].erase( t ); //key: remove t from v
+					if ( graph[v].size() == 1 )
+					{
+						q.push( v );
+					}
+				}
+			}
+		}
+
+		vector<int> res;
+		while ( !q.empty() )
+		{
+			res.push_back( q.front() );
+			q.pop();
+		}
+
+		return res;
 	}
 };
 
@@ -14238,12 +14283,33 @@ B = [
 
 		|  1 0 0 |   | 7 0 0 |   |  7 0 0 |
 AB =	| -1 0 3 | x | 0 0 0 | = | -7 0 3 |
-		|  0 0 1 |
+					 | 0 0 1 |
 */
 class Solution {
 public:
 	vector<vector<int>> multiply(vector<vector<int>>& A, vector<vector<int>>& B)
 	{
+		int rows = A.size();
+		int cols = A[0].size();
+
+		vector<vector<int>> res( rows, vector<int>( cols, 0 ) );
+
+		for ( int i = 0; i < rows; ++i )
+		{
+			for ( int j = 0; j < cols; ++j )
+			{
+				if ( A[i][j] != 0 )
+				{
+					for ( int k = 0; k < B[0].size(); ++k )
+					{
+						if ( B[j][k] != 0 )
+						{
+							res[i][k] += A[i][j] * B[j][k];
+						}
+					}
+				}
+			}
+		}
 	}
 };
 
@@ -14278,6 +14344,109 @@ coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
 class Solution {
 public:
 	int maxCoins(vector<int>& nums)
+	{
+		int len = nums.size();
+
+		nums.insert( nums.begin(), 1 );
+		nums.push_back( 1 );
+
+		vector<vector<int>> dp( nums.size(), vector<int>( nums.size(), 0 ) );
+		for ( int L = 1; L <= len; ++L )
+		{
+			for ( int left = 1; left <= len - L + 1; ++left )
+			{
+				int right = left + L - 1;
+
+				for ( int k = left; k <= right; ++k )
+				{
+					dp[left][right] = max( dp[left][right],
+						nums[left - 1] * nums[k] * nums[right + 1] + dp[left][k - 1] + dp[k + 1][right] );
+				}
+			}
+		}
+
+		return dp[1][n];
+	}
+};
+
+//<--> 313. Super Ugly Number
+/*
+Write a program to find the nth super ugly number.
+
+Super ugly numbers are positive numbers whose all prime 
+
+factors are in the given prime list primes of size k. 
+
+For example, [1, 2, 4, 7, 8, 13, 14, 16, 19, 26, 28, 32] 
+
+is the sequence of the first 12 super ugly numbers given primes = [2, 7, 13, 19] of size 4.
+
+Note:
+(1) 1 is a super ugly number for any given primes.
+(2) The given numbers in primes are in ascending order.
+(3) 0 < k <= 100, 0 < n <= 106, 0 < primes[i] < 1000.
+(4) The nth super ugly number is guaranteed to fit in a 32-bit signed integer.
+*/
+class Solution {
+public:
+	int nthSuperUglyNumber( int n, vector<int>& primes )
+	{
+		vector<int> 
+	}
+};
+
+//<--> 	314. Binary Tree Vertical Order Traversal
+/*
+Given a binary tree, return the vertical order traversal of its nodes' values. 
+
+(ie, from top to bottom, column by column).
+
+If two nodes are in the same row and column, the order should be from left to right.
+
+Examples:
+Given binary tree [3,9,20,null,null,15,7],
+3
+/ \
+9  20
+/  \
+15   7
+return its vertical order traversal as:
+[
+[9],
+[3,15],
+[20],
+[7]
+]
+Given binary tree [3,9,20,4,5,2,7],
+_3_
+/   \
+9    20
+/ \   / \
+4   5 2   7
+return its vertical order traversal as:
+[
+[4],
+[9],
+[3,5,2],
+[20],
+[7]
+]
+*/
+/*
+我们可以把根节点给个序号0，然后开始层序遍历，
+凡是左子节点则序号减1，右子节点序号加1，
+这样我们可以通过序号来把相同列的节点值放到一起，
+我们用一个map来建立序号和其对应的节点值的映射，
+用map的另一个好处是其自动排序功能可以让我们的列从左到右，
+由于层序遍历需要用到queue，
+我们此时queue里不能只存节点，
+而是要存序号和节点组成的pair，
+这样我们每次取出就可以操作序号，
+而且排入队中的节点也赋上其正确的序号
+*/
+class Solution {
+public:
+	vector<vector<int>> verticalOrder( TreeNode* root )
 	{
 	}
 };
