@@ -13762,8 +13762,13 @@ public:
 	//this is done by myself
 	bool isAdditiveNumber( string num ) 
 	{
-	}
+		if (sum.empty())
+		{
+			return false;
+		}
 
+		dfs(num, 0, "", "");
+	}
 
 	bool dfs( const string& n, size_t start, string s1, string s2 )
 	{
@@ -13883,19 +13888,224 @@ You may assume the number of calls to update and sumRange function is distribute
 * int param_2 = obj.sumRange(i,j);
 */
 
+/*
+这道题我们要使用一种新的数据结构，
+叫做树状数组Binary Indexed Tree，
+这是一种查询和修改复杂度均为O(logn)的数据结构。
+这个树状数组比较有意思，所有的奇数位置的数字和原数组对应位置的相同，
+偶数位置是原数组若干位置之和，假如原数组A(a1, a2, a3, a4 ...)，和其对应的树状数组C(c1, c2, c3, c4 ...)有如下关系：
+C1 = A1
+C2 = A1 + A2
+C3 = A3
+C4 = A1 + A2 + A3 + A4
+C5 = A5
+C6 = A5 + A6
+C7 = A7
+C8 = A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8
+
+那么是如何确定某个位置到底是有几个数组成的呢，
+原来是根据坐标的最低位Low Bit来决定的，
+所谓的最低位，就是二进制数的最右边的一个1开始，加厚后面的0(如果有的话)组成的数字，
+例如1到8的最低位如下面所示：
+
+坐标          二进制          最低位
+
+1               0001          1
+
+2               0010          2
+
+3               0011          1
+
+4               0100          4
+
+5               0101          1
+
+6               0110          2
+
+7               0111          1
+
+8               1000          8
+
+...
+
+最低位的计算方法有两种，一种是x&(x^(x–1))，另一种是利用补码特性x&-x。
+*/
 class NumArray {
 public:
 	NumArray( vector<int> nums ) 
 	{
+		bits.resize(nums.size() + 1, 0);
+		N.resize(nums.size() + 1, 0);
+
+		int len = nums.size();
+
+		for (int i = 0; i < len; ++i)
+		{
+			update(i, nums[i]);
+		}
 	}
 
 	void update( int i, int val )
 	{
+		int diff = val - N[i + 1];
+		int len = N.size();
+
+		for (int j = i + 1; j < len; j += (j&-j))
+		{
+			BIT[j] += diff;
+		}
+
+		N[i + 1] = val;
 	}
 
 	int sumRange( int i, int j )
 	{
+		return getSum(j + 1) - getSum(i);
+	}
+
+	int getSum(int i)
+	{
+		int res = 0;
+
+		for (int j = i; j > 0; j -= (j&-j))
+		{
+			res += BIT[j];
+		}
+
+		return res;
+	}
+
+private:
+	vector<int> BIT;
+	vector<int> N;
+};
+
+//<--> 310. Minimum Height Trees
+/*
+For a undirected graph with tree characteristics, 
+
+we can choose any node as the root. 
+
+The result graph is then a rooted tree. 
+
+Among all possible rooted trees, those with minimum height are called minimum height trees (MHTs). 
+
+Given such a graph, write a function to find all the MHTs and return a list of their root labels.
+
+Format
+The graph contains n nodes which are labeled from 0 to n - 1. 
+
+You will be given the number n and a list of undirected edges (each edge is a pair of labels).
+
+You can assume that no duplicate edges will appear in edges. 
+
+Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
+
+Example 1:
+
+Given n = 4, edges = [[1, 0], [1, 2], [1, 3]]
+
+0
+|
+1
+/ \
+2   3
+return [1]
+
+Example 2:
+
+Given n = 6, edges = [[0, 3], [1, 3], [2, 3], [4, 3], [5, 4]]
+
+0  1  2
+\ | /
+3
+|
+4
+|
+5
+return [3, 4]
+
+Show Hint
+Note:
+
+(1) According to the definition of tree on Wikipedia: 
+
+“a tree is an undirected graph in which any two vertices are connected by exactly one path. 
+
+In other words, any connected graph without simple cycles is a tree.”
+
+(2) The height of a rooted tree is the number of edges on the longest downward path between the root and a leaf.
+*/
+class Solution {
+public:
+	vector<int> findMinHeightTrees(int n, vector<pair<int, int>>& edges) 
+	{
 	}
 };
 
+//<--> 311. Sparse Matrix Multiplication
+/*
+Given two sparse matrices A and B, return the result of AB.
 
+You may assume that A's column number is equal to B's row number.
+
+Example:
+
+A = [
+[ 1, 0, 0],
+[-1, 0, 3]
+]
+
+B = [
+[ 7, 0, 0 ],
+[ 0, 0, 0 ],
+[ 0, 0, 1 ]
+]
+
+
+		|  1 0 0 |   | 7 0 0 |   |  7 0 0 |
+AB =	| -1 0 3 | x | 0 0 0 | = | -7 0 3 |
+		|  0 0 1 |
+*/
+class Solution {
+public:
+	vector<vector<int>> multiply(vector<vector<int>>& A, vector<vector<int>>& B)
+	{
+	}
+};
+
+//<--> 312. Burst Balloons
+/*
+Given n balloons, indexed from 0 to n-1. 
+
+Each balloon is painted with a number on it represented by array nums. 
+
+You are asked to burst all the balloons. 
+
+If the you burst balloon i you will get nums[left] * nums[i] * nums[right] coins.
+
+Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent.
+
+Find the maximum coins you can collect by bursting the balloons wisely.
+
+Note:
+(1) You may imagine nums[-1] = nums[n] = 1. They are not real therefore you can not burst them.
+(2) 0 <= n <= 500, 0 <= nums[i] <= 100
+
+Example:
+
+Given [3, 1, 5, 8]
+
+Return 167
+
+nums = [3,1,5,8] --> [3,5,8] -->   [3,8]   -->  [8]  --> []
+coins =  3*1*5      +  3*5*8    +  1*3*8      + 1*8*1   = 167
+*/
+
+class Solution {
+public:
+	int maxCoins(vector<int>& nums)
+	{
+
+	}
+};
