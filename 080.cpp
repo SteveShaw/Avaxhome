@@ -7601,54 +7601,49 @@ class Solution {
 public:
     int maxProfit(int k, vector<int>& prices)
     {
-     
-        
-        if(k == 0||prices.empty())
-        {
-            return 0;
-        }
-        
-        int len = prices.size();
-           
-        vector<vector<int>> dp(k+1, vector<int>(len , 0));
-        
-        if( k > price.size() )
-        {
-            //since k is large than the prices length, we can sell as long as
-            //the price is higher than last day
-            
-            int result = 0;
-            
-            for(int i = 0; i< len; ++i)
-            {
-                if( prices[i] > prices[i-1] )
-                {
-                    result += prices[i] - prices[i-1];
-                }
-            }
-            
-            return result;
-        }
-        
-        for(int i = 1; i<=k; ++i)
-        {
-            for(int j = 1; j<len; ++j)
-            {
-                int max_so_far = INT_MIN;
-                
-                for(int m = 0; m< j; ++m)
-                {
-                    max_so_far = max(
-                                     max_so_far,
-                                     prices[j] - prices[m] + dp[i-1][m]
-                    );
-                }
-                
-                dp[i][j] = max(dp[i][j-1], max_so_far);
-            }
-        }
-        
-        return dp.back().back();
+		if ( k == 0 || prices.empty() )
+		{
+			return 0;
+		}
+
+		int len = prices.size();
+
+		vector<vector<int>> dp( k + 1, vector<int>( len, 0 ) );
+
+		if ( k > price.size() )
+		{
+			//since k is large than the prices length, we can sell as long as
+			//the price is higher than last day
+
+			int result = 0;
+
+			for ( int i = 0; i < len; ++i )
+			{
+				if ( prices[i] > prices[i - 1] )
+				{
+					result += prices[i] - prices[i - 1];
+				}
+			}
+
+			return result;
+		}
+
+		for ( int i = 1; i <= k; ++i )
+		{
+			for ( int j = 1; j < len; ++j )
+			{
+				int max_so_far = INT_MIN;
+
+				for ( int m = 0; m < j; ++m )
+				{
+					max_so_far = max(max_so_far,prices[j] - prices[m] + dp[i - 1][m]);
+				}
+
+				dp[i][j] = max( dp[i][j - 1], max_so_far );
+			}
+		}
+
+		return dp.back().back();
     }
     
     // more efficient
@@ -7709,10 +7704,81 @@ there are at least 3 different ways to solve this problem.
 */
 class Solution {
 public:
+	// method 1: 3 reverse
     void rotate(vector<int>& nums, int k)
     {
-		
+		if ( nums.empty() )
+		{
+			return;
+		}
+
+		int n = num.size();
+		k %= n;
+
+		if ( k == 0 )
+		{
+			return;
+		}
+
+		reverse( nums.begin(), nums.begin() + n - k );
+		reverse( nums.begin() + n - k, nums.end() );
+		reverse( nums.begin(), nums.end() );
     }
+	
+	//method 2: vector push_back and erase
+	void rotate( vector<int>& nums, int k )
+	{
+		if ( nums.empty() )
+		{
+			return;
+		}
+
+		int n = num.size();
+		k %= n;
+
+		if ( k == 0 )
+		{
+			return;
+		}
+
+		for ( int i = 0; i < n - k; ++i )
+		{
+			nums.push_back( nums[i] );
+		}
+
+		nums.erase( nums.begin(), nums.begin() + n - k );
+	}
+
+	//method 3: using swap
+	void rotate( vector<int>& nums, int k )
+	{
+		if ( nums.empty() )
+		{
+			return;
+		}
+
+		int n = num.size();
+
+		int start = 0;
+
+		while ( n != 0 )
+		{
+			k %= n;
+
+			if ( k == 0 )
+			{
+				break;
+			}
+
+			for ( int i = 0; i < k; ++i )
+			{
+				swap( nums[i + start], nums[n - k + i + start] );
+			}
+
+			n -= k;
+			start += k;
+		}
+	}
 };
 
 //<--> 190. Reverse Bits
@@ -7729,15 +7795,15 @@ If this function is called many times, how would you optimize it?
 
 class Solution {
 public:
-    uint32_t reverseBits(uint32_t n)
-    {
-        uint32_t res = 0;
-        
-        for(int i = 0; i< 32; ++i)
-        {
-            res |= ( (n>>1) & 1 ) << (31 - i);
-        }
-    }
+	uint32_t reverseBits( uint32_t n )
+	{
+		uint32_t res = 0;
+
+		for ( int i = 0; i < 32; ++i )
+		{
+			res |= ((n >> i) & 1) << (31 - i);
+		}
+	}
 };
 
 
@@ -7762,9 +7828,31 @@ without alerting the police.
 */
 class Solution {
 public:
-    int rob(vector<int>& nums)
-    {
-    }
+	int rob( vector<int>& nums )
+	{
+		if ( nums.empty() )
+		{
+			return 0;
+		}
+
+		if ( nums.size() == 1 )
+		{
+			return nums[0];
+		}
+
+		vector<int> dp( nums.size(), 0 );
+		dp[0] = nums[0];
+
+		dp[1] = max( nums[0], nums[1] );
+
+		for ( size_t i = 2; i < nums.size(); ++i )
+		{
+			dp[i] = max( dp[i - 2] + nums[i], dp[i - 1] );
+		}
+
+
+		return dp.back();
+	}
 };
 
 //<--> 199. Binary Tree Right Side View
@@ -7833,8 +7921,53 @@ Answer: 3
 class Solution {
 public:
     int numIslands(vector<vector<char>>& grid)
-    {    
+    {
+		vector<vector<int>> visit( grid.size(), vector<int>( grid[0].size(), 0 ) );
+
+		int rows = grid.size();
+		int cols = grid[0].size();
+
+		int nums = 0;
+
+		for ( int i = 0; i < rows; ++i )
+		{
+			for ( int j = 0; j < cols; ++j )
+			{
+				if ( grid[i][j] == 1 && visit[i][j] == 0 )
+				{
+					dfs( grid, visit, i, j );
+					++nums;
+				}
+			}
+		}
+
+		return nums;
     }
+
+	//DFS method to mark all islands
+	void dfs( vector<vector<char>>& grid, vector<vector<int>>& v, int r, int c )
+	{
+		int dx[] = { 0, 0, -1, 1 };
+		int dy[] = { 1, -1, 0, 0 };
+
+		int rows = grid.size();
+		int cols = grid[0].size();
+
+		v[r][c] = 1;
+
+		for ( int i = 0; i < 4; ++i )
+		{
+			int x = r + dx[i];
+			int y = c + dy[i];
+
+			if ( x < 0 || y < 0 || x >= rows || y >= cols || grid[x][y] == 0 || v[x][y] == 1 )
+			{
+				continue;
+			}
+
+			dfs( grid, v, x, y );
+		}
+	}
 };
 
 //<--> 201. Bitwise AND of Numbers Range
@@ -7848,8 +7981,9 @@ For example, given the range [5, 7], you should return 4.
 class Solution {
 public:
     int rangeBitwiseAnd(int m, int n)
-    {  
-    }
+	{
+
+	}
 };
 
 //<--> 202. Happy Number
