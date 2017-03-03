@@ -14241,6 +14241,21 @@ class Solution {
 public:
 	int maxProfit( vector<int>& prices )
 	{
+		int buy = INT_MIN;
+		int pre_buy = 0;
+		int sell = 0;
+		int pre_sell = 0;
+
+		for ( auto p : prices )
+		{
+			pre_buy = buy;
+			buy = max( pre_sell - p, pre_buy );
+
+			pre_sell = sell;
+			sell = max( pre_buy + p, pre_sell );
+		}
+
+		return sell;
 	}
 };
 
@@ -14625,8 +14640,147 @@ Return the array [2, 1, 1, 0].
 */
 class Solution {
 public:
+	//method 1: using binary search
 	vector<int> countSmaller(vector<int>& nums)
 	{
+		if ( nums.empty() )
+		{
+			return{};
+		}
 
+		vector<int> aux;
+		vector<int> res( nums.size(), 0 );
+
+		int len = nums.size();
+
+		for ( int i = len - 1; i >= 0; --i )
+		{
+			int left = 0, right = aux.size();
+
+			while ( left < right )
+			{
+				int mid = left + (right - left) / 2;
+				if ( aux[mid] >= nums[i] )
+				{
+					right = mid;
+				}
+				else
+				{
+					left = mid + 1;
+				}
+			}
+
+			res[i] = right;
+
+			aux.insert( aux.begin() + right, nums[i] );
+		}
+
+		return res;
+	}
+
+	//method 2: using std function lower_bound
+	vector<int> countSmaller( vector<int>& nums )
+	{
+		if ( nums.empty() )
+		{
+			return{};
+		}
+
+		vector<int> aux;
+		vector<int> res( nums.size(), 0 );
+
+		int len = nums.size();
+
+		for ( int i = len - 1; i >= 0; --i )
+		{
+			auto it = lower_bound( begin( aux ), end( aux ), nums[i] );
+			int d = distance( begin( aux ), it );
+
+			res[i] = d;
+
+			aux.insert( it, nums[i] );
+		}
+
+		return res;
 	}
 };
+
+//<--> 316. Remove Duplicate Letters
+/*
+Given a string which contains only lowercase letters, 
+remove duplicate letters so that every letter appear once and only once. 
+You must make sure your result is the smallest in lexicographical order among all possible results.
+
+Example:
+Given "bcabc"
+Return "abc"
+
+Given "cbacdcbc"
+Return "acdb"
+*/
+class Solution {
+public:
+	string removeDuplicateLetters( string s ) 
+	{
+		int m[26] = { 0 };
+		int visit[26] = { 0 };
+
+		for ( auto c : s )
+		{
+			++m[c - 'a'];
+		}
+
+		string res;
+
+		for ( auto c : s )
+		{
+			--m[c - 'a'];
+			if ( visit[c - 'a'] == 1 )
+			{
+				continue;
+			}
+
+			//key: (m[res.back() - 'a'] != 0 means this character will be met afterwards, so we will remove now.
+			while ( !res.empty() && (c<res.back()) && (m[res.back() - 'a'] != 0) ) 
+			{
+				visit[res.back() - 'a'] = 0;
+				res.pop_back();
+			}
+
+			res.push_back( c );
+			visit[c - 'a'] = 1;
+		}
+
+		return res;
+	}
+};
+
+//<-> 317. Shortest Distance from All Buildings
+/*
+You want to build a house on an empty land which reaches all buildings 
+
+in the shortest amount of distance. 
+
+You can only move up, down, left and right. You are given a 2D grid of values 0, 1 or 2, where:
+
+Each 0 marks an empty land which you can pass by freely.
+Each 1 marks a building which you cannot pass through.
+Each 2 marks an obstacle which you cannot pass through.
+For example, given three buildings at (0,0), (0,4), (2,2), and an obstacle at (0,2):
+
+1 - 0 - 2 - 0 - 1
+|   |   |   |   |
+0 - 0 - 0 - 0 - 0
+|   |   |   |   |
+0 - 0 - 1 - 0 - 0
+The point (1,2) is an ideal empty land to build a house, as the total travel distance of 3+3+1=7 is minimal. So return 7.
+
+Note:
+There will be at least one building. If it is not possible to build such house according to the above rules, return -1.
+*/
+class Solution {
+public:
+	int shortestDistance( vector<vector<int>>& grid )
+	{
+	}
+}
