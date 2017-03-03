@@ -8,7 +8,70 @@
 #include <set>
 #include <functional>
 #include <array>
+#include <map>
 using namespace std;
+
+//<--> 10. Regular Expression Matching
+/*
+Implement regular expression matching with support for '.' and '*'.
+
+'.' Matches any single character.
+'*' Matches zero or more of the preceding element.
+
+The matching should cover the entire input string (not partial).
+
+The function prototype should be:
+bool isMatch(const char *s, const char *p)
+
+Some examples:
+isMatch("aa","a") → false
+isMatch("aa","aa") → true
+isMatch("aaa","aa") → false
+isMatch("aa", "a*") → true
+isMatch("aa", ".*") → true
+isMatch("ab", ".*") → true
+isMatch("aab", "c*a*b") → true
+*/
+class Solution {
+public:
+	bool isMatch(string s, string p) 
+	{
+		vector<vector<int>> dp(s.size() + 1, vector<int>(p.size() + 1, 0));
+
+		dp[0][0] = 1;
+
+		for (size_t i = 2; i <= p.size(); ++i)
+		{
+			if (p[i - 1] == '*')
+			{
+				dp[0][i] = dp[0][i - 2];
+			}
+		}
+
+		for (size_t i = 1; i <= s.size(); ++i)
+		{
+			for (size_t j = 1; j <= p.size(); ++j)
+			{
+				if ( ( s[i - 1] == p[j - 1] ) || ( p[j - 1] = '.') )
+				{
+					dp[i][j] = dp[i - 1][j - 1];
+				}
+				else if (p[j - 1] == '*')
+				{
+					dp[i][j] = dp[i][j - 2]; // * match zero
+
+					if ((s[i - 1] = p[j - 2]) || p[j - 2] == '.')
+					{
+						dp[i][j] |= dp[i - 1][j]; //* match at least 1
+					}
+				}
+			}
+		}
+
+
+		return dp.back().back() == 1;
+	}
+};
 
 //28. Implement strStr() 
 /*
@@ -377,16 +440,47 @@ isMatch("aa", "*") → true
 isMatch("aa", "a*") → true
 isMatch("ab", "?*") → true
 isMatch("aab", "c*a*b") → false
-
-
-
 */
 
+/*
+difference between regular matching and wildcard matching
+1. in wildcard matching, '*' is a standalong pattern character
+2. in regular maching, '*' is dependent on its previous character.
+*/
 class Solution {
 public:
     bool isMatch(string s, string p) 
 	{
-        
+		vector<vector<int>> dp(s.size() + 1, vector<int>(p.size() + 1));// key: add empty string
+
+		dp[0][0] = 1; //s is empty and p is empty, so they matched
+
+		//fill first row: s is empty and p is not empty
+		//so s="", and if p="***", they still can be matched
+		for (size_t i = 1; i <= p.size(); ++i)
+		{
+			if (p[i - 1] == '*')
+			{
+				dp[i - 1] = dp[i];
+			}
+		}
+
+		for (size_t i = 1; i <= s.size(); ++i)
+		{
+			for (size_t j = 1; j <= p.size(); ++j)
+			{
+				if (p[j - 1] == '*')
+				{
+					dp[i][j] = dp[i][j - 1] | dp[i - 1][j]; //dp[i][j-1] means '*' match zero character while dp[i-1][j] means '*' match s[i-1]
+				}
+				else if ((s[i - 1] == p[j - 1]) || (p[j - 1] == '?'))
+				{
+					dp[i][j] = dp[i - 1][j - 1];
+				}
+			}
+		}
+
+		return dp[s.size()][p.size()] == 1;
     }
 };
 
@@ -14391,7 +14485,28 @@ class Solution {
 public:
 	int nthSuperUglyNumber( int n, vector<int>& primes )
 	{
-		vector<int> 
+		vector<int> idx(primes.size(), 0);
+		vector<int> dp(n, 1);
+
+		for (int i = 1; i < n; ++i)
+		{
+			dp[i] = INT_MAX;
+
+			for (size_t k = 0; k < primes.size(); ++k)
+			{
+				dp[i] = min(dp[i], dp[idx[k]] * primes[k]);
+			}
+
+			for (size_t k = 0; k < primes.size(); ++k)
+			{
+				if (dp[i] == dp[idx[k]] * primes[k])
+				{
+					++idx[k];
+				}
+			}
+		}
+
+		return dp.back();
 	}
 };
 
@@ -14448,5 +14563,70 @@ class Solution {
 public:
 	vector<vector<int>> verticalOrder( TreeNode* root )
 	{
+		if (!root)
+		{
+			return {};
+		}
+
+		map<int, vector<int>> m;
+
+		queue<pair<int, TreeNode*>> q;
+
+		q.emplace(0, root);
+
+		while (!q.empty())
+		{
+			auto p = q.front();
+			q.pop();
+
+			if (m.find(p.first) == m.end())
+			{
+				m.emplace(p.first, vector<int>());
+			}
+
+			m[p.first].push_back(p.second->val);
+
+			if (p.second->left)
+			{
+				q.emplace(p.first - 1, p.second->left);
+			}
+
+			if (p.second->right)
+			{
+				q.emplace(p.first + 1, p.second->right);
+			}
+		}
+
+		vector<vector<int>> res;
+		for (auto& p : m)
+		{
+			res.emplace_back(p.second);
+		}
+
+		return res;
+	}
+};
+
+//<--> 315. Count of Smaller Numbers After Self
+/*
+You are given an integer array nums and you have to return a new counts array. 
+
+The counts array has the property where counts[i] is the number of smaller elements to the right of nums[i].
+
+Example:
+
+Given nums = [5, 2, 6, 1]
+
+To the right of 5 there are 2 smaller elements (2 and 1).
+To the right of 2 there is only 1 smaller element (1).
+To the right of 6 there is 1 smaller element (1).
+To the right of 1 there is 0 smaller element.
+Return the array [2, 1, 1, 0].
+*/
+class Solution {
+public:
+	vector<int> countSmaller(vector<int>& nums)
+	{
+
 	}
 };
