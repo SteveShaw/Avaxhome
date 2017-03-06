@@ -9,6 +9,7 @@
 #include <functional>
 #include <array>
 #include <map>
+#include <stack>
 using namespace std;
 
 //<--> 10. Regular Expression Matching
@@ -228,26 +229,40 @@ class Solution {
 public:
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) 
 	{
-		
+		vector<int> out;
+		vector<vector<int>> res;
+
+		sort(begin(candidates), end(candidates)); // key: must sort first.
+
+		dfs(candidates, 0, target, out, res);
+
+		return res;
 	}
 	
-	void dfs( vector<int>& nums, vector<int>& out, vector<vector<int>> &res, int target, int start )
+	void dfs(vector<int>& N, size_t start, int target, vector<int>& out, vector<vector<int>>& res)
 	{
-		if(target < 0) 
+		if (target < 0)
 		{
 			return;
 		}
-		if(target == 0)
+
+		if (target == 0)
 		{
 			res.push_back(out);
 			return;
 		}
-		
-		for(int i = start; i<nums.size();++i)
+
+		for (size_t i = start; i < N.size(); ++i)
 		{
-			if(i>start && nums[i]==nums[i-1]) continue;
-			out.push_back(nums[i]);
-			dfs(nums,out,res,target-nums[i], i+1);
+			if (i > start && N[i] == N[i - 1])
+			{
+				continue; //key: we need to sort first then we can use this feature to skip duplicate number
+			}
+
+			out.push_back(N[i]);
+
+			dfs(N, i + 1, target - N[i], out, res);
+
 			out.pop_back();
 		}
 	}
@@ -330,36 +345,37 @@ public:
 		return res;
 	}
 	
-		//second solution
-		// int trap(vector<int>& height) 
-		// {
-			// size_t l = 0, r = height.size() - 1;
-			
-			// int res = 0;
-			
-			// while(l<r)
-			// {
-				// auto min_h = min(height[l],height[r]);
-				// if(height[l]==min_h)
-				// {
-					// ++l;
-					// while(l<r && height[l]<min_h)
-					// {
-						// res += min_h - height[l];
-						// ++l;
-					// }
-				// }
-				// else
-				// {
-					// --r;
-					// while(l<r && height[r]<min_h)
-					// {
-						// res += min_h - height[r];
-						// --r;
-					// }
-				// }
-			// }
-		// }
+	//second solution
+	int trap( vector<int>& height )
+	{
+		size_t l = 0, r = height.size() - 1;
+
+		int res = 0;
+
+		while (l < r)
+		{
+			auto min_h = min(height[l], height[r]);
+
+			if (height[l] == min_h)
+			{
+				++l;
+				while (l < r && height[l] < min_h)
+				{
+					res += min_h - height[l];
+					++l;
+				}
+			}
+			else
+			{
+				--r;
+				while (l < r && height[r] < min_h)
+				{
+					res += min_h - height[r];
+					--r;
+				}
+			}
+		}
+	}
 };
 
 //<--> 43. Multiply Strings
@@ -395,14 +411,14 @@ public:
 		
 		int carry = 0;
 		
-		for(size_t i = 0; i<n1+n2; --i)
+		for(size_t i = 0; i<n1+n2; ++i)
 		{
 			v[i] += carry;
 			carry = v[i]/10;
 			v[i] -= carry * 10;
 		}
 		
-		size_t i = n1+n2-1;
+		int i = n1+n2-1;
 		
 		while(v[i]==0) --i;
 		
@@ -418,6 +434,52 @@ public:
 		
 		return res;
     }
+
+	//using std library
+	string multiply(string num1, string num2)
+	{
+		int len1 = num1.size();
+		int len2 = num2.size();
+
+		auto& s1 = num1;
+		auto& s2 = num2;
+
+		vector<int> v(len1 + len2, 0);
+
+		auto k = len1 + len2 - 2;
+
+		for (int i = 0; i < len1; ++i)
+		{
+			for (int j = 0; j < len2; ++j)
+			{
+				v[k - i - j] += (s1[i] - '0')*(s2[j] - '0');
+			}
+		}
+
+		int carry = 0;
+
+		for (size_t i = 0; i < v.size(); ++i)
+		{
+			v[i] += carry;
+			carry = v[i] / 10;
+			v[i] -= carry * 10;
+		}
+
+		auto it = find_if(v.rbegin(), v.rend(), [](int n) {return n != 0; });
+		if (it == v.rend())
+		{
+			return "0";
+		}
+
+		string res;
+		while (it != v.rend())
+		{
+			res.push_back(*it + '0');
+			++it;
+		}
+
+		return res;
+	}
 };
 
 //44. Wildcard Matching 
@@ -552,6 +614,8 @@ public:
 	{
 		vector<vector<int>> res;
 		
+		dfs(nums, res, 0);
+
 		return res;
     }
 	
@@ -593,8 +657,47 @@ class Solution {
 public:
     vector<vector<int>> permuteUnique(vector<int>& nums) 
 	{
+		sort(begin(nums), end(nums));
+		
+		vector<int> visit(nums.size(), 0);
+		vector<int> out;
+
+		vector<vector<int>> res;
+
+		dfs(nums, 0, out, visit, res);
+
+		return res;
     }
 	
+	void dfs(const vector<int>& N, size_t level, vector<int>& out, vector<int>& visit, vector<vector<int>>& res)
+	{
+		if (level == N.size())
+		{
+			res.push_back(out);
+			return;
+		}
+
+		for (size_t i = 0; i < N.size(); ++i)
+		{
+			if (visit[i] == 0)
+			{
+				if (i > 0 && N[i] == N[i - 1] && visit[i] == 1)
+				{
+					continue;
+				}
+
+				visit[i] = 1;
+
+				out.push_back(N[i]);
+
+				dfs(N, level + 1, out, visit, res);
+
+				out.pop_back();
+
+				visit[i] = 0;
+			}
+		}
+	}
 };
 
 //48. Rotate Image
@@ -669,7 +772,8 @@ public:
 	{
 		if(n==0) return 1;
 		auto half = Pow(x, n/2);
-		if(n%1 == 0) return half*half;
+		if (n & 1 == 0) return half*half;
+		else return half*half*x;
 	}
 	
 };
@@ -1261,6 +1365,37 @@ class Solution {
 public:
     int minPathSum(vector<vector<int>>& grid) 
 	{
+		if (grid.empty() || grid[0].empty())
+		{
+			return 0;
+		}
+
+		int rows = grid.size();
+		int cols = grid[0].size();
+
+		vector<vector<int>> dp(rows, vector<int>(cols, 0));
+
+		dp[0][0] = grid[0][0];
+
+		for (int i = 1; i<cols; ++i)
+		{
+			dp[0][i] = dp[0][i - 1] + grid[0][i];
+		}
+
+		for (int i = 1; i<rows; ++i)
+		{
+			dp[i][0] = dp[i - 1][0] + grid[i][0];
+		}
+
+		for (int i = 1; i<rows; ++i)
+		{
+			for (int j = 1; j<cols; ++j)
+			{
+				dp[i][j] = min(dp[i - 1][j], dp[i][j - 1]) + grid[i][j];
+			}
+		}
+
+		return dp.back().back();
     }
 };
 
@@ -1302,7 +1437,10 @@ public:
 		auto n = digits.size();
 		for( size_t i = n-1; i>=1; --i)
 		{
-			if( digits[i] == 9 ) digits[i] = 0;
+			if (digits[i] == 9)
+			{
+				digits[i] = 0;
+			}
 			else
 			{
 				digits[i] += 1;
@@ -1520,9 +1658,34 @@ public:
 /*Implement int sqrt(int x).*/
 class Solution {
 public:
+	// binary search
     int mySqrt(int x) 
 	{
-		
+		long long l = 0;
+		long long r = ( x >> 1 ) + 1;
+
+		while (l <= r)
+		{
+			auto mid = l + (r - l) / 2;
+
+			auto sq = mid*mid;
+
+			if (sq == x)
+			{
+				return mid;
+			}
+
+			if (sq < x)
+			{
+				l = mid + 1;
+			}
+			else
+			{
+				r = mid - 1;
+			}
+		}
+
+		return r;
     }
 };
 
@@ -6086,6 +6249,12 @@ Sort a linked list in O(n log n) time using constant space complexity.
  *     ListNode(int x) : val(x), next(NULL) {}
  * };
  */
+struct ListNode {
+	int val;
+	ListNode *next;
+	ListNode(int x) : val(x), next(NULL) {}
+};
+
 class Solution {
 public:
     ListNode* sortList(ListNode* head) {
@@ -6098,7 +6267,7 @@ public:
 		auto slow = head, fast = head;
 		ListNode* pre = nullptr;
 		
-		while(fast && fast->next)
+		while(fast->next && fast->next->next)
 		{
 			pre = slow;
 			slow = slow->next;
@@ -6135,6 +6304,10 @@ public:
 		if(l1) cur->next = l1;
 		if(l2) cur->next = l2;
 		
+		auto new_head = dummy->next;
+
+		delete dummy;
+
 		return dummy->next;
 	}
 	
@@ -6157,7 +6330,86 @@ public:
 		
 	}
 };
- 
+
+//<--> 149. Max Points on a Line
+/*
+Given n points on a 2D plane, find the maximum number of points that lie on the same straight line.
+*/
+
+/**
+* Definition for a point.
+* struct Point {
+*     int x;
+*     int y;
+*     Point() : x(0), y(0) {}
+*     Point(int a, int b) : x(a), y(b) {}
+* };
+*/
+
+
+class Solution {
+public:
+	struct Point
+	{
+		int x;
+		int y;
+		Point() : x(0), y(0) {}
+		Point(int a, int b) : x(a), y(b) {}
+	};
+
+	int maxPoints(vector<Point>& points)
+	{
+	}
+};
+
+//<--> 150. Evaluate Reverse Polish Notation
+class Solution {
+public:
+	int evalRPN(vector<string>& tokens)
+	{
+		stack<int> s;
+
+		for (const auto& token : tokens)
+		{
+			if (token == "-" || token == "+" || token == "/" || token == "*")
+			{
+				if (s.empty() || s.size() == 1)
+				{
+					return 0;
+				}
+
+				int a = s.top();
+				s.pop();
+
+				int b = s.top();
+				s.pop();
+
+				if (token == "-" )
+				{
+					s.push(b - a);
+				}
+				else if (token == "+")
+				{
+					s.push(b + a);
+				}
+				else if (token == "/")
+				{
+					s.push(b / a);
+				}
+				else if (token == "*")
+				{
+					s.push(b * a);
+				}
+			}
+			else
+			{
+				s.push(stoi(token));
+			}
+		}//end for
+
+		return s.empty() ? -1 : s.top();
+	}
+};
 //<--> 151. Reverse Words in a String
 /*
 Given an input string, reverse the string word by word.
@@ -6194,7 +6446,7 @@ public:
                     s[store_pos++] = s[j++];
                 }
                 
-                reverse(s.begin()+store_pos-(j-i), s.begin()+store_pos); //key: start position = store_pos - (j-i)
+				reverse(s.begin() + store_pos - (j - i), s.begin() + store_pos); //key: start position = store_pos - (j-i)
                 
                 i = j;
             }
@@ -14917,4 +15169,565 @@ public:
 	int shortestDistance( vector<vector<int>>& grid )
 	{
 	}
-}
+};
+
+//<--> 318. Maximum Product of Word Lengths
+/*
+Given a string array words, 
+
+find the maximum value of length(word[i]) * length(word[j]) 
+
+where the two words do not share common letters. 
+
+You may assume that each word will contain only lower case letters. If no such two words exist, return 0.
+
+Example 1:
+Given ["abcw", "baz", "foo", "bar", "xtfn", "abcdef"]
+Return 16
+The two words can be "abcw", "xtfn".
+
+Example 2:
+Given ["a", "ab", "abc", "d", "cd", "bcd", "abcd"]
+Return 4
+The two words can be "ab", "cd".
+
+Example 3:
+Given ["a", "aa", "aaa", "aaaa"]
+Return 0
+No such pair of words.
+*/
+
+class Solution {
+public:
+	int maxProduct(vector<string>& words) 
+	{
+	}
+};
+
+//<--> 319. Bulb Switcher
+/*
+There are n bulbs that are initially off. 
+
+You first turn on all the bulbs. 
+
+Then, you turn off every second bulb. 
+
+On the third round, you toggle every third bulb (turning on if it's off or turning off if it's on). 
+
+For the ith round, you toggle every i bulb. For the nth round, you only toggle the last bulb. Find how many bulbs are on after n rounds.
+
+Example:
+
+Given n = 3.
+
+At first, the three bulbs are [off, off, off].
+After first round, the three bulbs are [on, on, on].
+After second round, the three bulbs are [on, off, on].
+After third round, the three bulbs are [on, off, off].
+
+So you should return 1, because there is only one bulb is on.
+*/
+class Solution {
+public:
+	int bulbSwitch(int n)
+	{
+	}
+};
+
+//<--> 320. Generalized Abbreviation
+/*
+Write a function to generate the generalized abbreviations of a word.
+
+Example:
+
+Given word = "word", return the following list (order does not matter):
+
+["word", "1ord", "w1rd", "wo1d", "wor1", "2rd", "w2d", "wo2", "1o1d", "1or1", "w1r1", "1o2", "2r1", "3d", "w3", "4"]
+*/
+class Solution {
+public:
+	//method 1
+	vector<string> generateAbbreviations(string word)
+	{
+		vector<string> res{word}; //key: word need to be included since dfs will not generate
+
+		dfs(word, 0, res);
+
+		return res;
+	}
+
+	void dfs(string w, size_t start, vector<string>& res)
+	{
+		for (size_t i = 0; i < w.size(); ++i)
+		{
+			for (size_t j = 1; i + j <= w.size(); ++j)
+			{
+				string n = to_string(j);
+				string t = w.substr(0, i);
+				t += n;
+				t += w.substr(i + j);
+
+				res.push_back(t);
+
+				dfs(t, i + 1 + n.size(), res);
+			}
+		}
+	}
+
+	//method 2
+	vector<string> generateAbbreviations(string word)
+	{
+		vector<string> res; //key: word need to be included since dfs will not generate
+
+		dfs(word, 0, 0, "", res);
+
+		return res;
+	}
+
+	void dfs(string w, size_t start, int count, string out, vector<string>& res)
+	{
+		if (start == w.size())
+		{
+			if (count > 0)
+			{
+				out += to_string(count);
+			}
+
+			res.push_back(out);
+
+			return;
+		}
+
+		dfs(w, start + 1, count + 1, out, res);
+
+		if (count > 0)
+		{
+			dfs(w, start + 1, 0, out + to_string(count) + w[start], res);
+		}
+		else
+		{
+			dfs(w, start + 1, 0, out + w[start], res);
+		}
+	}
+
+	//method 3
+	vector<string> generateAbbreviations(string word)
+	{
+		vector<string> res;
+
+		if (word.empty())
+		{
+			res.push_back("");
+		}
+		else
+		{
+			res += to_string(word.size());
+		}
+
+		for (size_t i = 0; i < word.size(); ++i)
+		{
+			for (auto &s : generateAbbreviations(word.substr(i + 1)))
+			{
+				string left = ( i == 0 ) ? "" : to_string(i);
+
+				res.push_back(left + word[i] + s);
+			}
+		}
+
+		return res;
+	}
+	
+};
+
+//<--> 321. Create Maximum Number
+/*
+Given two arrays of length m and n with digits 0-9 representing two numbers. 
+
+Create the maximum number of length k <= m + n from digits of the two. 
+
+The relative order of the digits from the same array must be preserved. Return an array of the k digits. 
+
+You should try to optimize your time and space complexity.
+
+Example 1:
+nums1 = [3, 4, 6, 5]
+nums2 = [9, 1, 2, 5, 8, 3]
+k = 5
+return [9, 8, 6, 5, 3]
+
+Example 2:
+nums1 = [6, 7]
+nums2 = [6, 0, 4]
+k = 5
+return [6, 7, 6, 0, 4]
+
+Example 3:
+nums1 = [3, 9]
+nums2 = [8, 9]
+k = 3
+return [9, 8, 9]
+*/
+class Solution {
+public:
+	vector<int> maxNumber(vector<int>& nums1, vector<int>& nums2, int k)
+	{
+		int L1 = nums1.size();
+		int L2 = nums2.size();
+
+		vector<int> res;
+
+		for (int i = max(0, k - L2); i <= min(L1, k); ++i)
+		{
+			auto V1 = get_max_sub(nums1, i);
+			auto V2 = get_max_sub(nums2, k - i);
+
+			vector<int> M(k, 0);
+
+			merge(V1, V2, M);
+
+			if (comp(M, 0, res, 0))
+			{
+				res = M;
+			}
+
+		}
+
+		return res;
+	}
+
+	vector<int> get_max_sub(vector<int>& N, int k)
+	{
+		int L = N.size();
+
+		vector<int> res(k, 0);
+
+		int len = 0;
+
+		for (int i = 0; i < L; ++i)
+		{
+			while ((len > 0) && (len + L - i) > k && (res[len - 1] < N[i]))
+			{
+				--len;
+			}
+
+			if (len < k) //key : res is only size=k;
+			{
+				res[len++] = N[i]; 
+			}
+		}
+
+		return res;
+	}
+
+	void merge(vector<int>& A, vector<int>& B, vector<int>& M)
+	{
+		size_t a = 0;
+		size_t b = 0;
+		size_t m = 0;
+
+		while (a < A.size() || b < B.size())
+		{
+			M[m++] = comp(A, a, B, b) ? A[a++] : B[b++];
+		}
+	}
+
+	bool comp(vector<int>& A, size_t a, vector<int>& B, size_t b)
+	{
+		for (; (a < A.size()) && (b < B.size()); ++a, ++b)
+		{
+			if (A[a] > B[b])
+			{
+				return true;
+			}
+
+			if (A[a] < B[b])
+			{
+				return false;
+			}
+
+		}
+
+		return a != A.size();
+	}
+};
+
+//<--> 322. Coin Change
+/*
+You are given coins of different denominations 
+
+and a total amount of money amount. 
+
+Write a function to compute the fewest number of coins that you need to make up that amount. 
+
+If that amount of money cannot be made up by any combination of the coins, return -1.
+
+Example 1:
+coins = [1, 2, 5], amount = 11
+return 3 (11 = 5 + 5 + 1)
+
+Example 2:
+coins = [2], amount = 3
+return -1.
+
+Note:
+You may assume that you have an infinite number of each kind of coin.
+*/
+class Solution {
+public:
+	int coinChange(vector<int>& coins, int amount) {
+
+		return dfs(coins, 0, amount, 0);
+	}
+
+	int dfs(vector<int>& coins, int start, int amount, int count)
+	{
+		if (amount == 0)
+		{
+			return count;
+		}
+
+		if (amount < 0)
+		{
+			return -1;
+		}
+
+		int N = coins.size();
+
+		int min_count = INT_MAX;
+
+		for (int i = start; i < N; ++i)
+		{
+			int c = dfs(coins, i, amount - coins[i], count + 1)
+			if ( c > 0)
+			{
+				min_count = min(min_count, c);
+			}
+		}
+
+		return min_count == INT_MAX ? -1 : min_count;
+	}
+};
+
+//<--> 323. Number of Connected Components in an Undirected Graph
+/*
+Given n nodes labeled from 0 to n - 1 and a list of undirected edges (each edge is a pair of nodes), 
+
+write a function to find the number of connected components in an undirected graph.
+
+Example 1:
+
+0          3
+
+|          |
+
+1 --- 2    4
+
+Given n = 5 and edges = [[0, 1], [1, 2], [3, 4]], return 2.
+
+Example 2:
+
+0           4
+
+|           |
+
+1 --- 2 --- 3
+
+Given n = 5 and edges = [[0, 1], [1, 2], [2, 3], [3, 4]], return 1.
+
+Note:
+
+You can assume that no duplicate edges will appear in edges. 
+
+Since all edges are undirected, [0, 1] is the same as [1, 0] and thus will not appear together in edges.
+*/
+class Solution{
+public:
+	//method 1: DFS
+	int countComponents(int n, vector<pair<int, int> >& edges)
+	{
+		vector<vector<int>> g(n, vector<int>());
+
+		vector<int> visited(n, 0);
+
+		for (const auto& p : edges)
+		{
+			g[p.first].push_back(g.second);
+			g[p.second].push_back(g.first);
+		}
+
+		int count = 0;
+
+		for (int i = 0; i < n; ++i)
+		{
+			if (visited[i] == 0)
+			{
+				dfs(i, g, visited);
+				++count;
+			}
+		}
+
+		return count;
+	}
+
+	void dfs(int i, vector<vector<int>>& g, vector<int>& visit)
+	{
+		if (visit[i] == 1)
+		{
+			return;
+		}
+
+		visite[i] = 1;
+
+		for (auto n : g[i])
+		{
+			dfs(n, g, visit);
+		}
+	}
+
+	//method 2: root array
+	int countComponents(int n, vector<pair<int, int> >& edges)
+	{
+		vector<int> root(n, 0);
+
+		for (int i = 0; i < n; ++i)
+		{
+			root[i] = i;
+		}
+
+		auto find_root = [&root](int i) {
+
+			while (i != root[i])
+			{
+				i = root[i];
+			}
+
+			return i;
+		};
+
+		int count = n;
+
+		for (const auto& p : edges)
+		{
+			x = find_root(p.first);
+			y = find_root(p.second);
+
+			if (x != y)
+			{
+				--count;
+
+				root[y] = x;
+			}
+		}
+
+		return count;
+	}
+};
+
+//<--> 324. Wiggle Sort II
+/*
+Given an unsorted array nums, reorder it such that nums[0] < nums[1] > nums[2] < nums[3]....
+
+Example:
+(1) Given nums = [1, 5, 1, 1, 6, 4], one possible answer is [1, 4, 1, 5, 1, 6].
+(2) Given nums = [1, 3, 2, 2, 3, 1], one possible answer is [2, 3, 1, 3, 1, 2].
+
+Note:
+You may assume all input has valid answer.
+
+Follow Up:
+Can you do it in O(n) time and/or in-place with O(1) extra space?
+*/
+class Solution {
+public:
+	void wiggleSort(vector<int>& nums)
+	{
+		int n = nums.size();
+
+		auto it_mid = nums.begin() + n / 2;
+
+		int mid = *it_mid;
+
+		nth_element(nums.begin(), it_mid, nums.end());
+
+		int i = 0;
+		int j = 0;
+		int k = n - 1;
+
+		while (j <= k)
+		{
+			int mi = (1 + 2 * i) % (n | 1);
+			int mj = (1 + 2 * j) % (n | 1);
+			int mk = (1 + 2 * k) % (n | 1);
+
+			if (nums[mj] > mid)
+			{
+				swap(nums[mi], nums[mj]);
+				++i;
+				++j;
+			}
+			else if (nums[mj] < mid)
+			{
+				swap(nums[mj], nums[mk]);
+				--k;
+			}
+			else
+			{
+				++j;
+			}
+		}
+	}
+};
+
+//<--> 	325. Maximum Size Subarray Sum Equals k
+/*
+Given an array nums and a target value k, 
+
+find the maximum length of a subarray that sums to k. If there isn't one, return 0 instead.
+
+Example 1:
+Given nums = [1, -1, 5, -2, 3], k = 3,
+return 4. (because the subarray [1, -1, 5, -2] sums to 3 and is the longest)
+
+Example 2:
+Given nums = [-2, -1, 2, 1], k = 1,
+return 2. (because the subarray [-1, 2] sums to 1 and is the longest)
+
+Follow Up:
+Can you do it in O(n) time?
+*/
+class Solution {
+public:
+	int maxSubArrayLen(vector<int>& nums, int k)
+	{
+		unordered_map<int, int> m;
+
+		int L = nums.size();
+
+		int sum = 0;
+
+		int max_len = 0;
+
+		for (int i = 0; i < L; ++i)
+		{
+			sum += nums[i];
+
+			if (sum == k)
+			{
+				max_len = i;
+			}
+			else if (m.find(sum - k) != m.end()) //key: this means from m[sum-k] to i, the sum will be k, notice: sum is added from 0 to i
+			{
+				max_len = max(max_len, m[sum - k]);
+			}
+
+			//key: we only record sum once, since we are finding the maximum length, therefore 
+			//the oldest position will give maximum result.
+			if (m.find(sum) == m.end())
+			{
+				m[sum] = i;
+			}
+		}
+
+		return max_len;
+	}
+};
