@@ -3645,23 +3645,22 @@ public:
         return f(root, LONG_MIN, LONG_MAX);
     }
     
-    bool f( TreeNode* root, long min, long max ) //key: using long to avoid int type overflow
-    {
-        if(!root)
-        {
-            return true;
-        }
-        
-        long val = root->val;
-        
-        if( val <= min && val >= max )
-        {
-            return false;
-        }
-        
-        return f(root->left, min, val) && f(root->right, val, max);
-        
-    }
+	bool f( TreeNode* root, long min, long max ) //key: using long to avoid int type overflow
+	{
+		if ( !root )
+		{
+			return true;
+		}
+
+		long val = root->val;
+
+		if ( val <= min || val >= max )
+		{
+			return false;
+		}
+
+		return f( root->left, min, val ) && f( root->right, val, max );
+	}
     
     //using inorder iterative
     
@@ -3718,96 +3717,96 @@ Could you devise a constant space solution?
 class Solution {
 public:
     //using inorder (recursive) because inorder gives ascending orders
-    void recoverTree(TreeNode* root)
-    {
-        if(!root)
-        {
-            return;
-        }
-        
-        vector<TreeNode*> node_list;
-        vector<int> val_list;
-        
-        inorder(root, node_list, val_list);
-        sort(val_list.begin(), val_list.end()); //key : must sort.
-        
-        for(size_t i = 0; i<node_list.size(); ++i)
-        {
-            node_list[i]->val = val_list[i];
-        }
-    }
-    
-    void inorder( TreeNode* root, vector<TreeNode*>& nodes, vector<int>& vals )
-    {
-        if(root)
-        {
-            inorder(root->left, nodes, vals);
-            nodes.push_back(root);
-            vals.push_back(root->val);
-            inorder(root->right, nodes, vals);
-        }
-    }
+	void recoverTree( TreeNode* root )
+	{
+		if ( !root )
+		{
+			return;
+		}
+
+		vector<TreeNode*> node_list;
+		vector<int> val_list;
+
+		inorder( root, node_list, val_list );
+		sort( val_list.begin(), val_list.end() ); //key : must sort.
+
+		for ( size_t i = 0; i < node_list.size(); ++i )
+		{
+			node_list[i]->val = val_list[i];
+		}
+	}
+
+	void inorder( TreeNode* root, vector<TreeNode*>& nodes, vector<int>& vals )
+	{
+		if ( root )
+		{
+			inorder( root->left, nodes, vals );
+			nodes.push_back( root );
+			vals.push_back( root->val );
+			inorder( root->right, nodes, vals );
+		}
+	}
     
     //using morris method: O(1) space
-    void recoverTree(TreeNode* root)
-    {
-        TreeNode* first = nullptr;
-        TreeNode* second = nullptr;
-        TreeNode* parent = nullptr;
-        
-        auto cur = root;
-        TreeNode* pre = nullptr;
-        
-        while(cur)
-        {
-            if(!cur->left)
-            {
-                if(parent && parent->val > cur->val)
-                {
-                    if(!first)
-                    {
-                        first = parent;
-                    }
-                    
-                    second = cur;
-                }
-                
-                parent = cur; //key: visit cur --> set parent to cur
-                cur = cur->right;
-            }
-            else
-            {
-                pre = cur->left;
-                while(pre->right && pre->right != cur) //key: the condition is pre->right is not null, not pre is not null
-                {
-                    pre = pre->right;
-                }
-                
-                if(!pre->right)
-                {
-                    pre->right = cur;
-                    cur = cur->left;
-                }
-                else
-                {
-                    pre->right = nullptr;
-                    if(parent->val > cur->val)
-                    {
-                        if(!first) first = parent;
-                        second = cur;
-                    }
-                    
-                    parent = cur; //key: visit cur --> set parent to cur
-                    cur = cur->right;
-                }
-            }
-        }
-        
-        if(first && second)
-        {
-            swap(first->val, second->val);
-        }
-    }
+	void recoverTree( TreeNode* root )
+	{
+		TreeNode* first = nullptr;
+		TreeNode* second = nullptr;
+		TreeNode* parent = nullptr;
+
+		auto cur = root;
+		TreeNode* pre = nullptr;
+
+		while ( cur )
+		{
+			if ( !cur->left )
+			{
+				if ( parent && parent->val > cur->val )
+				{
+					if ( !first )
+					{
+						first = parent;
+					}
+
+					second = cur;
+				}
+
+				parent = cur; //key: visit cur --> set parent to cur
+				cur = cur->right;
+			}
+			else
+			{
+				pre = cur->left;
+				while ( pre->right && pre->right != cur ) //key: the condition is pre->right is not null, not pre is not null
+				{
+					pre = pre->right;
+				}
+
+				if ( !pre->right )
+				{
+					pre->right = cur;
+					cur = cur->left;
+				}
+				else
+				{
+					pre->right = nullptr;
+					if ( parent->val > cur->val )
+					{
+						if ( !first ) first = parent;
+						second = cur;
+					}
+
+					parent = cur; //key: visit cur --> set parent to cur
+					cur = cur->right;
+				}
+			}
+		}
+
+		if ( first && second )
+		{
+			swap( first->val, second->val );
+		}
+	}
 };
 
 //<--> 100. Same Tree
@@ -3820,26 +3819,26 @@ and the nodes have the same value.
 */
 class Solution {
 public:
-    //this is a very easy question
-    bool isSameTree(TreeNode* p, TreeNode* q)
-    {
-        if(!p && !q)
-        {
-            return true;
-        }
-        
-        if(p && q)
-        {
-            if(p->val != q->val)
-            {
-                return false;
-            }
-            
-            return isSameTree(p->left, q->left) && isSameTree(p->right, q->right);
-        }
-        
-        return false;
-    }
+	//this is a very easy question
+	bool isSameTree( TreeNode* p, TreeNode* q )
+	{
+		if ( !p && !q )
+		{
+			return true;
+		}
+
+		if ( p && q )
+		{
+			if ( p->val != q->val )
+			{
+				return false;
+			}
+
+			return isSameTree( p->left, q->left ) && isSameTree( p->right, q->right );
+		}
+
+		return false;
+	}
 };
 
 //<--> 101. Symmetric Tree
@@ -15911,5 +15910,128 @@ public:
 		odd->next = even_head;
 
 		return head;
+	}
+};
+
+//<--> 329. Longest Increasing Path in a Matrix
+/*
+Given an integer matrix, find the length of the longest increasing path.
+
+From each cell, you can either move to four directions: left, right, up or down. 
+
+You may NOT move diagonally or move outside of the boundary (i.e. wrap-around is not allowed).
+
+Example 1:
+
+nums = [
+[9,9,4],
+[6,6,8],
+[2,1,1]
+]
+Return 4
+The longest increasing path is [1, 2, 6, 9].
+
+Example 2:
+
+nums = [
+[3,4,5],
+[3,2,6],
+[2,2,1]
+]
+Return 4
+The longest increasing path is [3, 4, 5, 6]. Moving diagonally is not allowed.
+*/
+class Solution {
+public:
+	//using DP in recursive
+	int longestIncreasingPath( vector<vector<int>>& matrix )
+	{
+		int rows = matrix.size();
+		int cols = matrix[0].size();
+
+		vector<vector<int>> dp( rows, vector<int>( cols, 0 ) );
+
+		int res = 0;
+
+		for ( int i = 0; i < rows; ++i )
+		{
+			for ( int j = 0; j < cols; ++j )
+			{
+				int path = dfs( matrix, dp, i, j );
+
+				res = max( res, path );
+			}
+		}
+
+		return res;
+	}
+
+	int dfs( vector<vector<int>>& M, vector<vector<int>>& dp, int r, int c )
+	{
+		if ( dp[r][c] != 0 )
+		{
+			return dp[r][c];
+		}
+
+		int rows = M.size();
+		int cols = M[0].size();
+
+		int dx[] = { -1, 1, 0, 0 };
+		int dy[] = { 0, 0, -1, 1 };
+
+		int max_path = 1;
+
+		for ( int i = 0; i < 4; ++i )
+		{
+			int x = r + dx[i];
+			int y = c + dy[i];
+
+			if ( x < 0 || y < 0 || x >= rows || y >= cols || M[x][y] <= M[r][c] )
+			{
+				continue;
+			}
+
+			int len = 1 + dfs( M, dp, x, y );
+			max_path = max( max_path, len );
+		}
+
+		dp[r][c] = max_path;
+
+		return max_path;
+	}
+};
+
+//<-->330. Patching Array
+/*
+Given a sorted positive integer array nums and an integer n, 
+
+add/patch elements to the array such that any number in range [1, n] 
+
+inclusive can be formed by the sum of some elements in the array. 
+
+Return the minimum number of patches required.
+
+Example 1:
+nums = [1, 3], n = 6
+Return 1.
+
+Combinations of nums are [1], [3], [1,3], which form possible sums of: 1, 3, 4.
+Now if we add/patch 2 to nums, the combinations are: [1], [2], [3], [1,3], [2,3], [1,2,3].
+Possible sums are 1, 2, 3, 4, 5, 6, which now covers the range [1, 6].
+So we only need 1 patch.
+
+Example 2:
+nums = [1, 5, 10], n = 20
+Return 2.
+The two patches can be [2, 4].
+
+Example 3:
+nums = [1, 2, 2], n = 5
+Return 0.
+*/
+class Solution {
+public:
+	int minPatches( vector<int>& nums, int n )
+	{
 	}
 };
