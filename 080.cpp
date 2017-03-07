@@ -15731,3 +15731,185 @@ public:
 		return max_len;
 	}
 };
+
+//<--> 327. Count of Range Sum
+/*
+Given an integer array nums, return the number of range sums that lie in [lower, upper] inclusive.
+Range sum S(i, j) is defined as the sum of the elements in nums between indices i and j (i <= j), inclusive.
+
+Note:
+A naive algorithm of O(n^2) is trivial. You MUST do better than that.
+
+Example:
+Given nums = [-2, 5, -1], lower = -2, upper = 2,
+Return 3.
+The three ranges are : [0, 0], [2, 2], [0, 2] and their respective sums are: -2, -1, 2.
+*/
+class Solution {
+public:
+	//method 1: very similar to Contains Duplicate III
+	// let sum[i] = nums[0] + ... + nums[i];
+	// so sum[i] - sum[j-1] will be the sum from nums[j] to nums[i] for 1<<j<<i;
+	// therefore the problem is tranferred to find the number of j, so that lower<=sum[i] - sum[j-1]<=upper
+	// 
+	int countRangeSum( vector<int>& nums, int lower, int upper )
+	{
+		int count = 0;
+		multiset<int> sums;
+		sums.insert( 0 );
+
+		int sum = 0;
+
+		for ( size_t i = 0; i < nums.size(); ++i )
+		{
+			sum += nums[i];
+
+			count += distance( sums.lower_bound( sum - upper ), sums.upper_bound( sum - lower ) );
+
+			sums.insert( sum );
+		}
+
+		return count;
+	}
+
+	//method2: using merge sort (best performance)
+	int countRangeSum( vector<int>& nums, int lower, int upper )
+	{
+		vector<long long> sums( nums.size() + 1, 0 );
+		vector<long long> cache( nums.size() + 1, 0 ); //used to merge sorted results
+
+
+		for ( size_t i = 0; i < nums.size(); ++i )
+		{
+			sums[i + 1] = nums[i] + sums[i];
+		}
+
+		int L = nums.size();
+
+		return merge_count( sums, cache, 0, L, lower, upper );
+	}
+
+	int merge_count( vector<long long>& S, vector<long long>& C, int start, int end, int lower, int upper )
+	{
+		if ( end - start <= 1 )
+		{
+			return 0;
+		}
+
+		int mid = start + (end - start) / 2;
+
+		int count = merge_count( S, C, start, mid, lower, upper ) + merge_count( S, C, mid, end lower, upper );
+
+		int k = mid, j = mid, t = mid;
+
+		for ( int i = start, r = start; i < mid; ++i, ++r )
+		{
+			while ( (k < end) && (S[k] - S[i] < lower) )
+			{
+				++k; //find first place such that S[k] - S[i] >= lower
+			}
+
+			while ( (j < end) && (S[j] - S[i] <= upper) )
+			{
+				++j; //find first place such that S[j] - S[i] > upper
+			}
+
+			count += (j - k); // therefore, after merge, there will be j-k sum that fall into lower and upper
+
+			while ( (t < end) && (S[t] < S[i]) ) //key: merge sorted result
+			{
+				C[r++] = S[t++];
+			}
+
+			C[r] = C[i];
+		}
+
+		//key: put sorted result into original array
+		//notice: the sorted in array C start from index = start, the number = t-start-1; therefore the end = t-start+start-1+1=t;
+
+		copy( begin( C ) + start, begin( C ) + t, begin( S ) + start ); 
+
+		return count;
+	}
+};
+
+//<--> 328. Odd Even Linked List
+/*
+Given a singly linked list, 
+
+group all odd nodes together followed by the even nodes. 
+
+Please note here we are talking about the node number and not the value in the nodes.
+
+You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
+
+Example:
+Given 1->2->3->4->5->NULL,
+return 1->3->5->2->4->NULL.
+
+Note:
+The relative order inside both the even and odd groups should remain as it was in the input.
+The first node is considered odd, the second node even and so on ...
+*/
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+class Solution {
+public:
+	//method 1: change next pointer one by one
+	ListNode* oddEvenList( ListNode* head )
+	{
+		if ( !head || !head->next )
+		{
+			return head;
+		}
+
+		auto odd = head, even = head->next;
+
+		while ( even && even->next )
+		{
+			auto tmp = odd->next;
+
+			odd->next = even->next;
+
+			even->next = even->next->next;
+
+			odd->next->next = tmp;
+
+			odd = odd->next;
+
+			even = even->next;
+		}
+
+		return head;
+	}
+
+	// method2: keep even node's head
+	ListNode* oddEvenList( ListNode* head )
+	{
+		if ( !head || !head->next )
+		{
+			return head;
+		}
+
+		auto odd = head, even = head->next, even_head = even;
+
+		while ( even && even->next )
+		{
+			odd->next = even->next;
+			odd = odd->next;
+
+			even->next = odd->next;
+			even = even->next;
+		}
+
+		odd->next = even_head;
+
+		return head;
+	}
+};
