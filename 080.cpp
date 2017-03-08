@@ -6362,6 +6362,7 @@ public:
 };
 
 //<--> 150. Evaluate Reverse Polish Notation
+
 class Solution {
 public:
 	int evalRPN(vector<string>& tokens)
@@ -6409,6 +6410,7 @@ public:
 		return s.empty() ? -1 : s.top();
 	}
 };
+
 //<--> 151. Reverse Words in a String
 /*
 Given an input string, reverse the string word by word.
@@ -6419,40 +6421,40 @@ return "blue is sky the"
 */
 class Solution {
 public:
-    void reverseWords(string &s)
-    {
-        if(s.empty())
-        {
-            return;
-        }
-        
-        reverse(s.begin(), s.end());
-        
-        int store_pos = 0;
-        
-        for(size_t i = 0; i< s.size(); ++i)
-        {
-            if(s[i]!=' ')
-            {
-                if(store_pos!=0)
-                {
-                    s[store_pos++] = ' ';
-                }
-                
-                size_t j = i;
-                while( j < s.size() && s[j] != ' ' )
-                {
-                    s[store_pos++] = s[j++];
-                }
-                
+	void reverseWords(string &s)
+	{
+		if (s.empty())
+		{
+			return;
+		}
+
+		reverse(s.begin(), s.end());
+
+		int store_pos = 0;
+
+		for (size_t i = 0; i < s.size(); ++i)
+		{
+			if (s[i] != ' ')
+			{
+				if (store_pos != 0)
+				{
+					s[store_pos++] = ' ';
+				}
+
+				size_t j = i;
+				while (j < s.size() && s[j] != ' ')
+				{
+					s[store_pos++] = s[j++];
+				}
+
 				reverse(s.begin() + store_pos - (j - i), s.begin() + store_pos); //key: start position = store_pos - (j-i)
-                
-                i = j;
-            }
-        }
-        
-        s.resize(store_pos);
-    }
+
+				i = j;
+			}
+		}
+
+		s.resize(store_pos);
+	}
 };
 
 //<--> 152. Maximum Product Subarray
@@ -15475,35 +15477,12 @@ class Solution {
 public:
 	int coinChange(vector<int>& coins, int amount) {
 
-		return dfs(coins, 0, amount, 0);
-	}
+		vector<int> dp(coins.size() + 1, 0);
 
-	int dfs(vector<int>& coins, int start, int amount, int count)
-	{
-		if (amount == 0)
+		for (int i = 1; i <= amount; ++i)
 		{
-			return count;
+
 		}
-
-		if (amount < 0)
-		{
-			return -1;
-		}
-
-		int N = coins.size();
-
-		int min_count = INT_MAX;
-
-		for (int i = start; i < N; ++i)
-		{
-			int c = dfs(coins, i, amount - coins[i], count + 1)
-			if ( c > 0)
-			{
-				min_count = min(min_count, c);
-			}
-		}
-
-		return min_count == INT_MAX ? -1 : min_count;
 	}
 };
 
@@ -16032,6 +16011,101 @@ Return 0.
 class Solution {
 public:
 	int minPatches( vector<int>& nums, int n )
+	{
+		long long miss = 1;
+		int added = 0;
+
+		int i = 0;
+		int L = nums.size();
+
+		while (miss <= n)
+		{
+			long long val = static_cast<long long>(nums[i]);
+
+			if ((i < L) && (val <= miss))
+			{
+				miss += val;
+				++i;
+			}
+			else
+			{
+				miss += miss;
+				++added;
+			}
+		}
+
+		return added;
+	}
+
+	//method 2: insert missing into nums
+	int minPatches(vector<int>& nums, int n)
+	{
+		long long miss = 0;
+
+		size_t i = 0;
+
+		auto L = nums.size();
+
+		while (miss <= n)
+		{
+			if ((i >= nums.size()) || (nums[i] > miss))
+			{
+				nums.insert(nums.begin() + i, miss);
+			}
+
+			miss += nums[i++];
+		}
+
+		return nums.size() - L;
+	}
+};
+
+//<--> 331. Verify Preorder Serialization of a Binary Tree
+/*
+One way to serialize a binary tree is to use pre-order traversal. 
+
+When we encounter a non-null node, we record the node's value. 
+
+If it is a null node, we record using a sentinel value such as #.
+
+_9_
+/   \
+3     2
+/ \   / \
+4   1  #  6
+/ \ / \   / \
+# # # #   # #
+For example, the above binary tree can be serialized to the string "9,3,4,#,#,1,#,#,2,#,6,#,#", 
+
+where # represents a null node.
+
+Given a string of comma separated values, 
+
+verify whether it is a correct preorder traversal serialization of a binary tree. 
+
+Find an algorithm without reconstructing the tree.
+
+Each comma separated value in the string must be either an integer or a character '#' representing null pointer.
+
+You may assume that the input format is always valid, 
+
+for example it could never contain two consecutive commas such as "1,,3".
+
+Example 1:
+"9,3,4,#,#,1,#,#,2,#,6,#,#"
+Return true
+
+Example 2:
+"1,#"
+Return false
+
+Example 3:
+"9,#,#,1"
+Return false
+*/
+class Solution {
+public:
+	bool isValidSerialization(string preorder)
 	{
 	}
 };
