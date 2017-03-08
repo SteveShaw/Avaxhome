@@ -4157,33 +4157,33 @@ construct the binary tree.
  */
 class Solution {
 public:
-    TreeNode* buildTree(vector<int>& preorder, vector<int>& inorder)
-    {
-        return bt(preorder, 0, preorder.size()-1, inorder, 0, inorder.size()-1);
-    }
-    
-    TreeNode* bt(vector<int>& preorder, int p_left, int p_right, vector<int>& inorder, int i_left, int i_right)
-    {
-        if(p_left > p_right || i_left > i_right)
-        {
-            return nullptr;
-        }
-        
-        int i = i_left;
-        for(; i<=i_right; ++i)
-        {
-            if(preorder[p_left]==inorder[i])
-            {
-                break;
-            }
-        }
-        
-        TreeNode* cur = new TreeNode(preorder[p_left]);
-        cur->left = bt(preorder, p_left+1, p_left + i - i_left, inorder, i_left, i-1);
-        cur->right = bt(preorder, p_left + i - i_left + 1, p_right, inorder, i + 1, i_right);
-        
-        return cur;
-    }
+	TreeNode* buildTree( vector<int>& preorder, vector<int>& inorder )
+	{
+		return bt( preorder, 0, preorder.size() - 1, inorder, 0, inorder.size() - 1 );
+	}
+
+	TreeNode* bt( vector<int>& preorder, int p_left, int p_right, vector<int>& inorder, int i_left, int i_right )
+	{
+		if ( p_left > p_right || i_left > i_right )
+		{
+			return nullptr;
+		}
+
+		int i = i_left;
+		for ( ; i <= i_right; ++i )
+		{
+			if ( preorder[p_left] == inorder[i] )
+			{
+				break;
+			}
+		}
+
+		TreeNode* cur = new TreeNode( preorder[p_left] );
+		cur->left = bt( preorder, p_left + 1, p_left + i - i_left, inorder, i_left, i - 1 );
+		cur->right = bt( preorder, p_left + i - i_left + 1, p_right, inorder, i + 1, i_right );
+
+		return cur;
+	}
 };
 
 //<--> 106. Construct Binary Tree from Inorder and Postorder Traversal
@@ -4202,32 +4202,32 @@ Given inorder and postorder traversal of a tree, construct the binary tree.
  */
 class Solution {
 public:
-    TreeNode* buildTree(vector<int>& inorder, vector<int>& postorder)
-    {    
-    }
-    
-    TreeNode* bt(vector<int>& postorder, int p_left, int p_right, vector<int>& inorder, int i_left, int i_right)
-    {
-        if(p_left > p_right || i_left > i_right)
-        {
-            return nullptr;
-        }
-        
-        int i = i_left;
-        for(; i<=i_right; ++i)
-        {
-            if(postorder[p_right]==inorder[i])
-            {
-                break;
-            }
-        }
-        
-        TreeNode* cur = new TreeNode(postorder[p_right]);
-        cur->left = bt(postorder, p_left, p_left + i - i_left - 1, inorder, i_left, i-1);
-        cur->right = bt(postorder, p_left + i - i_left, p_right-1, inorder, i + 1, i_right);
-        
-        return cur;
-    }
+	TreeNode* buildTree( vector<int>& inorder, vector<int>& postorder )
+	{
+	}
+
+	TreeNode* bt( vector<int>& postorder, int p_left, int p_right, vector<int>& inorder, int i_left, int i_right )
+	{
+		if ( p_left > p_right || i_left > i_right )
+		{
+			return nullptr;
+		}
+
+		int i = i_left;
+		for ( ; i <= i_right; ++i )
+		{
+			if ( postorder[p_right] == inorder[i] )
+			{
+				break;
+			}
+		}
+
+		TreeNode* cur = new TreeNode( postorder[p_right] );
+		cur->left = bt( postorder, p_left, p_left + i - i_left - 1, inorder, i_left, i - 1 );
+		cur->right = bt( postorder, p_left + i - i_left, p_right - 1, inorder, i + 1, i_right );
+
+		return cur;
+	}
 };
 
 //<--> (TODO) 107. Binary Tree Level Order Traversal II
@@ -4238,10 +4238,10 @@ of its nodes' values. (ie, from left to right, level by level from leaf to root)
 
 For example:
 Given binary tree [3,9,20,null,null,15,7],
-    3
+	3
    / \
   9  20
-    /  \
+	/  \
    15   7
 return its bottom-up level order traversal as:
 [
@@ -4262,9 +4262,9 @@ return its bottom-up level order traversal as:
  */
 class Solution {
 public:
-    vector<vector<int>> levelOrderBottom(TreeNode* root)
-    {    
-    }
+	vector<vector<int>> levelOrderBottom( TreeNode* root )
+	{
+	}
 };
 
 
@@ -4281,25 +4281,25 @@ public:
  */
 class Solution {
 public:
-    TreeNode* sortedArrayToBST(vector<int>& nums)
-    {
-        return bt(nums, 0, nums.size()-1);
-    }
-    
-    TreeNode* bt( vector<int>& nums, int left, int right )
-    {
-        if(left > right)
-        {
-            return nullptr;
-        }
-        
-        int mid = (right+left)/2;
-        TreeNode* cur = new TreeNode(nums[mid]);
-        cur->left = bt(nums, left, mid-1);
-        cur->right = bt(nums, mid+1, right);
-        
-        return cur;
-    }
+	TreeNode* sortedArrayToBST( vector<int>& nums )
+	{
+		return bt( nums, 0, nums.size() - 1 );
+	}
+
+	TreeNode* bt( vector<int>& nums, int left, int right )
+	{
+		if ( left > right )
+		{
+			return nullptr;
+		}
+
+		int mid = ( right + left ) / 2;
+		TreeNode* cur = new TreeNode( nums[mid] );
+		cur->left = bt( nums, left, mid - 1 );
+		cur->right = bt( nums, mid + 1, right );
+
+		return cur;
+	}
 };
 
 //<--> 109. Convert Sorted List to Binary Search Tree
@@ -4327,42 +4327,42 @@ convert it to a height balanced BST.
  */
 class Solution {
 public:
-    TreeNode* sortedListToBST(ListNode* head)
-    {
-        if(!head)
-        {
-            return nullptr;
-        }
-        
-        if(!head->next)
-        {
-            return new TreeNode(head->val);
-        }
-        
-        auto slow = head;
-        auto fast = head;
-        auto prev = head;
-        
-        while(fast->next && fast->next->next)
-        {
-            prev = slow;
-            slow = slow->next;
-            fast = fast->next->next;
-        }
-        
-        fast = slow->next;
-        prev->next = nullptr;
-        
-        TreeNode* cur = new TreeNode(slow->val);
-        if(head!=slow)
-        {
-            cur->left = sortedListToBST(head);
-        }
-        
-        cur->right = sortedListToBST(fast);
-        
-        return cur;
-    }
+	TreeNode* sortedListToBST( ListNode* head )
+	{
+		if ( !head )
+		{
+			return nullptr;
+		}
+
+		if ( !head->next )
+		{
+			return new TreeNode( head->val );
+		}
+
+		auto slow = head;
+		auto fast = head;
+		auto prev = head;
+
+		while ( fast->next && fast->next->next )
+		{
+			prev = slow;
+			slow = slow->next;
+			fast = fast->next->next;
+		}
+
+		fast = slow->next;
+		prev->next = nullptr;
+
+		TreeNode* cur = new TreeNode( slow->val );
+		if ( head != slow )
+		{
+			cur->left = sortedListToBST( head );
+		}
+
+		cur->right = sortedListToBST( fast );
+
+		return cur;
+	}
 };
 
 //<--> 110. Balanced Binary Tree
@@ -4380,41 +4380,41 @@ in which the depth of the two subtrees of every node never differ by more than 1
  *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
  * };
  */
-// efficient way
+ // efficient way
 class Solution {
 public:
-    bool isBalanced(TreeNode* root)
-    {
-        return check_depth(root) != -1;
-    }
-    
-    int check_depth(TreeNode* root)
-    {
-        if(!root)
-        {
-            return 0;
-        }
-        
-        int left = check_depth(root->left);
-        if(left == -1)
-        {
-            return -1;
-        }
-        
-        int right = check_depth(root->right);
-        if(right == -1)
-        {
-            return -1;
-        }
-        
-        int diff = abs(left-right);
-        if(diff >1)
-        {
-            return -1;
-        }
-        
-        return 1+max(left, right);
-    }
+	bool isBalanced( TreeNode* root )
+	{
+		return check_depth( root ) != -1;
+	}
+
+	int check_depth( TreeNode* root )
+	{
+		if ( !root )
+		{
+			return 0;
+		}
+
+		int left = check_depth( root->left );
+		if ( left == -1 )
+		{
+			return -1;
+		}
+
+		int right = check_depth( root->right );
+		if ( right == -1 )
+		{
+			return -1;
+		}
+
+		int diff = abs( left - right );
+		if ( diff > 1 )
+		{
+			return -1;
+		}
+
+		return 1 + max( left, right );
+	}
 };
 
 //<--> 111. Minimum Depth of Binary Tree
@@ -4436,25 +4436,25 @@ the shortest path from the root node down to the nearest leaf node.
  */
 class Solution {
 public:
-    int minDepth(TreeNode* root)
-    {
-        if(!root)
-        {
-            return 0;
-        }
-        
-        if(!root->left && root->right)
-        {
-            return 1+minDepth(root->right);
-        }
-        
-        if(!root->right && root->left)
-        {
-            return 1+minDepth(root->left);
-        }
-        
-        return 1+min(minDepth(root->left), minDepth(root->right));
-    }
+	int minDepth( TreeNode* root )
+	{
+		if ( !root )
+		{
+			return 0;
+		}
+
+		if ( !root->left && root->right )
+		{
+			return 1 + minDepth( root->right );
+		}
+
+		if ( !root->right && root->left )
+		{
+			return 1 + minDepth( root->left );
+		}
+
+		return 1 + min( minDepth( root->left ), minDepth( root->right ) );
+	}
 };
 
 //<--> 112. Path Sum
@@ -4485,20 +4485,20 @@ return true, as there exist a root-to-leaf path 5->4->11->2 which sum is 22.
  */
 class Solution {
 public:
-    bool hasPathSum(TreeNode* root, int sum)
-    {
-        if(!root)
-        {
-            return false;
-        }
-        
-        if(!root->left && !root->right && root->val == sum)
-        {
-            return true;
-        }
-        
-        return hasPathSum(root->left, sum - root->val) || hasPathSum(root->right, sum - root->right);
-    }
+	bool hasPathSum( TreeNode* root, int sum )
+	{
+		if ( !root )
+		{
+			return false;
+		}
+
+		if ( !root->left && !root->right && root->val == sum )
+		{
+			return true;
+		}
+
+		return hasPathSum( root->left, sum - root->val ) || hasPathSum( root->right, sum - root->right );
+	}
 };
 
 //<--> 113. Path Sum II
@@ -4532,35 +4532,35 @@ return
  */
 class Solution {
 public:
-    vector<vector<int>> pathSum(TreeNode* root, int sum)
-    {
-        vector<vector<int>> res;
-        vector<int> out;
-        
-        dfs(res, out, root, sum);
-        
-        return res;
-    }
-    
-    void dfs(vector<vector<int>>& res, vector<int>& out, TreeNode* root, int sum)
-    {
-        if(!root)
-        {
-            return;
-        }
-        
-        out.push_back(root->val);
-        if(root->val == sum && !root->left && !root->right)
-        {
-            res.push_back(out);
-            //return; --> must not call return here, otherwise, pop_back will not be called.
-        }
-        
-        dfs(res, out, root->left, sum - root->val);
-        dfs(res, out, root->right, sum - root->val);
-        
-        out.pop_back();
-    }
+	vector<vector<int>> pathSum( TreeNode* root, int sum )
+	{
+		vector<vector<int>> res;
+		vector<int> out;
+
+		dfs( res, out, root, sum );
+
+		return res;
+	}
+
+	void dfs( vector<vector<int>>& res, vector<int>& out, TreeNode* root, int sum )
+	{
+		if ( !root )
+		{
+			return;
+		}
+
+		out.push_back( root->val );
+		if ( root->val == sum && !root->left && !root->right )
+		{
+			res.push_back( out );
+			//return; --> must not call return here, otherwise, pop_back will not be called.
+		}
+
+		dfs( res, out, root->left, sum - root->val );
+		dfs( res, out, root->right, sum - root->val );
+
+		out.pop_back();
+	}
 };
 
 //<--> 114. Flatten Binary Tree to Linked List
@@ -4600,58 +4600,58 @@ The flattened tree should look like:
  */
 class Solution {
 public:
-    //recursive method
-    void flatten(TreeNode* root)
-    {
-        if(!root)
-        {
-            return;
-        }
-        
-        if(root->left)
-        {
-            flatten(root->left);
-        }
-        
-        if(root->right)
-        {
-            flatten(root->right);
-        }
-        
-        auto tmp = root->right;
-        root->right = root->left;
-        root->left = nullptr;
-        
-        while(root->right)
-        {
-            root = root->right;
-        }
-        
-        root->right = tmp;
-    }
-    
-    //iterative: starting from root
-    void flatten(TreeNode* root)
-    {
-        auto cur = root;
-        while(cur)
-        {
-            if(cur->left)
-            {
-                auto p = cur->left;
-                while(p->right)
-                {
-                    p = p->right;
-                }
-                
-                p->right = cur->right;
-                cur->right = cur->left;
-                cur->left = nullptr;
-            }
-            
-            cur = cur->right;
-        }
-    }
+	//recursive method
+	void flatten( TreeNode* root )
+	{
+		if ( !root )
+		{
+			return;
+		}
+
+		if ( root->left )
+		{
+			flatten( root->left );
+		}
+
+		if ( root->right )
+		{
+			flatten( root->right );
+		}
+
+		auto tmp = root->right;
+		root->right = root->left;
+		root->left = nullptr;
+
+		while ( root->right )
+		{
+			root = root->right;
+		}
+
+		root->right = tmp;
+	}
+
+	//iterative: starting from root
+	void flatten( TreeNode* root )
+	{
+		auto cur = root;
+		while ( cur )
+		{
+			if ( cur->left )
+			{
+				auto p = cur->left;
+				while ( p->right )
+				{
+					p = p->right;
+				}
+
+				p->right = cur->right;
+				cur->right = cur->left;
+				cur->left = nullptr;
+			}
+
+			cur = cur->right;
+		}
+	}
 };
 
 //<--> 115. Distinct Subsequences
@@ -4670,29 +4670,29 @@ Return 3.
 */
 class Solution {
 public:
-    int numDistinct(string s, string t)
-    {
-        vector<vector<int>> dp(s.size()+1, vector<int>(t.size()+1));
-        int len_s = s.size();
-        int len_t = t.size();
-        
-        for(int i = 0; i<=len_s; ++i)
-        {
-            dp[i][0] = 1;
-        }
-        
-        for(int i = 1;i<=len_s;++i)
-        {
-            for(int j=1; j<=len_t; ++j)
-            {
-                dp[i][j]= dp[i-1][j];
-                if(s[i-1]=t[j-1])
-                {
-                    dp[i][j] += dp[i-1][j-1];
-                }
-            }
-        }
-    }
+	int numDistinct( string s, string t )
+	{
+		vector<vector<int>> dp( s.size() + 1, vector<int>( t.size() + 1 ) );
+		int len_s = s.size();
+		int len_t = t.size();
+
+		for ( int i = 0; i <= len_s; ++i )
+		{
+			dp[i][0] = 1;
+		}
+
+		for ( int i = 1; i <= len_s; ++i )
+		{
+			for ( int j = 1; j <= len_t; ++j )
+			{
+				dp[i][j] = dp[i - 1][j];
+				if ( s[i - 1] = t[j - 1] )
+				{
+					dp[i][j] += dp[i - 1][j - 1];
+				}
+			}
+		}
+	}
 };
 
 //<--> 116. Populating Next Right Pointers in Each Node
@@ -4739,76 +4739,76 @@ After calling your function, the tree should look like:
  */
 class Solution {
 public:
-    //method 1: recursive
-    void connect(TreeLinkNode *root)
-    {
-        if(!root)
-        {
-            return;
-        }
-        
-        if(root->left) root->left->next = root->right;
-        if(root->right) root->right->next = root->next ? root->next->left : nullptr;
-        
-        connect(root->left);
-        connect(root->right);
-    }
-    
-    //method2: iterative (using queue)
-    void connect(TreeLinkNode *root)
-    {
-        if(!root)
-        {
-            return;
-        }
-        
-        queue<TreeLinkNode*> q;
-        q.push(root);
-        
-        while(!q.empty())
-        {
-            int len = q.size();
-            
-            for(int i = 0; i<len; ++i)
-            {
-                auto t = q.front();
-                q.pop();
-                
-                if(i<len-1)
-                {
-                    t->next = q.front();
-                }
-                
-                if(t->left) q.push(t->left);
-                if(t->right) q.push(t->right);
-            }
-        }
-    }
-    
-    //method 3: O(1) memory usage
-    void connect(TreeLinkNode *root)
-    {
-        if(!root) return;
-        auto start = root;
-        TreeLinkNode* cur = nullptr;
-        
-        while(start->left)
-        {
-            cur = start;
-            while(cur)
-            {
-                cur->left->next = cur->right;
-                if(cur->next)
-                {
-                    cur->right->next = cur->next->left;
-                }
-                
-                cur = cur->next;
-            }
-            
-            start = start->left;
-        }
-    }
+	//method 1: recursive
+	void connect( TreeLinkNode *root )
+	{
+		if ( !root )
+		{
+			return;
+		}
+
+		if ( root->left ) root->left->next = root->right;
+		if ( root->right ) root->right->next = root->next ? root->next->left : nullptr;
+
+		connect( root->left );
+		connect( root->right );
+	}
+
+	//method2: iterative (using queue)
+	void connect( TreeLinkNode *root )
+	{
+		if ( !root )
+		{
+			return;
+		}
+
+		queue<TreeLinkNode*> q;
+		q.push( root );
+
+		while ( !q.empty() )
+		{
+			int len = q.size();
+
+			for ( int i = 0; i < len; ++i )
+			{
+				auto t = q.front();
+				q.pop();
+
+				if ( i < len - 1 )
+				{
+					t->next = q.front();
+				}
+
+				if ( t->left ) q.push( t->left );
+				if ( t->right ) q.push( t->right );
+			}
+		}
+	}
+
+	//method 3: O(1) memory usage
+	void connect( TreeLinkNode *root )
+	{
+		if ( !root ) return;
+		auto start = root;
+		TreeLinkNode* cur = nullptr;
+
+		while ( start->left )
+		{
+			cur = start;
+			while ( cur )
+			{
+				cur->left->next = cur->right;
+				if ( cur->next )
+				{
+					cur->right->next = cur->next->left;
+				}
+
+				cur = cur->next;
+			}
+
+			start = start->left;
+		}
+	}
 };
 
 //<--> 117. Populating Next Right Pointers in Each Node II
@@ -12558,40 +12558,40 @@ It should return [1,4,8,2,5,9,3,6,7].
 */
 class ZigzagIterator
 {
-	public:
-	 ZigzagIterator(vector<int>& v1, vector<int>& v2)
-	 {
-			if(!v1.empty())
-			{
-				q.emplace(v1.begin(), v1.end());
-			}
-			
-			if(!v2.empty())
-			{
-				q.emplace(v2.begin(), v2.end());
-			}
-	 }
-	 
-	 int next() 
-	 {
-		 auto p = q.front();
-		 auto it = p.first;
-		 int val = *it;
-		 
-		 if( (++it) != p.second)
-		 {
-			 q.push(it, p.second);
-		 }
-	 }
-	 
-	 bool hasNext()
-	 {
-		 return !q.empty();
-	 }
-	 
-	 private:
-	 
-		queue<pair<vector<int>::iterator, vector<int>::iterator>>> q;
+public:
+	ZigzagIterator( vector<int>& v1, vector<int>& v2 )
+	{
+		if ( !v1.empty() )
+		{
+			q.emplace( v1.begin(), v1.end() );
+		}
+
+		if ( !v2.empty() )
+		{
+			q.emplace( v2.begin(), v2.end() );
+		}
+	}
+
+	int next()
+	{
+		auto p = q.front();
+		auto it = p.first;
+		int val = *it;
+
+		if ( ( ++it ) != p.second )
+		{
+			q.push( it, p.second );
+		}
+	}
+
+	bool hasNext()
+	{
+		return !q.empty();
+	}
+
+private:
+
+	queue<pair<vector<int>::iterator, vector<int>::iterator>> > q;
 }
 
 //<--> 282. Expression Add Operators
@@ -16107,5 +16107,80 @@ class Solution {
 public:
 	bool isValidSerialization(string preorder)
 	{
+		if ( preorder.empty() )
+		{
+			return false;
+		}
+
+		auto last = preorder.back();
+
+		preorder.pop_back();
+
+		istringstream iss( preorder );
+
+		string v;
+
+		int d = 0;
+
+		while ( getline( iss, v, ',' ) )
+		{
+			if ( v == "#" )
+			{
+				if ( d == 0 )
+				{
+					return false;
+				}
+
+				--d;
+			}
+			else
+			{
+				++d;
+			}
+		}
+
+		return ( d != 0 ) ? false : last == '#';
 	}
 };
+//<--> 332. Reconstruct Itinerary
+/*
+Given a list of airline tickets 
+
+represented by pairs of departure and arrival airports [from, to], 
+
+reconstruct the itinerary in order. 
+
+All of the tickets belong to a man who departs from JFK. 
+
+Thus, the itinerary must begin with JFK.
+
+Note:
+If there are multiple valid itineraries, 
+you should return the itinerary that 
+has the smallest lexical order when read as a single string. 
+For example, the itinerary ["JFK", "LGA"] 
+has a smaller lexical order than ["JFK", "LGB"].
+All airports are represented by three capital letters (IATA code).
+
+You may assume all tickets form at least one valid itinerary.
+Example 1:
+tickets = [["MUC", "LHR"], ["JFK", "MUC"], ["SFO", "SJC"], ["LHR", "SFO"]]
+Return ["JFK", "MUC", "LHR", "SFO", "SJC"].
+Example 2:
+tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
+Return ["JFK","ATL","JFK","SFO","ATL","SFO"].
+Another possible reconstruction is ["JFK","SFO","ATL","JFK","ATL","SFO"].
+
+But it is larger in lexical order.
+*/
+class Solution {
+public:
+	vector<string> findItinerary( vector<pair<string, string>> tickets )
+	{
+	}
+};
+
+//<--> 333. Largest BST Subtree
+
+
+//<--> 334. Increasing Triplet Subsequence
