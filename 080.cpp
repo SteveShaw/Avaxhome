@@ -4846,101 +4846,101 @@ After calling your function, the tree should look like:
  */
 class Solution {
 public:
-    //Method1: recursive 
-    void connect(TreeLinkNode *root)
-    {
-        if(!root)
-        {
-            return;
-        }
-        
-        auto p = root->next;
-        
-        while(p)
-        {
-            if(p->left)
-            {
-                p = p->left;
-                break;
-            }
-            
-            if(p->right)
-            {
-                p = p->right;
-                break;
-            }
-            
-            p = p->next;
-        }
-        
-        if(root->right)
-        {
-            root->right->next = p;
-        }
-        
-        if(root->left)
-        {
-            root->left->next = root->right ? root->right : p;
-        }
-        
-        connect(root->right);
-        connect(root->left);
-    }
-    //method 2: iterative using queue : same as 116's method2
-    //method 3: O(1) memory
-    void connect(TreeLinkNode* root)
-    {
-        if(!root)
-        {
-            return;
-        }
-        
-        auto start = root;
-        TreeLinkNode* cur = nullptr;
-        
-        while(start)
-        {
-            auto p = start;
-            while(p&&!p->left&&p->right)
-            {
-                p = p->next;
-            }
-            
-            if(!p) return;
-            
-            start = p->left ? p->left : p->right;
-            auto cur = start;
-            
-            while(p)
-            {
-                if(cur == p->left)
-                {
-                    if(p->right)
-                    {
-                        cur->next = p->right;
-                        cur = cur->next;
-                    }
-                    
-                    p = p->next;
-                }
-                else if(cur == p->right)
-                {
-                    p = p->next;
-                }
-                else
-                {
-                    if(!p->left && !p->right)
-                    {
-                        p = p->next;
-                        continue;
-                    }
-                    
-                    cur->next = p->left ? p->left : p->right;
-                    cur = cur->next;
-                }
-            }
-        }
-    }
+	//Method1: recursive 
+	void connect( TreeLinkNode *root )
+	{
+		if ( !root )
+		{
+			return;
+		}
+
+		auto p = root->next;
+
+		while ( p )
+		{
+			if ( p->left )
+			{
+				p = p->left;
+				break;
+			}
+
+			if ( p->right )
+			{
+				p = p->right;
+				break;
+			}
+
+			p = p->next;
+		}
+
+		if ( root->right )
+		{
+			root->right->next = p;
+		}
+
+		if ( root->left )
+		{
+			root->left->next = root->right ? root->right : p;
+		}
+
+		connect( root->right );
+		connect( root->left );
+	}
+	//method 2: iterative using queue : same as 116's method2
+	//method 3: O(1) memory
+	void connect( TreeLinkNode* root )
+	{
+		if ( !root )
+		{
+			return;
+		}
+
+		auto tn_most_left = root;
+		TreeLinkNode* p;
+
+		while ( tn_most_left )
+		{
+			p = tn_most_left;
+			while ( p && !p->left&& !p->right )
+			{
+				p = p->next;
+			}
+
+			if ( !p ) return;
+
+			tn_most_left = p->left ? p->left : p->right;
+			auto cur = tn_most_left;
+
+			while ( p )
+			{
+				if ( cur == p->left )
+				{
+					if ( p->right )
+					{
+						cur->next = p->right;
+						cur = cur->next;
+					}
+
+					p = p->next;
+				}
+				else if ( cur == p->right )
+				{
+					p = p->next;
+				}
+				else
+				{
+					if ( !p->left && !p->right )
+					{
+						p = p->next;
+						continue;
+					}
+
+					cur->next = p->left ? p->left : p->right;
+					cur = cur->next;
+				}
+			}
+		}
+	}
 };
 
 //<--> 118. Pascal's Triangle
@@ -6839,94 +6839,94 @@ T is “ece” which its length is 3.
 */
 class Solution {
 public:
-    //method 1: using count as map value
-    int lengthOfLongestSubstringTwoDistinct(string s)
-    {
-        unordered_map<char,int> m;
-        int left = 0; max_len = 0;
-        
-        int len = s.size();
-        
-        for(int i = 0; i<len; ++i)
-        {
-            if(m.find(s[i]) == m.end())
-            {
-                m[s[i]] = 1;
-            }
-            else
-            {
-                ++m[s[i]];
-            }
-            
-            while(m.size()>2)
-            {
-                auto& v = m[s[left]];
-                --v;
-                if(v == 0)
-                {
-                    m.erase(s[left]);
-                }
-                ++left;
-            }
-            
-            max_len = max(max_len, i - left + 1);
-        }
-        
-        return max_len;
-    }
-    
-    //method 2: using pos as map value
-    int lengthOfLongestSubstringTwoDistinct(string s)
-    {
-        unordered_map<char,int> m;
-        int left = 0; max_len = 0;
-        
-        int len = s.size();
-        
-        for(int i = 0; i<len; ++i)
-        {
-            m[s[i]] = i;
-            
-            while(m.size()>2)
-            {
-                if( m[s[left]] == left )
-                {
-                    m.erase(s[left]);
-                }
-                ++left;
-            }
-            
-            max_len = max(max_len, i - left + 1);
-        }
-        
-        return max_len;
-    }
-    
-    //method 3: using O(1) memory but only for 2 duplicate characters.
-    int lengthOfLongestSubstringTwoDistinct(string s)
-    {
-        int left = 0; max_len = 0;
-        int len = s.size();
-        int right = -1;
-        
-        for(int i = 1; i<len; ++i)
-        {
-            if(s[i]==s[i-1])
-            {
-                ++i;
-            }
-            
-            if(right >=0 && s[right] != s[i])
-            {
-                max_len = max(max_len, i - left);
-                left = right + 1;
-            }
-            
-            right = i - 1;
-        }
-        
-        return max(max_len, len - left);
-    }
+	//method 1: using count as map value
+	int lengthOfLongestSubstringTwoDistinct( string s )
+	{
+		unordered_map<char, int> m;
+		int left = 0; max_len = 0;
+
+		int len = s.size();
+
+		for ( int i = 0; i < len; ++i )
+		{
+			if ( m.find( s[i] ) == m.end() )
+			{
+				m[s[i]] = 1;
+			}
+			else
+			{
+				++m[s[i]];
+			}
+
+			while ( m.size() > 2 )
+			{
+				auto& v = m[s[left]];
+				--v;
+				if ( v == 0 )
+				{
+					m.erase( s[left] );
+				}
+				++left;
+			}
+
+			max_len = max( max_len, i - left + 1 );
+		}
+
+		return max_len;
+	}
+
+	//method 2: using pos as map value
+	int lengthOfLongestSubstringTwoDistinct( string s )
+	{
+		unordered_map<char, int> m;
+		int left = 0; max_len = 0;
+
+		int len = s.size();
+
+		for ( int i = 0; i < len; ++i )
+		{
+			m[s[i]] = i;
+
+			while ( m.size() > 2 )
+			{
+				if ( m[s[left]] == left )
+				{
+					m.erase( s[left] );
+				}
+				++left;
+			}
+
+			max_len = max( max_len, i - left + 1 );
+		}
+
+		return max_len;
+	}
+
+	//method 3: using O(1) memory but only for 2 duplicate characters.
+	int lengthOfLongestSubstringTwoDistinct( string s )
+	{
+		int left = 0; max_len = 0;
+		int len = s.size();
+		int right = -1;
+
+		for ( int i = 1; i < len; ++i )
+		{
+			if ( s[i] == s[i - 1] )
+			{
+				++i;
+			}
+
+			if ( right >= 0 && s[right] != s[i] )
+			{
+				max_len = max( max_len, i - left );
+				left = right + 1;
+			}
+
+			right = i - 1;
+		}
+
+		return max( max_len, len - left );
+	}
 };
 
 //<--> 160. Intersection of Two Linked Lists
@@ -16181,6 +16181,641 @@ public:
 };
 
 //<--> 333. Largest BST Subtree
+/*
+Given a binary tree, find the largest subtree which is a Binary Search Tree (BST), 
+
+where largest means subtree with largest number of nodes in it.
+
+Note:
+A subtree must include all of its descendants.
+Here's an example:
+
+10
+/ \
++5+  15
+/ \   \
++1   +8+   7
+The Largest BST Subtree in this case is the highlighted one.
+The return value is the subtree's size, which is 3.
 
 
+Hint:
+
+You can recursively use algorithm similar to 98. 
+Validate Binary Search Tree at each node of the tree, which will result in O(nlogn) time complexity.
+Follow up:
+Can you figure out ways to solve it with O(n) time complexity?
+*/
+class Solution {
+public:
+	//method 1 : O(n)
+	int largestBSTSubtree( TreeNode* root )
+	{
+		int min_v = INT_MIN;
+		int max_v = INT_MAX;
+
+		int res = 0;
+
+		isBST( root, min_v, max_v, res );
+
+		return res;
+	}
+
+	bool isBST( TreeNode* root, int& min_v, int& max_v, int &n )
+	{
+		if ( !root )
+		{
+			return true;
+		}
+
+		int left_min = INT_MIN, left_max = INT_MAX;
+		int right_min = INT_MIN, right_max = INT_MAX;
+
+		int left_n = 0, right_n = 0;
+
+		auto b_l = isBST( root->left, left_min, left_max, left_n );
+		auto b_r = isBST( root->right, right_min, right_max, right_n );
+
+		if ( b_l && b_r )
+		{
+			if ( ( !root->left || root->val >= left_max ) && ( !root->right || root->val <= right_min ) )
+			{
+				n = left_n + right_n + 1;
+				min_v = root->left ? left_min : root->val;
+				max_v = root->right ? right_max : root->val;
+
+				return true;
+			}
+		}
+
+		n = max( left_n, right_n );
+		return false;
+	}
+
+	//method 2: O(logn)
+	// aux functions: isBST and count
+	int largestBSTSubtree( TreeNode* root )
+	{
+		if ( !root )
+		{
+			return 0;
+		}
+
+		if ( isBST( root, INT_MIN, INT_MAX ) )
+		{
+			return count( root );
+		}
+
+		return max( largestBSTSubtree( root->left ), largestBSTSubtree( root->right ) );
+	}
+
+	bool isBST( TreeNode* node, int min_v, int max_v )
+	{
+		if ( !node )
+		{
+			return true;
+		}
+
+		if ( node->val <= min_v || node->val >= max_v )
+		{
+			return false;
+		}
+
+		return isBST( node->left, min_v, node->val ) && isBST( node->right, node->val, max_v );
+	}
+
+	int count( TreeNode* node )
+	{
+		if ( !node )
+		{
+			return 0;
+		}
+
+		return count( node->left ) + count( node->right ) + 1;
+	}
+};
 //<--> 334. Increasing Triplet Subsequence
+/*
+Given an unsorted array return whether 
+
+an increasing subsequence of length 3 exists or not in the array.
+
+Formally the function should:
+1. Return true if there exists i, j, k
+2. such that arr[i] < arr[j] < arr[k] given 0 ≤ i < j < k ≤ n-1 else return false.
+
+Your algorithm should run in O(n) time complexity and O(1) space complexity.
+
+Examples:
+Given [1, 2, 3, 4, 5],
+return true.
+
+Given [5, 4, 3, 2, 1],
+return false.
+*/
+class Solution {
+public:
+	bool increasingTriplet( vector<int>& nums )
+	{
+		if ( nums.empty() || nums.size() < 3 )
+		{
+			return false;
+		}
+
+		int min1 = INT_MAX;
+		int min2 = INT_MAX;
+
+		for ( auto n : nums )
+		{
+			if ( min1 >= n )
+			{
+				min1 = n;
+			}
+			else if ( min2 >= n )
+			{
+				min2 = n;
+			}
+			else
+			{
+				return true;
+			}
+		}
+
+		return false;
+	}
+};
+
+//<--> 335. Self Crossing
+/*
+You are given an array x of n positive numbers. 
+
+You start at point (0,0) and moves x[0] metres to the north, 
+
+then x[1] metres to the west, x[2] metres to the south, x[3] metres to the east and so on.
+
+In other words, after each move your direction changes counter-clockwise.
+
+Write a one-pass algorithm with O(1) extra space to determine, 
+
+if your path crosses itself, or not.
+
+Example 1:
+Given x =
+[2, 1, 1, 2]
+,
+┌───┐
+│   │
+└───┼──>
+	│
+
+Return true (self crossing)
+Example 2:
+Given x =
+[1, 2, 3, 4]
+,
+┌──────┐
+│      │
+│
+│
+└────────────>
+
+Return false (not self crossing)
+Example 3:
+Given x =
+[1, 1, 1, 1]
+,
+┌───┐
+│   │
+└───┼>
+
+Return true (self crossing)
+*/
+
+/*
+第一类是第四条边和第一条边相交的情况，
+需要满足的条件是第一条边大于等于第三条边，
+第四条边大于等于第二条边。
+同样适用于第五条边和第二条边相交，
+第六条边和第三条边相交等等，依次向后类推的情况...
+
+	x(1)
+	┌───┐
+x(2)│   │x(0)
+	└───┼──>
+	x(3)│
+
+第二类是第五条边和第一条边重合相交的情况，
+
+	x(1)
+	┌──────┐
+	│      │x(0)
+x(2)│      ^
+	│      │x(4)
+	└──────│
+	x(3)
+
+需要满足的条件是第二条边和第四条边相等，
+
+第五条边大于等于第三条边和第一条边的差值，
+
+同样适用于第六条边和第二条边重合相交的情况等等依次向后类推...
+
+第三类是第六条边和第一条边相交的情况，
+
+	x(1)
+	┌──────┐
+	│      │x(0)
+x(2)│     <│────│
+	│		x(5)│x(4)
+	└───────────│
+	x(3)
+
+需要满足的条件是第四条边大于等于第二条边，
+
+第三条边大于等于第五条边，
+
+第五条边大于等于第三条边和第一条边的差值，
+
+第六条边大于等于第四条边和第二条边的差值，
+
+同样适用于第七条边和第二条边相交的情况等等依次向后类推..
+*/
+class Solution {
+public:
+	bool isSelfCrossing( vector<int>& x )
+	{
+		for ( size_t i = 3; i < x.size(); ++i )
+		{
+			//0>=2, 3>=1
+			if ( x[i] >= x[i - 2] && x[i - 3] >= x[i - 1] )
+			{
+				return true;
+			}
+
+			//case 2:
+			//1==2, 2>=0, 4>= 2- 0;
+			if ( i >= 4 && x[i - 1] == x[i - 3] && x[i] >= x[i - 2] - x[i - 4] )
+			{
+				return true;
+			}
+
+			// case 3:
+			// 2>=4, 3>=1, 5>=3-1, 4>=2-0;
+			if ( i >= 5 && x[i - 2] >= x[i - 4] && x[i - 3] >= x[i - 1] 
+				&& x[i - 1] >= x[i - 3] - x[i - 5] 
+				&& x[i] >= x[i - 2] - x[i - 4] )
+			{
+				return true;
+			}
+
+		}
+
+		return false;
+	}
+};
+
+//<--> 336. Palindrome Pairs
+/*
+Given a list of unique words, 
+
+find all pairs of distinct indices (i, j) in the given list, 
+
+so that the concatenation of the two words, i.e. words[i] + words[j] is a palindrome.
+
+Example 1:
+Given words = ["bat", "tab", "cat"]
+Return [[0, 1], [1, 0]]
+The palindromes are ["battab", "tabbat"]
+Example 2:
+Given words = ["abcd", "dcba", "lls", "s", "sssll"]
+Return [[0, 1], [1, 0], [3, 2], [2, 4]]
+The palindromes are ["dcbaabcd", "abcddcba", "slls", "llssssll"]
+*/
+
+class Solution {
+public:
+	vector<vector<int>> palindromePairs( vector<string>& words )
+	{
+	}
+};
+
+//<--> 337. House Robber III
+/*
+The thief has found himself a new place for his thievery again. 
+
+There is only one entrance to this area, called the "root." 
+
+Besides the root, each house has one and only one parent house. 
+
+After a tour, the smart thief realized that 
+
+"all houses in this place forms a binary tree". 
+
+It will automatically contact the police if two directly-linked houses were broken into on the same night.
+
+Determine the maximum amount of money the thief can rob tonight without alerting the police.
+
+Example 1:
+   3
+  / \
+ 2   3
+  \   \
+   3   1
+Maximum amount of money the thief can rob = 3 + 3 + 1 = 7.
+Example 2:
+    3
+   / \
+  4   5
+ / \   \
+1   3   1
+Maximum amount of money the thief can rob = 4 + 5 = 9.
+*/
+/**
+* Definition for a binary tree node.
+* struct TreeNode {
+*     int val;
+*     TreeNode *left;
+*     TreeNode *right;
+*     TreeNode(int x) : val(x), left(NULL), right(NULL) {}
+* };
+*/
+class Solution {
+public:
+	//method 1: O(1) memory space
+	// helper function: dfs
+	int rob( TreeNode* root )
+	{
+		int inc_max, exc_max;
+		dfs( root, inc_max, exc_max );
+
+		return max( inc_max, exc_max );
+	}
+	
+	void dfs( TreeNode* tn, int& tn_inc_max, int& tn_exc_max )
+	{
+		if ( !tn )
+		{
+			tn_inc_max = 0;
+			tn_exc_max = 0;
+			return;
+		}
+
+		int ln_inc_max = 0, ln_exc_max = 0;// max value include/exclude the left node
+		int rn_inc_max = 0, rn_exc_max = 0;// max value include/exclude the right node
+
+		dfs( tn->left, ln_inc_max, ln_exc_max );
+		dfs( tn->right, rn_inc_max, rn_exc_max );
+
+		tn_inc_max = ln_exc_max + rn_exc_max + tn->val; // tn_inc_max : max value include this node
+		tn_exc_max = max( ln_inc_max, ln_exc_max ) + max( rn_inc_max, rn_exc_max ); // tn_exc_max : max value exclude this node
+	}
+
+	//method 1: O(n) memory space
+	// helper function: dfs
+	int rob( TreeNode* root )
+	{
+		unordered_map<TreeNode*, int> m;
+		return dfs( root, m );
+	}
+
+	int dfs( TreeNode* tn, unordered_map<TreeNode*, int>& m )
+	{
+		if ( !tn )
+		{
+			return 0;
+		}
+
+		if ( m.find( tn ) != m.end() )
+		{
+			return m[tn];
+		}
+
+		int val = 0;
+
+		if ( tn->left )
+		{
+			val += dfs( tn->left->left, m ) + dfs( tn->left->right, m );
+		}
+
+		if ( tn->right )
+		{
+			val += dfs( tn->right->left, m ) + dfs( tn->right->right, m );
+		}
+
+		int tn_inc = val + tn->val; //max value include this node
+		int tn_exc = dfs( tn->left, m ) + dfs( tn->right, m ); //max value not include this node;
+
+		val = max( tn_inc, tn_exc );
+		m[tn] = val;
+
+		return val;
+	}
+};
+
+//<--> 338. Counting Bits
+/*
+Given a non negative integer number num. 
+
+For every numbers i in the range 0 <= i <= num 
+
+calculate the number of 1's in their binary representation and return them as an array.
+
+Example:
+For num = 5 you should return [0,1,1,2,1,2].
+
+Follow up:
+
+It is very easy to come up with a solution with run time O(n*sizeof(integer)). 
+
+But can you do it in linear time O(n) /possibly in a single pass?
+
+Space complexity should be O(n).
+
+Can you do it like a boss? 
+
+Do it without using any builtin function 
+
+like __builtin_popcount in c++ or in any other language.
+*/
+class Solution {
+public:
+	vector<int> countBits( int num )
+	{
+		vector<int> res( num + 1, 0 );
+		for ( int i = 1; i <= num; ++i )
+		{
+			res[i] = res[i&( i - 1 )] + 1;
+		}
+
+		return res;
+	}
+};
+
+//<--> 339. Nested List Weight Sum
+/*
+Given a nested list of integers, 
+
+return the sum of all integers in the list weighted by their depth.
+
+Each element is either an integer, or a list -- whose elements may also be integers or other lists.
+
+Example 1:
+Given the list [[1,1],2,[1,1]], return 10. (four 1's at depth 2, one 2 at depth 1)
+
+Example 2:
+Given the list [1,[4,[6]]], return 27. 
+
+(one 1 at depth 1, one 4 at depth 2, and one 6 at depth 3; 1 + 4*2 + 6*3 = 27)
+*/
+class Solution {
+public:
+	int depthSum( vector<NestedInteger>& nestedList )
+	{
+		return dfs( nestedList, 1 );
+	}
+
+	int dfs( vector<NestedInteger>&v, int depth )
+	{
+		int sum = 0;
+
+		for ( auto& ni : v )
+		{
+			sum += ni.isInteger() ? ni.getInteger()*depth : dfs( ni, depth + 1 );
+		}
+
+		return sum;
+	}
+};
+
+//<--> 	340. Longest Substring with At Most K Distinct Characters
+/*
+Given a string, find the length of the longest substring 
+
+T that contains at most k distinct characters.
+
+For example, Given s = “eceba” and k = 2,
+
+T is "ece" which its length is 3.
+*/
+class Solution {
+public:
+	//same as 159 except number of Distinct characters.
+	int lengthOfLongestSubstringKDistinct( string s, int k )
+	{
+		unordered_map<char, int> m;
+
+		size_t left = 0;
+
+		int max_len = 0;
+		
+		for ( size_t i = 0; i < s.size(); ++i )
+		{
+			if ( m.find( s[i] ) == m.end() )
+			{
+				m[s[i]] = 0;
+			}
+
+			++m[s[i]];
+
+			while ( m.size() > k )
+			{
+				--m[s[left]];
+				if ( m[s[left]] == 0 )
+				{
+					m.erase( s[left] );
+				}
+
+				++left;
+			}
+
+			int len = i - left + 1
+			max_len = max( max_len, len );
+		}
+
+		return max_len;
+	}
+
+	//method 2:  using position
+	int lengthOfLongestSubstringKDistinct( string s, int k )
+	{
+		unordered_map<char, size_t> m;
+
+		size_t left = 0;
+
+		int max_len = 0;
+
+		for ( size_t i = 0; i < s.size(); ++i )
+		{
+			m[s[i]] = i;
+
+			while ( m.size() > k )
+			{
+				if ( m[s[left]] == left )
+				{
+					m.erase( s[left] );
+				}
+				++left;
+			}
+
+			int len = i - left + 1;
+			max_len = max( max_len, len );
+		}
+
+		return max_len;
+	}
+};
+
+//<--> 341. Flatten Nested List Iterator
+/*
+Given a nested list of integers, implement an iterator to flatten it.
+
+Each element is either an integer, or a list -- whose elements may also be integers or other lists.
+
+Example 1:
+Given the list [[1,1],2,[1,1]],
+
+By calling next repeatedly until hasNext returns false, 
+the order of elements returned by next should be: [1,1,2,1,1].
+
+Example 2:
+Given the list [1,[4,[6]]],
+
+By calling next repeatedly until hasNext returns false, the order of elements returned by next should be: [1,4,6].
+*/
+/**
+* // This is the interface that allows for creating nested lists.
+* // You should not implement it, or speculate about its implementation
+* class NestedInteger {
+*   public:
+*     // Return true if this NestedInteger holds a single integer, rather than a nested list.
+*     bool isInteger() const;
+*
+*     // Return the single integer that this NestedInteger holds, if it holds a single integer
+*     // The result is undefined if this NestedInteger holds a nested list
+*     int getInteger() const;
+*
+*     // Return the nested list that this NestedInteger holds, if it holds a nested list
+*     // The result is undefined if this NestedInteger holds a single integer
+*     const vector<NestedInteger> &getList() const;
+* };
+*/
+class NestedIterator {
+public:
+	NestedIterator( vector<NestedInteger> &nestedList )
+	{
+
+	}
+
+	int next() {
+
+	}
+
+	bool hasNext() {
+
+	}
+};
+/**
+* Your NestedIterator object will be instantiated and called as such:
+* NestedIterator i(nestedList);
+* while (i.hasNext()) cout << i.next();
+*/
