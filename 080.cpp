@@ -16765,7 +16765,7 @@ public:
 	}
 };
 
-//<--> 341. Flatten Nested List Iterator
+//<--> 341. Flatten Nested List Iterator (M)
 /*
 Given a nested list of integers, implement an iterator to flatten it.
 
@@ -16801,21 +16801,299 @@ By calling next repeatedly until hasNext returns false, the order of elements re
 */
 class NestedIterator {
 public:
+	//method 1: using stack
 	NestedIterator( vector<NestedInteger> &nestedList )
 	{
-
+		for ( size_t i = 0; i < nestedList.size(); ++i )
+		{
+			s.push( nestedList[nestedList.size() - i - 1] );
+		}
 	}
 
 	int next() {
 
+		auto t = s.top();
+		s.pop();
+
+		return t.getInteger();
 	}
 
 	bool hasNext() {
 
+		while ( !s.empty() )
+		{
+			auto t = s.top();
+			if ( t.isInteger() )
+			{
+				return true;
+			}
+
+			s.pop();
+
+			auto& v = t.getList();
+			for ( int i = 0; i < v.size(); ++i )
+			{
+				s.push( v[v.size() - i - 1] );
+			}
+		}
 	}
+private:
+	stack<NestedInteger> s;
 };
+
+////method 2: using queue to populate a
+class NestedIterator
+{
+public:
+	NestedIterator( vector<NestedInteger> &nestedList )
+	{
+		make_queue( nestedList );
+	}
+
+	int next()
+	{
+		int val = q.front();
+		q.pop();
+
+		return val;
+	}
+
+	bool hasNext()
+	{
+		return !q.empty();
+	}
+
+private:
+
+	queue<int> q;
+
+	void make_queue( vector<NestedInteger> &v )
+	{
+		for ( auto &ni : v )
+		{
+			if ( ni.isInteger() )
+			{
+				q.push( ni.getInteger() );
+			}
+			else
+			{
+				make_queue( ni );
+			}
+		}
+	}
+}
 /**
 * Your NestedIterator object will be instantiated and called as such:
 * NestedIterator i(nestedList);
 * while (i.hasNext()) cout << i.next();
 */
+
+//<--> 342. Power of Four (E)
+/*
+Given an integer (signed 32 bits), write a function to check whether it is a power of 4.
+
+Example:
+Given num = 16, return true. Given num = 5, return false.
+*/
+class Solution {
+public:
+	bool isPowerOfFour( int num )
+	{
+		return( num > 0 && ( num&( num - 1 ) == 0 ) && ( ( num - 1 ) % 3 == 0 );
+	}
+};
+
+
+//<--> 343. Integer Break
+/*
+Given a positive integer n, 
+
+break it into the sum of at least two positive integers 
+
+and maximize the product of those integers. Return the maximum product you can get.
+
+For example, given n = 2, return 1 (2 = 1 + 1); given n = 10, return 36 (10 = 3 + 3 + 4).
+
+Note: You may assume that n is not less than 2 and not larger than 58.
+*/
+
+/*
+After analyzing the following result:
+4 = 2 + 2 => 4
+5 = 3 + 2 => 6
+6 = 3 + 3 ==> 9
+7 = 3 + 2 + 2 ==> 12
+8 = 3 + 3 + 2 ==> 18
+9 = 3 + 3 + 3 ==> 27
+10 = 3 + 3 + 4 ==> 36
+
+The rule is:
+try to dissect 3 from the number until n is less than or equal to 4
+or
+we can find: 
+7 - 3 = 4 ==> (4) * 3 = 12
+8 - 3 = 5 ==> (6) * 3 = 18;
+*/
+class Solution {
+public:
+	//method 1
+	int integerBreak( int n )
+	{
+		if ( n == 2 || n == 3 )
+		{
+			return n;
+		}
+
+		int res = 1;
+
+		while ( n > 4 )
+		{
+			n -= 3;
+			res *= 3;
+		}
+
+		return res*n;
+	}
+
+	//method 2
+	int integerBreak( int n )
+	{
+		if ( n<7 )
+		{
+			switch ( n )
+			{
+			case 2: return 1;
+			case 3: return 2;
+			case 4: return 4;
+			case 5: return 6;
+			case 6: return 9;
+			}
+		}
+
+		vector<int> dp( n + 1 );
+		dp[0] = 0;
+		dp[1] = 1;
+		dp[2] = 1;
+		dp[3] = 2;
+		dp[4] = 4;
+		dp[5] = 6;
+
+		for ( int i = 6; i <= n; ++i )
+		{
+			dp[i] = 3 * dp[i - 3];
+		}
+
+		return dp.back();
+	}
+};
+
+//<--> 344. Reverse String (E)
+/*
+Write a function that takes a string as input and 
+returns the string reversed.
+
+Example:
+Given s = "hello", return "olleh".
+*/
+class Solution {
+public:
+	string reverseString( string s )
+	{
+
+	}
+};
+
+//<--> 345. Reverse Vowels of a String (E)
+/*
+Write a function that takes a string as input and reverse only the vowels of a string.
+
+Example 1:
+Given s = "hello", return "holle".
+
+Example 2:
+Given s = "leetcode", return "leotcede".
+
+Note:
+The vowels does not include the letter "y".
+*/
+class Solution {
+public:
+	string reverseVowels( string s ) {
+
+		if ( s.empty() )
+		{
+			return s;
+		}
+
+		size_t left = 0;
+		size_t right = s.size() - 1;
+
+		auto is_vow = [] ( char c )->bool {
+
+			return c == 'a' || c == 'A' || c == 'e' || c == 'E' 
+				|| c == 'i' || c == 'I' || c == 'o' || c == 'O' 
+				|| c == 'U' || c == 'u';
+
+		};
+
+		while ( left < right )
+		{
+			if ( !is_vow( s[left] ) )
+			{
+				++left;
+				continue;
+			}
+
+			if ( !is_vow( s[right] ) )
+			{
+				--right;
+				continue;
+			}
+
+			if ( is_vow( s[left] ) && is_vow( s[right] ) )
+			{
+				swap( s[left], s[right] );
+				++left;
+				--right;
+			}
+		}
+
+		return s;
+	}
+};
+
+//<--> 346. Moving Average from Data Stream (E)
+/*
+Given a stream of integers and a window size, 
+calculate the moving average of all integers in the sliding window.
+
+For example,
+MovingAverage m = new MovingAverage(3);
+m.next(1) = 1
+m.next(10) = (1 + 10) / 2
+m.next(3) = (1 + 10 + 3) / 3
+m.next(5) = (10 + 3 + 5) / 3
+*/
+
+//<--> 347. Top K Frequent Elements
+/*
+Given a non-empty array of integers, return the k most frequent elements.
+
+For example,
+Given [1,1,1,2,2,3] and k = 2, return [1,2].
+
+Note:
+You may assume k is always valid, 1 <= k <= number of unique elements.
+Your algorithm's time complexity must be better than O(nlogn), where n is the array's size.
+*/
+class Solution {
+public:
+	vector<int> topKFrequent( vector<int>& nums, int k )
+	{
+	}
+};
+
+//<--> 	348. Design Tic - Tac - Toe (H)($)
+
+
+
