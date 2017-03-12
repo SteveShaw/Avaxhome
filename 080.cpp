@@ -17094,6 +17094,298 @@ public:
 };
 
 //<--> 	348. Design Tic - Tac - Toe (H)($)
+/*
+Design a Tic-tac-toe game that is played between two players on a n x n grid.
+
+You may assume the following rules:
+
+A move is guaranteed to be valid and is placed on an empty block.
+Once a winning condition is reached, no more moves is allowed.
+A player who succeeds in placing n of their marks in a horizontal, vertical, or diagonal row wins the game.
+Example:
+Given n = 3, assume that player 1 is "X" and player 2 is "O" in the board.
+
+TicTacToe toe = new TicTacToe(3);
+
+toe.move(0, 0, 1); -> Returns 0 (no one wins)
+|X| | |
+| | | | // Player 1 makes a move at (0, 0).
+| | | |
+
+toe.move(0, 2, 2); -> Returns 0 (no one wins)
+|X| |O|
+| | | | // Player 2 makes a move at (0, 2).
+| | | |
+
+toe.move(2, 2, 1); -> Returns 0 (no one wins)
+|X| |O|
+| | | | // Player 1 makes a move at (2, 2).
+| | |X|
+
+toe.move(1, 1, 2); -> Returns 0 (no one wins)
+|X| |O|
+| |O| | // Player 2 makes a move at (1, 1).
+| | |X|
+
+toe.move(2, 0, 1); -> Returns 0 (no one wins)
+|X| |O|
+| |O| | // Player 1 makes a move at (2, 0).
+|X| |X|
+
+toe.move(1, 0, 2); -> Returns 0 (no one wins)
+|X| |O|
+|O|O| | // Player 2 makes a move at (1, 0).
+|X| |X|
+
+toe.move(2, 1, 1); -> Returns 1 (player 1 wins)
+|X| |O|
+|O|O| | // Player 1 makes a move at (2, 1).
+|X|X|X|
+Follow up:
+Could you do better than O(n^2) per move() operation?
+
+Hint:
+
+Could you trade extra space such that move() operation can be done in O(1)?
+You need two arrays: 
+int rows[n], int cols[n], 
+plus two variables: diagonal, anti_diagonal.
 
 
+*/
+
+/*
+我们建立一个大小为n的一维数组rows和cols，
+还有变量对角线diag和逆对角线rev_diag，
+这种方法的思路是，
+如果玩家1在第一行某一列放了一个子，那么rows[0]自增1，
+如果玩家2在第一行某一列放了一个子，则rows[0]自减1，
+那么只有当rows[0]等于n或者-n的时候，
+表示第一行的子都是一个玩家放的，
+则游戏结束返回该玩家即可，其他各行各列，对角线和逆对角线都是这种思路
+*/
+
+class TicTacToe
+{
+public:
+	TicTacToe(int n)
+		:rows(n,0),
+		cols(n,0),
+		diag(0),
+		rev_diag(0)
+	{
+
+	}
+
+	int move(int row, int col, int player)
+	{
+		int N = rows.size();
+
+		int add = (player == 1) ? 1 : -1;
+
+		rows[row] += add;
+		cols[col] += add;
+
+		diag += (row == col) ? add : 0;
+		rev_diag += (row == N - col - 1) ? add : 0;
+
+		return ((abs(rows[row]) == N) || (abs(cols[col]) == N) || (abs(diag) == N) || (abs(rev_diag) == N)) ? player : 0;
+	}
+
+private:
+	vector<int> rows, cols;
+	int diag, rev_diag;
+};
+
+//<--> 349. Intersection of Two Arrays (Easy) 
+/*
+Given two arrays, write a function to compute their intersection.
+
+Example:
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2].
+
+Note:
+1. Each element in the result must be unique.
+2. The result can be in any order.
+*/
+//method 1 : using two sets
+class Solution {
+public:
+	vector<int> intersection(vector<int>& nums1, vector<int>& nums2) 
+	{
+		set<int> s(nums1.begin(), nums1.end()), res;
+
+		for (auto a : nums2) 
+		{
+			if (s.count(a)) res.insert(a);
+		}
+		return vector<int>(res.begin(), res.end());
+	}
+};
+
+//method 2: sort first, 2 pointers
+class Solution {
+public:
+	vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
+	{
+		vector<int> res;
+
+		int i = 0, j = 0;
+
+		sort(nums1.begin(), nums1.end());
+
+		sort(nums2.begin(), nums2.end());
+
+		while (i < nums1.size() && j < nums2.size())
+		{
+			if (nums1[i] < nums2[j])
+			{
+				++i;
+			}
+			else if (nums1[i] > nums2[j])
+			{
+				++j;
+			}
+			else
+			{
+				if (res.empty() || res.back() != nums1[i])
+				{
+					res.push_back(nums1[i]);
+				}
+				++i;
+				++j;
+			}
+		}
+		return res;
+	}
+};
+
+//method 3: binary search
+class Solution {
+public:
+	vector<int> intersection(vector<int>& nums1, vector<int>& nums2)
+	{
+		set<int> res;
+		sort(nums2.begin(), nums2.end());
+		for (auto a : nums1) 
+		{
+			if (binarySearch(nums2, a)) 
+			{
+				res.insert(a);
+			}
+		}
+		return vector<int>(res.begin(), res.end());
+	}
+
+	bool binarySearch(vector<int> &nums, int target) 
+	{
+		int left = 0, right = nums.size();
+
+		while (left < right) 
+		{
+			int mid = left + (right - left) / 2;
+
+			if (nums[mid] == target)
+			{
+				return true;
+			}
+			else if (nums[mid] < target)
+			{
+				left = mid + 1;
+			}
+			else
+			{
+				right = mid;
+			}
+		}
+
+		return false;
+	}
+};
+
+//<--> 350. Intersection of Two Arrays II
+/*
+Given two arrays, write a function to compute their intersection.
+
+Example:
+Given nums1 = [1, 2, 2, 1], nums2 = [2, 2], return [2, 2].
+
+Note:
+Each element in the result should appear as many times as it shows in both arrays.
+The result can be in any order.
+Follow up:
+1. What if the given array is already sorted? How would you optimize your algorithm?
+using two pointers
+
+2. What if nums1's size is small compared to nums2's size? Which algorithm is better?
+
+If only nums2 cannot fit in memory, 
+put all elements of nums1 into a HashMap, 
+read chunks of array that fit into the memory, and record the intersections.
+
+3. What if elements of nums2 are stored on disk, 
+and the memory is limited such that you cannot load all elements into the memory at once?
+If both nums1 and nums2 are so huge that neither fit into the memory, 
+sort them individually (external sort), 
+then read (let's say) 2G of each into memory and then using the 2 pointer technique,
+then read 2G more from the array that has been exhausted. Repeat this until no more data to read from disk.
+*/
+class Solution {
+public:
+	//method 1: using map
+	vector<int> intersect(vector<int>& nums1, vector<int>& nums2)
+	{
+		unordered_map<int, int> m;
+
+		for (auto n : nums1)
+		{
+			if (m.find(n) == m.end())
+			{
+				m.insert(n, 0);
+			}
+
+			m[n] += 1;
+		}
+
+		vector<int> res;
+
+		for (auto k : nums2)
+		{
+			if (m.find(k) != m.end() && m[k] > 0)
+			{
+				res.push_back(k);
+				--m[k];
+			}
+		}
+	}
+
+	//method 2: using two pointers
+	vector<int> intersect(vector<int>& nums1, vector<int>& nums2)
+	{
+		sort(begin(nums1), end(nums1));
+		sort(begin(nums2), end(nums2));
+
+		vector<int> res;
+
+		for (size_t i = 0, j = 0; i < nums1.size() && j < nums2.size();)
+		{
+			if (nums1[i] < nums2[j])
+			{
+				++i;
+			}
+			else if (nums1[i] > nums2[j])
+			{
+				++j;
+			}
+			else
+			{
+				res.push_back(nums1[i]);
+				++i;
+				++j;
+			}
+		}
+
+		return res;
+	}
+};
 
