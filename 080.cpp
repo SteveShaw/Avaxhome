@@ -12,6 +12,50 @@
 #include <stack>
 using namespace std;
 
+//<--> Additional : Heap Sort
+class CreateHeap
+{
+public:
+	static void heapify(vector<int>& A, int N, int root)
+	{
+		auto new_root = root;
+		auto l = new_root * 2 + 1;
+		auto r = l + 1;
+
+		if (l<N && A[l]>A[new_root])
+		{
+			new_root = l;
+		}
+
+		if (r<N && A[r]>A[new_root])
+		{
+			new_root = r;
+		}
+
+		if (new_root != root)
+		{
+			swap(A[new_root], A[root]);
+			heapify(A, N, new_root);
+		}
+	}
+
+	static void heap_sort(vector<int>& A)
+	{
+		int N = A.size();
+
+		for (int i = N / 2 - 1; i >= 0; --i)
+		{
+			heapify(A, N, i);
+		}
+
+		for (int i = N - 1; i >= 0; --i)
+		{
+			swap(A[i], A[0]);
+			heapify(A, i, 0);
+		}
+	}
+};
+
 //<--> 10. Regular Expression Matching
 /*
 Implement regular expression matching with support for '.' and '*'.
@@ -73,6 +117,64 @@ public:
 		return dp.back().back() == 1;
 	}
 };
+
+//<--> 21. Merge k Sorted Lists
+/*
+Merge k sorted linked lists and return it as one sorted list. Analyze and describe its complexity.
+*/
+/**
+* Definition for singly-linked list.
+* struct ListNode {
+*     int val;
+*     ListNode *next;
+*     ListNode(int x) : val(x), next(NULL) {}
+* };
+*/
+struct cmp {
+	bool operator () (ListNode *a, ListNode *b)
+	{
+		return a->val > b->val;
+	}
+};
+//using min heap;
+
+class Solution {
+public:
+	ListNode *mergeKLists(vector<ListNode *> &lists) 
+	{
+		priority_queue<ListNode*, vector<ListNode*>, cmp> q;
+
+		for (int i = 0; i < lists.size(); ++i)
+		{
+			if (lists[i]) q.push(lists[i]);
+		}
+		ListNode *head = NULL, *pre = NULL, *tmp = NULL;
+
+		while (!q.empty())
+		{
+			tmp = q.top();
+			q.pop();
+
+			if (!pre)
+			{
+				head = tmp;
+			}
+			else
+			{
+				pre->next = tmp;
+			}
+
+			pre = tmp;
+
+			if (tmp->next)
+			{
+				q.push(tmp->next);
+			}
+		}
+		return head;
+	}
+};
+
 
 //28. Implement strStr() 
 /*
@@ -5935,7 +6037,8 @@ https://codesays.com/2014/solution-to-fish-by-codility/
  
 class Solution {
 public:
-    bool hasCycle(ListNode *head) {
+    bool hasCycle(ListNode *head) 
+	{
         
     }
 };
@@ -5963,7 +6066,7 @@ class Solution {
 public:
     ListNode *detectCycle(ListNode *head) 
 	{
-		if(!head || !head->next)
+		if(!head)
 		{
 			return nullptr;
 		}
@@ -5971,7 +6074,7 @@ public:
 		auto slow = head;
 		auto fast = head;
 		
-		while( fast && fast->next )
+		while( fast && fast->next ) //this will give exact location
 		{
 			slow = slow->next;
 			fast = fast->next->next;
@@ -6119,10 +6222,12 @@ public:
 
 //<--> 146. LRU Cache
 /*
-Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put.
+Design and implement a data structure for Least Recently Used (LRU) cache. 
+It should support the following operations: get and put.
 
 get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1.
-put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
+put(key, value) - Set or insert the value if the key is not already present. 
+When the cache reached its capacity, it should invalidate the least recently used item before inserting a new item.
 
 Follow up:
 Could you do both operations in O(1) time complexity?
@@ -7310,12 +7415,16 @@ public:
 //<--> /*so easy*/ 167. Two Sum II - Input array is sorted
 /*
 Given an array of integers that is already sorted
-in ascending order, find two numbers such that they add up to a specific target number.
+in ascending order, find two numbers such that 
+they add up to a specific target number.
 
 The function twoSum should return indices of the two numbers
-such that they add up to the target, where index1 must be less than index2. Please note that your returned answers (both index1 and index2) are not zero-based.
+such that they add up to the target, where index1 must be less than index2. 
 
-You may assume that each input would have exactly one solution and you may not use the same element twice.
+Please note that your returned answers (both index1 and index2) are not zero-based.
+
+You may assume that each input would have exactly one solution 
+and you may not use the same element twice.
 
 Input: numbers={2, 7, 11, 15}, target=9
 Output: index1=1, index2=2
@@ -7436,7 +7545,8 @@ Design and implement a TwoSum class.
 It should support the following operations:add and find.
 
 add - Add the number to an internal data structure.
-find - Find if there exists any pair of numbers which sum is equal to the value.
+find - Find if there exists 
+any pair of numbers which sum is equal to the value.
 
 For example,
 add(1); add(3); add(5);
@@ -7650,8 +7760,10 @@ Given a list of non negative integers,
 arrange them such that they form the largest number.
 
 For example, given [3, 30, 34, 5, 9], t
-Given an input string, reverse the string word by word. A word is defined as a sequence of non-space characters.
-The input string does not contain leading or trailing spaces and the words are always separated by a single space.
+Given an input string, reverse the string word by word. 
+A word is defined as a sequence of non-space characters.
+The input string does not contain leading or 
+trailing spaces and the words are always separated by a single space.
 For example,
 Given s = "the sky is blue",
 return "blue is sky the".
@@ -8907,7 +9019,7 @@ Return 4.
 假设dp[i][j]表示以i,j为右下角的正方形的最大边长，则有
 
 dp[i][j] = min(dp[i-1][j-1], dp[i-1][j], dp[i][j-1]) + 1
-当然，如果这个点在原矩阵中本身就是0的话，那dpi肯定就是0了。
+当然，如果这个点在原矩阵中本身就是0的话，那dp[i]肯定就是0了。
 */
 
 class Solution {
@@ -12929,10 +13041,10 @@ but it could be repeated more than once.
 */
 class Solution {
 public:
-    int findDuplicate(vector<int>& nums) 
-		{
-    
-    }
+	int findDuplicate(vector<int>& nums)
+	{
+
+	}
 };
 
 //<--> 288. Unique Word Abbreviation
@@ -17386,6 +17498,342 @@ public:
 		}
 
 		return res;
+	}
+};
+
+//<--> 351. Android Unlock Patterns
+/*
+Given an Android 3x3 key lock screen and two integers m and n,
+where 1 <= m <= n <= 9, count the total number of unlock patterns of the Android lock screen, 
+which consist of minimum of m keys and maximum n keys.
+
+Rules for a valid pattern:
+
+1. Each pattern must connect at least m keys and at most n keys.
+2. All the keys must be distinct.
+3. If the line connecting two consecutive keys in the pattern passes 
+through any other keys, 
+the other keys must have previously selected in the pattern. No jumps through non selected key is allowed.
+
+The order of keys used matters.
+Explanation:
+
+| 1 | 2 | 3 |
+| 4 | 5 | 6 |
+| 7 | 8 | 9 |
+
+
+Invalid move: 4 - 1 - 3 - 6
+Line 1 - 3 passes through key 2 which had not been selected in the pattern.
+
+Invalid move: 4 - 1 - 9 - 2
+Line 1 - 9 passes through key 5 which had not been selected in the pattern.
+
+Valid move: 2 - 4 - 1 - 3 - 6
+Line 1 - 3 is valid because it passes through key 2, which had been selected in the pattern
+
+Valid move: 6 - 5 - 4 - 1 - 9 - 2
+Line 1 - 9 is valid because it passes through key 5, which had been selected in the pattern.
+
+Example:
+Given m = 1, n = 1, return 9.
+*/
+/*
+那么我们先来看一下哪些是非法的，
+首先1不能直接到3，必须经过2，
+同理的有4到6，7到9，1到7，2到8，3到9，
+还有就是对角线必须经过5，例如1到9，3到7等。
+我们建立一个二维数组jumps，
+用来记录两个数字键之间是否有中间键，
+然后再用一个一位数组visited来记录某个键是否被访问过，
+然后我们用递归来解，
+我们先对1调用递归函数，
+在递归函数中，我们遍历1到9每个数字next，
+然后找他们之间是否有jump数字，如果next没被访问过，
+并且jump为0，或者jump被访问过，我们对next调用递归函数。
+数字1的模式个数算出来后，由于1,3,7,9是对称的，
+所以我们乘4即可，然后再对数字2调用递归函数，
+2,4,6,8也是对称的，再乘4，
+最后单独对5调用一次，然后把所有的加起来就是最终结果了
+*/
+class Solution {
+public:
+	int numberOfPatterns(int m, int n)
+	{
+		vector<vector<int>> jumps(10, vector<int>(10, 0));
+		vector<int> visit(10, 0);
+
+		jumps[1][3] = 2;
+		jumps[3][1] = 2;
+
+		jumps[1][7] = 4;
+		jumps[7][1] = 4;
+
+		jumps[3][9] = 6;
+		jumps[9][3] = 6;
+
+		jumps[7][9] = 8;
+		jumps[9][7] = 8;
+
+		jumps[3][9] = 6;
+		jumps[9][3] = 6;
+
+		jumps[2][8] = 5;
+		jumps[8][2] = 5;
+
+		jumps[4][6] = 5;
+		jumps[6][4] = 5;
+
+		jumps[1][9] = 5;
+		jumps[9][1] = 5;
+
+		jumps[3][7] = 5;
+		jumps[7][3] = 5;
+
+		int res = dfs(1, 1, 0, m, n, jumps, visit) * 4;
+		res += dfs(2, 1, 0, m, n, jumps, visit) * 4;
+		res += dfs(5, 1, 0, m, n, jumps, visit)
+	}
+
+	int dfs(int d, int len, int res, int m, int n, vector<vector<int>>& J, vector<int>& visit)
+	{
+		if (len >= m)
+		{
+			++res;
+		}
+
+		++len;
+
+		if (len > n)
+		{
+			return res;
+		}
+
+		visit[d] = 1;
+
+		for (int next = 1; next <= 9; ++next)
+		{
+			auto jump = J[n][next];
+
+			if ((visit[next] == 0) && ((jump == 0) || (visit[jump] == 1)))
+			{
+				res = dfs(next, len, res, m, n, J, visit);
+			}
+		}
+
+		visit[d] = 0;
+
+		return res;
+	}
+
+	//method 2:
+	/*
+	used is the 9 - bit bitmask telling 
+	which keys have already been used and 
+	(i1, j1) and (i2, j2) are the previous two key coordinates.A step is valid if...
+	I % 2: It goes to a neighbor row or
+	J % 2 : It goes to a neighbor column or
+	used2 & (1 << (I / 2 * 3 + J / 2))): The key in the middle of the step has already been used.
+	*/
+	int count_helper(int m, int n, int used, int si, int sj)
+	{
+		if (n == 0)
+		{
+			return 1;
+		}
+
+		int res = 0;
+
+		if (m <= 0)
+		{
+			res = 1;
+		}
+
+		for (int i = 0; i < 3; ++i)
+		{
+			for (int j = 0; j < 3; ++j)
+			{
+				int x = si + i;
+				int y = sj + j;
+
+				int mask = 1 << (i * 3 + j);
+
+				int used2 = (used | mask);
+
+				if (used2 > used)
+				{
+					mask = 1 << ((x / 2) * 3 + y / 2);
+					if (((x & 1) == 1) || ((y & 1) == 1) || ((used2 & mask) != 0))
+					{
+						res += count_helper(m - 1, n - 1, used2, i, j);
+					}
+				}
+			}
+		}
+
+		return res;
+	}
+
+};
+
+//<--> 352. Data Stream as Disjoint Intervals
+/*
+Given a data stream input of non-negative integers a1, a2, ..., an, ..., 
+
+summarize the numbers seen so far as a list of disjoint intervals.
+
+For example, suppose the integers from the data stream are 1, 3, 7, 2, 6, ..., then the summary will be:
+
+[1, 1]
+[1, 1], [3, 3]
+[1, 1], [3, 3], [7, 7]
+[1, 3], [7, 7]
+[1, 3], [6, 7]
+Follow up:
+What if there are lots of merges and 
+the number of disjoint intervals are small compared to the data stream's size?
+*/
+/**
+* Definition for an interval.
+* struct Interval {
+*     int start;
+*     int end;
+*     Interval() : start(0), end(0) {}
+*     Interval(int s, int e) : start(s), end(e) {}
+* };
+*/
+
+/**
+* Your SummaryRanges object will be instantiated and called as such:
+* SummaryRanges obj = new SummaryRanges();
+* obj.addNum(val);
+* vector<Interval> param_2 = obj.getIntervals();
+*/
+
+class SummaryRanges {
+public:
+	/** Initialize your data structure here. */
+	SummaryRanges() 
+	{
+
+	}
+
+	//notice the differenc between the probem (insert interval) and this problem.
+	//in this problem, [1,1],[2,2],[3,3] is overlapped, since they are continue
+	//int the (insert interval) problem, [1,1],[2,2],[3,3] are not overlapped.
+	void addNum(int val) 
+	{
+		vector<Interval> res;
+
+		Interval cur(val, val);
+
+		int pos = 0;
+
+		for (auto& itv : vi)
+		{
+			if (cur.end + 1 < itv.start) //at left
+			{
+				res.emplace_back(itv.start, itv.end);
+			}
+			else if (itv.end + 1 < cur.start)
+			{
+				res.emplace_back(itv.start, itv.end);
+				++pos; //the insert position;
+			}
+			else
+			{
+				cur.start = min(cur.start, itv.start);
+				cur.end = max(cur.end, itv.end);
+			}
+		}
+
+		res.insert(res.begin() + pos, cur);
+
+		vi = res;
+	}
+
+	vector<Interval> getIntervals() 
+	{
+		return vi;
+	}
+
+private:
+	vector<Interval> vi;
+};
+
+//<--> 	353. Design Snake Game
+/*
+Design a Snake game that is played on a device with screen size = width x height. 
+
+Play the game online if you are not familiar with the game.
+
+The snake is initially positioned 
+
+at the top left corner (0,0) with length = 1 unit.
+
+You are given a list of food's positions in row-column order. 
+
+When a snake eats the food, its length and the game's score both increase by 1.
+
+Each food appears one by one on the screen. 
+
+For example, the second food will not appear 
+until the first food was eaten by the snake.
+
+When a food does appear on the screen, 
+
+it is guaranteed that it will not appear on a block occupied by the snake.
+Example:
+Given width = 3, height = 2, and food = [[1,2],[0,1]].
+
+Snake snake = new Snake(width, height, food);
+
+Initially the snake appears at position (0,0) and the food at (1,2).
+
+|S| | |
+| | |F|
+
+snake.move("R"); -> Returns 0
+
+| |S| |
+| | |F|
+
+snake.move("D"); -> Returns 0
+
+| | | |
+| |S|F|
+
+snake.move("R"); -> Returns 1 (Snake eats the first food and right after that, the second food appears at (0,1) )
+
+| |F| |
+| |S|S|
+
+snake.move("U"); -> Returns 1
+
+| |F|S|
+| | |S|
+
+snake.move("L"); -> Returns 2 (Snake eats the second food)
+
+| |S|S|
+| | |S|
+*/
+class SnakeGame
+{
+public:
+	/** Initialize your data structure here.
+	@param width - screen width
+	@param height - screen height
+	@param food - A list of food positions
+	E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */
+	SnakeGame(int width, int height, vector<pair<int, int>> food)
+	{
+
+	}
+
+	int move(string direction)
+	{
+
 	}
 };
 
