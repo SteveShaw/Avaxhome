@@ -13867,7 +13867,8 @@ public:
 		return res;
 	}
 
-	//O(nlogn)
+	//method2: using binary search.O(nlogn)
+	//notice: dp is not the real LIS array.
 	int lengthOfLIS(vector<int>& nums)
 	{
 		vector<int> dp;
@@ -17827,13 +17828,310 @@ public:
 	@param food - A list of food positions
 	E.g food = [[1,1], [1,0]] means the first food is positioned at [1,1], the second is at [1,0]. */
 	SnakeGame(int width, int height, vector<pair<int, int>> food)
+		:w(width),h(height),food(food)
 	{
-
+		pos.emplace_back( 0, 0 );
+		score = 0;
 	}
+
+	/** Moves the snake.
+	@param direction - 'U' = Up, 'L' = Left, 'R' = Right, 'D' = Down
+	@return The game's score after the move. Return -1 if game over.
+	Game over when snake crosses the screen boundary or bites its body. */
 
 	int move(string direction)
 	{
+		auto head = pos.front();
+		auto tail = pos.back();
 
+		pos.pop_back();
+
+		switch( direction[0] )
+		{
+			case 'R':
+				head.second += 1;
+				break;
+			case 'L':
+				head.second -= 1;
+				break;
+			case 'U':
+				head.first -= 1;
+				break;
+			case 'D':
+				head.first += 1;
+				break;
+		}
+
+		//colide with border
+		if ( head.first < 0 || head.first >= h || head.second < 0 || head.second >= w )
+		{
+			return -1;
+		}
+
+		//colide with itself.
+		if ( count( begin( pos ), end( pos ), head ) )
+		{
+			return -1;
+		}
+
+		pos.insert( pos.begin(), head );
+
+		if ( ( !food.empty() ) && ( food.front() == head ) )
+		{
+			pos.push_back( tail );
+			food.erase( food.begin() );
+			++score;
+		}
+
+		return score;
+	}
+
+private:
+	vector<pair<int, int>> food;
+	vector<pair<int, int>> pos;
+
+	int w;
+	int h;
+	int score;
+};
+
+//<--> 354. Russian Doll Envelopes
+/*
+You have a number of envelopes 
+with widths and heights given as a pair of integers (w, h). 
+One envelope can fit into another 
+if and only if both the width and height of one envelope 
+is greater than the width and height of the other envelope.
+
+What is the maximum number of envelopes can you Russian doll? (put one inside other)
+
+Example:
+Given envelopes = [[5,4],[6,4],[6,7],[2,3]], 
+the maximum number of envelopes 
+you can Russian doll is 3 ([2,3] => [5,4] => [6,7]).
+*/
+//hint: it looks similar to (longest increasing subsequence)
+class Solution 
+{
+public:
+	//method 1: using sort
+	int maxEnvelopes( vector<pair<int, int>>& envelopes )
+	{
+		if ( envelopes.empty() )
+		{
+			return 0;
+		}
+
+		sort( begin( envelopes ), end( envelopes ) );
+
+		vector<int> dp( envelopes.size(), 1 ); //the minimum for each envelop is 1
+		dp[0] = 1;
+
+		int res = 1;
+
+		for ( size_t i = 1; i < envelopes.size(); ++i )
+		{
+			const auto& pi = envelopes[i];
+
+			for ( size_t j = 0; j < i; ++j )
+			{
+				const auto& pj = envelopes[j];
+
+				if ( ( pi.first > pj.first ) && ( pi.second > pj.second ) )
+				{
+					dp[i] = max( dp[j] + 1, dp[i] );
+				}
+			}
+
+			res = max( res, dp[i] );
+		}
+
+		return res;
+	}
+
+	//method 2: binary search (same as 300.)
+	int maxEnvelopes( vector<pair<int, int>>& envelopes )
+	{
+		if ( envelopes.empty() )
+		{
+			return 0;
+		}
+
+		sort( begin( envelopes ), end( envelopes ), [] ( const pair<int, int>& p1, const pair<int, int>& p2 ) {
+
+			if ( p1.first == p2.first )
+			{
+				return p1.second > p2.second;
+			}
+
+			return p1.first < p2.first;
+		});
+
+		vector<int> dp;
+
+		for ( size_t i = 0; i < envelopes.size(); ++i )
+		{
+			size_t left = 0, right = dp.size();
+			int t = envelopes[i].second;
+
+			while ( left < right )
+			{
+				size_t mid = left + ( right - left ) / 2;
+
+				if ( dp[mid] < t )
+				{
+					left = mid + 1;
+				}
+				else
+				{
+					right = mid;
+				}
+			}
+
+			if ( right >= dp.size() )
+			{
+				dp.push_back( t );
+			}
+			else
+			{
+				dp[right] = t;
+			}
+		}
+
+		return dp.size();
+	}
+
+	//method 3: simplify using stl lower_bound
+	int maxEnvelopes( vector<pair<int, int>>& envelopes )
+	{
+		if ( envelopes.empty() )
+		{
+			return 0;
+		}
+
+		sort( begin( envelopes ), end( envelopes ), [] ( const pair<int, int>& p1, const pair<int, int>& p2 ) {
+
+			if ( p1.first == p2.first )
+			{
+				return p1.second > p2.second;
+			}
+
+			return p1.first < p2.first;
+		} );
+
+		vector<int> dp;
+
+		for ( size_t i = 0; i < envelopes.size(); ++i )
+		{
+			int t = envelopes[i].second;
+
+			auto it = lower_bound( begin( dp ), end( dp ), t );
+
+			if ( it == dp.end() )
+			{
+				dp.push_back( t );
+			}
+			else
+			{
+				*it = t;
+			}
+		}
+
+		return dp.size();
+	}
+};
+
+//<--> 355. Design Twitter
+/*
+Design a simplified version of Twitter 
+where users can post tweets, 
+follow/unfollow another user and 
+is able to see the 10 most recent tweets 
+in the user's news feed. 
+Your design should support the following methods:
+
+1. postTweet(userId, tweetId): Compose a new tweet.
+
+2. getNewsFeed(userId): 
+Retrieve the 10 most recent tweet ids 
+in the user's news feed. 
+Each item in the news feed must be posted 
+by users who the user followed or by the user herself. 
+Tweets must be ordered from most recent to least recent.
+
+3. follow(followerId, followeeId): 
+Follower follows a followee.
+
+4. unfollow(followerId, followeeId): 
+Follower unfollows a followee.
+
+Example:
+
+Twitter twitter = new Twitter();
+
+// User 1 posts a new tweet (id = 5).
+twitter.postTweet(1, 5);
+
+// User 1's news feed should 
+// return a list with 1 tweet id -> [5].
+twitter.getNewsFeed(1);
+
+// User 1 follows user 2.
+twitter.follow(1, 2);
+
+// User 2 posts a new tweet (id = 6).
+twitter.postTweet(2, 6);
+
+// User 1's news feed should return 
+// a list with 2 tweet ids -> [6, 5].
+// Tweet id 6 should precede 
+// tweet id 5 because it is posted after tweet id 5.
+twitter.getNewsFeed(1);
+
+// User 1 unfollows user 2.
+twitter.unfollow(1, 2);
+
+// User 1's news feed should return a list with 1 tweet id -> [5],
+// since user 1 is no longer following user 2.
+twitter.getNewsFeed(1);
+*/
+/**
+* Your Twitter object will be instantiated and called as such:
+* Twitter obj = new Twitter();
+* obj.postTweet(userId,tweetId);
+* vector<int> param_2 = obj.getNewsFeed(userId);
+* obj.follow(followerId,followeeId);
+* obj.unfollow(followerId,followeeId);
+*/
+
+class Twitter {
+public:
+	/** Initialize your data structure here. */
+	Twitter() 
+	{
+	}
+
+	/** Compose a new tweet. */
+	void postTweet( int userId, int tweetId )
+	{
+	}
+
+	/** Retrieve the 10 most recent tweet ids in the user's news feed. 
+	Each item in the news feed must be posted 
+	by users who the user followed or by the user herself. 
+	Tweets must be ordered from most recent to least recent. */
+	vector<int> getNewsFeed( int userId )
+	{
+	}
+
+	/** Follower follows a followee. If the operation is invalid, it should be a no-op. */
+	void follow( int followerId, int followeeId )
+	{
+	}
+
+	/** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
+	void unfollow( int followerId, int followeeId )
+	{
 	}
 };
 
