@@ -18109,11 +18109,21 @@ public:
 	/** Initialize your data structure here. */
 	Twitter() 
 	{
+		ts = 0;
 	}
 
 	/** Compose a new tweet. */
 	void postTweet( int userId, int tweetId )
 	{
+		follow(userId, userId); //add myself into my friends;
+
+		if (news.find(userId) == news.end())
+		{
+			news.emplace(userId, map<int, int>());
+		}
+
+		news[userId].emplace(ts, tweetId);
+		++ts;
 	}
 
 	/** Retrieve the 10 most recent tweet ids in the user's news feed. 
@@ -18122,16 +18132,69 @@ public:
 	Tweets must be ordered from most recent to least recent. */
 	vector<int> getNewsFeed( int userId )
 	{
+		auto it = news.find(userId);
+		if (it == news.end())
+		{
+			return{};
+		}
+
+		map<int, int> visit;
+
+		//go over all friends
+		for (auto& fr : friends[userId])
+		{
+			for (auto& p : news[fr])
+			{
+				if (!visit.empty())
+				{
+					if ((visit.begin()->first > p.first) && (visit.size() > 10))
+					{
+						break; //find latest news in the next friend.
+					}
+				}
+
+				visit.emplace(p.first, p.second);
+
+				if (visit.size() > 10)
+				{
+					visit.erase(visit.begin());
+				}
+			}
+		}
+
+		vector<int> res;
+
+		for (auto rit = visit.rbegin(); rit != visit.rend(); ++rit)
+		{
+			res.push_back(rit->second);
+		}
 	}
 
 	/** Follower follows a followee. If the operation is invalid, it should be a no-op. */
 	void follow( int followerId, int followeeId )
 	{
+		if (friends.find(followerId) == friends.end())
+		{
+			friends.emplace(followerId, set<int>());
+		}
+
+		friends[followerId].insert(followeeId);
 	}
 
 	/** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
 	void unfollow( int followerId, int followeeId )
 	{
+		if (followeeId != followerId)
+		{
+			friends[followerId].erase(followeeId);
+		}
 	}
+
+private:
+	int ts; //timestamp: larger means newer
+
+	unordered_map<int, set<int>> friends;
+
+	unordered_map<int, map<int, int>> news;
 };
 
