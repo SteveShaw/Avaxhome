@@ -18041,7 +18041,7 @@ public:
 	}
 };
 
-//<--> 355. Design Twitter
+//<--> 355. Design Twitter (M)
 /*
 Design a simplified version of Twitter 
 where users can post tweets, 
@@ -18117,12 +18117,8 @@ public:
 	{
 		follow(userId, userId); //add myself into my friends;
 
-		if (news.find(userId) == news.end())
-		{
-			news.emplace(userId, map<int, int>());
-		}
+		news[userId].emplace( ts, tweetId );
 
-		news[userId].emplace(ts, tweetId);
 		++ts;
 	}
 
@@ -18132,16 +18128,17 @@ public:
 	Tweets must be ordered from most recent to least recent. */
 	vector<int> getNewsFeed( int userId )
 	{
-		auto it = news.find(userId);
-		if (it == news.end())
+		auto it = friends.find( userId );
+
+		if ( it == friends.end() )
 		{
 			return{};
 		}
 
-		map<int, int> visit;
+		map<int, int> m;
 
-		//go over all friends
-		for (auto& fr : friends[userId])
+		//go over all friends.
+		for ( auto & fr : it->second )
 		{
 			for (auto& p : news[fr])
 			{
@@ -18173,20 +18170,22 @@ public:
 	/** Follower follows a followee. If the operation is invalid, it should be a no-op. */
 	void follow( int followerId, int followeeId )
 	{
-		if (friends.find(followerId) == friends.end())
-		{
-			friends.emplace(followerId, set<int>());
-		}
-
-		friends[followerId].insert(followeeId);
+		friends[followerId].insert( followeeId );
 	}
 
 	/** Follower unfollows a followee. If the operation is invalid, it should be a no-op. */
 	void unfollow( int followerId, int followeeId )
 	{
-		if (followeeId != followerId)
+		auto it = friends.find( followerId );
+
+		if ( it == friends.end() )
 		{
-			friends[followerId].erase(followeeId);
+			return;
+		}
+
+		if ( followeeId != followerId )
+		{
+			it->second.erase( followeeId );
 		}
 	}
 
@@ -18197,4 +18196,320 @@ private:
 
 	unordered_map<int, map<int, int>> news;
 };
+
+//<--> 	356. Line Reflection (M)($)
+/*
+Given n points on a 2D plane, 
+find if there is such a line parallel to y-axis that reflect the given set of points.
+
+Example 1:
+Given points = [[1,1],[-1,1]], return true.
+
+Example 2:
+Given points = [[1,1],[-1,-1]], return false.
+
+Follow up:
+Could you do better than O(n^2)?
+
+Hint:
+
+1. Find the smallest and largest x-value for all points.
+2. If there is a line then it should be at y = (minX + maxX) / 2.
+3. For each point, make sure that it has a reflected point in the opposite side.
+*/
+class Solution {
+public:
+	bool isReflected( vector<pair<int, int>>& points )
+	{
+	}
+};
+
+//<--> 357. Count Numbers with Unique Digits (M)
+/*
+Given a non-negative integer n, 
+count all numbers with unique digits, x, where 0 <= x < 10^n.
+
+Example:
+Given n = 2, return 91. (
+The answer should be the total numbers in the range of 0 <= x < 100, 
+excluding [11,22,33,44,55,66,77,88,99])
+*/
+class Solution {
+public:
+	//using backtracking: requires a flag array or number to indicate if current item is used
+	int countNumbersWithUniqueDigits( int n ) 
+	{
+		int maxN = 1;
+
+		for ( int i = 0; i < n; ++i )
+		{
+			maxN *= 10;
+		}
+
+		int count = 1; //include zero
+		int used = 0;
+
+		for ( int i = 1; i <= 9; ++i ) //start from 1
+		{
+			used |= (1 << i);
+			count += dfs( i, maxN, used );
+			used &= (~(1 << i));
+		}
+
+		return count;
+	}
+
+	int dfs( int prev, int maxN, int used )
+	{
+		int res = 0;
+
+		if ( prev >= maxN )
+		{
+			return res;
+		}
+
+		++res; //we need to set res = 1 to include prev
+
+		for ( int i = 0; i <= 9; ++i )
+		{
+			if ( (used & (1 << i)) == 0 )
+			{
+				used |= (1 << i); //set i to be visited
+
+				int num = prev * 10 + i;
+
+				res += dfs( num, maxN, used );
+
+				used &= (~(1 << i)); //set i to be not visited.
+			}
+		}
+
+		return res;
+	}
+};
+
+//<--> 358. Rearrange String k Distance Apart (H)($)
+/*
+Given a non-empty string str and an integer k, 
+rearrange the string such that the same characters are at least distance k from each other.
+
+All input strings are given in lowercase letters. 
+If it is not possible to rearrange the string, return an empty string "".
+
+Example 1:
+str = "aabbcc", k = 3
+
+Result: "abcabc"
+
+The same letters are at least distance 3 from each other.
+Example 2:
+str = "aaabc", k = 3
+
+Answer: ""
+
+It is not possible to rearrange the string.
+Example 3:
+str = "aaadbbcc", k = 2
+
+Answer: "abacabcd"
+
+Another possible answer is: "abcabcda"
+
+The same letters are at least distance 2 from each other.
+*/
+class Solution {
+public:
+	string rearrangeString( string str, int k )
+	{
+	}
+};
+
+//<--> 359. Logger Rate Limiter
+/*
+Design a logger system that receive stream of messages 
+
+along with its timestamps, 
+
+each message should be printed if and only 
+
+if it is not printed in the last 10 seconds.
+
+Given a message and a timestamp (in seconds granularity), 
+
+return true if the message should be printed in the given timestamp, otherwise returns false.
+
+It is possible that several messages arrive roughly at the same time.
+
+Example:
+
+Logger logger = new Logger();
+
+// logging string "foo" at timestamp 1
+logger.shouldPrintMessage(1, "foo"); returns true;
+
+// logging string "bar" at timestamp 2
+logger.shouldPrintMessage(2,"bar"); returns true;
+
+// logging string "foo" at timestamp 3
+logger.shouldPrintMessage(3,"foo"); returns false;
+
+// logging string "bar" at timestamp 8
+logger.shouldPrintMessage(8,"bar"); returns false;
+
+// logging string "foo" at timestamp 10
+logger.shouldPrintMessage(10,"foo"); returns false;
+
+// logging string "foo" at timestamp 11
+logger.shouldPrintMessage(11,"foo"); returns true;
+*/
+class Logger {
+public:
+	Logger() {}
+
+	bool shouldPrintMessage( int timestamp, string message )
+	{
+
+	}
+
+
+};
+
+//<--> 	360. Sort Transformed Array (M)($)
+/*
+Given a sorted array of integers nums and integer values a, b and c. 
+Apply a function of the form f(x) = ax^2 + bx + c to each element x in the array.
+
+The returned array must be in sorted order.
+
+Expected time complexity: O(n)
+
+Example:
+nums = [-4, -2, 2, 4], a = 1, b = 3, c = 5,
+
+Result: [3, 9, 15, 33]
+
+nums = [-4, -2, 2, 4], a = -1, b = 3, c = 5
+
+Result: [-23, -5, 1, 7]
+*/
+class Solution {
+public:
+	vector<int> sortTransformedArray( vector<int>& nums, int a, int b, int c )
+	{
+	}
+};
+
+//<--> 361. Bomb Enemy
+/*
+Given a 2D grid, each cell is either a wall 'W', an enemy 'E' or empty '0' 
+(the number zero), 
+return the maximum enemies you can kill using one bomb.
+The bomb kills all the enemies in the same row and column 
+from the planted point until it hits the wall 
+since the wall is too strong to be destroyed.
+Note that you can only put the bomb at an empty cell.
+
+Example:
+For the given grid
+
+0 E 0 0
+E 0 W E
+0 E 0 0
+
+return 3. (Placing a bomb at (1,1) kills 3 enemies)
+Credits:
+*/
+class Solution {
+public:
+	int maxKilledEnemies( vector<vector<char>>& grid )
+	{
+	}
+};
+
+//<--> 362. Design Hit Counter (M)($)
+/*
+Design a hit counter which counts the number of hits received in the past 5 minutes.
+
+Each function accepts a timestamp parameter (in seconds granularity) 
+
+and you may assume that calls are being made to the system 
+
+in chronological order (ie, the timestamp is monotonically increasing). 
+
+You may assume that the earliest timestamp starts at 1.
+
+It is possible that several hits arrive roughly at the same time.
+
+Example:
+HitCounter counter = new HitCounter();
+
+// hit at timestamp 1.
+counter.hit(1);
+
+// hit at timestamp 2.
+counter.hit(2);
+
+// hit at timestamp 3.
+counter.hit(3);
+
+// get hits at timestamp 4, should return 3.
+counter.getHits(4);
+
+// hit at timestamp 300.
+counter.hit(300);
+
+// get hits at timestamp 300, should return 4.
+counter.getHits(300);
+
+// get hits at timestamp 301, should return 3.
+counter.getHits(301);
+Follow up:
+What if the number of hits per second could be very large? Does your design scale?
+*/
+class HitCounter {
+public:
+	/** Initialize your data structure here. */
+	HitCounter() {}
+
+	/** Record a hit.
+	@param timestamp - The current timestamp (in seconds granularity). */
+	void hit( int timestamp )
+	{
+	}
+
+	/** Return the number of hits in the past 5 minutes.
+	@param timestamp - The current timestamp (in seconds granularity). */
+	int getHits( int timestamp )
+	{
+
+	}
+};
+
+//<--> 363. Max Sum of Rectangle No Larger Than K (H)
+/*
+Given a non-empty 2D matrix matrix and an integer k, 
+find the max sum of a rectangle in the matrix such that its sum is no larger than k.
+
+Example:
+Given matrix =
+[
+	[1,  0, 1],
+	[0, -2, 3]
+]
+k = 2
+The answer is 2. Because the sum of rectangle [[0, 1], [-2, 3]] 
+is 2 and 2 is the max number no larger than k (k = 2).
+
+Note:
+The rectangle inside the matrix must have an area > 0.
+What if the number of rows is much larger than the number of columns?
+*/
+class Solution {
+public:
+	int maxSumSubmatrix( vector<vector<int>>& matrix, int k )
+	{
+	}
+};
+
+
 
