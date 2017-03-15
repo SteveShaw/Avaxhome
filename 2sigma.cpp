@@ -1,4 +1,4 @@
-/*
+
 Phone Screen - someone from infrastructure team 
 1, resume 
 2, Given an application that a class with big data, 
@@ -32,7 +32,7 @@ If we have multiple processor,
 how do u improve that If we have multiple machines, how do we apply 
 
 3, Java find bug, multimap implements a map interface and inherits other abstract map
-*/
+
 
 /*
 I have a one hour phone screen. 
@@ -54,6 +54,12 @@ plus one algorithm implementation.
 6. Given a stream of numbers, how would you calculate the median (used 2 heaps, question is on Leetcode) 
 
 */
+Coding question: You are given an iterator, 
+use it to write an iterator that returns multiples of 5. 
+(write the next () and hasNext () functions).   
+My recruiter sent me An email a couple of hours 
+after my interview to tell me that the feedback is positive. They move really fast.  
+
 
 /*
 http://www.themianjing.com/?s=two+sigma
@@ -167,3 +173,56 @@ in response to another dynamic invocation implemented in a separate class.
 The visitor pattern therefore provides the mechanism for dispatching messages 
 based on a combination of two objects, instead of the single object-based dispatch that is common with OO languages.
 */
+
+Roman numeral validation
+
+http://stackoverflow.com/questions/267399/how-do-you-match-only-valid-roman-numerals-with-a-regular-expression
+
+
+Composite Pattern:
+1. Composite pattern is used where we need to  treat a group of objects in similar way as a single object.
+2. Composite pattern composes objects in term of a tree structure to represent part as well as whole hierarchy. 
+3. This type of design pattern comes under structural pattern as this pattern creates a tree structure of group of objects.
+4. This pattern creates a class that contains group of its own objects.
+	4.1. This class provides ways to modify its group of same objects.
+	
+The Composite pattern provides a way to 
+represent a part-whole relationship 
+where the client can ignore the difference 
+between individual objects and compositions of objects.  
+The key elements of the Composite pattern are the leaf and the composite:
+
+The leaf defines the behavior for primitive objects in the composition.
+The composite defines the behavior for components consisting of leaves.
+
+DFS and BFS Graph Clone
+http://blog.csdn.net/cinderella_niu/article/details/43232887
+
+先是project介绍，我大概说了20分钟。我挑的是去年暑假实习的project, 
+结果说了18分钟左右。面试官说，你这个project好复杂啊，你3个月能做完么。（面试官之前在我实习公司干了2年）。
+我说我实习被延长了几周当苦力，
+有的时候一周干70小时，还有100小时的时候。 
+面试官表示惊讶，说你这个project做的很不错啊，还投入使用了。
+面试表示，我的project应该是1个full-time大概半年的量。. 
+解释一下lz这个project, 垮了3个大的framework，
+前后端+databse+security的full stack，
+并且code test coverage 80%+ field testing。 
+主要backend 是java和perl, 也写了很多前端， 写了5周spring, 写了2周jqeury, 1周ajax，1周html, css， 1周android等等等。
+
+然后就是开始那些问答题了，顺序我记得不太多。 面前知道几个人答的还不错的，
+都挂了电面。有的告诉我follow up问的很细节，答的不好会挂。我就准备的很深。以至于，
+面试官问我 ipc, itc是怎么相互通信的。lz说了，我分别知道3到4种通信，然后先开始定义概念，
+然后比较每种通信方式的发展历史，和什么情况用哪种，哪写operating system, framework在用哪些。 
+然后面试官说，你懂的真多。回答足够了，就打断了lz。
+然后还问了design pattern， 我从实践里面分析了各种design pattern。
+还问了多线程， deadlock, startvation等，就是简单的回答概念和例子。
+问了latency和throughput， 我用例子回答的，我说我做过latency的testing。
+还问了procee 和thread的区别，我先范讲概念和区别，然后深入解释，说为什么operating system这么设计，面试官打断，说足够了。
+coding是moving average, median 和还有一个忘了，很简单，我回答的hashmap， 说如果信息量大怎么办，我回答的多大机器同时处理。
+然后和面试官聊了大概15分钟。
+3天左右收到onsite。 
+http://www.1point3acres.com/bbs/thread-226426-2-1.html
+
+https://en.wikipedia.org/wiki/Starvation_(computer_science)
+https://en.wikipedia.org/wiki/Thread_(computing)#Multithreading
+https://en.wikipedia.org/wiki/Inter-process_communication
