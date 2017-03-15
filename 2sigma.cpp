@@ -89,3 +89,31 @@ bool hasNext()
 	return false;
 }
 
+coding
+判断罗马数字是不是valid的，如果valid 就转化成普通数字。
+lz蛋疼了….不动罗马数字的规则，只知道leetcode上有转化成数字的，但是不会判断valid 否。
+
+
+http://codereview.stackexchange.com/questions/88644/checking-for-roman-numeral-validity
+
+
+1.
+a. reverse polish notation, 然后引申到怎么做比较generatic, 用户要添加任意的计算字符
+提示： design pattern
+b. 给你一段写好的代码，就说一个树的结构，每一个node都指向了它的parent,给你一个index，要你删除所有它的子树
+2.
+a. 两个 independent queue,
+每个 queue 都存着 timestamp,只能有 getNext()来取 queue
+里面的 timestamp,每个 timestamp 只能被取一次,比较这两个 queue 里的 timestamp,如
+果差值<1,print 这两个 timestamp。
+例如: Q1 0.2, 1.4, 3.0 Q2 1.0 1.1, 3.5 
+output: (0.2, 1.0), (1.4, 1.0), (0.2, 1.1), (1.4, 1.1), (3.0, 3.5) 
+提示： 多线程， 一个线程负责queue1, 一个负责queue2 写伪代码就行 
+b. 一个网站用户访问特别慢，怎么解决，分析各种可能原因 
+3. wildcard matching 先写junit test case, 
+再写代码 三轮都是中国人，LZ水平太烂木有珍惜。
+感觉two sigma非常高大上，选人标准也很strict，pkg很好~也不是很累。
+题目基本都是面经题，会解没用，还会问的很深入。
+上午过了下午见了VP过得可能性比较大。 
+然后面试条件很好，送很多东西，
+给订了三晚上酒店，每天吃的报100刀，LZ旅游的很爽~大家可以去试试。 
