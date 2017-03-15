@@ -18511,5 +18511,105 @@ public:
 	}
 };
 
+//<--> 	364. Nested List Weight Sum II (M)($)
+/*
+Given a nested list of integers, 
 
+return the sum of all integers in the list weighted by their depth.
 
+Each element is either an integer, 
+
+or a list -- whose elements may also be integers or other lists.
+
+Different from the previous question where weight is increasing 
+
+from root to leaf, now the weight is defined from bottom up. i.e., 
+
+the leaf level integers have weight 1, and the root level integers have the largest weight.
+
+Example 1:
+Given the list [[1,1],2,[1,1]], return 8. (four 1's at depth 1, one 2 at depth 2)
+
+Example 2:
+Given the list [1,[4,[6]]], return 17. 
+(one 1 at depth 3, one 4 at depth 2, and one 6 at depth 1; 1*3 + 4*2 + 6*1 = 17)
+*/
+class Solution {
+public:
+	int depthSumInverse(vector<NestedInteger>& nestedList)
+	{
+	}
+};
+
+//<--> 365. Water and Jug Problem (M)
+/*
+You are given two jugs with capacities x and y litres. 
+
+There is an infinite amount of water supply available. 
+
+You need to determine whether it is possible to measure exactly z litres using these two jugs.
+
+If z liters of water is measurable, 
+
+you must have z liters of water contained within one or both buckets by the end.
+
+Operations allowed:
+
+Fill any of the jugs completely with water.
+Empty any of the jugs.
+Pour water from one jug into another till the other jug is completely full or the first jug itself is empty.
+Example 1: (From the famous "Die Hard" example)
+
+Input: x = 3, y = 5, z = 4
+Output: True
+Example 2:
+
+Input: x = 2, y = 6, z = 5
+Output: False
+*/
+class Solution {
+public:
+
+	//z=mx+ny: so z must be multiple of gcd(x,y)
+	bool canMeasureWater(int x, int y, int z) 
+	{
+		auto d = gcd(x, y);
+
+		return ( z == 0 || ((x + y >= z) && ((z%d) == 0) );
+	}
+
+	int gcd(x, y)
+	{
+		return y == 0 ? x : gcd(y, x%y);
+	}
+};
+
+//<--> 366. Find Leaves of Binary Tree
+/*
+Given a binary tree, 
+find all leaves and then remove those leaves. 
+Then repeat the previous steps until the tree is empty.
+
+Example:
+Given binary tree
+1
+/ \
+2   3
+/ \
+4   5
+Returns [4, 5, 3], [2], [1].
+
+Explanation:
+1. Remove the leaves [4, 5, 3] from the tree
+
+1
+/
+2
+2. Remove the leaf [2] from the tree
+
+1
+3. Remove the leaf [1] from the tree
+
+[]
+Returns [4, 5, 3], [2], [1].
+*/
