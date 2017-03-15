@@ -117,3 +117,53 @@ b. 一个网站用户访问特别慢，怎么解决，分析各种可能原因
 上午过了下午见了VP过得可能性比较大。 
 然后面试条件很好，送很多东西，
 给订了三晚上酒店，每天吃的报100刀，LZ旅游的很爽~大家可以去试试。 
+
+
+/*
+Observer pattern :     
+
+Factory method : 
+
+A factory method is a design pattern that allows objects to be created in a polymorphic way, 
+so the client doesn’t need to know the exact type of the returned object, 
+only the base class that provides the desired interface.
+
+It also helps to hide a complex set of creation steps to instantiate particular classes.
+
+In the factory method design pattern, 
+the objective is to hide the complexity and introduce indirection 
+when creating an instance of a particular class. 
+Instead of asking clients to perform the initialization steps, 
+factory methods provide a simple interface that can be called to create the object and return a reference.
+
+
+Singleton : 
+
+The singleton pattern is used to model situations
+in which you know that only one instance of a particular class can validly exist. 
+This is a situation that occurs in several applications, and in finance, 
+I present the example of a clearing house for options trading.
+
+A singleton is a class that can have at most one active instance. 
+The singleton design pattern is used to control access to this single object 
+and avoid creating copies of this unique instance.
+
+Observer : 
+Another common application of design patterns is in processing financial events
+such as trades.
+The observer design patterns allows you to decouple the classes that receive trading
+transactions from the classes that process the results, which are the observers.
+
+Through the observer design pattern, it is possible to simplify the logic and the amount of code necessary 
+to support these common operations, such as the development of a trading ledger, for example.
+
+The observer pattern allows objects to receive notifications for important events 
+occurring in the system. This pattern also reduces the coupling between objects in the system, 
+since the generator of notification events doesn’t need to know the details of the observers.
+
+Visitor : 
+The visitor patter allows a member function of an object to be called 
+in response to another dynamic invocation implemented in a separate class. 
+The visitor pattern therefore provides the mechanism for dispatching messages 
+based on a combination of two objects, instead of the single object-based dispatch that is common with OO languages.
+*/
