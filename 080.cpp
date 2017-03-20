@@ -13415,23 +13415,35 @@ findMedian() -> 2
 
 class MedianFinder {
 public:
-    /** initialize your data structure here. */
-    MedianFinder() 
+	/** initialize your data structure here. */
+	MedianFinder() 
+	{
+
+	}
+
+	void addNum(int num) 
+	{
+
+		min_pq.push(num);
+		max_pq.push(min_pq.top());
+		min_pq.pop();
+
+		if (min_pq.size() < max_pq.size())
 		{
-    }
-    
-    void addNum(int num)
-		{
-    }
-    
-    double findMedian()
-		{
-			
-    }
-		
-		private:
-		
-		
+			min_pq.push(max_pq.top());
+			max_pq.pop();
+		}
+	}
+
+	double findMedian() 
+	{
+		return min_pq.size() > max_pq.size() ? min_pq.top() : (0.5*(max_pq.top() + min_pq.top()));
+	}
+
+private:
+
+	priority_queue<int> min_pq;
+	priority_queue<int, vector<int>, greater<int>> max_pq;
 };
 
 /**
@@ -18319,8 +18331,71 @@ The same letters are at least distance 2 from each other.
 */
 class Solution {
 public:
+	//相当于按照次数多少从最多的开始逐个放入目标字符串中。
 	string rearrangeString( string str, int k )
 	{
+		if (k == 0)
+		{
+			return str;
+		}
+
+		unordered_map<char, int> m;
+		for (auto c : str)
+		{
+			if (m.find(c) == m.end())
+			{
+				m[c] = 0;
+			}
+
+			++m[c];
+		}
+
+		priority_queue<pair<int, char>> pq;
+
+		for (const auto & p : m)
+		{
+			pq.emplace(p.second, p.first);
+		}
+
+		int L = str.size();
+
+		string res;
+
+		while (!pq.empty())
+		{
+			vector<pair<int, char>> v;
+
+			int len = min(k, L);
+
+			for (int i = 0; i < len; ++i)
+			{
+				if (pq.empty())
+				{
+					return "";
+				}
+
+				auto t = pq.top();
+				pq.pop();
+
+				res.push_back(t.second);
+
+				--t.first;
+
+				if (t.first > 0)
+				{
+					v.emplace_back(t.first, t.second);
+				}
+
+				--L; //we already added a character, the lenght will be decrement by one.
+			}
+
+			for (auto &p : v)
+			{
+				pq.emplace(p.first, p.second);
+			}
+		} //end while
+
+		return res;
 	}
 };
 
@@ -18392,10 +18467,87 @@ nums = [-4, -2, 2, 4], a = -1, b = 3, c = 5
 
 Result: [-23, -5, 1, 7]
 */
+/*
+对于一个方程f(x) = ax2 + bx + c 来说，
+如果a>0，则抛物线开口朝上，那么两端的值比中间的大，
+而如果a<0，则抛物线开口朝下，则两端的值比中间的小。
+而当a=0时，则为直线方法，是单调递增或递减的。
+那么我们可以利用这个性质来解题，题目中说明了给定数组nums是有序的，
+
+根据a来分情况讨论：
+
+当a>0，说明两端的值比中间的值大，那么此时我们从结果res后往前填数，
+
+用两个指针分别指向nums数组的开头和结尾，指向的两个数就是抛物线两端的数，
+
+将它们之中较大的数先存入res的末尾，然后指针向中间移，重复比较过程，直到把res都填满。
+
+当a<0，说明两端的值比中间的小，
+那么我们从res的前面往后填，
+用两个指针分别指向nums数组的开头和结尾，
+指向的两个数就是抛物线两端的数，
+将它们之中较小的数先存入res的开头，然后指针向中间移，重复比较过程，直到把res都填满。
+
+当a=0，函数是单调递增或递减的，那么从前往后填和从后往前填都可以，我们可以将这种情况和a>0合并。
+*/
 class Solution {
 public:
 	vector<int> sortTransformedArray( vector<int>& nums, int a, int b, int c )
 	{
+		int left = 0;
+		int right = nums.size() - 1;
+
+		vector<int> res(nums.size(), 0);
+
+		int start = a >= 0 ? right : 0;
+
+		auto poly = [a, b, c](int n) {
+
+			return a*n*n + b*n + c;
+		};
+
+		if (a >= 0)
+		{
+			while (left < right)
+			{
+				auto l = poly(nums[left]);
+				auto r = poly(nums[right]);
+
+				if (l < r)
+				{
+					res[start--] = r; //大的放后面
+					--right;
+				}
+				else
+				{
+					res[start--] = l;
+					++left;
+				}
+			}
+		}
+		else
+		{
+			while (left < right)
+			{
+				auto l = poly(nums[left]);
+				auto r = poly(nums[right]);
+
+				if (l < r)
+				{
+					res[start++] = l; //小的放前面
+					++left;
+				}
+				else
+				{
+					res[start++] = r;
+					++right;
+				}
+			}
+
+		}
+
+		return res;
+
 	}
 };
 
@@ -18419,10 +18571,66 @@ E 0 W E
 return 3. (Placing a bomb at (1,1) kills 3 enemies)
 Credits:
 */
+
+/*
+需要一个rowCnt变量，用来记录到下一个墙之前的敌人个数。
+还需要一个数组colCnt，其中colCnt[j]表示第j列到下一个墙之前的敌人个数。
+算法思路是遍历整个数组grid，对于一个位置grid[i][j]，
+对于水平方向，如果当前位置是开头一个或者前面一个是墙壁，
+我们开始从当前位置往后遍历，遍历到末尾或者墙的位置停止，
+计算敌人个数。对于竖直方向也是同样，
+如果当前位置是开头一个或者上面一个是墙壁，
+我们开始从当前位置向下遍历，遍历到末尾或者墙的位置停止，
+计算敌人个数。有了水平方向和竖直方向敌人的个数，
+那么如果当前位置是0，表示可以放炸弹，我们更新结果res即可
+*/
 class Solution {
 public:
 	int maxKilledEnemies( vector<vector<char>>& grid )
 	{
+		if (grid.empty() || grid[0].empty())
+		{
+			return 0;
+		}
+
+		int rows = grid.size();
+		int cols = grid[0].size();
+
+		int row_count = 0;
+
+		vector<int> col_count(cols, 0);
+
+		int res = 0;
+
+		for (int r = 0; r < rows; ++r)
+		{
+			for (int c = 0; c < cols; ++c)
+			{
+				if ((c == 0) || (grid[r][c - 1] == 'W'))
+				{
+					row_count = 0;
+
+					for (int k = 0; (k < cols) && (grid[r][k] != 'W'); ++k)
+					{
+						row_count += (grid[r][k] == 'E' ? 1 : 0);
+					}
+				}
+
+				if ((r == 0) || (grid[r-1][c] == 'W'))
+				{
+					col_count[c] = 0;
+
+					for (int k = 0; (k < rows) && (grid[k][c] != 'W'); ++k)
+					{
+						col_count[c] += (grid[k][c] == 'E' ? 1 : 0);
+					}
+				}
+
+				res = max(res, row_count + col_count[c]);
+			}
+		}
+
+		return res;
 	}
 };
 
