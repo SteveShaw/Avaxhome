@@ -125,7 +125,7 @@ b. 一个网站用户访问特别慢，怎么解决，分析各种可能原因
 给订了三晚上酒店，每天吃的报100刀，LZ旅游的很爽~大家可以去试试。 
 
 
-/*
+
 Observer pattern :     
 
 Factory method : 
@@ -155,6 +155,14 @@ The singleton design pattern is used to control access to this single object
 and avoid creating copies of this unique instance.
 
 Observer : 
+The Observer pattern facilitates communication 
+between a parent class and any dependent child classes, 
+allowing changes to the state of the parent class 
+to be sent to the dependent child classes. 
+We can use this pattern to allow the state changes 
+in a class to be sent to all its dependent classes. 
+The class relationship is one-to-many between the class and all its dependents.
+
 Another common application of design patterns is in processing financial events
 such as trades.
 The observer design patterns allows you to decouple the classes that receive trading
@@ -170,9 +178,23 @@ since the generator of notification events doesn’t need to know the details of
 Visitor : 
 The visitor patter allows a member function of an object to be called 
 in response to another dynamic invocation implemented in a separate class. 
+The Visitor pattern allows changes or additions to a class’s structure 
+without changing the actual class.
 The visitor pattern therefore provides the mechanism for dispatching messages 
 based on a combination of two objects, instead of the single object-based dispatch that is common with OO languages.
-*/
+
+The visitor pattern is popular in financial software designs for two of its features: 
+1. It allows us to extend the functionality of classes without modifying their structure or interface.
+2. It provides a viable solution to the lack of double dispatch in common object-oriented languages 
+like Java and C++, which provide only single dispatch through virtual functions. 
+In single dispatch, the compiler chooses the right function at run-time using the dynamic type of calling object.
+
+In order to give us the flexibility of adding new operations to classes, 
+the visitor pattern lets us separate their structure from their algorithms.
+
+
+//Go Design Patterns
+//Principles of Quantitative Development
 
 Roman numeral validation
 
@@ -226,3 +248,24 @@ http://www.1point3acres.com/bbs/thread-226426-2-1.html
 https://en.wikipedia.org/wiki/Starvation_(computer_science)
 https://en.wikipedia.org/wiki/Thread_(computing)#Multithreading
 https://en.wikipedia.org/wiki/Inter-process_communication
+
+Starvation
+
+	Starvation describes a situation where a thread is unable to gain regular access to shared resources 
+	and is unable to make progress. This happens when shared resources are made unavailable 
+	for long periods by "greedy" threads. 
+	For example, suppose an object provides a synchronized method that often takes a long time to return. 
+	If one thread invokes this method frequently, other threads that also need frequent synchronized 
+	access to the same object will often be blocked.
+
+Livelock
+
+	A thread often acts in response to the action of another thread. 
+	If the other thread's action is also a response to the action of another thread, 
+	then livelock may result. 
+	As with deadlock, livelocked threads are unable to make further progress. 
+	However, the threads are not blocked — they are simply too busy responding to each other to resume work. 
+	This is comparable to two people attempting to pass each other in a corridor: 
+	Alphonse moves to his left to let Gaston pass, while Gaston moves to his right to let Alphonse pass. 
+	Seeing that they are still blocking each other, Alphone moves to his right, 
+	while Gaston moves to his left. They're still blocking each other, so...
