@@ -1,0 +1,130 @@
+Table:
+1. C++ Memory Area
+2. C++ Class/Struct Memory Layout vs C struct
+3. Can I throw an exception from a constructor? From a destructor? https://isocpp.org/wiki/faq/exceptions#ctors-can-throw
+4. What is stack unwinding?
+5. Is virtual table per object or per class?
+6. static_cast, reinterpret_cast
+7. More on reinterpret_cast, static_cast
+8. std::move vs std::forward
+
+1. C++ Memory Area:
+	1.1 Const Data: The const data area stores string literals and other data whose values are known at compile-time. No objects of class type can exist in this area. All data in this area is available during the entire lifetime of the program. Further, all this data is read-only, and the results of trying to modify it are undefined. This is in part because even the underlying storage format is subject to arbitrary optimization by the implementation. For example, a particular compiler may choose to store string literals in overlapping objects as an optional optimization.
+	1.2 Stack	The stack stores automatic variables. Objects are constructed immediately at the point of definition and destroyed immediately at the end of the same scope, so there is no opportunity for programmers to directly manipulate allocated but uninitialized stack space (barring willful tampering using explicit destructors and placement new). Stack memory allocation is typically much faster than for dynamic storage (heap or free store) because each stack memory allocation involves only a stack pointer increment rather than more-complex management.
+	1.3 Free Store	The free store is one of the two dynamic memory areas allocated/freed by new/delete. Object lifetime can be less than the time the storage is allocated. That is, free store objects can have memory allocated, without being immediately initialized, and they can be destroyed, without the memory being immediately deallocated. During the period when the storage is allocated but outside the object's lifetime, the storage may be accessed and manipulated through a void*, but none of the proto-object's nonstatic members or member functions may be accessed,have their addresses taken, or be otherwise manipulated.
+	1.4 Heap	The heap is the other dynamic memory area allocated/freed by malloc()/free() and their variants. Note that while the default global operators new and delete might be implemented in terms of malloc() and free() by a particular compiler, the heap is not the same as free store, and memory allocated in one area cannot be safely deallocated in the other. Memory allocated from the heap can be used for objects of class type by placement new construction and explicit destruction. If so used, the notes about free store object lifetime apply similarly here.
+	1.5 Global/Static Global or static variables and objects have their storage allocated at program startup, but may not be initialized until after the program has begun executing. For instance, a static variable in a function is initialized only the first time program execution passes through its definition. The order of initialization of global variables across translation units is not defined, and special care is needed to manage dependencies between global objects (including class statics). As always, uninitialized proto-objects' storage may be accessed and manipulated through a void*, but no nonstatic members or member functions may be used or referenced outside the object's actual lifetime.
+
+2. C++ Class/Struct Memory Layout vs C struct
+
+The C++ standard guarantees that memory layouts of a C struct and a C++ class (or struct -- same thing) will be identical, provided that the C++ class/struct fits the criteria of being POD ("Plain Old Data"). So what does POD mean?
+
+A class or struct is POD if:
+
+All data members are public and themselves POD or fundamental types (but not reference or pointer-to-member types), or arrays of such
+It has no user-defined constructors, assignment operators or destructors
+It has no virtual functions
+It has no base classes
+About the only "C++-isms" allowed are non-virtual member functions, static members and member functions.
+
+Since your class has both a constructor and a destructor, it is formally speaking not of POD type, so the guarantee does not hold. (Although, as others have mentioned, in practice the two layouts are likely to be identical on any compiler that you try, so long as there are no virtual functions).
+
+3. Can I throw an exception from a constructor? From a destructor?
+	3.1 For constructors, yes: You should throw an exception from a constructor whenever you cannot properly initialize (construct) an object. There is no really satisfactory alternative to exiting a constructor by a throw. For more details, see here.
+	3.2 For destructors, not really: You can throw an exception in a destructor, but that exception must not leave the destructor; if a destructor exits by emitting an exception, all kinds of bad things are likely to happen because the basic rules of the standard library and the language itself will be violated. Don’t do it. For more details, see here.
+
+	
+4. What is stack unwinding?
+When an exception is thrown and control passes from a try block to a handler, 
+the C++ run time calls destructors for all automatic objects constructed 
+since the beginning of the try block. 
+This process is called stack unwinding. 
+The automatic objects are destroyed in reverse order of their construction.
+
+5. Is virtual table per object or per class?
+	It is implementation defined, but it is typically a static vtable per class, and each instance has a vptr to the vtable for the class. The reason each instance needs the pointer is because the compiler may not know at compile time which concrete implementation a particular variable is going to be, so a pointer to the relevant vtable has to be deterministically accessible from the reference. Hence the whole point of having a vtable :)
+	Simply put: Virtual table is per class. Virtual pointer is per object. See here http://www.go4expert.com/articles/virtual-table-vptr-t16544/
+	
+	
+
+6. static_cast, reinterpret_cast
+A static_cast is a cast from one type to another that (intuitively) is a cast that could under some circumstance succeed and be meaningful in the absence of a dangerous cast. For example, you can static_cast a void* to an int*, since the void* might actually point at an int*, or an int to a  char, since such a conversion is meaningful. However, you cannot static_cast an int* to a double*, since this conversion only makes sense if the int* has somehow been mangled to point at a double*.
+
+A reinterpret_cast is a cast that represents an unsafe conversion that might reinterpret the bits of one value as the bits of another value. For example, casting an int* to a double* is legal with a reinterpret_cast, though the result is unspecified. Similarly, casting an int to a void* is perfectly legal with reinterpret_cast, though it's unsafe.
+
+
+In general, you should always prefer static_cast for casts that should be safe. If you accidentally try doing a cast that isn't well-defined, then the compiler will report an error. Only use reinterpret_cast if what you're doing really is changing the interpretation of some bits in the machine, and only use a C-style cast if you're willing to risk doing a reinterpret_cast. 
+
+unsigned char* puc = static_cast<unsigned char*>(&c);
+signed char* psc = static_cast<signed char*>(&c);
+
+Error: We must use reinterpret_cast for both cases. This might surprise you at first, but
+the reason is that char, signed char, and unsigned char are three distinct types. Even
+though there are implicit conversions between them, they are unrelated, so pointers to them
+are unrelated
+
+B* pb4 = static_cast<B*>(&d1);
+This is fine, but unnecessary because derived-to-public-base pointer conversions can be done
+implicitly.
+
+D* pd = static_cast<D*>(pb4);
+This is fine, which may surprise you if you expected this to require a dynamic_cast. The
+reason is that downcasts can be static when the target is known, but beware: You are telling
+the compiler that you know for a fact that what is being pointed to really is of that type. If you
+are wrong, then the cast cannot inform you of the problem (as could dynamic_cast, which
+would return a null pointer if the cast failed) and, at best, you will get spurious run-time errors
+and/or program crashes.
+
+7. More on reinterpret_cast, static_cast
+
+7.1 reinterpret_cast
+
+The expression reinterpret_cast<T>(v)changes the interpretation of the value of the expression v. It can be used to convert between pointer and integer types, between unrelated pointer types, between pointer-to-member types, and between pointer-to-function types.
+
+Usage of the reinterpret_cast operator can have undefined or implementation-dependent results. The following points describe the only ensured behavior:
+
+7.1.1 A pointer to a data object or to a function (but not a pointer to member) can be converted to any integer type large enough to contain it. (Type long is always large enough to contain a pointer value on the architectures supported by the C++ compiler.) When converted back to the original type, the pointer value will compare equal to the original pointer.
+7.1.2 A pointer to a (nonmember) function can be converted to a pointer to a different (nonmember) function type. If converted back to the original type, the pointer value will compare equal to the original pointer.
+A pointer to an object can be converted to a pointer to a different object type, provided that the new type has alignment requirements no stricter than the original type. When converted back to the original type, the pointer value will compare equal to the original pointer.
+7.1.3 An lvalue of type T1 can be converted to a type "reference to T2" if an expression of type "pointer to T1" can be converted to type "pointer to T2" with a reinterpret cast.
+7.1.4 An rvalue of type "pointer to member of X of type T1" can be explicitly converted to an rvalue of type "pointer to member of Y of type T2" if T1 and T2 are both function types or both object types.
+7.1.5 In all allowed cases, a null pointer of one type remains a null pointer when converted to a null pointer of a different type.
+7.1.6 The reinterpret_cast operator cannot be used to cast away const; use const_cast for that purpose.
+7.1.7 The reinterpret_cast operator should not be used to convert between pointers to different classes that are in the same class hierarchy; use a static or dynamic cast for that purpose. (reinterpret_cast does not perform the adjustments that might be needed.) 
+
+7.2 static_cast
+
+The expression static_cast<T>(v) converts the value of the expression v to type T. It can be used for any type conversion that is allowed implicitly. In addition, any value can be cast to void, and any implicit conversion can be reversed if that cast would be legal as an old-style cast.
+
+7.2.1 The static_cast operator cannot be used to cast away const. You can use static_cast to cast "down" a hierarchy (from a base to a derived pointer or reference), but the conversion is not checked; the result might not be usable. A static_cast cannot be used to cast down from a virtual base class.
+
+7.3 Dynamic Casts
+A pointer (or reference) to a class can actually point (refer) to any class derived from that class. Occasionally, it may be desirable to obtain a pointer to the fully derived class, or to some other subobject of the complete object. The dynamic cast provides this facility.
+
+Note - When compiling in compatibility mode (-compat[=4]), you must compile with -features=rtti if your program uses dynamic casts.
+
+
+The dynamic type cast converts a pointer (or reference) to one class T1 into a pointer (reference) to another class T2. T1 and T2 must be part of the same hierarchy, the classes must be accessible (via public derivation), and the conversion must not be ambiguous. In addition, unless the conversion is from a derived class to one of its base classes, the smallest part of the hierarchy enclosing both T1 and T2 must be polymorphic (have at least one virtual function).
+
+In the expression dynamic_cast<T>(v), v is the expression to be cast, and T is the type to which it should be cast. T must be a pointer or reference to a complete class type (one for which a definition is visible), or a pointer to cv void, where cv is an empty string, const, volatile, or const volatile.
+
+7.3.1	Casting Up the Hierarchy
+
+When casting up the hierarchy, if T points (or refers) to a base class of the type pointed (referred) to by v, the conversion is equivalent to static_cast<T>(v).
+
+7.3.2	Casting to void*
+
+If T is void*, the result is a pointer to the complete object. That is, v might point to one of the base classes of some complete object. In that case, the result of dynamic_cast<void*>(v) is the same as if you converted v down the hierarchy to the type of the complete object (whatever that is) and then to void*.
+
+When casting to void*, the hierarchy must be polymorphic (have virtual functions).
+
+7.3.3	Casting Down or Across the Hierarchy
+
+When casting down or across the hierarchy, the hierarchy must be polymorphic (have virtual functions). The result is checked at runtime.
+
+The conversion from v to T is not always possible when casting down or across a hierarchy. For example, the attempted conversion might be ambiguous, T might be inaccessible, or v might not point (or refer) to an object of the necessary type. If the runtime check fails and T is a pointer type, the value of the cast expression is a null pointer of type T. If T is a reference type, nothing is returned (there are no null references in C++), and the standard exception std::bad_cast is thrown.
+
+8. std::move vs std::forward
+std::move takes an object and allows you to treat it as a temporary (an rvalue). Although it isn't a semantic requirement, typically a function accepting a reference to an rvalue will invalidate it. When you see std::move, it indicates that the value of the object should not be used afterwards, but you can still assign a new value and continue using it.
+
+std::forward has a single use case: to cast a templated function parameter (inside the function) to the value category (lvalue or rvalue) the caller used to pass it. This allows rvalue arguments to be passed on as rvalues, and lvalues to be passed on as lvalues, a scheme called "perfect forwarding."
