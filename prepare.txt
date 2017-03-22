@@ -7,6 +7,7 @@ Table:
 6. static_cast, reinterpret_cast
 7. More on reinterpret_cast, static_cast
 8. std::move vs std::forward
+9. What is the difference between system call and library call?
 
 1. C++ Memory Area:
 	1.1 Const Data: The const data area stores string literals and other data whose values are known at compile-time. No objects of class type can exist in this area. All data in this area is available during the entire lifetime of the program. Further, all this data is read-only, and the results of trying to modify it are undefined. This is in part because even the underlying storage format is subject to arbitrary optimization by the implementation. For example, a particular compiler may choose to store string literals in overlapping objects as an optional optimization.
@@ -128,3 +129,8 @@ The conversion from v to T is not always possible when casting down or across a 
 std::move takes an object and allows you to treat it as a temporary (an rvalue). Although it isn't a semantic requirement, typically a function accepting a reference to an rvalue will invalidate it. When you see std::move, it indicates that the value of the object should not be used afterwards, but you can still assign a new value and continue using it.
 
 std::forward has a single use case: to cast a templated function parameter (inside the function) to the value category (lvalue or rvalue) the caller used to pass it. This allows rvalue arguments to be passed on as rvalues, and lvalues to be passed on as lvalues, a scheme called "perfect forwarding."
+
+9. What is the difference between system call and library call?
+http://stackoverflow.com/questions/29816791/what-is-the-difference-between-system-call-and-library-call
+http://www.thegeekstuff.com/2012/07/system-calls-library-functions/
+https://ksearch.wordpress.com/2010/09/12/system-call-vs-library-function/
