@@ -1,4 +1,4 @@
-Table:
+Table: (http://www.cnblogs.com/grandyang/p/4606334.html)
 1. C++ Memory Area
 2. C++ Class/Struct Memory Layout vs C struct
 3. Can I throw an exception from a constructor? From a destructor? https://isocpp.org/wiki/faq/exceptions#ctors-can-throw
@@ -134,3 +134,4 @@ std::forward has a single use case: to cast a templated function parameter (insi
 http://stackoverflow.com/questions/29816791/what-is-the-difference-between-system-call-and-library-call
 http://www.thegeekstuff.com/2012/07/system-calls-library-functions/
 https://ksearch.wordpress.com/2010/09/12/system-call-vs-library-function/
+
