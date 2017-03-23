@@ -9,6 +9,9 @@ Table: (http://www.cnblogs.com/grandyang/p/4606334.html)
 8. std::move vs std::forward
 9. What is the difference between system call and library call?
 
+11. Placement new operator in C++
+12. Default Construtors
+
 1. C++ Memory Area:
 	1.1 Const Data: The const data area stores string literals and other data whose values are known at compile-time. No objects of class type can exist in this area. All data in this area is available during the entire lifetime of the program. Further, all this data is read-only, and the results of trying to modify it are undefined. This is in part because even the underlying storage format is subject to arbitrary optimization by the implementation. For example, a particular compiler may choose to store string literals in overlapping objects as an optional optimization.
 	1.2 Stack	The stack stores automatic variables. Objects are constructed immediately at the point of definition and destroyed immediately at the end of the same scope, so there is no opportunity for programmers to directly manipulate allocated but uninitialized stack space (barring willful tampering using explicit destructors and placement new). Stack memory allocation is typically much faster than for dynamic storage (heap or free store) because each stack memory allocation involves only a stack pointer increment rather than more-complex management.
@@ -135,3 +138,9 @@ http://stackoverflow.com/questions/29816791/what-is-the-difference-between-syste
 http://www.thegeekstuff.com/2012/07/system-calls-library-functions/
 https://ksearch.wordpress.com/2010/09/12/system-call-vs-library-function/
 
+
+11. Placement new operator in C++
+http://www.geeksforgeeks.org/placement-new-operator-cpp/
+
+12. Default Construtors
+as soon as you define a constructor of any kind, the compiler will not generate the default one for you,
