@@ -1,3 +1,9 @@
+Table
+
+373. Find K Pairs with Smallest Sums (M)
+374. Guess Number Higher or Lower (M)
+375. Guess Number Higher or Lower II (M)
+
 #include <vector>
 #include <list>
 #include <algorithm>
@@ -8412,7 +8418,27 @@ class Solution {
 public:
     int countPrimes(int n)
     {
-        
+		if(n==0||n==1)
+		{
+			return 0;
+		}
+		
+		vector<int> v(n-1, 1);
+		
+		v[0] = 0; //1 is not prime
+		
+		for(int num = 2; num*num<=n; ++num)
+		{
+			if(v[num-1]==1)
+			{
+				for(int mul = num * num; mul < n; mul += num)
+				{
+					v[mul - 1] = 0;
+				}
+			}
+		}
+		
+		return accumulate(begin(v), end(v), 0);
     }
 };
 
@@ -8442,7 +8468,30 @@ You may assume both s and t have the same length.
 */
 class Solution {
 public:
-    bool isIsomorphic(string s, string t) {
+    bool isIsomorphic(string s, string t)
+	{
+		if(s.size()!=t.size())
+		{
+			return false;
+		}
+		
+		int ms[256] = {-1}; //this only initialize the first element to -1
+		int mt[256] = {-1};
+		
+		int L = s.size();
+		
+		for(int k = 0; k<L; ++k)
+		{
+			if(ms[s[k]]!=mt[t[k]])
+			{
+				return false;
+			}
+			
+			ms[s[k]] = k+1;
+			mt[t[k]] = k+1;
+		}
+		
+		return true;
     }
 };
 
@@ -18716,6 +18765,54 @@ class Solution {
 public:
 	int maxSumSubmatrix( vector<vector<int>>& matrix, int k )
 	{
+		if(matrix.empty() || matrix[0].empty())
+		{
+			return 0;
+		}
+		
+		int rows = matrix.size();
+		int cols = matrix[0].size();
+		
+		int res = INT_MIN;
+		
+		vector<int> v_sum(rows, 0);
+		
+		for(int c = 0; c < cols; ++c)
+		{
+			for(int ci = c; ci < cols; ++ci )
+			{
+				for(int r = 0; r<rows; ++r)
+				{
+					v_sum[r] += matrix[r][ci]; //sum over [r,c] to [r,ci]
+				}
+				
+				set<int> s;
+				s.insert(0);
+				
+				int cur_total_sum = 0;
+				int cur_max = INT_MIN;
+				
+				for(auto sum : v_sum)
+				{
+					cur_total_sum += sum; //compute the sum over [0, c], [r, ci]
+					
+					auto it = s.lower_bound(cur_total_sum - k);
+					
+					if(it!=s.end())
+					{
+						cur_max = max(cur_max, cur_total_sum - *it);
+					}
+					
+					s.insert(cur_total_sum);
+				}
+				
+				res = max(cur_max, res);
+			}
+			
+			vector<int>(sum, 0).swap(v_sum); //swap idiom.
+		}
+		
+		return res;
 	}
 };
 
@@ -18744,8 +18841,44 @@ Given the list [1,[4,[6]]], return 17.
 */
 class Solution {
 public:
+	//method 1: dfs
 	int depthSumInverse(vector<NestedInteger>& nestedList)
 	{
+		vector<int> res;
+
+		for ( auto& ni : nestedList )
+		{
+			dfs( ni, 0, res );
+		}
+
+		int sum = 0;
+
+		for ( size_t i = res.size(), depth = 1; i >= 1; --i, ++depth )
+		{
+			sum += static_cast<int>(res[i - 1] * depth);
+		}
+
+		return sum;
+	}
+	
+	void dfs(NestedInteger& ni, size_t depth, vector<int>& res)
+	{
+		if(res.size() < depth + 1)
+		{
+			res.resize(depth+1);
+		}
+
+		if ( ni.isInteger() )
+		{
+			res[depth] += ni.getInteger();
+		}
+		else
+		{
+			for ( auto& elem : ni.getList() )
+			{
+				dfs( elem, depth + 1, res );
+			}
+		}
 	}
 };
 
@@ -18821,3 +18954,17 @@ Explanation:
 []
 Returns [4, 5, 3], [2], [1].
 */
+
+//<--> 373. Find K Pairs with Smallest Sums (M)
+//https://leetcode.com/problems/find-k-pairs-with-smallest-sums/#/description
+//http://www.cnblogs.com/grandyang/p/5653127.html
+
+//<--> 374. Guess Number Higher or Lower (M)
+https://leetcode.com/problems/guess-number-higher-or-lower/#/description
+http://www.cnblogs.com/grandyang/p/5666502.html
+// Notice: left should be set to mid + 1 when guess return 1, 
+// this means my number is higher than the mid, the search range should be in the upper half.
+
+//<--> 375. Guess Number Higher or Lower II (M)
+https://leetcode.com/problems/guess-number-higher-or-lower-ii/#/description
+http://www.cnblogs.com/grandyang/p/5677550.html
