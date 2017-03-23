@@ -8,9 +8,10 @@ Table: (http://www.cnblogs.com/grandyang/p/4606334.html)
 7. More on reinterpret_cast, static_cast
 8. std::move vs std::forward
 9. What is the difference between system call and library call?
-
+10. geekforgeeks useful tags
 11. Placement new operator in C++
 12. Default Construtors
+13. Virtual Inheritance
 
 1. C++ Memory Area:
 	1.1 Const Data: The const data area stores string literals and other data whose values are known at compile-time. No objects of class type can exist in this area. All data in this area is available during the entire lifetime of the program. Further, all this data is read-only, and the results of trying to modify it are undefined. This is in part because even the underlying storage format is subject to arbitrary optimization by the implementation. For example, a particular compiler may choose to store string literals in overlapping objects as an optional optimization.
@@ -138,9 +139,15 @@ http://stackoverflow.com/questions/29816791/what-is-the-difference-between-syste
 http://www.thegeekstuff.com/2012/07/system-calls-library-functions/
 https://ksearch.wordpress.com/2010/09/12/system-call-vs-library-function/
 
+10. geekforgeeks useful tags
+http://www.geeksforgeeks.org/category/algorithm/randomized/
+http://www.geeksforgeeks.org/category/c-arrays/
 
 11. Placement new operator in C++
 http://www.geeksforgeeks.org/placement-new-operator-cpp/
 
 12. Default Construtors
 as soon as you define a constructor of any kind, the compiler will not generate the default one for you,
+
+13. Virtual Inheritance
+https://en.wikipedia.org/wiki/Virtual_inheritance
