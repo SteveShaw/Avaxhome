@@ -14,6 +14,7 @@ Table: (http://www.cnblogs.com/grandyang/p/4606334.html)
 13. Virtual Inheritance
 14. Placement new, contruct, destroy and swap
 15. Private Inheritance vs Private Member
+16. Throw exceptions in destructor
 
 1. C++ Memory Area:
 	1.1 Const Data: The const data area stores string literals and other data whose values are known at compile-time. No objects of class type can exist in this area. All data in this area is available during the entire lifetime of the program. Further, all this data is read-only, and the results of trying to modify it are undefined. This is in part because even the underlying storage format is subject to arbitrary optimization by the implementation. For example, a particular compiler may choose to store string literals in overlapping objects as an optional optimization.
@@ -197,3 +198,9 @@ Of these, destroy(first,last) is the most interesting.
 --> ''implemented in terms of '' which is what private inheritance means (constructor must be public or private)
 --> If use as a private member,  data members are initialized before a class's constructor body is entered.
 
+16. Throw exceptions in destructor
+Never allow an exception to escape from a destructor or 
+from an overloaded operator delete() or operator delete[](); 
+write every destructor and deallocation function
+as though it had an exception specification of
+throw().
