@@ -12,6 +12,8 @@ Table: (http://www.cnblogs.com/grandyang/p/4606334.html)
 11. Placement new operator in C++
 12. Default Construtors
 13. Virtual Inheritance
+14. Placement new, contruct, destroy and swap
+15. Private Inheritance vs Private Member
 
 1. C++ Memory Area:
 	1.1 Const Data: The const data area stores string literals and other data whose values are known at compile-time. No objects of class type can exist in this area. All data in this area is available during the entire lifetime of the program. Further, all this data is read-only, and the results of trying to modify it are undefined. This is in part because even the underlying storage format is subject to arbitrary optimization by the implementation. For example, a particular compiler may choose to store string literals in overlapping objects as an optional optimization.
@@ -151,3 +153,47 @@ as soon as you define a constructor of any kind, the compiler will not generate 
 
 13. Virtual Inheritance
 https://en.wikipedia.org/wiki/Virtual_inheritance
+
+14. Placement new, contruct, destroy and swap
+// construct() constructs a new object in 
+// a given location using an initial value
+//
+template <class T1, class T2>
+void construct( T1* p, const T2& value )
+{
+  new (p) T1(value);
+}
+The above form of new is called “placement new,” and instead of allocating memory for the new object, it just
+puts it into the memory pointed at by p. Any object new'd in this way should generally be destroyed by calling
+its destructor explicitly (as in the following two functions), rather than by using delete.
+// destroy() destroys an object or a range 
+// of objects
+//
+template <class T>
+void destroy( T* p )
+{
+  p->~T();
+}
+template <class FwdIter>
+void destroy( FwdIter first, FwdIter last )
+{
+  while( first != last )
+  {
+    destroy( &*first );
+    ++first;
+  }
+}
+// swap() just exchanges two values
+//
+template <class T>
+void swap( T& a, T& b )
+{
+  T temp(a); a = b; b = temp;
+}
+Of these, destroy(first,last) is the most interesting.
+
+15. Private Inheritance vs Private Member
+
+--> ''implemented in terms of '' which is what private inheritance means (constructor must be public or private)
+--> If use as a private member,  data members are initialized before a class's constructor body is entered.
+

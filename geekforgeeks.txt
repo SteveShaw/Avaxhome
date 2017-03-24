@@ -7,7 +7,10 @@ Table:
 6. Refactorable number
 7. Number of decisions to reach destination
 8. Count of strings that can be formed using a, b and c under given constraints
-
+9. Make n using 1s and 2s with minimum number of terms multiple of k
+10. Adobe Interview Experience | Set 44 (For MTS-1)
+11. Morgan Stanley Interview | Set 27 (For 2.5 Years Experienced)
+12. Check if a large number is divisible by 11 or not
 
 1. K difference permutation (http://www.geeksforgeeks.org/k-difference-permutation/)
 Given two integers n and k. Consider first permutation of natural n numbers, P = “1 2 3 … n”, print a permutation “Result” such that abs(Resulti – Pi) = k where Pi denotes the position of i in permutation P. The value of Pi varies from 1 to n. If there are multiple possible results, then print the lexicographically smallest one.
@@ -95,3 +98,15 @@ Output : 43
 
 9. Make n using 1s and 2s with minimum number of terms multiple of k
 http://www.geeksforgeeks.org/make-n-using-1s-2s-minimum-number-terms-multiple-k/
+
+10. Adobe Interview Experience | Set 44 (For MTS-1)
+http://www.geeksforgeeks.org/adobe-interview-experience-set-44-for-mts-1/
+
+11. Morgan Stanley Interview | Set 27 (For 2.5 Years Experienced)
+http://www.geeksforgeeks.org/morgan-stanley-interview-set-27-2-5-years-experienced/
+
+12. Check if a large number is divisible by 11 or not
+http://www.geeksforgeeks.org/check-large-number-divisible-11-not/
+
+13. Group words with same set of characters
+http://www.geeksforgeeks.org/print-words-together-set-characters/
