@@ -14,7 +14,10 @@ Table:
 13. Check if a large number is divisible by 11 or not
 14. Group words with same set of characters
 15. Delete Edge to minimize subtree sum difference
-
+16. N’th palindrome of K digits
+17. Goldman Sachs Interview Experience
+18. Count substrings with same first and last characters
+19. Longest Zig-Zag Subsequence
 
 
 1. K difference permutation (http://www.geeksforgeeks.org/k-difference-permutation/)
@@ -121,3 +124,17 @@ http://www.geeksforgeeks.org/print-words-together-set-characters/
 
 15. Delete Edge to minimize subtree sum difference
 http://www.geeksforgeeks.org/delete-edge-minimize-subtree-sum-difference/
+
+16. N’th palindrome of K digits
+http://www.geeksforgeeks.org/nth-palindrome-k-digits/
+
+17. Goldman Sachs Interview Experience
+http://www.geeksforgeeks.org/tag/goldman-sachs/
+
+18. Count substrings with same first and last characters
+Two ways: dp and greedy. but dp require O(n^2)
+http://www.cnblogs.com/grandyang/p/5697621.html
+http://www.geeksforgeeks.org/count-substrings-with-same-first-and-last-characters/
+
+19. Longest Zig-Zag Subsequence
+http://www.geeksforgeeks.org/longest-zig-zag-subsequence/

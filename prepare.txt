@@ -15,6 +15,7 @@ Table: (http://www.cnblogs.com/grandyang/p/4606334.html)
 14. Placement new, contruct, destroy and swap
 15. Private Inheritance vs Private Member
 16. Throw exceptions in destructor
+17. opeartor implementation
 
 1. C++ Memory Area:
 	1.1 Const Data: The const data area stores string literals and other data whose values are known at compile-time. No objects of class type can exist in this area. All data in this area is available during the entire lifetime of the program. Further, all this data is read-only, and the results of trying to modify it are undefined. This is in part because even the underlying storage format is subject to arbitrary optimization by the implementation. For example, a particular compiler may choose to store string literals in overlapping objects as an optional optimization.
@@ -204,3 +205,26 @@ from an overloaded operator delete() or operator delete[]();
 write every destructor and deallocation function
 as though it had an exception specification of
 throw().
+
+Therefore
+	1. isolate your resource management, 
+	2, use the “update a temporary and swap” idiom, 
+	3. and never write classes whose destructors can allow exceptions to escape
+	
+
+17. opeartor implementation
+The standard requires that 
+operators = () [] and -> must be members, and class-specific operators 
+new, new[], delete, and delete[] must be static members. For
+
+all other functions:
+if the function is operator>> or operator<< for stream I/O,
+or if it needs type conversions on its leftmost argument,
+or if it can be implemented using the class's public interface alone,
+
+make it a nonmember (and friend if needed in the first two cases)
+if it needs to behave virtually,
+add a virtual member function to provide the virtual behavior,
+and implement it in terms of that
+else
+make it a member

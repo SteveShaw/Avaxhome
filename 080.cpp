@@ -18968,3 +18968,18 @@ http://www.cnblogs.com/grandyang/p/5666502.html
 //<--> 375. Guess Number Higher or Lower II (M)
 https://leetcode.com/problems/guess-number-higher-or-lower-ii/#/description
 http://www.cnblogs.com/grandyang/p/5677550.html
+http://blog.csdn.net/qq508618087/article/details/51991143
+思路: 题目是让求得最少需要多少钱可以保证一定能赢, 也就是最坏情况下需要最少多少钱. 
+依然利用二分查找的思想, 
+当我们猜X时, 如果错了, 那么需要往左右两端继续查找, 
+那么最大代价即为 dp[i][j] = min(dp[i][j], X + max(dp[i][X-1], dp[X+1][j]));
+
+这样要计算在1-n之间的最大代价, 只要枚举每一个数即可.
+Reference: minMax algorithm http://univasity.iteye.com/blog/1170216
+
+//<--> 376. Wiggle Subsequence (M)
+https://leetcode.com/problems/wiggle-subsequence/#/description
+http://blog.csdn.net/qq508618087/article/details/51991068
+
+//<--> 377. Combination Sum IV (M)
+https://leetcode.com/problems/combination-sum-iv/#/description
