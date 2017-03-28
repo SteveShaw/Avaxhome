@@ -19304,7 +19304,11 @@ public:
 	/** Initialize your data structure here
 	@param maxNumbers - The maximum numbers that can be stored in the phone directory. */
 	PhoneDirectory( int maxNumbers )
-		:flags(maxNumbers)
+		: reserved(maxNumbers)
+		, flags(maxNumbers, 1)
+		, next_number( 0 )
+		, idx_reserve( -1 )
+		, max_number( maxNumbers )
 	{
 	}
 
@@ -19312,24 +19316,56 @@ public:
 	@return - Return an available number. Return -1 if none is available. */
 	int get()
 	{
+		if ( next_number >= max_number || idx_reserve <= 0 )
+		{
+			return -1;
+		}
+
+		if ( idx_reserve > 0 )
+		{
+			//returned the number in reserve array
+
+			//leave next_number intact
+
+			//we need to decrase idx_reserve first 
+			//since idx_reserve point to the next position of current final number in 
+			//reserver array.
+			--idx_reserve;
+			auto t = reserved[idx_reserve];
+			flag[t] = 0;
+			return t;
+		}
+
+		flag[next_number] = 0;
+
+
 	}
 
 	/** Check if a number is available or not. */
 	bool check( int number )
 	{
+		return  ( (number >= 0 ) && ( number < max_number ) && ( flag[number] == 0 ) )
 	}
 
 	/** Recycle or release a number. */
 	void release( int number )
 	{
-
+		if ( (number >= 0) && (number < max_number) && (flag[number] == 0) )
+		{
+			reserved[idx_reserve] = number;
+			++idx_reserve;
+			flag[number] = 1;
+		}
 	}
 
 private:
-	vector<int> numbers;
+	vector<int> reserved;
 	vector<int> flags;
 
-	int next;
+	int next_number;
+	int idx_reserve;
+
+	int max_number;
 };
  
 
