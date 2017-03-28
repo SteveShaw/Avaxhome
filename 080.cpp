@@ -18966,9 +18966,35 @@ http://www.cnblogs.com/grandyang/p/5666502.html
 // this means my number is higher than the mid, the search range should be in the upper half.
 
 //<--> 375. Guess Number Higher or Lower II (M)
-https://leetcode.com/problems/guess-number-higher-or-lower-ii/#/description
+/*
+We are playing the Guess Game. The game is as follows:
+
+I pick a number from 1 to n. 
+You have to guess which number I picked.
+
+Every time you guess wrong, 
+I'll tell you whether the number I picked is higher or lower.
+
+However, when you guess a particular number x, 
+and you guess wrong, you pay $x. 
+You win the game when you guess the number I picked.
+
+Example:
+
+n = 10, I pick 8.
+
+First round:  You guess 5, I tell you that it's higher. You pay $5.
+Second round: You guess 7, I tell you that it's higher. You pay $7.
+Third round:  You guess 9, I tell you that it's lower. You pay $9.
+
+Game over. 8 is the number I picked.
+
+You end up paying $5 + $7 + $9 = $21.
+Given a particular n ≥ 1, find out how much money you need to have to guarantee a win.
+*/
 http://www.cnblogs.com/grandyang/p/5677550.html
 http://blog.csdn.net/qq508618087/article/details/51991143
+/*
 思路: 题目是让求得最少需要多少钱可以保证一定能赢, 也就是最坏情况下需要最少多少钱. 
 依然利用二分查找的思想, 
 当我们猜X时, 如果错了, 那么需要往左右两端继续查找, 
@@ -18976,23 +19002,336 @@ http://blog.csdn.net/qq508618087/article/details/51991143
 
 这样要计算在1-n之间的最大代价, 只要枚举每一个数即可.
 Reference: minMax algorithm http://univasity.iteye.com/blog/1170216
+*/
+class Solution {
+public:
+	int getMoneyAmount( int n )
+	{
+		vector<vector<int>> dp( n + 1, vector<int>( n + 1, 0 ) );
+
+		for ( int i = n - 1; i>0; --i )
+		{
+			for ( int j = i + 1; j <= n; ++j )
+			{
+				int local_min = INT_MAX;
+
+				for ( int k = i; k<j; ++k )
+				{
+					local_min = min( local_min, k + max( dp[i][k - 1], dp[k + 1][j] ) );
+				}
+
+				dp[i][j] = local_min;
+			}
+		}
+
+		return dp[1][n];
+
+	}
+};
 
 //<--> 376. Wiggle Subsequence (M)
-https://leetcode.com/problems/wiggle-subsequence/#/description
-http://blog.csdn.net/qq508618087/article/details/51991068
+/*
+A sequence of numbers is called a wiggle sequence 
+if the differences between successive numbers 
+strictly alternate between positive and negative. 
+The first difference (if one exists) may be either positive or negative. 
+A sequence with fewer than two elements is trivially a wiggle sequence.
+
+For example, [1,7,4,9,2,5] is a wiggle sequence because the differences 
+(6,-3,5,-7,3) are alternately positive and negative. 
+In contrast, [1,4,7,2,5] and [1,7,4,5,5] are not wiggle sequences, 
+the first because its first two differences are positive 
+and the second because its last difference is zero.
+
+Given a sequence of integers, 
+return the length of the longest 
+subsequence that is a wiggle sequence. 
+A subsequence is obtained by deleting some number of elements 
+(eventually, also zero) from the original sequence, 
+leaving the remaining elements in their original order.
+
+Examples:
+Input: [1,7,4,9,2,5]
+Output: 6
+The entire sequence is a wiggle sequence.
+
+Input: [1,17,5,10,13,15,10,5,16,8]
+Output: 7
+There are several subsequences that achieve this length. One is [1,17,10,13,10,16,8].
+
+Input: [1,2,3,4,5,6,7,8,9]
+Output: 2
+Follow up:
+Can you do it in O(n) time?
+*/
+//DP will be O(n^2) but Greedy give O(n)
+//http://blog.csdn.net/qq508618087/article/details/51991068
+
+class Solution {
+public:
+	int wiggleMaxLength( vector<int>& nums )
+	{
+		if ( nums.empty() )
+		{
+			return 0;
+		}
+
+		if ( nums.size() < 2 )
+		{
+			return (int)nums.size();
+		}
+
+
+		int p = 1, q = 1;
+
+		for ( size_t i = 1; i < nums.size(); ++i )
+		{
+			if ( nums[i] > nums[i - 1] )
+			{
+				p = q + 1;
+			}
+			else if ( nums[i] < nums[i - 1] )
+			{
+				q = p + 1;
+			}
+		}
+
+		int n = nums.size();
+
+		return min( n, max( p, q ) );
+
+	}
+};
+
 
 //<--> 377. Combination Sum IV (M)
-DP based
-https://leetcode.com/problems/combination-sum-iv/#/description
-http://www.cnblogs.com/grandyang/p/5705750.html
+/*
+Given an integer array with all positive numbers and no duplicates, 
+find the number of possible combinations that add up to a positive integer target.
+
+Example:
+
+nums = [1, 2, 3]
+target = 4
+
+The possible combination ways are:
+(1, 1, 1, 1)
+(1, 1, 2)
+(1, 2, 1)
+(1, 3)
+(2, 1, 1)
+(2, 2)
+(3, 1)
+
+Note that different sequences are counted as different combinations.
+
+Therefore the output is 7.
 Follow up:
-有负数的情况可能存在无限符合要求的解。(比如你想想有个-1的，我正数随便加，然后再减回去)
-所以必须要有限制条件，限制条件有很多啊 比如要求解的长度为L，或者不超过L，或者每个数只能使用X次等等
-http://massivealgorithms.blogspot.com/2016/07/leetcode-377-combination-sum-iv.html
+What if negative numbers are allowed in the given array?
+How does it change the problem?
+What limitation we need to add to the question to allow negative numbers?
+*/
+class Solution {
+public:
+	int combinationSum4( vector<int>& nums, int target ) {
+
+		vector<int> dp( target + 1, 0 );
+
+		dp[0] = 1;
+
+		for ( int i = 1; i <= target; ++i )
+		{
+			for ( auto n : nums )
+			{
+				if ( i >= n )
+				{
+					dp[i] += (dp[i - n]);
+				}
+			}
+		}
+
+		return dp[target];
+	}
+};
 
 //<--> 378. Kth Smallest Element in a Sorted Matrix
-//https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/#/description
-//http://www.cnblogs.com/grandyang/p/5727892.html
+/*
+Given a n x n matrix where each of the rows and columns are sorted in ascending order, 
+find the kth smallest element in the matrix.
+
+Note that it is the kth smallest element in the sorted order, not the kth distinct element.
+
+Example:
+
+matrix = [
+[ 1,  5,  9],
+[10, 11, 13],
+[12, 13, 15]
+],
+k = 8,
+
+return 13.
+Note:
+You may assume k is always valid, 1 <= k <= n^2.
+*/
+
+//method 1: binary search ( using upper_bound for each row and get number of items )
+class Solution {
+public:
+	int kthSmallest( vector<vector<int>>& matrix, int k )
+	{
+		int left = matrix.front().front();
+		int right = matrix.back().back();
+
+		while ( left < right )
+		{
+			int mid = left + (right - left) / 2;
+
+			int count = 0; //only count for each loop
+
+			for ( size_t i = 0; i < matrix.size(); ++i )
+			{
+				count += upper_bound( begin( matrix[i] ), end( matrix[i] ), mid ) - begin( matrix[i] );
+			}
+
+			if ( count < k )
+			{
+				left = mid + 1;
+			}
+			else
+			{
+				right = mid;
+			}
+		}
+
+		return left;
+	}
+
+	//method 2: just row and col are sorted
+	int kthSmallest( vector<vector<int>>& matrix, int k )
+	{
+		auto search_element = [&matrix](int val){
+
+			int r = matrix.size() - 1;
+			int c = 0;
+
+			int res = 0;
+
+			int cols = matrix[0].size();
+
+			if ( r >= 0 && c < cols )
+			{
+				if ( matrix[r][c] < val )
+				{
+					res += (r + 1);
+					++c;
+				}
+				else
+				{
+					--r;
+				}
+			}
+
+			return res;
+		};
+
+		int left = matrix.front().front();
+		int right = matrix.back().back();
+
+		while ( left < right )
+		{
+			int mid = left + (right - left) / 2;
+
+			auto count = search_element( mid );
+
+			if ( count < k )
+			{
+				left = mid + 1;
+			}
+			else
+			{
+				right = mid;
+			}
+		}
+
+		return left;
+	}
+
+};
+
+//<--> 379. Design a Phone Directory which supports the following operations:
+/*
+get: Provide a number which is not assigned to anyone.
+check : Check if a number is available or not.
+release : Recycle or release a number.
+Example :
+
+
+// Init a phone directory containing a total of 3 numbers: 0, 1, and 2.
+PhoneDirectory directory = new PhoneDirectory( 3 );
+
+// It can return any available phone number. Here we assume it returns 0.
+directory.get();
+
+// Assume it returns 1.
+directory.get();
+
+// The number 2 is available, so return true.
+directory.check( 2 );
+
+// It returns 2, the only number that is left.
+directory.get();
+
+// The number 2 is no longer available, so return false.
+directory.check( 2 );
+
+// Release number 2 back to the pool.
+directory.release( 2 );
+
+// Number 2 is available again, return true.
+directory.check( 2 );
+*/
+/*
+High efficiency solution:
+这里用两个一维数组recycle和flag，
+分别来保存被回收的号码和某个号码的使用状态，
+还有变量max_num表示最大数字，
+next表示下一个可以分配的数字，
+idx表示recycle数组中可以被重新分配的数字的位置
+*/
+class PhoneDirectory {
+public:
+	/** Initialize your data structure here
+	@param maxNumbers - The maximum numbers that can be stored in the phone directory. */
+	PhoneDirectory( int maxNumbers )
+		:flags(maxNumbers)
+	{
+	}
+
+	/** Provide a number which is not assigned to anyone.
+	@return - Return an available number. Return -1 if none is available. */
+	int get()
+	{
+	}
+
+	/** Check if a number is available or not. */
+	bool check( int number )
+	{
+	}
+
+	/** Recycle or release a number. */
+	void release( int number )
+	{
+
+	}
+
+private:
+	vector<int> numbers;
+	vector<int> flags;
+
+	int next;
+};
+ 
 
 
 //<--> 380. Insert Delete GetRandom O(1)
