@@ -1,0 +1,8 @@
+Array Table Contents
+1. Fill an array based on frequency where elements are in range from 0 to n-1
+
+1. Fill an array based on frequency where elements are in range from 0 to n-1
+http://www.geeksforgeeks.org/fill-array-based-frequency-elements-range-0-n-1/
+
+2. GCD of more than two (or array) numbers
+http://www.geeksforgeeks.org/gcd-two-array-numbers/

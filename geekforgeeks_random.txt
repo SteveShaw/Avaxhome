@@ -1,0 +1,5 @@
+Random Algorithm Table Contents
+1. Random number generator in arbitrary probability distribution fashion
+
+1. Random number generator in arbitrary probability distribution fashion
+http://www.geeksforgeeks.org/random-number-generator-in-arbitrary-probability-distribution-fashion/
