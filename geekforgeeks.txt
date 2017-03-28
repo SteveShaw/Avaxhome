@@ -18,61 +18,19 @@ Table:
 17. Goldman Sachs Interview Experience
 18. Count substrings with same first and last characters
 19. Longest Zig-Zag Subsequence
+20. Minimum difference between max and min of all K-size subsets
+21. Sliding Window Maximum (Maximum of all subarrays of size k)
+22. Find longest sequence of 1’s in binary representation with one flip
 
 
-1. K difference permutation (http://www.geeksforgeeks.org/k-difference-permutation/)
-Given two integers n and k. Consider first permutation of natural n numbers, P = “1 2 3 … n”, print a permutation “Result” such that abs(Resulti – Pi) = k where Pi denotes the position of i in permutation P. The value of Pi varies from 1 to n. If there are multiple possible results, then print the lexicographically smallest one.
-
-Input: n = 6 k = 3
-Output: 4 5 6 1 2 3
-Explanation:
-     P = 1 2 3 4 5 6
-Result = 4 5 6 1 2 3
-
-We can notice that the difference between
-individual numbers (at same positions) of 
-P and result is 3 and "4 5 6 1 2 3" is 
-lexicographically smallest such permutation.
-Other greater permutations could be 
-
-Input  : n = 6 k = 2
-Output : Not possible
-Explanation: No permutation is possible 
-with difference is k 
+1. K difference permutation
+http://www.geeksforgeeks.org/k-difference-permutation/
 
 2. Construct an array from XOR of all elements of array except element at same index 
-(http://www.geeksforgeeks.org/construct-an-array-from-xor-of-all-elements-of-array-except-element-at-same-index/)
-
-Given an array A[] having n positive elements. 
-The task to create another array B[] such as B[i] is XOR of all elements of array A[] except A[i].
-
-Examples:
-
-Input : A[] = {2, 1, 5, 9}
-Output : B[] = {13, 14, 10, 6}
-
-Input : A[] = {2, 1, 3, 6}
-Output : B[] = {4, 7, 5, 0}
+http://www.geeksforgeeks.org/construct-an-array-from-xor-of-all-elements-of-array-except-element-at-same-index/
 
 3. Generators of finite cyclic group under addition
-Given a number n, find all generators of cyclic additive group under modulo n. 
-Generator of a set {0, 1, … n-1} is an element x such that x is smaller than n, 
-and using x (and addition operation), we can generate all elements of the set.
-
-Examples:
-
-Input : 10
-Output : 1 3 7 9
-The set to be generated is {0, 1, .. 9}
-By adding 1, single or more times, we 
-can create all elements from 0 to 9.
-Similarly using 3, we can generate all
-elements.
-30 % 10 = 0, 21 % 10 = 1, 12 % 10 = 2, ...
-Same is true for 7 and 9.
-
-Input  : 24
-Output : 1 5 7 11 13 17 19 23
+http://www.geeksforgeeks.org/generators-finite-cyclic-group-addition/
 
 4. Maximum edge removal from tree to make even forest
 http://www.geeksforgeeks.org/maximum-edge-removal-tree-make-even-forest/
@@ -132,9 +90,26 @@ http://www.geeksforgeeks.org/nth-palindrome-k-digits/
 http://www.geeksforgeeks.org/tag/goldman-sachs/
 
 18. Count substrings with same first and last characters
-Two ways: dp and greedy. but dp require O(n^2)
-http://www.cnblogs.com/grandyang/p/5697621.html
 http://www.geeksforgeeks.org/count-substrings-with-same-first-and-last-characters/
 
 19. Longest Zig-Zag Subsequence
 http://www.geeksforgeeks.org/longest-zig-zag-subsequence/
+
+20. Minimum difference between max and min of all K-size subsets
+http://www.geeksforgeeks.org/minimum-difference-max-min-k-size-subsets/
+
+21. Sliding Window Maximum (Maximum of all subarrays of size k)
+http://www.geeksforgeeks.org/sliding-window-maximum-maximum-of-all-subarrays-of-size-k/
+
+22. Find longest sequence of 1’s in binary representation with one flip
+http://www.geeksforgeeks.org/find-longest-sequence-1s-binary-representation-one-flip/
+
+23. Find Index of 0 to be replaced with 1 to get longest continuous sequence of 1s in a binary array
+http://www.geeksforgeeks.org/find-index-0-replaced-1-get-longest-continuous-sequence-1s-binary-array/
+
+24. Find the Deepest Node in a Binary Tree
+http://www.geeksforgeeks.org/find-deepest-node-binary-tree/
+
+25. Minimum swaps to reach permuted array with at most 2 positions left swaps allowed
+http://www.geeksforgeeks.org/minimum-swaps-reach-permuted-array-2-positions-left-swaps-allowed/
+

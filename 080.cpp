@@ -18982,4 +18982,190 @@ https://leetcode.com/problems/wiggle-subsequence/#/description
 http://blog.csdn.net/qq508618087/article/details/51991068
 
 //<--> 377. Combination Sum IV (M)
+DP based
 https://leetcode.com/problems/combination-sum-iv/#/description
+http://www.cnblogs.com/grandyang/p/5705750.html
+Follow up:
+有负数的情况可能存在无限符合要求的解。(比如你想想有个-1的，我正数随便加，然后再减回去)
+所以必须要有限制条件，限制条件有很多啊 比如要求解的长度为L，或者不超过L，或者每个数只能使用X次等等
+http://massivealgorithms.blogspot.com/2016/07/leetcode-377-combination-sum-iv.html
+
+//<--> 378. Kth Smallest Element in a Sorted Matrix
+//https://leetcode.com/problems/kth-smallest-element-in-a-sorted-matrix/#/description
+//http://www.cnblogs.com/grandyang/p/5727892.html
+
+
+//<--> 380. Insert Delete GetRandom O(1)
+/*
+Design a data structure that supports all following operations in average O(1) time.
+
+insert(val): Inserts an item val to the set if not already present.
+remove(val): Removes an item val from the set if present.
+getRandom: Returns a random element from current set of elements.
+Each element must have the same probability of being returned.
+Example:
+
+// Init an empty set.
+RandomizedSet randomSet = new RandomizedSet();
+
+// Inserts 1 to the set. Returns true as 1 was inserted successfully.
+randomSet.insert(1);
+
+// Returns false as 2 does not exist in the set.
+randomSet.remove(2);
+
+// Inserts 2 to the set, returns true. Set now contains [1,2].
+randomSet.insert(2);
+
+// getRandom should return either 1 or 2 randomly.
+randomSet.getRandom();
+
+// Removes 1 from the set, returns true. Set now contains [2].
+randomSet.remove(1);
+
+// 2 was already in the set, so return false.
+randomSet.insert(2);
+
+// Since 2 is the only number in the set, getRandom always return 2.
+randomSet.getRandom();
+*/
+
+/**
+* Your RandomizedSet object will be instantiated and called as such:
+* RandomizedSet obj = new RandomizedSet();
+* bool param_1 = obj.insert(val);
+* bool param_2 = obj.remove(val);
+* int param_3 = obj.getRandom();
+*/
+
+class RandomizedSet {
+public:
+	/** Initialize your data structure here. */
+	RandomizedSet()
+	{
+
+	}
+
+	/** Inserts a value to the set. Returns true if the set did not already contain the specified element. */
+	bool insert(int val)
+	{
+		if (m.find(val) != m.end())
+		{
+			return false;
+		}
+		
+		v.push_back(val);
+
+		m[val] = v.size() - 1;
+
+		return true;
+	}
+
+	/** Removes a value from the set. Returns true if the set contained the specified element. */
+	bool remove(int val)
+	{
+		auto it = m.find(val);
+
+		if ( it == m.end())
+		{
+			return false;
+		}
+		//swap with the final element
+		//so that vector insert can be done in O(1)
+
+		auto back = v.back();
+
+		//set m[back] to found value's position.
+		m[back] = it->second;
+
+		//set v[found value's position] = back
+		v[it->second] = back;
+
+		//remove the final element of v
+		v.pop_back();
+
+		//erase the found value
+		m.erase(it);
+
+		return true;
+	}
+
+	/** Get a random element from the set. */
+	int getRandom()
+	{
+		return v[rand() % v.size()];
+	}
+
+private:
+
+	unordered_map<int, size_t> m;
+	vector<int> v;
+};
+
+//<--> 381. Insert Delete GetRandom O(1) - Duplicates allowed
+/*
+Design a data structure that supports all following operations in average O(1) time.
+
+Note: Duplicate elements are allowed.
+insert(val): Inserts an item val to the collection.
+remove(val): Removes an item val from the collection if present.
+getRandom: Returns a random element from current collection of elements. 
+The probability of each element being returned 
+is linearly related to the number of same value the collection contains.
+
+Example:
+
+// Init an empty collection.
+RandomizedCollection collection = new RandomizedCollection();
+
+// Inserts 1 to the collection. Returns true as the collection did not contain 1.
+collection.insert(1);
+
+// Inserts another 1 to the collection. Returns false as the collection contained 1. 
+Collection now contains [1,1].
+collection.insert(1);
+
+// Inserts 2 to the collection, returns true. Collection now contains [1,1,2].
+collection.insert(2);
+
+// getRandom should return 1 with the probability 2/3, and returns 2 with the probability 1/3.
+collection.getRandom();
+
+// Removes 1 from the collection, returns true. Collection now contains [1,2].
+collection.remove(1);
+
+// getRandom should return 1 and 2 both equally likely.
+collection.getRandom();
+*/
+
+/**
+* Your RandomizedSet object will be instantiated and called as such:
+* RandomizedSet obj = new RandomizedSet();
+* bool param_1 = obj.insert(val);
+* bool param_2 = obj.remove(val);
+* int param_3 = obj.getRandom();
+*/
+
+class RandomizedCollection {
+public:
+	/** Initialize your data structure here. */
+	RandomizedCollection() {
+
+	}
+
+	/** Inserts a value to the collection. Returns true if the collection did not already contain the specified element. */
+	bool insert(int val) {
+
+	}
+
+	/** Removes a value from the collection. Returns true if the collection contained the specified element. */
+	bool remove(int val) {
+
+	}
+
+	/** Get a random element from the collection. */
+	int getRandom() {
+
+	}
+};
+
