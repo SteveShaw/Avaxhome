@@ -28,6 +28,12 @@ Table:
 27. Intel Interview Experience | Set 3 (For Graphics SW Engineer Position) 
 28. Amazon Interview experience | Set 332 (Off-Campus)
 29. Sort 3 Integers without using if condition or using only max() function
+30. Count Inversions in an array | Set 1 (Using Merge Sort)
+31. Count inversions in an array | Set 2 (Using Self-Balancing BST)
+32. Count inversions in an array | Set 3 (Using BIT)
+33. Counting Inversions using Set in C++ STL
+34. Modify array to maximize sum of adjacent differences
+35. Maximum product of two non-intersecting paths in a tree
 
 1. K difference permutation (http://www.geeksforgeeks.org/k-difference-permutation/)
 Given two integers n and k. Consider first permutation of natural n numbers, P = “1 2 3 … n”, print a permutation “Result” such that abs(Resulti – Pi) = k where Pi denotes the position of i in permutation P. The value of Pi varies from 1 to n. If there are multiple possible results, then print the lexicographically smallest one.
@@ -189,6 +195,10 @@ http://www.geeksforgeeks.org/count-inversions-array-set-3-using-bit/
 33. Counting Inversions using Set in C++ STL
 http://quiz.geeksforgeeks.org/counting-inversions-using-set-in-c-stl/ 
 
+34. Modify array to maximize sum of adjacent differences
+http://www.geeksforgeeks.org/modify-array-to-maximize-sum-of-adjacent-differences/
 
+35. Maximum product of two non-intersecting paths in a tree
+http://www.geeksforgeeks.org/maximum-product-of-two-non-intersecting-paths-in-a-tree/
 
 
