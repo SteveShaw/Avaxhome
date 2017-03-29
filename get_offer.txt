@@ -1,0 +1,78 @@
+	
+No Offer
+Positive Experience
+Average Interview
+Application
+I applied through a recruiter. The process took 4 weeks. I interviewed at Susquehanna International Group (Philadelphia, PA) in February 2017.
+
+Interview
+There were 3 total interviews. A phone interview that was behavioral questions and light technical questions taken by (from what I gathered) a junior employee. A second phone interview that was similar but the technical questions were slightly more in depth (what is the search time complexity of a Hash table?: O(1)). The third was an onsite interview which they paid travel expenses for. This interview was broken up into… 
+Show More
+
+Interview Questions
+From the onsite interview in the second session with the Leads: How would you handle processing multiple millions of trade requests if the number of servers wasn't a question? The one manager kept on following up my answers with, "Well what if that wasn't available?"  
+1 Answer
+Ultimately, I think they were looking for: "I would use a queue." Although I'm not really sure. I was trying to figure out what the one manager was getting at, but there was a question of clarity in the questions he was asking that was absent. By no means was this a perfect interview --on either side.
+
+
+Coding Question A group of friends are tracking the miles per gallon for each of their cars. Each time one of them fills up their gas tank, they record the following in a file:
+His or her name
+The type of car they drove
+How many miles driven since they last filled up
+How many gallons purchased at this fill up
+Date of the fill
+Their data is formatted as a comma separate value (csv) file with the following format for each row:(#person,carName,milesDriven,gallonsFilled,fillupDate)
+
+Miles are recorded as floating-point numbers and gallons as integers.
+
+Please create a program that allows 
+members of this group to determine the miles per gallon (MPG) 
+of each of their cars during a specific time range. 
+
+Note: person may have more than one so a time range query 
+might need to output data for one or more cars. 
+A skeleton class will be provided; 
+your job will be to complete the program.
+The principal function for querying MPG is of the form 
+(the exact name, data types, etc., can be learned by inspecting the "solution" class in the skeleton code):
+
+GetRangeMPG(PersonName, StartDate, EndDate)
+
+Returns list of objects containing (CarName, MPG)
+
+MPG is calculated as (total miles traveled during time period)/ (total gallons filled during time period.
+
+The dates you receive in the query should be treated inclusively.  
+
+
+create a 366 vector each item corresponds to the date.
+
+
+Given as list of movies in a csv file, 
+extract the movie name and genre 
+and be able to return a query based on the years. 
+
+
+
+
+以下是现在还记得的部分问题：
+-google 1point3acres
+* 从立方体的一个顶点走到远端对角顶点，每一步走一个边，走每一边的概率相等。求整个路程的期待值。. 鍥磋鎴戜滑@1point 3 acres
+* 给两个uniformly distributed random variables，求其最大值和最小值的期待值。
+* 给一个二维平面，问其在单位圆（含边界）范围内最大值是什么？
+* 什么是option？有哪些不同的option？Call/put option的payoff曲线是什么？
+* 如何hedge call option的risk？什么是short selling？有什么用？
+* 最小的非阿贝尔群是什么？
+* R - {0}（作为乘法群）的最小和第二小的子群是什么？
+* Leetcode原题：计算一个数组的所有子集合的数目，并打印出来所有子集合。
+* Leetcode原题：上台阶。
+
+300层楼，3个一样的小球，设计一个策略，得到小球摔碎的临界层数，并且要求最坏情况下所试次数最少。
+经典的扔鸡蛋问题，只不过现在有三个鸡蛋。解题思路一样的，都是动态规划。
+记F(n, k)为n层楼，k个球时所需要的最少尝试次数，则
+F(n, k) = min ( F(n-r, k) + 1, F(r-1, k-1) + 1), r = 1, 2, …, n;
+F(n, 1) = n;
+一百个眼镜，摆成一个圈，全部正面向上，第一个人将每个翻动一次，一共翻了100次；第二个人从no.2开始隔一个翻一次，也翻100次；第3个人从no.3开始隔两个翻一次，翻100次，问100个人之后，多少眼镜正面向上
+以前有个类似的题目说的是眼镜在一个直线上，现在这个版本要难一些。
+一个蛋糕，切成连续的n块，有m个豆，问如果每小块上放一种豆，并且要求相邻的2块上的豆不一样，有多少种方法。
+一条东西向长街，你站在街中间，街北是一排门，你有一把钥匙，请写出一种策略，要求X/N在最坏情况下最少，X为你到达正确的门时所走的总路程，N为正确的门距原点的距离，可以假设门与门之间距离为1。
