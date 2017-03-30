@@ -18925,7 +18925,7 @@ public:
 	}
 };
 
-//<--> 366. Find Leaves of Binary Tree
+//<--> 366. Find Leaves of Binary Tree ($)(M)
 /*
 Given a binary tree, 
 find all leaves and then remove those leaves. 
@@ -18954,16 +18954,331 @@ Explanation:
 []
 Returns [4, 5, 3], [2], [1].
 */
+class Solution {
+public:
+	vector<vector<int>> findLeaves( TreeNode* root )
+	{
+	}
+};
+
+//<--> 368. Largest Divisible Subset (M)
+/*
+Given a set of distinct positive integers, 
+find the largest subset such that every pair (Si, Sj) 
+of elements in this subset satisfies: Si % Sj = 0 or Sj % Si = 0.
+
+If there are multiple solutions, return any subset is fine.
+
+Example 1:
+
+nums: [1,2,3]
+
+Result: [1,2] (of course, [1,3] will also be ok)
+Example 2:
+
+nums: [1,2,4,8]
+
+Result: [1,2,4,8]
+*/
+class Solution {
+public:
+	vector<int> largestDivisibleSubset( vector<int>& nums ) {
+
+	}
+};
+
+//<--> 369 Plus One Linked List (M)
+/*
+Given a non-negative number represented 
+as a singly linked list of digits, plus one to the number.
+
+The digits are stored such that 
+the most significant digit is at the head of the list.
+
+Example:
+Input:
+1->2->3
+
+Output:
+1->2->4
+*/
+class Solution {
+public:
+	ListNode* plusOne( ListNode* head )
+	{
+	}
+};
+
+//<--> 370 Range Addition (M)
+/*
+Assume you have an array of length n initialized with all 0's and 
+are given k update operations.
+
+Each operation is represented as a triplet: [startIndex, endIndex, inc] 
+which increments each element of subarray A[startIndex ... endIndex] 
+(startIndex and endIndex inclusive) with inc.
+
+Return the modified array after all k operations were executed.
+
+Example:
+
+Given:
+
+length = 5,
+updates = [
+[1,  3,  2],
+[2,  4,  3],
+[0,  2, -2]
+]
+
+Output:
+
+[-2, 0, 3, 5, 3]
+Explanation:
+
+Initial state:
+[ 0, 0, 0, 0, 0 ]
+
+After applying operation [1, 3, 2]:
+[ 0, 2, 2, 2, 0 ]
+
+After applying operation [2, 4, 3]:
+[ 0, 2, 5, 5, 3 ]
+
+After applying operation [0, 2, -2]:
+[-2, 0, 3, 5, 3 ]
+Hint:
+
+Thinking of using advanced data structures? You are thinking it too complicated.
+For each update operation, do you really need to update all elements between i and j?
+Update only the first and end element is sufficient.
+The optimal time complexity is O(k + n) and uses O(1) extra space.
+*/
+class Solution {
+public:
+	vector<int> getModifiedArray( int length, vector<vector<int>>& updates )
+	{
+	}
+};
+
+//<--> 371. Sum of Two Integers
+/*
+Calculate the sum of two integers a and b, 
+but you are not allowed to use the operator + and -.
+
+Example:
+Given a = 1 and b = 2, return 3.
+*/
+class Solution {
+public:
+	int getSum( int a, int b )
+	{
+		while ( b != 0 )
+		{
+			int carry = a & b;
+
+			a = a ^ b;
+
+			b = carry << 1;
+		}
+
+		return a;
+	}
+};
+
+//<--> 372. Super Pow (M)
+/*
+Your task is to calculate ab mod 1337 
+where a is a positive integer and 
+b is an extremely large positive integer given in the form of an array.
+
+Example1:
+
+a = 2
+b = [3]
+
+Result: 8
+Example2:
+
+a = 2
+b = [1,0]
+
+Result: 1024
+*/
+class Solution {
+public:
+	int superPow( int a, vector<int>& b ) {
+
+		long long res = 1;
+
+		for ( auto n : b )
+		{
+			res = (get_pow( res, 10 )*get_pow( a, n )) % 1337;
+		}
+
+		return res;
+	}
+
+	int get_pow( int x, int n )
+	{
+		if ( n == 0 )
+		{
+			return 1;
+		}
+
+		if ( n == 1 )
+		{
+			return x % 1337;
+		}
+
+		return (get_pow( x % 1337, n / 2 ) * get_pow( x % 1337, n - n / 2 )) % 1337;
+	}
+};
 
 //<--> 373. Find K Pairs with Smallest Sums (M)
-//https://leetcode.com/problems/find-k-pairs-with-smallest-sums/#/description
-//http://www.cnblogs.com/grandyang/p/5653127.html
+/*
+ou are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.
 
+Define a pair (u,v) which consists of one element from the first array and one element from the second array.
+
+Find the k pairs (u1,v1),(u2,v2) ...(uk,vk) with the smallest sums.
+
+Example 1:
+Given nums1 = [1,7,11], nums2 = [2,4,6],  k = 3
+
+Return: [1,2],[1,4],[1,6]
+
+The first 3 pairs are returned from the sequence:
+[1,2],[1,4],[1,6],[7,2],[7,4],[11,2],[7,6],[11,4],[11,6]
+Example 2:
+Given nums1 = [1,1,2], nums2 = [1,2,3],  k = 2
+
+Return: [1,1],[1,1]
+
+The first 2 pairs are returned from the sequence:
+[1,1],[1,1],[1,2],[2,1],[1,2],[2,2],[1,3],[1,3],[2,3]
+Example 3:
+Given nums1 = [1,2], nums2 = [3],  k = 3
+
+Return: [1,3],[2,3]
+
+All possible pairs are returned from the sequence:
+[1,3],[2,3]
+*/
+class Solution {
+public:
+	vector<pair<int, int>> kSmallestPairs( vector<int>& nums1, vector<int>& nums2, int k ) {
+
+		auto comp = []( const pair<int, int>& p1, const pair<int, int>& p2 )->bool
+		{
+			return p1.first + p1.second < p2.first + p2.second;
+		};
+
+		priority_queue<pair<int, int>, vector<pair<int, int>>, decltype(comp)> pq( comp );
+
+		int L1 = min( k, (int)nums1.size() );
+		int L2 = min( k, (int)nums2.size() );
+
+		for ( int i = 0; i<L1; ++i )
+		{
+			for ( int j = 0; j<L2; ++j )
+			{
+				if ( pq.size()<k )
+				{
+					pq.emplace( nums1[i], nums2[j] );
+				}
+				else
+				{
+					const auto& p = pq.top();
+					if ( p.first + p.second> nums1[i] + nums2[j] )
+					{
+						pq.pop();
+						pq.emplace( nums1[i], nums2[j] );
+					}
+
+
+				}
+			}
+		}
+
+		vector<pair<int, int>> res;
+
+		while ( !pq.empty() )
+		{
+			const auto& t = pq.top();
+
+			res.emplace_back( t.first, t.second );
+
+			pq.pop();
+		}
+
+		return res;
+
+	}
+};
 //<--> 374. Guess Number Higher or Lower (M)
-https://leetcode.com/problems/guess-number-higher-or-lower/#/description
-http://www.cnblogs.com/grandyang/p/5666502.html
+/*
+We are playing the Guess Game. The game is as follows:
+
+I pick a number from 1 to n. You have to guess which number I picked.
+
+Every time you guess wrong, I'll tell you whether the number is higher or lower.
+
+You call a pre-defined API guess(int num) which returns 3 possible results (-1, 1, or 0):
+
+-1 : My number is lower
+1 : My number is higher
+0 : Congrats! You got it!
+Example:
+n = 10, I pick 6.
+
+Return 6.
+*/
+//http://www.cnblogs.com/grandyang/p/5666502.html
 // Notice: left should be set to mid + 1 when guess return 1, 
 // this means my number is higher than the mid, the search range should be in the upper half.
+// Forward declaration of guess API.
+// @param num, your guess
+// @return -1 if my number is lower, 1 if my number is higher, otherwise return 0
+int guess( int num );
+
+class Solution {
+public:
+	int guessNumber( int n ) {
+
+		if ( guess( n ) == 0 )
+		{
+			return n;
+		}
+
+		int left = 1;
+		int right = n;
+
+		while ( left < right )
+		{
+			int mid = left + (right - left) / 2;
+
+			auto g = guess( mid );
+
+			if ( g == 0 )
+			{
+				return mid;
+			}
+
+			if ( g == -1 )
+			{
+				right = mid - 1;
+			}
+			else
+			{
+				left = mid + 1;
+			}
+		}
+
+		return left;
+
+	}
+};
 
 //<--> 375. Guess Number Higher or Lower II (M)
 /*
@@ -19619,8 +19934,10 @@ public:
 
 //<--> 383. Ransom Note
 /*
-Given an arbitrary ransom note string and another string containing letters from all the magazines, 
-write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
+Given an arbitrary ransom note string and another string containing 
+letters from all the magazines, 
+write a function that will return true if the ransom note 
+can be constructed from the magazines ; otherwise, it will return false.
 
 Each letter in the magazine string can only be used once in your ransom note.
 
@@ -19656,3 +19973,270 @@ public:
 		return true;
 	}
 };
+
+//<--> 384. Shuffle an Array
+/*
+Shuffle a set of numbers without duplicates.
+
+Example:
+
+// Init an array with set 1, 2, and 3.
+int[] nums = {1,2,3};
+Solution solution = new Solution(nums);
+
+// Shuffle the array [1,2,3] and return its result. 
+Any permutation of [1,2,3] must equally likely to be returned.
+solution.shuffle();
+
+// Resets the array back to its original configuration [1,2,3].
+solution.reset();
+
+// Returns the random shuffling of array [1,2,3].
+solution.shuffle();
+*/
+
+/**
+* Your Solution object will be instantiated and called as such:
+* Solution obj = new Solution(nums);
+* vector<int> param_1 = obj.reset();
+* vector<int> param_2 = obj.shuffle();
+*/
+
+class Solution {
+public:
+	Solution( vector<int> nums ) {
+
+	}
+
+	/** Resets the array to its original configuration and return it. */
+	vector<int> reset() {
+
+	}
+
+	/** Returns a random shuffling of the array. */
+	vector<int> shuffle() {
+
+	}
+};
+
+//<--> 385. Mini Parser
+/*
+Given a nested list of integers represented as a string, 
+implement a parser to deserialize it.
+
+Each element is either an integer, or a list --
+whose elements may also be integers or other lists.
+
+Note: You may assume that the string is well-formed:
+
+String is non-empty.
+String does not contain white spaces.
+String contains only digits 0-9, [, - ,, ].
+Example 1:
+
+Given s = "324",
+
+You should return a NestedInteger object 
+which contains a single integer 324.
+Example 2:
+
+Given s = "[123,[456,[789]]]",
+
+Return a NestedInteger object containing a nested list with 2 elements:
+
+1. An integer containing value 123.
+2. A nested list containing two elements:
+i.  An integer containing value 456.
+ii. A nested list with one element:
+a. An integer containing value 789.
+*/
+
+/**
+* // This is the interface that allows for creating nested lists.
+* // You should not implement it, or speculate about its implementation
+* class NestedInteger {
+*   public:
+*     // Constructor initializes an empty nested list.
+*     NestedInteger();
+*
+*     // Constructor initializes a single integer.
+*     NestedInteger(int value);
+*
+*     // Return true if this NestedInteger holds a single integer, rather than a nested list.
+*     bool isInteger() const;
+*
+*     // Return the single integer that this NestedInteger holds, if it holds a single integer
+*     // The result is undefined if this NestedInteger holds a nested list
+*     int getInteger() const;
+*
+*     // Set this NestedInteger to hold a single integer.
+*     void setInteger(int value);
+*
+*     // Set this NestedInteger to hold a nested list and adds a nested integer to it.
+*     void add(const NestedInteger &ni);
+*
+*     // Return the nested list that this NestedInteger holds, if it holds a nested list
+*     // The result is undefined if this NestedInteger holds a single integer
+*     const vector<NestedInteger> &getList() const;
+* };
+*/
+class Solution {
+public:
+	NestedInteger deserialize( string s ) 
+	{
+	}
+};
+
+//<--> 386. Lexicographical Numbers (M)
+/*
+Given an integer n, return 1 - n in lexicographical order.
+
+For example, given 13, return: [1,10,11,12,13,2,3,4,5,6,7,8,9].
+
+Please optimize your algorithm to use less time and space. 
+The input size may be as large as 5,000,000.
+*/
+class Solution {
+public:
+	vector<int> lexicalOrder( int n )
+	{
+	}
+};
+
+//<--> 387. First Unique Character in a String
+/*
+Given a string, find the first non-repeating character in it and return it's index. 
+If it doesn't exist, return -1.
+
+Examples:
+
+s = "leetcode"
+return 0.
+
+s = "loveleetcode",
+return 2.
+Note: You may assume the string contain only lowercase letters.
+*/
+class Solution {
+public:
+	int firstUniqChar( string s )
+	{
+	}
+};
+
+//<--> 388. Longest Absolute File Path
+/*
+Suppose we abstract our file system by a string in the following manner:
+
+The string "dir\n\tsubdir1\n\tsubdir2\n\t\tfile.ext" represents:
+
+dir
+subdir1
+subdir2
+file.ext
+The directory dir contains an empty sub-directory 
+subdir1 and a sub-directory subdir2 containing a file file.ext.
+
+The string 
+"dir\n\tsubdir1\n\t\tfile1.ext\n\t\tsubsubdir1\n\tsubdir2\n\t\tsubsubdir2\n\t\t\tfile2.ext"
+represents:
+
+dir
+subdir1
+file1.ext
+subsubdir1
+subdir2
+subsubdir2
+file2.ext
+The directory dir contains two sub-directories 
+subdir1 and subdir2. subdir1 contains a file file1.ext 
+and an empty second-level sub-directory subsubdir1. subdir2 
+contains a second-level sub-directory subsubdir2 containing a file file2.ext.
+
+We are interested in finding 
+the longest (number of characters) absolute path to a file within our file system. 
+For example, in the second example above, the longest absolute path is "dir/subdir2/subsubdir2/file2.ext", 
+and its length is 32 (not including the double quotes).
+
+Given a string representing the file system in the above format, 
+return the length of the longest absolute path to file in the abstracted file system. 
+If there is no file in the system, return 0.
+
+Note:
+The name of a file contains at least a . and an extension.
+The name of a directory or sub-directory will not contain a ..
+Time complexity required: O(n) where n is the size of the input string.
+
+Notice that a/aa/aaa/file1.txt is not the longest file path, 
+if there is another path aaaaaaaaaaaaaaaaaaaaa/sth.png.
+*/
+
+class Solution {
+public:
+	int lengthLongestPath( string input )
+	{
+	}
+};
+
+//<--> 389. Find the Difference
+/*
+Given two strings s and t which consist of only lowercase letters.
+
+String t is generated by random shuffling string s 
+and then add one more letter at a random position.
+
+Find the letter that was added in t.
+
+Example:
+
+Input:
+s = "abcd"
+t = "abcde"
+
+Output:
+e
+
+Explanation:
+'e' is the letter that was added.
+*/
+class Solution {
+public:
+	char findTheDifference( string s, string t ) {
+
+	}
+};
+
+//<--> 390. Elimination Game
+/*
+There is a list of sorted integers from 1 to n. 
+Starting from left to right, remove the first number 
+and every other number afterward until you reach the end of the list.
+
+Repeat the previous step again, but this time from right to left, 
+remove the right most number and every other number from the remaining numbers.
+
+We keep repeating the steps again, 
+alternating left to right and right to left, 
+until a single number remains.
+
+Find the last number that remains starting with a list of length n.
+
+Example:
+
+Input:
+n = 9,
+1 2 3 4 5 6 7 8 9
+2 4 6 8
+2 6
+6
+
+Output:
+6
+*/
+class Solution {
+public:
+	int lastRemaining( int n ) {
+
+	}
+};
+
