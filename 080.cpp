@@ -19337,8 +19337,6 @@ public:
 		}
 
 		flag[next_number] = 0;
-
-
 	}
 
 	/** Check if a number is available or not. */
@@ -19585,13 +19583,76 @@ class Solution {
 public:
 	/** @param head The linked list's head.
 	Note that the head is guaranteed to be not null, so it contains at least one node. */
-	Solution(ListNode* head) {
+	Solution(ListNode* head)
+		:h(head)
+	{
 
 	}
 
 	/** Returns a random node's value. */
-	int getRandom() {
+	int getRandom() 
+	{
+		int res = h->val;
+		int i = 2;
 
+		auto cur = h->next;
+
+		while (cur)
+		{
+			auto j = rand() % i;
+
+			if (j == 0)
+			{
+				res = cur->val;
+			}
+
+			++i;
+
+			cur = cur->next;
+		}
+
+		return res;
 	}
+
+	ListNode* h;
 };
 
+//<--> 383. Ransom Note
+/*
+Given an arbitrary ransom note string and another string containing letters from all the magazines, 
+write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
+
+Each letter in the magazine string can only be used once in your ransom note.
+
+Note:
+You may assume that both strings contain only lowercase letters.
+
+canConstruct("a", "b") -> false
+canConstruct("aa", "ab") -> false
+canConstruct("aa", "aab") -> true
+*/
+class Solution {
+public:
+	bool canConstruct(string ransomNote, string magazine)
+	{
+		int r[26] = { 0 };
+		int m[26] = { 0 };
+
+		for (auto c : magazine)
+		{
+			m[c] += 1;
+		}
+
+		for (auto c : ransomNote)
+		{
+			r[c] += 1;
+
+			if (r[c] > m[c])
+			{
+				return false;
+			}
+		}
+
+		return true;
+	}
+};
