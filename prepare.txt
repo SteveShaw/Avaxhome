@@ -231,3 +231,99 @@ else
 make it a member
 
 18. multicast vs broadcast
+
+
+	class Date
+	{
+	public:
+		Date( int m = 1, int d = 1, int y = 1900 )
+			:month(m)
+			, day(d)
+			, year(y)
+			, is_leap(false)
+			, is_eom(false)
+		{
+			CheckLeapAndEndOfMonth();
+		}
+
+		Date( const Date& date )
+			:month(date.month)
+			, day(date.day)
+			, year(date.year)
+			, is_leap(date.is_leap)
+			, is_eom(date.is_eom)
+		{
+
+		}
+
+		Date& operator++()
+		{
+			inc_helper(  );
+
+			CheckLeapAndEndOfMonth();
+
+			return *this;
+		}
+
+		bool operator!=(const Date& date)
+		{
+			return (month != date.month) || (day != date.day) || (year != date.year);
+		}
+
+		std::string to_string()
+		{
+			std::ostringstream oss;
+			oss << month << "/" << day << "/" << year;
+
+			return oss.str();
+		}
+
+	private:
+
+		void inc_helper()
+		{
+			if ( !is_eom )
+			{
+				++day;
+			}
+			else
+			{
+				day = 1;
+				if ( month < 12 )
+				{
+					++month;
+				}
+				else
+				{
+					++year;
+					month = 1;
+				}
+			}
+		}
+
+		void CheckLeapAndEndOfMonth()
+		{
+			is_leap = ((year % 400 == 0) || (year % 100 != 0 && year % 4 == 0));
+
+			if ( month == 2 && is_leap )
+			{
+				is_eom = (day == 29);
+			}
+			else
+			{
+				is_eom = (day == days[month]);
+			}
+		}
+
+	private:
+
+		int month;
+		int day;
+		int year;
+
+		bool is_leap;
+
+		bool is_eom;
+
+		static const std::array<unsigned int, 13> days;
+	};
