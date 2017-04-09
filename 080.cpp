@@ -19058,6 +19058,22 @@ class Solution {
 public:
 	vector<int> getModifiedArray( int length, vector<vector<int>>& updates )
 	{
+		vector<int> res( length + 1, 0 );
+
+		for ( auto& v : updates )
+		{
+			res[v[0]] += v[2];
+			res[v[1]+1] -= v[2];
+		}
+
+		for ( size_t i = 1; i < res.size(); ++i )
+		{
+			res[i] += res[i - 1];
+		}
+
+		res.pop_back();
+
+		return res;
 	}
 };
 
@@ -20004,19 +20020,34 @@ solution.shuffle();
 
 class Solution {
 public:
-	Solution( vector<int> nums ) {
+	Solution( vector<int> nums ) :
+		N(nums)
+	{
 
 	}
 
 	/** Resets the array to its original configuration and return it. */
 	vector<int> reset() {
 
+		return N;
 	}
 
 	/** Returns a random shuffling of the array. */
 	vector<int> shuffle() {
 
+		vector<int> res( N );
+
+		for ( size_t i = 0; i < res.size(); ++i )
+		{
+			auto j = rand() % (res.size());
+			swap( res[i], res[j] );
+		}
+
+		return res;
 	}
+
+private:
+	vector<int> N;
 };
 
 //<--> 385. Mini Parser
@@ -20082,8 +20113,96 @@ a. An integer containing value 789.
 */
 class Solution {
 public:
+	//recursive way
 	NestedInteger deserialize( string s ) 
 	{
+		if ( s.empty() )
+		{
+			return NestedInteger();
+		}
+
+		if ( s[0] != '[' )
+		{
+			return NestedInteger( stoi( s ) );
+		}
+
+		if ( s.size() <= 2 )
+		{
+			return NestedInteger();
+		}
+
+		int level = 0;
+
+		NestedInteger res;
+
+		size_t start = 1;
+
+		for ( size_t i = 1; i < s.size(); ++i )
+		{
+			if ( level == 0 && (s[i] == ',' || ( i == s.size() - 1 ) ) )
+			{
+				res.add( deserialize( s.substr( start, i - start ) ) );
+				start = i + 1;
+			}
+			else if ( s[i] == '[' )
+			{
+				++level;
+			}
+			else if ( s[i] == ']' )
+			{
+				--level;
+			}
+		}
+
+		return res;
+	}
+	//iterative way
+	NestedInteger deserialize( string s )
+	{
+		if ( s.empty() )
+		{
+			return NestedInteger();
+		}
+
+		if ( s[0] != '[' )
+		{
+			return NestedInteger( stoi( s ) );
+		}
+
+		stack<NestedInteger> stk;
+
+		size_t start = 0;
+
+		for ( size_t i = 0; i < s.size(); ++i )
+		{
+			if ( s[i] == '[' )
+			{
+				stk.push( NestedInteger() );
+				start = i + 1;
+			}
+			else if ( s[i] == ',' || s[i] == ']  )
+			{
+				if ( i > start )
+				{
+					stk.top().add( NestedInteger( stoi( s.substr( start, i - start ) ) ) );
+				}
+
+				start = i + 1;
+
+				if ( s[i] == ']' )
+				{
+					if ( stk.size() > 1 ) //important: if there is only element, no need to pop
+					{
+						auto t = stk.top();
+						stk.pop();
+
+						stk.top().add( t );
+					}
+				}
+			}
+		}
+
+		return stk.top();
 	}
 };
 
@@ -20100,6 +20219,33 @@ class Solution {
 public:
 	vector<int> lexicalOrder( int n )
 	{
+		vector<int> res;
+
+		int cur = 1;
+
+		for ( int i = 0; i < n; ++i )
+		{
+			res[i] = cur;
+
+			if ( cur * 10 <= n )
+			{
+				cur = cur * 10;
+			}
+			else
+			{
+				if ( cur >= n )
+				{
+					cur /= 10;
+				}
+
+				cur += 1;
+
+				while ( cur % 10 == 0 )
+				{
+					cur /= 10;
+				}
+			}
+		}
 	}
 };
 
@@ -20175,6 +20321,44 @@ class Solution {
 public:
 	int lengthLongestPath( string input )
 	{
+		if ( input.empty() )
+		{
+			return 0;
+		}
+
+		istringstream iss( input );
+
+		string ln;
+
+		int res = 0;
+
+		unordered_map<int, int> m{ { 0, 0 } };
+
+		while ( getline( iss, ln ) )
+		{
+			int level = ln.find_last_of( '\t' ) + 1;
+			int len = ln.substr( level ).size();
+
+			int last_level_len = 0;
+
+			auto it = m.find( level );
+
+			if ( it != m.end() )
+			{
+				last_level_len = it->second;
+			}
+
+			if ( ln.find( '.' ) != string::npos )
+			{
+				res = max( res, last_level_len + len );
+			}
+			else
+			{
+				m.emplace( level + 1, last_level_len + len + 1 );
+			}
+		}
+
+		return res;
 	}
 };
 
@@ -20235,8 +20419,260 @@ Output:
 */
 class Solution {
 public:
-	int lastRemaining( int n ) {
+	int lastRemaining( int n )
+	{
+		int base = 1;
+		int res = 1;
+
+		while ( base * 2 <= n )
+		{
+			res += base;
+			base *= 2;
+
+			if ( base * 2 > n )
+			{
+				break;
+			}
+
+			if ( ((n / base) & 1 == 1) )
+			{
+				res += base;
+			}
+
+			base *= 2;
+		}
+
+		return res;
+	}
+};
+
+//<--> 391. Perfect Rectangle
+/*
+Given N axis-aligned rectangles where N > 0, 
+determine if they all together form an exact cover of a rectangular region.
+
+Each rectangle is represented as a bottom-left point 
+and a top-right point. 
+For example, a unit square is represented as [1,1,2,2]. 
+(coordinate of bottom-left point is (1, 1) and top-right point is (2, 2)).
+
+Example 1:
+
+rectangles = [
+[1,1,3,3],
+[3,1,4,2],
+[3,2,4,4],
+[1,3,2,4],
+[2,3,3,4]
+]
+
+Return true. All 5 rectangles together 
+form an exact cover of a rectangular region.
+
+Example 2:
+
+rectangles = [
+[1,1,2,3],
+[1,3,2,4],
+[3,1,4,2],
+[3,2,4,4]
+]
+
+Return false. Because there is a gap between 
+the two rectangular regions.
+
+Example 3:
+
+rectangles = [
+[1,1,3,3],
+[3,1,4,2],
+[1,3,2,4],
+[3,2,4,4]
+]
+
+Return false. Because there is a gap in the top center.
+
+Example 4:
+
+rectangles = [
+[1,1,3,3],
+[3,1,4,2],
+[1,3,2,4],
+[2,2,4,4]
+]
+
+Return false. Because two of the rectangles overlap with each other.
+*/
+
+class Solution {
+public:
+	bool isRectangleCover( vector<vector<int>>& rectangles )
+	{
 
 	}
 };
 
+//<--> 392. Is Subsequence
+/*
+Given a string s and a string t, check if s is subsequence of t.
+
+You may assume that there is only lower case English letters 
+in both s and t. t is potentially a very long (length ~= 500,000) 
+string, and s is a short string (<=100).
+
+A subsequence of a string is a new string which is formed from the original string 
+by deleting some (can be none) of the characters 
+without disturbing the relative positions of the remaining characters. 
+(ie, "ace" is a subsequence of "abcde" while "aec" is not).
+
+Example 1:
+s = "abc", t = "ahbgdc"
+
+Return true.
+
+Example 2:
+s = "axc", t = "ahbgdc"
+
+Return false.
+
+Follow up:
+If there are lots of incoming S, say S1, S2, ... , Sk where k >= 1B, 
+and you want to check one by one to see if T has its subsequence. 
+In this scenario, how would you change your code?
+*/
+class Solution {
+public:
+	bool isSubsequence( string s, string t )
+	{
+		auto len_s = s.size();
+		auto len_t = t.size();
+
+		size_t j = 0;
+		for ( size_t i = 0; (i < len_t) && (j < len_s); ++i )
+		{
+			if ( s[j] == t[i] )
+			{
+				++j;
+			}
+		}
+
+		return (j == s.size());
+	}
+
+	//for the followup, we need to use a hash map to 
+	//map the character to all positions in string t.
+	//can use binary search to find if the previous index 
+	//is inside the range of current character
+
+	bool isSubsequence( string s, string t )
+	{
+		vector<vector<int>> v( 26, vector<int>() );
+
+		for ( int i = 0; i < t.size(); ++i )
+		{
+			v[t[i] - 'a'].push_back( i );
+		}
+
+		int prev_idx = -1;
+
+		int count[26] = { 0 };
+
+		for ( auto c : s )
+		{
+			auto& v_pos = v[c - 'a'];
+			if ( v_pos.empty() )
+			{
+				return false;
+			}
+
+			count[c - 'a'] += 1;
+
+			if ( count[c - 'a'] > v_pos.size() ) //the count of character cannot exceed original one
+			{
+				return false;
+			}
+
+
+			auto it = lower_bound( v_pos.begin(), v_pos.end(), prev_idx );
+
+			if ( it == v_pos.end() )
+			{
+				return false;
+			}
+
+			prev_idx = *it;
+		}
+
+		return true;
+	}
+};
+
+//<--> 393. UTF-8 Validation
+/*
+A character in UTF8 can be from 1 to 4 bytes long, 
+subjected to the following rules:
+
+For 1-byte character, the first bit is a 0, followed by its unicode code.
+For n-bytes character, the first n-bits are all one's, the n+1 bit is 0, 
+followed by n-1 bytes with most significant 2 bits being 10.
+This is how the UTF-8 encoding would work:
+
+Char. number range  |        UTF-8 octet sequence
+(hexadecimal)    |              (binary)
+--------------------+---------------------------------------------
+0000 0000-0000 007F | 0xxxxxxx
+0000 0080-0000 07FF | 110xxxxx 10xxxxxx
+0000 0800-0000 FFFF | 1110xxxx 10xxxxxx 10xxxxxx
+0001 0000-0010 FFFF | 11110xxx 10xxxxxx 10xxxxxx 10xxxxxx
+Given an array of integers representing the data, return whether it is a valid utf-8 encoding.
+
+Note:
+The input is an array of integers. 
+Only the least significant 8 bits of each integer is used to store the data. 
+This means each integer represents only 1 byte of data.
+
+Example 1:
+
+data = [197, 130, 1], which represents the octet sequence: 11000101 10000010 00000001.
+
+Return true.
+It is a valid utf-8 encoding for a 2-bytes character followed by a 1-byte character.
+Example 2:
+
+data = [235, 140, 4], which represented the octet sequence: 11101011 10001100 00000100.
+
+Return false.
+The first 3 bits are all one's and the 4th bit is 0 means it is a 3-bytes character.
+The next byte is a continuation byte which starts with 10 and that's correct.
+But the second continuation byte does not start with 10, so it is invalid.
+*/
+
+class Solution {
+public:
+	bool validUtf8( vector<int>& data )
+	{
+
+	}
+};
+
+//<--> 394. Decode String
+/*
+Given an encoded string, return it's decoded string.
+
+The encoding rule is: k[encoded_string], 
+where the encoded_string inside the square brackets is being repeated exactly k times. 
+Note that k is guaranteed to be a positive integer.
+
+You may assume that the input string is always valid; 
+No extra white spaces, square brackets are well-formed, etc.
+
+Furthermore, you may assume that the original data does not 
+contain any digits and that digits are only for those repeat numbers, 
+k. For example, there won't be input like 3a or 2[4].
+
+Examples:
+
+s = "3[a]2[bc]", return "aaabcbc".
+s = "3[a2[c]]", return "accaccacc".
+s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
+*/
