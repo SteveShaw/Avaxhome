@@ -8353,7 +8353,19 @@ class Solution {
 public:
     int rangeBitwiseAnd(int m, int n)
 	{
+		int shift = 0;
 
+		while ( m != n )
+		{
+			++shift;
+
+			m >>= 1;
+			n >>= 1; 
+		}
+
+		m <<= shift; //left shift to original position.
+
+		return m;
 	}
 };
 
@@ -20651,7 +20663,46 @@ class Solution {
 public:
 	bool validUtf8( vector<int>& data )
 	{
+		if ( data.empty() )
+		{
+			return false;
+		}
 
+		int count = 0;
+
+		for ( auto d : data )
+		{
+			if ( count == 0 ) //first digit
+			{
+				if ( (d >> 5) == 0b110 )
+				{
+					++count;
+				}
+				else if ( (d >> 4) == 0b1110 )
+				{
+					count += 2;
+				}
+				else if ( (d >> 3) == 0b11110 )
+				{
+					count += 3;
+				}
+				else if ( (d >> 7) != 0 )
+				{
+					return false;
+				}
+			}
+			else
+			{
+				if ( (d >> 6) != 0b10 )
+				{
+					return false;
+				}
+
+				--count;
+			}
+		}
+
+		return count == 0;
 	}
 };
 
@@ -20676,3 +20727,36 @@ s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 */
+
+//<--> 395. Longest Substring with At Least K Repeating Characters (M)
+/*
+Find the length of the longest substring T of a 
+given string (consists of lowercase letters only) 
+such that every character in T appears no less than k times.
+
+Example 1:
+
+Input:
+s = "aaabb", k = 3
+
+Output:
+3
+
+The longest substring is "aaa", as 'a' is repeated 3 times.
+Example 2:
+
+Input:
+s = "ababbc", k = 2
+
+Output:
+5
+
+The longest substring is "ababb", 
+as 'a' is repeated 2 times and 'b' is repeated 3 times.
+*/
+class Solution {
+public:
+	int longestSubstring( string s, int k )
+	{
+	}
+};
