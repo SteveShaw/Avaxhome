@@ -20727,6 +20727,58 @@ s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
 s = "2[abc]3[cd]ef", return "abcabccdcdcdef".
 */
+class Solution {
+public:
+	string decodeString( string s )
+	{
+		if ( s.empty() )
+		{
+			return "";
+		}
+
+		string t;
+		int count(0);
+
+		stack<int> stk_num;
+		stack<string> stk_str;
+
+		for ( size_t i = 0; i < s.size(); ++i )
+		{
+			if ( s[i] >= '0' && s[i] <= '9' )
+			{
+				count *= 10;
+				count += (s[i] - '0');
+			}
+			else if ( s[i] == '[' )
+			{
+				stk_num.push( count );
+				stk_str.push( t );
+
+				count = 0;
+				t = "";
+			}
+			else if ( s[i] == ']' )
+			{
+				int num_str = stk_num.top();
+				stk_num.pop();
+
+				for ( int k = 0; k < num_str; ++k )
+				{
+					stk_str.top() += t;
+				}
+
+				t = stk_str.top();
+				stk_str.pop();
+			}
+			else
+			{
+				t += s[i];
+			}
+		}
+
+		return t;
+	}
+};
 
 //<--> 395. Longest Substring with At Least K Repeating Characters (M)
 /*
@@ -20758,5 +20810,63 @@ class Solution {
 public:
 	int longestSubstring( string s, int k )
 	{
+		int res = 0;
+
+		int start = 0;
+
+		int L = s.size();
+		
+		while ( start + k <= L )
+		{
+			int m[26] = { 0 };
+			int mask = 0;
+			int last_max_pos = start;
+
+			for ( auto j = start; j < L; ++j )
+			{
+				int pos = s[j] - 'a';
+
+				++m[pos];
+
+				if ( m[pos] < k )
+				{
+					mask |= (1 << pos);
+				}
+				else
+				{
+					mask &= (~(1 << pos));
+				}
+
+				if ( mask == 0 )
+				{
+					res = max( res, j - start + 1 );
+					last_max_pos = j;
+				}
+			}
+
+			start = last_max_pos + 1;
+		}
+
+		return res;
 	}
 };
+
+
+//<--> 567. Permutation in String
+/*
+Given two strings s1 and s2, 
+write a function to return true if s2 contains the permutation of s1. 
+In other words, one of the first string's permutations 
+is the substring of the second string.
+
+Example 1:
+Input:s1 = "ab" s2 = "eidbaooo"
+Output:True
+Explanation: s2 contains one permutation of s1 ("ba").
+Example 2:
+Input:s1= "ab" s2 = "eidboaoo"
+Output: False
+Note:
+The input strings only contain lower case letters.
+The length of both given strings is in range [1, 10,000].
+*/
